@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile,readdir,writeFile,mkdtemp,rm,access} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {gzipSync,gunzipSync} from 'node:zlib';
-import {exportPortfolios,validatePortfolio,projectPortfolio,validateEquivalence} from '../scripts/export-portfolios.mjs';
+import {exportPortfolios,validatePortfolio,projectPortfolio,validateEquivalence,publicationErrors} from '../scripts/export-portfolios.mjs';
 import {decodePortfolio,portfolioModel,holdingsPage,portfolioInstrumentDetails} from '../src/portfolio-view.js';
 import {buildVisibleGraph,initialState} from '../src/graph-model.js';
 const manifest=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url)));
@@ -120,4 +120,12 @@ test('check mode is read-only even when a batch is quarantined',async()=>{
  const directory=await mkdtemp(tmpdir()+'/portfolio-check-'),file='check-mode-probe.normalized.json.gz',report=new URL('../data-foundation/portfolios/quarantine/'+file+'.json',import.meta.url);
  try{await writeFile(directory+'/'+file,gzipSync(JSON.stringify(input)));await writeFile(directory+'/check-mode-probe.review.json',await readFile(new URL('../data-foundation/portfolios/input/berkshire.review.json',import.meta.url)));await assert.rejects(exportPortfolios({directory,check:true}),/quarantined/);await assert.rejects(access(report));}
  finally{await rm(directory,{recursive:true,force:true});await rm(report,{force:true});}
+});
+test('every exported portfolio is published and nothing stale ships',async()=>{
+ const {PUBLIC_FILES}=await import('../scripts/prepare-site.mjs'),files=manifest.portfolios.map(p=>p.dataFile);
+ assert.deepEqual(publicationErrors(files,{presentFiles:await readdir(new URL('../data/',import.meta.url))}),[]);
+ assert.match(publicationErrors([...files,'fmr-2026-06-30.json']).join(' '),/data\/fmr-2026-06-30.json is missing from PUBLIC_FILES/);
+ assert.match(publicationErrors(files.slice(1)).join(' '),new RegExp(`PUBLIC_FILES publishes data/${files[0]}`));
+ assert.match(publicationErrors(files,{presentFiles:[...files,'portfolios.json','retired-2026-03-31.json']}).join(' '),/retired-2026-03-31.json is an orphaned/);
+ assert.ok(files.every(f=>PUBLIC_FILES.includes('data/'+f)));
 });

@@ -3,6 +3,7 @@ import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {PUBLIC_FILES} from './prepare-site.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 export const INPUT_DIRECTORY=path.join(root,'data-foundation/portfolios/input');
 export const sha256=text=>createHash('sha256').update(text).digest('hex');
@@ -74,6 +75,16 @@ export function validateEquivalence(identity,inputs){
   for(const pc of c.pairCounts||[])if((pairs.get([...pc.portfolioIds].sort().join('|'))||0)!==pc.matchedGroups)errors.push(`Identity coverage mismatch: pair ${pc.portfolioIds.join('/')}`);
   return errors;
 }
+// The Pages allowlist is hand-maintained; a portfolio missing from it 404s in production and the
+// all-or-nothing loader then fails the whole default map. Orphaned row files must not keep shipping.
+const NON_PORTFOLIO_DATA=new Set(['graph.json','researched.json','portfolios.json','instrument-equivalence.json']);
+export function publicationErrors(dataFiles,{publicFiles=PUBLIC_FILES,presentFiles=[]}={}){
+  const errors=[],expected=new Set(dataFiles);
+  for(const file of expected)if(!publicFiles.includes('data/'+file))errors.push(`data/${file} is missing from PUBLIC_FILES in scripts/prepare-site.mjs`);
+  for(const file of publicFiles.filter(f=>/^data\/[^/]+\.json$/.test(f)).map(f=>f.slice(5)))if(!NON_PORTFOLIO_DATA.has(file)&&!expected.has(file))errors.push(`PUBLIC_FILES publishes data/${file}, which is not a current portfolio`);
+  for(const file of presentFiles)if(file.endsWith('.json')&&!NON_PORTFOLIO_DATA.has(file)&&!expected.has(file))errors.push(`data/${file} is an orphaned portfolio file; remove it`);
+  return errors;
+}
 export async function exportPortfolios({directory=INPUT_DIRECTORY,check=false}={}){
   const files=(await readdir(directory)).filter(f=>f.endsWith('.normalized.json.gz')).sort(),portfolios=[],inputs=[];let bytes=0;
   const save=async(file,output)=>{bytes+=output.length;const target=path.join(root,'data',file);if(check){if(await readFile(target,'utf8')!==output)throw new Error(`Public ${file} is stale; run data:export-portfolios`);}else await writeFile(target,output);};
@@ -82,6 +93,7 @@ export async function exportPortfolios({directory=INPUT_DIRECTORY,check=false}={
   const identityErrors=validateEquivalence(JSON.parse(await readFile(path.join(root,'data/instrument-equivalence.json'),'utf8')),inputs);if(identityErrors.length)throw new Error(identityErrors.join('; '));
   const defaultPortfolio=(portfolios.find(p=>/blackrock/i.test(p.filer.name))||portfolios[0]).portfolioId;
   await save('portfolios.json',JSON.stringify({schemaVersion:1,defaultPortfolio,portfolios})+'\n');
+  const publication=publicationErrors(portfolios.map(p=>p.dataFile),{presentFiles:await readdir(path.join(root,'data'))});if(publication.length)throw new Error(publication.join('; '));
   return {portfolios:portfolios.length,positions:portfolios.reduce((n,p)=>n+p.reconciliation.shareRowCount,0),bytes};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))exportPortfolios({check:process.argv.includes('--check')}).then(result=>console.log(`Full portfolios: ${JSON.stringify(result)}`)).catch(error=>{console.error(error.message);process.exitCode=1;});
