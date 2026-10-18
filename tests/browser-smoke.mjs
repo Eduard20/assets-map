@@ -124,6 +124,25 @@ try {
   await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
   for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(n=>n.kind==='manager').length),8);assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);}
   await page.locator('#portfolio').selectOption('all');await page.locator('#top-n').selectOption('20');await page.locator('[data-view="3d"]').click();await expectReal3D(page,initialNetworkNodes);
+  // Shared-security discovery covers the full network, independently of top-N.
+  await page.locator('#holdings-mode').selectOption('shared');await expectView(page,'list');
+  assert.equal(await page.locator('.shared-instrument-row').count(),50);
+  const warningContrast=await page.locator('#graph-list .context-note').evaluate(el=>{
+    const style=getComputedStyle(el),luminance=color=>{const rgb=color.match(/[0-9.]+/g).slice(0,3).map(Number).map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;});return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
+    const a=luminance(style.color),b=luminance(style.backgroundColor);return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+  });assert.ok(warningContrast>=4.5,'shared-security coverage warning meets normal-text contrast');
+  await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
+  await page.locator('#holdings-search').fill('APPLE');
+  await page.locator(`.shared-instrument-row[data-select="${appleId}"]`).click();
+  assert.match(await page.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
+  await page.locator('#detail-panel [data-edge]').first().click();
+  await page.locator('#detail-panel [data-edge]').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
+  await page.locator('#focus-back').click();assert.equal(await page.locator('#holdings-mode').inputValue(),'shared');
+  assert.equal(await page.locator('#holdings-search').inputValue(),'APPLE');
+  await page.locator('#holdings-search').fill('');
+  await page.screenshot({path:'artifacts/shared-discovery-desktop.png',fullPage:true});
+  await page.locator('#reset-map').click();await expectReal3D(page,initialNetworkNodes);
+  assert.equal(await page.locator('#holdings-mode').inputValue(),'rows');
   // A manager bubble opens more of its own network in both renderers.
   for(const view of ['3d','2d']){
     await page.locator(`[data-view="${view}"]`).click();await expectView(page,view);
@@ -295,6 +314,27 @@ try {
       const target=await touchPage.locator(selector).boundingBox();assert.ok(target.width>=44&&target.height>=44,`${selector} has a finger-sized target`);
     }
     await touchPage.screenshot({path:`artifacts/network-phone-${viewport.width}x${viewport.height}.png`,fullPage:true});
+  }
+  await touchPage.setViewportSize({width:390,height:844});
+  // Discover shared instruments through the phone sheet, then inspect evidence.
+  for(const viewport of [{width:320,height:568},{width:390,height:844},{width:844,height:390}]){
+    await touchPage.setViewportSize(viewport);
+    await touchPage.locator('#mobile-options').tap();
+    await touchPage.locator('#holdings-mode').selectOption('shared');
+    await touchPage.locator('#holdings-search').fill('APPLE');
+    await touchPage.locator('#mobile-apply-controls').tap();await expectView(touchPage,'list');
+    assert.equal(await touchPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+    assert.ok(await touchPage.locator('.shared-instrument-row').count()>0);
+    await touchPage.locator(`.shared-instrument-row[data-select="${appleId}"]`).tap();
+    await touchPage.locator('#mobile-details').tap();
+    assert.match(await touchPage.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
+    await touchPage.locator('#detail-panel [data-edge]').first().tap();
+    await touchPage.locator('#detail-panel [data-edge]').first().tap();
+    assert.match(await touchPage.locator('#detail-panel').textContent(),/Information-table row/);
+    await touchPage.locator('#close-mobile-details').tap();
+    await touchPage.locator('#focus-back').tap();
+    await touchPage.screenshot({path:`artifacts/shared-discovery-phone-${viewport.width}.png`,fullPage:true});
+    await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,initialNetworkNodes);
   }
   await touchPage.setViewportSize({width:390,height:844});
   // A newly admitted manager is reachable and expandable from the phone UI.

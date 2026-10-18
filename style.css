@@ -118,3 +118,7 @@
 .node-label .expand-node{pointer-events:all}
 
 .node-core,.node-symbol,.selection-ring{pointer-events:none}
+
+/* Disclosure warnings must remain legible on the dark discovery list. */
+.graph-list .list-root .context-note{background:#102938;border-color:#294651;color:#d9e8ef;font-size:12px}
+@media(max-width:800px){.graph-list .list-root .context-note{font-size:14px}}

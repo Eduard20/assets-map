@@ -93,3 +93,33 @@ test('new bank issuer roles open both incoming investors and outgoing portfolios
 test('overview at the node ceiling gives all eight filers an initial neighborhood',()=>{const state=initialState(model);for(const root of model.portfolioRoots)state.limits.set(root,200);const graph=buildVisibleGraph(model,state);assert.equal(graph.nodes.length,200);for(const root of model.portfolioRoots)assert.ok(graph.edges.filter(e=>e.source===root).length>=20);});
 
 test('independent admission binds the exact pre-admission proposal bytes',()=>{const proposal={...identity,admission:{status:'pending'}};const bytes=JSON.stringify(proposal)+'\n';assert.equal(createHash('sha256').update(bytes).digest('hex'),identity.admission.reviewedInputSha256);});
+
+test('shared securities browse the entire exact-match network without summing values',async()=>{
+ const {sharedInstrumentsPage}=await import('../src/portfolio-network.js');
+ const result=sharedInstrumentsPage(model),expected=new Map();
+ for(const edge of model.edges){if(!expected.has(edge.target))expected.set(edge.target,new Set());expected.get(edge.target).add(edge.source);}
+ assert.equal(result.total,[...expected.values()].filter(ids=>ids.size>1).length);
+ assert.equal(result.rows.length,50);
+ assert.ok(result.total>buildVisibleGraph(model,initialState(model)).nodes.length);
+ assert.ok(result.rows.every(row=>row.filerIds.length>=2&&!('valueUsd' in row)));
+ assert.deepEqual(result.rows.map(row=>row.filerIds.length),result.rows.map(row=>row.filerIds.length).sort((a,b)=>b-a));
+ const apple=sharedInstrumentsPage(model,{query:' APPLE INC '}).rows.find(row=>row.node.label==='APPLE INC');
+ assert.equal(apple.filerIds.length,6,'64 filing rows still represent six imported filers');
+ const filtered=sharedInstrumentsPage(model,{portfolioId:apple.filerIds[0],query:'APPLE INC'});
+ assert.equal(filtered.rows.find(row=>row.node.id===apple.node.id).filerIds.length,6,'filter limits instruments, not the displayed investor coverage');
+ assert.equal(sharedInstrumentsPage(model,{portfolioId:'unknown'}).total,0);
+ assert.equal(sharedInstrumentsPage(model,{query:'no such security xyz'}).pages,1);
+ assert.equal(sharedInstrumentsPage(model,{page:1e9}).page,result.pages-1);
+ assert.equal(sharedInstrumentsPage(model,{page:-1}).page,0);
+ assert.equal(sharedInstrumentsPage(model,{page:NaN}).page,0);
+});
+
+test('shared discovery never merges names/classes or counts rows and issuer roles as investors',async()=>{
+ const {sharedInstrumentsPage}=await import('../src/portfolio-network.js');
+ const nodes=[{id:'a',label:'SAME NAME',sector:'CL A',kind:'asset'},{id:'b',label:'SAME NAME',sector:'CL B',kind:'asset'},{id:'c',label:'Unmatched',kind:'asset'}];
+ const holding=(source,target,name='Alias from filing')=>({kind:'managed_holding',source,target,portfolioPositions:[{issuerName:name},{issuerName:name}]});
+ const fixture={nodeMap:new Map(nodes.map(n=>[n.id,n])),portfolioMap:new Map([['one',{}],['two',{}],['three',{}]]),edges:[holding('one','a'),holding('one','a'),holding('two','a'),holding('one','b'),holding('two','b'),holding('three','c'),{kind:'issuer_reporting_entity',source:'three',target:'a'}]};
+ const result=sharedInstrumentsPage(fixture);assert.equal(result.total,2);assert.deepEqual(result.rows.map(row=>row.node.id),['a','b']);assert.ok(result.rows.every(row=>row.filerIds.length===2));
+ assert.equal(sharedInstrumentsPage(fixture,{query:'alias from filing'}).total,2);
+ assert.equal(sharedInstrumentsPage(fixture,{query:'cl b'}).rows[0].node.id,'b');
+});

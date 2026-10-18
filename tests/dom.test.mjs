@@ -206,3 +206,27 @@ test('phone filters and entity details have explicit open/close, Escape and focu
   assert.equal($('#mobile-scrim').hidden,true);assert.equal(document.activeElement,$('#mobile-details'));
  }finally{window.matchMedia=previous;}
 });
+
+test('shared securities mode keeps filer scope, evidence, Back, empty states and reset coherent',async()=>{
+ await window.__assetsMap.setDataset('portfolios');
+ $('#holdings-mode').value='shared';$('#holdings-mode').dispatchEvent(new dom.window.Event('change'));
+ assert.equal(window.__assetsMap.getState().listMode,'shared');assert.equal(window.__assetsMap.getState().view,'list');
+ assert.equal(document.querySelectorAll('.shared-instrument-row').length,50);
+ assert.match($('#graph-list').textContent,/not ownership, control or complete investor coverage/);
+ $('#holdings-search').value='apple';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
+ const row=$('.shared-instrument-row');assert.ok(row);assert.match(row.textContent,/6reported investors/);
+ click('.shared-instrument-row');assert.match($('#detail-panel').textContent,/6 REPORTED INVESTORS/);
+ click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/underlying row|Information-table row/);
+ click('#focus-back');assert.equal($('#holdings-mode').value,'shared');assert.equal($('#holdings-search').value,'apple');
+ $('#portfolio').value='berkshire-2026-06-30';$('#portfolio').dispatchEvent(new dom.window.Event('change'));
+ assert.match($('#graph-list h2').textContent,/Berkshire/i);assert.ok(document.querySelectorAll('.shared-instrument-row').length>0);
+ $('#holdings-search').value='no such security xyz';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
+ assert.match($('#graph-list').textContent,/absence of a match does not mean no other investors/);
+ assert.equal(document.querySelectorAll('.shared-instrument-row').length,0);
+ $('#holdings-search').value='';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
+ click('#detail-panel [data-open-holdings]');assert.equal($('#holdings-mode').value,'rows');assert.match($('#graph-list').textContent,/ALL REPORTED SHARE POSITIONS/);
+ click('#focus-back');assert.equal($('#holdings-mode').value,'shared');assert.match($('#graph-list h2').textContent,/Shared securities/);
+ $('#holdings-mode').value='shared';$('#holdings-mode').dispatchEvent(new dom.window.Event('change'));
+ click('#reset-map');assert.equal($('#holdings-mode').value,'rows');assert.equal($('#holdings-search').value,'');
+ await window.__assetsMap.setDataset('researched');await window.__assetsMap.setDataset('portfolios');assert.equal($('#holdings-mode').value,'rows');
+});
