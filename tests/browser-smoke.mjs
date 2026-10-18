@@ -290,10 +290,10 @@ try {
     for(let i=1;i<=5;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/5,y:y+dy*i/5,id:1}]});
     await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
   };
-  const labelBox=await touchPage.locator('#graph-3d button[data-node-id="blackrock-2026-06-30"]').boundingBox();
+  const touchLabelBox=await touchPage.locator('#graph-3d button[data-node-id="blackrock-2026-06-30"]').boundingBox();
   const beforeOrbit=await touchPage.evaluate(()=>window.__assetsMap.getCameraState());
   const beforeGestureId=await selectedId(touchPage);
-  await dragTouch(labelBox.x+labelBox.width/2,labelBox.y+labelBox.height/2,45,35);
+  await dragTouch(touchLabelBox.x+touchLabelBox.width/2,touchLabelBox.y+touchLabelBox.height/2,45,35);
   await touchPage.waitForTimeout(120);
   const afterOrbit=await touchPage.evaluate(()=>window.__assetsMap.getCameraState());
   assert.ok(afterOrbit.position.some((n,i)=>Math.abs(n-beforeOrbit.position[i])>1),'touch drag starting on a label rotates the 3D network');
