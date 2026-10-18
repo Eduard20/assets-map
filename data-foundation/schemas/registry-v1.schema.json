@@ -47,13 +47,15 @@
                   "type": [
                     "string",
                     "null"
-                  ]
+                  ],
+                  "format": "date"
                 },
                 "valid_to": {
                   "type": [
                     "string",
                     "null"
-                  ]
+                  ],
+                  "format": "date"
                 }
               },
               "required": [
@@ -323,13 +325,15 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "format": "date"
           },
           "valid_to": {
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "format": "date"
           },
           "evidence_url": {
             "type": "string",
@@ -405,13 +409,15 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "format": "date"
           },
           "valid_to": {
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "format": "date"
           },
           "review": {
             "type": "object",
