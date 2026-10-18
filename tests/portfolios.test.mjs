@@ -108,7 +108,7 @@ test('instrument identity map is bound to the exact admitted inputs and exact-ma
  const identity=JSON.parse(await readFile(new URL('../data/instrument-equivalence.json',import.meta.url)));
  assert.deepEqual(validateEquivalence(identity,inputs),[]);
  const reimported=structuredClone(inputs);reimported[0].raw+=' ';assert.match(validateEquivalence(identity,reimported).join(' '),/stale for berkshire/);
- const instrument=new Map(inputs.flatMap(({input})=>input.positions.map(p=>[p.reportedSecurityId,{portfolioId:input.portfolioId,securityClass:p.securityClass}])));
+ const instrument=new Map(inputs.flatMap(({input})=>input.positions.filter(p=>p.shareViewEligible).map(p=>[p.reportedSecurityId,{portfolioId:input.portfolioId,securityClass:p.securityClass}])));
  const swapped=structuredClone(identity),other=[...instrument].find(([id,i])=>i.portfolioId===instrument.get(swapped.groups[0][1]).portfolioId&&i.securityClass!==instrument.get(swapped.groups[0][0]).securityClass&&!identity.groups.flat().includes(id));
  swapped.groups[0][1]=other[0];assert.match(validateEquivalence(swapped,inputs).join(' '),/Class\/type\/option mismatch in group 1/);
  const sameFiler=structuredClone(identity);sameFiler.groups[0]=[sameFiler.groups[0][0],sameFiler.groups[1][0]];assert.match(validateEquivalence(sameFiler,inputs).join(' '),/Same-filer merge in group 1|repeated/);
