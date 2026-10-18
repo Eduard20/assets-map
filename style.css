@@ -73,8 +73,8 @@
   .app-shell{height:100dvh;height:100svh;display:flex;flex-direction:column;max-width:none}
   @supports(height:100dvh){.app-shell{height:100dvh}}
   .topbar{flex:0 0 auto;min-height:0;height:auto;padding:calc(5px + env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) 6px max(12px,env(safe-area-inset-left));display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;border-bottom-color:#dce5df}
-  .brand{font-size:19px;min-width:0;height:40px;gap:8px}.brand img{width:26px;height:26px}.brand small,.top-about{display:none!important}
-  .topbar .search-box{grid-column:1/-1;order:initial;min-width:0;width:100%;max-width:none;height:44px;margin:0;flex:none}
+  .brand{font-size:19px;min-width:0;height:40px;gap:8px;grid-column:1;grid-row:1}#mobile-options{grid-column:2;grid-row:1}.brand img{width:26px;height:26px}.brand small,.top-about{display:none!important}
+  .topbar .search-box{grid-column:1/-1;grid-row:2;order:initial;min-width:0;width:100%;max-width:none;height:44px;margin:0;flex:none}
   .search-box input{font-size:16px}.search-box kbd{display:none}.search-results{max-height:45dvh;z-index:45}
   .search-results button{min-height:48px}.search-results strong{font-size:14px}.search-results small{font-size:12px}
   .mobile-only{display:flex}.mobile-action{align-items:center;justify-content:center;min-width:66px;min-height:44px;padding:10px 14px;border:1px solid #d8e3da;border-radius:9px;background:#edf3ed;font-size:14px;font-weight:600}

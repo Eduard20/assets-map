@@ -382,6 +382,9 @@ try {
 
   assert.deepEqual(errors, [], 'Browser JavaScript errors');
   console.log('Browser smoke passed: real default 3D, keyboard/touch selection, drag suppression, camera controls, responsive layouts, no-WebGL fallback, and async view switching.');
+} catch(error) {
+  let index=0;for(const context of browser?.contexts()||[])for(const page of context.pages())await page.screenshot({path:`artifacts/failure-${index++}.png`,fullPage:true}).catch(()=>{});
+  throw error;
 } finally {
   await browser?.close();
   server.kill();
