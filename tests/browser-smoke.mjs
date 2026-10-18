@@ -156,6 +156,13 @@ try {
   for (const width of [320, 390, 768]) {
     await ensureNoOverflow(page, width);
     await expectReal3D(page);
+    assert.equal(await page.evaluate(() => {
+      const controls = document.querySelector('.zoom-tools').getBoundingClientRect();
+      return [...document.querySelectorAll('#graph-3d button[data-node-id]')].every(button => {
+        const label = button.getBoundingClientRect();
+        return label.right <= controls.left || label.left >= controls.right || label.bottom <= controls.top || label.top >= controls.bottom;
+      });
+    }), true, `Bubble names must not be covered by map controls at ${width}px`);
     await page.screenshot({path: `artifacts/3d-${width}.png`, fullPage: true});
   }
   await page.setViewportSize({width: 390, height: 844});
