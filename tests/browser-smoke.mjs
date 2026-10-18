@@ -336,6 +336,9 @@ try {
   assert.notEqual(await touchPage.locator('.viewport').getAttribute('transform'),beforePinch,'2D pinch changes zoom');
   await touchPage.locator('#fit-map').tap();
   await touchPage.screenshot({path:'artifacts/network-phone-2d.png',fullPage:true});
+  await touchPage.setViewportSize({width:844,height:390});await touchPage.waitForTimeout(150);
+  await touchPage.screenshot({path:'artifacts/network-phone-2d-landscape.png',fullPage:true});
+  await touchPage.setViewportSize({width:390,height:844});
   await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,42);
   await touchPage.locator('#mobile-options').tap();
   await touchPage.locator('#dataset').selectOption('sample');

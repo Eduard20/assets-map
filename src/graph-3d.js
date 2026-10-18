@@ -116,10 +116,12 @@ export class Graph3D {
     this.state = state;
     if(!graph.network||this.focusedId!==state.rootId)this.focusedId=null;
     const portrait = this.container.clientWidth < 600;
-    const key = JSON.stringify([portrait, Boolean(graph.network), graph.network ? null : state.rootId, graph.nodes.map(n=>n.id), graph.edges.map(e=>e.id)]);
+    const landscape=this.container.clientWidth>=600&&this.container.clientHeight<380&&this.container.clientWidth/this.container.clientHeight>2.2;
+    const key = JSON.stringify([portrait, landscape, Boolean(graph.network), graph.network ? null : state.rootId, graph.nodes.map(n=>n.id), graph.edges.map(e=>e.id)]);
     if (key !== this.graphKey) {
       this.graphKey = key;
       this.portrait = portrait;
+      this.landscape = landscape;
       this.build();
       if (this.active) this.fit();
     }
@@ -148,6 +150,11 @@ export class Graph3D {
   build() {
     this.clear();
     const positions = layoutBubbles(this.graph, this.state.rootId, this.portrait);
+    // A phone rotated sideways needs a wide constellation, not a square
+    // layout shrunk into the middle of a shallow viewing area.
+    if(this.landscape&&this.graph.network){
+      for(const point of positions.values()){point.x*=2.8;point.y*=.6;point.z*=.6;}
+    }
     this.positions = positions;
     const managers = new Set(networkManagerIds(this.graph));
     for (const edge of this.graph.edges) {
@@ -256,7 +263,8 @@ export class Graph3D {
     this.renderer.setSize(width, height, false);
     this.camera.aspect = width/height;
     this.camera.updateProjectionMatrix();
-    if (this.graph && (width < 600) !== this.portrait) this.update(this.graph, this.state);
+    const landscape=width>=600&&height<380&&width/height>2.2;
+    if (this.graph && ((width < 600) !== this.portrait || (widthChanged&&landscape!==this.landscape))) this.update(this.graph, this.state);
     // Mobile browser chrome changes height as it expands/collapses. Preserve
     // the user's orbit, pan and zoom instead of unexpectedly fitting again.
     if (this.graph && (firstSize || (widthChanged && wasPortrait===this.portrait))) this.fit();
@@ -292,15 +300,20 @@ export class Graph3D {
     const entries=new Map(this.nodeEntries.map(entry=>[entry.node.id,entry]));
     const priority=prioritizeNetworkLabels(this.graph,{...this.state,hoveredId:this.hoveredId,keyboardId:this.keyboardId});
     const boxes=[];
-    const maxLabels=this.portrait?6:12;
-    const labelWidth=this.portrait?110:144,labelHeight=this.portrait?58:64;
-    const margin=8,top=45,bottom=85;
+    const short=this.height<380;
+    const maxLabels=short?(this.landscape?5:4):this.portrait?6:12;
+    const labelWidth=short?(this.landscape?132:110):this.portrait?110:144,labelHeight=short?44:this.portrait?58:64;
+    const margin=8,top=short?28:45,bottom=short?8:85;
     const intersects=box=>boxes.some(other=>box.left<other.right+5&&box.right>other.left-5&&box.top<other.bottom+5&&box.bottom>other.top-5);
+    const coversControl=box=>short&&box.bottom>this.height-68&&(box.left<118||box.right>this.width-152);
     for(const id of priority){
       const entry=entries.get(id),point=projected.get(id);
       // Focus/blur can fire while a changed graph is rebuilding its buttons.
       if(!entry)continue;
       const button=entry.button;
+      button.style.width=`${labelWidth}px`;
+      button.firstElementChild.style.webkitLineClamp=short&&this.landscape?'1':'2';
+      button.lastElementChild.hidden=short;
       const important=entry.manager||id===this.state.rootId||id===this.keyboardId||id===this.hoveredId;
       let box;
       const onScreen=point&&point.x>=0&&point.x<=this.width&&point.y>=0&&point.y<=this.height;
@@ -311,7 +324,7 @@ export class Graph3D {
           const left=Math.max(margin,Math.min(this.width-labelWidth-margin,point.x-labelWidth/2+dx));
           const y=Math.max(top,Math.min(this.height-bottom-labelHeight,point.y+dy));
           const candidate={left,right:left+labelWidth,top:y,bottom:y+labelHeight};
-          if(!intersects(candidate)){box=candidate;break;}
+          if(!intersects(candidate)&&!coversControl(candidate)){box=candidate;break;}
         }
       }
       // Clipping, rather than display:none or aria-hidden, retains a native
@@ -380,12 +393,13 @@ export class Graph3D {
     this.camera.lookAt(target);this.camera.updateMatrixWorld();
     const inverse=this.camera.quaternion.clone().invert();
     const tan=Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2));
-    const horizontal=Math.max(.35,1-(this.portrait?100:160)/this.width);
-    const vertical=Math.max(.3,1-160/this.height);
+    const short=this.height<380;
+    const horizontal=Math.max(.35,1-(short?52:this.portrait?100:160)/this.width);
+    const vertical=Math.max(.3,1-(short?78:160)/this.height);
     let distance=280;
     for(const [id,position] of this.positions){
       const point=vector(position).sub(target).applyQuaternion(inverse);
-      const radius=bubbleRadius(id,this.state.rootId)+10;
+      const radius=short?10:bubbleRadius(id,this.state.rootId)+10;
       distance=Math.max(distance,point.z+(Math.abs(point.x)+radius)/(tan*this.camera.aspect*horizontal),point.z+(Math.abs(point.y)+radius)/(tan*vertical));
     }
     // Bounds grow with the retained graph, including the 200-node ceiling.

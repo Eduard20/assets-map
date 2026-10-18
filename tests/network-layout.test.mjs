@@ -132,3 +132,41 @@ test('3D label render tolerates focus events during graph button rebuild',()=>{
   Object.assign(renderer,{graph:network(42),state:{rootId:'manager-a'},nodeEntries:[],portrait:false,width:900,height:600});
   assert.doesNotThrow(()=>renderer.renderNetworkLabels(new Map()));
 });
+
+test('short phone canvases use their available area instead of shrinking the network into a tiny center',()=>{
+  const previousDocument=globalThis.document;
+  globalThis.document=new JSDOM('<div></div>').window.document;
+  try{
+    for(const [width,height] of [[828,223],[304,294]]){
+      const renderer=Object.create(Graph3D.prototype);
+      Object.assign(renderer,{
+        graph:network(42),state:{rootId:'manager-a',selectedId:'manager-a'},
+        portrait:width<600,landscape:width>=600,width,height,group:new THREE.Group(),
+        labels:document.createElement('div'),container:{hidden:false},
+        camera:new THREE.PerspectiveCamera(42,width/height,.1,3000),
+        controls:{target:new THREE.Vector3(),update(){},enableDamping:true},
+        renderer:{render(){}},onSelect(){},onEdgeSelect(){}
+      });
+      renderer.camera.position.set(0,12,440);renderer.build();renderer.fit();
+      const projected=[...renderer.positions.values()].map(p=>new THREE.Vector3(p.x,p.y,p.z).project(renderer.camera));
+      assert.ok(projected.every(p=>Math.abs(p.x)<1&&Math.abs(p.y)<1),'all surrounding nodes stay in view');
+      const spanY=(Math.max(...projected.map(p=>p.y))-Math.min(...projected.map(p=>p.y)))*height/2;
+      assert.ok(spanY>height*.48,`short canvas uses at least half its height (${spanY}px)`);
+      if(renderer.landscape){
+        const spanX=(Math.max(...projected.map(p=>p.x))-Math.min(...projected.map(p=>p.x)))*width/2;
+        assert.ok(spanX>width*.45,`landscape geometry uses the available width (${spanX}px)`);
+      }
+      assert.ok(renderer.nodeEntries.filter(entry=>entry.manager).every(entry=>entry.button.dataset.labelVisible==='true'));
+      for(const entry of renderer.nodeEntries.filter(entry=>entry.button.dataset.labelVisible==='true')){
+        const [x,y]=entry.button.style.transform.match(/-?\d+(?:\.\d+)?/g).map(Number);
+        const labelWidth=parseFloat(entry.button.style.width);
+        assert.ok(x>=0&&x+labelWidth<=width&&y>=0&&y+44<=height);
+        assert.ok(y+44<=height-68||(x>=118&&x+labelWidth<=width-152),'visible labels avoid the bottom-corner controls');
+        assert.equal(entry.button.lastElementChild.hidden,true,'short views use compact labels');
+      }
+      const positions=new Map([...renderer.positions].map(([id,p])=>[id,{...p}]));
+      renderer.focus('instrument-005');assert.deepEqual(renderer.positions,positions,'focus does not reflow the network');
+      renderer.clear();
+    }
+  }finally{globalThis.document=previousDocument;}
+});

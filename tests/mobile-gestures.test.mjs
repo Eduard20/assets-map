@@ -131,3 +131,9 @@ test('2D nearest-point picking preserves the explicit expansion action',()=>{
   pointer('pointerdown',218,300,1,node.firstElementChild);pointer('pointerup',218,300,1);
   assert.deepEqual(expanded,['alpha']);assert.deepEqual(selected,[]);
 });
+
+test('3D landscape browser-chrome height changes preserve the chosen camera and geometry',()=>{
+  const graph=Object.create(Graph3D.prototype);let fits=0,builds=0;
+  Object.assign(graph,{container:{clientWidth:828,clientHeight:280},width:828,height:223,portrait:false,landscape:true,graph:{},camera:new THREE.PerspectiveCamera(),renderer:{setSize(){}},fit(){fits++},render(){},update(){builds++}});
+  graph.resize();assert.equal(fits,0);assert.equal(builds,0);assert.equal(graph.height,280);
+});
