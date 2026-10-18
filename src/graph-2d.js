@@ -82,7 +82,31 @@ export class Graph2D {
     if(this.svg.hasPointerCapture?.(e.pointerId))this.svg.releasePointerCapture(e.pointerId);
     this.tap=null;
     this.resetGesture();
-    if(select)this.activate(tap.target);
+    if(select){
+      // Larger invisible touch targets can overlap in dense overviews. Pick
+      // the nearest actual point, not whichever node was painted last.
+      // An explicit expansion control keeps its distinct action.
+      const expand=tap.target.closest('[data-expand]');
+      const nodeId=expand?null:this.pickNodeAt(e.clientX,e.clientY);
+      if(nodeId)this.onSelect(nodeId);else this.activate(tap.target);
+    }
+  }
+  pickNodeAt(clientX,clientY,radius=22){
+    if(!this.positions||!this.bounds)return null;
+    const matrix=this.svg.getScreenCTM?.();
+    const rect=this.svg.getBoundingClientRect();
+    const scale=Math.min(rect.width/this.bounds.width,rect.height/this.bounds.height)||1;
+    let closest=null,distance=radius*radius;
+    for(const [id,point] of this.positions){
+      const x=point.x*this.zoom+this.pan.x,y=point.y*this.zoom+this.pan.y;
+      const screen=matrix?{x:matrix.a*x+matrix.c*y+matrix.e,y:matrix.b*x+matrix.d*y+matrix.f}:{
+        x:rect.left+(rect.width-this.bounds.width*scale)/2+(x-this.bounds.x)*scale,
+        y:rect.top+(rect.height-this.bounds.height*scale)/2+(y-this.bounds.y)*scale
+      };
+      const candidate=(screen.x-clientX)**2+(screen.y-clientY)**2;
+      if(candidate<=distance){closest=id;distance=candidate;}
+    }
+    return closest;
   }
 
   update(graph,state,model) {

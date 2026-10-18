@@ -101,3 +101,33 @@ test('3D height-only resizing preserves the camera instead of resetting mobile z
   graph.resize();assert.equal(fits,0);assert.equal(graph.height,640);
   graph.container.clientWidth=480;graph.resize();assert.equal(fits,1);
 });
+
+
+test('2D overlapping touch targets select the nearest dot, not the topmost node',()=>{
+  const{graph,dom,pointer,selected}=graph2d();
+  graph.positions=new Map([['alpha',{x:0,y:0}],['beta',{x:19.5,y:0}]]);
+  const beta=document.createElementNS('http://www.w3.org/2000/svg','g');
+  beta.dataset.node='beta';beta.innerHTML='<circle class="node-hit" r="22"/>';
+  graph.layer.append(beta);
+  // Beta is painted on top and its 22px hit circle covers Alpha's center.
+  pointer('pointerdown',200,300,1,beta);pointer('pointerup',200,300,1);
+  assert.deepEqual(selected,['alpha']);
+  pointer('pointerdown',218,300,1,beta);pointer('pointerup',218,300,1);
+  assert.deepEqual(selected,['alpha','beta']);
+  graph.pan={x:30,y:-20};graph.zoom=2;
+  assert.equal(graph.pickNodeAt(230,280),'alpha');
+  assert.equal(graph.pickNodeAt(269,280),'beta');
+  assert.equal(graph.pickNodeAt(230,305),null);
+  // Keyboard activation intentionally uses the focused node, not geometry.
+  beta.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));
+  assert.equal(selected.at(-1),'beta');
+});
+
+test('2D nearest-point picking preserves the explicit expansion action',()=>{
+  const{graph,pointer,node,selected}=graph2d();
+  const expanded=[];graph.onExpand=id=>expanded.push(id);
+  graph.positions=new Map([['alpha',{x:0,y:0}],['beta',{x:19.5,y:0}]]);
+  node.innerHTML='<g data-expand="alpha"><circle r="11"/></g>';
+  pointer('pointerdown',218,300,1,node.firstElementChild);pointer('pointerup',218,300,1);
+  assert.deepEqual(expanded,['alpha']);assert.deepEqual(selected,[]);
+});

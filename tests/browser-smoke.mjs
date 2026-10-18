@@ -77,6 +77,12 @@ try {
   await page.goto(origin);
   await page.waitForFunction(() => window.__assetsMap?.getState());
   await expectReal3D(page,42);
+  await page.screenshot({path:'artifacts/initial-network-desktop.png',fullPage:true});
+  for(const viewport of [{width:320,height:568},{width:390,height:844},{width:844,height:390}]){
+    await page.setViewportSize(viewport);await page.waitForTimeout(150);
+    await page.screenshot({path:`artifacts/initial-network-${viewport.width}x${viewport.height}.png`,fullPage:true});
+  }
+  await page.setViewportSize({width:1440,height:1000});
   assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),53460);
   assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),98);
@@ -115,6 +121,7 @@ try {
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),42);
     const issuerId=await page.evaluate(()=>window.__assetsMap.getModel().roleEdges.find(e=>e.role.manager==='berkshire-2026-06-30'&&e.role.securityClass==='CL B NEW').source);
+    if(view==='3d')await page.locator(`#graph-3d button[data-node-id="${issuerId}"]`).focus();
     await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"] .node-hit`).click();
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.some(e=>e.kind==='issuer_reporting_entity')));
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.filter(e=>e.source==='berkshire-2026-06-30').length)>=20);
