@@ -456,6 +456,8 @@ def normalize(manifest):
     rec.update({'activeSourceIds': active, 'allActiveSourceTotalsReconciled': True})
     if 'activeAccessions' in manifest:
         require(manifest['activeAccessions'] == [s.removeprefix('sec13f-') for s in active], 'Acquisition active-source ledger mismatch')
+    active_sources = [s for sid in active for s in sources if s['sourceId'] == sid]
+    omitted = {s['cover']['isConfidentialOmitted'] for s in active_sources}
     coverage = {
         'scope': 'Complete public information-table rows for this filer and reporting date, after observed amendments.',
         'meaning': 'Reported Section 13(f) investment discretion; not proof of legal ownership or a complete investment portfolio.',
@@ -467,12 +469,13 @@ def normalize(manifest):
         'securityIdentity': 'Opaque source-scoped IDs group only exact private reported identifier, trimmed class, quantity type and put/call within one source. No cross-filer entity matching, ticker mapping, or legal-issuer consolidation in this import.',
         'weightDenominator': 'If calculated, share-view weight = row reported USD value / sum of eligible share-view row values for this filer/date. It is neither ownership percentage nor percent of total AUM.',
         'valueScale': 'Current Form 13F schema X0202 values are whole USD, not thousands.',
-        'reportType': sources[-1]['cover']['reportType'],
-        'isConfidentialOmittedAsReported': sources[-1]['cover']['isConfidentialOmitted']
+        # Describe every active table, not just the latest filing: a NEW HOLDINGS amendment can
+        # differ in report type or omission flag from the original it is appended to.
+        'reportType': ' + '.join(dict.fromkeys(s['cover']['reportType'] for s in active_sources)),
+        'isConfidentialOmittedAsReported': next((flag for flag in ('true', 'false') if flag in omitted), None)
     }
     qualifications = []
-    reporting_managers = [m['name'] for s in sources if s['sourceId'] in active
-                          for m in s['cover']['otherReportingManagers']]
+    reporting_managers = [m['name'] for s in active_sources for m in s['cover']['otherReportingManagers']]
     if reporting_managers:
         qualifications.append('This combination report separately identifies ' + '; '.join(dict.fromkeys(reporting_managers))
                               + '. Their separately reported holdings are outside this information table; do not infer parent-level ownership or sum overlapping manager portfolios.')
