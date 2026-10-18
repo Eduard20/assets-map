@@ -1,10 +1,10 @@
 import * as THREE from '../vendor/three.module.min.js';
 import { OrbitControls } from '../vendor/OrbitControls.js';
-import { KIND_LABELS } from './graph-model.js';
+import { KIND_LABELS } from './graph-model.js?v=20261018-research1';
 import { layoutBubbles, bubbleRadius } from './bubble-layout.js';
 
 const vector = p => new THREE.Vector3(p.x, p.y, p.z);
-const COLORS = {managed_holding:'#8eb8e4', corporate_ownership:'#82ceb0', investment:'#d7b580', subsidiary:'#82ceb0'};
+const COLORS = {beneficial_ownership:'#ba9cdb', voting_authority:'#d7b580',managed_holding:'#8eb8e4', corporate_ownership:'#82ceb0', investment:'#d7b580', subsidiary:'#82ceb0'};
 export class Graph3D {
   constructor(container, {onSelect, onEdgeSelect, onUnavailable}) {
     this.container = container;

@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0.0",
+  "source_registry_version": "sources_verified_four_20261018_v1",
+  "sources": [
+    {
+      "source_id": "src_sec_apple_proxy2026",
+      "source_family": "SEC-ISSUER",
+      "publication_host": "www.sec.gov",
+      "allowed_url_prefixes": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "admitted_document_ids": [
+        "doc_apple_proxy2026"
+      ],
+      "allowed_predicates": [
+        "beneficial_ownership"
+      ],
+      "identifier_namespaces": [
+        "cik"
+      ],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-pilot-admission-review",
+        "checked_at": "2026-10-18",
+        "rationale": "Exact listed documents admitted only for selected historical claims after independent source/identity/semantic/correction review. No source-wide, latest/current or production collector admission."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/filergroup/announcements-old/new-rate-control-limits"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Satisfied only for already completed bounded official-page research and paced official metadata verification recorded in admission-ledger.json; no future or general collector permission."
+        },
+        "raw_retention": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Outside reviewed subset: no raw publisher text, artwork, raw filing copies or proprietary identifier values."
+        },
+        "internal_extraction": {
+          "status": "allowed",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Selected public factual fields from exact SEC-hosted filings; reuse policy independently checked."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Only official CIK/accession and independently reviewed issuer/class labels. No proprietary security identifier values or third-party mapping database."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "SEC policy supports this minimized factual historical subset with source links and qualifications. Source rights clearance is separate from exact-bundle maintainer publication authorization."
+        },
+        "raw_redistribution": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Outside reviewed subset: no raw publisher text, artwork, raw filing copies or proprietary identifier values."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Exact SEC URL, accession, locator, source claimant and report/filing dates retained. No SEC verification or endorsement implied."
+        },
+        "commercial_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Broader commercial product use not reviewed; this release is noncommercial research."
+        }
+      },
+      "cadence": "Source-specific historical filing observations; no refresh job or universal latest-data claim.",
+      "limitations": [
+        "Exact admitted documents and four historical claims only.",
+        "No current holdings, complete portfolio/AUM, ownership/control strengthening or duplicate exposure.",
+        "No raw files, proprietary instrument identifiers, artwork or private contact details.",
+        "SEC hosts filer statements and has not necessarily reviewed them for accuracy.",
+        "Metadata inventory proof and source-specific cutoff timestamps are in admission-ledger.json."
+      ]
+    },
+    {
+      "source_id": "src_sec_vga13f2026q2",
+      "source_family": "SEC-13F",
+      "publication_host": "www.sec.gov",
+      "allowed_url_prefixes": [
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml",
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+      ],
+      "admitted_document_ids": [
+        "doc_vga13f2026q2_cover",
+        "doc_vga13f2026q2_table"
+      ],
+      "allowed_predicates": [
+        "managed_holding",
+        "voting_authority"
+      ],
+      "identifier_namespaces": [
+        "cik"
+      ],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-pilot-admission-review",
+        "checked_at": "2026-10-18",
+        "rationale": "Exact listed documents admitted only for selected historical claims after independent source/identity/semantic/correction review. No source-wide, latest/current or production collector admission."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/filergroup/announcements-old/new-rate-control-limits"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Satisfied only for already completed bounded official-page research and paced official metadata verification recorded in admission-ledger.json; no future or general collector permission."
+        },
+        "raw_retention": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Outside reviewed subset: no raw publisher text, artwork, raw filing copies or proprietary identifier values."
+        },
+        "internal_extraction": {
+          "status": "allowed",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Selected public factual fields from exact SEC-hosted filings; reuse policy independently checked."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Only official CIK/accession and independently reviewed issuer/class labels. No proprietary security identifier values or third-party mapping database."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "SEC policy supports this minimized factual historical subset with source links and qualifications. Source rights clearance is separate from exact-bundle maintainer publication authorization."
+        },
+        "raw_redistribution": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Outside reviewed subset: no raw publisher text, artwork, raw filing copies or proprietary identifier values."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Exact SEC URL, accession, locator, source claimant and report/filing dates retained. No SEC verification or endorsement implied."
+        },
+        "commercial_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "independent-pilot-admission-review",
+          "rationale": "Broader commercial product use not reviewed; this release is noncommercial research."
+        }
+      },
+      "cadence": "Source-specific historical filing observations; no refresh job or universal latest-data claim.",
+      "limitations": [
+        "Exact admitted documents and four historical claims only.",
+        "No current holdings, complete portfolio/AUM, ownership/control strengthening or duplicate exposure.",
+        "No raw files, proprietary instrument identifiers, artwork or private contact details.",
+        "SEC hosts filer statements and has not necessarily reviewed them for accuracy.",
+        "Metadata inventory proof and source-specific cutoff timestamps are in admission-ledger.json."
+      ]
+    }
+  ]
+}

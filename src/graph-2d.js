@@ -1,4 +1,4 @@
-import {escapeHtml, RELATIONSHIPS, KIND_LABELS, layoutGraph, relatedEdges} from './graph-model.js';
+import {escapeHtml, RELATIONSHIPS, KIND_LABELS, layoutGraph, relatedEdges} from './graph-model.js?v=20261018-research1';
 const NS = 'http://www.w3.org/2000/svg';
 export class Graph2D {
   constructor(container, { onSelect, onEdgeSelect, onExpand }) {

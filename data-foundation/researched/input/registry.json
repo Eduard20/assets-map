@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "registry_verified_four_20261018_v1",
+  "entities": [
+    {
+      "entity_id": "ent_apple",
+      "entity_type": "legal_entity",
+      "legal_name": "Apple Inc.",
+      "aliases": [],
+      "identifiers": [
+        {
+          "namespace": "cik",
+          "value": "320193",
+          "scope": "SEC filer/issuer role shown by cited official document; not a security identifier",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/0001308179-26-000008-index.htm"
+        }
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/0001308179-26-000008-index.htm"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    },
+    {
+      "entity_id": "ent_vanguard_global_advisers",
+      "entity_type": "legal_entity",
+      "legal_name": "Vanguard Global Advisers, LLC",
+      "aliases": [],
+      "identifiers": [
+        {
+          "namespace": "cik",
+          "value": "1811242",
+          "scope": "SEC filer/issuer role shown by cited official document; not a security identifier",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/0001811242-26-000015-index.html"
+        }
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/0001811242-26-000015-index.html"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    },
+    {
+      "entity_id": "ent_tim_cook_public_disclosure",
+      "entity_type": "person",
+      "legal_name": "Tim Cook",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    },
+    {
+      "entity_id": "ent_apple_management_group20260102",
+      "entity_type": "reported_group",
+      "legal_name": "Apple current directors and executive officers (12 persons, 2026-01-02)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    }
+  ],
+  "securities": [
+    {
+      "security_id": "sec_apple_common",
+      "issuer_id": "ent_apple",
+      "instrument_kind": "common_equity",
+      "share_class": "common",
+      "label": "Apple Inc. common stock",
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm",
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    }
+  ],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_apple_proxy_named_holders2026",
+      "version": "1",
+      "reporting_entity_id": "ent_tim_cook_public_disclosure",
+      "basis": "beneficial_attribution",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Issuer proxy beneficial ownership; reviewed historical as-filed scope only. ",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_apple_proxy_management_group2026",
+      "version": "1",
+      "reporting_entity_id": "ent_apple_management_group20260102",
+      "basis": "beneficial_attribution",
+      "included_entity_ids": [
+        "ent_tim_cook_public_disclosure"
+      ],
+      "excluded_entity_ids": [],
+      "definition": "Issuer proxy beneficial ownership including near-term vesting rights; reviewed historical as-filed scope only. ",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_vga_13f2026q2",
+      "version": "1",
+      "reporting_entity_id": "ent_vanguard_global_advisers",
+      "basis": "reported_discretion",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "SEC Form 13F reported investment discretion and voting-authority scope. This does not establish proprietary/client ownership allocation or the whole Vanguard family. Included-manager count zero does not prove unrelated positions.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml",
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_apple_class20260102",
+      "version": "1",
+      "reporting_entity_id": "ent_apple",
+      "basis": "unknown",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Apple common class shares outstanding on January 2, 2026; denominator perimeter only.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-pilot-admission-review",
+        "reviewed_at": "2026-10-18T10:49:13.177508Z",
+        "rationale": "Accepted only for the exact dated selected source scope: Apple’s 2026 proxy, pages 81–82, and/or Vanguard Global Advisers Form 13F accession 0001811242-26-000015. Exact source names/classes and official CIK evidence were inspected. No brand merge, direct title, whole-portfolio coverage or continuing validity is inferred."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

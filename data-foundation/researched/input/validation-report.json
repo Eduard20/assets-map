@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "maintainer_four_release_20261018_v1",
+  "reviewer": "coordinating-maintainer (root), based on independent-pilot-admission-review",
+  "reviewer_role": "maintainer",
+  "publication_status": "approved",
+  "results": [
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_apple_proxy_cook",
+      "claim_id": "clm_7c295901b686c006588dcc30",
+      "claim_revision_id": "clmrev_f19503d7133d17a31411059e",
+      "status": "accepted",
+      "reasons": [],
+      "warnings": [],
+      "review_rationale": "Apple proxy pages 81–82 identify the dated Cook/trust beneficial disclosure at January 2, 2026: 3,280,295 shares. The source’s <1% remains a strict bound with a null point value. Source-family correction discovery is complete at the recorded retrieval. Overlap with the management group is retained."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_apple_proxy_management_group",
+      "claim_id": "clm_1e87b607733a21bdf7ed97ee",
+      "claim_revision_id": "clmrev_e28d15576fdca7b7224109c6",
+      "status": "accepted",
+      "reasons": [],
+      "warnings": [],
+      "review_rationale": "Apple proxy pages 81–82 identify the twelve-person reported group at January 2, 2026: 9,079,765 shares, including 8,643 near-term RSUs. The source’s <1% remains a strict bound. This is a reported group, not a legal entity; Cook is included, so their quantities cannot be added. Source-family correction discovery is complete at the recorded retrieval."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_vga_managed_apple2026q2",
+      "claim_id": "clm_73009c6592d93b218d69777a",
+      "claim_revision_id": "clmrev_284fb1cb5bb1103855085ca3",
+      "status": "accepted",
+      "reasons": [],
+      "warnings": [],
+      "review_rationale": "The exact Vanguard Global Advisers CIK 1811242 report for June 30, 2026 and its unique APPLE INC / COM row were verified: 31,661,076 shares and USD 9,161,448,952, with value multiplier 1. This is reported investment discretion, not corporate ownership, AUM or the whole Vanguard group. The complete public filer inventory contains no Q2 amendment at the recorded retrieval."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_vga_voting_apple2026q2",
+      "claim_id": "clm_d416510ab763fce28d1097f1",
+      "claim_revision_id": "clmrev_6c9312bcd628e37fe1763db8",
+      "status": "accepted",
+      "reasons": [],
+      "warnings": [],
+      "review_rationale": "The same selected Vanguard Global Advisers row reports 31,661,076 sole voting shares under Form 13F conventions. This is a separate role on the same position, not additional exposure or an unqualified legal-vote or control claim. The complete public filer inventory contains no Q2 amendment at the recorded retrieval."
+    }
+  ],
+  "gaps": [
+    {
+      "gap_id": "gap_manager_fund_overlap",
+      "category": "overlap",
+      "description": "Exact manager-to-fund attribution. not_collected. No unsupported manager/fund link created. Genuine included-person overlap and same-position relation overlap are tested instead.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_other_historical_candidates_excluded",
+      "category": "amendment",
+      "description": "The three institutional 13G-dependent candidates are excluded from this four-claim release. Their amendment, identity and perimeter review is separate and has not been admitted by this review. They are not zero holdings.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_private_equity",
+      "category": "private_stake",
+      "description": "Private-company cap tables. not_researched. Not selected in this seven-claim pilot. No private cap-table or zero-ownership assertion.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_restricted_sources",
+      "category": "rights",
+      "description": "NBIM website, marketplace and non-SEC sovereign channels. not_admitted. Rights/channel review pending in source registry; no facts extracted or republished from those channels.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_uncollected_slices",
+      "category": "coverage",
+      "description": "State Street, fund, sovereign, direct-government and other-holder examples. not_collected_scope_limit. Kept a materially smaller pilot. No inference that official data is unavailable; no source admission or live ingestion for omitted slices.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_vanguard_reconciliation",
+      "category": "scope_transition",
+      "description": "Historical parent versus current affiliates. unknown. Realignment source does not reconcile VGA with historical parent or identify a full non-overlapping brand perimeter. No sale, zero, family total or replacement time series inferred.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    }
+  ],
+  "counts": {
+    "active_claims": 4,
+    "retained_revisions": 4,
+    "quarantined": 0,
+    "duplicates": 0
+  },
+  "limitations": [
+    "Historical, disclosed evidence only; no current-completeness, full-AUM or control inference.",
+    "Shadow projection is not connected to the live UI."
+  ]
+}

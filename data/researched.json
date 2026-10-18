@@ -1,0 +1,371 @@
+{
+  "edges": [
+    {
+      "asOf": "2026-06-30",
+      "disclosure": {
+        "caveats": [
+          "Vanguard Global Advisers, LLC is the reporting affiliate. This is not the whole Vanguard group.",
+          "Form 13F reports shared-defined investment discretion (DFND). It does not establish the split between client assets and proprietary assets.",
+          "The voting disclosure describes another role on this same position. Do not add it as another holding."
+        ],
+        "checkedThrough": "2026-10-18",
+        "claimId": "clm_73009c6592d93b218d69777a",
+        "claimRevisionId": "clmrev_284fb1cb5bb1103855085ca3",
+        "coverage": [
+          {
+            "captured_source_rows": 1,
+            "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+            "expected_source_rows": 3638,
+            "status": "partial",
+            "whole_portfolio_coverage": null
+          }
+        ],
+        "evidence": [
+          {
+            "locator": "Header columns 1, 2, 4–8; unique APPLE INC / COM row, web rendering line 2879; identity column deliberately omitted",
+            "published_at": "2026-08-13",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-13F",
+            "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+          },
+          {
+            "locator": "Report period; institutional manager; report type; summary and included-manager list",
+            "published_at": "2026-08-13",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-13F",
+            "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml"
+          }
+        ],
+        "metrics": [
+          {
+            "denominator": null,
+            "metric_type": "quantity",
+            "reason": null,
+            "unit": "shares",
+            "valuation_date": null,
+            "value": "31661076"
+          },
+          {
+            "denominator": null,
+            "metric_type": "reported_value",
+            "reason": null,
+            "unit": "USD",
+            "valuation_date": "2026-06-30",
+            "value": "9161448952"
+          }
+        ],
+        "perimeter": {
+          "basis": "reported_discretion",
+          "definition": "SEC Form 13F reported investment discretion and voting-authority scope. This does not establish proprietary/client ownership allocation or the whole Vanguard family. Included-manager count zero does not prove unrelated positions."
+        },
+        "securityLabel": "Apple Inc. common stock"
+      },
+      "id": "clmrev_284fb1cb5bb1103855085ca3",
+      "kind": "managed_holding",
+      "source": "ent_vanguard_global_advisers",
+      "sourceIds": [
+        "doc_vga13f2026q2_table",
+        "doc_vga13f2026q2_cover"
+      ],
+      "stakePercent": null,
+      "target": "ent_apple",
+      "valueUsd": null
+    },
+    {
+      "asOf": "2026-06-30",
+      "disclosure": {
+        "caveats": [
+          "Form 13F reports sole voting authority under its non-routine-matter convention; shared-defined relationships may be reported as sole.",
+          "Legal ownership of votes and corporate control are not established.",
+          "This is the same position as the managed-discretion disclosure, not an additional holding."
+        ],
+        "checkedThrough": "2026-10-18",
+        "claimId": "clm_d416510ab763fce28d1097f1",
+        "claimRevisionId": "clmrev_6c9312bcd628e37fe1763db8",
+        "coverage": [
+          {
+            "captured_source_rows": 1,
+            "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+            "expected_source_rows": 3638,
+            "status": "partial",
+            "whole_portfolio_coverage": null
+          }
+        ],
+        "evidence": [
+          {
+            "locator": "Header columns 1, 2, 4–8; unique APPLE INC / COM row, web rendering line 2879; identity column deliberately omitted",
+            "published_at": "2026-08-13",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-13F",
+            "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+          },
+          {
+            "locator": "Report period; institutional manager; report type; summary and included-manager list",
+            "published_at": "2026-08-13",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-13F",
+            "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml"
+          }
+        ],
+        "metrics": [
+          {
+            "denominator": null,
+            "metric_type": "quantity",
+            "reason": null,
+            "unit": "shares",
+            "valuation_date": null,
+            "value": "31661076"
+          }
+        ],
+        "perimeter": {
+          "basis": "reported_discretion",
+          "definition": "SEC Form 13F reported investment discretion and voting-authority scope. This does not establish proprietary/client ownership allocation or the whole Vanguard family. Included-manager count zero does not prove unrelated positions."
+        },
+        "securityLabel": "Apple Inc. common stock"
+      },
+      "id": "clmrev_6c9312bcd628e37fe1763db8",
+      "kind": "voting_authority",
+      "source": "ent_vanguard_global_advisers",
+      "sourceIds": [
+        "doc_vga13f2026q2_table",
+        "doc_vga13f2026q2_cover"
+      ],
+      "stakePercent": null,
+      "target": "ent_apple",
+      "valueUsd": null
+    },
+    {
+      "asOf": "2026-01-02",
+      "disclosure": {
+        "caveats": [
+          "A reported group of 12 directors and executive officers as of 2 January 2026; it is not a separate legal owner.",
+          "The group includes Tim Cook and 8,643 shares subject to near-term restricted-stock-unit vesting. Do not add its row to his."
+        ],
+        "checkedThrough": "2026-10-18",
+        "claimId": "clm_1e87b607733a21bdf7ed97ee",
+        "claimRevisionId": "clmrev_e28d15576fdca7b7224109c6",
+        "coverage": [
+          {
+            "captured_source_rows": 1,
+            "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+            "expected_source_rows": null,
+            "status": "partial",
+            "whole_portfolio_coverage": null
+          }
+        ],
+        "evidence": [
+          {
+            "locator": "Printed page 81: ownership-section introduction, table header, footnote 1; page 82 asterisk legend",
+            "published_at": "2026-01-08",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-ISSUER",
+            "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+          },
+          {
+            "locator": "Printed page 10 nominee table, Tim Cook CEO row; page 81 Tim Cook holding row; page 82 footnote 6 and asterisk legend",
+            "published_at": "2026-01-08",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-ISSUER",
+            "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+          },
+          {
+            "locator": "Printed page 81 final group row; page 82 footnote 17 and asterisk legend",
+            "published_at": "2026-01-08",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-ISSUER",
+            "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+          }
+        ],
+        "metrics": [
+          {
+            "denominator": {
+              "as_of_date": "2026-01-02",
+              "definition": "Apple common shares outstanding at January 2, 2026",
+              "unit": "shares",
+              "value": "14697926000"
+            },
+            "metric_type": "beneficial_percentage",
+            "reason": "Source states <1%; no exact numeric point value. Preserve strict upper bound in claim qualifiers and evidence.",
+            "unit": "percent",
+            "valuation_date": null,
+            "value": null
+          },
+          {
+            "denominator": null,
+            "metric_type": "quantity",
+            "reason": null,
+            "unit": "shares",
+            "valuation_date": null,
+            "value": "9079765"
+          }
+        ],
+        "perimeter": {
+          "basis": "beneficial_attribution",
+          "definition": "Issuer proxy beneficial ownership including near-term vesting rights; reviewed historical as-filed scope only. "
+        },
+        "securityLabel": "Apple Inc. common stock"
+      },
+      "id": "clmrev_e28d15576fdca7b7224109c6",
+      "kind": "beneficial_ownership",
+      "source": "ent_apple_management_group20260102",
+      "sourceIds": [
+        "doc_apple_proxy2026"
+      ],
+      "stakePercent": null,
+      "target": "ent_apple",
+      "valueUsd": null
+    },
+    {
+      "asOf": "2026-01-02",
+      "disclosure": {
+        "caveats": [
+          "Shares are beneficially attributed to Tim Cook and held in an unnamed trust; direct individual legal title is not established.",
+          "This disclosure is included in the management-group row. Do not add the two rows."
+        ],
+        "checkedThrough": "2026-10-18",
+        "claimId": "clm_7c295901b686c006588dcc30",
+        "claimRevisionId": "clmrev_f19503d7133d17a31411059e",
+        "coverage": [
+          {
+            "captured_source_rows": 1,
+            "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+            "expected_source_rows": null,
+            "status": "partial",
+            "whole_portfolio_coverage": null
+          }
+        ],
+        "evidence": [
+          {
+            "locator": "Printed page 81: ownership-section introduction, table header, footnote 1; page 82 asterisk legend",
+            "published_at": "2026-01-08",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-ISSUER",
+            "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+          },
+          {
+            "locator": "Printed page 10 nominee table, Tim Cook CEO row; page 81 Tim Cook holding row; page 82 footnote 6 and asterisk legend",
+            "published_at": "2026-01-08",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "title": "SEC-ISSUER",
+            "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+          }
+        ],
+        "metrics": [
+          {
+            "denominator": {
+              "as_of_date": "2026-01-02",
+              "definition": "Apple common shares outstanding at January 2, 2026",
+              "unit": "shares",
+              "value": "14697926000"
+            },
+            "metric_type": "beneficial_percentage",
+            "reason": "Source states <1%; no exact numeric point value. Preserve strict upper bound in claim qualifiers and evidence.",
+            "unit": "percent",
+            "valuation_date": null,
+            "value": null
+          },
+          {
+            "denominator": null,
+            "metric_type": "quantity",
+            "reason": null,
+            "unit": "shares",
+            "valuation_date": null,
+            "value": "3280295"
+          }
+        ],
+        "perimeter": {
+          "basis": "beneficial_attribution",
+          "definition": "Issuer proxy beneficial ownership; reviewed historical as-filed scope only. "
+        },
+        "securityLabel": "Apple Inc. common stock"
+      },
+      "id": "clmrev_f19503d7133d17a31411059e",
+      "kind": "beneficial_ownership",
+      "source": "ent_tim_cook_public_disclosure",
+      "sourceIds": [
+        "doc_apple_proxy2026"
+      ],
+      "stakePercent": null,
+      "target": "ent_apple",
+      "valueUsd": null
+    }
+  ],
+  "meta": {
+    "coverage": "Four independently reviewed historical disclosures about Apple common stock: two overlapping beneficial-attribution rows dated 2 January 2026 and two roles on one Vanguard Global Advisers position dated 30 June 2026. Three other pilot candidates remain excluded.",
+    "defaultRoot": "ent_apple",
+    "mode": "researched",
+    "notes": [
+      "This is not a current ownership map, complete shareholder register, whole portfolio or AUM.",
+      "Do not sum overlapping rows or different roles, dates and reporting perimeters.",
+      "No exact beneficial percentage or equity stake is inferred from a less-than-one-percent bound."
+    ],
+    "publicationStatus": "approved",
+    "releaseId": "release_040b6e0b16662ccde9061f8f",
+    "reviewId": "maintainer_four_release_20261018_v1",
+    "updatedAt": "2026-10-18"
+  },
+  "nodes": [
+    {
+      "id": "ent_apple",
+      "kind": "company",
+      "label": "Apple Inc.",
+      "sourceIds": [
+        "doc_vga13f2026q2_table",
+        "doc_vga13f2026q2_cover",
+        "doc_apple_proxy2026"
+      ],
+      "summary": "Selected historical disclosures about Apple common stock. Four role-specific claims from two reporting snapshots; this is not a current shareholder register."
+    },
+    {
+      "id": "ent_vanguard_global_advisers",
+      "kind": "manager",
+      "label": "Vanguard Global Advisers, LLC",
+      "sourceIds": [
+        "doc_vga13f2026q2_table",
+        "doc_vga13f2026q2_cover"
+      ],
+      "summary": "The specific reporting affiliate in a June 2026 Form 13F snapshot. The whole Vanguard group and its AUM are not represented."
+    },
+    {
+      "id": "ent_tim_cook_public_disclosure",
+      "kind": "person",
+      "label": "Tim Cook",
+      "sourceIds": [
+        "doc_apple_proxy2026"
+      ],
+      "summary": "A named individual in Apple’s January 2026 proxy beneficial ownership disclosure."
+    },
+    {
+      "id": "ent_apple_management_group20260102",
+      "kind": "reported_group",
+      "label": "Apple current directors and executive officers (12 persons, 2026-01-02)",
+      "sourceIds": [
+        "doc_apple_proxy2026"
+      ],
+      "summary": "The proxy’s 12-person management group as of January 2026. Includes Tim Cook; the two disclosures overlap."
+    }
+  ],
+  "sources": [
+    {
+      "id": "doc_apple_proxy2026",
+      "publishedAt": "2026-01-08",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "title": "SEC-ISSUER",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+    },
+    {
+      "id": "doc_vga13f2026q2_cover",
+      "publishedAt": "2026-08-13",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "title": "SEC-13F",
+      "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml"
+    },
+    {
+      "id": "doc_vga13f2026q2_table",
+      "publishedAt": "2026-08-13",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "title": "SEC-13F",
+      "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+    }
+  ]
+}

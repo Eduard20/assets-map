@@ -1,0 +1,29 @@
+{
+  "decision_id": "maintainer_four_release_20261018_v1",
+  "bundle_id": "verified_four_historical_20261018_v1",
+  "authorized_by": "coordinating maintainer root",
+  "authorization_url": "https://github.com/Eduard20/assets-map/issues/1#issuecomment-6248926173",
+  "authorization_readback_verified": true,
+  "authorized_candidate_ids": [
+    "cand_apple_proxy_cook",
+    "cand_apple_proxy_management_group",
+    "cand_vga_managed_apple2026q2",
+    "cand_vga_voting_apple2026q2"
+  ],
+  "reviewed_input_sha256": {
+    "batch.json": "ac8a6e819f69e131280d2382ab737071824ba9a2eb3b2cfab0e77eed4cf7fa4a",
+    "registry.json": "7c288521448ad871ada72b385ceaeb5031cc1e983855b948c4ea5385c22c9779",
+    "sources.json": "4cac9225c55d4797a6e191756c02a85658bf0d4dc9c26223aa260aa5db685eaa",
+    "independent-review.json": "20a4fc372c4ac7d07c008468e64669e835fe75719c8b63c3f141b02c0f100cff",
+    "admission-ledger.json": "bd6691ac1c542d7a40d0687bc15c19b1fa77fd175f851e86b3f2218e1430692f"
+  },
+  "conditions": [
+    "Publish only the four independently accepted, dated and source-qualified historical claims.",
+    "All source, identity, amendment and rights gates must pass on these exact inputs.",
+    "UI and CI checks must pass before publication.",
+    "Preserve strict bounds, group/person overlap and separate managed/voting roles.",
+    "Do not imply current ownership, complete portfolios, AUM or additive exposure.",
+    "The remaining three candidates remain held; no broader collection or permission expansion."
+  ],
+  "recorded_at": "2026-10-18T10:50:41.945157Z"
+}

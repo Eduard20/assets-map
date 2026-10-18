@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "independent_four_admission_20261018_v1",
+  "registry_version": "registry_verified_four_20261018_v1",
+  "source_registry_version": "sources_verified_four_20261018_v1",
+  "reviewer": "independent-pilot-admission-review",
+  "reviewer_role": "agent_review",
+  "reviewed_at": "2026-10-18T10:49:13.177508Z",
+  "decisions": [
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_apple_proxy_cook",
+      "decision": "accepted_for_model",
+      "rationale": "Apple proxy pages 81–82 identify the dated Cook/trust beneficial disclosure at January 2, 2026: 3,280,295 shares. The source’s <1% remains a strict bound with a null point value. Source-family correction discovery is complete at the recorded retrieval. Overlap with the management group is retained."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_apple_proxy_management_group",
+      "decision": "accepted_for_model",
+      "rationale": "Apple proxy pages 81–82 identify the twelve-person reported group at January 2, 2026: 9,079,765 shares, including 8,643 near-term RSUs. The source’s <1% remains a strict bound. This is a reported group, not a legal entity; Cook is included, so their quantities cannot be added. Source-family correction discovery is complete at the recorded retrieval."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_vga_managed_apple2026q2",
+      "decision": "accepted_for_model",
+      "rationale": "The exact Vanguard Global Advisers CIK 1811242 report for June 30, 2026 and its unique APPLE INC / COM row were verified: 31,661,076 shares and USD 9,161,448,952, with value multiplier 1. This is reported investment discretion, not corporate ownership, AUM or the whole Vanguard group. The complete public filer inventory contains no Q2 amendment at the recorded retrieval."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "candidate_id": "cand_vga_voting_apple2026q2",
+      "decision": "accepted_for_model",
+      "rationale": "The same selected Vanguard Global Advisers row reports 31,661,076 sole voting shares under Form 13F conventions. This is a separate role on the same position, not additional exposure or an unqualified legal-vote or control claim. The complete public filer inventory contains no Q2 amendment at the recorded retrieval."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "document_id": "doc_apple_proxy2026",
+      "decision": "accepted_for_model",
+      "rationale": "Independent exact-family inventory review complete as observed 2026-10-18T10:40:28.169687+00:00; HTTP200 metadata response SHA256 aad00f6aa75ba1405e0a34c788bdba9042281b2724fe1db3ff26f434b9a92e44. See admission-ledger.json for complete-scope query, related-file classification and timestamp caveat. No current-holdings or remainder-of-day assertion."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "document_id": "doc_vga13f2026q2_cover",
+      "decision": "accepted_for_model",
+      "rationale": "Independent exact-family inventory review complete as observed 2026-10-18T10:40:24.088201+00:00; HTTP200 metadata response SHA256 0e461409d04c290b7eacbb68d748a961596c44c46322df5b8a70af800678e26a. See admission-ledger.json for complete-scope query, related-file classification and timestamp caveat. No current-holdings or remainder-of-day assertion."
+    },
+    {
+      "batch_id": "verified_four_historical_20261018_v1",
+      "document_id": "doc_vga13f2026q2_table",
+      "decision": "accepted_for_model",
+      "rationale": "Independent exact-family inventory review complete as observed 2026-10-18T10:40:24.088201+00:00; HTTP200 metadata response SHA256 0e461409d04c290b7eacbb68d748a961596c44c46322df5b8a70af800678e26a. See admission-ledger.json for complete-scope query, related-file classification and timestamp caveat. No current-holdings or remainder-of-day assertion."
+    }
+  ],
+  "publication": {
+    "status": "held",
+    "authorized_by": null,
+    "authorization_url": null,
+    "intended_use": "noncommercial_research"
+  }
+}
