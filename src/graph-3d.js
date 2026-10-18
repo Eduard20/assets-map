@@ -1,8 +1,8 @@
 import * as THREE from '../vendor/three.module.min.js';
 import { OrbitControls } from '../vendor/OrbitControls.js';
-import { KIND_LABELS } from './graph-model.js?v=20261018-mobile1';
-import { layoutBubbles, bubbleRadius } from './bubble-layout.js?v=20261018-mobile1';
-import { networkManagerIds, prioritizeNetworkLabels } from './shared-network-layout.js?v=20261018-mobile1';
+import { KIND_LABELS } from './graph-model.js?v=20261018-data2';
+import { layoutBubbles, bubbleRadius } from './bubble-layout.js?v=20261018-data2';
+import { networkManagerIds, prioritizeNetworkLabels } from './shared-network-layout.js?v=20261018-data2';
 
 const vector = p => new THREE.Vector3(p.x, p.y, p.z);
 const COLORS = {issuer_reporting_entity:'#d7b580',beneficial_ownership:'#ba9cdb', voting_authority:'#d7b580',managed_holding:'#8eb8e4', corporate_ownership:'#82ceb0', investment:'#d7b580', subsidiary:'#82ceb0'};

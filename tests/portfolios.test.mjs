@@ -1,17 +1,78 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import {readFile,readdir} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
 import {exportPortfolios,validatePortfolio,projectPortfolio} from '../scripts/export-portfolios.mjs';
 import {decodePortfolio,portfolioModel,holdingsPage,portfolioInstrumentDetails} from '../src/portfolio-view.js';
 import {buildVisibleGraph,initialState} from '../src/graph-model.js';
 const manifest=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url)));
 const load=async p=>decodePortfolio(p,JSON.parse(await readFile(new URL('../data/'+p.dataFile,import.meta.url))));
-test('all three admitted complete filings reproduce exact public compact data',async()=>{
- const result=await exportPortfolios({check:true});assert.equal(result.portfolios,3);assert.equal(result.positions,53460);assert.ok(result.bytes<4500000);
- assert.equal(manifest.portfolios.reduce((n,p)=>n+p.reconciliation.reportedRowCount,0),54318);
- const expected={'berkshire-2026-06-30':[89,'299253556246',29],'blackrock-2026-06-30':[49286,'6706454577631',5442],'statestreet-2026-06-30':[4085,'3378870771423',4085]};
- for(const p of manifest.portfolios){const rows=(await load(p)).positions;assert.equal(rows.length,expected[p.portfolioId][0]);assert.equal(rows.reduce((n,r)=>n+BigInt(r.valueUsd),0n).toString(),expected[p.portfolioId][1]);assert.equal(new Set(rows.map(r=>r.reportedSecurityId)).size,expected[p.portfolioId][2]);assert.ok(!JSON.stringify(p).match(/cusip|figi|acceptedAt|api_key|raw_content/i));}
+const expected={
+ 'berkshire-2026-06-30':{reported:89,total:'299253556246',shares:89,shareValue:'299253556246',instruments:29},
+ 'blackrock-2026-06-30':{reported:49968,total:'6729538649155',shares:49286,shareValue:'6706454577631',instruments:5442},
+ 'statestreet-2026-06-30':{reported:4261,total:'3383260349220',shares:4085,shareValue:'3378870771423',instruments:4085},
+ 'geode-2026-06-30':{reported:8470,total:'1875315674155',shares:8455,shareValue:'1875165705077',instruments:4438},
+ 'jpmorgan-2026-06-30':{reported:34064,total:'1807041234839',shares:32666,shareValue:'1710607027032',instruments:6541},
+ 'morganstanley-2026-06-30':{reported:45905,total:'1890805575974',shares:45409,shareValue:'1889856060810',instruments:8170},
+ 'goldmansachs-2026-06-30':{reported:14070,total:'1151631766592',shares:12904,shareValue:'953071672750',instruments:5471},
+ 'norgesbank-2026-06-30':{reported:1617,total:'1003234964718',shares:1616,shareValue:'1003234702801',instruments:1616}
+};
+test('all eight admitted complete filings reproduce exact public compact data',async()=>{
+ const result=await exportPortfolios({check:true});assert.equal(result.portfolios,8);assert.equal(result.positions,154510);assert.ok(result.bytes<13000000);
+ assert.deepEqual(manifest.portfolios.map(p=>p.portfolioId).sort(),Object.keys(expected).sort());
+ assert.equal(manifest.portfolios.reduce((n,p)=>n+p.reconciliation.reportedRowCount,0),158444);
+ assert.equal(manifest.portfolios.reduce((n,p)=>n+p.reconciliation.excludedRowCount,0),3934);
+ for(const p of manifest.portfolios){
+  const rows=(await load(p)).positions,want=expected[p.portfolioId],r=p.reconciliation;
+  assert.equal(p.reportingDate,'2026-06-30');assert.equal(p.checkedThrough,'2026-10-18');
+  assert.equal(r.reportedRowCount,want.reported);assert.equal(r.totalValueUsd,want.total);
+  assert.equal(rows.length,want.shares);assert.equal(r.shareRowCount,want.shares);assert.equal(r.shareValueUsd,want.shareValue);
+  assert.equal(rows.reduce((n,row)=>n+BigInt(row.valueUsd),0n).toString(),want.shareValue);
+  assert.equal(new Set(rows.map(row=>row.reportedSecurityId)).size,want.instruments);assert.equal(r.shareReportedSecurityCount,want.instruments);
+  assert.equal(r.excludedRowCount,want.reported-want.shares);
+  assert.equal(r.excludedValueUsd,(BigInt(want.total)-BigInt(want.shareValue)).toString());
+  assert.ok(!JSON.stringify(p).match(/cusip|figi|acceptedAt|api_key|raw_content/i));
+ }
+});
+test('every exported row remains identical to its admitted source row across all eight filers',async()=>{
+ for(const p of manifest.portfolios){
+  const slug=p.portfolioId.replace('-2026-06-30',''),base=new URL('../data-foundation/portfolios/input/',import.meta.url);
+  const raw=gunzipSync(await readFile(new URL(slug+'.normalized.json.gz',base))).toString('utf8');
+  const input=JSON.parse(raw),review=JSON.parse(await readFile(new URL(slug+'.review.json',base)));
+  assert.deepEqual(validatePortfolio(input),{errors:[],quarantine:[]});
+  assert.equal(input.positions.length,expected[p.portfolioId].reported);
+  assert.doesNotMatch(raw, /"(?:cusip|rawCUSIP|hashedCUSIP|securityIdentifier|figi|coverPath|submissionsPath)"/i);
+  const exported=(await load(p)).positions,admitted=input.positions.filter(row=>row.shareViewEligible);
+  assert.equal(exported.length,admitted.length);
+  for(let i=0;i<exported.length;i++)for(const [field,value] of Object.entries(exported[i]))assert.deepEqual(value,admitted[i][field],`${p.portfolioId} row ${admitted[i].rowOrdinal} ${field}`);
+  assert.deepEqual(projectPortfolio(input,review,raw).summary,p);
+  if(input.importedBy)assert.notEqual(review.reviewer,input.importedBy);
+ }
+});
+test('expanded identity release covers exactly eight filers and keeps unmatched instruments separate',async()=>{
+ const identity=JSON.parse(await readFile(new URL('../data/instrument-equivalence.json',import.meta.url)));
+ assert.equal(identity.groups.length,5651);assert.equal(identity.coverage.matchedGroups,5651);
+ assert.equal(identity.coverage.eligibleSourceRows,154510);
+ assert.equal(identity.coverage.eligibleSourceScopedInstruments,35792);
+ assert.equal(identity.coverage.matchedSourceScopedInstruments,20953);
+ assert.equal(identity.coverage.unmatchedSourceScopedInstruments,14839);
+ assert.equal(identity.groups.length+identity.coverage.unmatchedSourceScopedInstruments,20490);
+ assert.deepEqual([...identity.coverage.portfolioIds].sort(),Object.keys(expected).sort());
+ const memberships=identity.groups.flatMap(group=>Array.isArray(group)?group:group.members);
+ assert.equal(memberships.length,20953);assert.equal(new Set(memberships).size,memberships.length);
+ assert.ok(memberships.every(id=>/^sec13f-\d{10}-\d{2}-\d{6}-security-\d{5,}$/.test(id)));
+});
+test('FMR remains withheld and material source qualifications survive public projection',async()=>{
+ for(const directory of ['../data/','../data-foundation/portfolios/input/'])assert.ok(!(await readdir(new URL(directory,import.meta.url))).some(file=>/^fmr(?:-|\.)/.test(file)));
+ assert.ok(!manifest.portfolios.some(p=>p.filer.cik==='315066'));
+ const morgan=manifest.portfolios.find(p=>p.portfolioId==='morganstanley-2026-06-30');
+ assert.match(morgan.coverage,/13F COMBINATION REPORT/);
+ assert.match(morgan.coverage,/Morgan Stanley Institutional Investment Advisors LLC/);
+ assert.match(morgan.coverage,/separately reported holdings are outside this information table/);
+ assert.ok(morgan.dataQuality.warnings.some(w=>w.type==='unresolved_manager_reference'&&w.rowCount===110));
+ const norges=manifest.portfolios.find(p=>p.portfolioId==='norgesbank-2026-06-30');
+ assert.match(norges.coverage,/Collateral received through secured lending and borrowing/);
+ assert.match(norges.coverage,/unless reinvested/);assert.match(norges.coverage,/not reflected in our 13F reporting/);
 });
 test('source-scoped instrument graph preserves every row, exact totals and bounded progressive view',async()=>{
  const p=await load(manifest.portfolios.find(p=>p.portfolioId.startsWith('blackrock'))),model=portfolioModel(p),state=initialState(model);

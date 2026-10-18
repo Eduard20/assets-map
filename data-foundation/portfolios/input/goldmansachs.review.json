@@ -1,0 +1,39 @@
+{
+  "decision": "approved",
+  "inputSha256": "641d3c57eddbdd50d25753af15cfd5825ee10be2331c3725ea96432852a1a2be",
+  "reviewer": "independent-source-audit",
+  "reviewedAt": "2026-10-18",
+  "checks": {
+    "sourceIdentity": true,
+    "amendmentDiscovery": true,
+    "rowCount": true,
+    "valueTotal": true,
+    "sharePartition": true,
+    "spotChecks": true,
+    "publicRights": true
+  },
+  "reviewScope": "Independent ElementTree parsing and exact comparison of every normalized row and retained field to acquired SEC XML; independently recomputed totals, eligible share partition, manager references and no-conflation source-scoped groups. Fresh official SEC cover bytes matched; fresh SEC submissions histories independently checked accession, reporting quarter and absence of same-quarter amendments. No claim of manual human review of each row.",
+  "constraints": [
+    "Historical reported Section 13(f) positions as of 2026-06-30 observed through 2026-10-18; not current holdings, legal ownership, complete portfolio or total AUM.",
+    "Share-view weights use only eligible reported share-value denominator for this filer/date, whole USD without thousands scaling.",
+    "Retain all original source rows, class, row identity, quantities and manager references; no deduplication or multiplication by manager count.",
+    "No cross-filer unique economic exposure, ownership or AUM aggregate; investment discretion can overlap.",
+    "Publish minimal factual normalized fields and links only, no raw CUSIP/FIGI or hashes derived from those identifiers, nor raw XML.",
+    "Share view includes funds, depositary receipts, preferred shares and units, not common stock only.",
+    "Use verified filingDate and reportingDate; acceptedAt was not separately verified against SEC filing index."
+  ],
+  "counts": {
+    "reportedRowCount": 14070,
+    "recomputedValueTotalUsd": "1151631766592",
+    "shareRowCount": 12904,
+    "shareValueUsd": "953071672750",
+    "excludedRowCount": 1166,
+    "shareReportedSecurityCount": 5471
+  },
+  "sourceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/886982/000088698226000519/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/886982/000088698226000519/InfoTable_2026-08-13_Final_1.xml",
+    "https://data.sec.gov/submissions/CIK0000886982.json"
+  ],
+  "publicRightsScope": "Bounded minimal factual research/navigation admission consistent with existing public-data scope. No raw proprietary identifiers or document republication; not blanket commercial licensing clearance or legal opinion."
+}

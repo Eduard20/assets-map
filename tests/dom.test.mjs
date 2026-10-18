@@ -14,7 +14,7 @@ const dom = new JSDOM(html, {url: 'http://localhost/'});
 Object.assign(globalThis, {
   window: dom.window,
   document: dom.window.document,
-  fetch: async url => ({ok: true, json: async () => String(url).includes('instrument-equivalence.json') ? identity : String(url).includes('researched.json') ? researched : String(url).includes('portfolios.json') ? portfolios : portfolioData.get(String(url).split('/').pop()) || data})
+  fetch: async url => ({ok: true, json: async () => String(url).includes('instrument-equivalence.json') ? identity : String(url).includes('researched.json') ? researched : String(url).includes('portfolios.json') ? portfolios : portfolioData.get(new URL(String(url)).pathname.split('/').pop()) || data})
 });
 // jsdom has no WebGL. Make that explicit instead of depending on its noisy
 // "not implemented" canvas exception to exercise the fallback.
@@ -35,14 +35,14 @@ await waitFor(() => window.__assetsMap && window.__assetsMap.getState()?.view ==
 
 assert.equal(window.__assetsMap.getModel().meta.mode,'portfolios');
 assert.ok(window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount>40000);
-assert.equal(window.__assetsMap.getGraph().nodes.length,42);
-assert.equal(window.__assetsMap.getGraph().edges.length,98);
+assert.equal(window.__assetsMap.getGraph().nodes.length,93);
+assert.equal(window.__assetsMap.getGraph().edges.length,269);
 assert.ok(document.querySelectorAll('.connection-card').length<=24);
 $('#holdings-search').value='apple';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
 assert.ok(document.querySelectorAll('.holding-row').length>0&&document.querySelectorAll('.holding-row').length<=50);
 const beforeFocus=window.__assetsMap.getGraph().nodes.map(n=>n.id);
-click('.holding-row');assert.match($('#detail-panel').textContent,/3 REPORTED INVESTORS/);
-assert.equal(window.__assetsMap.getState().rootId,'shared-instrument-264');
+click('.holding-row');assert.match($('#detail-panel').textContent,/6 REPORTED INVESTORS/);
+assert.equal(window.__assetsMap.getState().rootId,'shared-instrument-282');
 assert.deepEqual(window.__assetsMap.getGraph().nodes.map(n=>n.id).sort(),beforeFocus.sort());
 assert.equal($('#focus-back').hidden,false);
 const focusedViewBox=$('#graph-2d svg').getAttribute('viewBox');

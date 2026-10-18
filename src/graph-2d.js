@@ -1,5 +1,5 @@
-import {escapeHtml, RELATIONSHIPS, KIND_LABELS, layoutGraph, relatedEdges} from './graph-model.js?v=20261018-mobile1';
-import {layoutSharedNetwork, networkManagerIds, prioritizeNetworkLabels} from './shared-network-layout.js?v=20261018-mobile1';
+import {escapeHtml, RELATIONSHIPS, KIND_LABELS, layoutGraph, relatedEdges} from './graph-model.js?v=20261018-data2';
+import {layoutSharedNetwork, networkManagerIds, prioritizeNetworkLabels} from './shared-network-layout.js?v=20261018-data2';
 const NS = 'http://www.w3.org/2000/svg';
 export class Graph2D {
   constructor(container, { onSelect, onEdgeSelect, onExpand }) {
