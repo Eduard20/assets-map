@@ -172,6 +172,8 @@ try {
 
   const cameraState = () => page.evaluate(() => window.__assetsMap.getCameraState());
   const cameraDistance = state => Math.hypot(...state.position.map((value, index) => value - state.target[index]));
+  await page.locator('#fit-map').click();
+  await page.waitForTimeout(300);
   const fitted = await cameraState();
   assert.ok(fitted?.position?.length === 3 && fitted?.target?.length === 3, 'Expose camera state to verify real controls');
   await page.locator('#zoom-in').click();
@@ -298,6 +300,21 @@ try {
   const afterOrbit=await touchPage.evaluate(()=>window.__assetsMap.getCameraState());
   assert.ok(afterOrbit.position.some((n,i)=>Math.abs(n-beforeOrbit.position[i])>1),'touch drag starting on a label rotates the 3D network');
   assert.equal(await selectedId(touchPage),beforeGestureId,'drag does not select a node');
+  const canvasBox=await touchPage.locator('#graph-3d canvas').boundingBox();
+  const px=canvasBox.x+canvasBox.width/2,py=canvasBox.y+canvasBox.height/2;
+  const distanceBefore=cameraDistance(await touchPage.evaluate(()=>window.__assetsMap.getCameraState()));
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:px-35,y:py,id:1},{x:px+35,y:py,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:px-70,y:py,id:1},{x:px+70,y:py,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  const distanceAfter=cameraDistance(await touchPage.evaluate(()=>window.__assetsMap.getCameraState()));
+  assert.ok(distanceAfter<distanceBefore-1,'two fingers zoom the 3D network');
+  assert.equal(await selectedId(touchPage),beforeGestureId,'3D pinch is not a selection');
+  await touchPage.locator('#fit-map').tap();
+  const touchCount=await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length);
+  await touchPage.locator('#graph-3d button[data-node-id="blackrock-2026-06-30"]').tap();
+  assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>touchCount,'phone tap expands the manager network');
+  await touchPage.locator('#focus-back').tap();
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length),touchCount,'phone Back restores network context');
   await touchPage.locator('[data-view="2d"]').tap();await expectView(touchPage,'2d');
   const svg=touchPage.locator('#graph-2d svg'),nodeHit=touchPage.locator('.graph-node .node-hit').first();
   const nodeBox=await nodeHit.boundingBox(),beforePan=await touchPage.locator('.viewport').getAttribute('transform');
