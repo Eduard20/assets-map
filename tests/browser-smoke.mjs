@@ -4,7 +4,7 @@ import {mkdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const server=spawn(process.execPath,['scripts/serve.mjs'],{env:{...process.env,PORT:'8088'},stdio:'pipe'});
 await new Promise((resolve,reject)=>{server.stdout.once('data',resolve);server.once('error',reject);});
-const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage','--enable-unsafe-swiftshader']});
+const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}),args:['--no-sandbox','--disable-dev-shm-usage','--enable-unsafe-swiftshader']});
 try{
   await mkdir('artifacts',{recursive:true});const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[];page.on('pageerror',error=>errors.push(error.message));await page.goto('http://127.0.0.1:8088/');await page.waitForFunction(()=>window.__assetsMap);
   assert.equal(await page.locator('.graph-node').count(),4);assert.ok((await page.locator('#detail-panel').textContent()).includes('Client assets under management'));

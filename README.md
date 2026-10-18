@@ -38,7 +38,7 @@ Open http://localhost:8080. The production app itself needs only a static HTTP s
     npm run check
     npm run test:browser
 
-The browser test expects Chromium at `/usr/bin/chromium`, or an executable path in `CHROMIUM_PATH`. Browser screenshots go to `artifacts/` (not versioned). Model and DOM tests run without a browser. `test:browser` checks desktop/mobile layouts, search, filtering, evidence, 3D availability and the fallback. A restricted host can prevent Chromium from starting; that is not a passing browser test.
+Install the test browser with `npx playwright install chromium`, or provide an existing executable path in `CHROMIUM_PATH`. Browser screenshots go to `artifacts/` (not versioned). Model and DOM tests run without a browser. `test:browser` checks desktop/mobile layouts, search, filtering, evidence, 3D availability and the fallback. A restricted host can prevent Chromium from starting; that is not a passing browser test.
 
 ## Deployment
 
