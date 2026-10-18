@@ -109,3 +109,11 @@ Three.js and OrbitControls: MIT, Copyright 2010–2026 Three.js Authors. See `ve
 See [portfolio import contract](docs/portfolio-import.md). Compressed normalized factual inputs preserve exact reviewed bytes without committing raw XML or proprietary security identifiers. Export checks bind independent complete-batch approval to the SHA-256 of each decompressed input. Each source row and retained field was mechanically reconciled to official XML, with live official spot checks and independent amendment discovery. This is not a claim of per-row human review.
 
 The public projection uses a small index, compact per-filer group/row arrays and an independently reviewed opaque instrument-equivalence mapping. The network loads all three portfolios together; their data files total about 4.18 MB before HTTP compression, plus about 371 KB for exact matches. The shared graph has a 200-node safety ceiling and progressive top-20/40/60-per-filer controls; List pages have at most 50 source rows. Dense 3D labels declutter while every node remains keyboard-accessible, with labels revealed on focus or hover. Invalid input rows are quarantined and withhold the complete batch rather than silently claiming full coverage.
+
+## Phone-first network navigation
+
+On phones the network fills the main screen. Filters and selected-entity details open in dismissible, keyboard-accessible sheets rather than pushing the graph down the page. The persistent selected-entity bar opens evidence and outgoing/incoming connections. Controls have 44-pixel touch targets, safe-area padding and 16-pixel search/select inputs.
+
+Both renderers use small luminous points, fine connections and selective labels on a dark canvas. Visible point size is not asset value; invisible touch targets remain larger. In 2D, drag anywhere to pan and pinch to zoom. In 3D, drag to rotate and use two fingers to zoom/pan, including gestures that start on labels. Dragging does not select a node. Fit, Back and Reset remain available. Browser chrome height changes do not reset the 3D camera. Reduced-motion preferences disable optional transitions.
+
+CI tests touch-emulated Chromium in 320px/390px portrait and 844px landscape, sheet controls, touch dragging over labels and nodes, pinch zoom, real WebGL and the 2D fallback. This is not certification on a physical iPhone/Safari.

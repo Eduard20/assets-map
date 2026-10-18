@@ -77,6 +77,12 @@ try {
   await page.goto(origin);
   await page.waitForFunction(() => window.__assetsMap?.getState());
   await expectReal3D(page,42);
+  await page.screenshot({path:'artifacts/initial-network-desktop.png',fullPage:true});
+  for(const viewport of [{width:320,height:568},{width:390,height:844},{width:844,height:390}]){
+    await page.setViewportSize(viewport);await page.waitForTimeout(150);
+    await page.screenshot({path:`artifacts/initial-network-${viewport.width}x${viewport.height}.png`,fullPage:true});
+  }
+  await page.setViewportSize({width:1440,height:1000});
   assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),53460);
   assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),98);
@@ -90,7 +96,7 @@ try {
   assert.equal(await page.locator('.investor-card').count(),3);
   await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),'blackrock-2026-06-30');
   await page.locator('[data-view="2d"]').click();await expectView(page,'2d');
-  await page.locator(`.graph-node[data-node="${appleId}"]`).click();
+  await page.locator(`.graph-node[data-node="${appleId}"] .node-hit`).click();
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
   assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
   await page.locator('#focus-back').click();await page.locator('[data-view="3d"]').click();
@@ -108,14 +114,15 @@ try {
   // A manager bubble opens more of its own network in both renderers.
   for(const view of ['3d','2d']){
     await page.locator(`[data-view="${view}"]`).click();await expectView(page,view);
-    const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"]';
+    const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"] .node-hit';
     await page.locator(managerSelector).click();
     const expanded=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expanded>42);
     await page.locator(managerSelector).click();assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),42);
     const issuerId=await page.evaluate(()=>window.__assetsMap.getModel().roleEdges.find(e=>e.role.manager==='berkshire-2026-06-30'&&e.role.securityClass==='CL B NEW').source);
-    await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"]`).click();
+    if(view==='3d')await page.locator(`#graph-3d button[data-node-id="${issuerId}"]`).focus();
+    await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"] .node-hit`).click();
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.some(e=>e.kind==='issuer_reporting_entity')));
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.filter(e=>e.source==='berkshire-2026-06-30').length)>=20);
     assert.match(await page.locator('#detail-panel').textContent(),/Outgoing investments/);
@@ -172,6 +179,8 @@ try {
 
   const cameraState = () => page.evaluate(() => window.__assetsMap.getCameraState());
   const cameraDistance = state => Math.hypot(...state.position.map((value, index) => value - state.target[index]));
+  await page.locator('#fit-map').click();
+  await page.waitForTimeout(300);
   const fitted = await cameraState();
   assert.ok(fitted?.position?.length === 3 && fitted?.target?.length === 3, 'Expose camera state to verify real controls');
   await page.locator('#zoom-in').click();
@@ -248,7 +257,8 @@ try {
   await expectView(page, '2d');
   await page.waitForFunction(() => document.querySelector('#graph-2d svg').viewBox.baseVal.width < 500);
   assert.equal(await page.locator('.graph-node').count(), 4);
-  await page.locator('#about-button').click();
+  await page.locator('#mobile-options').click();
+  await page.locator('#mobile-help').click();
   assert.equal(await page.locator('#info-dialog').isVisible(), true);
   await page.locator('#dialog-done').click();
 
@@ -258,6 +268,79 @@ try {
   watchErrors(touchPage);
   await touchPage.goto(origin);
   await touchPage.waitForFunction(()=>window.__assetsMap?.getState());
+  await expectReal3D(touchPage,42);
+  for(const viewport of [{width:320,height:568},{width:390,height:844},{width:844,height:390}]){
+    await touchPage.setViewportSize(viewport);
+    await touchPage.waitForTimeout(150);
+    const area=await touchPage.locator('#graph-stage').boundingBox();
+    assert.ok(area.height>=viewport.height*.42,'phone graph uses the main screen, not a sliver below controls');
+    assert.ok(area.y+area.height<=viewport.height,'graph fits on screen');
+    assert.equal(await touchPage.locator('#portfolio-controls').isVisible(),false);
+    assert.equal(await touchPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+    for(const selector of ['#mobile-options','#mobile-details','#zoom-in','#zoom-out','#fit-map','#reset-map','[data-view="2d"]']){
+      const target=await touchPage.locator(selector).boundingBox();assert.ok(target.width>=44&&target.height>=44,`${selector} has a finger-sized target`);
+    }
+    await touchPage.screenshot({path:`artifacts/network-phone-${viewport.width}x${viewport.height}.png`,fullPage:true});
+  }
+  await touchPage.setViewportSize({width:390,height:844});
+  await touchPage.locator('#mobile-options').tap();
+  assert.equal(await touchPage.locator('#mobile-controls').getAttribute('aria-modal'),'true');
+  await touchPage.locator('#top-n').selectOption('40');
+  await touchPage.locator('#close-mobile-controls').tap();
+  assert.equal(await touchPage.locator('#portfolio-controls').isVisible(),false);
+  await touchPage.locator('#mobile-details').tap();
+  assert.equal(await touchPage.locator('#detail-panel').isVisible(),true);
+  await touchPage.screenshot({path:'artifacts/network-phone-details.png',fullPage:true});
+  await touchPage.locator('#close-mobile-details').tap();
+  assert.equal(await touchPage.locator('#detail-panel').isVisible(),false);
+  const cdp=await touchContext.newCDPSession(touchPage);
+  const dragTouch=async(x,y,dx,dy)=>{
+    await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y,id:1}]});
+    for(let i=1;i<=5;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/5,y:y+dy*i/5,id:1}]});
+    await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  };
+  const touchLabelBox=await touchPage.locator('#graph-3d button[data-node-id="blackrock-2026-06-30"]').boundingBox();
+  const beforeOrbit=await touchPage.evaluate(()=>window.__assetsMap.getCameraState());
+  const beforeGestureId=await selectedId(touchPage);
+  await dragTouch(touchLabelBox.x+touchLabelBox.width/2,touchLabelBox.y+touchLabelBox.height/2,45,35);
+  await touchPage.waitForTimeout(120);
+  const afterOrbit=await touchPage.evaluate(()=>window.__assetsMap.getCameraState());
+  assert.ok(afterOrbit.position.some((n,i)=>Math.abs(n-beforeOrbit.position[i])>1),'touch drag starting on a label rotates the 3D network');
+  assert.equal(await selectedId(touchPage),beforeGestureId,'drag does not select a node');
+  const canvasBox=await touchPage.locator('#graph-3d canvas').boundingBox();
+  const px=canvasBox.x+canvasBox.width/2,py=canvasBox.y+canvasBox.height/2;
+  const distanceBefore=cameraDistance(await touchPage.evaluate(()=>window.__assetsMap.getCameraState()));
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:px-35,y:py,id:1},{x:px+35,y:py,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:px-70,y:py,id:1},{x:px+70,y:py,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  const distanceAfter=cameraDistance(await touchPage.evaluate(()=>window.__assetsMap.getCameraState()));
+  assert.ok(distanceAfter<distanceBefore-1,'two fingers zoom the 3D network');
+  assert.equal(await selectedId(touchPage),beforeGestureId,'3D pinch is not a selection');
+  await touchPage.locator('#fit-map').tap();
+  const touchCount=await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length);
+  await touchPage.locator('#graph-3d button[data-node-id="blackrock-2026-06-30"]').tap();
+  assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>touchCount,'phone tap expands the manager network');
+  await touchPage.locator('#focus-back').tap();
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length),touchCount,'phone Back restores network context');
+  await touchPage.locator('[data-view="2d"]').tap();await expectView(touchPage,'2d');
+  const svg=touchPage.locator('#graph-2d svg'),nodeHit=touchPage.locator('.graph-node .node-hit').first();
+  const nodeBox=await nodeHit.boundingBox(),beforePan=await touchPage.locator('.viewport').getAttribute('transform');
+  await dragTouch(nodeBox.x+nodeBox.width/2,nodeBox.y+nodeBox.height/2,40,25);
+  assert.notEqual(await touchPage.locator('.viewport').getAttribute('transform'),beforePan,'2D can pan starting on a node');
+  assert.equal(await selectedId(touchPage),beforeGestureId,'2D drag is not a tap');
+  const rect=await svg.boundingBox(),cx=rect.x+rect.width/2,cy=rect.y+rect.height/2;
+  const beforePinch=await touchPage.locator('.viewport').getAttribute('transform');
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:cx-30,y:cy,id:1},{x:cx+30,y:cy,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:cx-65,y:cy-10,id:1},{x:cx+65,y:cy+10,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  assert.notEqual(await touchPage.locator('.viewport').getAttribute('transform'),beforePinch,'2D pinch changes zoom');
+  await touchPage.locator('#fit-map').tap();
+  await touchPage.screenshot({path:'artifacts/network-phone-2d.png',fullPage:true});
+  await touchPage.setViewportSize({width:844,height:390});await touchPage.waitForTimeout(150);
+  await touchPage.screenshot({path:'artifacts/network-phone-2d-landscape.png',fullPage:true});
+  await touchPage.setViewportSize({width:390,height:844});
+  await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,42);
+  await touchPage.locator('#mobile-options').tap();
   await touchPage.locator('#dataset').selectOption('sample');
   await touchPage.waitForFunction(()=>window.__assetsMap.getState().rootId==='blackrock');
   await expectReal3D(touchPage);
@@ -326,6 +409,9 @@ try {
 
   assert.deepEqual(errors, [], 'Browser JavaScript errors');
   console.log('Browser smoke passed: real default 3D, keyboard/touch selection, drag suppression, camera controls, responsive layouts, no-WebGL fallback, and async view switching.');
+} catch(error) {
+  let index=0;for(const context of browser?.contexts()||[])for(const page of context.pages())await page.screenshot({path:`artifacts/failure-${index++}.png`,fullPage:true}).catch(()=>{});
+  throw error;
 } finally {
   await browser?.close();
   server.kill();
