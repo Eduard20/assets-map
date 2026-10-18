@@ -68,3 +68,5 @@ The shared network loads the eight portfolios and independently reviewed opaque 
 The initial overview uses top 20 instruments per filer, with top 40/60 controls and a **200-node ceiling**. Selecting a manager or instrument expands its actual available incoming/outgoing neighborhood in 20-connection pages, retaining context where space permits. Company-to-reporting-manager role links are explicit SEC-evidenced navigation, not holdings or issuer-class consolidation. List pages contain at most 50 source rows. Values do not size bubbles. Cross-filer values are never aggregated into unique exposure or ownership.
 
 Normalized inputs, admission files, documentation and quarantine are excluded by both the exact Pages artifact allowlist and legacy Jekyll `_config.yml` exclusions. Keep GitHub Actions as the supported Pages source.
+
+The export check also binds the instrument-equivalence map to each exact admitted input hash and active source, checks eligible membership/class/type/option and distinct filers, and recomputes coverage. Positional IDs cannot survive a changed re-import without rebuilding and independent review.

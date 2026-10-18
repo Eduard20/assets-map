@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,readdir} from 'node:fs/promises';
 import {gunzipSync} from 'node:zlib';
-import {exportPortfolios,validatePortfolio,projectPortfolio} from '../scripts/export-portfolios.mjs';
+import {exportPortfolios,validatePortfolio,projectPortfolio,validateEquivalence} from '../scripts/export-portfolios.mjs';
 import {decodePortfolio,portfolioModel,holdingsPage,portfolioInstrumentDetails} from '../src/portfolio-view.js';
 import {buildVisibleGraph,initialState} from '../src/graph-model.js';
 const manifest=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url)));
@@ -101,4 +101,16 @@ test('corrected equity-weight ETF is retained, SH-tagged note excluded, original
  const blackrock=await load(manifest.portfolios.find(p=>p.portfolioId.startsWith('blackrock')));assert.ok(blackrock.positions.some(p=>/EQ WT/.test(p.securityClass)));
  const state=await load(manifest.portfolios.find(p=>p.portfolioId.startsWith('statestreet')));assert.ok(!state.positions.some(p=>/^(NOTE|NOTES|DEB|DEBENTURE)\b/.test(p.securityClass)));assert.equal(state.positions.length,4085);assert.equal(new Set(state.positions.map(p=>p.sourceId)).size,1);
  assert.ok(manifest.portfolios.find(p=>p.portfolioId.startsWith('blackrock')).dataQuality.warnings.some(w=>w.type==='unresolved_manager_reference'));
+});
+
+test('instrument identity map is bound to the exact admitted inputs and exact-match rule',async()=>{
+ const inputs=await Promise.all(manifest.portfolios.map(p=>p.portfolioId.replace('-2026-06-30','')).map(async n=>{const raw=gunzipSync(await readFile(new URL(`../data-foundation/portfolios/input/${n}.normalized.json.gz`,import.meta.url))).toString();return {raw,input:JSON.parse(raw)};}));
+ const identity=JSON.parse(await readFile(new URL('../data/instrument-equivalence.json',import.meta.url)));
+ assert.deepEqual(validateEquivalence(identity,inputs),[]);
+ const reimported=structuredClone(inputs);reimported[0].raw+=' ';assert.match(validateEquivalence(identity,reimported).join(' '),/stale for berkshire/);
+ const instrument=new Map(inputs.flatMap(({input})=>input.positions.map(p=>[p.reportedSecurityId,{portfolioId:input.portfolioId,securityClass:p.securityClass}])));
+ const swapped=structuredClone(identity),other=[...instrument].find(([id,i])=>i.portfolioId===instrument.get(swapped.groups[0][1]).portfolioId&&i.securityClass!==instrument.get(swapped.groups[0][0]).securityClass&&!identity.groups.flat().includes(id));
+ swapped.groups[0][1]=other[0];assert.match(validateEquivalence(swapped,inputs).join(' '),/Class\/type\/option mismatch in group 1/);
+ const sameFiler=structuredClone(identity);sameFiler.groups[0]=[sameFiler.groups[0][0],sameFiler.groups[1][0]];assert.match(validateEquivalence(sameFiler,inputs).join(' '),/Same-filer merge in group 1|repeated/);
+ const counts=structuredClone(identity);counts.coverage.matchedGroups--;assert.match(validateEquivalence(counts,inputs).join(' '),/matchedGroups/);
 });
