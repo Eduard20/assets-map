@@ -126,3 +126,9 @@ test('3D camera fits the retained network and phone labels stay bounded with eve
     }
   }finally{globalThis.document=previousDocument;}
 });
+
+test('3D label render tolerates focus events during graph button rebuild',()=>{
+  const renderer=Object.create(Graph3D.prototype);
+  Object.assign(renderer,{graph:network(42),state:{rootId:'manager-a'},nodeEntries:[],portrait:false,width:900,height:600});
+  assert.doesNotThrow(()=>renderer.renderNetworkLabels(new Map()));
+});

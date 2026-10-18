@@ -1,4 +1,4 @@
-import {layoutSharedNetwork} from './shared-network-layout.js?v=20261018-network1';
+import {layoutSharedNetwork} from './shared-network-layout.js?v=20261018-network2';
 // Presentation-only geometry. Bubble size encodes focus, never monetary value.
 export function bubbleRadius(nodeId, rootId) { return nodeId === rootId ? 29 : 21; }
 export function layoutBubbles(graph, rootId, portrait = false) {

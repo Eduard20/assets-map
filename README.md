@@ -4,7 +4,7 @@ An evidence-first map of **53,460 real reported share-position rows** from Black
 
 ## Explore the map
 
-The default **Shared portfolio network** connects all three imported filers through verified matching instruments. It starts with 42 nodes and 98 reported holding links (top 20 securities per filer). Increase to top 40 or 60 per filer, filter the same network, or search all 53,460 source rows. Click any company/security in 2D, 3D or List to focus it and see its reported investors without dropping the surrounding network. Back restores the previous focus and search context.
+The default **Shared portfolio network** connects all three imported filers through verified matching instruments. It starts with 42 nodes and 98 reported holding links (top 20 securities per filer). Increase to top 40 or 60 per filer, filter the same network, or search all 53,460 source rows. Click any company/security or manager in 2D, 3D or List to reveal its available incoming and outgoing network, beyond the overview top-N. Clicking again opens the next 20 connections. The current neighborhood takes priority at the 200-node ceiling, while earlier context remains where space permits. Explicit SEC-evidenced issuer-role links let Berkshire, BlackRock and State Street shares open their reporting-manager portfolios without merging share classes or counting those links as holdings. Entities without imported investment portfolios say so explicitly. Back restores the previous focus and search context.
 
 - BlackRock: **49,286 share rows / 5,442 source-scoped instruments**, $6,706,454,577,631 reported share value.
 - Berkshire Hathaway: **89 share rows / 29 instruments**, $299,253,556,246.
