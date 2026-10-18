@@ -10,11 +10,12 @@ const researched = JSON.parse(await readFile(new URL('../data/researched.json', 
 const portfolios=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url),'utf8'));
 const portfolioData=new Map(await Promise.all(portfolios.portfolios.map(async p=>[p.dataFile,JSON.parse(await readFile(new URL('../data/'+p.dataFile,import.meta.url),'utf8'))])));
 const identity=JSON.parse(await readFile(new URL('../data/instrument-equivalence.json',import.meta.url),'utf8'));
+const requests = [];
 const dom = new JSDOM(html, {url: 'http://localhost/'});
 Object.assign(globalThis, {
   window: dom.window,
   document: dom.window.document,
-  fetch: async url => ({ok: true, json: async () => String(url).includes('instrument-equivalence.json') ? identity : String(url).includes('researched.json') ? researched : String(url).includes('portfolios.json') ? portfolios : portfolioData.get(String(url).split('/').pop()) || data})
+  fetch: async (url, options) => (requests.push([String(url), options]), {ok: true, json: async () => String(url).includes('instrument-equivalence.json') ? identity : String(url).includes('researched.json') ? researched : String(url).includes('portfolios.json') ? portfolios : portfolioData.get(String(url).split('/').pop()) || data})
 });
 // jsdom has no WebGL. Make that explicit instead of depending on its noisy
 // "not implemented" canvas exception to exercise the fallback.
@@ -87,6 +88,11 @@ function assertActiveView(view) {
   }
 }
 
+test('every data file is revalidated so one load never mixes deploys', () => {
+  const data = requests.filter(([url]) => url.includes('/data/'));
+  for (const file of ['portfolios.json', 'instrument-equivalence.json', 'researched.json', 'graph.json', ...portfolios.portfolios.map(p => p.dataFile)]) assert.ok(data.some(([url]) => url.endsWith('/data/' + file)), file);
+  assert.ok(data.every(([, options]) => options?.cache === 'no-cache'));
+});
 test('3D is the requested default, with an honest no-WebGL 2D fallback', () => {
   assert.equal(initialState(createModel(data)).view, '3d');
   assertActiveView('2d');

@@ -158,6 +158,9 @@ function bind(){
   $('#zoom-in').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(1.2):renderer2D.setZoom(renderer2D.zoom*1.2));$('#zoom-out').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(.8):renderer2D.setZoom(renderer2D.zoom*.8));$('#fit-map').addEventListener('click',()=>state.view==='3d'?renderer3D?.fit():renderer2D.fit());$('#reset-map').addEventListener('click',()=>{state=initialState(model);focusHistory=[];$('#direction').value='both';$('#top-n').value='20';holdingsQuery='';holdingsPageIndex=0;$('#holdings-search').value='';renderer2D.fit();render();setView('3d');renderer3D?.fit();});$('#root-button').addEventListener('click',()=>{closeMobilePanel();$('#search').focus();$('#search').value='';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');$('#search-results').innerHTML=model.nodes.filter(n=>['manager','sovereign'].includes(n.kind)||model.outgoingIds.has(n.id)).slice(0,8).map(n=>`<button type="button" data-search-node="${E(n.id)}"><span><strong>${E(n.label)}</strong><small>${E(KIND_LABELS[n.kind])}</small></span><span>↗</span></button>`).join('');});
   for(const id of ['about-button','coverage-button','methodology-button'])$(`#${id}`).addEventListener('click',showInfo);for(const id of ['close-dialog','dialog-done'])$(`#${id}`).addEventListener('click',()=>$('#info-dialog').close());$('#info-dialog').addEventListener('click',e=>{if(e.target===$('#info-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
 }
+// Revalidate every data file: the manifest, row files and identity map must come from one deploy,
+// and Pages' 10-minute cache can otherwise mix releases and fail the strict consistency checks.
+const fetchData=async(file,message)=>{const response=await fetch(new URL('../data/'+file,import.meta.url),{cache:'no-cache'});if(!response.ok)throw new Error(`${message} (${response.status})`);return response.json();};
 async function setDataset(name,portfolioId){
   if(!['portfolios','researched','sample'].includes(name))throw new Error('Unknown data view');
   closeMobilePanel();
@@ -165,12 +168,12 @@ async function setDataset(name,portfolioId){
   let next=datasets.get(name);
   if(name==='portfolios'&&!next){
     try{
-      if(!portfolioBundle){const response=await fetch(new URL('../data/portfolios.json',import.meta.url));if(!response.ok)throw new Error('Portfolio manifest unavailable');portfolioBundle=await response.json();}
-      const [portfolios,identity]=await Promise.all([Promise.all(portfolioBundle.portfolios.map(async summary=>{if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');const response=await fetch(new URL('../data/'+summary.dataFile,import.meta.url));if(!response.ok)throw new Error('Portfolio rows unavailable');return decodePortfolio(summary,await response.json());})),fetch(new URL('../data/instrument-equivalence.json',import.meta.url)).then(async response=>{if(!response.ok)throw new Error('Instrument identity map unavailable');return response.json();})]);
+      if(!portfolioBundle)portfolioBundle=await fetchData('portfolios.json','Portfolio manifest unavailable');
+      const [portfolios,identity]=await Promise.all([Promise.all(portfolioBundle.portfolios.map(async summary=>{if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');return decodePortfolio(summary,await fetchData(summary.dataFile,'Portfolio rows unavailable'));})),fetchData('instrument-equivalence.json','Instrument identity map unavailable')]);
       next=createPortfolioNetwork(portfolios,identity);datasets.set('portfolios',next);
     }catch(error){if(request!==datasetRequest)return;throw error;}
   }
-  if(!next){try{const response=await fetch(new URL(name==='researched'?'../data/researched.json':'../data/graph.json',import.meta.url));if(!response.ok)throw new Error(`Dataset request failed (${response.status})`);next=createModel(await response.json());datasets.set(name,next);}catch(error){if(request!==datasetRequest)return;throw error;}}
+  if(!next){try{next=createModel(await fetchData(name==='researched'?'researched.json':'graph.json','Dataset request failed'));datasets.set(name,next);}catch(error){if(request!==datasetRequest)return;throw error;}}
   if(request!==datasetRequest)return;
   ++viewRequest;model=next;state=initialState(model);focusHistory=[];$('#dataset').value=name;$('#direction').value='both';$('#search').value='';closeSearch();$('#info-dialog').close();
   $('#portfolio-controls').hidden=!isPortfolio();$('.filter-row').hidden=isPortfolio();
