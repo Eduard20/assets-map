@@ -10,7 +10,7 @@ Independent review mechanically compared every retained normalized row/field wit
 
 ## Deterministic projection
 
-Run `npm run data:export-portfolios`; `npm run check` verifies byte-for-byte reproduction. Validation independently recomputes counts and integer-dollar totals, validates source URLs/row IDs and share eligibility, and checks source-scoped instrument consistency. Invalid rows are recorded under the excluded quarantine directory and withhold the batch. Source units are whole USD in schema X0202; no legacy thousands multiplier.
+Run `npm run data:export-portfolios`; `npm run check` verifies byte-for-byte reproduction and that `data/instrument-equivalence.json` was audited against these exact normalized inputs (positional instrument IDs make any re-import invalidate it until it is rebuilt and re-reviewed). Validation independently recomputes counts and integer-dollar totals, validates source URLs/row IDs and share eligibility, and checks source-scoped instrument consistency. Invalid rows are recorded under the excluded quarantine directory and withhold the batch. Source units are whole USD in schema X0202; no legacy thousands multiplier.
 
 The share view includes SH rows without put/call, excludes explicit warrant/right classes, and excludes explicit NOTE/NOTES/DEB/DEBENTURE classes even if source-tagged SH. Fund shares, preferred shares, depositary receipts and reported units can remain; this is not a common-stock-only dataset. Equal-looking source lines and differing manager allocations are retained, not economically deduplicated.
 
