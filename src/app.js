@@ -26,6 +26,7 @@ function applyView(view) {
   $('#empty-state').classList.toggle('list-empty',view==='list');
   $('#map-hint').textContent=view==='3d'?'Drag to orbit · Pinch to zoom · Tap a bubble':view==='list'?'Select a connection for its evidence':'Select a node to explore';
   document.querySelectorAll('[data-view]').forEach(button=>{button.classList.toggle('active',button.dataset.view===view);button.setAttribute('aria-pressed',String(button.dataset.view===view));});
+  if(view==='2d'&&graph)renderer2D.update(graph,state,model);
   renderer3D?.setActive(view==='3d');
   $('.zoom-tools').hidden=view==='list';
 }
