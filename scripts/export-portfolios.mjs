@@ -51,11 +51,35 @@ export function projectPortfolio(input,review,inputText=JSON.stringify(input)){
   for(const p of input.positions.filter(p=>p.shareViewEligible)){let index=groupIndexes.get(p.reportedSecurityId);if(index===undefined){index=groups.length;groupIndexes.set(p.reportedSecurityId,index);groups.push([p.reportedSecurityId,summary.sources.findIndex(s=>s.id===p.sourceId),p.issuerName,p.securityClass]);}rows.push([p.rowOrdinal,index,String(p.valueUsd),String(p.quantity),p.investmentDiscretion,p.otherManagerRefs??[],String(p.votingSole),String(p.votingShared),String(p.votingNone)]);}
   return {summary,data:{schemaVersion:1,portfolioId:input.portfolioId,groups,rows}};
 }
+// Instrument IDs are positional per source, so the identity map is only valid for the exact inputs it was audited against.
+export function validateEquivalence(identity,inputs){
+  const errors=[],c=identity?.coverage;if(identity?.schemaVersion!==1||!Array.isArray(identity.groups)||!c)return ['Invalid instrument identity map'];
+  const byId=new Map(inputs.map(i=>[i.input.portfolioId,i]));
+  if([...byId.keys()].sort().join('|')!==[...(c.portfolioIds||[])].sort().join('|'))errors.push('Identity map portfolio set differs from admitted inputs');
+  for(const f of c.inputFiles||[]){const i=byId.get(f.portfolioId);if(!i||f.sha256!==sha256(i.raw)||f.reportingDate!==i.input.reportingDate)errors.push(`Identity map is stale for ${f.portfolioId}; rebuild and re-review it`);}
+  if((c.inputFiles||[]).length!==byId.size)errors.push('Identity map input hashes incomplete');
+  const active=inputs.flatMap(i=>i.input.sources.filter(s=>i.input.reconciliation.activeSourceIds.includes(s.sourceId)));
+  if(JSON.stringify((identity.sourceChecks||[]).map(s=>[s.sourceId,s.informationTableSha256,s.rowCount,s.informationTableUrl]).sort())!==JSON.stringify(active.map(s=>[s.sourceId,s.informationTableSha256,s.cover?.tableEntryTotal===undefined?null:Number(s.cover.tableEntryTotal),s.informationTableUrl]).sort()))errors.push('Identity map source checks differ from active filings');
+  const instruments=new Map();let rows=0;
+  for(const {input} of inputs)for(const p of input.positions.filter(p=>p.shareViewEligible)){rows++;if(!instruments.has(p.reportedSecurityId))instruments.set(p.reportedSecurityId,{portfolioId:input.portfolioId,key:JSON.stringify([p.securityClass.trim(),p.quantityType,p.putCall??null])});}
+  const seen=new Set(),sizes={},pairs=new Map();
+  identity.groups.forEach((group,index)=>{const members=Array.isArray(group)?group:group?.members;
+    if(!Array.isArray(members)||members.length<2){errors.push(`Invalid identity group ${index+1}`);return;}
+    const info=members.map(id=>instruments.get(id));if(info.includes(undefined)||members.some(id=>seen.has(id))){errors.push(`Unknown or repeated instrument in group ${index+1}`);return;}members.forEach(id=>seen.add(id));
+    if(new Set(info.map(i=>i.key)).size!==1)errors.push(`Class/type/option mismatch in group ${index+1}`);
+    const ids=info.map(i=>i.portfolioId).sort();if(new Set(ids).size!==ids.length)errors.push(`Same-filer merge in group ${index+1}`);
+    sizes[members.length]=(sizes[members.length]||0)+1;for(let a=0;a<ids.length;a++)for(let b=a+1;b<ids.length;b++){const k=ids[a]+'|'+ids[b];pairs.set(k,(pairs.get(k)||0)+1);}});
+  for(const [key,actual] of Object.entries({eligibleSourceRows:rows,eligibleSourceScopedInstruments:instruments.size,matchedGroups:identity.groups.length,matchedSourceScopedInstruments:seen.size,unmatchedSourceScopedInstruments:instruments.size-seen.size}))if(c[key]!==actual)errors.push(`Identity coverage mismatch: ${key}`);
+  if(JSON.stringify(Object.entries(c.groupsByMemberCount||{}).sort())!==JSON.stringify(Object.entries(sizes).sort()))errors.push('Identity coverage mismatch: groupsByMemberCount');
+  for(const pc of c.pairCounts||[])if((pairs.get([...pc.portfolioIds].sort().join('|'))||0)!==pc.matchedGroups)errors.push(`Identity coverage mismatch: pair ${pc.portfolioIds.join('/')}`);
+  return errors;
+}
 export async function exportPortfolios({directory=INPUT_DIRECTORY,check=false}={}){
-  const files=(await readdir(directory)).filter(f=>f.endsWith('.normalized.json.gz')).sort(),portfolios=[];let bytes=0;
+  const files=(await readdir(directory)).filter(f=>f.endsWith('.normalized.json.gz')).sort(),portfolios=[],inputs=[];let bytes=0;
   const save=async(file,output)=>{bytes+=output.length;const target=path.join(root,'data',file);if(check){if(await readFile(target,'utf8')!==output)throw new Error(`Public ${file} is stale; run data:export-portfolios`);}else await writeFile(target,output);};
-  for(const file of files){const raw=gunzipSync(await readFile(path.join(directory,file))).toString('utf8'),input=JSON.parse(raw),validation=validatePortfolio(input);if(validation.quarantine.length){await mkdir(path.join(root,'data-foundation/portfolios/quarantine'),{recursive:true});await writeFile(path.join(root,'data-foundation/portfolios/quarantine',file+'.json'),JSON.stringify(validation,null,2)+'\n');}const review=JSON.parse(await readFile(path.join(directory,file.replace('.normalized.json.gz','.review.json')),'utf8'));const projected=projectPortfolio(input,review,raw);portfolios.push(projected.summary);await save(projected.summary.dataFile,JSON.stringify(projected.data)+'\n');}
+  for(const file of files){const raw=gunzipSync(await readFile(path.join(directory,file))).toString('utf8'),input=JSON.parse(raw),validation=validatePortfolio(input);if(validation.quarantine.length){await mkdir(path.join(root,'data-foundation/portfolios/quarantine'),{recursive:true});await writeFile(path.join(root,'data-foundation/portfolios/quarantine',file+'.json'),JSON.stringify(validation,null,2)+'\n');}const review=JSON.parse(await readFile(path.join(directory,file.replace('.normalized.json.gz','.review.json')),'utf8'));const projected=projectPortfolio(input,review,raw);inputs.push({raw,input});portfolios.push(projected.summary);await save(projected.summary.dataFile,JSON.stringify(projected.data)+'\n');}
   if(!portfolios.length)throw new Error('No reviewed portfolios');
+  const identityErrors=validateEquivalence(JSON.parse(await readFile(path.join(root,'data/instrument-equivalence.json'),'utf8')),inputs);if(identityErrors.length)throw new Error(identityErrors.join('; '));
   const defaultPortfolio=(portfolios.find(p=>/blackrock/i.test(p.filer.name))||portfolios[0]).portfolioId;
   await save('portfolios.json',JSON.stringify({schemaVersion:1,defaultPortfolio,portfolios})+'\n');
   return {portfolios:portfolios.length,positions:portfolios.reduce((n,p)=>n+p.reconciliation.shareRowCount,0),bytes};
