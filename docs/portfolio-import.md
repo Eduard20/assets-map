@@ -16,7 +16,7 @@ Material source qualifications remain visible:
 - Morgan Stanley is a combination report. Morgan Stanley Institutional Investment Advisors LLC reports separately and its separate holdings are outside this table. Its 110 rows with unresolved manager references remain intact; zero-padding-equivalent references resolve to the same listed manager without altering the reported reference strings.
 - Norges Bank states that collateral received through secured lending and borrowing transactions, which it may sell or pledge, is excluded unless reinvested. Its cover qualification is preserved in public coverage.
 - State Street uses its restatement only. Its original remains in the amendment ledger, never appended to the effective table. An explicit note class source-tagged SH remains in normalized data but is excluded from the share view.
-- The original audit corrected an equity-wnine ETF class falsely treated as a warrant. Fund shares are not excluded merely because their names contain an incidental `WT` substring.
+- The original audit corrected an equity-weight ETF class falsely treated as a warrant. Fund shares are not excluded merely because their names contain an incidental `WT` substring.
 
 ### FMR is withheld
 

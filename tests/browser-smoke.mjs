@@ -100,7 +100,7 @@ try {
   await page.locator(`#graph-3d button[data-node-id="${appleId}"]`).focus();
   // A real responsive rebuild must preserve focus, not silently swallow Enter.
   await page.setViewportSize({width:390,height:844});
-  await page.waitForFunction(id=>document.activeElement?.dataset.nodeId===id&&document.querySelector(`#graph-3d button[data-node-id="${id}"]`)?.style.width==='110px',appleId);
+  try { await page.waitForFunction(id=>document.activeElement?.dataset.nodeId===id&&document.querySelector(`#graph-3d button[data-node-id="${id}"]`)?.style.width==='110px',appleId,{timeout:10000}); } catch(error) { console.error('Resize focus diagnostic',await page.evaluate(id=>({active:document.activeElement?.outerHTML?.slice(0,500),label:document.querySelector(`#graph-3d button[data-node-id="${id}"]`)?.outerHTML?.slice(0,500),width:innerWidth}),appleId));throw error; }
   await page.keyboard.press('Enter');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
   await page.setViewportSize({width:1440,height:1000});

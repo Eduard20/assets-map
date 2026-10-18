@@ -123,7 +123,7 @@ The public projection uses a small index, compact per-filer group/row arrays and
 
 On phones the network fills the main screen. Filters and selected-entity details open in dismissible, keyboard-accessible sheets rather than pushing the graph down the page. The persistent selected-entity bar opens evidence and outgoing/incoming connections. Controls have 44-pixel touch targets, safe-area padding and 16-pixel search/select inputs.
 
-Both renderers use small luminous points, fine connections and selective labels on a dark canvas. Visible point size is not asset value; invisible touch targets remain larger. In 2D, drag anywhere to pan and pinch to zoom. In 3D, drag to rotate and use two fingers to zoom/pan, including gestures that start on labels. Dragging does not select a node. Fit, Back and Reset remain available. Browser chrome hnine changes do not reset the 3D camera. Reduced-motion preferences disable optional transitions.
+Both renderers use small luminous points, fine connections and selective labels on a dark canvas. Visible point size is not asset value; invisible touch targets remain larger. In 2D, drag anywhere to pan and pinch to zoom. In 3D, drag to rotate and use two fingers to zoom/pan, including gestures that start on labels. Dragging does not select a node. Fit, Back and Reset remain available. Browser chrome height changes do not reset the 3D camera. Reduced-motion preferences disable optional transitions.
 
 CI tests touch-emulated Chromium in 320px/390px portrait and 844px landscape, sheet controls, touch dragging over labels and nodes, pinch zoom, real WebGL and the 2D fallback. This is not certification on a physical iPhone/Safari.
 
