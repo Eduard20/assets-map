@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile,readdir,writeFile,mkdtemp,rm,access,copyFile,stat} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {gzipSync,gunzipSync} from 'node:zlib';
-import {exportPortfolios,validatePortfolio,projectPortfolio,validateEquivalence,publicationErrors} from '../scripts/export-portfolios.mjs';
+import {exportPortfolios,validatePortfolio,projectPortfolio,validateEquivalence,publicationErrors,sha256} from '../scripts/export-portfolios.mjs';
 import {decodePortfolio,portfolioModel,holdingsPage,portfolioInstrumentDetails} from '../src/portfolio-view.js';
 import {buildVisibleGraph,initialState} from '../src/graph-model.js';
 const manifest=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url)));
@@ -90,6 +90,14 @@ test('admission fails closed for stale or missing independent review and invalid
  const totals=structuredClone(input);totals.reconciliation.shareValueUsd='1';assert.match(validatePortfolio(totals).errors.join(' '),/Reconciliation/);
  const cover=structuredClone(input);cover.sources[0].cover.tableValueTotal='1';assert.match(validatePortfolio(cover).errors.join(' '),/Cover value total mismatch/);
  const dropped=structuredClone(input);dropped.positions.pop();for(const [k,v] of Object.entries({reportedRowCount:88,recomputedValueTotalUsd:dropped.positions.reduce((n,p)=>n+BigInt(p.valueUsd),0n).toString()}))dropped.reconciliation[k]=v;dropped.reconciliation.shareRowCount=88;dropped.reconciliation.shareValueUsd=dropped.reconciliation.recomputedValueTotalUsd;assert.match(validatePortfolio(dropped).errors.join(' '),/Cover row count mismatch/);
+});
+test('reviewer independence needs a recorded importer except for the three pinned legacy inputs',async()=>{
+ const read=async n=>{const raw=gunzipSync(await readFile(new URL(`../data-foundation/portfolios/input/${n}.normalized.json.gz`,import.meta.url))).toString();return {raw,input:JSON.parse(raw),review:JSON.parse(await readFile(new URL(`../data-foundation/portfolios/input/${n}.review.json`,import.meta.url)))};};
+ const legacy=await read('berkshire');assert.equal(legacy.input.importedBy,undefined);assert.doesNotThrow(()=>projectPortfolio(legacy.input,legacy.review,legacy.raw));
+ const current=await read('geode');assert.doesNotThrow(()=>projectPortfolio(current.input,current.review,current.raw));
+ const {importedBy,...anonymous}=current.input,raw=JSON.stringify(anonymous,null,2)+'\n';assert.ok(importedBy);
+ assert.throws(()=>projectPortfolio(anonymous,{...current.review,inputSha256:sha256(raw)},raw),/Independent complete-batch review/);
+ assert.throws(()=>projectPortfolio(current.input,{...current.review,reviewer:importedBy},current.raw),/Independent complete-batch review/);
 });
 test('superseded filing rows cannot be appended to the effective State Street table',async()=>{
  const input=JSON.parse(gunzipSync(await readFile(new URL('../data-foundation/portfolios/input/statestreet.normalized.json.gz',import.meta.url))).toString());
