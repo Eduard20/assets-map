@@ -1,0 +1,22 @@
+# Defense in depth if Pages is accidentally configured to build main with Jekyll.
+# The supported deployment remains the exact allowlist in scripts/prepare-site.mjs.
+# Never serve source inputs or review/canonical/staging/raw data as site files.
+exclude:
+  - data-foundation
+  - docs
+  - scripts
+  - tests
+  - node_modules
+  - artifacts
+  - raw
+  - staging
+  - canonical
+  - package.json
+  - package-lock.json
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
