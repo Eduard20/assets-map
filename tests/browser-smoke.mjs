@@ -90,7 +90,7 @@ try {
   assert.equal(await page.locator('.investor-card').count(),3);
   await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),'blackrock-2026-06-30');
   await page.locator('[data-view="2d"]').click();await expectView(page,'2d');
-  await page.locator(`.graph-node[data-node="${appleId}"]`).click();
+  await page.locator(`.graph-node[data-node="${appleId}"] .node-hit`).click();
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
   assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
   await page.locator('#focus-back').click();await page.locator('[data-view="3d"]').click();
@@ -108,14 +108,14 @@ try {
   // A manager bubble opens more of its own network in both renderers.
   for(const view of ['3d','2d']){
     await page.locator(`[data-view="${view}"]`).click();await expectView(page,view);
-    const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"]';
+    const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"] .node-hit';
     await page.locator(managerSelector).click();
     const expanded=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expanded>42);
     await page.locator(managerSelector).click();assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),42);
     const issuerId=await page.evaluate(()=>window.__assetsMap.getModel().roleEdges.find(e=>e.role.manager==='berkshire-2026-06-30'&&e.role.securityClass==='CL B NEW').source);
-    await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"]`).click();
+    await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"] .node-hit`).click();
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.some(e=>e.kind==='issuer_reporting_entity')));
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.filter(e=>e.source==='berkshire-2026-06-30').length)>=20);
     assert.match(await page.locator('#detail-panel').textContent(),/Outgoing investments/);
