@@ -1,0 +1,43 @@
+{
+  "decision": "approved",
+  "inputSha256": "b23a60527839afe5bb61cfdfbbc2a9980184f084526f3ab1b9c577ae4e25509c",
+  "reviewer": "independent-source-audit",
+  "reviewedAt": "2026-10-18",
+  "checks": {
+    "sourceIdentity": true,
+    "amendmentDiscovery": true,
+    "rowCount": true,
+    "valueTotal": true,
+    "sharePartition": true,
+    "spotChecks": true,
+    "publicRights": true
+  },
+  "reviewScope": "All effective source rows and retained fields mechanically compared against official XML, independent count/value summation and class eligibility; live official cover verification; independent fresh SEC submissions history and archive-date coverage checks; official table spot checks. No claim of individual human review of every row.",
+  "constraints": [
+    "Historical reported Section 13(f) share positions as of 2026-06-30, observed through 2026-10-18. Never whole portfolio, total AUM, or legal ownership.",
+    "Share-view weights use only this filer/date eligible-share reported-value denominator 3378870771423 USD. Whole-dollar values, never legacy thousand-dollar scaling.",
+    "Retain source-row identity, class, reporting date, value, and manager-reference provenance. Same-security source rows may be grouped for display only with underlying rows recoverable; never multiply by manager-reference count.",
+    "No cross-filer deduplicated ownership or AUM aggregate. Source-reported discretion may overlap parent, fund, and manager layers.",
+    "Publish normalized factual fields and source links only; do not publish raw CUSIP/FIGI identifiers or the raw XML bundle.",
+    "The share view includes fund shares, depositary receipts, preferred shares and units, including funds with non-equity underlying assets; it is not common-stock-only.",
+    "Use verified reportingDate and filingDate in public UI. Do not display acceptedAt as independently resolved acceptance time; SEC API and filing index can differ.",
+    "Use September 22, 2026 RESTATEMENT only as effective rows; never add the August 7 original to it. Preserve both filing entries in the amendment ledger.",
+    "Preserve raw SH on GOLAR LNG NOTE row 4255, flag the explicit-debt/source-quantity conflict, and exclude it from share-view rows and denominator."
+  ],
+  "counts": {
+    "reportedRowCount": 4261,
+    "recomputedValueTotalUsd": "3383260349220",
+    "shareRowCount": 4085,
+    "shareValueUsd": "3378870771423",
+    "excludedRowCount": 176,
+    "shareReportedSecurityCount": 4085
+  },
+  "sourceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/93751/000009375126000507/xslForm13F_X02/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/93751/000009375126000583/xslForm13F_X02/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/93751/000009375126000507/XML_Infotable.xml",
+    "https://www.sec.gov/Archives/edgar/data/93751/000009375126000583/XML_Infotable.xml",
+    "https://data.sec.gov/submissions/CIK0000093751.json"
+  ],
+  "publicRightsScope": "Confirmed factual normalized minimal fields, no proprietary security identifier values or document republication in the payload. This is dataset admission, not a blanket license/legal opinion."
+}

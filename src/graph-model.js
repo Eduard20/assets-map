@@ -26,7 +26,7 @@ export function createModel(data) {
   const errors = validateGraph(data); if (errors.length) throw new Error(errors.join('\n'));
   const nodes = new Map(data.nodes.map(n => [n.id, n]));
   const sources = new Map(data.sources.map(s => [s.id, s]));
-  return { ...data, nodeMap:nodes, sourceMap:sources, rootId:data.meta?.defaultRoot || data.nodes[0]?.id };
+  return { ...data, nodeMap:nodes, sourceMap:sources, outgoingIds:new Set(data.edges.map(e=>e.source)), rootId:data.meta?.defaultRoot || data.nodes[0]?.id };
 }
 export function relatedEdges(model, id, { filter = 'all', direction = 'both' } = {}) {
   return model.edges.filter(edge => {

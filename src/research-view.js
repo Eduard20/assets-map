@@ -1,4 +1,4 @@
-import {escapeHtml as E,safeUrl,dateLabel,RELATIONSHIPS} from './graph-model.js?v=20261018-research1';
+import {escapeHtml as E,safeUrl,dateLabel,RELATIONSHIPS} from './graph-model.js?v=20261018-portfolios1';
 export function decimalLabel(value){
   if(value===null||value===undefined)return 'Not reported';
   const [whole,fraction]=String(value).split('.');
