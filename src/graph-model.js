@@ -51,4 +51,4 @@ export function layoutGraph(graph, rootId) {
   }
   return positions;
 }
-export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set([model.rootId]),limits:new Map(),view:'2d'}; }
+export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set([model.rootId]),limits:new Map(),view:'3d'}; }

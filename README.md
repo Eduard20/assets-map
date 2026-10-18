@@ -7,7 +7,9 @@ A small, evidence-first UI prototype for exploring the connections between asset
 - Search for **BlackRock**, **Berkshire**, **Amazon**, **Nestlé** or **SpaceX**.
 - Select an entity or connection to inspect its source and date.
 - Make any entity the focus, then explore its owners or investments.
-- Use the **2D map**, optional **Three.js 3D** view, or accessible **List** view.
+- Start with **3D bubbles**: drag to orbit, pinch/scroll to zoom, and tap a bubble or its name to explore. A **2D map** and accessible **List** view are also available.
+- The larger bubble is the current focus. Bubble sizes and spatial distances do not represent asset values, valuations or ownership percentages.
+- Devices without WebGL 2 automatically show the 2D map with a clear explanation.
 - The initial map expands only one neighborhood at a time. Data and rendering are separate.
 
 ## Scope and interpretation
@@ -51,7 +53,8 @@ The workflow validates the dataset and runs model/DOM tests before uploading a s
 - `data/graph.json`: sources, entities and relationship claims
 - `src/graph-model.js`: validation, filtering, neighborhood expansion and layout
 - `src/graph-2d.js`: accessible SVG renderer
-- `src/graph-3d.js`: lazily loaded Three.js renderer
+- `src/graph-3d.js`: default, lazily loaded Three.js bubble renderer
+- `src/bubble-layout.js`: presentation-only spatial layout and focus sizing
 - `src/app.js`: application state, search and detail UI
 - `tests`: model, DOM and browser smoke tests
 
