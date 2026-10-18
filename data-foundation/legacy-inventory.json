@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0.0",
+  "baseline_commit": "bf9c2687696e33564efaa6dbd22eebf6ba579d49",
+  "legacy_graph_sha256": "7e2fd0dbc6c44f8edc9974432aecaefa3be8947349d15ba3b9b7a579e667c601",
+  "migration_status": "held; no legacy claim promoted to canonical evidence",
+  "nodes": [
+    {
+      "legacy_id": "blackrock",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "berkshire",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "amazon",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "nestle",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "spacex",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "gip",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "hps",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "preqin",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "geico",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "bnsf",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "dairy-queen",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "netjets",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "sees-candies",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "aws",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "whole-foods",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "zoox",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    },
+    {
+      "legacy_id": "loreal",
+      "canonical_entity_id": null,
+      "status": "illustrative_unreviewed"
+    }
+  ],
+  "edges": [
+    {
+      "legacy_id": "blackrock-gip",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "blackrock-gip-close"
+      ]
+    },
+    {
+      "legacy_id": "blackrock-hps",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "blackrock-hps-close"
+      ]
+    },
+    {
+      "legacy_id": "blackrock-preqin",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "blackrock-preqin-close"
+      ]
+    },
+    {
+      "legacy_id": "berkshire-geico",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "berkshire-2025-subsidiaries"
+      ]
+    },
+    {
+      "legacy_id": "berkshire-bnsf",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "berkshire-2025-subsidiaries"
+      ]
+    },
+    {
+      "legacy_id": "berkshire-dairy-queen",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "berkshire-2025-subsidiaries"
+      ]
+    },
+    {
+      "legacy_id": "berkshire-netjets",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "berkshire-2025-subsidiaries"
+      ]
+    },
+    {
+      "legacy_id": "berkshire-sees-candies",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "berkshire-2025-subsidiaries"
+      ]
+    },
+    {
+      "legacy_id": "amazon-aws",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "amazon-2025-subsidiaries"
+      ]
+    },
+    {
+      "legacy_id": "amazon-whole-foods",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "amazon-whole-foods-2026"
+      ]
+    },
+    {
+      "legacy_id": "amazon-zoox",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "amazon-zoox"
+      ]
+    },
+    {
+      "legacy_id": "nestle-loreal",
+      "canonical_claim_revision_id": null,
+      "status": "illustrative_unreviewed",
+      "source_ids": [
+        "nestle-2025-financials"
+      ]
+    }
+  ]
+}

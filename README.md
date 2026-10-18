@@ -46,7 +46,7 @@ Install the test browser with `npx playwright install chromium`, or provide an e
 
 The repository includes a GitHub Pages deployment workflow. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions** once if Pages has not been enabled. Then run the **Deploy Assets Map** workflow or push a change to `main`.
 
-The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes only `index.html`, `style.css`, `icon.svg`, `src`, `data`, and `vendor`.
+The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes the exact file allowlist in `scripts/prepare-site.mjs`, including only `data/graph.json` from `data/`. Canonical data, staging, raw evidence, pilot candidates and review artifacts are excluded. Symlinked public inputs are rejected.
 
 ## Project structure
 
@@ -71,6 +71,18 @@ Metrics: `label`, `value`, `unit`, `asOf`, `sourceId`. Every metric must name it
 Edges: `id`, `source`, `target`, `kind` (`managed_holding`, `corporate_ownership`, `investment`, `subsidiary`), `asOf`, `sourceIds`, optional `label`, `notes`, `stakePercent` and `valueUsd` (both nullable).
 
 Each edge is a sourced claim. Multiple edges can describe different dated relationships between the same entities. This prototype does not reconcile contradictions, calculate control or compute aggregate ownership. Add evidence and explicit dates rather than inferred percentages.
+
+## Versioned data foundation (shadow only)
+
+A separately tested foundation now supports isolated agent batches, a reviewed identity/source registry, immutable claim revisions, one validator and atomic versioned shadow releases. The current illustrative graph is unchanged.
+
+The bounded real pilot contains **seven sourced candidate claims, all quarantined** because complete amendment discovery through the cutoff is not established. No new holdings are admitted or loaded into the app. Synthetic fixtures test the accepted path, exact revision lineage, replay, conflicts, source rights, amendments and rollback.
+
+- [Implementation and agent contract](docs/data-foundation.md)
+- [Pilot evidence, rights scope and remaining gates](data-foundation/pilot/README.md)
+- [Per-candidate validation report](data-foundation/pilot/validation-report.json)
+
+Run `npm run data:demo` for an explicitly fictional local shadow release, or `npm run check:foundation` for focused tests. A separate PR workflow runs model/DOM/data/build and browser smoke checks; only the existing main-branch Pages workflow deploys.
 
 ## Third-party notices
 

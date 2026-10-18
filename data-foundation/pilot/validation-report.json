@@ -1,0 +1,242 @@
+{
+  "counts": {
+    "active_claims": 0,
+    "duplicates": 0,
+    "quarantined": 7,
+    "retained_revisions": 0
+  },
+  "gaps": [
+    {
+      "blocks_claim_candidate_ids": [
+        "cand_apple_proxy_vanguard",
+        "cand_apple_proxy_blackrock",
+        "cand_apple_proxy_cook",
+        "cand_apple_proxy_management_group",
+        "cand_vanguard_shared_vote2025q2",
+        "cand_vga_managed_apple2026q2",
+        "cand_vga_voting_apple2026q2"
+      ],
+      "category": "amendment",
+      "description": "Selected SEC sources. unavailable. Web research tool could not retrieve VGA submissions JSON. Official company landing page rendered an unpopulated dynamic template. Exact searches found a Q1 amendment, not proof of no Q2 amendment. Complete amendment discovery through cutoff is unverified; no latest/current label or production admission.",
+      "gap_id": "gap_amendment_completeness",
+      "source_urls": [
+        "https://data.sec.gov/submissions/CIK0001811242.json",
+        "https://www.sec.gov/edgar/browse/?CIK=0001811242"
+      ]
+    },
+    {
+      "blocks_claim_candidate_ids": [
+        "cand_apple_proxy_blackrock"
+      ],
+      "category": "identity",
+      "description": "Proxy BlackRock reference. unknown. Original filing now verified and historical filer CIK1364742 identified. Independent canonical review remains pending; succession into current CIK2012383 is not established and must not be inferred.",
+      "gap_id": "gap_blackrock_identity",
+      "source_urls": []
+    },
+    {
+      "blocks_claim_candidate_ids": [],
+      "category": "overlap",
+      "description": "Exact manager-to-fund attribution. not_collected. No unsupported manager/fund link created. Genuine included-person overlap and same-position relation overlap are tested instead.",
+      "gap_id": "gap_manager_fund_overlap",
+      "source_urls": []
+    },
+    {
+      "blocks_claim_candidate_ids": [],
+      "category": "private_stake",
+      "description": "Private-company cap tables. not_researched. Not selected in this seven-claim pilot. No private cap-table or zero-ownership assertion.",
+      "gap_id": "gap_private_equity",
+      "source_urls": []
+    },
+    {
+      "blocks_claim_candidate_ids": [],
+      "category": "rights",
+      "description": "NBIM website, marketplace and non-SEC sovereign channels. not_admitted. Rights/channel review pending in source registry; no facts extracted or republished from those channels.",
+      "gap_id": "gap_restricted_sources",
+      "source_urls": []
+    },
+    {
+      "blocks_claim_candidate_ids": [],
+      "category": "coverage",
+      "description": "State Street, fund, sovereign, direct-government and other-holder examples. not_collected_scope_limit. Kept a materially smaller pilot. No inference that official data is unavailable; no source admission or live ingestion for omitted slices.",
+      "gap_id": "gap_uncollected_slices",
+      "source_urls": []
+    },
+    {
+      "blocks_claim_candidate_ids": [],
+      "category": "scope_transition",
+      "description": "Historical parent versus current affiliates. unknown. Realignment source does not reconcile VGA with historical parent or identify a full non-overlapping brand perimeter. No sale, zero, family total or replacement time series inferred.",
+      "gap_id": "gap_vanguard_reconciliation",
+      "source_urls": []
+    }
+  ],
+  "limitations": [
+    "Historical, disclosed evidence only; no current-completeness, full-AUM or control inference.",
+    "Shadow projection is not connected to the live UI."
+  ],
+  "publication_status": "held",
+  "results": [
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_blackrock",
+      "claim_id": "clm_8baf291faaa49680cd7a2940",
+      "claim_revision_id": "clmrev_2e8c0315faa98afe054fdc99",
+      "reasons": [
+        "amendment_chain_incomplete_as_of_cutoff",
+        "document_not_admitted",
+        "gap:gap_amendment_completeness",
+        "gap:gap_blackrock_identity",
+        "identity_or_perimeter_review_required",
+        "object_identity_review_required",
+        "review_not_accepted",
+        "rights_attribution_blocked",
+        "rights_automated_collection_blocked",
+        "rights_derived_publication_blocked",
+        "rights_identifier_database_use_blocked",
+        "source_not_admitted"
+      ],
+      "review_rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending.",
+      "status": "quarantined",
+      "warnings": [
+        "non_comparable_percentage:met_proxy_br_pct"
+      ]
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_cook",
+      "claim_id": "clm_7c295901b686c006588dcc30",
+      "claim_revision_id": "clmrev_ced7fc01b5d64c1afaea4433",
+      "reasons": [
+        "amendment_chain_incomplete_as_of_cutoff",
+        "document_not_admitted",
+        "gap:gap_amendment_completeness",
+        "identity_or_perimeter_review_required",
+        "object_identity_review_required",
+        "review_not_accepted",
+        "rights_attribution_blocked",
+        "rights_automated_collection_blocked",
+        "rights_derived_publication_blocked",
+        "rights_identifier_database_use_blocked",
+        "source_not_admitted"
+      ],
+      "review_rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending.",
+      "status": "quarantined",
+      "warnings": []
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_management_group",
+      "claim_id": "clm_1e87b607733a21bdf7ed97ee",
+      "claim_revision_id": "clmrev_541538b38187cf93bbe5c2e8",
+      "reasons": [
+        "amendment_chain_incomplete_as_of_cutoff",
+        "document_not_admitted",
+        "gap:gap_amendment_completeness",
+        "identity_or_perimeter_review_required",
+        "object_identity_review_required",
+        "review_not_accepted",
+        "rights_attribution_blocked",
+        "rights_automated_collection_blocked",
+        "rights_derived_publication_blocked",
+        "rights_identifier_database_use_blocked",
+        "source_not_admitted"
+      ],
+      "review_rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending.",
+      "status": "quarantined",
+      "warnings": []
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_vanguard",
+      "claim_id": "clm_074f60be0a46947ab0962818",
+      "claim_revision_id": "clmrev_3b728b3cf97e4d5cf5a2c0ca",
+      "reasons": [
+        "amendment_chain_incomplete_as_of_cutoff",
+        "document_not_admitted",
+        "gap:gap_amendment_completeness",
+        "identity_or_perimeter_review_required",
+        "object_identity_review_required",
+        "review_not_accepted",
+        "rights_attribution_blocked",
+        "rights_automated_collection_blocked",
+        "rights_derived_publication_blocked",
+        "rights_identifier_database_use_blocked",
+        "source_not_admitted"
+      ],
+      "review_rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending.",
+      "status": "quarantined",
+      "warnings": [
+        "non_comparable_percentage:met_proxy_vg_pct"
+      ]
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_vanguard_shared_vote2025q2",
+      "claim_id": "clm_58fb9a88cc22bd1e19a2f949",
+      "claim_revision_id": "clmrev_d8b47d5db210757cce12b291",
+      "reasons": [
+        "amendment_chain_incomplete_as_of_cutoff",
+        "document_not_admitted",
+        "gap:gap_amendment_completeness",
+        "identity_or_perimeter_review_required",
+        "object_identity_review_required",
+        "review_not_accepted",
+        "rights_attribution_blocked",
+        "rights_automated_collection_blocked",
+        "rights_derived_publication_blocked",
+        "rights_identifier_database_use_blocked",
+        "source_not_admitted"
+      ],
+      "review_rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending.",
+      "status": "quarantined",
+      "warnings": []
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_vga_managed_apple2026q2",
+      "claim_id": "clm_73009c6592d93b218d69777a",
+      "claim_revision_id": "clmrev_9b560555e392783d95bdac1f",
+      "reasons": [
+        "amendment_chain_incomplete_as_of_cutoff",
+        "document_not_admitted",
+        "gap:gap_amendment_completeness",
+        "identity_or_perimeter_review_required",
+        "object_identity_review_required",
+        "review_not_accepted",
+        "rights_attribution_blocked",
+        "rights_automated_collection_blocked",
+        "rights_derived_publication_blocked",
+        "rights_identifier_database_use_blocked",
+        "source_not_admitted"
+      ],
+      "review_rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending.",
+      "status": "quarantined",
+      "warnings": []
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_vga_voting_apple2026q2",
+      "claim_id": "clm_d416510ab763fce28d1097f1",
+      "claim_revision_id": "clmrev_7421666ce5d11e704f1b1bc6",
+      "reasons": [
+        "amendment_chain_incomplete_as_of_cutoff",
+        "document_not_admitted",
+        "gap:gap_amendment_completeness",
+        "identity_or_perimeter_review_required",
+        "object_identity_review_required",
+        "review_not_accepted",
+        "rights_attribution_blocked",
+        "rights_automated_collection_blocked",
+        "rights_derived_publication_blocked",
+        "rights_identifier_database_use_blocked",
+        "source_not_admitted"
+      ],
+      "review_rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending.",
+      "status": "quarantined",
+      "warnings": []
+    }
+  ],
+  "review_id": "equity-pilot-review-2026-10-18-v1",
+  "reviewer": "independent-admission-review + foundation-integrator",
+  "reviewer_role": "agent_review",
+  "schema_version": "1.0.0"
+}

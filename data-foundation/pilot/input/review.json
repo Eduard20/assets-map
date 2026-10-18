@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "equity-pilot-review-2026-10-18-v1",
+  "registry_version": "registry_pilot_proposal_20261018_v1",
+  "source_registry_version": "sources_pilot_proposal_20261018_v1",
+  "reviewer": "independent-admission-review + foundation-integrator",
+  "reviewer_role": "agent_review",
+  "reviewed_at": "2026-10-18T10:14:00Z",
+  "decisions": [
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_vanguard",
+      "decision": "needs_review",
+      "rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending."
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_blackrock",
+      "decision": "needs_review",
+      "rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending."
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_cook",
+      "decision": "needs_review",
+      "rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending."
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_apple_proxy_management_group",
+      "decision": "needs_review",
+      "rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending."
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_vanguard_shared_vote2025q2",
+      "decision": "needs_review",
+      "rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending."
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_vga_managed_apple2026q2",
+      "decision": "needs_review",
+      "rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending."
+    },
+    {
+      "batch_id": "pilot_equity_apple_vga_20261018",
+      "candidate_id": "cand_vga_voting_apple2026q2",
+      "decision": "needs_review",
+      "rationale": "Source facts are reviewable, but mandatory original/amendment discovery through cutoff is incomplete. Historical qualifiers do not waive admission; identity and source admission remain pending."
+    }
+  ],
+  "publication": {
+    "status": "held",
+    "authorized_by": null,
+    "authorization_url": null,
+    "intended_use": "noncommercial_research"
+  },
+  "document_decisions": []
+}
