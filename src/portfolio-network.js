@@ -1,8 +1,33 @@
 import {createModel,escapeHtml as E,dateLabel,money} from './graph-model.js?v=20261018-data2';
-import {portfolioModel,portfolioOverview} from './portfolio-view.js?v=20261018-data2';
+import {portfolioModel,portfolioOverview,HOLDINGS_PAGE_SIZE} from './portfolio-view.js?v=20261018-data2';
 
 export const NETWORK_PAGE_SIZE=20;
 export const NETWORK_NODE_LIMIT=200;
+const sharedInstrumentIndexes=new WeakMap();
+// Discover connections only from already admitted exact instrument identities.
+// Repeated source rows and issuer-role navigation never add another investor.
+export function sharedInstrumentsPage(model,{query='',portfolioId=null,page=0}={}){
+  let instruments=sharedInstrumentIndexes.get(model);
+  if(!instruments){
+    const groups=new Map();
+    for(const edge of model.edges){
+      if(edge.kind!=='managed_holding'||!model.portfolioMap.has(edge.source))continue;
+      const node=model.nodeMap.get(edge.target);
+      if(node?.kind!=='asset')continue;
+      if(!groups.has(node.id))groups.set(node.id,{node,filers:new Set(),terms:new Set([node.label,node.sector])});
+      const group=groups.get(node.id);group.filers.add(edge.source);
+      for(const position of edge.portfolioPositions||[])group.terms.add(position.issuerName);
+    }
+    instruments=[...groups.values()].filter(group=>group.filers.size>1).map(group=>({node:group.node,filerIds:[...group.filers].sort(),searchText:[...group.terms].filter(Boolean).join(' ').toLocaleLowerCase()}));
+    instruments.sort((a,b)=>b.filerIds.length-a.filerIds.length||a.node.label.localeCompare(b.node.label)||String(a.node.sector||'').localeCompare(String(b.node.sector||''))||a.node.id.localeCompare(b.node.id));
+    sharedInstrumentIndexes.set(model,instruments);
+  }
+  const q=query.trim().toLocaleLowerCase();
+  const matches=instruments.filter(item=>(!portfolioId||item.filerIds.includes(portfolioId))&&(!q||item.searchText.includes(q)));
+  const pages=Math.max(1,Math.ceil(matches.length/HOLDINGS_PAGE_SIZE));
+  const current=Math.min(Math.max(0,Number.isFinite(page)?Math.floor(page):0),pages-1);
+  return {rows:matches.slice(current*HOLDINGS_PAGE_SIZE,(current+1)*HOLDINGS_PAGE_SIZE),total:matches.length,page:current,pages};
+}
 // Manually reviewed issuer-role navigation, NOT instrument identity merging.
 // Exact admitted source IDs resolve through the existing equivalence map.
 export const ISSUER_ROLES=[
