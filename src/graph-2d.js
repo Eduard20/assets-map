@@ -32,12 +32,14 @@ export class Graph2D {
         edge.querySelector('.edge-visible').style.opacity=state.selectedEdgeId===data.id?1:related?.9:.22;
       }
     }else this.overviewBounds=null;
+    if(this.focusedId===state.rootId)this.focus(this.focusedId);else this.focusedId=null;
   }
   applyTransform(){this.layer.setAttribute('transform',`translate(${this.pan.x},${this.pan.y}) scale(${this.zoom})`);}
   setZoom(value){this.zoom=Math.max(.45,Math.min(this.graph?.network?10:3.5,value));this.applyTransform();}
-  fit(){this.zoom=1;this.pan={x:0,y:0};if(this.overviewBounds){this.bounds={...this.overviewBounds};this.svg.setAttribute('viewBox',`${this.bounds.x} ${this.bounds.y} ${this.bounds.width} ${this.bounds.height}`);}this.applyTransform();}
+  fit(){this.focusedId=null;this.zoom=1;this.pan={x:0,y:0};if(this.overviewBounds){this.bounds={...this.overviewBounds};this.svg.setAttribute('viewBox',`${this.bounds.x} ${this.bounds.y} ${this.bounds.width} ${this.bounds.height}`);}this.applyTransform();}
   focus(id){
     if(!this.graph?.network||!this.positions.has(id))return;
+    this.focusedId=id;
     const point=this.positions.get(id);
     if(this.zoom>1.05){this.pan={x:this.bounds.x+this.bounds.width/2-point.x*this.zoom,y:this.bounds.y+this.bounds.height/2-point.y*this.zoom};}
     else{

@@ -14,7 +14,7 @@ const selectedId = page => page.evaluate(() => window.__assetsMap.getState().sel
 const bubbles = page => page.locator('#graph-3d button[data-node-id]');
 
 async function expectView(page, view) {
-  await page.waitForFunction(expected => window.__assetsMap?.getState().view === expected && ['2d', '3d', 'list'].every(name => {
+  await page.waitForFunction(expected => window.__assetsMap?.getState()?.view === expected && ['2d', '3d', 'list'].every(name => {
     const container = document.querySelector(`#graph-${name}`);
     const button = document.querySelector(`[data-view="${name}"]`);
     return container && container.hidden === (name !== expected) && button?.getAttribute('aria-pressed') === String(name === expected);

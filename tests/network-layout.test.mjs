@@ -114,6 +114,7 @@ test('3D camera fits the retained network and phone labels stay bounded with eve
       renderer.focus('instrument-005');assertVisible();
       assert.deepEqual(renderer.positions,positions,'focusing changes the camera, never the world geometry');
       assert.deepEqual(renderer.controls.target.toArray(),Object.values(positions.get('instrument-005')));
+      renderer.fit();assert.deepEqual(renderer.controls.target.toArray(),Object.values(positions.get('instrument-005')),'refit and resize keep an established security focus');
       for(const position of positions.values()){
         const projected=new THREE.Vector3(position.x,position.y,position.z).project(renderer.camera);
         assert.ok(Math.abs(projected.x)<1&&Math.abs(projected.y)<1&&Math.abs(projected.z)<1,'all retained nodes stay inside the camera frustum');

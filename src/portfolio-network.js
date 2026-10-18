@@ -32,7 +32,7 @@ export function createPortfolioNetwork(portfolios,identity){
   network.buildVisibleGraph=state=>buildPortfolioNetwork(network,state);return network;
 }
 export function buildPortfolioNetwork(model,state){
-  const ids=new Set(model.portfolioRoots),eligible=state.portfolioFilter?model.portfolioRoots.filter(id=>id===state.portfolioFilter):model.portfolioRoots;
+  const ids=new Set([...model.portfolioRoots,state.rootId]),eligible=state.portfolioFilter?model.portfolioRoots.filter(id=>id===state.portfolioFilter):model.portfolioRoots;
   for(const id of state.pinnedNodes||[])if(model.nodeMap.has(id)&&ids.size<NETWORK_NODE_LIMIT)ids.add(id);
   ids.add(state.rootId);
   for(const root of eligible){const edges=model.edges.filter(e=>e.source===root).slice(0,state.limits.get(root)||NETWORK_PAGE_SIZE);for(const e of edges)if(ids.size<NETWORK_NODE_LIMIT)ids.add(e.target);}

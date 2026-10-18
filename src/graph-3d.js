@@ -92,6 +92,7 @@ export class Graph3D {
   update(graph, state) {
     this.graph = graph;
     this.state = state;
+    if(!graph.network||this.focusedId!==state.rootId)this.focusedId=null;
     const portrait = this.container.clientWidth < 600;
     const key = JSON.stringify([portrait, Boolean(graph.network), graph.network ? null : state.rootId, graph.nodes.map(n=>n.id), graph.edges.map(e=>e.id)]);
     if (key !== this.graphKey) {
@@ -309,7 +310,7 @@ export class Graph3D {
   }
   fit() {
     if (!this.positions || !this.width) return;
-    if(this.graph?.network){this.fitNetwork(new THREE.Vector3(0,0,0),true);return;}
+    if(this.graph?.network){this.fitNetwork(this.positions.has(this.focusedId)?vector(this.positions.get(this.focusedId)):new THREE.Vector3(0,0,0),true);return;}
     this.controls.enableDamping = false;
     this.controls.update();
     this.controls.enableDamping = true;
@@ -351,6 +352,7 @@ export class Graph3D {
   }
   focus(id) {
     if(!this.graph?.network||!this.positions?.has(id))return;
+    this.focusedId=id;
     this.fitNetwork(vector(this.positions.get(id)));
   }
   zoomBy(factor) {

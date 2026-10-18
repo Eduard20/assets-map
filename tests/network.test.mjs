@@ -30,3 +30,5 @@ test('unknown, duplicate or malformed equivalence memberships fail closed',()=>{
 });
 
 test('public identity map is byte-bound to independently approved exact-match release',async()=>{const bytes=await readFile(new URL('../data/instrument-equivalence.json',import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),'36712784e2d53c44f7ef89a7719c8d8240f5caefffb2399b5a16fda08b3704bf');assert.equal(identity.admission.status,'approved');assert.throws(()=>createPortfolioNetwork(portfolios,{...identity,admission:{status:'pending'}}),/independent review/);});
+
+test('large navigation history cannot exceed the node ceiling or drop current focus',()=>{const state=initialState(model);const securities=model.nodes.filter(n=>n.kind==='asset');state.pinnedNodes=new Set(securities.slice(0,198).map(n=>n.id));state.rootId=securities[250].id;const graph=buildVisibleGraph(model,state);assert.equal(graph.nodes.length,200);assert.ok(graph.nodes.some(n=>n.id===state.rootId));});

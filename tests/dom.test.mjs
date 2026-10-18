@@ -45,6 +45,10 @@ click('.holding-row');assert.match($('#detail-panel').textContent,/3 REPORTED IN
 assert.equal(window.__assetsMap.getState().rootId,'shared-instrument-264');
 assert.deepEqual(window.__assetsMap.getGraph().nodes.map(n=>n.id).sort(),beforeFocus.sort());
 assert.equal($('#focus-back').hidden,false);
+const focusedViewBox=$('#graph-2d svg').getAttribute('viewBox');
+click('[data-view="2d"]');assert.equal($('#graph-2d svg').getAttribute('viewBox'),focusedViewBox);
+window.dispatchEvent(new dom.window.Event('resize'));assert.equal($('#graph-2d svg').getAttribute('viewBox'),focusedViewBox);
+click('[data-view="list"]');
 click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/underlying row/);
 click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/Information-table row/);
 click('#focus-back');assert.equal(window.__assetsMap.getState().rootId,window.__assetsMap.getModel().rootId);
