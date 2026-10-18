@@ -7,3 +7,5 @@ _site/
 data-foundation/.local/
 data-foundation/staging/
 data-foundation/raw/
+__pycache__/
+*.pyc
