@@ -118,7 +118,12 @@ export class Graph3D {
     const portrait = this.container.clientWidth < 600;
     const landscape=this.container.clientWidth>=600&&this.container.clientHeight<380&&this.container.clientWidth/this.container.clientHeight>2.2;
     const key = JSON.stringify([portrait, landscape, Boolean(graph.network), graph.network ? null : state.rootId, graph.nodes.map(n=>n.id), graph.edges.map(e=>e.id)]);
+    let restoreFocusId=null;
     if (key !== this.graphKey) {
+      // Responsive layout rebuilds replace labels. Keep keyboard focus on the
+      // same surviving entity instead of dropping Enter/Space during resize.
+      const active=this.container.ownerDocument.activeElement;
+      if(this.labels.contains(active))restoreFocusId=active?.dataset.nodeId;
       this.graphKey = key;
       this.portrait = portrait;
       this.landscape = landscape;
@@ -145,6 +150,7 @@ export class Graph3D {
       if(edge.userData.arrow)edge.userData.arrow.visible=!graph.network||selected||related;
     }
     this.render();
+    if(restoreFocusId)this.nodeEntries.find(entry=>entry.node.id===restoreFocusId)?.button.focus({preventScroll:true});
   }
 
   build() {

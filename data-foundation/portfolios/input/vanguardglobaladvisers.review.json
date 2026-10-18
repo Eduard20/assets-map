@@ -1,0 +1,58 @@
+{
+  "decision": "approved",
+  "inputSha256": "f86d87b74433a86cf596300ee83a0bce5b5259e5f37932a363ef3dc3a6814aa8",
+  "reviewer": "independent-source-audit",
+  "reviewedAt": "2026-10-18",
+  "checks": {
+    "sourceIdentity": true,
+    "amendmentDiscovery": true,
+    "rowCount": true,
+    "valueTotal": true,
+    "sharePartition": true,
+    "spotChecks": true,
+    "publicRights": true
+  },
+  "reviewScope": "Independent ElementTree exact comparison of all 3,638 normalized rows and retained factual fields with SEC XML, including quantities, values, class, discretion, manager references, voting and eligibility. Fresh official submissions, cover, information table and directory independently downloaded and byte-compared. Complete 33-entry history with no older shards checked; Q1 amendment is not a Q2 amendment. Exact CIK 1811242 scope, existing Apple claim overlap and contextual realignment boundary independently reviewed. Dataset admission only, not publication approval.",
+  "constraints": [
+    "Vanguard Global Advisers, LLC, CIK 1811242 only; never relabel as The Vanguard Group, Inc., CIK 102909, or all Vanguard.",
+    "Historical 2026-06-30 reported Section 13(f) discretion, not current holdings, legal ownership, whole economic portfolio or AUM.",
+    "Retain explicit parent/affiliate realignment qualifier. No parent-plus-affiliate sum, sale inference from missing report, replacement time series or exhaustive successor-perimeter claim.",
+    "Preserve all raw reported source rows and provenance; three warrant rows excluded only from share view, not source normalization.",
+    "Apple row 2864 and existing managed/voting claims are one same-accession position with distinct role predicates, not additional holdings. Integration must link scope or explicitly present non-additive evidence views and test against duplicate exposure.",
+    "No cross-filer unique exposure or ownership aggregate. Share-view denominator is 214603821939 whole USD for this filer/date only.",
+    "Publish minimal normalized factual fields and official links only, no raw proprietary security identifiers, identifier-derived hashes, raw XML or security-master join.",
+    "New cross-filer equivalence membership requires a separate rebuild and independent SHA-bound review. This review does not approve graph integration, deployment or automatic merge.",
+    "Preserve source-specific timestamps; no claim that API acceptance time was independently reconciled to displayed index clock."
+  ],
+  "counts": {
+    "reportedRowCount": 3638,
+    "recomputedValueTotalUsd": "214603824175",
+    "shareRowCount": 3635,
+    "shareValueUsd": "214603821939",
+    "excludedRowCount": 3,
+    "shareReportedSecurityCount": 3635
+  },
+  "sourceUrls": [
+    "https://data.sec.gov/submissions/CIK0001811242.json",
+    "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/13F_0001811242_20260630.xml",
+    "https://www.sec.gov/Archives/edgar/data/1384905/000210012126000017/xslSCHEDULE_13G_X01/primary_doc.xml"
+  ],
+  "publicRightsScope": "Bounded minimal factual research/navigation admission under existing publication scope. No raw identifier/document republication, no blanket commercial licensing clearance or legal opinion.",
+  "overlapEvidence": {
+    "sourceRowOrdinal": 2864,
+    "positionId": "sec13f-0001811242-26-000015-row-02864",
+    "existingClaimIds": [
+      "cand_vga_managed_apple2026q2",
+      "cand_vga_voting_apple2026q2"
+    ],
+    "samePositionScope": "per_vga_13f2026q2_apple_common",
+    "nonAdditive": true
+  },
+  "sourceHashEvidence": {
+    "coverSha256": "b94343eb4adaf1ab25efc8c4d69d02e4daeea2101c703efb7109d19c0f344268",
+    "informationTableSha256": "1fc17579cfda9c1570c8b88f180ac7619dd51e9659ccec92f937962668d6e8fe",
+    "submissionsSha256": "0e461409d04c290b7eacbb68d748a961596c44c46322df5b8a70af800678e26a",
+    "freshDownloadsMatch": true
+  }
+}

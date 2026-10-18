@@ -1,8 +1,8 @@
 # Full reported portfolio contract
 
-The admitted release covers eight Q2 2026 SEC Form 13F filing families observed on 18 October 2026: BlackRock, Berkshire Hathaway, State Street, Geode Capital Management, JPMorgan Chase, Morgan Stanley, Goldman Sachs and Norges Bank. Their effective tables contain **158,444 reported rows**; **154,510 rows** qualify for the share view and **3,934 rows** are excluded. A complete public information table is not a complete economic portfolio or current holdings.
+The admitted release covers nine Q2 2026 SEC Form 13F filing families observed on 18 October 2026: BlackRock, Berkshire Hathaway, State Street, Geode Capital Management, JPMorgan Chase, Morgan Stanley, Goldman Sachs, Norges Bank and Vanguard Global Advisers, LLC. Their effective tables contain **162,082 reported rows**; **158,145 rows** qualify for the share view and **3,937 rows** are excluded. A complete public information table is not a complete economic portfolio or current holdings.
 
-The shared network contains **5,651 verified cross-filer instrument groups**, plus **14,839 unmatched source-scoped instruments**, giving **20,490 instrument nodes**. These counts are not legal-issuer or company counts. Strict class-label matching deliberately leaves differently described instruments separate.
+The shared network contains **5,657 verified cross-filer instrument groups**, plus **14,835 unmatched source-scoped instruments**, giving **20,492 instrument nodes**. These counts are not legal-issuer or company counts. Strict class-label matching deliberately leaves differently described instruments separate.
 
 ## Inputs and independent admission
 
@@ -61,12 +61,14 @@ The share view includes SH rows without put/call, excludes explicit warrant/righ
 
 ## Public delivery and lineage
 
-`data/portfolios.json` is a small summary/index. Each of the eight listed filers has an explicitly allowlisted compact JSON file. A groups dictionary preserves source-scoped instrument ID, source index, reported issuer label and class. Each row preserves ordinal, group index, value, quantity, discretion, manager references and voting authorities. Decoding reconstructs the exact source row ID. All retained fields can be compared back to the admitted normalized record.
+`data/portfolios.json` is a small summary/index. Each of the nine listed filers has an explicitly allowlisted compact JSON file. A groups dictionary preserves source-scoped instrument ID, source index, reported issuer label and class. Each row preserves ordinal, group index, value, quantity, discretion, manager references and voting authorities. Decoding reconstructs the exact source row ID. All retained fields can be compared back to the admitted normalized record.
 
-The shared network loads the eight portfolios and independently reviewed opaque instrument-equivalence mapping. Matching requires the same date, exact valid source identifier, exact trimmed class, quantity type and option. Differently labeled classes, malformed/placeholder identifiers and ambiguous same-filer candidates stay separate. Public memberships use only opaque source-scoped IDs; no raw or hashed proprietary identifiers, addresses, signatures, XML, API credentials or security-master/ticker joins are public.
+The shared network loads the nine portfolios and independently reviewed opaque instrument-equivalence mapping. Matching requires the same date, exact valid source identifier, exact trimmed class, quantity type and option. Differently labeled classes, malformed/placeholder identifiers and ambiguous same-filer candidates stay separate. Public memberships use only opaque source-scoped IDs; no raw or hashed proprietary identifiers, addresses, signatures, XML, API credentials or security-master/ticker joins are public.
 
 The initial overview uses top 20 instruments per filer, with top 40/60 controls and a **200-node ceiling**. Selecting a manager or instrument expands its actual available incoming/outgoing neighborhood in 20-connection pages, retaining context where space permits. Company-to-reporting-manager role links are explicit SEC-evidenced navigation, not holdings or issuer-class consolidation. List pages contain at most 50 source rows. Values do not size bubbles. Cross-filer values are never aggregated into unique exposure or ownership.
 
 Normalized inputs, admission files, documentation and quarantine are excluded by both the exact Pages artifact allowlist and legacy Jekyll `_config.yml` exclusions. Keep GitHub Actions as the supported Pages source.
 
 The export check also binds the instrument-equivalence map to each exact admitted input hash and active source, checks eligible membership/class/type/option and distinct filers, and recomputes coverage. Positional IDs cannot survive a changed re-import without rebuilding and independent review.
+
+Vanguard Global Advisers, LLC (CIK 1811242) is one legal filer, not the whole Vanguard group or parent CIK 102909. Its 3,638 reported rows reconcile exactly and 3,635 qualify for the share view. The January 12, 2026 reporting realignment caveat is retained. Apple row 2864 is the same position as the existing historical managed-discretion and voting claims: the two datasets are non-additive evidence views, never extra economic exposure. The researched dataset remains unchanged at four claims.
