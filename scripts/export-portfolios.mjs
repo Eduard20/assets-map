@@ -32,6 +32,12 @@ export function validatePortfolio(input){
   if(!quarantine.length){const r=input.reconciliation||{},included=input.positions.filter(p=>p.shareViewEligible),excluded=input.positions.filter(p=>!p.shareViewEligible);
     for(const [key,actual] of Object.entries({reportedRowCount:input.positions.length,recomputedValueTotalUsd:sum(input.positions,'valueUsd'),shareRowCount:included.length,shareValueUsd:sum(included,'valueUsd'),excludedRowCount:excluded.length,shareReportedSecurityCount:new Set(included.map(p=>p.reportedSecurityId)).size}))if(String(r[key])!==String(actual))errors.push(`Reconciliation mismatch: ${key}`);
     if(r.allActiveSourceTotalsReconciled!==true)errors.push('Active source totals unresolved');
+    // Recompute each filing against its own cover totals instead of trusting stored reconciliation flags.
+    const active=new Set(Array.isArray(r.activeSourceIds)?r.activeSourceIds:[]);if(!active.size||[...active].some(id=>!sources.has(id)))errors.push('Invalid active source set');
+    const foreign=input.positions.filter(p=>!active.has(p.sourceId)).length;if(foreign)errors.push(`${foreign} rows belong to superseded or inactive sources`);
+    for(const s of input.sources.filter(s=>active.has(s.sourceId))){const rows=input.positions.filter(p=>p.sourceId===s.sourceId);
+      if(!integer(s.cover?.tableEntryTotal)||!integer(s.cover?.tableValueTotal))errors.push(`Missing cover totals ${s.sourceId}`);
+      else{if(Number(s.cover.tableEntryTotal)!==rows.length)errors.push(`Cover row count mismatch ${s.sourceId}`);if(s.cover.tableValueTotal!==sum(rows,'valueUsd'))errors.push(`Cover value total mismatch ${s.sourceId}`);}}
   }
   if(!input.amendmentDiscovery?.scope||!input.amendmentLedger?.length)errors.push('Missing amendment discovery');
   return {errors,quarantine};

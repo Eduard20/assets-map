@@ -26,6 +26,15 @@ test('admission fails closed for stale or missing independent review and invalid
  assert.throws(()=>projectPortfolio(input,null,raw),/review/);assert.throws(()=>projectPortfolio(input,{...review,inputSha256:'stale'},raw),/review/);assert.throws(()=>projectPortfolio(input,{...review,checks:{...review.checks,amendmentDiscovery:false}},raw),/review/);
  const bad=structuredClone(input);bad.positions[0].valueUsd='-1';assert.equal(validatePortfolio(bad).quarantine.length,1);assert.throws(()=>projectPortfolio(bad,review,raw),/quarantined/);
  const totals=structuredClone(input);totals.reconciliation.shareValueUsd='1';assert.match(validatePortfolio(totals).errors.join(' '),/Reconciliation/);
+ const cover=structuredClone(input);cover.sources[0].cover.tableValueTotal='1';assert.match(validatePortfolio(cover).errors.join(' '),/Cover value total mismatch/);
+ const dropped=structuredClone(input);dropped.positions.pop();for(const [k,v] of Object.entries({reportedRowCount:88,recomputedValueTotalUsd:dropped.positions.reduce((n,p)=>n+BigInt(p.valueUsd),0n).toString()}))dropped.reconciliation[k]=v;dropped.reconciliation.shareRowCount=88;dropped.reconciliation.shareValueUsd=dropped.reconciliation.recomputedValueTotalUsd;assert.match(validatePortfolio(dropped).errors.join(' '),/Cover row count mismatch/);
+});
+test('superseded filing rows cannot be appended to the effective State Street table',async()=>{
+ const input=JSON.parse(gunzipSync(await readFile(new URL('../data-foundation/portfolios/input/statestreet.normalized.json.gz',import.meta.url))).toString());
+ assert.deepEqual(validatePortfolio(input).errors,[]);
+ const original=input.sources.find(s=>!input.reconciliation.activeSourceIds.includes(s.sourceId)).sourceId,appended=structuredClone(input);appended.positions[0]={...appended.positions[0],sourceId:original,positionId:`${original}-row-00001`};
+ assert.match(validatePortfolio(appended).errors.join(' '),/superseded or inactive sources/);
+ const unknown=structuredClone(input);unknown.reconciliation.activeSourceIds=['sec13f-unknown'];assert.match(validatePortfolio(unknown).errors.join(' '),/Invalid active source set/);
 });
 test('corrected equity-weight ETF is retained, SH-tagged note excluded, original State Street not appended',async()=>{
  const blackrock=await load(manifest.portfolios.find(p=>p.portfolioId.startsWith('blackrock')));assert.ok(blackrock.positions.some(p=>/EQ WT/.test(p.securityClass)));
