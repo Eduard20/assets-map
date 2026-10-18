@@ -75,7 +75,28 @@ try {
   const page = await context.newPage();
   watchErrors(page);
   await page.goto(origin);
-  await page.waitForFunction(() => window.__assetsMap);
+  await page.waitForFunction(() => window.__assetsMap?.getState());
+  await expectReal3D(page);
+  assert.equal(await page.locator('#dataset').inputValue(),'researched');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),4);
+  await page.locator('[data-view="list"]').click();
+  assert.equal(await page.locator('.list-connection').count(),4);
+  const researchEdges=await page.evaluate(()=>window.__assetsMap.getModel().edges.map(e=>({id:e.id,kind:e.kind})));
+  for(const edge of researchEdges){
+    await page.locator(`#graph-list [data-edge="${edge.id}"]`).click();
+    const detail=await page.locator('#detail-panel').textContent();
+    assert.match(detail,/Historical snapshot/);assert.match(detail,/does not establish a current position/);
+    if(edge.kind==='beneficial_ownership')assert.match(detail,/Less than 1%/);
+    if(edge.kind==='managed_holding'){assert.match(detail,/31,661,076/);assert.match(detail,/9,161,448,952 USD/);}
+    if(edge.kind==='voting_authority')assert.match(detail,/not an additional holding/);
+  }
+  await page.locator('[data-view="3d"]').click();await expectReal3D(page);
+  await page.screenshot({path:'artifacts/researched-desktop.png',fullPage:true});
+  for(const width of [320,390]){await ensureNoOverflow(page,width);await expectReal3D(page);}
+  await page.screenshot({path:'artifacts/researched-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1440,height:1000});
+  await page.locator('#dataset').selectOption('sample');
+  await page.waitForFunction(()=>window.__assetsMap.getState().rootId==='blackrock');
   await expectReal3D(page);
   assert.ok((await page.locator('#detail-panel').textContent()).includes('Client assets under management'));
   await page.screenshot({path: 'artifacts/desktop.png', fullPage: true});
@@ -185,6 +206,9 @@ try {
   const touchPage = await touchContext.newPage();
   watchErrors(touchPage);
   await touchPage.goto(origin);
+  await touchPage.waitForFunction(()=>window.__assetsMap?.getState());
+  await touchPage.locator('#dataset').selectOption('sample');
+  await touchPage.waitForFunction(()=>window.__assetsMap.getState().rootId==='blackrock');
   await expectReal3D(touchPage);
   const touchBubble = touchPage.locator('#graph-3d button[data-node-id]:not([data-node-id="blackrock"])').first();
   const tappedId = await touchBubble.getAttribute('data-node-id');
@@ -237,7 +261,7 @@ try {
   const racePage = await raceContext.newPage();
   watchErrors(racePage);
   await racePage.goto(origin, {waitUntil: 'domcontentloaded'});
-  await racePage.waitForFunction(() => window.__assetsMap);
+  await racePage.waitForFunction(() => window.__assetsMap?.getState());
   await Promise.race([importStarted, new Promise((_, reject) => setTimeout(() => reject(new Error('Default 3D import was never requested')), 10000))]);
   await racePage.locator('[data-view="list"]').click();
   await expectView(racePage, 'list');

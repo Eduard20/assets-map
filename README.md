@@ -1,8 +1,16 @@
 # Assets Map
 
-A small, evidence-first UI prototype for exploring the connections between asset managers, companies and investments.
+An evidence-first map with four independently reviewed historical equity disclosures and a separate illustrative sample.
 
-## Try the prototype
+## Explore the map
+
+The default **Researched disclosures** view shows four source-qualified historical claims about Apple common stock. Select a connection to see exact reported numbers, dates, source locators and coverage. Switch to **Illustrative sample** for the original broader interface demonstration.
+
+- Tim Cook and the 12-person management group: beneficial attribution on **2 January 2026**, each source-bound below 1%; the group includes Cook.
+- Vanguard Global Advisers, LLC: reported discretion and voting authority on the **same 30 June 2026 position**. These are separate roles, not two holdings.
+- No current-position inference, cap-table total, full-AUM claim or cross-date summation. Three unapproved candidates remain excluded.
+
+## Try the illustrative sample
 
 - Search for **BlackRock**, **Berkshire**, **Amazon**, **Nestlé** or **SpaceX**.
 - Select an entity or connection to inspect its source and date.
@@ -46,7 +54,7 @@ Install the test browser with `npx playwright install chromium`, or provide an e
 
 The repository includes a GitHub Pages deployment workflow. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions** once if Pages has not been enabled. Then run the **Deploy Assets Map** workflow or push a change to `main`.
 
-The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes the exact file allowlist in `scripts/prepare-site.mjs`, including only `data/graph.json` from `data/`. Canonical data, staging, raw evidence, pilot candidates and review artifacts are excluded. Symlinked public inputs are rejected.
+The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes the exact file allowlist in `scripts/prepare-site.mjs`, including only `data/graph.json` and generated `data/researched.json` from `data/`. Canonical data, staging, raw evidence, pilot candidates and review artifacts are excluded. Symlinked public inputs are rejected.
 
 Use **GitHub Actions** as the Pages source, not a branch-based Jekyll build. `_config.yml` additionally excludes the data foundation and source-only directories if a legacy branch build is enabled; it is defense in depth, not a replacement for the workflow's exact allowlist. After deployment, verify the app and confirm that `/data-foundation/pilot/input/batch.json` returns 404.
 
@@ -74,11 +82,11 @@ Edges: `id`, `source`, `target`, `kind` (`managed_holding`, `corporate_ownership
 
 Each edge is a sourced claim. Multiple edges can describe different dated relationships between the same entities. This prototype does not reconcile contradictions, calculate control or compute aggregate ownership. Add evidence and explicit dates rather than inferred percentages.
 
-## Versioned data foundation (shadow only)
+## Versioned data foundation and reviewed cutover
 
-A separately tested foundation now supports isolated agent batches, a reviewed identity/source registry, immutable claim revisions, one validator and atomic versioned shadow releases. The current illustrative graph is unchanged.
+A separately tested foundation now supports isolated agent batches, a reviewed identity/source registry, immutable claim revisions, one validator and atomic versioned shadow releases. The original illustrative graph remains unchanged and separately selectable.
 
-The bounded real pilot contains **seven sourced candidate claims, all quarantined** because complete amendment discovery through the cutoff is not established. No new holdings are admitted or loaded into the app. Synthetic fixtures test the accepted path, exact revision lineage, replay, conflicts, source rights, amendments and rollback.
+The original seven-candidate quarantine fixture is retained unchanged. A separate, independently reviewed four-claim subset now generates the default historical disclosure view. The remaining three candidates are still excluded. `scripts/export-researched.mjs` requires publication approval and all original admission gates; `npm run check` verifies exact reproduction of the public projection. Reviewed inputs and admission evidence are in `data-foundation/researched/input/` and excluded from Pages. No raw filing archives or proprietary security identifiers are committed. Synthetic fixtures test the accepted path, exact revision lineage, replay, conflicts, source rights, amendments and rollback.
 
 - [Implementation and agent contract](docs/data-foundation.md)
 - [Pilot evidence, rights scope and remaining gates](data-foundation/pilot/README.md)

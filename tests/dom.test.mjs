@@ -6,11 +6,12 @@ import {createModel, initialState} from '../src/graph-model.js';
 
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const data = JSON.parse(await readFile(new URL('../data/graph.json', import.meta.url), 'utf8'));
+const researched = JSON.parse(await readFile(new URL('../data/researched.json', import.meta.url), 'utf8'));
 const dom = new JSDOM(html, {url: 'http://localhost/'});
 Object.assign(globalThis, {
   window: dom.window,
   document: dom.window.document,
-  fetch: async () => ({ok: true, json: async () => data})
+  fetch: async url => ({ok: true, json: async () => String(url).includes('researched.json') ? researched : data})
 });
 // jsdom has no WebGL. Make that explicit instead of depending on its noisy
 // "not implemented" canvas exception to exercise the fallback.
@@ -28,6 +29,22 @@ async function waitFor(check, message) {
 }
 await import('../src/app.js');
 await waitFor(() => window.__assetsMap && window.__assetsMap.getState().view === '2d' && !$('#graph-2d').hidden, 'App did not settle into the no-WebGL 2D fallback');
+
+assert.equal(window.__assetsMap.getModel().meta.mode,'researched');
+assert.match($('#dataset-context').textContent,/4 reviewed disclosures/);
+for(const edge of researched.edges){
+  window.__assetsMap.selectEdge(edge.id);
+  assert.match($('#detail-panel').textContent,/Historical snapshot/);
+  assert.match($('#detail-panel').textContent,/does not establish a current position/);
+  assert.ok($('#detail-panel a.source-link').href.startsWith('https://www.sec.gov/'));
+  if(edge.kind==='beneficial_ownership')assert.match($('#detail-panel').textContent,/Less than 1%/);
+}
+click('[data-filter="ownership"]');
+assert.equal(window.__assetsMap.getGraph().edges.length,2);
+assert.ok(window.__assetsMap.getGraph().edges.every(e=>e.kind==='beneficial_ownership'));
+click('[data-filter="voting_authority"]');
+assert.equal(window.__assetsMap.getGraph().edges.length,1);
+await window.__assetsMap.setDataset('sample');
 
 function assertActiveView(view) {
   assert.equal(window.__assetsMap.getState().view, view);
@@ -128,4 +145,16 @@ test('unloaded entity is explicitly incomplete', () => {
   assert.equal(document.querySelectorAll('.graph-node').length, 1);
   assert.match($('#detail-panel').textContent, /Missing data does not mean no relationship/);
   assert.equal($('#empty-state').hidden, false);
+});
+
+test('switching datasets clears old detail, filter, search and dialog; repeated switches remain coherent',async()=>{
+  click('#about-button');$('#search').value='old';
+  await window.__assetsMap.setDataset('researched');
+  assert.equal($('#info-dialog').open,false);assert.equal($('#search').value,'');
+  assert.equal(window.__assetsMap.getState().rootId,'ent_apple');
+  assert.equal(window.__assetsMap.getState().filter,'all');
+  assert.equal(window.__assetsMap.getGraph().edges.length,4);
+  await Promise.all([window.__assetsMap.setDataset('sample'),window.__assetsMap.setDataset('researched')]);
+  assert.equal(window.__assetsMap.getModel().meta.mode,'researched');
+  assert.equal($('#dataset').value,'researched');
 });

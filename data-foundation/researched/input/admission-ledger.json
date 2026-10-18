@@ -1,0 +1,137 @@
+{
+  "review_id": "independent_four_admission_20261018_v1",
+  "reviewer": "independent-pilot-admission-review",
+  "reviewed_at": "2026-10-18T10:49:13.177508Z",
+  "scope": "Four source-qualified historical observations only, accepted for model. Publication authorization is separate.",
+  "approved_candidate_ids": [
+    "cand_apple_proxy_cook",
+    "cand_apple_proxy_management_group",
+    "cand_vga_managed_apple2026q2",
+    "cand_vga_voting_apple2026q2"
+  ],
+  "excluded_candidate_ids": [
+    "cand_apple_proxy_vanguard",
+    "cand_apple_proxy_blackrock",
+    "cand_vanguard_shared_vote2025q2"
+  ],
+  "inventory_checks": [
+    {
+      "family": "Apple2026proxy",
+      "transport": {
+        "url": "https://data.sec.gov/submissions/CIK0000320193.json",
+        "http_status": 200,
+        "content_type": "application/json",
+        "server_date": "Sun, 18 Oct 2026 10:40:28 GMT",
+        "retrieved_at_system_clock": "2026-10-18T10:40:28.169687Z",
+        "sha256_response": "aad00f6aa75ba1405e0a34c788bdba9042281b2724fe1db3ff26f434b9a92e44",
+        "bytes": 163690,
+        "cik": "0000320193",
+        "name": "Apple Inc.",
+        "row_count": 1000,
+        "filing_date_min": "2015-09-18",
+        "filing_date_max": "2026-10-16",
+        "older_files": [
+          {
+            "name": "CIK0000320193-submissions-001.json",
+            "filingCount": 1267,
+            "filingFrom": "1994-01-26",
+            "filingTo": "2015-09-16"
+          }
+        ]
+      },
+      "relevant_records": [
+        {
+          "accessionNumber": "0001096906-26-000136",
+          "filingDate": "2026-01-22",
+          "reportDate": "",
+          "acceptanceDateTime": "2026-01-22T23:55:07.000Z",
+          "form": "PX14A6G",
+          "fileNumber": "001-36743"
+        },
+        {
+          "accessionNumber": "0001308179-26-000009",
+          "filingDate": "2026-01-08",
+          "reportDate": "",
+          "acceptanceDateTime": "2026-01-09T02:32:20.000Z",
+          "form": "DEFA14A",
+          "fileNumber": "001-36743"
+        },
+        {
+          "accessionNumber": "0001308179-26-000008",
+          "filingDate": "2026-01-08",
+          "reportDate": "2026-02-24",
+          "acceptanceDateTime": "2026-01-09T02:31:36.000Z",
+          "form": "DEF 14A",
+          "fileNumber": "001-36743"
+        }
+      ],
+      "older_inventory_note": "The recent inventory covers September 18, 2015 through October 16, 2026. The older shard has an observed maximum filing date of September 17, 2015 and contains no 2026 proxy entries. No relevant shard was omitted.",
+      "older_inventory_transport": {
+        "url": "https://data.sec.gov/submissions/CIK0000320193-submissions-001.json",
+        "http_status": 200,
+        "content_type": "application/json",
+        "server_date": "Sun, 18 Oct 2026 10:41:06 GMT",
+        "retrieved_at_system_clock": "2026-10-18T10:41:06.353976Z",
+        "sha256_response": "3ce1f72cb9d77f355203d0e918ce6eb48f41c9bfa0111a9ea8fb4a847461adbb",
+        "bytes": 205340,
+        "row_count": 1267,
+        "filing_date_min": "1994-01-26",
+        "filing_date_max": "2015-09-17"
+      },
+      "classification": [
+        {
+          "accession": "0001308179-26-000008",
+          "decision": "original selected source"
+        },
+        {
+          "accession": "0001308179-26-000009",
+          "decision": "Issuer additional proxy-availability and voting notice. The full substantive text was checked and contains no correction to the selected ownership table, footnotes or denominator.",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000009/aapl014016-defa14a.htm"
+        },
+        {
+          "accession": "0001096906-26-000136",
+          "decision": "Third-party NLPC exempt solicitation, not an issuer amendment. It contains no correction to the selected ownership observations.",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000109690626000136/nlpc_px14a6g.htm"
+        }
+      ]
+    },
+    {
+      "family": "VGA13F2026Q2",
+      "transport": {
+        "url": "https://data.sec.gov/submissions/CIK0001811242.json",
+        "http_status": 200,
+        "content_type": "application/json",
+        "server_date": "Sun, 18 Oct 2026 10:40:24 GMT",
+        "retrieved_at_system_clock": "2026-10-18T10:40:24.088201Z",
+        "sha256_response": "0e461409d04c290b7eacbb68d748a961596c44c46322df5b8a70af800678e26a",
+        "bytes": 7018,
+        "cik": "0001811242",
+        "name": "Vanguard Global Advisers, LLC",
+        "row_count": 33,
+        "filing_date_min": "2020-05-15",
+        "filing_date_max": "2026-08-27",
+        "older_files": []
+      },
+      "relevant_records": [
+        {
+          "accessionNumber": "0001811242-26-000015",
+          "filingDate": "2026-08-13",
+          "reportDate": "2026-06-30",
+          "acceptanceDateTime": "2026-08-13T19:57:39.000Z",
+          "form": "13F-HR",
+          "fileNumber": "028-20273"
+        }
+      ],
+      "classification": "All 33 disclosed filing metadata rows were checked, with no older shards. Only accession 0001811242-26-000015 is a 13F filing for June 30, 2026. Amendment 0001811242-26-000008 covers Q1 and does not correct the selected Q2 report."
+    }
+  ],
+  "cutoff_precision": "The inventory was observed at the exact transport timestamps on October 18, 2026. The date-only schema cutoff does not assert coverage of the remainder of that day.",
+  "timestamp_caveat": "API acceptanceDateTime and rendered index timestamps disagree for some Apple filings. Preserve their raw source-specific values; source filing dates agree. No normalization or intraday publication-order inference.",
+  "collection_scope": "Previously observed official rendered filing pages and bounded official submissions metadata. The metadata client identified the AssetsMap project using its public repository contact route, paced serial requests at 1.1 seconds, and stopped on HTTP errors. No ongoing collector is approved.",
+  "exclusions": [
+    "Raw filings or publisher prose",
+    "Proprietary instrument identifier values or a licensed security master",
+    "Addresses, signatures and contact enrichment",
+    "Current holdings, full portfolio/AUM and control claims"
+  ]
+}

@@ -1,0 +1,25 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {JSDOM} from 'jsdom';
+const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
+const sample=JSON.parse(await readFile(new URL('../data/graph.json',import.meta.url),'utf8'));
+const dom=new JSDOM(html,{url:'http://localhost/'});
+let failResearch;
+const pending=new Promise((resolve,reject)=>{failResearch=reject;});
+Object.assign(globalThis,{window:dom.window,document:dom.window.document,fetch:async url=>String(url).includes('researched.json')?pending:{ok:true,json:async()=>sample}});
+dom.window.HTMLDialogElement.prototype.close=function(){this.open=false;};
+await import('../src/app.js');
+test('loading controls are safe and an obsolete startup failure cannot overwrite a newer sample view',async()=>{
+  for(const el of document.querySelectorAll('button,input,select'))assert.equal(el.disabled,el.id!=='dataset');
+  await window.__assetsMap.setView('list');
+  await window.__assetsMap.setDataset('sample');
+  assert.equal(window.__assetsMap.getState().rootId,'blackrock');
+  failResearch(new Error('late original load failure'));
+  await new Promise(resolve=>setTimeout(resolve,10));
+  assert.equal(window.__assetsMap.getState().rootId,'blackrock');
+  assert.match(document.querySelector('#detail-panel').textContent,/Client assets under management/);
+  assert.match(document.querySelector('#visible-count').textContent,/4 entities/);
+  assert.equal(document.querySelector('#dataset').value,'sample');
+  assert.equal(document.querySelector('[data-view="list"]').disabled,false);
+});

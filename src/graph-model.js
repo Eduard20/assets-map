@@ -1,10 +1,12 @@
 export const RELATIONSHIPS = {
+  beneficial_ownership: { label: 'Beneficial attribution', color: '#9b82b6', explanation: 'A source-defined beneficial ownership disclosure, which can include trusts and exercisable rights. It does not establish direct legal title or control.' },
+  voting_authority: { label: 'Voting authority', color: '#b18a61', dash: '2 4', explanation: 'Form-defined voting authority over reported shares. This is a separate role on a position, not an additional holding or proof of corporate control.' },
   managed_holding: { label: 'Managed holding', color: '#6f8faa', dash: '5 5', explanation: 'An investment held or managed on behalf of clients. This does not imply that the asset manager owns or controls the company.' },
   corporate_ownership: { label: 'Corporate stake', color: '#4b8c6c', explanation: 'A reported equity ownership interest. A stake does not by itself establish control.' },
   investment: { label: 'Investment', color: '#aa885b', explanation: 'A reported investment. Its current size, structure or ownership percentage may be undisclosed.' },
   subsidiary: { label: 'Subsidiary', color: '#4b8c6c', explanation: 'A reported corporate subsidiary. Check the source for the ownership structure and effective date.' }
 };
-export const KIND_LABELS = { manager: 'Asset manager', company: 'Company', fund: 'Fund', asset: 'Asset', sovereign: 'Sovereign fund' };
+export const KIND_LABELS = { manager: 'Asset manager', company: 'Company', fund: 'Fund', asset: 'Asset', sovereign: 'Sovereign fund', person: 'Disclosed individual', reported_group: 'Disclosed group' };
 export const DEFAULT_PAGE_SIZE = 8;
 export const MAX_VISIBLE_NODES = 45;
 export function escapeHtml(value) { return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -28,7 +30,7 @@ export function createModel(data) {
 }
 export function relatedEdges(model, id, { filter = 'all', direction = 'both' } = {}) {
   return model.edges.filter(edge => {
-    const relation = filter === 'all' || (filter === 'ownership' ? edge.kind !== 'managed_holding' : edge.kind === filter);
+    const relation = filter === 'all' || (filter === 'ownership' ? ['corporate_ownership','investment','subsidiary','beneficial_ownership'].includes(edge.kind) : edge.kind === filter);
     return relation && (direction === 'outgoing' ? edge.source === id : direction === 'incoming' ? edge.target === id : edge.source === id || edge.target === id);
   });
 }
