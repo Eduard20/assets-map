@@ -15,7 +15,7 @@ try{
   await page.locator('#reset-map').click();await page.locator('[data-view="3d"]').click();await page.waitForTimeout(2000);const did3d=await page.locator('#graph-3d').isVisible();if(did3d){assert.equal(await page.locator('#graph-3d canvas').count(),1);await page.screenshot({path:'artifacts/3d.png',fullPage:true});}else console.log('3D fallback used; WebGL was unavailable.');
   await page.locator('#reset-map').click();
   for(const width of [320,390,768]){await page.setViewportSize({width,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Horizontal overflow at ${width}px`);}
-  await page.setViewportSize({width:390,height:844});await page.screenshot({path:'artifacts/mobile.png',fullPage:true});
+  await page.setViewportSize({width:390,height:844});await page.waitForFunction(()=>document.querySelector('#graph-2d svg').viewBox.baseVal.width<500);await page.screenshot({path:'artifacts/mobile.png',fullPage:true});
   await page.locator('#about-button').click();assert.equal(await page.locator('#info-dialog').isVisible(),true);await page.locator('#dialog-done').click();
   assert.deepEqual(errors,[]);console.log('Browser smoke checks passed. 3D rendered:',did3d);
 }finally{await browser.close();server.kill();}
