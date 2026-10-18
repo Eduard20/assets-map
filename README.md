@@ -1,14 +1,20 @@
 # Assets Map
 
-An evidence-first map with four independently reviewed historical equity disclosures and a separate illustrative sample.
+An evidence-first map of **53,460 real reported share-position rows** from BlackRock, Berkshire Hathaway and State Street's **30 June 2026** SEC Form 13F filings.
 
 ## Explore the map
 
-The default **Researched disclosures** view shows four source-qualified historical claims about Apple common stock. Select a connection to see exact reported numbers, dates, source locators and coverage. Switch to **Illustrative sample** for the original broader interface demonstration.
+The default **Full reported portfolios** view loads BlackRock first. Choose a reporting filer, explore its top 8, 20 or 40 reported instruments in 3D, or search every eligible source row in the paginated List view.
 
-- Tim Cook and the 12-person management group: beneficial attribution on **2 January 2026**, each source-bound below 1%; the group includes Cook.
-- Vanguard Global Advisers, LLC: reported discretion and voting authority on the **same 30 June 2026 position**. These are separate roles, not two holdings.
-- No current-position inference, cap-table total, full-AUM claim or cross-date summation. Three unapproved candidates remain excluded.
+- BlackRock: **49,286 share rows / 5,442 source-scoped instruments**, $6,706,454,577,631 reported share value.
+- Berkshire Hathaway: **89 share rows / 29 instruments**, $299,253,556,246.
+- State Street: **4,085 share rows / 4,085 instruments**, $3,378,870,771,423, using the restatement rather than appending it to the superseded original.
+- These are 53,460 filing rows, **not 53,460 companies**. Instrument counts are source-scoped, not globally unique issuers.
+- The share view partitions **54,318 effective information-table rows**, excluding 858 option, principal, warrant/right or explicit debt-class rows. It includes fund shares, depositary receipts, preferred shares and units where reported, not only common stock.
+- BlackRock is a parent filer reporting on behalf of operating subsidiaries in a combination report. These are dated disclosed securities, **not whole AUM, proprietary ownership or current holdings**.
+- The graph groups only the same source-scoped reported instrument. Every underlying filing row, value, quantity, discretion category and manager reference remains inspectable. No name-based issuer merging or cross-filer deduplication.
+
+The **Historical disclosures (4)** option preserves the separately reviewed Apple disclosure set; **Illustrative sample** preserves the original interface demonstration. No datasets are silently added together.
 
 ## Try the illustrative sample
 
@@ -22,11 +28,11 @@ The default **Researched disclosures** view shows four source-qualified historic
 
 ## Scope and interpretation
 
-The starter dataset has **17 entities, 12 illustrative connections and 10 public official sources**. It is not complete, current in every detail, or a live portfolio. Broad data collection is intentionally deferred until the interface is reviewed.
+The optional illustrative dataset has **17 entities, 12 illustrative connections and 10 public official sources**. Its relationships remain separate from the real full-filing portfolio view.
 
 - BlackRock's three sample connections are **corporate acquisitions of managers/data businesses**, not its clients' investments.
 - **AUM is client assets under management**, not company-owned assets or valuation.
-- A **managed holding** is not corporate ownership or proof of control. No client-holdings dataset is loaded yet.
+- A **managed holding** is not corporate ownership or proof of control. Form 13F positions indicate reported investment discretion, not the manager’s legal ownership.
 - **Unknown percentages are null**, never inferred as zero or 100%.
 - A subsidiary shown at group level can be held through intermediate entities.
 - Each edge has an independent evidence date; historical acquisitions are not live cap-table guarantees.
@@ -54,7 +60,7 @@ Install the test browser with `npx playwright install chromium`, or provide an e
 
 The repository includes a GitHub Pages deployment workflow. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions** once if Pages has not been enabled. Then run the **Deploy Assets Map** workflow or push a change to `main`.
 
-The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes the exact file allowlist in `scripts/prepare-site.mjs`, including only `data/graph.json` and generated `data/researched.json` from `data/`. Canonical data, staging, raw evidence, pilot candidates and review artifacts are excluded. Symlinked public inputs are rejected.
+The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes the exact file allowlist in `scripts/prepare-site.mjs`, including the sample, historical disclosure projection, small portfolio index and three explicit compact portfolio files from `data/`. Canonical data, staging, raw evidence, pilot candidates and review artifacts are excluded. Symlinked public inputs are rejected.
 
 Use **GitHub Actions** as the Pages source, not a branch-based Jekyll build. `_config.yml` additionally excludes the data foundation and source-only directories if a legacy branch build is enabled; it is defense in depth, not a replacement for the workflow's exact allowlist. After deployment, verify the app and confirm that `/data-foundation/pilot/input/batch.json` returns 404.
 
@@ -86,7 +92,7 @@ Each edge is a sourced claim. Multiple edges can describe different dated relati
 
 A separately tested foundation now supports isolated agent batches, a reviewed identity/source registry, immutable claim revisions, one validator and atomic versioned shadow releases. The original illustrative graph remains unchanged and separately selectable.
 
-The original seven-candidate quarantine fixture is retained unchanged. A separate, independently reviewed four-claim subset now generates the default historical disclosure view. The remaining three candidates are still excluded. `scripts/export-researched.mjs` requires publication approval and all original admission gates; `npm run check` verifies exact reproduction of the public projection. Reviewed inputs and admission evidence are in `data-foundation/researched/input/` and excluded from Pages. No raw filing archives or proprietary security identifiers are committed. Synthetic fixtures test the accepted path, exact revision lineage, replay, conflicts, source rights, amendments and rollback.
+The original seven-candidate quarantine fixture is retained unchanged. A separate, independently reviewed four-claim subset now generates the optional historical disclosure view. The remaining three candidates are still excluded. `scripts/export-researched.mjs` requires publication approval and all original admission gates; `npm run check` verifies exact reproduction of the public projection. Reviewed inputs and admission evidence are in `data-foundation/researched/input/` and excluded from Pages. No raw filing archives or proprietary security identifiers are committed. Synthetic fixtures test the accepted path, exact revision lineage, replay, conflicts, source rights, amendments and rollback.
 
 - [Implementation and agent contract](docs/data-foundation.md)
 - [Pilot evidence, rights scope and remaining gates](data-foundation/pilot/README.md)
@@ -97,3 +103,9 @@ Run `npm run data:demo` for an explicitly fictional local shadow release, or `np
 ## Third-party notices
 
 Three.js and OrbitControls: MIT, Copyright 2010–2026 Three.js Authors. See `vendor/THREE-LICENSE.txt`.
+
+## Full portfolio import and admission
+
+See [portfolio import contract](docs/portfolio-import.md). Compressed normalized factual inputs preserve exact reviewed bytes without committing raw XML or proprietary security identifiers. Export checks bind independent complete-batch approval to the SHA-256 of each decompressed input. Each source row and retained field was mechanically reconciled to official XML, with live official spot checks and independent amendment discovery. This is not a claim of per-row human review.
+
+The public projection uses a small index plus compact per-filer group/row arrays, fetched only for the selected filer. All three public data files together are about 4.18 MB before HTTP compression. The graph has at most 45 nodes; List pages have at most 50 source rows. Invalid input rows are quarantined and withhold the complete batch rather than silently claiming full coverage.

@@ -1,0 +1,42 @@
+{
+  "decision": "approved",
+  "inputSha256": "eb20349545cd61288d70e2a94bd8cc3252d31c358658263d48ebf638ac2b4918",
+  "reviewer": "independent-source-audit",
+  "reviewedAt": "2026-10-18",
+  "checks": {
+    "sourceIdentity": true,
+    "amendmentDiscovery": true,
+    "rowCount": true,
+    "valueTotal": true,
+    "sharePartition": true,
+    "spotChecks": true,
+    "publicRights": true
+  },
+  "reviewScope": "All effective source rows and retained fields mechanically compared against official XML, independent count/value summation and class eligibility; live official cover verification; independent fresh SEC submissions history and archive-date coverage checks; official table spot checks. No claim of individual human review of every row.",
+  "constraints": [
+    "Historical reported Section 13(f) share positions as of 2026-06-30, observed through 2026-10-18. Never whole portfolio, total AUM, or legal ownership.",
+    "Share-view weights use only this filer/date eligible-share reported-value denominator 6706454577631 USD. Whole-dollar values, never legacy thousand-dollar scaling.",
+    "Retain source-row identity, class, reporting date, value, and manager-reference provenance. Same-security source rows may be grouped for display only with underlying rows recoverable; never multiply by manager-reference count.",
+    "No cross-filer deduplicated ownership or AUM aggregate. Source-reported discretion may overlap parent, fund, and manager layers.",
+    "Publish normalized factual fields and source links only; do not publish raw CUSIP/FIGI identifiers or the raw XML bundle.",
+    "The share view includes fund shares, depositary receipts, preferred shares and units, including funds with non-equity underlying assets; it is not common-stock-only.",
+    "Use verified reportingDate and filingDate in public UI. Do not display acceptedAt as independently resolved acceptance time; SEC API and filing index can differ.",
+    "Prominently retain combination-report scope and parent-disclaimer qualification. Separately reported holdings of three other reporting-manager entries are outside this table.",
+    "Keep unresolved source manager reference 0 on row 6507 unresolved and disclose it in evidence; do not invent a manager identity.",
+    "27 same-instrument/same-value/same-quantity source-row pairs have different manager references. Retain these reported rows; identical quantities alone do not establish duplicate economic holdings. Do not claim unique economic exposure."
+  ],
+  "counts": {
+    "reportedRowCount": 49968,
+    "recomputedValueTotalUsd": "6729538649155",
+    "shareRowCount": 49286,
+    "shareValueUsd": "6706454577631",
+    "excludedRowCount": 682,
+    "shareReportedSecurityCount": 5442
+  },
+  "sourceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/2012383/000201238326003238/xslForm13F_X02/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/2012383/000201238326003238/form13fInfoTable.xml",
+    "https://data.sec.gov/submissions/CIK0002012383.json"
+  ],
+  "publicRightsScope": "Confirmed factual normalized minimal fields, no proprietary security identifier values or document republication in the payload. This is dataset admission, not a blanket license/legal opinion."
+}

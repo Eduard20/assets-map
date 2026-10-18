@@ -1,6 +1,6 @@
 import * as THREE from '../vendor/three.module.min.js';
 import { OrbitControls } from '../vendor/OrbitControls.js';
-import { KIND_LABELS } from './graph-model.js?v=20261018-research1';
+import { KIND_LABELS } from './graph-model.js?v=20261018-portfolios1';
 import { layoutBubbles, bubbleRadius } from './bubble-layout.js';
 
 const vector = p => new THREE.Vector3(p.x, p.y, p.z);

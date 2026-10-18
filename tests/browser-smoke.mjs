@@ -76,6 +76,21 @@ try {
   watchErrors(page);
   await page.goto(origin);
   await page.waitForFunction(() => window.__assetsMap?.getState());
+  await expectReal3D(page,9);
+  assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
+  assert.ok(await page.evaluate(()=>window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount>40000));
+  await page.locator('#top-n').selectOption('40');await expectReal3D(page,41);
+  await page.locator('#holdings-search').fill('APPLE');await expectView(page,'list');
+  assert.ok(await page.locator('.holding-row').count()>0);assert.ok(await page.locator('.holding-row').count()<=50);
+  await page.locator('.holding-row').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
+  await page.locator('#holdings-search').fill('');
+  await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
+  for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);await page.waitForFunction(id=>window.__assetsMap.getModel().rootId===id,p);await expectReal3D(page,9);assert.ok(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length===window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount));}
+  await page.screenshot({path:'artifacts/full-portfolios-desktop.png',fullPage:true});
+  for(const width of [320,390]){await ensureNoOverflow(page,width);await expectReal3D(page,9);}
+  await page.screenshot({path:'artifacts/full-portfolios-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1440,height:1000});
+  await page.locator('#dataset').selectOption('researched');await page.waitForFunction(()=>window.__assetsMap.getModel().meta.mode==='researched');
   await expectReal3D(page);
   assert.equal(await page.locator('#dataset').inputValue(),'researched');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),4);
@@ -235,7 +250,7 @@ try {
   assert.match(await fallbackPage.locator('#view-notice').textContent(), /3D.*(?:unavailable|not available|not supported|could not)/i);
   assert.equal(await fallbackPage.locator('#view-notice').isVisible(), true);
   assert.equal(await fallbackPage.locator('#status').isVisible(), true);
-  assert.equal(await fallbackPage.locator('.graph-node').count(), 4);
+  assert.equal(await fallbackPage.locator('.graph-node').count(), 9);
   await fallbackPage.locator('[data-view="list"]').click();
   await expectView(fallbackPage, 'list');
   await fallbackPage.locator('[data-view="3d"]').click();
@@ -270,7 +285,7 @@ try {
   await expectView(racePage, 'list');
   assert.equal(await racePage.locator('.zoom-tools').isVisible(), false);
   await racePage.locator('[data-view="3d"]').click();
-  await expectReal3D(racePage);
+  await expectReal3D(racePage,9);
   await raceContext.close();
 
   assert.deepEqual(errors, [], 'Browser JavaScript errors');

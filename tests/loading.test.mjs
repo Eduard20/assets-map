@@ -7,7 +7,7 @@ const sample=JSON.parse(await readFile(new URL('../data/graph.json',import.meta.
 const dom=new JSDOM(html,{url:'http://localhost/'});
 let failResearch;
 const pending=new Promise((resolve,reject)=>{failResearch=reject;});
-Object.assign(globalThis,{window:dom.window,document:dom.window.document,fetch:async url=>String(url).includes('researched.json')?pending:{ok:true,json:async()=>sample}});
+Object.assign(globalThis,{window:dom.window,document:dom.window.document,fetch:async url=>String(url).includes('portfolios.json')?pending:{ok:true,json:async()=>sample}});
 dom.window.HTMLDialogElement.prototype.close=function(){this.open=false;};
 await import('../src/app.js');
 test('loading controls are safe and an obsolete startup failure cannot overwrite a newer sample view',async()=>{
