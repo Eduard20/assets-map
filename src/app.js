@@ -1,6 +1,6 @@
 import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261018-research1';
-import {researchDetails} from './research-view.js';
-import {Graph2D} from './graph-2d.js';
+import {researchDetails} from './research-view.js?v=20261018-research1';
+import {Graph2D} from './graph-2d.js?v=20261018-research1';
 const $=selector=>document.querySelector(selector);
 let model,state,graph,renderer3D,renderer3DPromise,toastTimer,viewRequest=0,datasetRequest=0;
 const datasets=new Map();
