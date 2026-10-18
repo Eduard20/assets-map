@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {JSDOM} from 'jsdom';
+const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
+const data=JSON.parse(await readFile(new URL('../data/graph.json',import.meta.url),'utf8'));
+const dom=new JSDOM(html,{url:'http://localhost/'});
+Object.assign(globalThis,{window:dom.window,document:dom.window.document,fetch:async()=>({ok:true,json:async()=>data})});
+dom.window.HTMLDialogElement.prototype.showModal=function(){this.open=true;};dom.window.HTMLDialogElement.prototype.close=function(){this.open=false;};
+await import('../src/app.js');
+await new Promise(r=>setTimeout(r,30));
+const $=s=>document.querySelector(s);const click=s=>$(s).dispatchEvent(new dom.window.MouseEvent('click',{bubbles:true}));
+test('app initializes and renders known nodes with honest metric label',()=>{assert.equal(document.querySelectorAll('.graph-node').length,4);assert.match($('#detail-panel').textContent,/Client assets under management/);assert.match($('#detail-panel').textContent,/\$15.5T/);});
+test('search and root navigation work',()=>{$('#search').value='Berkshire';$('#search').dispatchEvent(new dom.window.Event('input'));assert.equal(document.querySelectorAll('[data-search-node]').length,1);click('[data-search-node="berkshire"]');assert.equal(window.__assetsMap.getState().rootId,'berkshire');assert.equal(document.querySelectorAll('.graph-node').length,6);});
+test('relationship filters and no-results state work',()=>{click('[data-filter="managed_holding"]');assert.equal(document.querySelectorAll('.edge').length,0);assert.equal($('#empty-state').hidden,false);click('[data-filter="all"]');assert.equal(document.querySelectorAll('.edge').length,5);});
+test('connection evidence and unknown stake label are visible',()=>{click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/CONNECTION DETAILS/);assert.match($('#detail-panel').textContent,/Not disclosed in sample/);assert.match($('#detail-panel').textContent,/2025/);assert.ok($('#detail-panel a.source-link').href.startsWith('https://'));});
+test('list, reset, and methodology controls work',async()=>{click('[data-view="list"]');assert.equal($('#graph-list').hidden,false);assert.equal(document.querySelectorAll('.list-connection').length,5);click('#reset-map');assert.equal(window.__assetsMap.getState().rootId,'blackrock');assert.equal($('#graph-2d').hidden,false);click('#about-button');assert.equal($('#info-dialog').open,true);assert.match($('#dialog-content').textContent,/not a complete ownership database/);click('#dialog-done');assert.equal($('#info-dialog').open,false);});
+test('unloaded entity is explicitly incomplete',()=>{window.__assetsMap.exploreRoot('spacex');assert.equal(document.querySelectorAll('.graph-node').length,1);assert.match($('#detail-panel').textContent,/Missing data does not mean no relationship/);assert.equal($('#empty-state').hidden,false);});

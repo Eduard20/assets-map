@@ -1,0 +1,481 @@
+{
+  "meta": {
+    "title": "Asset Map · sourced UI sample",
+    "defaultRoot": "blackrock",
+    "updatedAt": "2026-10-18",
+    "coverage": "12 illustrative relationships across BlackRock, Berkshire Hathaway, Amazon and Nestlé; SpaceX is a hub without loaded ownership links.",
+    "notes": [
+      "UI prototype sample only. This is not a comprehensive ownership database or a live portfolio.",
+      "Each relationship has its own source date. Acquisition-completion dates are historical observations; annual filings are year-end snapshots.",
+      "Corporate ownership of a manager is separate from investments managed for clients. No client portfolio look-through is included in this sample.",
+      "Unknown percentages and USD values are null, never zero. Percentages may use different denominators; inspect each relationship's notes.",
+      "Group-level subsidiary links may omit intermediate legal entities and do not necessarily assert direct shareholding.",
+      "For undated official webpages, asOf is the date verified. SpaceX has no ownership edges because its cap table has not been ingested."
+    ]
+  },
+  "sources": [
+    {
+      "id": "berkshire-2025-subsidiaries",
+      "title": "2025 Form 10-K, Exhibit 21: Subsidiaries of Registrant",
+      "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-ex21.htm",
+      "publisher": "Berkshire Hathaway / SEC EDGAR",
+      "asOf": "2025-12-31"
+    },
+    {
+      "id": "amazon-2025-subsidiaries",
+      "title": "2025 Form 10-K, Exhibit 21.1: Significant Subsidiaries",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231xex211.htm",
+      "publisher": "Amazon / SEC EDGAR",
+      "asOf": "2025-12-31"
+    },
+    {
+      "id": "amazon-whole-foods-2026",
+      "title": "Amazon expands Whole Foods Market",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-fresh-go-stores-closing-expanding-whole-foods",
+      "publisher": "Amazon",
+      "asOf": "2026-05-12",
+      "publishedAt": "2026-05-12"
+    },
+    {
+      "id": "amazon-zoox",
+      "title": "Amazon Devices & Services: Zoox",
+      "url": "https://www.aboutamazon.com/what-we-do/devices-services",
+      "publisher": "Amazon",
+      "asOf": "2026-10-18"
+    },
+    {
+      "id": "nestle-2025-financials",
+      "title": "Nestlé 2025 Financial Statements, note 14.1: L’Oréal",
+      "url": "https://www.nestle.com/sites/default/files/2026-02/financial-statements-2025-en.pdf",
+      "publisher": "Nestlé",
+      "asOf": "2025-12-31",
+      "publishedAt": "2026-02-19"
+    },
+    {
+      "id": "blackrock-gip-close",
+      "title": "BlackRock completes acquisition of Global Infrastructure Partners",
+      "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-completes-acquisition-of-global-infrastructure-partners",
+      "publisher": "BlackRock",
+      "asOf": "2024-10-01",
+      "publishedAt": "2024-10-01"
+    },
+    {
+      "id": "blackrock-hps-close",
+      "title": "BlackRock completes acquisition of HPS Investment Partners",
+      "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-acquires-hps-investment-partners",
+      "publisher": "BlackRock",
+      "asOf": "2025-07-01",
+      "publishedAt": "2025-07-01"
+    },
+    {
+      "id": "blackrock-preqin-close",
+      "title": "BlackRock completes acquisition of Preqin",
+      "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-completes-preqin-acquisition",
+      "publisher": "BlackRock",
+      "asOf": "2025-03-03",
+      "publishedAt": "2025-03-03"
+    },
+    {
+      "id": "blackrock-2026-q3",
+      "title": "BlackRock reports third-quarter 2026 results",
+      "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2026",
+      "publisher": "BlackRock",
+      "asOf": "2026-09-30",
+      "publishedAt": "2026-10-14"
+    },
+    {
+      "id": "spacex-ir-faq",
+      "title": "SpaceX investor relations: stock FAQs",
+      "url": "https://ir.spacex.com/faqs-and-contact/",
+      "publisher": "SpaceX",
+      "asOf": "2026-10-18"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "blackrock",
+      "label": "BlackRock",
+      "kind": "manager",
+      "summary": "Global investment manager. AUM represents assets managed for clients and is not BlackRock corporate asset ownership.",
+      "sourceIds": [
+        "blackrock-2026-q3",
+        "blackrock-gip-close",
+        "blackrock-hps-close",
+        "blackrock-preqin-close"
+      ],
+      "metrics": [
+        {
+          "label": "Client assets under management",
+          "value": 15500000000000,
+          "unit": "USD",
+          "asOf": "2026-09-30",
+          "sourceId": "blackrock-2026-q3"
+        }
+      ],
+      "country": "United States",
+      "ticker": "BLK",
+      "sector": "Asset management"
+    },
+    {
+      "id": "berkshire",
+      "label": "Berkshire Hathaway",
+      "kind": "company",
+      "summary": "Holding company. This sample shows five subsidiaries listed in its 2025 annual filing; intervening legal entities are not expanded.",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "ticker": "BRK.B",
+      "sector": "Diversified holding company"
+    },
+    {
+      "id": "amazon",
+      "label": "Amazon",
+      "kind": "company",
+      "summary": "A small sample of Amazon's corporate businesses, using individually dated official sources.",
+      "sourceIds": [
+        "amazon-2025-subsidiaries",
+        "amazon-whole-foods-2026",
+        "amazon-zoox"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "ticker": "AMZN",
+      "sector": "Commerce and technology"
+    },
+    {
+      "id": "nestle",
+      "label": "Nestlé",
+      "kind": "company",
+      "summary": "Consumer-goods group. Its disclosed L’Oréal investment is a minority equity participation.",
+      "sourceIds": [
+        "nestle-2025-financials"
+      ],
+      "metrics": [],
+      "country": "Switzerland",
+      "sector": "Consumer goods"
+    },
+    {
+      "id": "spacex",
+      "label": "SpaceX",
+      "kind": "company",
+      "summary": "Company hub only. Its official investor FAQ states an IPO on June 12, 2026 and ticker SPCX. No shareholder or cap-table relationships have been loaded.",
+      "sourceIds": [
+        "spacex-ir-faq"
+      ],
+      "metrics": [],
+      "ticker": "SPCX",
+      "sector": "Space technology"
+    },
+    {
+      "id": "gip",
+      "label": "Global Infrastructure Partners",
+      "kind": "manager",
+      "summary": "Infrastructure investment manager acquired by BlackRock. Its portfolio assets are distinct from ownership of the manager.",
+      "sourceIds": [
+        "blackrock-gip-close"
+      ],
+      "metrics": [],
+      "sector": "Infrastructure investing"
+    },
+    {
+      "id": "hps",
+      "label": "HPS Investment Partners",
+      "kind": "manager",
+      "summary": "Credit-focused investment manager acquired by BlackRock. Client investments are not expanded in this sample.",
+      "sourceIds": [
+        "blackrock-hps-close"
+      ],
+      "metrics": [],
+      "sector": "Private credit"
+    },
+    {
+      "id": "preqin",
+      "label": "Preqin",
+      "kind": "company",
+      "summary": "Private-markets data business acquired by BlackRock.",
+      "sourceIds": [
+        "blackrock-preqin-close"
+      ],
+      "metrics": [],
+      "sector": "Financial data"
+    },
+    {
+      "id": "geico",
+      "label": "GEICO",
+      "kind": "company",
+      "summary": "GEICO Corporation appears in Berkshire's subsidiary list.",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "sector": "Insurance"
+    },
+    {
+      "id": "bnsf",
+      "label": "BNSF Railway",
+      "kind": "company",
+      "summary": "BNSF Railway Company appears in Berkshire's subsidiary list.",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "sector": "Rail transportation"
+    },
+    {
+      "id": "dairy-queen",
+      "label": "Dairy Queen",
+      "kind": "company",
+      "summary": "International Dairy Queen, Inc. appears in Berkshire's subsidiary list.",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "sector": "Food service"
+    },
+    {
+      "id": "netjets",
+      "label": "NetJets",
+      "kind": "company",
+      "summary": "NetJets Inc. appears in Berkshire's subsidiary list.",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "sector": "Aviation"
+    },
+    {
+      "id": "sees-candies",
+      "label": "See’s Candies",
+      "kind": "company",
+      "summary": "See’s Candies, Inc. appears in Berkshire's subsidiary list.",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "sector": "Confectionery"
+    },
+    {
+      "id": "aws",
+      "label": "Amazon Web Services",
+      "kind": "company",
+      "summary": "Amazon Web Services, Inc. is listed as 100% owned in Amazon's significant-subsidiaries exhibit.",
+      "sourceIds": [
+        "amazon-2025-subsidiaries"
+      ],
+      "metrics": [],
+      "country": "United States",
+      "sector": "Cloud computing"
+    },
+    {
+      "id": "whole-foods",
+      "label": "Whole Foods Market",
+      "kind": "company",
+      "summary": "Amazon's 2026 update describes continued investment following its 2017 acquisition.",
+      "sourceIds": [
+        "amazon-whole-foods-2026"
+      ],
+      "metrics": [],
+      "sector": "Grocery retail"
+    },
+    {
+      "id": "zoox",
+      "label": "Zoox",
+      "kind": "company",
+      "summary": "Amazon's official Devices & Services page identifies Zoox as an independent subsidiary.",
+      "sourceIds": [
+        "amazon-zoox"
+      ],
+      "metrics": [],
+      "sector": "Autonomous mobility"
+    },
+    {
+      "id": "loreal",
+      "label": "L’Oréal",
+      "kind": "company",
+      "summary": "Nestlé reports 107,621,021 L’Oréal shares, representing a 20.2% equity participation at year-end 2025.",
+      "sourceIds": [
+        "nestle-2025-financials"
+      ],
+      "metrics": [],
+      "country": "France",
+      "sector": "Beauty"
+    }
+  ],
+  "edges": [
+    {
+      "id": "blackrock-gip",
+      "source": "blackrock",
+      "target": "gip",
+      "kind": "corporate_ownership",
+      "label": "Acquisition completed",
+      "asOf": "2024-10-01",
+      "sourceIds": [
+        "blackrock-gip-close"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Completion-date observation. This edge concerns the investment-management business, not the infrastructure assets held by its client funds. The cited release does not establish an equity percentage."
+    },
+    {
+      "id": "blackrock-hps",
+      "source": "blackrock",
+      "target": "hps",
+      "kind": "corporate_ownership",
+      "label": "Acquisition completed",
+      "asOf": "2025-07-01",
+      "sourceIds": [
+        "blackrock-hps-close"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Completion-date observation. This edge concerns the investment-management business, not its client portfolio assets. No ownership percentage is inferred."
+    },
+    {
+      "id": "blackrock-preqin",
+      "source": "blackrock",
+      "target": "preqin",
+      "kind": "corporate_ownership",
+      "label": "Acquisition completed",
+      "asOf": "2025-03-03",
+      "sourceIds": [
+        "blackrock-preqin-close"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Completion-date observation. No current valuation or ownership percentage is inferred from the acquisition announcement."
+    },
+    {
+      "id": "berkshire-geico",
+      "source": "berkshire",
+      "target": "geico",
+      "kind": "subsidiary",
+      "label": "Group subsidiary",
+      "asOf": "2025-12-31",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Listed as a subsidiary in Exhibit 21. This group-level link may pass through intermediate entities; the exhibit does not specify an ownership percentage."
+    },
+    {
+      "id": "berkshire-bnsf",
+      "source": "berkshire",
+      "target": "bnsf",
+      "kind": "subsidiary",
+      "label": "Group subsidiary",
+      "asOf": "2025-12-31",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Listed as a subsidiary in Exhibit 21. This group-level link may pass through intermediate entities; the exhibit does not specify an ownership percentage."
+    },
+    {
+      "id": "berkshire-dairy-queen",
+      "source": "berkshire",
+      "target": "dairy-queen",
+      "kind": "subsidiary",
+      "label": "Group subsidiary",
+      "asOf": "2025-12-31",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Listed as a subsidiary in Exhibit 21. This group-level link may pass through intermediate entities; the exhibit does not specify an ownership percentage."
+    },
+    {
+      "id": "berkshire-netjets",
+      "source": "berkshire",
+      "target": "netjets",
+      "kind": "subsidiary",
+      "label": "Group subsidiary",
+      "asOf": "2025-12-31",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Listed as a subsidiary in Exhibit 21. This group-level link may pass through intermediate entities; the exhibit does not specify an ownership percentage."
+    },
+    {
+      "id": "berkshire-sees-candies",
+      "source": "berkshire",
+      "target": "sees-candies",
+      "kind": "subsidiary",
+      "label": "Group subsidiary",
+      "asOf": "2025-12-31",
+      "sourceIds": [
+        "berkshire-2025-subsidiaries"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Listed as a subsidiary in Exhibit 21. This group-level link may pass through intermediate entities; the exhibit does not specify an ownership percentage."
+    },
+    {
+      "id": "amazon-aws",
+      "source": "amazon",
+      "target": "aws",
+      "kind": "subsidiary",
+      "label": "100% owned",
+      "asOf": "2025-12-31",
+      "sourceIds": [
+        "amazon-2025-subsidiaries"
+      ],
+      "stakePercent": 100,
+      "valueUsd": null,
+      "notes": "Percent owned as expressly reported in Exhibit 21.1 for Amazon Web Services, Inc. Group-level relation; intermediate holding entities are not shown."
+    },
+    {
+      "id": "amazon-whole-foods",
+      "source": "amazon",
+      "target": "whole-foods",
+      "kind": "subsidiary",
+      "label": "Acquired business",
+      "asOf": "2026-05-12",
+      "sourceIds": [
+        "amazon-whole-foods-2026"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "Amazon's update confirms the acquired business remains part of its expansion plans. Exact equity percentage and legal holding chain are not stated in this source."
+    },
+    {
+      "id": "amazon-zoox",
+      "source": "amazon",
+      "target": "zoox",
+      "kind": "subsidiary",
+      "label": "Independent subsidiary",
+      "asOf": "2026-10-18",
+      "sourceIds": [
+        "amazon-zoox"
+      ],
+      "stakePercent": null,
+      "valueUsd": null,
+      "notes": "The source page is undated; asOf records the date checked, not a dated financial statement. Exact equity percentage is not stated."
+    },
+    {
+      "id": "nestle-loreal",
+      "source": "nestle",
+      "target": "loreal",
+      "kind": "investment",
+      "label": "20.2% equity participation",
+      "asOf": "2025-12-31",
+      "sourceIds": [
+        "nestle-2025-financials"
+      ],
+      "stakePercent": 20.2,
+      "valueUsd": null,
+      "notes": "Rounded percentage of L’Oréal equity reported by the Nestlé Group in note 14.1. This is an equity participation, not a voting-control claim. Group-level link; intermediate holding companies are not expanded. Source reports market value in CHF, so valueUsd is deliberately null."
+    }
+  ]
+}
