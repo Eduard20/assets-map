@@ -1,4 +1,4 @@
-import {readFile,writeFile,readdir,mkdir} from 'node:fs/promises';
+import {readFile,writeFile,readdir,mkdir,rm} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 import path from 'node:path';
@@ -77,7 +77,7 @@ export function validateEquivalence(identity,inputs){
 export async function exportPortfolios({directory=INPUT_DIRECTORY,check=false}={}){
   const files=(await readdir(directory)).filter(f=>f.endsWith('.normalized.json.gz')).sort(),portfolios=[],inputs=[];let bytes=0;
   const save=async(file,output)=>{bytes+=output.length;const target=path.join(root,'data',file);if(check){if(await readFile(target,'utf8')!==output)throw new Error(`Public ${file} is stale; run data:export-portfolios`);}else await writeFile(target,output);};
-  for(const file of files){const raw=gunzipSync(await readFile(path.join(directory,file))).toString('utf8'),input=JSON.parse(raw),validation=validatePortfolio(input);if(validation.quarantine.length){await mkdir(path.join(root,'data-foundation/portfolios/quarantine'),{recursive:true});await writeFile(path.join(root,'data-foundation/portfolios/quarantine',file+'.json'),JSON.stringify(validation,null,2)+'\n');}const review=JSON.parse(await readFile(path.join(directory,file.replace('.normalized.json.gz','.review.json')),'utf8'));const projected=projectPortfolio(input,review,raw);inputs.push({raw,input});portfolios.push(projected.summary);await save(projected.summary.dataFile,JSON.stringify(projected.data)+'\n');}
+  for(const file of files){const raw=gunzipSync(await readFile(path.join(directory,file))).toString('utf8'),input=JSON.parse(raw),validation=validatePortfolio(input);const quarantined=path.join(root,'data-foundation/portfolios/quarantine',file+'.json');if(!check){if(validation.quarantine.length){await mkdir(path.dirname(quarantined),{recursive:true});await writeFile(quarantined,JSON.stringify(validation,null,2)+'\n');}else await rm(quarantined,{force:true});}const review=JSON.parse(await readFile(path.join(directory,file.replace('.normalized.json.gz','.review.json')),'utf8'));const projected=projectPortfolio(input,review,raw);inputs.push({raw,input});portfolios.push(projected.summary);await save(projected.summary.dataFile,JSON.stringify(projected.data)+'\n');}
   if(!portfolios.length)throw new Error('No reviewed portfolios');
   const identityErrors=validateEquivalence(JSON.parse(await readFile(path.join(root,'data/instrument-equivalence.json'),'utf8')),inputs);if(identityErrors.length)throw new Error(identityErrors.join('; '));
   const defaultPortfolio=(portfolios.find(p=>/blackrock/i.test(p.filer.name))||portfolios[0]).portfolioId;

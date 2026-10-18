@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile,readdir} from 'node:fs/promises';
-import {gunzipSync} from 'node:zlib';
+import {readFile,readdir,writeFile,mkdtemp,rm,access} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {gzipSync,gunzipSync} from 'node:zlib';
 import {exportPortfolios,validatePortfolio,projectPortfolio,validateEquivalence} from '../scripts/export-portfolios.mjs';
 import {decodePortfolio,portfolioModel,holdingsPage,portfolioInstrumentDetails} from '../src/portfolio-view.js';
 import {buildVisibleGraph,initialState} from '../src/graph-model.js';
@@ -113,4 +114,10 @@ test('instrument identity map is bound to the exact admitted inputs and exact-ma
  swapped.groups[0][1]=other[0];assert.match(validateEquivalence(swapped,inputs).join(' '),/Class\/type\/option mismatch in group 1/);
  const sameFiler=structuredClone(identity);sameFiler.groups[0]=[sameFiler.groups[0][0],sameFiler.groups[1][0]];assert.match(validateEquivalence(sameFiler,inputs).join(' '),/Same-filer merge in group 1|repeated/);
  const counts=structuredClone(identity);counts.coverage.matchedGroups--;assert.match(validateEquivalence(counts,inputs).join(' '),/matchedGroups/);
+});
+test('check mode is read-only even when a batch is quarantined',async()=>{
+ const input=JSON.parse(gunzipSync(await readFile(new URL('../data-foundation/portfolios/input/berkshire.normalized.json.gz',import.meta.url))).toString());input.positions[0].valueUsd='-1';
+ const directory=await mkdtemp(tmpdir()+'/portfolio-check-'),file='check-mode-probe.normalized.json.gz',report=new URL('../data-foundation/portfolios/quarantine/'+file+'.json',import.meta.url);
+ try{await writeFile(directory+'/'+file,gzipSync(JSON.stringify(input)));await writeFile(directory+'/check-mode-probe.review.json',await readFile(new URL('../data-foundation/portfolios/input/berkshire.review.json',import.meta.url)));await assert.rejects(exportPortfolios({directory,check:true}),/quarantined/);await assert.rejects(access(report));}
+ finally{await rm(directory,{recursive:true,force:true});await rm(report,{force:true});}
 });
