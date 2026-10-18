@@ -11,7 +11,7 @@ Object.assign(globalThis,{window:dom.window,document:dom.window.document,fetch:a
 dom.window.HTMLDialogElement.prototype.close=function(){this.open=false;};
 await import('../src/app.js');
 test('loading controls are safe and an obsolete startup failure cannot overwrite a newer sample view',async()=>{
-  for(const el of document.querySelectorAll('button,input,select'))assert.equal(el.disabled,el.id!=='dataset');
+  for(const el of document.querySelectorAll('button,input,select'))assert.equal(el.disabled,!['dataset','mobile-options','close-mobile-controls','mobile-apply-controls','mobile-scrim','mobile-details','close-mobile-details'].includes(el.id));
   await window.__assetsMap.setView('list');
   await window.__assetsMap.setDataset('sample');
   assert.equal(window.__assetsMap.getState().rootId,'blackrock');
