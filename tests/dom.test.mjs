@@ -35,13 +35,13 @@ await waitFor(() => window.__assetsMap && window.__assetsMap.getState()?.view ==
 
 assert.equal(window.__assetsMap.getModel().meta.mode,'portfolios');
 assert.ok(window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount>40000);
-assert.equal(window.__assetsMap.getGraph().nodes.length,93);
-assert.equal(window.__assetsMap.getGraph().edges.length,269);
+assert.equal(window.__assetsMap.getGraph().nodes.length,99);
+assert.equal(window.__assetsMap.getGraph().edges.length,331);
 assert.ok(document.querySelectorAll('.connection-card').length<=24);
 $('#holdings-search').value='apple';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
 assert.ok(document.querySelectorAll('.holding-row').length>0&&document.querySelectorAll('.holding-row').length<=50);
 const beforeFocus=window.__assetsMap.getGraph().nodes.map(n=>n.id);
-click('.holding-row');assert.match($('#detail-panel').textContent,/6 REPORTED INVESTORS/);
+click('.holding-row');assert.match($('#detail-panel').textContent,/7 REPORTED INVESTORS/);
 assert.equal(window.__assetsMap.getState().rootId,'shared-instrument-282');
 assert.deepEqual(window.__assetsMap.getGraph().nodes.map(n=>n.id).sort(),beforeFocus.sort());
 assert.equal($('#focus-back').hidden,false);
@@ -64,7 +64,7 @@ window.__assetsMap.goBack();assert.equal(window.__assetsMap.getGraph().nodes.len
 window.__assetsMap.goBack();assert.deepEqual(window.__assetsMap.getGraph().nodes.map(n=>n.id).sort(),baseline);
 await window.__assetsMap.setDataset('researched');
 assert.equal(window.__assetsMap.getModel().meta.mode,'researched');
-assert.match($('#dataset-context').textContent,/4 reviewed disclosures/);
+assert.match($('#dataset-context').textContent,/4 reviewed disclosures/);assert.match($('#dataset-context').textContent,/never add them as extra holdings/);
 for(const edge of researched.edges){
   window.__assetsMap.selectEdge(edge.id);
   assert.match($('#detail-panel').textContent,/Historical snapshot/);
@@ -214,8 +214,8 @@ test('shared securities mode keeps filer scope, evidence, Back, empty states and
  assert.equal(document.querySelectorAll('.shared-instrument-row').length,50);
  assert.match($('#graph-list').textContent,/not ownership, control or complete investor coverage/);
  $('#holdings-search').value='apple';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
- const row=$('.shared-instrument-row');assert.ok(row);assert.match(row.textContent,/6reported investors/);
- click('.shared-instrument-row');assert.match($('#detail-panel').textContent,/6 REPORTED INVESTORS/);
+ const row=$('.shared-instrument-row');assert.ok(row);assert.match(row.textContent,/7reported investors/);
+ click('.shared-instrument-row');assert.match($('#detail-panel').textContent,/7 REPORTED INVESTORS/);
  click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/underlying row|Information-table row/);
  click('#focus-back');assert.equal($('#holdings-mode').value,'shared');assert.equal($('#holdings-search').value,'apple');
  $('#portfolio').value='berkshire-2026-06-30';$('#portfolio').dispatchEvent(new dom.window.Event('change'));

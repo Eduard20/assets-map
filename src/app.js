@@ -102,7 +102,7 @@ async function setView(view) {
     toast('Opening 3D network…');
     try {
       if(typeof window.WebGL2RenderingContext==='undefined')throw new Error('WebGL 2 unavailable');
-      renderer3DPromise ||= import('./graph-3d.js?v=20261018-data2');
+      renderer3DPromise ||= import('./graph-3d.js?v=20261018-vga1');
       const {Graph3D}=await renderer3DPromise;
       if(request!==viewRequest)return;
       if(!renderer3D)renderer3D=new Graph3D($('#graph-3d'),{onSelect:selectNode,onEdgeSelect:selectEdge,onUnavailable:()=>{
@@ -170,8 +170,8 @@ async function setDataset(name,portfolioId){
   let next=datasets.get(name);
   if(name==='portfolios'&&!next){
     try{
-      if(!portfolioBundle){const response=await fetch(new URL('../data/portfolios.json?v=20261018-data2',import.meta.url));if(!response.ok)throw new Error('Portfolio manifest unavailable');portfolioBundle=await response.json();}
-      const [portfolios,identity]=await Promise.all([Promise.all(portfolioBundle.portfolios.map(async summary=>{if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');const response=await fetch(new URL('../data/'+summary.dataFile+'?v=20261018-data2',import.meta.url));if(!response.ok)throw new Error('Portfolio rows unavailable');return decodePortfolio(summary,await response.json());})),fetch(new URL('../data/instrument-equivalence.json?v=20261018-data2',import.meta.url)).then(async response=>{if(!response.ok)throw new Error('Instrument identity map unavailable');return response.json();})]);
+      if(!portfolioBundle){const response=await fetch(new URL('../data/portfolios.json?v=20261018-vga1',import.meta.url));if(!response.ok)throw new Error('Portfolio manifest unavailable');portfolioBundle=await response.json();}
+      const [portfolios,identity]=await Promise.all([Promise.all(portfolioBundle.portfolios.map(async summary=>{if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');const response=await fetch(new URL('../data/'+summary.dataFile+'?v=20261018-vga1',import.meta.url));if(!response.ok)throw new Error('Portfolio rows unavailable');return decodePortfolio(summary,await response.json());})),fetch(new URL('../data/instrument-equivalence.json?v=20261018-vga1',import.meta.url)).then(async response=>{if(!response.ok)throw new Error('Instrument identity map unavailable');return response.json();})]);
       next=createPortfolioNetwork(portfolios,identity);datasets.set('portfolios',next);
     }catch(error){if(request!==datasetRequest)return;throw error;}
   }
@@ -185,7 +185,7 @@ async function setDataset(name,portfolioId){
     if(portfolioId&&model.portfolioMap.has(portfolioId)){state.portfolioFilter=portfolioId;state.rootId=portfolioId;state.selectedId=portfolioId;}
   }
   $('#dataset-label').textContent=isPortfolio()?'Shared portfolio network':isResearch()?'Historical disclosures':'UI prototype · Sample';
-  $('#dataset-context').textContent=isPortfolio()?`${portfolioBundle.portfolios.length} filers · ${portfolioBundle.portfolios.reduce((n,p)=>n+p.reconciliation.shareRowCount,0).toLocaleString()} reported share rows · Historical snapshots`:isResearch()?`${model.edges.length} reviewed disclosures · Not current holdings`:'17 entities · 12 illustrative connections';
+  $('#dataset-context').textContent=isPortfolio()?`${portfolioBundle.portfolios.length} filers · ${portfolioBundle.portfolios.reduce((n,p)=>n+p.reconciliation.shareRowCount,0).toLocaleString()} reported share rows · Historical snapshots`:isResearch()?`${model.edges.length} reviewed disclosures · Not current holdings · Evidence views may repeat portfolio rows; never add them as extra holdings`:'17 entities · 12 illustrative connections';
   $('#updated-at').textContent=`${isResearch()?'Reviewed':'Updated'} ${dateLabel(model.meta.updatedAt)}`;
   $('#map-disclaimer').textContent=isPortfolio()?`One network of ${portfolioBundle.portfolios.length} imported filers. Links show reported investment discretion, not legal ownership or control. Exact instruments connect across filers; unmatched classes stay separate.`:isResearch()?'Historical source snapshots. Managed discretion, beneficial attribution and voting are different roles.':'Connections show reported relationships. Managed holdings are distinct from corporate ownership.';
   document.querySelectorAll('button,input,select').forEach(el=>el.disabled=false);renderer2D.fit();render();await setView('3d');renderer3D?.fit();

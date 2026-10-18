@@ -5,10 +5,10 @@ import assert from 'node:assert/strict';
 
 const portfolioIds = [
   'berkshire-2026-06-30','blackrock-2026-06-30','geode-2026-06-30','goldmansachs-2026-06-30',
-  'jpmorgan-2026-06-30','morganstanley-2026-06-30','norgesbank-2026-06-30','statestreet-2026-06-30'
+  'jpmorgan-2026-06-30','morganstanley-2026-06-30','norgesbank-2026-06-30','statestreet-2026-06-30','vanguardglobaladvisers-2026-06-30'
 ];
-const initialNetworkNodes = 93;
-const eligibleHoldingRows = 154510;
+const initialNetworkNodes = 99;
+const eligibleHoldingRows = 158145;
 const origin = 'http://127.0.0.1:8088';
 const server = spawn(process.execPath, ['scripts/serve.mjs'], {
   env: {...process.env, PORT: '8088'}, stdio: 'pipe'
@@ -91,21 +91,26 @@ try {
   await page.setViewportSize({width:1440,height:1000});
   assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);
-  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),269);
-  assert.deepEqual(await page.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds,'all eight admitted managers are selectable');
-  assert.equal(await page.locator('#portfolio option').count(),9,'eight managers plus the shared-network option');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),331);
+  assert.deepEqual(await page.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds,'all nine admitted managers are selectable');
+  assert.equal(await page.locator('#portfolio option').count(),10,'nine managers plus the shared-network option');
   const startingIds=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort());
   const appleId='shared-instrument-282';
   // Keyboard can reach all network securities even when dense labels are decluttered.
-  await page.locator(`#graph-3d button[data-node-id="${appleId}"]`).focus();await page.keyboard.press('Enter');
+  await page.locator(`#graph-3d button[data-node-id="${appleId}"]`).focus();
+  // A real responsive rebuild must preserve focus, not silently swallow Enter.
+  await page.setViewportSize({width:390,height:844});
+  await page.waitForFunction(id=>document.activeElement?.dataset.nodeId===id&&document.querySelector(`#graph-3d button[data-node-id="${id}"]`)?.style.width==='110px',appleId);
+  await page.keyboard.press('Enter');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
+  await page.setViewportSize({width:1440,height:1000});
   assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
-  assert.match(await page.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
-  assert.equal(await page.locator('.investor-card').count(),6);
+  assert.match(await page.locator('#detail-panel').textContent(),/7 REPORTED INVESTORS/);
+  assert.equal(await page.locator('.investor-card').count(),7);
   assert.deepEqual(await page.evaluate(id=>{
     const edges=window.__assetsMap.getModel().edges.filter(edge=>edge.target===id);
     return {investors:edges.length,sourceRows:edges.reduce((sum,edge)=>sum+edge.portfolioPositions.length,0),classes:[...new Set(edges.map(edge=>edge.portfolioPosition.securityClass))]};
-  },appleId),{investors:6,sourceRows:64,classes:['COM']},'exact Apple COM grouping preserves all64 source rows without merging differently reported classes');
+  },appleId),{investors:7,sourceRows:65,classes:['COM']},'exact Apple COM grouping preserves all65 source rows without merging differently reported classes');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().nodes.filter(node=>node.label==='APPLE INC').length),3,'COM, CMN and COMMON Apple descriptions remain separate identities');
   await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),'blackrock-2026-06-30');
   await page.locator('[data-view="2d"]').click();await expectView(page,'2d');
@@ -117,12 +122,12 @@ try {
   const expandedCount=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expandedCount>initialNetworkNodes);await expectReal3D(page,expandedCount);
   await page.locator('#holdings-search').fill('APPLE');await expectView(page,'list');
   assert.ok(await page.locator('.holding-row').count()>0);assert.ok(await page.locator('.holding-row').count()<=50);
-  await page.locator(`.holding-row[data-select="${appleId}"]`).first().click();assert.match(await page.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
+  await page.locator(`.holding-row[data-select="${appleId}"]`).first().click();assert.match(await page.locator('#detail-panel').textContent(),/7 REPORTED INVESTORS/);
   await page.locator('#detail-panel [data-edge]').first().click();await page.locator('#detail-panel [data-edge]').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
   await page.locator('#focus-back').click();assert.equal(await page.locator('#holdings-search').inputValue(),'APPLE');
   await page.locator('#holdings-search').fill('');
   await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
-  for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(n=>n.kind==='manager').length),8);assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);}
+  for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(n=>n.kind==='manager').length),9);assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);}
   await page.locator('#portfolio').selectOption('all');await page.locator('#top-n').selectOption('20');await page.locator('[data-view="3d"]').click();await expectReal3D(page,initialNetworkNodes);
   // Shared-security discovery covers the full network, independently of top-N.
   await page.locator('#holdings-mode').selectOption('shared');await expectView(page,'list');
@@ -134,7 +139,7 @@ try {
   await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
   await page.locator('#holdings-search').fill('APPLE');
   await page.locator(`.shared-instrument-row[data-select="${appleId}"]`).click();
-  assert.match(await page.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
+  assert.match(await page.locator('#detail-panel').textContent(),/7 REPORTED INVESTORS/);
   await page.locator('#detail-panel [data-edge]').first().click();
   await page.locator('#detail-panel [data-edge]').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
   await page.locator('#focus-back').click();assert.equal(await page.locator('#holdings-mode').inputValue(),'shared');
@@ -327,7 +332,7 @@ try {
     assert.ok(await touchPage.locator('.shared-instrument-row').count()>0);
     await touchPage.locator(`.shared-instrument-row[data-select="${appleId}"]`).tap();
     await touchPage.locator('#mobile-details').tap();
-    assert.match(await touchPage.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
+    assert.match(await touchPage.locator('#detail-panel').textContent(),/7 REPORTED INVESTORS/);
     await touchPage.locator('#detail-panel [data-edge]').first().tap();
     await touchPage.locator('#detail-panel [data-edge]').first().tap();
     assert.match(await touchPage.locator('#detail-panel').textContent(),/Information-table row/);
@@ -340,15 +345,17 @@ try {
   // A newly admitted manager is reachable and expandable from the phone UI.
   await touchPage.locator('#mobile-options').tap();
   assert.deepEqual(await touchPage.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds);
-  await touchPage.locator('#portfolio').selectOption('geode-2026-06-30');
+  await touchPage.locator('#portfolio').selectOption('vanguardglobaladvisers-2026-06-30');
   await touchPage.locator('#close-mobile-controls').tap();
-  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getState().rootId),'geode-2026-06-30');
-  const geodeBefore=await touchPage.evaluate(()=>({ids:window.__assetsMap.getGraph().nodes.map(node=>node.id).sort(),holdings:window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='geode-2026-06-30').length}));
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getState().rootId),'vanguardglobaladvisers-2026-06-30');
+  assert.match(await touchPage.locator('#detail-panel').textContent(),/not The Vanguard Group/);
+  assert.match(await touchPage.locator('#detail-panel').textContent(),/not additional economic exposure/);
+  const geodeBefore=await touchPage.evaluate(()=>({ids:window.__assetsMap.getGraph().nodes.map(node=>node.id).sort(),holdings:window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='vanguardglobaladvisers-2026-06-30').length}));
   await expectReal3D(touchPage,geodeBefore.ids.length);
-  await touchPage.locator('#graph-3d button[data-node-id="geode-2026-06-30"]').tap();
-  assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='geode-2026-06-30').length)>geodeBefore.holdings,'phone tap opens more of the new manager’s actual holdings');
-  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(node=>node.kind==='manager').length),8,'new manager exploration retains all eight managers');
-  await touchPage.screenshot({path:'artifacts/network-phone-geode.png',fullPage:true});
+  await touchPage.locator('#graph-3d button[data-node-id="vanguardglobaladvisers-2026-06-30"]').tap();
+  assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='vanguardglobaladvisers-2026-06-30').length)>geodeBefore.holdings,'phone tap opens more of the new manager’s actual holdings');
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(node=>node.kind==='manager').length),9,'new manager exploration retains all nine managers');
+  await touchPage.screenshot({path:'artifacts/network-phone-vga.png',fullPage:true});
   await touchPage.locator('#focus-back').tap();
   assert.deepEqual(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.map(node=>node.id).sort()),geodeBefore.ids,'phone Back restores the new manager’s surrounding context');
   await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,initialNetworkNodes);
