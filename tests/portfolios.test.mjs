@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile,readdir,writeFile,mkdtemp,rm,access} from 'node:fs/promises';
+import {readFile,readdir,writeFile,mkdtemp,rm,access,copyFile,stat} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {gzipSync,gunzipSync} from 'node:zlib';
 import {exportPortfolios,validatePortfolio,projectPortfolio,validateEquivalence,publicationErrors} from '../scripts/export-portfolios.mjs';
@@ -128,4 +128,13 @@ test('every exported portfolio is published and nothing stale ships',async()=>{
  assert.match(publicationErrors(files.slice(1)).join(' '),new RegExp(`PUBLIC_FILES publishes data/${files[0]}`));
  assert.match(publicationErrors(files,{presentFiles:[...files,'portfolios.json','retired-2026-03-31.json']}).join(' '),/retired-2026-03-31.json is an orphaned/);
  assert.ok(files.every(f=>PUBLIC_FILES.includes('data/'+f)));
+});
+test('a failed export writes no public file',async()=>{
+ const input=new URL('../data-foundation/portfolios/input/',import.meta.url),data=new URL('../data/',import.meta.url),directory=await mkdtemp(tmpdir()+'/portfolio-partial-');
+ const mtimes=async()=>Object.fromEntries(await Promise.all((await readdir(data)).map(async f=>[f,(await stat(new URL(f,data))).mtimeMs])));
+ try{
+  // Seven of eight admitted filers: every batch is valid, but the identity map no longer matches.
+  for(const f of (await readdir(input)).filter(f=>!f.startsWith('norgesbank.')))await copyFile(new URL(f,input),directory+'/'+f);
+  const before=await mtimes();await assert.rejects(exportPortfolios({directory}),/Identity map portfolio set differs/);assert.deepEqual(await mtimes(),before);
+ }finally{await rm(directory,{recursive:true,force:true});}
 });
