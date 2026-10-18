@@ -34,11 +34,7 @@ jobs:
           path: artifacts
           if-no-files-found: ignore
       - name: Prepare static site
-        run: |
-          mkdir -p _site
-          cp index.html style.css icon.svg _site/
-          cp -r src data vendor _site/
-          touch _site/.nojekyll
+        run: npm run build:site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

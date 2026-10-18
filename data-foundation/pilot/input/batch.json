@@ -1,0 +1,1032 @@
+{
+  "manifest": {
+    "schema_version": "1.0.0",
+    "batch_id": "pilot_equity_apple_vga_20261018",
+    "task_id": "assets-map-bounded-equity-foundation-pilot",
+    "agent_id": "collect_bounded_equity_pilot",
+    "registry_version": "registry_pilot_proposal_20261018_v1",
+    "source_registry_version": "sources_pilot_proposal_20261018_v1",
+    "base_release_id": null,
+    "created_at": "2026-10-18T10:14:32Z",
+    "knowledge_cutoff": "2026-10-18",
+    "scope": {
+      "entity_ids": [
+        "ent_apple",
+        "ent_vanguard_group_historical",
+        "ent_vanguard_global_advisers",
+        "ent_vanguard_portfolio_management",
+        "ent_blackrock_historical_unresolved",
+        "ent_tim_cook_public_disclosure",
+        "ent_apple_management_group20260102"
+      ],
+      "security_ids": [
+        "sec_apple_common"
+      ],
+      "source_ids": [
+        "src_sec_blackrock13g2023q4",
+        "src_sec_apple_proxy2026",
+        "src_sec_vanguard13g2025q2",
+        "src_sec_vga13f2026q2",
+        "src_sec_vanguard_reorg2026"
+      ],
+      "report_dates": [
+        "2023-12-31",
+        "2025-06-30",
+        "2026-01-02",
+        "2026-06-30"
+      ],
+      "max_claims": 30,
+      "asset_class": "equity"
+    },
+    "stop_conditions": [
+      "Seven candidate claims only; no additional issuer or manager positions.",
+      "No current/latest or publication admission until complete amendment and independent source/identity/semantic review.",
+      "Do not evade denied access, accept agreements, create accounts, pay, bulk ingest, or retain/redistribute raw documents and proprietary instrument identifiers."
+    ]
+  },
+  "documents": [
+    {
+      "document_id": "doc_apple_proxy2026",
+      "source_id": "src_sec_apple_proxy2026",
+      "document_family_id": "family_apple_proxy2026",
+      "version": "0001308179-26-000008",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published_at": "2026-01-08",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-18",
+      "amendment_status": "incomplete",
+      "amendment_discovery": "INCOMPLETE. Search attempted through cutoff; full filing history could not be established. Source-version observation only. No unobserved predecessor or supersession asserted.  Publication metadata: {\"accepted_timestamp_raw\": \"2026-01-08 16:31:36\", \"accepted_timezone\": \"SEC acceptance timestamp; FAQ labels EST; no UTC conversion asserted\", \"metadata_urls\": [\"https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/0001308179-26-000008-index.htm\"]}"
+    },
+    {
+      "document_id": "doc_vanguard13g2025q2",
+      "source_id": "src_sec_vanguard13g2025q2",
+      "document_family_id": "family_vanguard_apple_13g",
+      "version": "0000932471-25-000778",
+      "url": "https://www.sec.gov/Archives/edgar/data/102909/000093247125000778/xslSCHEDULE_13G_X01/primary_doc.xml",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published_at": "2025-07-29",
+      "content_sha256": null,
+      "amendment_kind": "partial",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-18",
+      "amendment_status": "incomplete",
+      "amendment_discovery": "INCOMPLETE. Search attempted through cutoff; full filing history could not be established. Source-version observation only. No unobserved predecessor or supersession asserted. Source identifies Amendment No. 10; full chain not collected. Publication metadata: {\"accepted_timestamp_raw\": null, \"accepted_timezone\": \"SEC acceptance timestamp; FAQ labels EST; no UTC conversion asserted\", \"metadata_urls\": [\"https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm\"]}"
+    },
+    {
+      "document_id": "doc_vga13f2026q2_cover",
+      "source_id": "src_sec_vga13f2026q2",
+      "document_family_id": "family_vga13f2026q2_cover",
+      "version": "0001811242-26-000015",
+      "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published_at": "2026-08-13",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-18",
+      "amendment_status": "incomplete",
+      "amendment_discovery": "INCOMPLETE. Search attempted through cutoff; full filing history could not be established. Source-version observation only. No unobserved predecessor or supersession asserted.  Publication metadata: {\"accepted_timestamp_raw\": \"2026-08-13 15:57:39\", \"accepted_timezone\": \"SEC acceptance timestamp; FAQ labels EST; no UTC conversion asserted\", \"metadata_urls\": [\"https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/0001811242-26-000015-index.html\"]}"
+    },
+    {
+      "document_id": "doc_vga13f2026q2_table",
+      "source_id": "src_sec_vga13f2026q2",
+      "document_family_id": "family_vga13f2026q2_table",
+      "version": "0001811242-26-000015",
+      "url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published_at": "2026-08-13",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-18",
+      "amendment_status": "incomplete",
+      "amendment_discovery": "INCOMPLETE. Search attempted through cutoff; full filing history could not be established. Source-version observation only. No unobserved predecessor or supersession asserted.  Publication metadata: {\"accepted_timestamp_raw\": \"2026-08-13 15:57:39\", \"accepted_timezone\": \"SEC acceptance timestamp; FAQ labels EST; no UTC conversion asserted\", \"metadata_urls\": [\"https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/0001811242-26-000015-index.html\"]}"
+    },
+    {
+      "document_id": "doc_vanguard_reorg2026",
+      "source_id": "src_sec_vanguard_reorg2026",
+      "document_family_id": "family_vpm_ringcentral_13g",
+      "version": "0002100121-26-000017",
+      "url": "https://www.sec.gov/Archives/edgar/data/1384905/000210012126000017/xslSCHEDULE_13G_X01/primary_doc.xml",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published_at": "2026-03-05",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-18",
+      "amendment_status": "incomplete",
+      "amendment_discovery": "INCOMPLETE. Search attempted through cutoff; full filing history could not be established. Source-version observation only. No unobserved predecessor or supersession asserted.  Publication metadata: {\"accepted_timestamp_raw\": \"2026-03-05 13:45:56\", \"accepted_timezone\": \"SEC acceptance timestamp; FAQ labels EST; no UTC conversion asserted\", \"metadata_urls\": [\"https://www.sec.gov/Archives/edgar/data/1384905/000210012126000017/0002100121-26-000017-index.html\"]}"
+    },
+    {
+      "document_id": "doc_blackrock13g2023q4",
+      "source_id": "src_sec_blackrock13g2023q4",
+      "document_family_id": "family_blackrock_apple_13g",
+      "version": "0001086364-24-006980",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000108636424006980/0001086364-24-006980.txt",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "published_at": "2024-02-12",
+      "content_sha256": null,
+      "amendment_kind": "partial",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-18",
+      "amendment_status": "incomplete",
+      "amendment_discovery": "INCOMPLETE. Search attempted through cutoff; full filing history could not be established. Source-version observation only. No unobserved predecessor or supersession asserted. Source identifies Amendment No. 14; full chain not collected. Publication metadata: {\"accepted_timestamp_raw\": \"2024-02-12 16:17:19\", \"accepted_timezone\": \"SEC acceptance timestamp; FAQ labels EST; no UTC conversion asserted\", \"metadata_urls\": [\"https://www.sec.gov/Archives/edgar/data/320193/000108636424006980/0001086364-24-006980-index.htm\"]}"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_apple_context",
+      "document_id": "doc_apple_proxy2026",
+      "locator": "Printed page 81: ownership-section introduction, table header, footnote 1; page 82 asterisk legend",
+      "source_record_key": "ev_apple_context",
+      "supported_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "fact_summary": "Table date and share basis. Group disclosures can include near-term vesting awards. Selected factual fields: {\"table_date\":\"2026-01-02\",\"common_shares_outstanding\":\"14697926000\",\"class_label\":\"common stock\",\"included_acquisition_rights\":\"RSUs vesting within 60 days\",\"asterisk_means\":\"less than 1 percent\"}"
+    },
+    {
+      "evidence_id": "ev_proxy_vanguard",
+      "document_id": "doc_apple_proxy2026",
+      "locator": "Printed page 81: The Vanguard Group row and footnote 2",
+      "source_record_key": "ev_proxy_vanguard",
+      "supported_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "fact_summary": "Old-period beneficial disclosure retained inside newer proxy. Selected factual fields: {\"shares\":\"1415826462\",\"proxy_percent\":\"9.63\",\"position_date\":\"2025-06-30\",\"underlying_13ga_filed\":\"2025-07-29\"}"
+    },
+    {
+      "evidence_id": "ev_proxy_blackrock",
+      "document_id": "doc_apple_proxy2026",
+      "locator": "Printed page 81: BlackRock Inc. row and footnote 3",
+      "source_record_key": "ev_proxy_blackrock",
+      "supported_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "fact_summary": "Historic beneficial disclosure; current BlackRock filer identity is not presumed. Selected factual fields: {\"shares\":\"1043713019\",\"proxy_percent\":\"7.10\",\"position_date\":\"2023-12-31\",\"underlying_13ga_filed\":\"2024-02-12\"}"
+    },
+    {
+      "evidence_id": "ev_proxy_cook",
+      "document_id": "doc_apple_proxy2026",
+      "locator": "Printed page 10 nominee table, Tim Cook CEO row; page 81 Tim Cook holding row; page 82 footnote 6 and asterisk legend",
+      "source_record_key": "ev_proxy_cook",
+      "supported_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "fact_summary": "Cook quantity is held by his unnamed trust. No separate trust title edge is fabricated. Selected factual fields: {\"role\":\"CEO and director\",\"shares\":\"3280295\",\"percentage_bound\":\"less_than_1_percent\",\"holding_name\":\"Mr. Cook\u2019s trust\",\"excluded_unvested_rsUs\":\"836667\"}"
+    },
+    {
+      "evidence_id": "ev_proxy_group",
+      "document_id": "doc_apple_proxy2026",
+      "locator": "Printed page 81 final group row; page 82 footnote 17 and asterisk legend",
+      "source_record_key": "ev_proxy_group",
+      "supported_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "fact_summary": "Group includes Cook; additive exposure with his individual row is forbidden. Selected factual fields: {\"shares\":\"9079765\",\"persons\":\"12\",\"percentage_bound\":\"less_than_1_percent\",\"included_near_term_rsUs\":\"8643\",\"excludes_person\":\"Luca Maestri\"}"
+    },
+    {
+      "evidence_id": "ev_vanguard13g",
+      "document_id": "doc_vanguard13g2025q2",
+      "locator": "Cover rows 5\u201311; Items 4 and 6; signature date",
+      "source_record_key": "ev_vanguard13g",
+      "supported_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "fact_summary": "Original statement corroborates quantity and voting. Its stated percentage differs from the proxy. Selected factual fields: {\"shares\":\"1415826462\",\"shared_voting\":\"19800347\",\"sole_voting\":\"0\",\"source_percent\":\"9.47\",\"percentage_denominator_value\":null,\"percentage_denominator_status\":\"not_disclosed_in_inspected_filing\",\"economic_recipients\":\"clients including registered funds and other managed accounts\"}"
+    },
+    {
+      "evidence_id": "ev_vga_cover",
+      "document_id": "doc_vga13f2026q2_cover",
+      "locator": "Report period; institutional manager; report type; summary and included-manager list",
+      "source_record_key": "ev_vga_cover",
+      "supported_predicates": [
+        "managed_holding",
+        "voting_authority"
+      ],
+      "fact_summary": "One affiliate 13F reporting scope, not the Vanguard brand. Selected factual fields: {\"manager_name\":\"Vanguard Global Advisers, LLC\",\"filer_cik\":\"1811242\",\"report_type\":\"13F HOLDINGS REPORT\",\"included_manager_count\":\"0\",\"source_entry_total\":\"3638\",\"source_table_value_usd\":\"214603824175\",\"value_multiplier\":\"1\"}"
+    },
+    {
+      "evidence_id": "ev_vga_apple",
+      "document_id": "doc_vga13f2026q2_table",
+      "locator": "Header columns 1, 2, 4\u20138; unique APPLE INC / COM row, web rendering line 2879; identity column deliberately omitted",
+      "source_record_key": "ev_vga_apple",
+      "supported_predicates": [
+        "managed_holding",
+        "voting_authority"
+      ],
+      "fact_summary": "Selected common-share position and form-defined voting categories. Selected factual fields: {\"issuer\":\"APPLE INC\",\"class_label\":\"COM\",\"quantity\":\"31661076\",\"quantity_unit\":\"SH\",\"put_call\":null,\"reported_value_usd\":\"9161448952\",\"value_multiplier\":\"1\",\"investment_discretion_raw\":\"DFND\",\"voting_sole\":\"31661076\",\"voting_shared\":\"0\",\"voting_none\":\"0\",\"other_manager_reference\":null}"
+    },
+    {
+      "evidence_id": "ev_vanguard_reorg",
+      "document_id": "doc_vanguard_reorg2026",
+      "locator": "Comment following reporting-person type, paragraphs 1\u20135; accession index reporting-person identity",
+      "source_record_key": "ev_vanguard_reorg",
+      "supported_predicates": [],
+      "fact_summary": "Parent roles and affiliate reporting changed. This filing describes VPM; it does not reconcile VGA positions. Selected factual fields: {\"effective_date\":\"2026-01-12\",\"parent\":\"The Vanguard Group, Inc.\",\"reporting_person\":\"Vanguard Portfolio Management LLC\",\"reporting_person_cik\":\"2100121\",\"issuer_in_path_cik\":\"1384905\",\"issuer_in_path_name\":\"RingCentral, Inc.\",\"parent_ceased_roles\":[\"portfolio management\",\"proxy-voting administration\"],\"disaggregation\":\"certain subsidiaries and business divisions report separately\",\"vpm_included_affiliate\":\"Vanguard Fiduciary Trust Company\",\"vga_reconciliation\":\"not_provided\"}"
+    },
+    {
+      "evidence_id": "ev_blackrock13g",
+      "document_id": "doc_blackrock13g2023q4",
+      "locator": "Index filed-by identity; linked document sequence 1, Amendment 14, cover rows 9 and 11 and Item 4",
+      "source_record_key": "ev_blackrock13g",
+      "supported_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "fact_summary": "Original corroborates historical quantity and identifies historical filer; current corporate succession remains unresolved. Selected factual fields: {\"shares\":\"1043713019\",\"source_percent\":\"6.7\",\"position_date\":\"2023-12-31\",\"filer_cik\":\"1364742\",\"percentage_denominator_value\":null,\"percentage_denominator_status\":\"not_disclosed_in_inspected_filing\"}"
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "obs_doc_apple_proxy2026",
+      "document_id": "doc_apple_proxy2026",
+      "evidence_ids": [
+        "ev_apple_context",
+        "ev_proxy_vanguard",
+        "ev_proxy_blackrock",
+        "ev_proxy_cook",
+        "ev_proxy_group"
+      ],
+      "retrieved_at": "2026-10-18T10:01:34Z",
+      "recorded_at": "2026-10-18T10:14:32Z",
+      "extractor_version": "pilot-manual-v1",
+      "retrieval_method": "Bounded manual extraction from official SEC rendered HTML or linked plain-text filing using public-web research tool; no raw document retained. The timestamp records observation receipt, not origin fetch/crawl time."
+    },
+    {
+      "observation_id": "obs_doc_vanguard13g2025q2",
+      "document_id": "doc_vanguard13g2025q2",
+      "evidence_ids": [
+        "ev_vanguard13g"
+      ],
+      "retrieved_at": "2026-10-18T10:02:55Z",
+      "recorded_at": "2026-10-18T10:14:32Z",
+      "extractor_version": "pilot-manual-v1",
+      "retrieval_method": "Bounded manual extraction from official SEC rendered HTML or linked plain-text filing using public-web research tool; no raw document retained. The timestamp records observation receipt, not origin fetch/crawl time."
+    },
+    {
+      "observation_id": "obs_doc_vga13f2026q2_cover",
+      "document_id": "doc_vga13f2026q2_cover",
+      "evidence_ids": [
+        "ev_vga_cover"
+      ],
+      "retrieved_at": "2026-10-18T10:01:43Z",
+      "recorded_at": "2026-10-18T10:14:32Z",
+      "extractor_version": "pilot-manual-v1",
+      "retrieval_method": "Bounded manual extraction from official SEC rendered HTML or linked plain-text filing using public-web research tool; no raw document retained. The timestamp records observation receipt, not origin fetch/crawl time."
+    },
+    {
+      "observation_id": "obs_doc_vga13f2026q2_table",
+      "document_id": "doc_vga13f2026q2_table",
+      "evidence_ids": [
+        "ev_vga_apple"
+      ],
+      "retrieved_at": "2026-10-18T10:02:08Z",
+      "recorded_at": "2026-10-18T10:14:32Z",
+      "extractor_version": "pilot-manual-v1",
+      "retrieval_method": "Bounded manual extraction from official SEC rendered HTML or linked plain-text filing using public-web research tool; no raw document retained. The timestamp records observation receipt, not origin fetch/crawl time."
+    },
+    {
+      "observation_id": "obs_doc_vanguard_reorg2026",
+      "document_id": "doc_vanguard_reorg2026",
+      "evidence_ids": [
+        "ev_vanguard_reorg"
+      ],
+      "retrieved_at": "2026-10-18T10:02:55Z",
+      "recorded_at": "2026-10-18T10:14:32Z",
+      "extractor_version": "pilot-manual-v1",
+      "retrieval_method": "Bounded manual extraction from official SEC rendered HTML or linked plain-text filing using public-web research tool; no raw document retained. The timestamp records observation receipt, not origin fetch/crawl time."
+    },
+    {
+      "observation_id": "obs_doc_blackrock13g2023q4",
+      "document_id": "doc_blackrock13g2023q4",
+      "evidence_ids": [
+        "ev_blackrock13g"
+      ],
+      "retrieved_at": "2026-10-18T10:12:38Z",
+      "recorded_at": "2026-10-18T10:14:32Z",
+      "extractor_version": "pilot-manual-v1",
+      "retrieval_method": "Bounded manual extraction from official SEC rendered HTML or linked plain-text filing using public-web research tool; no raw document retained. The timestamp records observation receipt, not origin fetch/crawl time."
+    }
+  ],
+  "denominators": [
+    {
+      "denominator_id": "den_apple20260102_basic",
+      "kind": "outstanding_equity",
+      "label": "Apple common shares outstanding at January 2, 2026",
+      "value": "14697926000",
+      "availability": "known",
+      "unit": "shares",
+      "currency": null,
+      "as_of_date": "2026-01-02",
+      "security_ids": [
+        "sec_apple_common"
+      ],
+      "reporting_perimeter_id": "per_apple_class20260102",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Source-stated issuer-class total only; no reuse for historical numerator dates.",
+      "exclusions": [
+        "No whole cap-table completeness assertion",
+        "No cross-date comparison"
+      ],
+      "evidence_ids": [
+        "ev_apple_context"
+      ],
+      "qualifiers": [
+        "none asserted; do not apply to original historical percentages"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "coverage_id": "coverage_per_apple_proxy_management_group2026",
+      "reporting_perimeter_id": "per_apple_proxy_management_group2026",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-01-02",
+      "status": "partial",
+      "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investors and source rows not collected",
+        "Unpublished or confidential holdings",
+        "Amendment completeness unresolved"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_per_apple_proxy_named_holders2026",
+      "reporting_perimeter_id": "per_apple_proxy_named_holders2026",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-01-02",
+      "status": "partial",
+      "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investors and source rows not collected",
+        "Unpublished or confidential holdings",
+        "Amendment completeness unresolved"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_per_blackrock_proxy_reference2023",
+      "reporting_perimeter_id": "per_blackrock_proxy_reference2023",
+      "reporting_perimeter_version": "1",
+      "report_date": "2023-12-31",
+      "status": "partial",
+      "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investors and source rows not collected",
+        "Unpublished or confidential holdings",
+        "Amendment completeness unresolved"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_per_vanguard_parent_13g_pre2026",
+      "reporting_perimeter_id": "per_vanguard_parent_13g_pre2026",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-06-30",
+      "status": "partial",
+      "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investors and source rows not collected",
+        "Unpublished or confidential holdings",
+        "Amendment completeness unresolved"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_per_vga_13f2026q2",
+      "reporting_perimeter_id": "per_vga_13f2026q2",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-06-30",
+      "status": "partial",
+      "description": "Selected historical source observations only; not current/latest, complete portfolio, AUM or shareholder register.",
+      "expected_source_rows": 3638,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [
+        "ev_vga_cover"
+      ],
+      "exclusions": [
+        "Other investors and source rows not collected",
+        "Unpublished or confidential holdings",
+        "Amendment completeness unresolved"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    }
+  ],
+  "claims": [
+    {
+      "candidate_id": "cand_apple_proxy_vanguard",
+      "assertion_key": "cand_apple_proxy_vanguard",
+      "subject_id": "ent_vanguard_group_historical",
+      "predicate": "beneficial_ownership",
+      "object_id": "sec_apple_common",
+      "report_date": "2025-06-30",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_vanguard_parent_13g_pre2026",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_vanguard_parent_13g_pre2026_apple_common",
+      "evidence_ids": [
+        "ev_proxy_vanguard",
+        "ev_apple_context",
+        "ev_vanguard13g"
+      ],
+      "observation_ids": [
+        "obs_doc_apple_proxy2026",
+        "obs_doc_vanguard13g2025q2"
+      ],
+      "overlap_group_ids": [
+        "ov_vanguard_same_disclosure"
+      ],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "claimant: \"Apple Inc.\"",
+        "definition_framework: \"Issuer proxy reproduction of Exchange Act Section 13(d)/13(g) disclosure\"",
+        "table_date: \"2026-01-02\"",
+        "quantity_as_of: \"2025-06-30\"",
+        "percentage_denominator_as_of: \"2026-01-02\"",
+        "date_mismatch: true",
+        "original_source_percent: \"9.47\"",
+        "original_source_percent_denominator_unknown: true",
+        "not_current: true",
+        "own_account_basis: \"not_established\"",
+        "amendment_chain_complete: false",
+        "as_filed_historical_observation_only",
+        "publication and current-looking aggregation blocked pending independent review",
+        "Snapshot is not continuous ownership between dates.",
+        "met_proxy_vg_qty raw value: 1,415,826,462; unit multiplier 1; evidence ev_proxy_vanguard,ev_vanguard13g",
+        "met_proxy_vg_pct raw value: 9.63%; unit multiplier 1; evidence ev_proxy_vanguard,ev_apple_context"
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_proxy_vg_qty",
+          "metric_type": "quantity",
+          "value": "1415826462",
+          "availability": "known",
+          "reason": null,
+          "unit": "shares",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        },
+        {
+          "metric_id": "met_proxy_vg_pct",
+          "metric_type": "beneficial_percentage",
+          "value": "9.63",
+          "availability": "known",
+          "reason": null,
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_apple20260102_basic",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_proxy_vanguard"
+      ]
+    },
+    {
+      "candidate_id": "cand_apple_proxy_blackrock",
+      "assertion_key": "cand_apple_proxy_blackrock",
+      "subject_id": "ent_blackrock_historical_unresolved",
+      "predicate": "beneficial_ownership",
+      "object_id": "sec_apple_common",
+      "report_date": "2023-12-31",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_blackrock_proxy_reference2023",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_blackrock_proxy_reference2023_apple_common",
+      "evidence_ids": [
+        "ev_proxy_blackrock",
+        "ev_apple_context",
+        "ev_blackrock13g"
+      ],
+      "observation_ids": [
+        "obs_doc_apple_proxy2026",
+        "obs_doc_blackrock13g2023q4"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "claimant: \"Apple Inc.\"",
+        "definition_framework: \"Issuer proxy reproduction of Exchange Act Section 13(d)/13(g) disclosure\"",
+        "table_date: \"2026-01-02\"",
+        "quantity_as_of: \"2023-12-31\"",
+        "percentage_denominator_as_of: \"2026-01-02\"",
+        "date_mismatch: true",
+        "referenced_filing_not_directly_verified: false",
+        "historical_filer_cik: \"1364742\"",
+        "original_source_percent: \"6.7\"",
+        "original_source_percentage_denominator_unknown: true",
+        "current_blackrock_cik_merge: \"forbidden_without_succession_evidence\"",
+        "not_current: true",
+        "amendment_chain_complete: false",
+        "as_filed_historical_observation_only",
+        "publication and current-looking aggregation blocked pending independent review",
+        "Snapshot is not continuous ownership between dates.",
+        "met_proxy_br_qty raw value: 1,043,713,019; unit multiplier 1; evidence ev_proxy_blackrock,ev_blackrock13g",
+        "met_proxy_br_pct raw value: 7.10%; unit multiplier 1; evidence ev_proxy_blackrock,ev_apple_context"
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_proxy_br_qty",
+          "metric_type": "quantity",
+          "value": "1043713019",
+          "availability": "known",
+          "reason": null,
+          "unit": "shares",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        },
+        {
+          "metric_id": "met_proxy_br_pct",
+          "metric_type": "beneficial_percentage",
+          "value": "7.10",
+          "availability": "known",
+          "reason": null,
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_apple20260102_basic",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_proxy_blackrock"
+      ]
+    },
+    {
+      "candidate_id": "cand_apple_proxy_cook",
+      "assertion_key": "cand_apple_proxy_cook",
+      "subject_id": "ent_tim_cook_public_disclosure",
+      "predicate": "beneficial_ownership",
+      "object_id": "sec_apple_common",
+      "report_date": "2026-01-02",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_apple_proxy_named_holders2026",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_apple_proxy_named_holders2026_apple_common",
+      "evidence_ids": [
+        "ev_proxy_cook",
+        "ev_apple_context"
+      ],
+      "observation_ids": [
+        "obs_doc_apple_proxy2026"
+      ],
+      "overlap_group_ids": [
+        "ov_cook_in_management_group2026"
+      ],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "claimant: \"Apple Inc.\"",
+        "definition_framework: \"Issuer proxy beneficial ownership\"",
+        "title_basis: \"held in unnamed trust; no individual direct-title inference\"",
+        "amendment_chain_complete: false",
+        "as_filed_historical_observation_only",
+        "publication and current-looking aggregation blocked pending independent review",
+        "Snapshot is not continuous ownership between dates.",
+        "met_proxy_cook_qty raw value: 3,280,295; unit multiplier 1; evidence ev_proxy_cook",
+        "met_proxy_cook_pct raw value: *; unit multiplier 1; evidence ev_proxy_cook,ev_apple_context",
+        "met_proxy_cook_pct is a strict upper bound <1 percent, not zero or 1 percent."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_proxy_cook_qty",
+          "metric_type": "quantity",
+          "value": "3280295",
+          "availability": "known",
+          "reason": null,
+          "unit": "shares",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        },
+        {
+          "metric_id": "met_proxy_cook_pct",
+          "metric_type": "beneficial_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source states <1%; no exact numeric point value. Preserve strict upper bound in claim qualifiers and evidence.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_apple20260102_basic",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_proxy_cook"
+      ]
+    },
+    {
+      "candidate_id": "cand_apple_proxy_management_group",
+      "assertion_key": "cand_apple_proxy_management_group",
+      "subject_id": "ent_apple_management_group20260102",
+      "predicate": "beneficial_ownership",
+      "object_id": "sec_apple_common",
+      "report_date": "2026-01-02",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_apple_proxy_management_group2026",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_apple_proxy_management_group2026_apple_common",
+      "evidence_ids": [
+        "ev_proxy_group",
+        "ev_apple_context",
+        "ev_proxy_cook"
+      ],
+      "observation_ids": [
+        "obs_doc_apple_proxy2026"
+      ],
+      "overlap_group_ids": [
+        "ov_cook_in_management_group2026"
+      ],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "claimant: \"Apple Inc.\"",
+        "definition_framework: \"Issuer proxy beneficial ownership including near-term vesting rights\"",
+        "includes_near_term_rsUs: \"8643\"",
+        "group_is_not_legal_entity: true",
+        "group_contains: \"ent_tim_cook_public_disclosure\"",
+        "amendment_chain_complete: false",
+        "as_filed_historical_observation_only",
+        "publication and current-looking aggregation blocked pending independent review",
+        "Snapshot is not continuous ownership between dates.",
+        "met_proxy_group_qty raw value: 9,079,765; unit multiplier 1; evidence ev_proxy_group",
+        "met_proxy_group_pct raw value: *; unit multiplier 1; evidence ev_proxy_group,ev_apple_context",
+        "met_proxy_group_pct is a strict upper bound <1 percent, not zero or 1 percent."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_proxy_group_qty",
+          "metric_type": "quantity",
+          "value": "9079765",
+          "availability": "known",
+          "reason": null,
+          "unit": "shares",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        },
+        {
+          "metric_id": "met_proxy_group_pct",
+          "metric_type": "beneficial_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source states <1%; no exact numeric point value. Preserve strict upper bound in claim qualifiers and evidence.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_apple20260102_basic",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_proxy_group"
+      ]
+    },
+    {
+      "candidate_id": "cand_vanguard_shared_vote2025q2",
+      "assertion_key": "cand_vanguard_shared_vote2025q2",
+      "subject_id": "ent_vanguard_group_historical",
+      "predicate": "voting_authority",
+      "object_id": "sec_apple_common",
+      "report_date": "2025-06-30",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_vanguard_parent_13g_pre2026",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_vanguard_parent_13g_pre2026_apple_common",
+      "evidence_ids": [
+        "ev_vanguard13g"
+      ],
+      "observation_ids": [
+        "obs_doc_vanguard13g2025q2"
+      ],
+      "overlap_group_ids": [
+        "ov_vanguard_same_disclosure"
+      ],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "claimant: \"The Vanguard Group\"",
+        "definition_framework: \"Schedule 13G, Rule 13d-1(b)\"",
+        "voting_category: \"shared\"",
+        "voting_matter: \"not_separately_specified\"",
+        "beneficial_quantity_not_equal_voting_quantity: true",
+        "not_current: true",
+        "amendment_chain_complete: false",
+        "as_filed_historical_observation_only",
+        "publication and current-looking aggregation blocked pending independent review",
+        "Snapshot is not continuous ownership between dates.",
+        "met_vg_sharedvote_qty raw value: 19,800,347.00; unit multiplier 1; evidence ev_vanguard13g"
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_vg_sharedvote_qty",
+          "metric_type": "quantity",
+          "value": "19800347",
+          "availability": "known",
+          "reason": null,
+          "unit": "shares",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_vanguard13g"
+      ]
+    },
+    {
+      "candidate_id": "cand_vga_managed_apple2026q2",
+      "assertion_key": "cand_vga_managed_apple2026q2",
+      "subject_id": "ent_vanguard_global_advisers",
+      "predicate": "managed_holding",
+      "object_id": "sec_apple_common",
+      "report_date": "2026-06-30",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_vga_13f2026q2",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_vga_13f2026q2_apple_common",
+      "evidence_ids": [
+        "ev_vga_cover",
+        "ev_vga_apple"
+      ],
+      "observation_ids": [
+        "obs_doc_vga13f2026q2_cover",
+        "obs_doc_vga13f2026q2_table"
+      ],
+      "overlap_group_ids": [
+        "ov_vga_same_position_roles",
+        "ov_vanguard_perimeter_unreconciled"
+      ],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "claimant: \"Vanguard Global Advisers, LLC\"",
+        "definition_framework: \"SEC Form 13F\"",
+        "discretion_raw: \"DFND\"",
+        "discretion_interpretation: \"shared-defined\"",
+        "own_account_basis: \"not_established\"",
+        "coverage: \"one selected disclosed common-equity row in one affiliate report\"",
+        "source_universe: \"Section 13(f) reportable securities; not whole portfolio or brand AUM\"",
+        "other_manager_reference: \"blank; not evidence of independent economic ownership\"",
+        "amendment_chain_complete: false",
+        "aggregation_with_historic_parent: \"blocked\"",
+        "as_filed_historical_observation_only",
+        "publication and current-looking aggregation blocked pending independent review",
+        "Snapshot is not continuous ownership between dates.",
+        "met_vga_qty raw value: 31,661,076; unit multiplier 1; evidence ev_vga_apple",
+        "met_vga_value raw value: 9,161,448,952; unit multiplier 1; evidence ev_vga_apple"
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_vga_qty",
+          "metric_type": "quantity",
+          "value": "31661076",
+          "availability": "known",
+          "reason": null,
+          "unit": "shares",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        },
+        {
+          "metric_id": "met_vga_value",
+          "metric_type": "reported_value",
+          "value": "9161448952",
+          "availability": "known",
+          "reason": null,
+          "unit": "USD",
+          "currency": "USD",
+          "valuation_basis": "market",
+          "valuation_date": "2026-06-30",
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_vga_apple"
+      ]
+    },
+    {
+      "candidate_id": "cand_vga_voting_apple2026q2",
+      "assertion_key": "cand_vga_voting_apple2026q2",
+      "subject_id": "ent_vanguard_global_advisers",
+      "predicate": "voting_authority",
+      "object_id": "sec_apple_common",
+      "report_date": "2026-06-30",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_vga_13f2026q2",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_vga_13f2026q2_apple_common",
+      "evidence_ids": [
+        "ev_vga_cover",
+        "ev_vga_apple"
+      ],
+      "observation_ids": [
+        "obs_doc_vga13f2026q2_cover",
+        "obs_doc_vga13f2026q2_table"
+      ],
+      "overlap_group_ids": [
+        "ov_vga_same_position_roles",
+        "ov_vanguard_perimeter_unreconciled"
+      ],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "claimant: \"Vanguard Global Advisers, LLC\"",
+        "definition_framework: \"SEC Form 13F column 8\"",
+        "voting_category: \"sole_under_Form_13F\"",
+        "voting_matter: \"Form 13F non-routine-matter convention; shared-defined relationships may be reported sole\"",
+        "legal_vote_ownership: \"not_inferred\"",
+        "amendment_chain_complete: false",
+        "as_filed_historical_observation_only",
+        "publication and current-looking aggregation blocked pending independent review",
+        "Snapshot is not continuous ownership between dates.",
+        "met_vga_solevote_qty raw value: 31,661,076; unit multiplier 1; evidence ev_vga_apple"
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_vga_solevote_qty",
+          "metric_type": "quantity",
+          "value": "31661076",
+          "availability": "known",
+          "reason": null,
+          "unit": "shares",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": null,
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_vga_apple"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "gap_id": "gap_amendment_completeness",
+      "category": "amendment",
+      "description": "Selected SEC sources. unavailable. Web research tool could not retrieve VGA submissions JSON. Official company landing page rendered an unpopulated dynamic template. Exact searches found a Q1 amendment, not proof of no Q2 amendment. Complete amendment discovery through cutoff is unverified; no latest/current label or production admission.",
+      "source_urls": [
+        "https://data.sec.gov/submissions/CIK0001811242.json",
+        "https://www.sec.gov/edgar/browse/?CIK=0001811242"
+      ],
+      "blocks_claim_candidate_ids": [
+        "cand_apple_proxy_vanguard",
+        "cand_apple_proxy_blackrock",
+        "cand_apple_proxy_cook",
+        "cand_apple_proxy_management_group",
+        "cand_vanguard_shared_vote2025q2",
+        "cand_vga_managed_apple2026q2",
+        "cand_vga_voting_apple2026q2"
+      ]
+    },
+    {
+      "gap_id": "gap_blackrock_identity",
+      "category": "identity",
+      "description": "Proxy BlackRock reference. unknown. Original filing now verified and historical filer CIK1364742 identified. Independent canonical review remains pending; succession into current CIK2012383 is not established and must not be inferred.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": [
+        "cand_apple_proxy_blackrock"
+      ]
+    },
+    {
+      "gap_id": "gap_private_equity",
+      "category": "private_stake",
+      "description": "Private-company cap tables. not_researched. Not selected in this seven-claim pilot. No private cap-table or zero-ownership assertion.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_uncollected_slices",
+      "category": "coverage",
+      "description": "State Street, fund, sovereign, direct-government and other-holder examples. not_collected_scope_limit. Kept a materially smaller pilot. No inference that official data is unavailable; no source admission or live ingestion for omitted slices.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_restricted_sources",
+      "category": "rights",
+      "description": "NBIM website, marketplace and non-SEC sovereign channels. not_admitted. Rights/channel review pending in source registry; no facts extracted or republished from those channels.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_vanguard_reconciliation",
+      "category": "scope_transition",
+      "description": "Historical parent versus current affiliates. unknown. Realignment source does not reconcile VGA with historical parent or identify a full non-overlapping brand perimeter. No sale, zero, family total or replacement time series inferred.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_manager_fund_overlap",
+      "category": "overlap",
+      "description": "Exact manager-to-fund attribution. not_collected. No unsupported manager/fund link created. Genuine included-person overlap and same-position relation overlap are tested instead.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    }
+  ]
+}

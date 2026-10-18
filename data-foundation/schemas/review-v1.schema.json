@@ -1,0 +1,151 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "review_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_registry_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer_role": {
+      "enum": [
+        "agent_review",
+        "maintainer"
+      ]
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "batch_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "candidate_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "enum": [
+              "accepted_for_model",
+              "rejected",
+              "needs_review"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "batch_id",
+          "candidate_id",
+          "decision",
+          "rationale"
+        ]
+      }
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "held",
+            "approved"
+          ]
+        },
+        "authorized_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authorization_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "intended_use": {
+          "enum": [
+            "noncommercial_research",
+            "commercial"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "authorized_by",
+        "authorization_url",
+        "intended_use"
+      ]
+    },
+    "document_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "batch_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "enum": [
+              "accepted_for_model",
+              "rejected",
+              "needs_review"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "batch_id",
+          "document_id",
+          "decision",
+          "rationale"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "review_id",
+    "registry_version",
+    "source_registry_version",
+    "reviewer",
+    "reviewer_role",
+    "reviewed_at",
+    "decisions",
+    "publication",
+    "document_decisions"
+  ]
+}

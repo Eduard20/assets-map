@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "registry_pilot_proposal_20261018_v1",
+  "entities": [
+    {
+      "entity_id": "ent_apple",
+      "entity_type": "legal_entity",
+      "legal_name": "Apple Inc.",
+      "aliases": [],
+      "identifiers": [
+        {
+          "namespace": "cik",
+          "value": "320193",
+          "scope": "SEC filer/issuer role shown by cited official document; not a security identifier",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_url": "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/0001308179-26-000008-index.htm"
+        }
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/0001308179-26-000008-index.htm"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry.  "
+      }
+    },
+    {
+      "entity_id": "ent_vanguard_group_historical",
+      "entity_type": "legal_entity",
+      "legal_name": "The Vanguard Group, Inc. (historical reporting perimeter)",
+      "aliases": [],
+      "identifiers": [
+        {
+          "namespace": "cik",
+          "value": "102909",
+          "scope": "SEC filer/issuer role shown by cited official document; not a security identifier",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_url": "https://www.sec.gov/Archives/edgar/data/102909/000093247125000778/xslSCHEDULE_13G_X01/primary_doc.xml"
+        }
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/102909/000093247125000778/xslSCHEDULE_13G_X01/primary_doc.xml"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry.  "
+      }
+    },
+    {
+      "entity_id": "ent_vanguard_global_advisers",
+      "entity_type": "legal_entity",
+      "legal_name": "Vanguard Global Advisers, LLC",
+      "aliases": [],
+      "identifiers": [
+        {
+          "namespace": "cik",
+          "value": "1811242",
+          "scope": "SEC filer/issuer role shown by cited official document; not a security identifier",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_url": "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/0001811242-26-000015-index.html"
+        }
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/0001811242-26-000015-index.html"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry.  "
+      }
+    },
+    {
+      "entity_id": "ent_vanguard_portfolio_management",
+      "entity_type": "legal_entity",
+      "legal_name": "Vanguard Portfolio Management LLC",
+      "aliases": [],
+      "identifiers": [
+        {
+          "namespace": "cik",
+          "value": "2100121",
+          "scope": "SEC filer/issuer role shown by cited official document; not a security identifier",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_url": "https://www.sec.gov/Archives/edgar/data/1384905/000210012126000017/0002100121-26-000017-index.html"
+        }
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1384905/000210012126000017/0002100121-26-000017-index.html"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry.  "
+      }
+    },
+    {
+      "entity_id": "ent_blackrock_historical_unresolved",
+      "entity_type": "legal_entity",
+      "legal_name": "BlackRock, Inc. (proxy reference, 2023 holding date)",
+      "aliases": [],
+      "identifiers": [
+        {
+          "namespace": "cik",
+          "value": "1364742",
+          "scope": "SEC filer/issuer role shown by cited official document; not a security identifier",
+          "valid_from": null,
+          "valid_to": null,
+          "evidence_url": "https://www.sec.gov/Archives/edgar/data/320193/000108636424006980/0001086364-24-006980-index.htm"
+        }
+      ],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000108636424006980/0001086364-24-006980-index.htm",
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry. historical_filer_identified; current_corporate_succession_unreconciled "
+      }
+    },
+    {
+      "entity_id": "ent_tim_cook_public_disclosure",
+      "entity_type": "person",
+      "legal_name": "Tim Cook",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry.  investment-relevant public disclosure only"
+      }
+    },
+    {
+      "entity_id": "ent_apple_management_group20260102",
+      "entity_type": "reported_group",
+      "legal_name": "Apple current directors and executive officers (12 persons, 2026-01-02)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry.  "
+      }
+    }
+  ],
+  "securities": [
+    {
+      "security_id": "sec_apple_common",
+      "issuer_id": "ent_apple",
+      "instrument_kind": "common_equity",
+      "share_class": "common",
+      "label": "Apple Inc. common stock",
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm",
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+      ],
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry. Match is based on exact issuer/class source labels, not proprietary identifiers."
+      }
+    }
+  ],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_vanguard_parent_13g_pre2026",
+      "version": "1",
+      "reporting_entity_id": "ent_vanguard_group_historical",
+      "basis": "beneficial_attribution",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Schedule 13G, Rule 13d-1(b); as-filed candidate only. ",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm",
+        "https://www.sec.gov/Archives/edgar/data/102909/000093247125000778/xslSCHEDULE_13G_X01/primary_doc.xml"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_blackrock_proxy_reference2023",
+      "version": "1",
+      "reporting_entity_id": "ent_blackrock_historical_unresolved",
+      "basis": "beneficial_attribution",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Issuer proxy reproduction of Exchange Act Section 13(d)/13(g) disclosure; as-filed candidate only. ",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm",
+        "https://www.sec.gov/Archives/edgar/data/320193/000108636424006980/0001086364-24-006980.txt"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_apple_proxy_named_holders2026",
+      "version": "1",
+      "reporting_entity_id": "ent_tim_cook_public_disclosure",
+      "basis": "beneficial_attribution",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Issuer proxy beneficial ownership; as-filed candidate only. ",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_apple_proxy_management_group2026",
+      "version": "1",
+      "reporting_entity_id": "ent_apple_management_group20260102",
+      "basis": "beneficial_attribution",
+      "included_entity_ids": [
+        "ent_tim_cook_public_disclosure"
+      ],
+      "excluded_entity_ids": [],
+      "definition": "Issuer proxy beneficial ownership including near-term vesting rights; as-filed candidate only. ",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_vga_13f2026q2",
+      "version": "1",
+      "reporting_entity_id": "ent_vanguard_global_advisers",
+      "basis": "reported_discretion",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "SEC Form 13F reported investment discretion and voting-authority scope. This does not establish proprietary/client ownership allocation or the whole Vanguard family. Included-manager count zero does not prove unrelated positions.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml",
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_apple_class20260102",
+      "version": "1",
+      "reporting_entity_id": "ent_apple",
+      "basis": "unknown",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Apple common class shares outstanding on January 2, 2026; denominator perimeter only.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "proposed",
+        "reviewer": "pilot-preparation",
+        "reviewed_at": "2026-10-18T10:14:32Z",
+        "rationale": "PROPOSED; requires independent integrator review. Preparation timestamp only; do not use as admitted registry."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

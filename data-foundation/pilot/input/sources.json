@@ -1,0 +1,594 @@
+{
+  "schema_version": "1.0.0",
+  "source_registry_version": "sources_pilot_proposal_20261018_v1",
+  "sources": [
+    {
+      "source_id": "src_sec_blackrock13g2023q4",
+      "source_family": "SEC-13DG",
+      "publication_host": "www.sec.gov",
+      "allowed_url_prefixes": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000108636424006980/0001086364-24-006980.txt"
+      ],
+      "admitted_document_ids": [],
+      "allowed_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "identifier_namespaces": [
+        "cik"
+      ],
+      "admission": {
+        "status": "needs_review",
+        "reviewer": "independent reviewer pending",
+        "checked_at": "2026-10-18",
+        "rationale": "This is a proposed limited source profile; no publication or complete amendment discovery approval."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/filergroup/announcements-old/new-rate-control-limits"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC permits programmatic access subject to declared application/contact user agent, aggregate rate limits and block handling; this pilot used bounded public-web research, not a deployed collector Independent source admission is pending."
+        },
+        "raw_retention": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw files retained; unrestricted retention outside selected factual scope not proposed Independent source admission is pending."
+        },
+        "internal_extraction": {
+          "status": "allowed",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC explicitly permits reuse of EDGAR public filing content; only source factual metadata retained Independent source admission is pending."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Only CIK/accession proposed. Proprietary instrument identifier values excluded; independent issuer/class mapping pending. Independent source admission is pending."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC reuse policy supports selected factual metadata, but independent source/identity/semantics/amendment review and root publication authorization still required Independent source admission is pending."
+        },
+        "raw_redistribution": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw documents, logos, artwork or proprietary identifier values supplied Independent source admission is pending."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Retain SEC-hosted URL, claimant, document accession, locator and dates; do not imply SEC verification or endorsement Independent source admission is pending."
+        },
+        "commercial_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Broad SEC reuse language is observed; source reviewer must decide intended commercial dataset scope and identifier policy Independent source admission is pending."
+        }
+      },
+      "cadence": "Source-specific historical filing observations; no refresh job or universal latest-data claim.",
+      "limitations": [
+        "No raw filing/archive or proprietary instrument identifier values.",
+        "Review admitted_document_ids before use; list intentionally empty in proposal.",
+        "SEC publishes filer statements; this is not SEC verification.",
+        "Amendment completeness, identity and semantic review are independent gates."
+      ]
+    },
+    {
+      "source_id": "src_sec_apple_proxy2026",
+      "source_family": "SEC-ISSUER",
+      "publication_host": "www.sec.gov",
+      "allowed_url_prefixes": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm"
+      ],
+      "admitted_document_ids": [],
+      "allowed_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "identifier_namespaces": [
+        "cik"
+      ],
+      "admission": {
+        "status": "needs_review",
+        "reviewer": "independent reviewer pending",
+        "checked_at": "2026-10-18",
+        "rationale": "This is a proposed limited source profile; no publication or complete amendment discovery approval."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/filergroup/announcements-old/new-rate-control-limits"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC permits programmatic access subject to declared application/contact user agent, aggregate rate limits and block handling; this pilot used bounded public-web research, not a deployed collector Independent source admission is pending."
+        },
+        "raw_retention": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw files retained; unrestricted retention outside selected factual scope not proposed Independent source admission is pending."
+        },
+        "internal_extraction": {
+          "status": "allowed",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC explicitly permits reuse of EDGAR public filing content; only source factual metadata retained Independent source admission is pending."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Only CIK/accession proposed. Proprietary instrument identifier values excluded; independent issuer/class mapping pending. Independent source admission is pending."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC reuse policy supports selected factual metadata, but independent source/identity/semantics/amendment review and root publication authorization still required Independent source admission is pending."
+        },
+        "raw_redistribution": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw documents, logos, artwork or proprietary identifier values supplied Independent source admission is pending."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Retain SEC-hosted URL, claimant, document accession, locator and dates; do not imply SEC verification or endorsement Independent source admission is pending."
+        },
+        "commercial_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Broad SEC reuse language is observed; source reviewer must decide intended commercial dataset scope and identifier policy Independent source admission is pending."
+        }
+      },
+      "cadence": "Source-specific historical filing observations; no refresh job or universal latest-data claim.",
+      "limitations": [
+        "No raw filing/archive or proprietary instrument identifier values.",
+        "Review admitted_document_ids before use; list intentionally empty in proposal.",
+        "SEC publishes filer statements; this is not SEC verification.",
+        "Amendment completeness, identity and semantic review are independent gates."
+      ]
+    },
+    {
+      "source_id": "src_sec_vanguard13g2025q2",
+      "source_family": "SEC-13DG",
+      "publication_host": "www.sec.gov",
+      "allowed_url_prefixes": [
+        "https://www.sec.gov/Archives/edgar/data/102909/000093247125000778/xslSCHEDULE_13G_X01/primary_doc.xml"
+      ],
+      "admitted_document_ids": [],
+      "allowed_predicates": [
+        "beneficial_ownership",
+        "voting_authority"
+      ],
+      "identifier_namespaces": [
+        "cik"
+      ],
+      "admission": {
+        "status": "needs_review",
+        "reviewer": "independent reviewer pending",
+        "checked_at": "2026-10-18",
+        "rationale": "This is a proposed limited source profile; no publication or complete amendment discovery approval."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/filergroup/announcements-old/new-rate-control-limits"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC permits programmatic access subject to declared application/contact user agent, aggregate rate limits and block handling; this pilot used bounded public-web research, not a deployed collector Independent source admission is pending."
+        },
+        "raw_retention": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw files retained; unrestricted retention outside selected factual scope not proposed Independent source admission is pending."
+        },
+        "internal_extraction": {
+          "status": "allowed",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC explicitly permits reuse of EDGAR public filing content; only source factual metadata retained Independent source admission is pending."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Only CIK/accession proposed. Proprietary instrument identifier values excluded; independent issuer/class mapping pending. Independent source admission is pending."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC reuse policy supports selected factual metadata, but independent source/identity/semantics/amendment review and root publication authorization still required Independent source admission is pending."
+        },
+        "raw_redistribution": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw documents, logos, artwork or proprietary identifier values supplied Independent source admission is pending."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Retain SEC-hosted URL, claimant, document accession, locator and dates; do not imply SEC verification or endorsement Independent source admission is pending."
+        },
+        "commercial_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Broad SEC reuse language is observed; source reviewer must decide intended commercial dataset scope and identifier policy Independent source admission is pending."
+        }
+      },
+      "cadence": "Source-specific historical filing observations; no refresh job or universal latest-data claim.",
+      "limitations": [
+        "No raw filing/archive or proprietary instrument identifier values.",
+        "Review admitted_document_ids before use; list intentionally empty in proposal.",
+        "SEC publishes filer statements; this is not SEC verification.",
+        "Amendment completeness, identity and semantic review are independent gates."
+      ]
+    },
+    {
+      "source_id": "src_sec_vga13f2026q2",
+      "source_family": "SEC-13F",
+      "publication_host": "www.sec.gov",
+      "allowed_url_prefixes": [
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/primary_doc.xml",
+        "https://www.sec.gov/Archives/edgar/data/1811242/000181124226000015/xslForm13F_X02/13F_0001811242_20260630.xml"
+      ],
+      "admitted_document_ids": [],
+      "allowed_predicates": [
+        "managed_holding",
+        "voting_authority"
+      ],
+      "identifier_namespaces": [
+        "cik"
+      ],
+      "admission": {
+        "status": "needs_review",
+        "reviewer": "independent reviewer pending",
+        "checked_at": "2026-10-18",
+        "rationale": "This is a proposed limited source profile; no publication or complete amendment discovery approval."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/filergroup/announcements-old/new-rate-control-limits"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC permits programmatic access subject to declared application/contact user agent, aggregate rate limits and block handling; this pilot used bounded public-web research, not a deployed collector Independent source admission is pending."
+        },
+        "raw_retention": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw files retained; unrestricted retention outside selected factual scope not proposed Independent source admission is pending."
+        },
+        "internal_extraction": {
+          "status": "allowed",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC explicitly permits reuse of EDGAR public filing content; only source factual metadata retained Independent source admission is pending."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Only CIK/accession proposed. Proprietary instrument identifier values excluded; independent issuer/class mapping pending. Independent source admission is pending."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC reuse policy supports selected factual metadata, but independent source/identity/semantics/amendment review and root publication authorization still required Independent source admission is pending."
+        },
+        "raw_redistribution": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw documents, logos, artwork or proprietary identifier values supplied Independent source admission is pending."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Retain SEC-hosted URL, claimant, document accession, locator and dates; do not imply SEC verification or endorsement Independent source admission is pending."
+        },
+        "commercial_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Broad SEC reuse language is observed; source reviewer must decide intended commercial dataset scope and identifier policy Independent source admission is pending."
+        }
+      },
+      "cadence": "Source-specific historical filing observations; no refresh job or universal latest-data claim.",
+      "limitations": [
+        "No raw filing/archive or proprietary instrument identifier values.",
+        "Review admitted_document_ids before use; list intentionally empty in proposal.",
+        "SEC publishes filer statements; this is not SEC verification.",
+        "Amendment completeness, identity and semantic review are independent gates."
+      ]
+    },
+    {
+      "source_id": "src_sec_vanguard_reorg2026",
+      "source_family": "SEC-13DG",
+      "publication_host": "www.sec.gov",
+      "allowed_url_prefixes": [
+        "https://www.sec.gov/Archives/edgar/data/1384905/000210012126000017/xslSCHEDULE_13G_X01/primary_doc.xml"
+      ],
+      "admitted_document_ids": [],
+      "allowed_predicates": [],
+      "identifier_namespaces": [
+        "cik"
+      ],
+      "admission": {
+        "status": "needs_review",
+        "reviewer": "independent reviewer pending",
+        "checked_at": "2026-10-18",
+        "rationale": "This is a proposed limited source profile; no publication or complete amendment discovery approval."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/filergroup/announcements-old/new-rate-control-limits"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC permits programmatic access subject to declared application/contact user agent, aggregate rate limits and block handling; this pilot used bounded public-web research, not a deployed collector Independent source admission is pending."
+        },
+        "raw_retention": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw files retained; unrestricted retention outside selected factual scope not proposed Independent source admission is pending."
+        },
+        "internal_extraction": {
+          "status": "allowed",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC explicitly permits reuse of EDGAR public filing content; only source factual metadata retained Independent source admission is pending."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Only CIK/accession proposed. Proprietary instrument identifier values excluded; independent issuer/class mapping pending. Independent source admission is pending."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "SEC reuse policy supports selected factual metadata, but independent source/identity/semantics/amendment review and root publication authorization still required Independent source admission is pending."
+        },
+        "raw_redistribution": {
+          "status": "blocked",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "No raw documents, logos, artwork or proprietary identifier values supplied Independent source admission is pending."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Retain SEC-hosted URL, claimant, document accession, locator and dates; do not imply SEC verification or endorsement Independent source admission is pending."
+        },
+        "commercial_use": {
+          "status": "conditional",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+            "https://www.sec.gov/about/privacy-information"
+          ],
+          "checked_at": "2026-10-18",
+          "reviewer": "pilot-preparation",
+          "rationale": "Broad SEC reuse language is observed; source reviewer must decide intended commercial dataset scope and identifier policy Independent source admission is pending."
+        }
+      },
+      "cadence": "Source-specific historical filing observations; no refresh job or universal latest-data claim.",
+      "limitations": [
+        "No raw filing/archive or proprietary instrument identifier values.",
+        "Review admitted_document_ids before use; list intentionally empty in proposal.",
+        "SEC publishes filer statements; this is not SEC verification.",
+        "Amendment completeness, identity and semantic review are independent gates."
+      ]
+    }
+  ]
+}

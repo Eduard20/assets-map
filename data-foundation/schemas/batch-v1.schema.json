@@ -1,0 +1,862 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "batch_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "agent_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "registry_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_registry_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base_release_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "knowledge_cutoff": {
+          "type": "string",
+          "format": "date"
+        },
+        "scope": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "entity_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "security_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "report_dates": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "date"
+              }
+            },
+            "max_claims": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 30
+            },
+            "asset_class": {
+              "const": "equity"
+            }
+          },
+          "required": [
+            "entity_ids",
+            "security_ids",
+            "source_ids",
+            "report_dates",
+            "max_claims",
+            "asset_class"
+          ]
+        },
+        "stop_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "batch_id",
+        "task_id",
+        "agent_id",
+        "registry_version",
+        "source_registry_version",
+        "base_release_id",
+        "created_at",
+        "knowledge_cutoff",
+        "scope",
+        "stop_conditions"
+      ]
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_family_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "content_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "amendment_kind": {
+            "enum": [
+              "original",
+              "restatement",
+              "addition",
+              "partial",
+              "withdrawal"
+            ]
+          },
+          "supersedes_document_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "amendment_checked_through": {
+            "type": "string",
+            "format": "date"
+          },
+          "amendment_discovery": {
+            "type": "string",
+            "minLength": 1
+          },
+          "amendment_status": {
+            "enum": [
+              "complete",
+              "incomplete",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "document_id",
+          "source_id",
+          "document_family_id",
+          "version",
+          "url",
+          "publisher",
+          "published_at",
+          "content_sha256",
+          "amendment_kind",
+          "supersedes_document_ids",
+          "amendment_checked_through",
+          "amendment_discovery",
+          "amendment_status"
+        ]
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_record_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supported_predicates": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "fact_summary": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "evidence_id",
+          "document_id",
+          "locator",
+          "source_record_key",
+          "supported_predicates",
+          "fact_summary"
+        ]
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "observation_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "extractor_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrieval_method": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "observation_id",
+          "document_id",
+          "evidence_ids",
+          "retrieved_at",
+          "recorded_at",
+          "extractor_version",
+          "retrieval_method"
+        ]
+      }
+    },
+    "denominators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "denominator_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "outstanding_equity",
+              "beneficial_adjusted",
+              "eligible_votes",
+              "selected_disclosed_value",
+              "net_assets",
+              "whole_portfolio_assets"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+          },
+          "availability": {
+            "enum": [
+              "known",
+              "unknown",
+              "unavailable"
+            ]
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "currency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "as_of_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "security_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "reporting_perimeter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reporting_perimeter_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coverage_status": {
+            "enum": [
+              "complete_for_declared_scope",
+              "partial",
+              "unknown"
+            ]
+          },
+          "selection_policy": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exclusions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "qualifiers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "denominator_id",
+          "kind",
+          "label",
+          "value",
+          "availability",
+          "unit",
+          "currency",
+          "as_of_date",
+          "security_ids",
+          "reporting_perimeter_id",
+          "reporting_perimeter_version",
+          "coverage_status",
+          "selection_policy",
+          "exclusions",
+          "evidence_ids",
+          "qualifiers"
+        ]
+      }
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "coverage_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reporting_perimeter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reporting_perimeter_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "report_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "enum": [
+              "complete_for_declared_scope",
+              "partial",
+              "unknown"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected_source_rows": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "captured_source_rows": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "count_evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "exclusions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "whole_portfolio_coverage": {
+            "type": "null"
+          },
+          "freshness_status": {
+            "enum": [
+              "historical_snapshot",
+              "unknown",
+              "stale"
+            ]
+          },
+          "freshness_policy_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "coverage_id",
+          "reporting_perimeter_id",
+          "reporting_perimeter_version",
+          "report_date",
+          "status",
+          "description",
+          "expected_source_rows",
+          "captured_source_rows",
+          "count_evidence_ids",
+          "exclusions",
+          "whole_portfolio_coverage",
+          "freshness_status",
+          "freshness_policy_id"
+        ]
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assertion_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subject_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "predicate": {
+            "enum": [
+              "record_ownership",
+              "beneficial_ownership",
+              "direct_equity_ownership",
+              "fund_holding",
+              "managed_holding",
+              "manages_fund",
+              "voting_authority",
+              "custody",
+              "control_assertion",
+              "subsidiary_of"
+            ]
+          },
+          "object_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "report_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temporal_kind": {
+            "enum": [
+              "snapshot",
+              "event",
+              "interval",
+              "unknown"
+            ]
+          },
+          "effective_from": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effective_to": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effective_date_basis": {
+            "enum": [
+              "explicit_source",
+              "reporting_snapshot",
+              "unknown"
+            ]
+          },
+          "end_semantics": {
+            "enum": [
+              "exclusive",
+              "inclusive",
+              "explicit_open_ended",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "reporting_perimeter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reporting_perimeter_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "position_scope_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "observation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "metric_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "metric_type": {
+                  "enum": [
+                    "quantity",
+                    "reported_value",
+                    "equity_percentage",
+                    "beneficial_percentage",
+                    "voting_percentage",
+                    "portfolio_weight"
+                  ]
+                },
+                "value": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?$"
+                },
+                "availability": {
+                  "enum": [
+                    "known",
+                    "unknown",
+                    "unavailable",
+                    "not_applicable"
+                  ]
+                },
+                "reason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "unit": {
+                  "enum": [
+                    "shares",
+                    "fund_units",
+                    "USD",
+                    "EUR",
+                    "GBP",
+                    "NOK",
+                    "percent"
+                  ]
+                },
+                "currency": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "valuation_basis": {
+                  "enum": [
+                    "market",
+                    "fair",
+                    "book",
+                    "cost",
+                    "nominal",
+                    "not_applicable",
+                    "unknown"
+                  ]
+                },
+                "valuation_date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date"
+                },
+                "denominator_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "measurement_basis": {
+                  "enum": [
+                    "observed_position",
+                    "reported_actual_allocation",
+                    "target_allocation",
+                    "policy_limit"
+                  ]
+                },
+                "source_reported": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "metric_id",
+                "metric_type",
+                "value",
+                "availability",
+                "reason",
+                "unit",
+                "currency",
+                "valuation_basis",
+                "valuation_date",
+                "denominator_id",
+                "measurement_basis",
+                "source_reported"
+              ]
+            }
+          },
+          "qualifiers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "overlap_group_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "supersedes_claim_revision_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "correction_kind": {
+            "enum": [
+              "none",
+              "partial",
+              "restatement",
+              "addition",
+              "withdrawal"
+            ]
+          },
+          "correction_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "primary_evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "candidate_id",
+          "assertion_key",
+          "subject_id",
+          "predicate",
+          "object_id",
+          "report_date",
+          "temporal_kind",
+          "effective_from",
+          "effective_to",
+          "effective_date_basis",
+          "end_semantics",
+          "reporting_perimeter_id",
+          "reporting_perimeter_version",
+          "position_scope_id",
+          "evidence_ids",
+          "observation_ids",
+          "metrics",
+          "qualifiers",
+          "overlap_group_ids",
+          "supersedes_claim_revision_ids",
+          "correction_kind",
+          "correction_reason",
+          "primary_evidence_ids"
+        ]
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "gap_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": [
+              "identity",
+              "source",
+              "rights",
+              "coverage",
+              "amendment",
+              "overlap",
+              "private_stake",
+              "scope_transition",
+              "extraction"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "blocks_claim_candidate_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "gap_id",
+          "category",
+          "description",
+          "source_urls",
+          "blocks_claim_candidate_ids"
+        ]
+      }
+    }
+  },
+  "required": [
+    "manifest",
+    "documents",
+    "evidence",
+    "observations",
+    "denominators",
+    "coverage",
+    "claims",
+    "gaps"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduard20.github.io/assets-map/schemas/batch-v1.json",
+  "title": "Isolated equity candidate batch v1"
+}

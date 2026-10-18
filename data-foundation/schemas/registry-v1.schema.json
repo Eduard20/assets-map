@@ -1,0 +1,651 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "registry_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "entity_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "entity_type": {
+            "enum": [
+              "legal_entity",
+              "fund",
+              "person",
+              "government",
+              "brand",
+              "reported_group"
+            ]
+          },
+          "legal_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "valid_from": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "valid_to": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "valid_from",
+                "valid_to"
+              ]
+            }
+          },
+          "identifiers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "namespace": {
+                  "enum": [
+                    "cik",
+                    "sec_series",
+                    "lei",
+                    "local_official"
+                  ]
+                },
+                "value": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "valid_from": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date"
+                },
+                "valid_to": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date"
+                },
+                "evidence_url": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "namespace",
+                "value",
+                "scope",
+                "valid_from",
+                "valid_to",
+                "evidence_url"
+              ]
+            }
+          },
+          "source_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "accepted",
+                  "proposed"
+                ]
+              }
+            },
+            "required": [
+              "reviewer",
+              "reviewed_at",
+              "rationale",
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "entity_id",
+          "entity_type",
+          "legal_name",
+          "aliases",
+          "identifiers",
+          "source_urls",
+          "review"
+        ]
+      }
+    },
+    "securities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "security_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issuer_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "instrument_kind": {
+            "enum": [
+              "common_equity",
+              "preferred_equity",
+              "fund_unit"
+            ]
+          },
+          "share_class": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "identifiers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "namespace": {
+                  "enum": [
+                    "cik",
+                    "sec_series",
+                    "lei",
+                    "local_official"
+                  ]
+                },
+                "value": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "scope": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "valid_from": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date"
+                },
+                "valid_to": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "date"
+                },
+                "evidence_url": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "namespace",
+                "value",
+                "scope",
+                "valid_from",
+                "valid_to",
+                "evidence_url"
+              ]
+            }
+          },
+          "source_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "accepted",
+                  "proposed"
+                ]
+              }
+            },
+            "required": [
+              "reviewer",
+              "reviewed_at",
+              "rationale",
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "security_id",
+          "issuer_id",
+          "instrument_kind",
+          "share_class",
+          "label",
+          "identifiers",
+          "source_urls",
+          "review"
+        ]
+      }
+    },
+    "listings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "listing_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "security_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ticker": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exchange": {
+            "type": "string",
+            "minLength": 1
+          },
+          "currency": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valid_from": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "valid_to": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_url": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "listing_id",
+          "security_id",
+          "ticker",
+          "exchange",
+          "currency",
+          "valid_from",
+          "valid_to",
+          "evidence_url"
+        ]
+      }
+    },
+    "perimeters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "reporting_perimeter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reporting_entity_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "enum": [
+              "own_account",
+              "client_aggregate",
+              "fund",
+              "beneficial_attribution",
+              "unknown",
+              "reported_discretion"
+            ]
+          },
+          "included_entity_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "excluded_entity_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "valid_from": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "valid_to": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "accepted",
+                  "proposed"
+                ]
+              }
+            },
+            "required": [
+              "reviewer",
+              "reviewed_at",
+              "rationale",
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "reporting_perimeter_id",
+          "version",
+          "reporting_entity_id",
+          "basis",
+          "included_entity_ids",
+          "excluded_entity_ids",
+          "definition",
+          "source_urls",
+          "valid_from",
+          "valid_to",
+          "review"
+        ]
+      }
+    },
+    "identity_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "decision_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "action": {
+            "enum": [
+              "merge",
+              "split",
+              "reverse"
+            ]
+          },
+          "from_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "to_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "reverses_decision_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "accepted",
+                  "proposed"
+                ]
+              }
+            },
+            "required": [
+              "reviewer",
+              "reviewed_at",
+              "rationale",
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "decision_id",
+          "action",
+          "from_ids",
+          "to_ids",
+          "reverses_decision_id",
+          "evidence_urls",
+          "review"
+        ]
+      }
+    },
+    "scope_transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "transition_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_perimeter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_perimeter_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "effective_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "reconciliation_status": {
+            "enum": [
+              "unreconciled",
+              "reviewed"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "accepted",
+                  "proposed"
+                ]
+              }
+            },
+            "required": [
+              "reviewer",
+              "reviewed_at",
+              "rationale",
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "transition_id",
+          "from_perimeter_id",
+          "from_version",
+          "to_perimeter_id",
+          "to_version",
+          "effective_date",
+          "reconciliation_status",
+          "description",
+          "evidence_urls",
+          "review"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_version",
+    "entities",
+    "securities",
+    "listings",
+    "perimeters",
+    "identity_history",
+    "scope_transitions"
+  ]
+}
