@@ -193,7 +193,7 @@ export class Graph3D {
     const changed = width !== this.width || height !== this.height;
     this.width = width;
     this.height = height;
-    this.renderer.setSize(width, height);
+    this.renderer.setSize(width, height, false);
     this.camera.aspect = width/height;
     this.camera.updateProjectionMatrix();
     if (this.graph && (width < 600) !== this.portrait) this.update(this.graph, this.state);

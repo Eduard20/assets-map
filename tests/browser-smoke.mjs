@@ -45,7 +45,12 @@ async function expectReal3D(page, count = 4) {
 
 async function ensureNoOverflow(page, width) {
   await page.setViewportSize({width, height: 844});
-  await page.waitForFunction(() => document.documentElement.scrollWidth <= innerWidth);
+  await page.waitForFunction(() => {
+    const canvas = document.querySelector('#graph-3d canvas').getBoundingClientRect();
+    const labels = [...document.querySelectorAll('#graph-3d button[data-node-id]')];
+    return document.documentElement.scrollWidth <= innerWidth && canvas.left >= 0 && canvas.right <= innerWidth + 1
+      && labels.every(button => { const rect=button.getBoundingClientRect(); return rect.left>=canvas.left && rect.right<=canvas.right && rect.top>=canvas.top && rect.bottom<=canvas.bottom; });
+  });
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Horizontal overflow at ${width}px`);
   const canvas = await page.locator('#graph-3d canvas').boundingBox();
   assert.ok(canvas && canvas.width > 0 && canvas.height > 0, `Missing 3D canvas at ${width}px`);
@@ -222,7 +227,7 @@ try {
   const importGate = new Promise(resolve => { releaseImport = resolve; });
   let importRequested;
   const importStarted = new Promise(resolve => { importRequested = resolve; });
-  await raceContext.route('**/src/graph-3d.js', async route => {
+  await raceContext.route('**/src/graph-3d.js*', async route => {
     const response = await route.fetch();
     const source = await response.text();
     importRequested();

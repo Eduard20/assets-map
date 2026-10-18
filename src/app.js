@@ -1,4 +1,4 @@
-import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js';
+import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261018-bubbles2';
 import {Graph2D} from './graph-2d.js';
 const $=selector=>document.querySelector(selector);
 let model,state,graph,renderer3D,renderer3DPromise,toastTimer,viewRequest=0;
@@ -43,7 +43,7 @@ async function setView(view) {
     toast('Opening 3D bubbles…');
     try {
       if(typeof window.WebGL2RenderingContext==='undefined')throw new Error('WebGL 2 unavailable');
-      renderer3DPromise ||= import('./graph-3d.js');
+      renderer3DPromise ||= import('./graph-3d.js?v=20261018-bubbles2');
       const {Graph3D}=await renderer3DPromise;
       if(request!==viewRequest)return;
       if(!renderer3D)renderer3D=new Graph3D($('#graph-3d'),{onSelect:selectNode,onEdgeSelect:selectEdge,onUnavailable:()=>{
