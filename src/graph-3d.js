@@ -266,7 +266,10 @@ export class Graph3D {
     const margin=8,top=45,bottom=85;
     const intersects=box=>boxes.some(other=>box.left<other.right+5&&box.right>other.left-5&&box.top<other.bottom+5&&box.bottom>other.top-5);
     for(const id of priority){
-      const entry=entries.get(id),point=projected.get(id),button=entry.button;
+      const entry=entries.get(id),point=projected.get(id);
+      // Focus/blur can fire while a changed graph is rebuilding its buttons.
+      if(!entry)continue;
+      const button=entry.button;
       const important=entry.manager||id===this.state.rootId||id===this.keyboardId||id===this.hoveredId;
       let box;
       const onScreen=point&&point.x>=0&&point.x<=this.width&&point.y>=0&&point.y<=this.height;

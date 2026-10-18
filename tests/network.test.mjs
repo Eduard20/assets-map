@@ -68,3 +68,23 @@ test('issuer role links open company investments while retaining distinct share 
   assert.notEqual(...[...model.rolePeers.get('berkshire-2026-06-30')]);
   assert.equal(model.holdingEdges.length,53460);
 });
+
+test('exhausted exploration does not advertise a no-op next page',()=>{
+  const state=initialState(model),root=state.rootId;
+  state.exploration=new Map([[root,{incoming:99999,outgoing:99999}]]);
+  const graph=buildVisibleGraph(model,state),details=networkDetails(model,root,state,graph);
+  assert.doesNotMatch(details,/Explore next 20/);
+  assert.match(details,/End of this entity/);
+});
+
+test('switching managers cannot skip unseen holdings by counting incidental neighbors as a prefix',async()=>{
+  const {expandPortfolioNetwork}=await import('../src/portfolio-network.js');
+  const state=initialState(model);let graph=buildVisibleGraph(model,state);
+  state.rootId='statestreet-2026-06-30';
+  for(let i=0;i<10;i++){expandPortfolioNetwork(model,state,state.rootId,graph);graph=buildVisibleGraph(model,state);}
+  const previouslySeen=new Set(graph.edges.map(e=>e.id));
+  state.rootId='blackrock-2026-06-30';expandPortfolioNetwork(model,state,state.rootId,graph);graph=buildVisibleGraph(model,state);
+  const cursor=state.exploration.get(state.rootId).outgoing;
+  const nowShown=new Set(graph.edges.map(e=>e.id));
+  for(const edge of model.edges.filter(e=>e.source===state.rootId).slice(0,cursor))assert.ok(previouslySeen.has(edge.id)||nowShown.has(edge.id),'a cursor cannot jump over unseen connections');
+});
