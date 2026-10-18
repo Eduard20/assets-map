@@ -4,7 +4,7 @@ An evidence-first map of **53,460 real reported share-position rows** from Black
 
 ## Explore the map
 
-The default **Full reported portfolios** view loads BlackRock first. Choose a reporting filer, explore its top 8, 20 or 40 reported instruments in 3D, or search every eligible source row in the paginated List view.
+The default **Shared portfolio network** connects all three imported filers through verified matching instruments. It starts with 42 nodes and 98 reported holding links (top 20 securities per filer). Increase to top 40 or 60 per filer, filter the same network, or search all 53,460 source rows. Click any company/security in 2D, 3D or List to focus it and see its reported investors without dropping the surrounding network. Back restores the previous focus and search context.
 
 - BlackRock: **49,286 share rows / 5,442 source-scoped instruments**, $6,706,454,577,631 reported share value.
 - Berkshire Hathaway: **89 share rows / 29 instruments**, $299,253,556,246.
@@ -12,7 +12,7 @@ The default **Full reported portfolios** view loads BlackRock first. Choose a re
 - These are 53,460 filing rows, **not 53,460 companies**. Instrument counts are source-scoped, not globally unique issuers.
 - The share view partitions **54,318 effective information-table rows**, excluding 858 option, principal, warrant/right or explicit debt-class rows. It includes fund shares, depositary receipts, preferred shares and units where reported, not only common stock.
 - BlackRock is a parent filer reporting on behalf of operating subsidiaries in a combination report. These are dated disclosed securities, **not whole AUM, proprietary ownership or current holdings**.
-- The graph groups only the same source-scoped reported instrument. Every underlying filing row, value, quantity, discretion category and manager reference remains inspectable. No name-based issuer merging or cross-filer deduplication.
+- The shared graph links only exact verified reported instrument identities with exactly matching security-class labels and the same reporting date. It has 5,542 instrument nodes, not 5,542 legal issuers. Every underlying filing row, value, quantity, discretion category and manager reference remains inspectable. No name-based issuer merging or cross-filer economic-value aggregation.
 
 The **Historical disclosures (4)** option preserves the separately reviewed Apple disclosure set; **Illustrative sample** preserves the original interface demonstration. No datasets are silently added together.
 
@@ -108,4 +108,4 @@ Three.js and OrbitControls: MIT, Copyright 2010–2026 Three.js Authors. See `ve
 
 See [portfolio import contract](docs/portfolio-import.md). Compressed normalized factual inputs preserve exact reviewed bytes without committing raw XML or proprietary security identifiers. Export checks bind independent complete-batch approval to the SHA-256 of each decompressed input. Each source row and retained field was mechanically reconciled to official XML, with live official spot checks and independent amendment discovery. This is not a claim of per-row human review.
 
-The public projection uses a small index plus compact per-filer group/row arrays, fetched only for the selected filer. All three public data files together are about 4.18 MB before HTTP compression. The graph has at most 45 nodes; List pages have at most 50 source rows. Invalid input rows are quarantined and withhold the complete batch rather than silently claiming full coverage.
+The public projection uses a small index, compact per-filer group/row arrays and an independently reviewed opaque instrument-equivalence mapping. The network loads all three portfolios together; their data files total about 4.18 MB before HTTP compression, plus about 371 KB for exact matches. The shared graph has a 200-node safety ceiling and progressive top-20/40/60-per-filer controls; List pages have at most 50 source rows. Dense 3D labels declutter while every node remains keyboard-accessible, with labels revealed on focus or hover. Invalid input rows are quarantined and withhold the complete batch rather than silently claiming full coverage.
