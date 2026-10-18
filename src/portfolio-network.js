@@ -1,5 +1,5 @@
-import {createModel,escapeHtml as E,dateLabel,money} from './graph-model.js?v=20261018-mobile1';
-import {portfolioModel,portfolioOverview} from './portfolio-view.js?v=20261018-mobile1';
+import {createModel,escapeHtml as E,dateLabel,money} from './graph-model.js?v=20261018-data2';
+import {portfolioModel,portfolioOverview} from './portfolio-view.js?v=20261018-data2';
 
 export const NETWORK_PAGE_SIZE=20;
 export const NETWORK_NODE_LIMIT=200;
@@ -9,6 +9,9 @@ export const ISSUER_ROLES=[
   {manager:'berkshire-2026-06-30',security:'sec13f-0002012383-26-003238-security-05984',securityClass:'CL A',cik:'1067983',url:'https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/R1.htm'},
   {manager:'berkshire-2026-06-30',security:'sec13f-0002012383-26-003238-security-05995',securityClass:'CL B NEW',cik:'1067983',url:'https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/R1.htm'},
   {manager:'blackrock-2026-06-30',security:'sec13f-0002012383-26-003238-security-06592',securityClass:'COM',cik:'2012383',url:'https://www.sec.gov/Archives/edgar/data/2012383/000119312526071966/R1.htm'},
+  {manager:'jpmorgan-2026-06-30',security:'sec13f-0002012383-26-003238-security-25488',securityClass:'COM',cik:'19617',url:'https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/R1.htm'},
+  {manager:'morganstanley-2026-06-30',security:'sec13f-0002012383-26-003238-security-30601',securityClass:'COM NEW',cik:'895421',url:'https://www.sec.gov/Archives/edgar/data/895421/000089542126000086/R1.htm'},
+  {manager:'goldmansachs-2026-06-30',security:'sec13f-0002012383-26-003238-security-19873',securityClass:'COM',cik:'886982',url:'https://www.sec.gov/Archives/edgar/data/886982/000088698226000091/R1.htm'},
   {manager:'statestreet-2026-06-30',security:'sec13f-0002012383-26-003238-security-42178',securityClass:'COM',cik:'93751',url:'https://www.sec.gov/Archives/edgar/data/93751/000009375126000124/R1.htm'}
 ];
 // Expand the selected entity's own neighborhood, independently of overview
@@ -78,7 +81,9 @@ export function buildPortfolioNetwork(model,state){
     for(let i=0;i<Math.max(ins.length,outs.length);i++){if(ins[i]){add(ins[i].source);add(ins[i].target);}if(outs[i]){add(outs[i].source);add(outs[i].target);}}
   }
   for(const id of state.pinnedNodes||[])add(id);
-  for(const root of eligible){const edges=model.edges.filter(e=>e.source===root).slice(0,state.limits.get(root)||NETWORK_PAGE_SIZE);for(const e of edges)if(ids.size<NETWORK_NODE_LIMIT)ids.add(e.target);}
+  const overview=eligible.map(root=>model.edges.filter(e=>e.source===root).slice(0,state.limits.get(root)||NETWORK_PAGE_SIZE));
+  // Round-robin avoids starving later filers when a larger release hits the cap.
+  for(let i=0;i<Math.max(0,...overview.map(edges=>edges.length));i++)for(const edges of overview)if(edges[i])add(edges[i].target);
   const holdingLinks=model.edges.filter(e=>ids.has(e.source)&&ids.has(e.target));
   const roleLinks=(model.roleEdges||[]).filter(e=>ids.has(e.source)&&ids.has(e.target)&&(state.exploration?.has(e.source)||state.exploration?.has(e.target)));
   return {network:true,portfolioRoots:model.portfolioRoots,focusScope:[...networkNeighborhood(model,state.rootId).scope],nodes:[...ids].map(id=>model.nodeMap.get(id)),edges:[...holdingLinks,...roleLinks],holdingLinkCount:holdingLinks.length,totalInstruments:model.instrumentCount};

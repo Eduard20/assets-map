@@ -1,8 +1,8 @@
-import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261018-mobile1';
-import {researchDetails} from './research-view.js?v=20261018-mobile1';
-import {portfolioModel,decodePortfolio,holdingsPage,portfolioPositionDetails,portfolioInstrumentDetails,portfolioOverview,HOLDINGS_PAGE_SIZE} from './portfolio-view.js?v=20261018-mobile1';
-import {createPortfolioNetwork,networkDetails,expandPortfolioNetwork,NETWORK_PAGE_SIZE,NETWORK_NODE_LIMIT} from './portfolio-network.js?v=20261018-mobile1';
-import {Graph2D} from './graph-2d.js?v=20261018-mobile1';
+import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261018-data2';
+import {researchDetails} from './research-view.js?v=20261018-data2';
+import {portfolioModel,decodePortfolio,holdingsPage,portfolioPositionDetails,portfolioInstrumentDetails,portfolioOverview,HOLDINGS_PAGE_SIZE} from './portfolio-view.js?v=20261018-data2';
+import {createPortfolioNetwork,networkDetails,expandPortfolioNetwork,NETWORK_PAGE_SIZE,NETWORK_NODE_LIMIT} from './portfolio-network.js?v=20261018-data2';
+import {Graph2D} from './graph-2d.js?v=20261018-data2';
 const $=selector=>document.querySelector(selector);
 let model,state,graph,renderer3D,renderer3DPromise,toastTimer,viewRequest=0,datasetRequest=0;
 const datasets=new Map();
@@ -98,7 +98,7 @@ async function setView(view) {
     toast('Opening 3D network…');
     try {
       if(typeof window.WebGL2RenderingContext==='undefined')throw new Error('WebGL 2 unavailable');
-      renderer3DPromise ||= import('./graph-3d.js?v=20261018-mobile1');
+      renderer3DPromise ||= import('./graph-3d.js?v=20261018-data2');
       const {Graph3D}=await renderer3DPromise;
       if(request!==viewRequest)return;
       if(!renderer3D)renderer3D=new Graph3D($('#graph-3d'),{onSelect:selectNode,onEdgeSelect:selectEdge,onUnavailable:()=>{
@@ -155,7 +155,7 @@ function bind(){
   window.addEventListener('resize',()=>{if(graph)renderer2D.update(graph,state,model);});
   document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}});
   document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{state.filter=b.dataset.filter;render();}));$('#direction').addEventListener('change',e=>{state.direction=e.target.value;render();});document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
-  $('#zoom-in').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(1.2):renderer2D.setZoom(renderer2D.zoom*1.2));$('#zoom-out').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(.8):renderer2D.setZoom(renderer2D.zoom*.8));$('#fit-map').addEventListener('click',()=>state.view==='3d'?renderer3D?.fit():renderer2D.fit());$('#reset-map').addEventListener('click',()=>{state=initialState(model);focusHistory=[];$('#direction').value='both';$('#top-n').value='20';holdingsQuery='';holdingsPageIndex=0;$('#holdings-search').value='';renderer2D.fit();render();setView('3d');renderer3D?.fit();});$('#root-button').addEventListener('click',()=>{closeMobilePanel();$('#search').focus();$('#search').value='';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');$('#search-results').innerHTML=model.nodes.filter(n=>['manager','sovereign'].includes(n.kind)||model.outgoingIds.has(n.id)).slice(0,8).map(n=>`<button type="button" data-search-node="${E(n.id)}"><span><strong>${E(n.label)}</strong><small>${E(KIND_LABELS[n.kind])}</small></span><span>↗</span></button>`).join('');});
+  $('#zoom-in').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(1.2):renderer2D.setZoom(renderer2D.zoom*1.2));$('#zoom-out').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(.8):renderer2D.setZoom(renderer2D.zoom*.8));$('#fit-map').addEventListener('click',()=>state.view==='3d'?renderer3D?.fit():renderer2D.fit());$('#reset-map').addEventListener('click',()=>{state=initialState(model);focusHistory=[];$('#direction').value='both';$('#top-n').value='20';holdingsQuery='';holdingsPageIndex=0;$('#holdings-search').value='';renderer2D.fit();render();setView('3d');renderer3D?.fit();});$('#root-button').addEventListener('click',()=>{closeMobilePanel();$('#search').focus();$('#search').value='';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');$('#search-results').innerHTML=model.nodes.filter(n=>['manager','sovereign'].includes(n.kind)||model.outgoingIds.has(n.id)).slice(0,30).map(n=>`<button type="button" data-search-node="${E(n.id)}"><span><strong>${E(n.label)}</strong><small>${E(KIND_LABELS[n.kind])}</small></span><span>↗</span></button>`).join('');});
   for(const id of ['about-button','coverage-button','methodology-button'])$(`#${id}`).addEventListener('click',showInfo);for(const id of ['close-dialog','dialog-done'])$(`#${id}`).addEventListener('click',()=>$('#info-dialog').close());$('#info-dialog').addEventListener('click',e=>{if(e.target===$('#info-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
 }
 async function setDataset(name,portfolioId){
@@ -165,8 +165,8 @@ async function setDataset(name,portfolioId){
   let next=datasets.get(name);
   if(name==='portfolios'&&!next){
     try{
-      if(!portfolioBundle){const response=await fetch(new URL('../data/portfolios.json',import.meta.url));if(!response.ok)throw new Error('Portfolio manifest unavailable');portfolioBundle=await response.json();}
-      const [portfolios,identity]=await Promise.all([Promise.all(portfolioBundle.portfolios.map(async summary=>{if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');const response=await fetch(new URL('../data/'+summary.dataFile,import.meta.url));if(!response.ok)throw new Error('Portfolio rows unavailable');return decodePortfolio(summary,await response.json());})),fetch(new URL('../data/instrument-equivalence.json',import.meta.url)).then(async response=>{if(!response.ok)throw new Error('Instrument identity map unavailable');return response.json();})]);
+      if(!portfolioBundle){const response=await fetch(new URL('../data/portfolios.json?v=20261018-data2',import.meta.url));if(!response.ok)throw new Error('Portfolio manifest unavailable');portfolioBundle=await response.json();}
+      const [portfolios,identity]=await Promise.all([Promise.all(portfolioBundle.portfolios.map(async summary=>{if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');const response=await fetch(new URL('../data/'+summary.dataFile+'?v=20261018-data2',import.meta.url));if(!response.ok)throw new Error('Portfolio rows unavailable');return decodePortfolio(summary,await response.json());})),fetch(new URL('../data/instrument-equivalence.json?v=20261018-data2',import.meta.url)).then(async response=>{if(!response.ok)throw new Error('Instrument identity map unavailable');return response.json();})]);
       next=createPortfolioNetwork(portfolios,identity);datasets.set('portfolios',next);
     }catch(error){if(request!==datasetRequest)return;throw error;}
   }
@@ -176,13 +176,13 @@ async function setDataset(name,portfolioId){
   $('#portfolio-controls').hidden=!isPortfolio();$('.filter-row').hidden=isPortfolio();
   holdingsQuery='';holdingsPageIndex=0;$('#holdings-search').value='';$('#top-n').value='20';
   if(isPortfolio()){
-    $('#portfolio').innerHTML='<option value="all">All 3 imported filers</option>'+portfolioBundle.portfolios.map(p=>`<option value="${E(p.portfolioId)}">${E(p.filer.name)} · ${p.reconciliation.shareRowCount.toLocaleString()} rows</option>`).join('');$('#portfolio').value='all';
+    $('#portfolio').innerHTML=`<option value="all">All ${portfolioBundle.portfolios.length} imported filers</option>`+portfolioBundle.portfolios.map(p=>`<option value="${E(p.portfolioId)}">${E(p.filer.name)} · ${p.reconciliation.shareRowCount.toLocaleString()} rows</option>`).join('');$('#portfolio').value='all';
     if(portfolioId&&model.portfolioMap.has(portfolioId)){state.portfolioFilter=portfolioId;state.rootId=portfolioId;state.selectedId=portfolioId;}
   }
   $('#dataset-label').textContent=isPortfolio()?'Shared portfolio network':isResearch()?'Historical disclosures':'UI prototype · Sample';
   $('#dataset-context').textContent=isPortfolio()?`${portfolioBundle.portfolios.length} filers · ${portfolioBundle.portfolios.reduce((n,p)=>n+p.reconciliation.shareRowCount,0).toLocaleString()} reported share rows · Historical snapshots`:isResearch()?`${model.edges.length} reviewed disclosures · Not current holdings`:'17 entities · 12 illustrative connections';
   $('#updated-at').textContent=`${isResearch()?'Reviewed':'Updated'} ${dateLabel(model.meta.updatedAt)}`;
-  $('#map-disclaimer').textContent=isPortfolio()?'One network of 3 imported filers. Links show reported investment discretion, not legal ownership or control. Exact instruments connect across filers; unmatched classes stay separate.':isResearch()?'Historical source snapshots. Managed discretion, beneficial attribution and voting are different roles.':'Connections show reported relationships. Managed holdings are distinct from corporate ownership.';
+  $('#map-disclaimer').textContent=isPortfolio()?`One network of ${portfolioBundle.portfolios.length} imported filers. Links show reported investment discretion, not legal ownership or control. Exact instruments connect across filers; unmatched classes stay separate.`:isResearch()?'Historical source snapshots. Managed discretion, beneficial attribution and voting are different roles.':'Connections show reported relationships. Managed holdings are distinct from corporate ownership.';
   document.querySelectorAll('button,input,select').forEach(el=>el.disabled=false);renderer2D.fit();render();await setView('3d');renderer3D?.fit();
 }
 export async function start(){try{document.querySelectorAll('button,input,select').forEach(el=>el.disabled=!['dataset','mobile-options','close-mobile-controls','mobile-apply-controls','mobile-scrim','mobile-details','close-mobile-details'].includes(el.id));bind();window.__assetsMap={getState:()=>state,getModel:()=>model,getGraph:()=>graph,selectNode,selectEdge,exploreRoot,goBack,setView,setDataset,getCameraState:()=>renderer3D?{position:renderer3D.camera.position.toArray(),target:renderer3D.controls.target.toArray()}:null};await setDataset('portfolios');}catch(error){console.error(error);$('#detail-panel').innerHTML='<div class="load-error"><h2>The portfolio map could not load.</h2><p>Please refresh or choose historical disclosures / the illustrative sample.</p><button onclick="location.reload()" class="primary-button">Try again</button></div>';$('#visible-count').textContent='Map unavailable';}}

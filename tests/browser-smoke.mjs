@@ -3,6 +3,12 @@ import {spawn} from 'node:child_process';
 import {mkdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 
+const portfolioIds = [
+  'berkshire-2026-06-30','blackrock-2026-06-30','geode-2026-06-30','goldmansachs-2026-06-30',
+  'jpmorgan-2026-06-30','morganstanley-2026-06-30','norgesbank-2026-06-30','statestreet-2026-06-30'
+];
+const initialNetworkNodes = 93;
+const eligibleHoldingRows = 154510;
 const origin = 'http://127.0.0.1:8088';
 const server = spawn(process.execPath, ['scripts/serve.mjs'], {
   env: {...process.env, PORT: '8088'}, stdio: 'pipe'
@@ -76,7 +82,7 @@ try {
   watchErrors(page);
   await page.goto(origin);
   await page.waitForFunction(() => window.__assetsMap?.getState());
-  await expectReal3D(page,42);
+  await expectReal3D(page,initialNetworkNodes);
   await page.screenshot({path:'artifacts/initial-network-desktop.png',fullPage:true});
   for(const viewport of [{width:320,height:568},{width:390,height:844},{width:844,height:390}]){
     await page.setViewportSize(viewport);await page.waitForTimeout(150);
@@ -84,16 +90,23 @@ try {
   }
   await page.setViewportSize({width:1440,height:1000});
   assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
-  assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),53460);
-  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),98);
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),269);
+  assert.deepEqual(await page.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds,'all eight admitted managers are selectable');
+  assert.equal(await page.locator('#portfolio option').count(),9,'eight managers plus the shared-network option');
   const startingIds=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort());
-  const appleId='shared-instrument-264';
+  const appleId='shared-instrument-282';
   // Keyboard can reach all network securities even when dense labels are decluttered.
   await page.locator(`#graph-3d button[data-node-id="${appleId}"]`).focus();await page.keyboard.press('Enter');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
   assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
-  assert.match(await page.locator('#detail-panel').textContent(),/3 REPORTED INVESTORS/);
-  assert.equal(await page.locator('.investor-card').count(),3);
+  assert.match(await page.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
+  assert.equal(await page.locator('.investor-card').count(),6);
+  assert.deepEqual(await page.evaluate(id=>{
+    const edges=window.__assetsMap.getModel().edges.filter(edge=>edge.target===id);
+    return {investors:edges.length,sourceRows:edges.reduce((sum,edge)=>sum+edge.portfolioPositions.length,0),classes:[...new Set(edges.map(edge=>edge.portfolioPosition.securityClass))]};
+  },appleId),{investors:6,sourceRows:64,classes:['COM']},'exact Apple COM grouping preserves all64 source rows without merging differently reported classes');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().nodes.filter(node=>node.label==='APPLE INC').length),3,'COM, CMN and COMMON Apple descriptions remain separate identities');
   await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),'blackrock-2026-06-30');
   await page.locator('[data-view="2d"]').click();await expectView(page,'2d');
   await page.locator(`.graph-node[data-node="${appleId}"] .node-hit`).click();
@@ -101,36 +114,37 @@ try {
   assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
   await page.locator('#focus-back').click();await page.locator('[data-view="3d"]').click();
   await page.locator('#top-n').selectOption('40');
-  const expandedCount=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expandedCount>42);await expectReal3D(page,expandedCount);
+  const expandedCount=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expandedCount>initialNetworkNodes);await expectReal3D(page,expandedCount);
   await page.locator('#holdings-search').fill('APPLE');await expectView(page,'list');
   assert.ok(await page.locator('.holding-row').count()>0);assert.ok(await page.locator('.holding-row').count()<=50);
-  await page.locator('.holding-row').first().click();assert.match(await page.locator('#detail-panel').textContent(),/3 REPORTED INVESTORS/);
+  await page.locator(`.holding-row[data-select="${appleId}"]`).first().click();assert.match(await page.locator('#detail-panel').textContent(),/6 REPORTED INVESTORS/);
   await page.locator('#detail-panel [data-edge]').first().click();await page.locator('#detail-panel [data-edge]').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
   await page.locator('#focus-back').click();assert.equal(await page.locator('#holdings-search').inputValue(),'APPLE');
   await page.locator('#holdings-search').fill('');
   await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
-  for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(n=>n.kind==='manager').length),3);assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),53460);}
-  await page.locator('#portfolio').selectOption('all');await page.locator('#top-n').selectOption('20');await page.locator('[data-view="3d"]').click();await expectReal3D(page,42);
+  for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(n=>n.kind==='manager').length),8);assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);}
+  await page.locator('#portfolio').selectOption('all');await page.locator('#top-n').selectOption('20');await page.locator('[data-view="3d"]').click();await expectReal3D(page,initialNetworkNodes);
   // A manager bubble opens more of its own network in both renderers.
   for(const view of ['3d','2d']){
     await page.locator(`[data-view="${view}"]`).click();await expectView(page,view);
     const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"] .node-hit';
+    if(view==='3d')await page.locator(managerSelector).focus();
     await page.locator(managerSelector).click();
-    const expanded=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expanded>42);
+    const expanded=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expanded>initialNetworkNodes);
     await page.locator(managerSelector).click();assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),expanded);
-    await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),42);
+    await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),initialNetworkNodes);
     const issuerId=await page.evaluate(()=>window.__assetsMap.getModel().roleEdges.find(e=>e.role.manager==='berkshire-2026-06-30'&&e.role.securityClass==='CL B NEW').source);
     if(view==='3d')await page.locator(`#graph-3d button[data-node-id="${issuerId}"]`).focus();
     await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"] .node-hit`).click();
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.some(e=>e.kind==='issuer_reporting_entity')));
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.filter(e=>e.source==='berkshire-2026-06-30').length)>=20);
     assert.match(await page.locator('#detail-panel').textContent(),/Outgoing investments/);
-    await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),42);
+    await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),initialNetworkNodes);
   }
-  await page.locator('[data-view="3d"]').click();await expectReal3D(page,42);
+  await page.locator('[data-view="3d"]').click();await expectReal3D(page,initialNetworkNodes);
   await page.screenshot({path:'artifacts/shared-network-desktop.png',fullPage:true});
-  for(const width of [320,390]){await ensureNoOverflow(page,width);await expectReal3D(page,42);}
+  for(const width of [320,390]){await ensureNoOverflow(page,width);await expectReal3D(page,initialNetworkNodes);}
   await page.screenshot({path:'artifacts/shared-network-mobile.png',fullPage:true});
   await page.setViewportSize({width:1440,height:1000});
   await page.locator('#dataset').selectOption('researched');await page.waitForFunction(()=>window.__assetsMap.getModel().meta.mode==='researched');
@@ -268,7 +282,7 @@ try {
   watchErrors(touchPage);
   await touchPage.goto(origin);
   await touchPage.waitForFunction(()=>window.__assetsMap?.getState());
-  await expectReal3D(touchPage,42);
+  await expectReal3D(touchPage,initialNetworkNodes);
   for(const viewport of [{width:320,height:568},{width:390,height:844},{width:844,height:390}]){
     await touchPage.setViewportSize(viewport);
     await touchPage.waitForTimeout(150);
@@ -283,6 +297,21 @@ try {
     await touchPage.screenshot({path:`artifacts/network-phone-${viewport.width}x${viewport.height}.png`,fullPage:true});
   }
   await touchPage.setViewportSize({width:390,height:844});
+  // A newly admitted manager is reachable and expandable from the phone UI.
+  await touchPage.locator('#mobile-options').tap();
+  assert.deepEqual(await touchPage.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds);
+  await touchPage.locator('#portfolio').selectOption('geode-2026-06-30');
+  await touchPage.locator('#close-mobile-controls').tap();
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getState().rootId),'geode-2026-06-30');
+  const geodeBefore=await touchPage.evaluate(()=>({ids:window.__assetsMap.getGraph().nodes.map(node=>node.id).sort(),holdings:window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='geode-2026-06-30').length}));
+  await expectReal3D(touchPage,geodeBefore.ids.length);
+  await touchPage.locator('#graph-3d button[data-node-id="geode-2026-06-30"]').tap();
+  assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='geode-2026-06-30').length)>geodeBefore.holdings,'phone tap opens more of the new manager’s actual holdings');
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(node=>node.kind==='manager').length),8,'new manager exploration retains all eight managers');
+  await touchPage.screenshot({path:'artifacts/network-phone-geode.png',fullPage:true});
+  await touchPage.locator('#focus-back').tap();
+  assert.deepEqual(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.map(node=>node.id).sort()),geodeBefore.ids,'phone Back restores the new manager’s surrounding context');
+  await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,initialNetworkNodes);
   await touchPage.locator('#mobile-options').tap();
   assert.equal(await touchPage.locator('#mobile-controls').getAttribute('aria-modal'),'true');
   await touchPage.locator('#top-n').selectOption('40');
@@ -339,7 +368,7 @@ try {
   await touchPage.setViewportSize({width:844,height:390});await touchPage.waitForTimeout(150);
   await touchPage.screenshot({path:'artifacts/network-phone-2d-landscape.png',fullPage:true});
   await touchPage.setViewportSize({width:390,height:844});
-  await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,42);
+  await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,initialNetworkNodes);
   await touchPage.locator('#mobile-options').tap();
   await touchPage.locator('#dataset').selectOption('sample');
   await touchPage.waitForFunction(()=>window.__assetsMap.getState().rootId==='blackrock');
@@ -369,7 +398,7 @@ try {
   assert.match(await fallbackPage.locator('#view-notice').textContent(), /3D.*(?:unavailable|not available|not supported|could not)/i);
   assert.equal(await fallbackPage.locator('#view-notice').isVisible(), true);
   assert.equal(await fallbackPage.locator('#status').isVisible(), true);
-  assert.equal(await fallbackPage.locator('.graph-node').count(), 42);
+  assert.equal(await fallbackPage.locator('.graph-node').count(), initialNetworkNodes);
   await fallbackPage.locator('[data-view="list"]').click();
   await expectView(fallbackPage, 'list');
   await fallbackPage.locator('[data-view="3d"]').click();
@@ -404,7 +433,7 @@ try {
   await expectView(racePage, 'list');
   assert.equal(await racePage.locator('.zoom-tools').isVisible(), false);
   await racePage.locator('[data-view="3d"]').click();
-  await expectReal3D(racePage,42);
+  await expectReal3D(racePage,initialNetworkNodes);
   await raceContext.close();
 
   assert.deepEqual(errors, [], 'Browser JavaScript errors');

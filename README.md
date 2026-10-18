@@ -1,18 +1,25 @@
 # Assets Map
 
-An evidence-first map of **53,460 real reported share-position rows** from BlackRock, Berkshire Hathaway and State Street's **30 June 2026** SEC Form 13F filings.
+An evidence-first map of **154,510 real reported share-position rows** from **eight filers**: BlackRock, Berkshire Hathaway, State Street, Geode Capital Management, JPMorgan Chase, Morgan Stanley, Goldman Sachs and Norges Bank, using their **30 June 2026** SEC Form 13F filings.
 
 ## Explore the map
 
-The default **Shared portfolio network** connects all three imported filers through verified matching instruments. It starts with 42 nodes and 98 reported holding links (top 20 securities per filer). Increase to top 40 or 60 per filer, filter the same network, or search all 53,460 source rows. Click any company/security or manager in 2D, 3D or List to reveal its available incoming and outgoing network, beyond the overview top-N. Clicking again opens the next 20 connections. The current neighborhood takes priority at the 200-node ceiling, while earlier context remains where space permits. Explicit SEC-evidenced issuer-role links let Berkshire, BlackRock and State Street shares open their reporting-manager portfolios without merging share classes or counting those links as holdings. Entities without imported investment portfolios say so explicitly. Back restores the previous focus and search context.
+The default **Shared portfolio network** connects all eight imported filers through verified matching instruments. It starts with 93 nodes and 269 reported holding links (top 20 instruments per filer). Increase to top 40 or 60 per filer, filter the same network, or search all 154,510 source rows. Click any company/security or manager in 2D, 3D or List to reveal its available incoming and outgoing network, beyond the overview top-N. Clicking again opens the next 20 connections. The current neighborhood takes priority at the 200-node ceiling, while earlier context remains where space permits. Explicit SEC-evidenced issuer-role links let Berkshire, BlackRock, State Street, JPMorgan Chase, Morgan Stanley and Goldman Sachs shares open their reporting-manager portfolios without merging share classes or counting those links as holdings. Entities without imported investment portfolios say so explicitly. Back restores the previous focus and search context.
 
 - BlackRock: **49,286 share rows / 5,442 source-scoped instruments**, $6,706,454,577,631 reported share value.
 - Berkshire Hathaway: **89 share rows / 29 instruments**, $299,253,556,246.
 - State Street: **4,085 share rows / 4,085 instruments**, $3,378,870,771,423, using the restatement rather than appending it to the superseded original.
-- These are 53,460 filing rows, **not 53,460 companies**. Instrument counts are source-scoped, not globally unique issuers.
-- The share view partitions **54,318 effective information-table rows**, excluding 858 option, principal, warrant/right or explicit debt-class rows. It includes fund shares, depositary receipts, preferred shares and units where reported, not only common stock.
+- Geode Capital Management: **8,455 share rows / 4,438 instruments**, $1,875,165,705,077.
+- JPMorgan Chase: **32,666 share rows / 6,541 instruments**, $1,710,607,027,032.
+- Morgan Stanley: **45,409 share rows / 8,170 instruments**, $1,889,856,060,810.
+- Goldman Sachs: **12,904 share rows / 5,471 instruments**, $953,071,672,750.
+- Norges Bank: **1,616 share rows / 1,616 instruments**, $1,003,234,702,801.
+- These are 154,510 filing rows, **not 154,510 companies**. Instrument counts are source-scoped, not globally unique issuers.
+- The share view partitions **158,444 effective information-table rows**, excluding 3,934 option, principal, warrant/right or explicit debt-class rows. It includes fund shares, depositary receipts, preferred shares and units where reported, not only common stock.
 - BlackRock is a parent filer reporting on behalf of operating subsidiaries in a combination report. These are dated disclosed securities, **not whole AUM, proprietary ownership or current holdings**.
-- The shared graph links only exact verified reported instrument identities with exactly matching security-class labels and the same reporting date. It has 5,542 instrument nodes, not 5,542 legal issuers. Every underlying filing row, value, quantity, discretion category and manager reference remains inspectable. No name-based issuer merging or cross-filer economic-value aggregation.
+- Morgan Stanley is also a combination report. Its separately reporting Morgan Stanley Institutional Investment Advisors LLC is outside this table. Unresolved manager references remain visible, not guessed. Norges Bank excludes relevant secured-lending/borrowing collateral unless reinvested, as qualified in its cover.
+- FMR LLC was checked but **withheld**: its cover and table disagree by $5. No tolerance, invented adjustment or partial FMR portfolio is published.
+- The shared graph links only exact verified reported instrument identities with exactly matching trimmed security-class labels and the same reporting date. Its **5,651 cross-filer matched groups** plus **14,839 unmatched source-scoped instruments** produce **20,490 instrument nodes**, not 20,490 legal issuers. Every underlying filing row, value, quantity, discretion category and manager reference remains inspectable. No name-based issuer merging or cross-filer economic-value aggregation.
 
 The **Historical disclosures (4)** option preserves the separately reviewed Apple disclosure set; **Illustrative sample** preserves the original interface demonstration. No datasets are silently added together.
 
@@ -60,7 +67,7 @@ Install the test browser with `npx playwright install chromium`, or provide an e
 
 The repository includes a GitHub Pages deployment workflow. In repository **Settings → Pages → Build and deployment**, select **GitHub Actions** once if Pages has not been enabled. Then run the **Deploy Assets Map** workflow or push a change to `main`.
 
-The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes the exact file allowlist in `scripts/prepare-site.mjs`, including the sample, historical disclosure projection, small portfolio index and three explicit compact portfolio files from `data/`. Canonical data, staging, raw evidence, pilot candidates and review artifacts are excluded. Symlinked public inputs are rejected.
+The workflow validates the dataset and runs model/DOM tests before uploading a static site artifact. It publishes the exact file allowlist in `scripts/prepare-site.mjs`, including the sample, historical disclosure projection, small portfolio index and eight explicit compact portfolio files from `data/`. Canonical data, staging, raw evidence, pilot candidates and review artifacts are excluded. Symlinked public inputs are rejected.
 
 Use **GitHub Actions** as the Pages source, not a branch-based Jekyll build. `_config.yml` additionally excludes the data foundation and source-only directories if a legacy branch build is enabled; it is defense in depth, not a replacement for the workflow's exact allowlist. After deployment, verify the app and confirm that `/data-foundation/pilot/input/batch.json` returns 404.
 
@@ -108,7 +115,9 @@ Three.js and OrbitControls: MIT, Copyright 2010–2026 Three.js Authors. See `ve
 
 See [portfolio import contract](docs/portfolio-import.md). Compressed normalized factual inputs preserve exact reviewed bytes without committing raw XML or proprietary security identifiers. Export checks bind independent complete-batch approval to the SHA-256 of each decompressed input. Each source row and retained field was mechanically reconciled to official XML, with live official spot checks and independent amendment discovery. This is not a claim of per-row human review.
 
-The public projection uses a small index, compact per-filer group/row arrays and an independently reviewed opaque instrument-equivalence mapping. The network loads all three portfolios together; their data files total about 4.18 MB before HTTP compression, plus about 371 KB for exact matches. The shared graph has a 200-node safety ceiling and progressive top-20/40/60-per-filer controls; List pages have at most 50 source rows. Dense 3D labels declutter while every node remains keyboard-accessible, with labels revealed on focus or hover. Invalid input rows are quarantined and withhold the complete batch rather than silently claiming full coverage.
+Normalize new source acquisitions with Python 3.9+ using `python3 scripts/import-sec13f.py --manifest /private/filer-manifest.json --output-dir /private/staged-normalized --private-dir /private/transient-identities`. Keep raw sources, manifests and private identity maps outside this repository. The importer supports verified X0202 whole-dollar, single-table filings; it rejects ambiguous units, incomplete amendment discovery and any count/value discrepancy. It creates no review approval. Admit only independently reviewed, SHA-bound outputs, then run `npm run data:export-portfolios` and `npm run check`. See the [strict import workflow and FMR hold](docs/portfolio-import.md) for the full contract.
+
+The public projection uses a small index, compact per-filer group/row arrays and an independently reviewed opaque instrument-equivalence mapping. The network loads all eight portfolios together; their data files total about **12.20 MB** before HTTP compression, plus about **965 KB** for the exact-match map and 19 KB for the index. The shared graph has a 200-node safety ceiling and progressive top-20/40/60-per-filer controls; List pages have at most 50 source rows. Dense 3D labels declutter while every node remains keyboard-accessible, with labels revealed on focus or hover. Invalid input rows are quarantined and withhold the complete batch rather than silently claiming full coverage.
 
 ## Phone-first network navigation
 

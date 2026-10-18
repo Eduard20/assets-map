@@ -1,0 +1,39 @@
+{
+  "decision": "approved",
+  "inputSha256": "70f8210098fa0eeb1b2ca48e5377812f81d78ab8d76fa9124d6efc6e5f3182ae",
+  "reviewer": "independent-source-audit",
+  "reviewedAt": "2026-10-18",
+  "checks": {
+    "sourceIdentity": true,
+    "amendmentDiscovery": true,
+    "rowCount": true,
+    "valueTotal": true,
+    "sharePartition": true,
+    "spotChecks": true,
+    "publicRights": true
+  },
+  "reviewScope": "Independent ElementTree parsing and exact comparison of every normalized row and retained field to acquired SEC XML; independently recomputed totals, eligible share partition, manager references and no-conflation source-scoped groups. Fresh official SEC cover bytes matched; fresh SEC submissions histories independently checked accession, reporting quarter and absence of same-quarter amendments. No claim of manual human review of each row.",
+  "constraints": [
+    "Historical reported Section 13(f) positions as of 2026-06-30 observed through 2026-10-18; not current holdings, legal ownership, complete portfolio or total AUM.",
+    "Share-view weights use only eligible reported share-value denominator for this filer/date, whole USD without thousands scaling.",
+    "Retain all original source rows, class, row identity, quantities and manager references; no deduplication or multiplication by manager count.",
+    "No cross-filer unique economic exposure, ownership or AUM aggregate; investment discretion can overlap.",
+    "Publish minimal factual normalized fields and links only, no raw CUSIP/FIGI or hashes derived from those identifiers, nor raw XML.",
+    "Share view includes funds, depositary receipts, preferred shares and units, not common stock only.",
+    "Use verified filingDate and reportingDate; acceptedAt was not separately verified against SEC filing index."
+  ],
+  "counts": {
+    "reportedRowCount": 34064,
+    "recomputedValueTotalUsd": "1807041234839",
+    "shareRowCount": 32666,
+    "shareValueUsd": "1710607027032",
+    "excludedRowCount": 1398,
+    "shareReportedSecurityCount": 6541
+  },
+  "sourceUrls": [
+    "https://www.sec.gov/Archives/edgar/data/19617/000001961726000325/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/19617/000001961726000325/Information_Table_06.30.2026.xml",
+    "https://data.sec.gov/submissions/CIK0000019617.json"
+  ],
+  "publicRightsScope": "Bounded minimal factual research/navigation admission consistent with existing public-data scope. No raw proprietary identifiers or document republication; not blanket commercial licensing clearance or legal opinion."
+}
