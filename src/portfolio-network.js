@@ -1,5 +1,5 @@
-import {createModel,escapeHtml as E,dateLabel,money} from './graph-model.js?v=20261018-network2';
-import {portfolioModel,portfolioOverview} from './portfolio-view.js?v=20261018-network2';
+import {createModel,escapeHtml as E,dateLabel,money} from './graph-model.js?v=20261018-mobile1';
+import {portfolioModel,portfolioOverview} from './portfolio-view.js?v=20261018-mobile1';
 
 export const NETWORK_PAGE_SIZE=20;
 export const NETWORK_NODE_LIMIT=200;

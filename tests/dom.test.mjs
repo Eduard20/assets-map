@@ -191,3 +191,18 @@ test('switching datasets clears old detail, filter, search and dialog; repeated 
   assert.equal(window.__assetsMap.getModel().meta.mode,'researched');
   assert.equal($('#dataset').value,'researched');
 });
+
+test('phone filters and entity details have explicit open/close, Escape and focus restoration',()=>{
+ const previous=window.matchMedia;window.matchMedia=()=>({matches:true});
+ try{
+  $('#mobile-options').focus();click('#mobile-options');
+  assert.equal($('#mobile-controls').getAttribute('role'),'dialog');
+  assert.equal($('#mobile-options').getAttribute('aria-expanded'),'true');
+  assert.equal($('#mobile-scrim').hidden,false);
+  document.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+  assert.equal($('#mobile-options').getAttribute('aria-expanded'),'false');assert.equal(document.activeElement,$('#mobile-options'));
+  $('#mobile-details').focus();click('#mobile-details');assert.equal($('#detail-sheet').getAttribute('aria-modal'),'true');
+  click('#close-mobile-details');assert.equal($('#detail-sheet').hasAttribute('aria-modal'),false);
+  assert.equal($('#mobile-scrim').hidden,true);assert.equal(document.activeElement,$('#mobile-details'));
+ }finally{window.matchMedia=previous;}
+});

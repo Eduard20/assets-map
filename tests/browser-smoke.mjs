@@ -248,7 +248,8 @@ try {
   await expectView(page, '2d');
   await page.waitForFunction(() => document.querySelector('#graph-2d svg').viewBox.baseVal.width < 500);
   assert.equal(await page.locator('.graph-node').count(), 4);
-  await page.locator('#about-button').click();
+  await page.locator('#mobile-options').click();
+  await page.locator('#mobile-help').click();
   assert.equal(await page.locator('#info-dialog').isVisible(), true);
   await page.locator('#dialog-done').click();
 
@@ -258,6 +259,61 @@ try {
   watchErrors(touchPage);
   await touchPage.goto(origin);
   await touchPage.waitForFunction(()=>window.__assetsMap?.getState());
+  await expectReal3D(touchPage,42);
+  for(const viewport of [{width:320,height:568},{width:390,height:844},{width:844,height:390}]){
+    await touchPage.setViewportSize(viewport);
+    await touchPage.waitForTimeout(150);
+    const area=await touchPage.locator('#graph-stage').boundingBox();
+    assert.ok(area.height>=viewport.height*.42,'phone graph uses the main screen, not a sliver below controls');
+    assert.ok(area.y+area.height<=viewport.height,'graph fits on screen');
+    assert.equal(await touchPage.locator('#portfolio-controls').isVisible(),false);
+    assert.equal(await touchPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+    for(const selector of ['#mobile-options','#mobile-details','#zoom-in','#zoom-out','#fit-map','#reset-map','[data-view="2d"]']){
+      const target=await touchPage.locator(selector).boundingBox();assert.ok(target.width>=44&&target.height>=44,`${selector} has a finger-sized target`);
+    }
+    await touchPage.screenshot({path:`artifacts/network-phone-${viewport.width}x${viewport.height}.png`,fullPage:true});
+  }
+  await touchPage.setViewportSize({width:390,height:844});
+  await touchPage.locator('#mobile-options').tap();
+  assert.equal(await touchPage.locator('#mobile-controls').getAttribute('aria-modal'),'true');
+  await touchPage.locator('#top-n').selectOption('40');
+  await touchPage.locator('#close-mobile-controls').tap();
+  assert.equal(await touchPage.locator('#portfolio-controls').isVisible(),false);
+  await touchPage.locator('#mobile-details').tap();
+  assert.equal(await touchPage.locator('#detail-panel').isVisible(),true);
+  await touchPage.screenshot({path:'artifacts/network-phone-details.png',fullPage:true});
+  await touchPage.locator('#close-mobile-details').tap();
+  assert.equal(await touchPage.locator('#detail-panel').isVisible(),false);
+  const cdp=await touchContext.newCDPSession(touchPage);
+  const dragTouch=async(x,y,dx,dy)=>{
+    await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y,id:1}]});
+    for(let i=1;i<=5;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/5,y:y+dy*i/5,id:1}]});
+    await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  };
+  const labelBox=await touchPage.locator('#graph-3d button[data-node-id="blackrock-2026-06-30"]').boundingBox();
+  const beforeOrbit=await touchPage.evaluate(()=>window.__assetsMap.getCameraState());
+  const beforeGestureId=await selectedId(touchPage);
+  await dragTouch(labelBox.x+labelBox.width/2,labelBox.y+labelBox.height/2,45,35);
+  await touchPage.waitForTimeout(120);
+  const afterOrbit=await touchPage.evaluate(()=>window.__assetsMap.getCameraState());
+  assert.ok(afterOrbit.position.some((n,i)=>Math.abs(n-beforeOrbit.position[i])>1),'touch drag starting on a label rotates the 3D network');
+  assert.equal(await selectedId(touchPage),beforeGestureId,'drag does not select a node');
+  await touchPage.locator('[data-view="2d"]').tap();await expectView(touchPage,'2d');
+  const svg=touchPage.locator('#graph-2d svg'),nodeHit=touchPage.locator('.graph-node .node-hit').first();
+  const nodeBox=await nodeHit.boundingBox(),beforePan=await touchPage.locator('.viewport').getAttribute('transform');
+  await dragTouch(nodeBox.x+nodeBox.width/2,nodeBox.y+nodeBox.height/2,40,25);
+  assert.notEqual(await touchPage.locator('.viewport').getAttribute('transform'),beforePan,'2D can pan starting on a node');
+  assert.equal(await selectedId(touchPage),beforeGestureId,'2D drag is not a tap');
+  const rect=await svg.boundingBox(),cx=rect.x+rect.width/2,cy=rect.y+rect.height/2;
+  const beforePinch=await touchPage.locator('.viewport').getAttribute('transform');
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:cx-30,y:cy,id:1},{x:cx+30,y:cy,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:cx-65,y:cy-10,id:1},{x:cx+65,y:cy+10,id:2}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  assert.notEqual(await touchPage.locator('.viewport').getAttribute('transform'),beforePinch,'2D pinch changes zoom');
+  await touchPage.locator('#fit-map').tap();
+  await touchPage.screenshot({path:'artifacts/network-phone-2d.png',fullPage:true});
+  await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,42);
+  await touchPage.locator('#mobile-options').tap();
   await touchPage.locator('#dataset').selectOption('sample');
   await touchPage.waitForFunction(()=>window.__assetsMap.getState().rootId==='blackrock');
   await expectReal3D(touchPage);

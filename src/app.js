@@ -1,13 +1,34 @@
-import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261018-network2';
-import {researchDetails} from './research-view.js?v=20261018-network2';
-import {portfolioModel,decodePortfolio,holdingsPage,portfolioPositionDetails,portfolioInstrumentDetails,portfolioOverview,HOLDINGS_PAGE_SIZE} from './portfolio-view.js?v=20261018-network2';
-import {createPortfolioNetwork,networkDetails,expandPortfolioNetwork,NETWORK_PAGE_SIZE,NETWORK_NODE_LIMIT} from './portfolio-network.js?v=20261018-network2';
-import {Graph2D} from './graph-2d.js?v=20261018-network2';
+import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261018-mobile1';
+import {researchDetails} from './research-view.js?v=20261018-mobile1';
+import {portfolioModel,decodePortfolio,holdingsPage,portfolioPositionDetails,portfolioInstrumentDetails,portfolioOverview,HOLDINGS_PAGE_SIZE} from './portfolio-view.js?v=20261018-mobile1';
+import {createPortfolioNetwork,networkDetails,expandPortfolioNetwork,NETWORK_PAGE_SIZE,NETWORK_NODE_LIMIT} from './portfolio-network.js?v=20261018-mobile1';
+import {Graph2D} from './graph-2d.js?v=20261018-mobile1';
 const $=selector=>document.querySelector(selector);
 let model,state,graph,renderer3D,renderer3DPromise,toastTimer,viewRequest=0,datasetRequest=0;
 const datasets=new Map();
 let portfolioBundle,holdingsQuery='',holdingsPageIndex=0;
 let focusHistory=[];
+const phoneQuery=()=>window.matchMedia?.('(max-width: 800px), (max-width: 1000px) and (max-height: 500px)').matches||false;
+let mobilePanel=null,mobileReturnFocus=null;
+function closeMobilePanel(){
+  if(!mobilePanel)return;
+  mobilePanel.removeAttribute('role');mobilePanel.removeAttribute('aria-modal');
+  mobilePanel=null;document.body.classList.remove('mobile-controls-open','mobile-details-open');
+  $('#mobile-scrim').hidden=true;$('#mobile-options').setAttribute('aria-expanded','false');$('#mobile-details').setAttribute('aria-expanded','false');
+  mobileReturnFocus?.focus();
+}
+function openMobilePanel(type){
+  if(!phoneQuery())return;
+  closeMobilePanel();mobileReturnFocus=document.activeElement;
+  mobilePanel=$(type==='controls'?'#mobile-controls':'#detail-sheet');
+  document.body.classList.add(`mobile-${type}-open`);mobilePanel.setAttribute('role','dialog');mobilePanel.setAttribute('aria-modal','true');mobilePanel.setAttribute('aria-label',type==='controls'?'Explore the network':'Selected entity details');
+  $('#mobile-scrim').hidden=false;$(type==='controls'?'#mobile-options':'#mobile-details').setAttribute('aria-expanded','true');
+  $(type==='controls'?'#close-mobile-controls':'#close-mobile-details').focus();
+}
+function updateMobileSelection(){
+  $('#mobile-selection-name').textContent=model.nodeMap.get(state.selectedId)?.label||'Explore network';
+  $('#mobile-details').setAttribute('aria-label',`Details for ${model.nodeMap.get(state.selectedId)?.label||'selected entity'}`);
+}
 const isPortfolio=()=>model?.meta?.mode==='portfolios';
 const findEdge=id=>model.rowEdgeMap?.get(id)||model.edges.find(e=>e.id===id)||model.roleEdges?.find(e=>e.id===id);
 const isResearch=()=>model?.meta?.mode==='researched';
@@ -16,13 +37,13 @@ function toast(message){clearTimeout(toastTimer);$('#status').textContent=messag
 function sourceLinks(ids){const unique=[...new Set(ids||[])];return unique.map(id=>{const source=model.sourceMap.get(id);if(!source)return '';return `<a class="source-link" href="${E(safeUrl(source.url))}" target="_blank" rel="noopener noreferrer"><span>${E(source.title)}<small>${E(source.publisher||'Public source')}${source.asOf?' · '+E(dateLabel(source.asOf)):''}</small></span><span aria-hidden="true">↗</span></a>`;}).join('')||'<p class="muted">No source attached yet.</p>';}
 function rememberFocus(){focusHistory.push({model,state:structuredClone(state),holdingsQuery,holdingsPageIndex});if(focusHistory.length>40)focusHistory.shift();}
 function selectNode(id){if(!model.nodeMap.has(id))return;exploreRoot(id);}
-function selectEdge(id){const edge=findEdge(id);if(!edge)return;state.selectedEdgeId=id;state.selectedId=edge.target;render();}
+function selectEdge(id){const edge=findEdge(id);if(!edge)return;state.selectedEdgeId=id;state.selectedId=edge.target;render();if(phoneQuery())openMobilePanel('details');}
 function exploreRoot(id){
   if(!model.nodeMap.has(id))return;
   if(id!==state.rootId||model.network)rememberFocus();
   state.rootId=id;state.selectedId=id;state.selectedEdgeId=null;
   if(model.network){expandPortfolioNetwork(model,state,id,graph);}else{state.expanded=new Set([id]);state.limits=new Map();renderer2D.fit();}
-  render();if(model.network){renderer2D.focus?.(id);renderer3D?.focus?.(id);}else renderer3D?.fit();closeSearch();
+  render();if(model.network){renderer2D.focus?.(id);renderer3D?.focus?.(id);}else renderer3D?.fit();closeSearch();closeMobilePanel();
 }
 function goBack(){const previous=focusHistory.pop();if(!previous)return;const view=state.view;({model,state,holdingsQuery,holdingsPageIndex}=previous);state.view=view;$('#holdings-search').value=holdingsQuery;$('#portfolio').value=state.portfolioFilter||'all';render();renderer2D.focus?.(state.rootId);renderer3D?.focus?.(state.rootId);applyView(view);}
 function changePortfolio(id){rememberFocus();state.portfolioFilter=id==='all'?null:id;holdingsPageIndex=0;if(state.portfolioFilter){state.rootId=id;state.selectedId=id;state.selectedEdgeId=null;}render();renderer2D.fit();renderer3D?.fit();}
@@ -38,7 +59,7 @@ function renderNetworkControls(){
   $('#portfolio-summary').innerHTML=`<strong>One shared network · ${model.portfolios.length} imported filers</strong><span>${totalRows.toLocaleString()} searchable share rows</span><span>As of ${E(dateLabel(model.portfolios[0].reportingDate))}</span><span>Exact instrument matches only · Investor coverage is incomplete</span>`;
 }
 function expandNode(id){if(model.network){exploreRoot(id);return;}const alreadyExpanded=state.expanded.has(id);state.expanded.add(id);state.limits.set(id,(state.limits.get(id)||DEFAULT_PAGE_SIZE)+(alreadyExpanded?DEFAULT_PAGE_SIZE:0));state.selectedId=id;state.selectedEdgeId=null;render();if(graph.nodes.length>=MAX_VISIBLE_NODES)toast('Map limited to 45 entities for clarity. Make an entity the focus to explore further.');}
-function render(){graph=buildVisibleGraph(model,state);renderer2D.update(graph,state,model);if(renderer3D)renderer3D.update(graph,state);renderList();renderDetails();renderNetworkControls();$('#root-button').innerHTML=`${E(model.nodeMap.get(state.rootId).label)} <span>⌄</span>`;$('#visible-count').textContent=model.network?`${graph.nodes.length} nodes · ${graph.holdingLinkCount??graph.edges.length} reported holdings`:`${graph.nodes.length} ${graph.nodes.length===1?'entity':'entities'} · ${graph.edges.length} ${graph.edges.length===1?'connection':'connections'}`;$('#empty-state').hidden=graph.edges.length>0;$('#empty-state').innerHTML=graph.edges.length? '':`<strong>${model.edges.some(e=>e.source===state.rootId||e.target===state.rootId)?'No connections match this view.':'This part of the map is still open.'}</strong><span>${model.edges.some(e=>e.source===state.rootId||e.target===state.rootId)?'Try both directions or all connection types.':'We have not added verified connections for this entity yet. Try another company in search.'}</span>`;document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b.dataset.filter===state.filter);b.setAttribute('aria-pressed',String(b.dataset.filter===state.filter));});}
+function render(){graph=buildVisibleGraph(model,state);renderer2D.update(graph,state,model);if(renderer3D)renderer3D.update(graph,state);renderList();renderDetails();renderNetworkControls();updateMobileSelection();$('#root-button').innerHTML=`${E(model.nodeMap.get(state.rootId).label)} <span>⌄</span>`;$('#visible-count').textContent=model.network?`${graph.nodes.length} nodes · ${graph.holdingLinkCount??graph.edges.length} reported holdings`:`${graph.nodes.length} ${graph.nodes.length===1?'entity':'entities'} · ${graph.edges.length} ${graph.edges.length===1?'connection':'connections'}`;$('#empty-state').hidden=graph.edges.length>0;$('#empty-state').innerHTML=graph.edges.length? '':`<strong>${model.edges.some(e=>e.source===state.rootId||e.target===state.rootId)?'No connections match this view.':'This part of the map is still open.'}</strong><span>${model.edges.some(e=>e.source===state.rootId||e.target===state.rootId)?'Try both directions or all connection types.':'We have not added verified connections for this entity yet. Try another company in search.'}</span>`;document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b.dataset.filter===state.filter);b.setAttribute('aria-pressed',String(b.dataset.filter===state.filter));});}
 function renderList(){if(isPortfolio()){
   const filteredModel=state.portfolioFilter?{...model,holdingEdges:model.holdingEdges.filter(e=>e.source===state.portfolioFilter)}:model;
   const result=holdingsPage(filteredModel,holdingsQuery,holdingsPageIndex);holdingsPageIndex=result.page;
@@ -57,7 +78,7 @@ function applyView(view) {
   $('#graph-stage').classList.toggle('is-3d',view==='3d');
   $('#bubble-caption').hidden=view!=='3d';
   $('#empty-state').classList.toggle('list-empty',view==='list');
-  $('#map-hint').textContent=view==='3d'?'Drag to orbit · Pinch to zoom · Tap to focus':view==='list'?'Select a security to see its investors':'Select a node to focus its connections';
+  $('#map-hint').textContent=view==='3d'?'Drag to rotate · Two fingers zoom / pan · Tap a node':view==='list'?'Select a security to see its investors':'Drag to pan · Pinch to zoom · Tap a node';
   document.querySelectorAll('[data-view]').forEach(button=>{button.classList.toggle('active',button.dataset.view===view);button.setAttribute('aria-pressed',String(button.dataset.view===view));});
   if(view==='2d'&&graph)renderer2D.update(graph,state,model);
   renderer3D?.setActive(view==='3d');
@@ -77,7 +98,7 @@ async function setView(view) {
     toast('Opening 3D bubbles…');
     try {
       if(typeof window.WebGL2RenderingContext==='undefined')throw new Error('WebGL 2 unavailable');
-      renderer3DPromise ||= import('./graph-3d.js?v=20261018-network2');
+      renderer3DPromise ||= import('./graph-3d.js?v=20261018-mobile1');
       const {Graph3D}=await renderer3DPromise;
       if(request!==viewRequest)return;
       if(!renderer3D)renderer3D=new Graph3D($('#graph-3d'),{onSelect:selectNode,onEdgeSelect:selectEdge,onUnavailable:()=>{
@@ -103,6 +124,24 @@ async function setView(view) {
 }
 function showInfo(){const meta=model.meta||{};$('#dialog-content').innerHTML=`<p class="dialog-lead">${isPortfolio()?'Full reported Form 13F share-position rows from SEC filings. Each row is independently preserved, while source identity, amendment discovery and totals are reviewed at the filing batch level. This is a dated disclosed-securities snapshot, not current holdings, legal ownership or whole AUM.':isResearch()?'Independently reviewed historical disclosures from SEC filings. This is a bounded researched subset, not a complete ownership database or a statement of current holdings.':'A small, clickable prototype to explore how the map should work. This is a limited sample, not a complete ownership database.'}</p><div class="method-block"><i class="line-key managed"></i><div><h3>Managed holdings</h3><p>Reported investment discretion does not establish whether the position is proprietary or client-owned. It does not mean the manager owns the underlying business on its own balance sheet. A 13F filing covers certain disclosed securities, not all assets or control.</p></div></div><div class="method-block"><i class="line-key owned"></i><div><h3>Corporate ownership & investments</h3><p>Reported stakes, investments or subsidiaries. Ownership, voting rights and control are different. Unknown percentages are left unknown.</p></div></div><h3>Reading the bubbles</h3><p>The larger bubble is the current focus. Bubble size and distance are for navigation, not asset value, ownership percentage or company valuation. Drag to rotate the 3D map, pinch or scroll to zoom, and tap a bubble to inspect it.</p><h3>Coverage</h3><p>${E(meta.coverage||'Selected publicly sourced relationships only.')}</p>${(meta.notes||[]).length?`<ul>${meta.notes.map(n=>`<li>${E(n)}</li>`).join('')}</ul>`:''}<p class="context-note">AUM measures assets managed for clients. It is not a company valuation or the total value of its corporate subsidiaries. Different dates and disclosure scopes should not be combined as one total.</p><p class="muted">Dataset updated ${E(dateLabel(meta.updatedAt))}. Source dates on each connection describe the evidence, not a live guarantee that a stake is unchanged.</p>`;$('#info-dialog').showModal();}
 function bind(){
+  for(const selector of ['.dataset-row','#portfolio-controls','#network-summary','.filter-row'])$('#mobile-controls-content').insertBefore($(selector),$('#mobile-apply-controls'));
+  $('.workspace-heading').after($('#mobile-controls'));
+  $('#mobile-apply-controls').addEventListener('click',closeMobilePanel);
+  $('#mobile-help').addEventListener('click',()=>{closeMobilePanel();showInfo();});
+  $('#mobile-options').addEventListener('click',()=>openMobilePanel('controls'));
+  $('#mobile-details').addEventListener('click',()=>openMobilePanel('details'));
+  for(const selector of ['#close-mobile-controls','#close-mobile-details','#mobile-scrim'])$(selector).addEventListener('click',closeMobilePanel);
+  document.addEventListener('keydown',event=>{
+    if(!mobilePanel)return;
+    if(event.key==='Escape'){event.preventDefault();closeMobilePanel();return;}
+    if(event.key==='Tab'){
+      const items=[...mobilePanel.querySelectorAll('button,a,input,select,summary,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);
+      const first=items[0],last=items.at(-1);
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+      if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+    }
+  });
+  window.addEventListener('resize',()=>{if(!phoneQuery())closeMobilePanel();});
   $('#portfolio').addEventListener('change',e=>changePortfolio(e.target.value));
   $('#focus-back').addEventListener('click',goBack);$('#network-more').addEventListener('click',showMoreNetwork);
   $('#top-n').addEventListener('change',e=>{if(!isPortfolio())return;for(const id of state.portfolioFilter?[state.portfolioFilter]:model.portfolioRoots)state.limits.set(id,Number(e.target.value));render();renderer2D.fit();renderer3D?.fit();});
@@ -116,11 +155,12 @@ function bind(){
   window.addEventListener('resize',()=>{if(graph)renderer2D.update(graph,state,model);});
   document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$('#search').focus();}});
   document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{state.filter=b.dataset.filter;render();}));$('#direction').addEventListener('change',e=>{state.direction=e.target.value;render();});document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
-  $('#zoom-in').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(1.2):renderer2D.setZoom(renderer2D.zoom*1.2));$('#zoom-out').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(.8):renderer2D.setZoom(renderer2D.zoom*.8));$('#fit-map').addEventListener('click',()=>state.view==='3d'?renderer3D?.fit():renderer2D.fit());$('#reset-map').addEventListener('click',()=>{state=initialState(model);focusHistory=[];$('#direction').value='both';$('#top-n').value='20';holdingsQuery='';holdingsPageIndex=0;$('#holdings-search').value='';renderer2D.fit();render();setView('3d');renderer3D?.fit();});$('#root-button').addEventListener('click',()=>{$('#search').focus();$('#search').value='';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');$('#search-results').innerHTML=model.nodes.filter(n=>['manager','sovereign'].includes(n.kind)||model.outgoingIds.has(n.id)).slice(0,8).map(n=>`<button type="button" data-search-node="${E(n.id)}"><span><strong>${E(n.label)}</strong><small>${E(KIND_LABELS[n.kind])}</small></span><span>↗</span></button>`).join('');});
+  $('#zoom-in').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(1.2):renderer2D.setZoom(renderer2D.zoom*1.2));$('#zoom-out').addEventListener('click',()=>state.view==='3d'?renderer3D?.zoomBy(.8):renderer2D.setZoom(renderer2D.zoom*.8));$('#fit-map').addEventListener('click',()=>state.view==='3d'?renderer3D?.fit():renderer2D.fit());$('#reset-map').addEventListener('click',()=>{state=initialState(model);focusHistory=[];$('#direction').value='both';$('#top-n').value='20';holdingsQuery='';holdingsPageIndex=0;$('#holdings-search').value='';renderer2D.fit();render();setView('3d');renderer3D?.fit();});$('#root-button').addEventListener('click',()=>{closeMobilePanel();$('#search').focus();$('#search').value='';$('#search-results').hidden=false;$('#search').setAttribute('aria-expanded','true');$('#search-results').innerHTML=model.nodes.filter(n=>['manager','sovereign'].includes(n.kind)||model.outgoingIds.has(n.id)).slice(0,8).map(n=>`<button type="button" data-search-node="${E(n.id)}"><span><strong>${E(n.label)}</strong><small>${E(KIND_LABELS[n.kind])}</small></span><span>↗</span></button>`).join('');});
   for(const id of ['about-button','coverage-button','methodology-button'])$(`#${id}`).addEventListener('click',showInfo);for(const id of ['close-dialog','dialog-done'])$(`#${id}`).addEventListener('click',()=>$('#info-dialog').close());$('#info-dialog').addEventListener('click',e=>{if(e.target===$('#info-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
 }
 async function setDataset(name,portfolioId){
   if(!['portfolios','researched','sample'].includes(name))throw new Error('Unknown data view');
+  closeMobilePanel();
   const request=++datasetRequest;
   let next=datasets.get(name);
   if(name==='portfolios'&&!next){

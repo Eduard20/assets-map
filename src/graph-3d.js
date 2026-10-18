@@ -1,8 +1,8 @@
 import * as THREE from '../vendor/three.module.min.js';
 import { OrbitControls } from '../vendor/OrbitControls.js';
-import { KIND_LABELS } from './graph-model.js?v=20261018-network2';
-import { layoutBubbles, bubbleRadius } from './bubble-layout.js?v=20261018-network2';
-import { networkManagerIds, prioritizeNetworkLabels } from './shared-network-layout.js?v=20261018-network2';
+import { KIND_LABELS } from './graph-model.js?v=20261018-mobile1';
+import { layoutBubbles, bubbleRadius } from './bubble-layout.js?v=20261018-mobile1';
+import { networkManagerIds, prioritizeNetworkLabels } from './shared-network-layout.js?v=20261018-mobile1';
 
 const vector = p => new THREE.Vector3(p.x, p.y, p.z);
 const COLORS = {issuer_reporting_entity:'#d7b580',beneficial_ownership:'#ba9cdb', voting_authority:'#d7b580',managed_holding:'#8eb8e4', corporate_ownership:'#82ceb0', investment:'#d7b580', subsidiary:'#82ceb0'};
@@ -20,15 +20,18 @@ export class Graph3D {
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
     this.renderer.toneMappingExposure = 1.25;
     const canvas = this.renderer.domElement;
-    canvas.setAttribute('aria-label', '3D bubbles. Drag to orbit, pinch or scroll to zoom. Select a named bubble to explore.');
+    canvas.setAttribute('aria-label', '3D network. Drag to orbit, pinch to zoom, or move two fingers to pan. Tap a point or name to explore.');
     canvas.addEventListener('webglcontextlost', e => { e.preventDefault(); this.setActive(false); onUnavailable?.(); });
     this.labels = document.createElement('div');
     this.labels.className = 'bubble-labels';
     container.replaceChildren(canvas, this.labels);
-    this.controls = new OrbitControls(this.camera, canvas);
-    this.controls.enableDamping = true;
+    // A single gesture surface includes the native label buttons. Dragging a
+    // label must orbit the graph, not become a dead touch area.
+    this.controls = new OrbitControls(this.camera, container);
+    this.controls.enableDamping = !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     this.controls.dampingFactor = .1;
-    this.controls.enablePan = false;
+    this.controls.enablePan = true;
+    this.controls.screenSpacePanning = true;
     this.controls.minDistance = 100;
     this.controls.maxDistance = 1500;
     this.controls.rotateSpeed = .65;
@@ -54,39 +57,58 @@ export class Graph3D {
     this.nodeEntries = [];
     this.active = false;
     this.pointers = new Set();
-    canvas.addEventListener('pointerdown', e => {
+    container.addEventListener('pointerdown', e => {
       this.pointers.add(e.pointerId);
-      if (this.pointers.size > 1) { this.start = null; return; }
-      this.start = {x:e.clientX, y:e.clientY, id:e.pointerId, moved:false};
+      if (this.pointers.size > 1 || (e.pointerType==='mouse'&&e.button!==0)) { this.start = null; return; }
+      this.start = {x:e.clientX, y:e.clientY, id:e.pointerId, moved:false, labelId:e.target.closest('[data-node-id]')?.dataset.nodeId};
     });
-    canvas.addEventListener('pointermove', e => {
+    container.addEventListener('pointermove', e => {
       if (this.start && Math.hypot(e.clientX-this.start.x, e.clientY-this.start.y) > 7) this.start.moved = true;
       if (this.graph?.network && !this.start && e.pointerType !== 'touch') {
-        const rect=canvas.getBoundingClientRect();
-        this.pointer.set((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);
-        this.raycaster.setFromCamera(this.pointer,this.camera);
-        this.hoveredId=this.raycaster.intersectObjects(this.nodeEntries.map(entry=>entry.sphere),false)[0]?.object.userData.nodeId;
+        this.hoveredId=this.pickNodeAt(e.clientX,e.clientY,14)?.node.id;
         canvas.style.cursor=this.hoveredId?'pointer':'grab';
       }
     });
-    canvas.addEventListener('pointerleave',()=>{this.hoveredId=null;});
-    canvas.addEventListener('pointercancel', e => { this.pointers.delete(e.pointerId); this.start = null; });
-    canvas.addEventListener('pointerup', e => {
+    container.addEventListener('pointerleave',()=>{this.hoveredId=null;});
+    const cancel = e => { this.pointers.delete(e.pointerId); this.start = null; };
+    container.addEventListener('pointercancel',cancel);
+    container.addEventListener('lostpointercapture',cancel);
+    container.addEventListener('pointerup', e => {
       const start = this.start;
       this.pointers.delete(e.pointerId);
       this.start = null;
-      if (!start || start.moved || start.id !== e.pointerId || this.pointers.size) return;
+      if (!start || start.moved || start.id !== e.pointerId || this.pointers.size || Math.hypot(e.clientX-start.x,e.clientY-start.y)>7) return;
+      if(start.labelId){this.onSelect(start.labelId);return;}
+      // Screen-pixel targets stay finger-sized even at the overview distance.
+      // Choose the closest point before lines, so an edge cannot steal its tap.
+      const node=this.pickNodeAt(e.clientX,e.clientY,22);
+      if(node){this.onSelect(node.node.id);return;}
       const rect = canvas.getBoundingClientRect();
       this.pointer.set((e.clientX-rect.left)/rect.width*2-1, -(e.clientY-rect.top)/rect.height*2+1);
       this.raycaster.setFromCamera(this.pointer, this.camera);
-      const hit = this.raycaster.intersectObjects(this.targets, false)[0]?.object;
-      if (hit?.userData.nodeId) this.onSelect(hit.userData.nodeId);
-      else if (hit?.userData.edgeId) this.onEdgeSelect(hit.userData.edgeId);
+      const hit = this.raycaster.intersectObjects(this.edgeEntries, false)[0]?.object;
+      if (hit?.userData.edgeId) this.onEdgeSelect(hit.userData.edgeId);
     });
     this.observer = new ResizeObserver(() => this.resize());
     this.observer.observe(container);
     this.animate = this.animate.bind(this);
     this.resize();
+  }
+
+  pickNodeAt(clientX,clientY,radius=22){
+    const rect=this.renderer.domElement.getBoundingClientRect();
+    if(!rect.width||!rect.height)return null;
+    this.camera.updateMatrixWorld();
+    const x=clientX-rect.left,y=clientY-rect.top;
+    let closest=null,distance=radius*radius;
+    for(const entry of this.nodeEntries){
+      const point=entry.sphere.position.clone().project(this.camera);
+      if(point.z < -1 || point.z > 1)continue;
+      const dx=(point.x*.5+.5)*rect.width-x,dy=(-point.y*.5+.5)*rect.height-y;
+      const candidate=dx*dx+dy*dy;
+      if(candidate<=distance){closest=entry;distance=candidate;}
+    }
+    return closest;
   }
 
   update(graph, state) {
@@ -109,9 +131,7 @@ export class Graph3D {
       entry.button.setAttribute('aria-pressed', String(selected));
       entry.ring.visible = selected;
       if(graph.network){
-        entry.radius=root?29:entry.manager?25:21;
-        const scale=entry.radius/entry.baseRadius;
-        entry.sphere.scale.setScalar(scale);entry.ring.scale.setScalar(scale);
+        entry.pixelRadius=root?4.6:entry.manager?3.8:2.8;
         entry.sphere.material.color.set(root?'#6fe2b5':entry.manager?'#75d5ca':'#afbddc');
         entry.button.lastElementChild.textContent=root?'CURRENT FOCUS':entry.manager?'REPORTING MANAGER':KIND_LABELS[entry.node.kind];
       }
@@ -134,10 +154,10 @@ export class Graph3D {
       const start = vector(positions.get(edge.source));
       const end = vector(positions.get(edge.target));
       const direction = end.clone().sub(start).normalize();
-      start.addScaledVector(direction, bubbleRadius(edge.source, this.state.rootId));
-      end.addScaledVector(direction, -bubbleRadius(edge.target, this.state.rootId)-3);
+      start.addScaledVector(direction, 4);
+      end.addScaledVector(direction, -6);
       const material = edge.kind === 'managed_holding'
-        ? new THREE.LineDashedMaterial({color:COLORS[edge.kind], dashSize:4, gapSize:3, transparent:true, opacity:.65})
+        ? new THREE.LineDashedMaterial({color:COLORS[edge.kind], dashSize:3, gapSize:2, transparent:true, opacity:.5})
         : new THREE.LineBasicMaterial({color:COLORS[edge.kind], transparent:true, opacity:.65});
       const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints([start, end]), material);
       line.computeLineDistances();
@@ -146,7 +166,7 @@ export class Graph3D {
       this.group.add(line);
       this.targets.push(line);
       this.edgeEntries.push(line);
-      const arrow = new THREE.Mesh(new THREE.ConeGeometry(1.8, 5, 8), new THREE.MeshBasicMaterial({color:COLORS[edge.kind]}));
+      const arrow = new THREE.Mesh(new THREE.ConeGeometry(.7, 2.8, 6), new THREE.MeshBasicMaterial({color:COLORS[edge.kind]}));
       arrow.position.copy(end);
       arrow.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), direction);
       line.userData.arrow=arrow;
@@ -154,17 +174,21 @@ export class Graph3D {
     }
     for (const node of this.graph.nodes) {
       const root = node.id === this.state.rootId;
-      const radius = this.graph.network ? managers.has(node.id)?25:21 : bubbleRadius(node.id, this.state.rootId);
-      const sphere = new THREE.Mesh(new THREE.SphereGeometry(radius, this.graph.network?24:48, this.graph.network?16:32), new THREE.MeshPhysicalMaterial({
-        color:root ? '#6fe2b5' : node.kind === 'company' ? '#afbddc' : '#74b9c7',
-        roughness:.21, metalness:.18, clearcoat:1, clearcoatRoughness:.12
+      const radius = 3;
+      const sphere = new THREE.Mesh(new THREE.SphereGeometry(radius, 16, 12), new THREE.MeshBasicMaterial({
+        color:root ? '#a8ffe4' : managers.has(node.id) ? '#87e9f4' : '#c8d5ff', toneMapped:false
       }));
       sphere.position.copy(vector(positions.get(node.id)));
       sphere.userData.nodeId = node.id;
-      const ring = new THREE.Mesh(new THREE.RingGeometry(radius*1.13, radius*1.16, 64), new THREE.MeshBasicMaterial({color:'#c1f7df', transparent:true, opacity:.7, side:THREE.DoubleSide, depthWrite:false}));
+      const halo = new THREE.Mesh(new THREE.SphereGeometry(radius*2.5,12,8),new THREE.MeshBasicMaterial({color:root?'#67ffd4':'#75c9ff',transparent:true,opacity:.09,depthWrite:false,blending:THREE.AdditiveBlending,toneMapped:false}));
+      halo.position.copy(sphere.position);
+      const ring = new THREE.Mesh(new THREE.RingGeometry(radius*2.65, radius*2.85, 48), new THREE.MeshBasicMaterial({color:'#a5ffe5', transparent:true, opacity:.65, side:THREE.DoubleSide, depthWrite:false,toneMapped:false}));
       ring.position.copy(sphere.position);
-      this.group.add(sphere, ring);
-      this.targets.push(sphere);
+      // Separate, invisible picking geometry never makes a point look chunky.
+      const hit = new THREE.Mesh(new THREE.SphereGeometry(1,8,6),new THREE.MeshBasicMaterial());
+      hit.visible=false;hit.position.copy(sphere.position);hit.userData.nodeId=node.id;
+      this.group.add(sphere, halo, ring, hit);
+      this.targets.push(hit);
       const button = document.createElement('button');
       button.type = 'button';
       button.className = `bubble-label${root ? ' root' : ''}`;
@@ -175,31 +199,28 @@ export class Graph3D {
       name.textContent = node.label;
       if(this.graph.network){
         button.style.width=this.portrait?'110px':'144px';
-        name.style.fontSize=this.portrait?'10px':'11px';
+        name.style.fontSize=this.portrait?'11px':'12px';
         name.style.display='-webkit-box';name.style.webkitLineClamp='2';name.style.webkitBoxOrient='vertical';name.style.overflow='hidden';
       }
       const kind = document.createElement('span');
       kind.textContent = root ? 'CURRENT FOCUS' : KIND_LABELS[node.kind];
       button.append(name, kind);
-      let labelStart;
-      button.addEventListener('pointerdown', event => {
-        labelStart = {x:event.clientX, y:event.clientY, moved:false};
-        button.setPointerCapture(event.pointerId);
-      });
-      button.addEventListener('pointermove', event => {
-        if (labelStart && Math.hypot(event.clientX-labelStart.x, event.clientY-labelStart.y)>7) labelStart.moved=true;
-      });
-      button.addEventListener('pointercancel', () => { labelStart = {moved:true}; });
       button.addEventListener('click', event => {
-        if (event.detail === 0 || !labelStart?.moved) this.onSelect(node.id);
-        labelStart = null;
+        // Pointer selection is gated by the shared surface's drag tracker.
+        // Enter, Space and assistive-tech activation retain native semantics.
+        if (event.detail === 0) this.onSelect(node.id);
       });
       button.addEventListener('focus',()=>{this.keyboardId=node.id;this.render();});
       button.addEventListener('blur',()=>{if(this.keyboardId===node.id)this.keyboardId=null;this.render();});
       button.addEventListener('pointerenter',()=>{this.hoveredId=node.id;});
       button.addEventListener('pointerleave',()=>{if(this.hoveredId===node.id)this.hoveredId=null;});
-      this.labels.append(button);
-      this.nodeEntries.push({node, sphere, ring, button, radius,baseRadius:radius,manager:managers.has(node.id)});
+      const leader=document.createElement('span');
+      leader.className='node-label-leader';
+      leader.setAttribute('aria-hidden','true');
+      Object.assign(leader.style,{position:'absolute',left:'0',top:'0',height:'1px',background:'rgba(133,219,223,.3)',transformOrigin:'0 50%',pointerEvents:'none'});
+      leader.hidden=true;
+      this.labels.append(leader,button);
+      this.nodeEntries.push({node, sphere, halo, ring, hit, button, leader, radius,baseRadius:radius,pixelRadius:root?4.6:managers.has(node.id)?3.8:2.8,manager:managers.has(node.id)});
     }
     // A quiet reference orbit makes the perspective legible as the map is rotated.
     if (this.graph.nodes.length > 1 && !this.graph.network) {
@@ -227,14 +248,18 @@ export class Graph3D {
   resize() {
     const width = this.container.clientWidth, height = this.container.clientHeight;
     if (!width || !height) return;
-    const changed = width !== this.width || height !== this.height;
+    const firstSize=!this.width;
+    const widthChanged=this.width&&Math.abs(width-this.width)>40;
+    const wasPortrait=this.portrait;
     this.width = width;
     this.height = height;
     this.renderer.setSize(width, height, false);
     this.camera.aspect = width/height;
     this.camera.updateProjectionMatrix();
     if (this.graph && (width < 600) !== this.portrait) this.update(this.graph, this.state);
-    if (changed && this.graph) this.fit();
+    // Mobile browser chrome changes height as it expands/collapses. Preserve
+    // the user's orbit, pan and zoom instead of unexpectedly fitting again.
+    if (this.graph && (firstSize || (widthChanged && wasPortrait===this.portrait))) this.fit();
     this.render();
   }
 
@@ -244,8 +269,14 @@ export class Graph3D {
     const cameraUp = new THREE.Vector3(0,1,0).applyQuaternion(this.camera.quaternion);
     const projected = new Map();
     for (const entry of this.nodeEntries) {
+      const depth=-entry.sphere.position.clone().applyMatrix4(this.camera.matrixWorldInverse).z;
+      const worldPerPixel=2*Math.max(.1,depth)*Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2))/this.height;
+      entry.radius=worldPerPixel*entry.pixelRadius;
+      const scale=entry.radius/entry.baseRadius;
+      entry.sphere.scale.setScalar(scale);entry.halo.scale.setScalar(scale);entry.ring.scale.setScalar(scale);
+      entry.hit.scale.setScalar(worldPerPixel*22);
       entry.ring.quaternion.copy(this.camera.quaternion);
-      const point = entry.sphere.position.clone().addScaledVector(cameraUp, -entry.radius-5).project(this.camera);
+      const point = entry.sphere.position.clone().addScaledVector(cameraUp, -worldPerPixel*14).project(this.camera);
       const x = (point.x*.5+.5)*this.width;
       const y = (-point.y*.5+.5)*this.height;
       if(this.graph?.network){projected.set(entry.node.id,{x,y,z:point.z});continue;}
@@ -292,7 +323,17 @@ export class Graph3D {
         boxes.push(box);
         button.style.transform=`translate(${box.left.toFixed(1)}px, ${box.top.toFixed(1)}px)`;
         button.style.zIndex=String(important?20:10);
+        // A fine tether keeps a collision-shifted label attached to its point.
+        if(entry.leader){
+          const origin={x:point.x,y:point.y-14};
+          const end={x:Math.max(box.left,Math.min(box.right,origin.x)),y:Math.max(box.top,Math.min(box.bottom,origin.y))};
+          const dx=end.x-origin.x,dy=end.y-origin.y,length=Math.hypot(dx,dy);
+          entry.leader.hidden=length<17||!onScreen;
+          entry.leader.style.width=`${Math.max(0,length-5)}px`;
+          entry.leader.style.transform=`translate(${origin.x.toFixed(1)}px,${origin.y.toFixed(1)}px) rotate(${Math.atan2(dy,dx)}rad)`;
+        }
       }else{
+        if(entry.leader)entry.leader.hidden=true;
         button.style.transform='translate(1px, 1px)';
         button.style.zIndex='0';
       }
@@ -314,9 +355,10 @@ export class Graph3D {
   fit() {
     if (!this.positions || !this.width) return;
     if(this.graph?.network){this.fitNetwork(this.positions.has(this.focusedId)?vector(this.positions.get(this.focusedId)):new THREE.Vector3(0,0,0),true);return;}
+    const damping=this.controls.enableDamping;
     this.controls.enableDamping = false;
     this.controls.update();
-    this.controls.enableDamping = true;
+    this.controls.enableDamping = damping;
     const tan = Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2));
     // Reserve screen space for full names, controls and the canvas heading.
     let distance = 240;
@@ -331,7 +373,7 @@ export class Graph3D {
   }
   fitNetwork(target,resetOrientation=false) {
     if(!this.positions||!this.width)return;
-    this.controls.enableDamping=false;this.controls.update();this.controls.enableDamping=true;
+    const damping=this.controls.enableDamping;this.controls.enableDamping=false;this.controls.update();this.controls.enableDamping=damping;
     const direction=resetOrientation?new THREE.Vector3(0,0,1):this.camera.position.clone().sub(this.controls.target).normalize();
     this.controls.target.copy(target);
     this.camera.position.copy(target).add(direction);
