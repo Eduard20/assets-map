@@ -1,5 +1,5 @@
-import {escapeHtml, RELATIONSHIPS, KIND_LABELS, layoutGraph, relatedEdges} from './graph-model.js?v=20261018-network1';
-import {layoutSharedNetwork, networkManagerIds} from './shared-network-layout.js?v=20261018-network1';
+import {escapeHtml, RELATIONSHIPS, KIND_LABELS, layoutGraph, relatedEdges} from './graph-model.js?v=20261018-network2';
+import {layoutSharedNetwork, networkManagerIds} from './shared-network-layout.js?v=20261018-network2';
 const NS = 'http://www.w3.org/2000/svg';
 export class Graph2D {
   constructor(container, { onSelect, onEdgeSelect, onExpand }) {
@@ -28,7 +28,7 @@ export class Graph2D {
       }
       for(const edge of this.layer.querySelectorAll('[data-edge]')){
         const data=graph.edges.find(item=>item.id===edge.dataset.edge);
-        const related=data.source===state.rootId||data.target===state.rootId;
+        const related=(graph.focusScope||[state.rootId]).includes(data.source)||(graph.focusScope||[state.rootId]).includes(data.target);
         edge.querySelector('.edge-visible').style.opacity=state.selectedEdgeId===data.id?1:related?.9:.22;
       }
     }else this.overviewBounds=null;

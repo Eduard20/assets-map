@@ -1,5 +1,5 @@
-import {escapeHtml as E,dateLabel,money,safeUrl,createModel} from './graph-model.js?v=20261018-network1';
-import {decimalLabel} from './research-view.js?v=20261018-network1';
+import {escapeHtml as E,dateLabel,money,safeUrl,createModel} from './graph-model.js?v=20261018-network2';
+import {decimalLabel} from './research-view.js?v=20261018-network2';
 export const HOLDINGS_PAGE_SIZE=50;
 export function decodePortfolio(summary,data){
   if(data.schemaVersion!==1||data.portfolioId!==summary.portfolioId||!Array.isArray(data.groups)||!Array.isArray(data.rows))throw new Error('Invalid portfolio data');

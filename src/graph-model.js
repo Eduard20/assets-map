@@ -1,4 +1,5 @@
 export const RELATIONSHIPS = {
+  issuer_reporting_entity: {label: 'Issuer / reporting-manager role', color:'#ab8a59', explanation:'Navigation between an issued share class and the same company as a reporting manager. Not a holding, ownership percentage, or merger of share classes.'},
   beneficial_ownership: { label: 'Beneficial attribution', color: '#9b82b6', explanation: 'A source-defined beneficial ownership disclosure, which can include trusts and exercisable rights. It does not establish direct legal title or control.' },
   voting_authority: { label: 'Voting authority', color: '#b18a61', dash: '2 4', explanation: 'Form-defined voting authority over reported shares. This is a separate role on a position, not an additional holding or proof of corporate control.' },
   managed_holding: { label: 'Managed holding', color: '#6f8faa', dash: '5 5', explanation: 'An investment held or managed on behalf of clients. This does not imply that the asset manager owns or controls the company.' },

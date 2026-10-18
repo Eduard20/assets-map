@@ -37,7 +37,7 @@ assert.equal(window.__assetsMap.getModel().meta.mode,'portfolios');
 assert.ok(window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount>40000);
 assert.equal(window.__assetsMap.getGraph().nodes.length,42);
 assert.equal(window.__assetsMap.getGraph().edges.length,98);
-assert.ok(document.querySelectorAll('.connection-card').length<=8);
+assert.ok(document.querySelectorAll('.connection-card').length<=24);
 $('#holdings-search').value='apple';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
 assert.ok(document.querySelectorAll('.holding-row').length>0&&document.querySelectorAll('.holding-row').length<=50);
 const beforeFocus=window.__assetsMap.getGraph().nodes.map(n=>n.id);
@@ -53,6 +53,15 @@ click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/
 click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/Information-table row/);
 click('#focus-back');assert.equal(window.__assetsMap.getState().rootId,window.__assetsMap.getModel().rootId);
 assert.equal($('#holdings-search').value,'apple');
+// Every manager click expands its own outgoing neighborhood; Back restores it.
+const baseline=window.__assetsMap.getGraph().nodes.map(n=>n.id).sort();
+window.__assetsMap.selectNode('blackrock-2026-06-30');
+assert.ok(window.__assetsMap.getGraph().nodes.length>baseline.length);
+const firstExpanded=window.__assetsMap.getGraph().nodes.length;
+window.__assetsMap.selectNode('blackrock-2026-06-30');
+assert.ok(window.__assetsMap.getGraph().nodes.length>firstExpanded);
+window.__assetsMap.goBack();assert.equal(window.__assetsMap.getGraph().nodes.length,firstExpanded);
+window.__assetsMap.goBack();assert.deepEqual(window.__assetsMap.getGraph().nodes.map(n=>n.id).sort(),baseline);
 await window.__assetsMap.setDataset('researched');
 assert.equal(window.__assetsMap.getModel().meta.mode,'researched');
 assert.match($('#dataset-context').textContent,/4 reviewed disclosures/);

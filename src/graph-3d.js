@@ -1,11 +1,11 @@
 import * as THREE from '../vendor/three.module.min.js';
 import { OrbitControls } from '../vendor/OrbitControls.js';
-import { KIND_LABELS } from './graph-model.js?v=20261018-network1';
-import { layoutBubbles, bubbleRadius } from './bubble-layout.js?v=20261018-network1';
-import { networkManagerIds, prioritizeNetworkLabels } from './shared-network-layout.js?v=20261018-network1';
+import { KIND_LABELS } from './graph-model.js?v=20261018-network2';
+import { layoutBubbles, bubbleRadius } from './bubble-layout.js?v=20261018-network2';
+import { networkManagerIds, prioritizeNetworkLabels } from './shared-network-layout.js?v=20261018-network2';
 
 const vector = p => new THREE.Vector3(p.x, p.y, p.z);
-const COLORS = {beneficial_ownership:'#ba9cdb', voting_authority:'#d7b580',managed_holding:'#8eb8e4', corporate_ownership:'#82ceb0', investment:'#d7b580', subsidiary:'#82ceb0'};
+const COLORS = {issuer_reporting_entity:'#d7b580',beneficial_ownership:'#ba9cdb', voting_authority:'#d7b580',managed_holding:'#8eb8e4', corporate_ownership:'#82ceb0', investment:'#d7b580', subsidiary:'#82ceb0'};
 export class Graph3D {
   constructor(container, {onSelect, onEdgeSelect, onUnavailable}) {
     this.container = container;
@@ -118,7 +118,7 @@ export class Graph3D {
     }
     for (const edge of this.edgeEntries) {
       const selected=edge.userData.edgeId===state.selectedEdgeId;
-      const related=edge.userData.source===state.rootId||edge.userData.target===state.rootId;
+      const related=(this.graph.focusScope||[state.rootId]).includes(edge.userData.source)||(this.graph.focusScope||[state.rootId]).includes(edge.userData.target);
       edge.material.opacity=selected?1:graph.network?(related?.8:.14):.65;
       if(edge.userData.arrow)edge.userData.arrow.visible=!graph.network||selected||related;
     }

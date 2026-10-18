@@ -32,3 +32,39 @@ test('unknown, duplicate or malformed equivalence memberships fail closed',()=>{
 test('public identity map is byte-bound to independently approved exact-match release',async()=>{const bytes=await readFile(new URL('../data/instrument-equivalence.json',import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),'36712784e2d53c44f7ef89a7719c8d8240f5caefffb2399b5a16fda08b3704bf');assert.equal(identity.admission.status,'approved');assert.throws(()=>createPortfolioNetwork(portfolios,{...identity,admission:{status:'pending'}}),/independent review/);});
 
 test('large navigation history cannot exceed the node ceiling or drop current focus',()=>{const state=initialState(model);const securities=model.nodes.filter(n=>n.kind==='asset');state.pinnedNodes=new Set(securities.slice(0,198).map(n=>n.id));state.rootId=securities[250].id;const graph=buildVisibleGraph(model,state);assert.equal(graph.nodes.length,200);assert.ok(graph.nodes.some(n=>n.id===state.rootId));});
+
+test('clicking a manager expands its actual holdings beyond overview and repeated clicks progress',async()=>{
+  const {expandPortfolioNetwork}=await import('../src/portfolio-network.js');
+  const state=initialState(model),initial=buildVisibleGraph(model,state),root=model.portfolioRoots.find(id=>id.startsWith('blackrock'));
+  expandPortfolioNetwork(model,state,root,initial);let graph=buildVisibleGraph(model,state);
+  assert.ok(graph.nodes.length>initial.nodes.length);
+  assert.ok(graph.edges.filter(e=>e.source===root).length>=40);
+  for(let i=0;i<12;i++){expandPortfolioNetwork(model,state,root,graph);graph=buildVisibleGraph(model,state);}
+  assert.ok(graph.nodes.length<=200);
+  const late=model.edges.filter(e=>e.source===root)[230];
+  assert.ok(graph.nodes.some(n=>n.id===late.target),'later pages replace older context instead of freezing at the node cap');
+});
+test('company focus reveals all available investors outside filtered overview without invented investments',async()=>{
+  const {expandPortfolioNetwork}=await import('../src/portfolio-network.js');
+  const state=initialState(model);state.portfolioFilter=model.portfolioRoots[0];
+  const before=buildVisibleGraph(model,state),node=model.nodes.find(n=>n.kind==='asset'&&!before.nodes.some(v=>v.id===n.id));
+  state.rootId=node.id;expandPortfolioNetwork(model,state,node.id,before);const graph=buildVisibleGraph(model,state);
+  assert.ok(graph.nodes.some(n=>n.id===node.id));
+  assert.equal(graph.edges.filter(e=>e.target===node.id).length,model.edges.filter(e=>e.target===node.id).length);
+  assert.match(networkDetails(model,node.id,state,graph),/No outgoing investment portfolio is imported/);
+  assert.ok(before.nodes.every(n=>graph.nodes.some(v=>v.id===n.id)));
+});
+
+test('issuer role links open company investments while retaining distinct share classes and values',async()=>{
+  const {expandPortfolioNetwork}=await import('../src/portfolio-network.js');
+  const state=initialState(model),baseline=buildVisibleGraph(model,state);
+  const role=model.roleEdges.find(e=>e.role.manager==='berkshire-2026-06-30'&&e.role.securityClass==='CL B NEW');
+  state.rootId=role.source;expandPortfolioNetwork(model,state,role.source,baseline);const graph=buildVisibleGraph(model,state);
+  assert.ok(graph.edges.some(e=>e.id===role.id));
+  assert.ok(graph.edges.filter(e=>e.source==='berkshire-2026-06-30').length>=20);
+  assert.equal(graph.edges.filter(e=>e.target===role.source&&e.kind==='managed_holding').length,2);
+  assert.ok(model.roleEdges.every(e=>e.valueUsd===undefined&&e.stakePercent===undefined));
+  assert.equal(model.rolePeers.get('berkshire-2026-06-30').size,2);
+  assert.notEqual(...[...model.rolePeers.get('berkshire-2026-06-30')]);
+  assert.equal(model.holdingEdges.length,53460);
+});
