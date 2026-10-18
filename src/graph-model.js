@@ -35,6 +35,7 @@ export function relatedEdges(model, id, { filter = 'all', direction = 'both' } =
   });
 }
 export function buildVisibleGraph(model, state) {
+  if(model.network)return model.buildVisibleGraph(state);
   const nodeIds = new Set([state.rootId]); const edgeIds = new Set(); const queue = [state.rootId]; const visited = new Set();
   while (queue.length) {
     const id = queue.shift(); if (visited.has(id)) continue; visited.add(id);
@@ -53,4 +54,4 @@ export function layoutGraph(graph, rootId) {
   }
   return positions;
 }
-export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set([model.rootId]),limits:new Map(),view:'3d'}; }
+export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set(model.portfolioRoots||[model.rootId]),limits:new Map(model.network?model.portfolioRoots.map(id=>[id,20]):[]),pinnedNodes:new Set(),portfolioFilter:null,view:'3d'}; }

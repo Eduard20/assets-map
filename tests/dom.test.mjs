@@ -9,11 +9,12 @@ const data = JSON.parse(await readFile(new URL('../data/graph.json', import.meta
 const researched = JSON.parse(await readFile(new URL('../data/researched.json', import.meta.url), 'utf8'));
 const portfolios=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url),'utf8'));
 const portfolioData=new Map(await Promise.all(portfolios.portfolios.map(async p=>[p.dataFile,JSON.parse(await readFile(new URL('../data/'+p.dataFile,import.meta.url),'utf8'))])));
+const identity=JSON.parse(await readFile(new URL('../data/instrument-equivalence.json',import.meta.url),'utf8'));
 const dom = new JSDOM(html, {url: 'http://localhost/'});
 Object.assign(globalThis, {
   window: dom.window,
   document: dom.window.document,
-  fetch: async url => ({ok: true, json: async () => String(url).includes('researched.json') ? researched : String(url).includes('portfolios.json') ? portfolios : portfolioData.get(String(url).split('/').pop()) || data})
+  fetch: async url => ({ok: true, json: async () => String(url).includes('instrument-equivalence.json') ? identity : String(url).includes('researched.json') ? researched : String(url).includes('portfolios.json') ? portfolios : portfolioData.get(String(url).split('/').pop()) || data})
 });
 // jsdom has no WebGL. Make that explicit instead of depending on its noisy
 // "not implemented" canvas exception to exercise the fallback.
@@ -30,15 +31,28 @@ async function waitFor(check, message) {
   }
 }
 await import('../src/app.js');
-await waitFor(() => window.__assetsMap && window.__assetsMap.getState().view === '2d' && !$('#graph-2d').hidden, 'App did not settle into the no-WebGL 2D fallback');
+await waitFor(() => window.__assetsMap && window.__assetsMap.getState()?.view === '2d' && !$('#graph-2d').hidden, 'App did not settle into the no-WebGL 2D fallback');
 
 assert.equal(window.__assetsMap.getModel().meta.mode,'portfolios');
 assert.ok(window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount>40000);
-assert.equal(window.__assetsMap.getGraph().nodes.length,9);
+assert.equal(window.__assetsMap.getGraph().nodes.length,42);
+assert.equal(window.__assetsMap.getGraph().edges.length,98);
 assert.ok(document.querySelectorAll('.connection-card').length<=8);
 $('#holdings-search').value='apple';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
 assert.ok(document.querySelectorAll('.holding-row').length>0&&document.querySelectorAll('.holding-row').length<=50);
-click('.holding-row');assert.match($('#detail-panel').textContent,/Information-table row/);
+const beforeFocus=window.__assetsMap.getGraph().nodes.map(n=>n.id);
+click('.holding-row');assert.match($('#detail-panel').textContent,/3 REPORTED INVESTORS/);
+assert.equal(window.__assetsMap.getState().rootId,'shared-instrument-264');
+assert.deepEqual(window.__assetsMap.getGraph().nodes.map(n=>n.id).sort(),beforeFocus.sort());
+assert.equal($('#focus-back').hidden,false);
+const focusedViewBox=$('#graph-2d svg').getAttribute('viewBox');
+click('[data-view="2d"]');assert.equal($('#graph-2d svg').getAttribute('viewBox'),focusedViewBox);
+window.dispatchEvent(new dom.window.Event('resize'));assert.equal($('#graph-2d svg').getAttribute('viewBox'),focusedViewBox);
+click('[data-view="list"]');
+click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/underlying row/);
+click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/Information-table row/);
+click('#focus-back');assert.equal(window.__assetsMap.getState().rootId,window.__assetsMap.getModel().rootId);
+assert.equal($('#holdings-search').value,'apple');
 await window.__assetsMap.setDataset('researched');
 assert.equal(window.__assetsMap.getModel().meta.mode,'researched');
 assert.match($('#dataset-context').textContent,/4 reviewed disclosures/);
@@ -111,7 +125,7 @@ test('List remains useful after WebGL failure, and reset safely retries the defa
   assert.equal(document.querySelectorAll('.list-connection').length, 5);
   assert.equal($('.zoom-tools').hidden, true);
   click('#reset-map');
-  await waitFor(() => window.__assetsMap.getState().view === '2d' && !$('#graph-2d').hidden, 'Reset did not return to a usable fallback');
+  await waitFor(() => window.__assetsMap.getState()?.view === '2d' && !$('#graph-2d').hidden, 'Reset did not return to a usable fallback');
   assert.equal(window.__assetsMap.getState().rootId, 'blackrock');
   assert.equal(window.__assetsMap.getState().selectedId, 'blackrock');
   assertActiveView('2d');

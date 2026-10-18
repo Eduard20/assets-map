@@ -14,7 +14,7 @@ const selectedId = page => page.evaluate(() => window.__assetsMap.getState().sel
 const bubbles = page => page.locator('#graph-3d button[data-node-id]');
 
 async function expectView(page, view) {
-  await page.waitForFunction(expected => window.__assetsMap?.getState().view === expected && ['2d', '3d', 'list'].every(name => {
+  await page.waitForFunction(expected => window.__assetsMap?.getState()?.view === expected && ['2d', '3d', 'list'].every(name => {
     const container = document.querySelector(`#graph-${name}`);
     const button = document.querySelector(`[data-view="${name}"]`);
     return container && container.hidden === (name !== expected) && button?.getAttribute('aria-pressed') === String(name === expected);
@@ -34,7 +34,7 @@ async function expectReal3D(page, count = 4) {
     return Boolean(gl && !gl.isContextLost() && gl.drawingBufferWidth > 0 && gl.drawingBufferHeight > 0);
   });
   assert.equal(webgl, true, '3D canvas must have a working WebGL context (CI uses SwiftShader)');
-  for (const button of await bubbles(page).all()) assert.equal(await button.isVisible(), true, 'Every bubble label should be visible after fitting');
+  for (const button of await bubbles(page).all()) assert.equal(await button.isVisible(), true, 'Every bubble retains an accessible button after fitting');
   const ids = await bubbles(page).evaluateAll(buttons => buttons.map(button => button.dataset.nodeId));
   assert.equal(new Set(ids).size, count, 'Each visible graph entity needs one accessible bubble button');
   assert.equal(await bubbles(page).evaluateAll(buttons => buttons.every(button => {
@@ -47,7 +47,7 @@ async function ensureNoOverflow(page, width) {
   await page.setViewportSize({width, height: 844});
   await page.waitForFunction(() => {
     const canvas = document.querySelector('#graph-3d canvas').getBoundingClientRect();
-    const labels = [...document.querySelectorAll('#graph-3d button[data-node-id]')];
+    const labels = [...document.querySelectorAll('#graph-3d button[data-node-id]')].filter(button=>button.dataset.labelVisible!=='false');
     return document.documentElement.scrollWidth <= innerWidth && canvas.left >= 0 && canvas.right <= innerWidth + 1
       && labels.every(button => { const rect=button.getBoundingClientRect(); return rect.left>=canvas.left && rect.right<=canvas.right && rect.top>=canvas.top && rect.bottom<=canvas.bottom; });
   });
@@ -76,19 +76,38 @@ try {
   watchErrors(page);
   await page.goto(origin);
   await page.waitForFunction(() => window.__assetsMap?.getState());
-  await expectReal3D(page,9);
+  await expectReal3D(page,42);
   assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
-  assert.ok(await page.evaluate(()=>window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount>40000));
-  await page.locator('#top-n').selectOption('40');await expectReal3D(page,41);
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),53460);
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),98);
+  const startingIds=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort());
+  const appleId='shared-instrument-264';
+  // Keyboard can reach all network securities even when dense labels are decluttered.
+  await page.locator(`#graph-3d button[data-node-id="${appleId}"]`).focus();await page.keyboard.press('Enter');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
+  assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
+  assert.match(await page.locator('#detail-panel').textContent(),/3 REPORTED INVESTORS/);
+  assert.equal(await page.locator('.investor-card').count(),3);
+  await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),'blackrock-2026-06-30');
+  await page.locator('[data-view="2d"]').click();await expectView(page,'2d');
+  await page.locator(`.graph-node[data-node="${appleId}"]`).click();
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
+  assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
+  await page.locator('#focus-back').click();await page.locator('[data-view="3d"]').click();
+  await page.locator('#top-n').selectOption('40');
+  const expandedCount=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expandedCount>42);await expectReal3D(page,expandedCount);
   await page.locator('#holdings-search').fill('APPLE');await expectView(page,'list');
   assert.ok(await page.locator('.holding-row').count()>0);assert.ok(await page.locator('.holding-row').count()<=50);
-  await page.locator('.holding-row').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
+  await page.locator('.holding-row').first().click();assert.match(await page.locator('#detail-panel').textContent(),/3 REPORTED INVESTORS/);
+  await page.locator('#detail-panel [data-edge]').first().click();await page.locator('#detail-panel [data-edge]').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
+  await page.locator('#focus-back').click();assert.equal(await page.locator('#holdings-search').inputValue(),'APPLE');
   await page.locator('#holdings-search').fill('');
   await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
-  for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);await page.waitForFunction(id=>window.__assetsMap.getModel().rootId===id,p);await expectReal3D(page,9);assert.ok(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length===window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount));}
-  await page.screenshot({path:'artifacts/full-portfolios-desktop.png',fullPage:true});
-  for(const width of [320,390]){await ensureNoOverflow(page,width);await expectReal3D(page,9);}
-  await page.screenshot({path:'artifacts/full-portfolios-mobile.png',fullPage:true});
+  for(const p of await page.locator('#portfolio option').evaluateAll(options=>options.map(o=>o.value))){await page.locator('#portfolio').selectOption(p);assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(n=>n.kind==='manager').length),3);assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),53460);}
+  await page.locator('#portfolio').selectOption('all');await page.locator('#top-n').selectOption('20');await page.locator('[data-view="3d"]').click();await expectReal3D(page,42);
+  await page.screenshot({path:'artifacts/shared-network-desktop.png',fullPage:true});
+  for(const width of [320,390]){await ensureNoOverflow(page,width);await expectReal3D(page,42);}
+  await page.screenshot({path:'artifacts/shared-network-mobile.png',fullPage:true});
   await page.setViewportSize({width:1440,height:1000});
   await page.locator('#dataset').selectOption('researched');await page.waitForFunction(()=>window.__assetsMap.getModel().meta.mode==='researched');
   await expectReal3D(page);
@@ -250,7 +269,7 @@ try {
   assert.match(await fallbackPage.locator('#view-notice').textContent(), /3D.*(?:unavailable|not available|not supported|could not)/i);
   assert.equal(await fallbackPage.locator('#view-notice').isVisible(), true);
   assert.equal(await fallbackPage.locator('#status').isVisible(), true);
-  assert.equal(await fallbackPage.locator('.graph-node').count(), 9);
+  assert.equal(await fallbackPage.locator('.graph-node').count(), 42);
   await fallbackPage.locator('[data-view="list"]').click();
   await expectView(fallbackPage, 'list');
   await fallbackPage.locator('[data-view="3d"]').click();
@@ -285,7 +304,7 @@ try {
   await expectView(racePage, 'list');
   assert.equal(await racePage.locator('.zoom-tools').isVisible(), false);
   await racePage.locator('[data-view="3d"]').click();
-  await expectReal3D(racePage,9);
+  await expectReal3D(racePage,42);
   await raceContext.close();
 
   assert.deepEqual(errors, [], 'Browser JavaScript errors');
