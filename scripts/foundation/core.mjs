@@ -40,6 +40,7 @@ export function validateRegistry(registry,{fixtureMode=false}={}) {
     const id=row.entity_id??row.security_id;
     requireValid(row.source_urls.length>0 && row.source_urls.every(u=>checkUrl(u,fixtureMode)),`Identity ${id} needs official source URLs`);
     if(row.security_id) requireValid(entities.has(row.issuer_id),`Unknown issuer ${row.issuer_id}`);
+    for(const alias of row.aliases??[]) requireValid(!alias.valid_from || !alias.valid_to || alias.valid_from<=alias.valid_to,`Invalid alias interval ${id}: ${alias.name}`);
     for(const ident of row.identifiers) {
       requireValid(checkUrl(ident.evidence_url,fixtureMode),`Invalid identity evidence URL ${id}`);
       requireValid(!ident.valid_from || !ident.valid_to || ident.valid_from<=ident.valid_to,`Invalid identity interval ${id}`);
@@ -48,8 +49,12 @@ export function validateRegistry(registry,{fixtureMode=false}={}) {
       identifiers.set(key,[...(identifiers.get(key)??[]),{id,ident}]);
     }
   }
-  for(const listing of registry.listings) requireValid(securities.has(listing.security_id)&&checkUrl(listing.evidence_url,fixtureMode),`Invalid listing ${listing.listing_id}`);
+  for(const listing of registry.listings) {
+    requireValid(securities.has(listing.security_id)&&checkUrl(listing.evidence_url,fixtureMode),`Invalid listing ${listing.listing_id}`);
+    requireValid(!listing.valid_from || !listing.valid_to || listing.valid_from<=listing.valid_to,`Invalid listing interval ${listing.listing_id}`);
+  }
   for(const p of registry.perimeters) {
+    requireValid(!p.valid_from || !p.valid_to || p.valid_from<=p.valid_to,`Invalid perimeter interval ${p.reporting_perimeter_id}@${p.version}`);
     requireValid(entities.has(p.reporting_entity_id),`Unknown reporting entity ${p.reporting_entity_id}`);
     requireValid([...p.included_entity_ids,...p.excluded_entity_ids].every(x=>entities.has(x)),`Unknown perimeter member ${p.reporting_perimeter_id}`);
     requireValid(p.source_urls.length>0&&p.source_urls.every(u=>checkUrl(u,fixtureMode)),`Missing perimeter evidence ${p.reporting_perimeter_id}`);
@@ -63,7 +68,7 @@ export function validateRegistry(registry,{fixtureMode=false}={}) {
     // History is audit-only. It never silently rewrites claims or source identities.
   }
   indexUnique(registry.scope_transitions,'transition_id','scope transition');
-  for(const t of registry.scope_transitions) requireValid(perimeters.has(`${t.from_perimeter_id}@${t.from_version}`)&&perimeters.has(`${t.to_perimeter_id}@${t.to_version}`)&&t.evidence_urls.length>0,`Invalid scope transition ${t.transition_id}`);
+  for(const t of registry.scope_transitions) requireValid(perimeters.has(`${t.from_perimeter_id}@${t.from_version}`)&&perimeters.has(`${t.to_perimeter_id}@${t.to_version}`)&&t.evidence_urls.length>0&&t.evidence_urls.every(u=>checkUrl(u,fixtureMode)),`Invalid scope transition ${t.transition_id}`);
   return {entities,securities,perimeters};
 }
 function mergeRecords(previous,incoming,key) {
