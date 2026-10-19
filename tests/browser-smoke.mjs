@@ -1,3 +1,4 @@
+import {checkLoadingRecovery} from './browser-loading-recovery.mjs';
 import {chromium} from 'playwright';
 import {spawn} from 'node:child_process';
 import {mkdir} from 'node:fs/promises';
@@ -77,6 +78,7 @@ try {
     args: ['--no-sandbox', '--disable-dev-shm-usage', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader']
   });
   await mkdir('artifacts', {recursive: true});
+  await checkLoadingRecovery(browser,origin);
   const context = await browser.newContext({viewport: {width: 1440, height: 1000}});
   const page = await context.newPage();
   watchErrors(page);

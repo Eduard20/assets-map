@@ -122,3 +122,8 @@
 /* Disclosure warnings must remain legible on the dark discovery list. */
 .graph-list .list-root .context-note{background:#102938;border-color:#294651;color:#d9e8ef;font-size:12px}
 @media(max-width:800px){.graph-list .list-root .context-note{font-size:14px}}
+
+/* Recovery stays on the map, outside the phone's collapsed details sheet. */
+.load-feedback{position:absolute;z-index:12;top:48px;left:12px;right:12px;max-width:440px;margin:auto;padding:16px;border:1px solid #b4c8bc;border-radius:12px;background:#f8faf7;color:#233b35;box-shadow:0 6px 28px #102c2733}
+.load-feedback p{margin:0 0 12px;font-size:14px;line-height:1.5}
+.load-feedback button{min-height:44px;min-width:100px}

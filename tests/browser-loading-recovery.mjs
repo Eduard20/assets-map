@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+export async function checkLoadingRecovery(browser,origin){
+ const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+ const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ let fail=true,manifestCalls=0,navigations=0;
+ page.on('framenavigated',frame=>{if(frame===page.mainFrame())navigations++;});
+ await page.route('**/data/portfolios.json*',route=>{manifestCalls++;return fail?route.abort():route.continue();});
+ await page.goto(origin);
+ await page.locator('#load-feedback').waitFor({state:'visible'});
+ assert.equal(await page.locator('#detail-sheet').isVisible(),false,'error cannot depend on hidden details');
+ const box=await page.locator('#retry-dataset').boundingBox();
+ assert.ok(box&&box.x>=0&&box.y>=0&&box.x+box.width<=390&&box.y+box.height<=844,'retry is in phone viewport');
+ assert.ok(box.height>=44,'retry has a touch-sized target');
+ await page.screenshot({path:'artifacts/loading-recovery-phone.png',fullPage:true});
+ fail=false;await page.locator('#retry-dataset').tap();
+ await page.waitForFunction(()=>window.__assetsMap?.getModel()?.meta.mode==='portfolios'&&document.querySelector('#graph-stage').getAttribute('aria-busy')==='false');
+ assert.equal(manifestCalls,2);assert.equal(navigations,1,'retry must not reload the document');
+ assert.equal(await page.locator('#load-feedback').isVisible(),false);
+ await page.route('**/data/researched.json*',route=>route.fulfill({status:200,contentType:'application/json',body:'{}'}));
+ await page.locator('#mobile-options').tap();
+ await page.locator('#dataset').selectOption('researched');
+ await page.locator('#load-feedback').waitFor({state:'visible'});
+ assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().meta.mode),'portfolios');
+ assert.match(await page.locator('#load-feedback-text').textContent(),/current map is unchanged/);
+ await page.unroute('**/data/researched.json*');
+ await page.locator('#retry-dataset').tap();
+ await page.waitForFunction(()=>window.__assetsMap?.getModel()?.meta.mode==='researched');
+ assert.equal(navigations,1);assert.deepEqual(errors,[]);
+ await context.close();
+}
