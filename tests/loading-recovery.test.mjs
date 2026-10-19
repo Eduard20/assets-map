@@ -23,7 +23,7 @@ Object.assign(globalThis,{window:dom.window,document:dom.window.document,fetch:a
  }
  if(path==='instrument-equivalence.json')return {ok:true,json:async()=>mode==='mixed'?{...identity,coverage:{...identity.coverage,eligibleSourceRows:999}}:structuredClone(identity)};
  if(rows.has(path))return {ok:true,json:async()=>structuredClone(rows.get(path))};
- return {ok:true,json:async()=>path==='researched.json'?(researchMode==='invalid'?{}:structuredClone(research)):structuredClone(sample)};
+ return {ok:true,json:async()=>path==='researched.json'?(researchMode==='invalid'?{}:researchMode==='missing-meta'?{...research,meta:undefined}:researchMode==='wrong-mode'?structuredClone(sample):structuredClone(research)):structuredClone(sample)};
 }});
 const $=s=>document.querySelector(s);
 const tick=()=>new Promise(r=>setTimeout(r,15));
@@ -63,6 +63,11 @@ test('phone recovery is visible, retries in place, validates atomically and igno
  researchMode='invalid';await api.setDataset('researched');
  assert.equal(api.getModel(),goodModel);assert.equal(api.getState(),goodState);assert.equal(api.getGraph(),goodGraph);
  assert.equal($('#dataset').value,'portfolios');assert.equal($('#load-feedback').hidden,false);
+ for(const bad of ['missing-meta','wrong-mode']){
+  researchMode=bad;await api.setDataset('researched');
+  assert.equal(api.getModel(),goodModel);assert.equal(api.getState(),goodState);assert.equal(api.getGraph(),goodGraph);
+  assert.equal($('#load-feedback').hidden,false);
+ }
  researchMode='ok';await api.setDataset('researched');
  assert.equal(api.getModel().meta.mode,'researched');assert.equal($('#load-feedback').hidden,true);
 });

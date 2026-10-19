@@ -189,6 +189,8 @@ async function setDataset(name,portfolioId){
       bundle=await json('../data/portfolios.json?v=20261018-vga1');
       if(bundle.schemaVersion!==1||!Array.isArray(bundle.portfolios)||!bundle.portfolios.length||new Set(bundle.portfolios.map(p=>p.portfolioId)).size!==bundle.portfolios.length)throw new Error('Invalid portfolio manifest');
       const [portfolios,identity]=await Promise.all([Promise.all(bundle.portfolios.map(async summary=>{
+        if(typeof summary.filer?.name!=='string'||!Number.isSafeInteger(summary.reconciliation?.shareRowCount)||summary.reconciliation.shareRowCount<0||!Array.isArray(summary.sources)||
+          (summary.dataQuality?.warnings!==undefined&&!Array.isArray(summary.dataQuality.warnings)))throw new Error('Invalid portfolio summary');
         if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');
         return decodePortfolio(summary,await json('../data/'+summary.dataFile+'?v=20261018-vga1'));
       })),json('../data/instrument-equivalence.json?v=20261018-vga1')]);
@@ -196,6 +198,8 @@ async function setDataset(name,portfolioId){
     }
     if(!next){next=createModel(await json(name==='researched'?'../data/researched.json':'../data/graph.json'));}
     if(!next.nodeMap.has(next.rootId))throw new Error('Dataset has no valid root');
+    if(!next.meta||typeof next.meta.updatedAt!=='string'||(next.meta.notes!==undefined&&!Array.isArray(next.meta.notes))||
+      (name==='researched'&&next.meta.mode!=='researched')||(name==='sample'&&next.meta.mode!==undefined&&next.meta.mode!=='sample'))throw new Error('Invalid dataset metadata');
   }catch(error){
     if(request!==datasetRequest)return;
     $('#graph-stage').setAttribute('aria-busy','false');
