@@ -6,7 +6,7 @@ import {Graph2D} from './graph-2d.js?v=20261018-data2';
 const $=selector=>document.querySelector(selector);
 let model,state,graph,renderer3D,renderer3DPromise,toastTimer,viewRequest=0,datasetRequest=0;
 const datasets=new Map();
-let portfolioBundle,holdingsQuery='',holdingsPageIndex=0;
+let portfolioBundle,failedDataset=null,holdingsQuery='',holdingsPageIndex=0;
 let focusHistory=[];
 const phoneQuery=()=>window.matchMedia?.('(max-width: 800px), (max-width: 1000px) and (max-height: 500px)').matches||false;
 let mobilePanel=null,mobileReturnFocus=null;
@@ -156,7 +156,8 @@ function bind(){
   $('#holdings-search').addEventListener('input',e=>{holdingsQuery=e.target.value;holdingsPageIndex=0;renderList();setView('list');});
   document.addEventListener('click',e=>{const openHoldings=e.target.closest('[data-open-holdings]');if(openHoldings){if(openHoldings.dataset.openHoldings)changePortfolio(openHoldings.dataset.openHoldings);else rememberFocus();state.listMode='rows';holdingsPageIndex=0;render();setView('list');if(phoneQuery())openMobilePanel('controls');$('#holdings-search').focus();}const page=e.target.closest('[data-holdings-page]');if(page&&!page.disabled){holdingsPageIndex=Number(page.dataset.holdingsPage);renderList();$('#graph-list').scrollTop=0;}});
 
-  $('#dataset').addEventListener('change',e=>setDataset(e.target.value).catch(error=>{console.error(error);$('#dataset').value=isPortfolio()?'portfolios':isResearch()?'researched':'sample';toast('That data view could not load. Your current map is unchanged.');}));
+  $('#dataset').addEventListener('change',e=>setDataset(e.target.value));
+  $('#retry-dataset').addEventListener('click',()=>{if(failedDataset)setDataset(failedDataset);});
   document.addEventListener('click',e=>{const search=e.target.closest('[data-search-node]');if(search){exploreRoot(search.dataset.searchNode);$('#search').value='';if(phoneQuery())$('#search').blur();return;}const focus=e.target.closest('[data-focus]');if(focus){exploreRoot(focus.dataset.focus);return;}if(e.target.closest('#detail-panel,#graph-list')){const node=e.target.closest('[data-select]'),edge=e.target.closest('[data-edge]'),expand=e.target.closest('[data-expand]');if(node){
     const fromList=Boolean(node.closest('#graph-list')),id=node.dataset.select;
     const rowIndex=fromList?[...$('#graph-list').querySelectorAll('[data-select]')].indexOf(node):-1;
@@ -178,16 +179,37 @@ async function setDataset(name,portfolioId){
   if(!['portfolios','researched','sample'].includes(name))throw new Error('Unknown data view');
   closeMobilePanel();
   const request=++datasetRequest;
-  let next=datasets.get(name);
-  if(name==='portfolios'&&!next){
-    try{
-      if(!portfolioBundle){const response=await fetch(new URL('../data/portfolios.json?v=20261018-vga1',import.meta.url));if(!response.ok)throw new Error('Portfolio manifest unavailable');portfolioBundle=await response.json();}
-      const [portfolios,identity]=await Promise.all([Promise.all(portfolioBundle.portfolios.map(async summary=>{if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');const response=await fetch(new URL('../data/'+summary.dataFile+'?v=20261018-vga1',import.meta.url));if(!response.ok)throw new Error('Portfolio rows unavailable');return decodePortfolio(summary,await response.json());})),fetch(new URL('../data/instrument-equivalence.json?v=20261018-vga1',import.meta.url)).then(async response=>{if(!response.ok)throw new Error('Instrument identity map unavailable');return response.json();})]);
-      next=createPortfolioNetwork(portfolios,identity);datasets.set('portfolios',next);
-    }catch(error){if(request!==datasetRequest)return;throw error;}
+  failedDataset=null;$('#load-feedback').hidden=true;$('#retry-dataset').disabled=true;
+  $('#graph-stage').setAttribute('aria-busy','true');
+  let next=datasets.get(name),bundle=portfolioBundle;
+  try{
+    const json=async path=>{const response=await fetch(new URL(path,import.meta.url),{cache:'no-cache'});if(!response.ok)throw new Error(`Dataset request failed (${response.status})`);return response.json();};
+    if(name==='portfolios'&&!next){
+      // A manifest belongs to a complete validated bundle, never a failed attempt.
+      bundle=await json('../data/portfolios.json?v=20261018-vga1');
+      if(bundle.schemaVersion!==1||!Array.isArray(bundle.portfolios)||!bundle.portfolios.length||new Set(bundle.portfolios.map(p=>p.portfolioId)).size!==bundle.portfolios.length)throw new Error('Invalid portfolio manifest');
+      const [portfolios,identity]=await Promise.all([Promise.all(bundle.portfolios.map(async summary=>{
+        if(!/^[a-z0-9_-]+\.json$/.test(summary.dataFile))throw new Error('Invalid portfolio path');
+        return decodePortfolio(summary,await json('../data/'+summary.dataFile+'?v=20261018-vga1'));
+      })),json('../data/instrument-equivalence.json?v=20261018-vga1')]);
+      next=createPortfolioNetwork(portfolios,identity);
+    }
+    if(!next){next=createModel(await json(name==='researched'?'../data/researched.json':'../data/graph.json'));}
+    if(!next.nodeMap.has(next.rootId))throw new Error('Dataset has no valid root');
+  }catch(error){
+    if(request!==datasetRequest)return;
+    $('#graph-stage').setAttribute('aria-busy','false');
+    failedDataset=name;$('#retry-dataset').disabled=false;
+    $('#load-feedback-text').textContent=`${name==='portfolios'?'The portfolio map':name==='researched'?'Historical disclosures':'The illustrative sample'} could not load. ${model?'Your current map is unchanged.':'Try again or choose another data view in Options.'}`;
+    $('#load-feedback').hidden=false;
+    if(model)$('#dataset').value=isPortfolio()?'portfolios':isResearch()?'researched':'sample';
+    else {$('#visible-count').textContent='Map unavailable';$('#mobile-selection-name').textContent='Map unavailable';}
+    return;
   }
-  if(!next){try{const response=await fetch(new URL(name==='researched'?'../data/researched.json':'../data/graph.json',import.meta.url));if(!response.ok)throw new Error(`Dataset request failed (${response.status})`);next=createModel(await response.json());datasets.set(name,next);}catch(error){if(request!==datasetRequest)return;throw error;}}
   if(request!==datasetRequest)return;
+  // Only the newest successful request can publish or cache a complete model.
+  datasets.set(name,next);if(name==='portfolios')portfolioBundle=bundle;
+  $('#graph-stage').setAttribute('aria-busy','false');$('#load-feedback').hidden=true;
   ++viewRequest;model=next;state=initialState(model);focusHistory=[];$('#dataset').value=name;$('#direction').value='both';$('#search').value='';closeSearch();$('#info-dialog').close();
   $('#portfolio-controls').hidden=!isPortfolio();$('.filter-row').hidden=isPortfolio();
   holdingsQuery='';holdingsPageIndex=0;$('#holdings-search').value='';$('#top-n').value='20';
@@ -199,7 +221,11 @@ async function setDataset(name,portfolioId){
   $('#dataset-context').textContent=isPortfolio()?`${portfolioBundle.portfolios.length} filers · ${portfolioBundle.portfolios.reduce((n,p)=>n+p.reconciliation.shareRowCount,0).toLocaleString()} reported share rows · Historical snapshots`:isResearch()?`${model.edges.length} reviewed disclosures · Not current holdings · Evidence views may repeat portfolio rows; never add them as extra holdings`:'17 entities · 12 illustrative connections';
   $('#updated-at').textContent=`${isResearch()?'Reviewed':'Updated'} ${dateLabel(model.meta.updatedAt)}`;
   $('#map-disclaimer').textContent=isPortfolio()?`One network of ${portfolioBundle.portfolios.length} imported filers. Links show reported investment discretion, not legal ownership or control. Exact instruments connect across filers; unmatched classes stay separate.`:isResearch()?'Historical source snapshots. Managed discretion, beneficial attribution and voting are different roles.':'Connections show reported relationships. Managed holdings are distinct from corporate ownership.';
-  document.querySelectorAll('button,input,select').forEach(el=>el.disabled=false);renderer2D.fit();render();await setView('3d');renderer3D?.fit();
+  document.querySelectorAll('button,input,select').forEach(el=>el.disabled=false);renderer2D.fit();render();await setView('3d');if(request===datasetRequest)renderer3D?.fit();
 }
-export async function start(){try{document.querySelectorAll('button,input,select').forEach(el=>el.disabled=!['dataset','mobile-options','close-mobile-controls','mobile-apply-controls','mobile-scrim','mobile-details','close-mobile-details'].includes(el.id));bind();window.__assetsMap={getState:()=>state,getModel:()=>model,getGraph:()=>graph,selectNode,selectEdge,exploreRoot,goBack,setView,setDataset,getCameraState:()=>renderer3D?{position:renderer3D.camera.position.toArray(),target:renderer3D.controls.target.toArray()}:null};await setDataset('portfolios');}catch(error){console.error(error);$('#detail-panel').innerHTML='<div class="load-error"><h2>The portfolio map could not load.</h2><p>Please refresh or choose historical disclosures / the illustrative sample.</p><button onclick="location.reload()" class="primary-button">Try again</button></div>';$('#visible-count').textContent='Map unavailable';}}
+export async function start(){
+  document.querySelectorAll('button,input,select').forEach(el=>el.disabled=!['dataset','mobile-options','close-mobile-controls','mobile-apply-controls','mobile-scrim','mobile-details','close-mobile-details'].includes(el.id));
+  bind();window.__assetsMap={getState:()=>state,getModel:()=>model,getGraph:()=>graph,selectNode,selectEdge,exploreRoot,goBack,setView,setDataset,getCameraState:()=>renderer3D?{position:renderer3D.camera.position.toArray(),target:renderer3D.controls.target.toArray()}:null};
+  await setDataset('portfolios');
+}
 start();
