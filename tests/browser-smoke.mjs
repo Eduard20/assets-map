@@ -331,12 +331,17 @@ try {
     assert.equal(await touchPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
     assert.ok(await touchPage.locator('.shared-instrument-row').count()>0);
     await touchPage.locator(`.shared-instrument-row[data-select="${appleId}"]`).tap();
-    await touchPage.locator('#mobile-details').tap();
+    assert.equal(await touchPage.locator('#detail-sheet').getAttribute('aria-modal'),'true');
     assert.match(await touchPage.locator('#detail-panel').textContent(),/7 REPORTED INVESTORS/);
     await touchPage.locator('#detail-panel [data-edge]').first().tap();
     await touchPage.locator('#detail-panel [data-edge]').first().tap();
     assert.match(await touchPage.locator('#detail-panel').textContent(),/Information-table row/);
     await touchPage.locator('#close-mobile-details').tap();
+    await expectView(touchPage,'list');
+    assert.equal(await touchPage.evaluate(()=>document.activeElement?.dataset.select),appleId);
+    await touchPage.locator(`.shared-instrument-row[data-select="${appleId}"]`).tap();
+    assert.equal(await touchPage.locator('#detail-sheet').getAttribute('aria-modal'),'true');
+    await touchPage.keyboard.press('Escape');
     await touchPage.locator('#focus-back').tap();
     await touchPage.screenshot({path:`artifacts/shared-discovery-phone-${viewport.width}.png`,fullPage:true});
     await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,initialNetworkNodes);
