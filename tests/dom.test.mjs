@@ -230,3 +230,31 @@ test('shared securities mode keeps filer scope, evidence, Back, empty states and
  click('#reset-map');assert.equal($('#holdings-mode').value,'rows');assert.equal($('#holdings-search').value,'');
  await window.__assetsMap.setDataset('researched');await window.__assetsMap.setDataset('portfolios');assert.equal($('#holdings-mode').value,'rows');
 });
+
+test('phone list rows open investor details immediately and restore the selected row after drill-down',async()=>{
+ const previous=window.matchMedia;window.matchMedia=()=>({matches:true});
+ try{
+  await window.__assetsMap.setDataset('portfolios');
+  for(const mode of ['rows','shared']){
+   $('#holdings-mode').value=mode;$('#holdings-mode').dispatchEvent(new dom.window.Event('change'));
+   $('#holdings-search').value='APPLE INC';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
+   const id=$('.holding-row').dataset.select;
+   click('.holding-row');
+   assert.equal($('#detail-sheet').getAttribute('aria-modal'),'true');
+   assert.equal(window.__assetsMap.getState().view,'list');
+   assert.match($('#detail-panel').textContent,/7 REPORTED INVESTORS/);
+   click('#detail-panel [data-edge]');click('#detail-panel [data-edge]');
+   assert.match($('#detail-panel').textContent,/Information-table row/);
+   click('#close-mobile-details');
+   assert.equal($('#mobile-scrim').hidden,true);
+   assert.equal(document.activeElement.dataset.select,id);
+   assert.equal(document.activeElement.closest('#graph-list'),$('#graph-list'));
+   click('.holding-row');assert.equal($('#detail-sheet').getAttribute('aria-modal'),'true');
+   document.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+   assert.equal($('#detail-sheet').hasAttribute('aria-modal'),false);
+  }
+  await window.__assetsMap.setView('2d');
+  window.__assetsMap.selectNode('blackrock-2026-06-30');
+  assert.equal($('#detail-sheet').hasAttribute('aria-modal'),false,'graph navigation must stay unobstructed');
+ }finally{window.matchMedia=previous;}
+});
