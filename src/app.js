@@ -1,3 +1,4 @@
+import {mountInstitutionalPilot} from './institutional-view.js';
 import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261018-data2';
 import {researchDetails} from './research-view.js?v=20261018-data2';
 import {portfolioModel,decodePortfolio,holdingsPage,portfolioPositionDetails,portfolioInstrumentDetails,portfolioOverview,HOLDINGS_PAGE_SIZE} from './portfolio-view.js?v=20261018-data2';
@@ -228,6 +229,7 @@ async function setDataset(name,portfolioId){
   document.querySelectorAll('button,input,select').forEach(el=>el.disabled=false);renderer2D.fit();render();await setView('3d');if(request===datasetRequest)renderer3D?.fit();
 }
 export async function start(){
+  mountInstitutionalPilot({document,launcher:$('#institutional-launcher'),beforeOpen:closeMobilePanel});
   document.querySelectorAll('button,input,select').forEach(el=>el.disabled=!['dataset','mobile-options','close-mobile-controls','mobile-apply-controls','mobile-scrim','mobile-details','close-mobile-details'].includes(el.id));
   bind();window.__assetsMap={getState:()=>state,getModel:()=>model,getGraph:()=>graph,selectNode,selectEdge,exploreRoot,goBack,setView,setDataset,getCameraState:()=>renderer3D?{position:renderer3D.camera.position.toArray(),target:renderer3D.controls.target.toArray()}:null};
   await setDataset('portfolios');
