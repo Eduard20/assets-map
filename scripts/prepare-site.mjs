@@ -3,7 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 export const PUBLIC_FILES=Object.freeze([
   'index.html','style.css','icon.svg','data/graph.json','data/researched.json','data/portfolios.json','data/instrument-equivalence.json','data/berkshire-2026-06-30.json','data/blackrock-2026-06-30.json','data/statestreet-2026-06-30.json','data/vanguardglobaladvisers-2026-06-30.json','data/geode-2026-06-30.json','data/jpmorgan-2026-06-30.json','data/morganstanley-2026-06-30.json','data/goldmansachs-2026-06-30.json','data/norgesbank-2026-06-30.json','data/pif-2026-06-30.json',
-  'src/app.js','src/research-view.js','src/portfolio-view.js','src/portfolio-network.js','src/shared-network-layout.js','src/graph-model.js','src/graph-2d.js','src/graph-3d.js','src/bubble-layout.js',
+  'src/institutional.css','src/institutional-data.js','src/institutional-view.js','src/app.js','src/research-view.js','src/portfolio-view.js','src/portfolio-network.js','src/shared-network-layout.js','src/graph-model.js','src/graph-2d.js','src/graph-3d.js','src/bubble-layout.js',
   'vendor/three.module.min.js','vendor/three.core.min.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt'
 ]);
 export async function prepareSite(destination,root=fileURLToPath(new URL('../',import.meta.url))) {
