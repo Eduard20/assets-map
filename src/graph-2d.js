@@ -110,6 +110,13 @@ export class Graph2D {
   }
 
   update(graph,state,model) {
+    // Redraw replaces the SVG buttons. Retain only focus actually owned by
+    // this graph; selection state alone must never steal focus from controls.
+    const active=this.layer.ownerDocument.activeElement;
+    const focused=this.layer.contains(active)?active?.closest('[data-node],[data-edge]'):null;
+    const focusKind=focused?.hasAttribute('data-node')?'node':focused?.hasAttribute('data-edge')?'edge':null;
+    const focusId=focusKind?focused.dataset[focusKind]:null;
+    this.keyboardId=null;
     this.graph=graph;this.state=state;const compact=this.container.clientWidth>0&&this.container.clientWidth<560;
     this.positions=graph.network?layoutSharedNetwork(graph,{portrait:compact,mode:'2d'}):layoutGraph(graph,state.rootId);
     if(compact&&!graph.network){let i=0;for(const [id,p] of this.positions){if(id===state.rootId)continue;const count=graph.nodes.length-1;if(count<=3){p.x*=.46;p.y*=.72;}else{p.x=i%2===0?-105:105;p.y=105+Math.floor(i/2)*95;i++;}}} const items=[]; const E=escapeHtml;
@@ -136,6 +143,10 @@ export class Graph2D {
       }
     }else this.overviewBounds=null;
     if(this.focusedId===state.rootId)this.focus(this.focusedId);else this.focusedId=null;
+    if(focusKind){
+      const replacement=[...this.layer.querySelectorAll(`[data-${focusKind}]`)].find(element=>element.dataset[focusKind]===focusId);
+      replacement?.focus({preventScroll:true});
+    }
   }
   applyTransform(){this.layer.setAttribute('transform',`translate(${this.pan.x},${this.pan.y}) scale(${this.zoom})`);this.updateNodePresentation();}
   clampZoom(value){return Math.max(.45,Math.min(this.graph?.network?10:3.5,value));}

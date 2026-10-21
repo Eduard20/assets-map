@@ -1,3 +1,4 @@
+import {check2DFocus} from './browser-2d-focus.mjs';
 import {checkLoadingRecovery} from './browser-loading-recovery.mjs';
 import {chromium} from 'playwright';
 import {spawn} from 'node:child_process';
@@ -79,6 +80,7 @@ try {
   });
   await mkdir('artifacts', {recursive: true});
   await checkLoadingRecovery(browser,origin);
+  await check2DFocus(browser,origin);
   const context = await browser.newContext({viewport: {width: 1440, height: 1000}});
   const page = await context.newPage();
   watchErrors(page);
