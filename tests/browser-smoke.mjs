@@ -6,10 +6,10 @@ import assert from 'node:assert/strict';
 
 const portfolioIds = [
   'berkshire-2026-06-30','blackrock-2026-06-30','geode-2026-06-30','goldmansachs-2026-06-30',
-  'jpmorgan-2026-06-30','morganstanley-2026-06-30','norgesbank-2026-06-30','statestreet-2026-06-30','vanguardglobaladvisers-2026-06-30'
+  'jpmorgan-2026-06-30','morganstanley-2026-06-30','norgesbank-2026-06-30','pif-2026-06-30','statestreet-2026-06-30','vanguardglobaladvisers-2026-06-30'
 ];
-const initialNetworkNodes = 99;
-const eligibleHoldingRows = 158145;
+const initialNetworkNodes = 105;
+const eligibleHoldingRows = 158150;
 const origin = 'http://127.0.0.1:8088';
 const server = spawn(process.execPath, ['scripts/serve.mjs'], {
   env: {...process.env, PORT: '8088'}, stdio: 'pipe'
@@ -93,9 +93,9 @@ try {
   await page.setViewportSize({width:1440,height:1000});
   assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);
-  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),331);
-  assert.deepEqual(await page.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds,'all nine admitted managers are selectable');
-  assert.equal(await page.locator('#portfolio option').count(),10,'nine managers plus the shared-network option');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),364);
+  assert.deepEqual(await page.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds,'all ten admitted managers are selectable');
+  assert.equal(await page.locator('#portfolio option').count(),11,'ten managers plus the shared-network option');
   const startingIds=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort());
   const appleId='shared-instrument-282';
   // Keyboard can reach all network securities even when dense labels are decluttered.
@@ -361,10 +361,20 @@ try {
   await expectReal3D(touchPage,geodeBefore.ids.length);
   await touchPage.locator('#graph-3d button[data-node-id="vanguardglobaladvisers-2026-06-30"]').tap();
   assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='vanguardglobaladvisers-2026-06-30').length)>geodeBefore.holdings,'phone tap opens more of the new manager’s actual holdings');
-  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(node=>node.kind==='manager').length),9,'new manager exploration retains all nine managers');
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(node=>node.kind==='manager').length),10,'new manager exploration retains all ten managers');
   await touchPage.screenshot({path:'artifacts/network-phone-vga.png',fullPage:true});
   await touchPage.locator('#focus-back').tap();
   assert.deepEqual(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.map(node=>node.id).sort()),geodeBefore.ids,'phone Back restores the new manager’s surrounding context');
+  await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,initialNetworkNodes);
+  // PIF's complete five-row slice is connected, and its excluded-manager scope stays visible.
+  await touchPage.locator('#mobile-options').tap();
+  await touchPage.locator('#portfolio').selectOption('pif-2026-06-30');
+  await touchPage.locator('#close-mobile-controls').tap();
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getState().rootId),'pif-2026-06-30');
+  assert.match(await touchPage.locator('#detail-panel').textContent(),/Saudi Electronic Games Holding Co/);
+  assert.match(await touchPage.locator('#detail-panel').textContent(),/separately reported holdings are outside this information table/);
+  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='pif-2026-06-30').length),5);
+  await touchPage.screenshot({path:'artifacts/network-phone-pif.png',fullPage:true});
   await touchPage.locator('#reset-map').tap();await expectReal3D(touchPage,initialNetworkNodes);
   await touchPage.locator('#mobile-options').tap();
   assert.equal(await touchPage.locator('#mobile-controls').getAttribute('aria-modal'),'true');
