@@ -9,6 +9,7 @@ import {buildVisibleGraph,initialState} from '../src/graph-model.js';
 const manifest=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url)));
 const load=async p=>decodePortfolio(p,JSON.parse(await readFile(new URL('../data/'+p.dataFile,import.meta.url))));
 const expected={
+ 'pif-2026-06-30':{reported:5,total:'37908748002',shares:5,shareValue:'37908748002',instruments:5},
  'vanguardglobaladvisers-2026-06-30':{reported:3638,total:'214603824175',shares:3635,shareValue:'214603821939',instruments:3635},
  'berkshire-2026-06-30':{reported:89,total:'299253556246',shares:89,shareValue:'299253556246',instruments:29},
  'blackrock-2026-06-30':{reported:49968,total:'6729538649155',shares:49286,shareValue:'6706454577631',instruments:5442},
@@ -19,14 +20,14 @@ const expected={
  'goldmansachs-2026-06-30':{reported:14070,total:'1151631766592',shares:12904,shareValue:'953071672750',instruments:5471},
  'norgesbank-2026-06-30':{reported:1617,total:'1003234964718',shares:1616,shareValue:'1003234702801',instruments:1616}
 };
-test('all nine admitted complete filings reproduce exact public compact data',async()=>{
- const result=await exportPortfolios({check:true});assert.equal(result.portfolios,9);assert.equal(result.positions,158145);assert.ok(result.bytes<13000000);
+test('all ten admitted complete filings reproduce exact public compact data',async()=>{
+ const result=await exportPortfolios({check:true});assert.equal(result.portfolios,10);assert.equal(result.positions,158150);assert.ok(result.bytes<13000000);
  assert.deepEqual(manifest.portfolios.map(p=>p.portfolioId).sort(),Object.keys(expected).sort());
- assert.equal(manifest.portfolios.reduce((n,p)=>n+p.reconciliation.reportedRowCount,0),162082);
+ assert.equal(manifest.portfolios.reduce((n,p)=>n+p.reconciliation.reportedRowCount,0),162087);
  assert.equal(manifest.portfolios.reduce((n,p)=>n+p.reconciliation.excludedRowCount,0),3937);
  for(const p of manifest.portfolios){
   const rows=(await load(p)).positions,want=expected[p.portfolioId],r=p.reconciliation;
-  assert.equal(p.reportingDate,'2026-06-30');assert.equal(p.checkedThrough,'2026-10-18');
+  assert.equal(p.reportingDate,'2026-06-30');assert.equal(p.checkedThrough,p.portfolioId==='pif-2026-06-30'?'2026-10-19':'2026-10-18');
   assert.equal(r.reportedRowCount,want.reported);assert.equal(r.totalValueUsd,want.total);
   assert.equal(rows.length,want.shares);assert.equal(r.shareRowCount,want.shares);assert.equal(r.shareValueUsd,want.shareValue);
   assert.equal(rows.reduce((n,row)=>n+BigInt(row.valueUsd),0n).toString(),want.shareValue);
@@ -36,7 +37,7 @@ test('all nine admitted complete filings reproduce exact public compact data',as
   assert.ok(!JSON.stringify(p).match(/cusip|figi|acceptedAt|api_key|raw_content/i));
  }
 });
-test('every exported row remains identical to its admitted source row across all nine filers',async()=>{
+test('every exported row remains identical to its admitted source row across all ten filers',async()=>{
  for(const p of manifest.portfolios){
   const slug=p.portfolioId.replace('-2026-06-30',''),base=new URL('../data-foundation/portfolios/input/',import.meta.url);
   const raw=gunzipSync(await readFile(new URL(slug+'.normalized.json.gz',base))).toString('utf8');
@@ -51,17 +52,17 @@ test('every exported row remains identical to its admitted source row across all
   if(input.importedBy)assert.notEqual(review.reviewer,input.importedBy);
  }
 });
-test('expanded identity release covers exactly nine filers and keeps unmatched instruments separate',async()=>{
+test('expanded identity release covers exactly ten filers and keeps unmatched instruments separate',async()=>{
  const identity=JSON.parse(await readFile(new URL('../data/instrument-equivalence.json',import.meta.url)));
  assert.equal(identity.groups.length,5657);assert.equal(identity.coverage.matchedGroups,5657);
- assert.equal(identity.coverage.eligibleSourceRows,158145);
- assert.equal(identity.coverage.eligibleSourceScopedInstruments,39427);
- assert.equal(identity.coverage.matchedSourceScopedInstruments,24592);
+ assert.equal(identity.coverage.eligibleSourceRows,158150);
+ assert.equal(identity.coverage.eligibleSourceScopedInstruments,39432);
+ assert.equal(identity.coverage.matchedSourceScopedInstruments,24597);
  assert.equal(identity.coverage.unmatchedSourceScopedInstruments,14835);
  assert.equal(identity.groups.length+identity.coverage.unmatchedSourceScopedInstruments,20492);
  assert.deepEqual([...identity.coverage.portfolioIds].sort(),Object.keys(expected).sort());
  const memberships=identity.groups.flatMap(group=>Array.isArray(group)?group:group.members);
- assert.equal(memberships.length,24592);assert.equal(new Set(memberships).size,memberships.length);
+ assert.equal(memberships.length,24597);assert.equal(new Set(memberships).size,memberships.length);
  assert.ok(memberships.every(id=>/^sec13f-\d{10}-\d{2}-\d{6}-security-\d{5,}$/.test(id)));
 });
 test('FMR remains withheld and material source qualifications survive public projection',async()=>{
@@ -142,7 +143,7 @@ test('a failed export writes no public file',async()=>{
  const input=new URL('../data-foundation/portfolios/input/',import.meta.url),data=new URL('../data/',import.meta.url),directory=await mkdtemp(tmpdir()+'/portfolio-partial-');
  const mtimes=async()=>Object.fromEntries(await Promise.all((await readdir(data)).map(async f=>[f,(await stat(new URL(f,data))).mtimeMs])));
  try{
-  // Eight of nine admitted filers: every batch is valid, but the identity map no longer matches.
+  // Eight of ten admitted filers: every batch is valid, but the identity map no longer matches.
   for(const f of (await readdir(input)).filter(f=>!f.startsWith('norgesbank.')))await copyFile(new URL(f,input),directory+'/'+f);
   const before=await mtimes();await assert.rejects(exportPortfolios({directory}),/Identity map portfolio set differs/);assert.deepEqual(await mtimes(),before);
  }finally{await rm(directory,{recursive:true,force:true});}
@@ -158,4 +159,20 @@ test('VGA Apple portfolio and historical role claims are non-additive views of o
  const claims=research.edges.filter(e=>e.source==='ent_vanguard_global_advisers'&&e.target==='ent_apple');assert.deepEqual(claims.map(e=>e.kind).sort(),['managed_holding','voting_authority']);
  for(const claim of claims){assert.equal(claim.asOf,portfolio.reportingDate);assert.ok(claim.disclosure.evidence.some(e=>e.url.includes('/000181124226000015/')));assert.equal(claim.disclosure.metrics.find(m=>m.metric_type==='quantity').value,row.quantity);assert.match(claim.disclosure.caveats.join(' '),/same position/);}
  assert.equal(portfolioModel(portfolio).holdingEdges.filter(e=>e.portfolioPosition.positionId===row.positionId).length,1);
+});
+
+test('PIF is a five-position combination-report slice, not a whole sovereign portfolio',async()=>{
+ const summary=manifest.portfolios.find(p=>p.portfolioId==='pif-2026-06-30');
+ assert.equal(summary.filer.cik,'1767640');
+ assert.match(summary.coverage,/13F COMBINATION REPORT/);
+ assert.match(summary.coverage,/Saudi Electronic Games Holding Co/);
+ assert.match(summary.coverage,/separately reported holdings are outside this information table/);
+ assert.match(summary.coverage,/not proof of legal ownership or a complete investment portfolio/);
+ const portfolio=await load(summary);
+ assert.deepEqual(portfolio.positions.map(p=>p.issuerName),['CLARITEV CORPORATION','ELECTRONIC ARTS INC','LUCID GROUP INC','SPACE EXPLORATION TECHN CORP','UBER TECHNOLOGIES INC']);
+ assert.equal(portfolio.positions.reduce((n,p)=>n+BigInt(p.valueUsd),0n),37908748002n);
+ const {portfolioOverview}=await import('../src/portfolio-view.js');
+ const html=portfolioOverview(portfolioModel(portfolio));
+ assert.match(html,/Saudi Electronic Games Holding Co/);
+ assert.match(html,/This is not whole AUM/);
 });

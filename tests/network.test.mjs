@@ -10,26 +10,26 @@ const portfolios=await Promise.all(manifest.portfolios.map(async p=>decodePortfo
 const identity=JSON.parse(await readFile(new URL('../data/instrument-equivalence.json',import.meta.url)));
 const model=createPortfolioNetwork(portfolios,identity);
 test('shared network joins exact instruments and preserves all filer rows and totals',()=>{
-  assert.equal(model.instrumentCount,20492);assert.equal(model.holdingEdges.length,158145);assert.equal(model.edges.length,39427);
+  assert.equal(model.instrumentCount,20492);assert.equal(model.holdingEdges.length,158150);assert.equal(model.edges.length,39432);
   for(const p of portfolios){const edges=model.edges.filter(e=>e.source===p.portfolioId);assert.equal(edges.reduce((sum,e)=>sum+BigInt(e.portfolioPosition.valueUsd),0n).toString(),p.reconciliation.shareValueUsd);assert.equal(edges.flatMap(e=>e.portfolioPositions).length,p.reconciliation.shareRowCount);}
-  assert.equal(new Set(model.holdingEdges.map(e=>e.portfolioPosition.positionId)).size,158145);
+  assert.equal(new Set(model.holdingEdges.map(e=>e.portfolioPosition.positionId)).size,158150);
   const apple=model.nodes.find(n=>n.label==='APPLE INC'),investors=model.edges.filter(e=>e.target===apple.id);
   assert.equal(investors.length,7);assert.equal(investors.reduce((sum,e)=>sum+e.portfolioPositions.length,0),65);
   assert.match(networkDetails(model,apple.id),/not a complete list of investors/);assert.match(networkDetails(model,apple.id),/not legal ownership or control/);
 });
 test('one shared graph retains all managers and context when focusing a company',()=>{
-  const state=initialState(model),before=buildVisibleGraph(model,state);assert.equal(before.nodes.length,99);assert.equal(before.edges.length,331);assert.equal(before.nodes.filter(n=>n.kind==='manager').length,9);
+  const state=initialState(model),before=buildVisibleGraph(model,state);assert.equal(before.nodes.length,105);assert.equal(before.edges.length,364);assert.equal(before.nodes.filter(n=>n.kind==='manager').length,10);
   const apple=model.nodes.find(n=>n.label==='APPLE INC');state.rootId=apple.id;state.pinnedNodes.add(apple.id);const after=buildVisibleGraph(model,state);
   assert.deepEqual(new Set(after.nodes.map(n=>n.id)),new Set(before.nodes.map(n=>n.id)));assert.deepEqual(after.edges,before.edges);
   for(const root of model.portfolioRoots)state.limits.set(root,60);assert.ok(buildVisibleGraph(model,state).nodes.length>before.nodes.length);assert.ok(buildVisibleGraph(model,state).nodes.length<=200);
-  state.portfolioFilter=model.portfolioRoots[0];const filtered=buildVisibleGraph(model,state);assert.equal(filtered.nodes.filter(n=>n.kind==='manager').length,9);assert.ok(filtered.edges.some(e=>e.source!==state.portfolioFilter),'Other known investors remain connected through shared securities');
+  state.portfolioFilter=model.portfolioRoots[0];const filtered=buildVisibleGraph(model,state);assert.equal(filtered.nodes.filter(n=>n.kind==='manager').length,10);assert.ok(filtered.edges.some(e=>e.source!==state.portfolioFilter),'Other known investors remain connected through shared securities');
 });
 test('unknown, duplicate or malformed equivalence memberships fail closed',()=>{
   assert.throws(()=>createPortfolioNetwork(portfolios,{...identity,groups:[['unknown','also-unknown']]}),/Unknown/);
   assert.throws(()=>createPortfolioNetwork(portfolios,{...identity,groups:[identity.groups[0],identity.groups[0]]}),/repeated/);
 });
 
-test('public identity map is byte-bound to independently approved exact-match release',async()=>{const bytes=await readFile(new URL('../data/instrument-equivalence.json',import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),'951161d454a617f61594d8f91abd98389a7222429a1d35058d7ccd827b12d686');assert.equal(identity.admission.status,'approved');assert.throws(()=>createPortfolioNetwork(portfolios,{...identity,admission:{status:'pending'}}),/independent review/);});
+test('public identity map is byte-bound to independently approved exact-match release',async()=>{const bytes=await readFile(new URL('../data/instrument-equivalence.json',import.meta.url));assert.equal(createHash('sha256').update(bytes).digest('hex'),'252625558d77accbbf70ad98eeff4b67dd477c0413a3b28197d9b16e5cf3ba8a');assert.equal(identity.admission.status,'approved');assert.throws(()=>createPortfolioNetwork(portfolios,{...identity,admission:{status:'pending'}}),/independent review/);});
 
 test('large navigation history cannot exceed the node ceiling or drop current focus',()=>{const state=initialState(model);const securities=model.nodes.filter(n=>n.kind==='asset');state.pinnedNodes=new Set(securities.slice(0,198).map(n=>n.id));state.rootId=securities[250].id;const graph=buildVisibleGraph(model,state);assert.equal(graph.nodes.length,200);assert.ok(graph.nodes.some(n=>n.id===state.rootId));});
 
@@ -66,7 +66,7 @@ test('issuer role links open company investments while retaining distinct share 
   assert.ok(model.roleEdges.every(e=>e.valueUsd===undefined&&e.stakePercent===undefined));
   assert.equal(model.rolePeers.get('berkshire-2026-06-30').size,2);
   assert.notEqual(...[...model.rolePeers.get('berkshire-2026-06-30')]);
-  assert.equal(model.holdingEdges.length,158145);
+  assert.equal(model.holdingEdges.length,158150);
 });
 
 test('exhausted exploration does not advertise a no-op next page',()=>{
@@ -90,7 +90,7 @@ test('switching managers cannot skip unseen holdings by counting incidental neig
 });
 
 test('new bank issuer roles open both incoming investors and outgoing portfolios',async()=>{const {networkNeighborhood}=await import('../src/portfolio-network.js');for(const name of ['jpmorgan','morganstanley','goldmansachs']){const id=name+'-2026-06-30',role=model.roleEdges.find(e=>e.target===id),neighborhood=networkNeighborhood(model,id);assert.ok(role);assert.ok(neighborhood.incoming.length>0);assert.ok(neighborhood.outgoing.length>1000);assert.equal(role.valueUsd,undefined);}});
-test('overview at the node ceiling gives all nine filers an initial neighborhood',()=>{const state=initialState(model);for(const root of model.portfolioRoots)state.limits.set(root,200);const graph=buildVisibleGraph(model,state);assert.equal(graph.nodes.length,200);for(const root of model.portfolioRoots)assert.ok(graph.edges.filter(e=>e.source===root).length>=20);});
+test('overview at the node ceiling gives all ten filers an initial neighborhood',()=>{const state=initialState(model);for(const root of model.portfolioRoots)state.limits.set(root,200);const graph=buildVisibleGraph(model,state);assert.equal(graph.nodes.length,200);for(const root of model.portfolioRoots)assert.ok(graph.edges.filter(e=>e.source===root).length>=Math.min(20,model.edges.filter(e=>e.source===root).length));});
 
 test('independent admission binds the exact pre-admission proposal bytes',()=>{const proposal={...identity,admission:{status:'pending'}};const bytes=JSON.stringify(proposal)+'\n';assert.equal(createHash('sha256').update(bytes).digest('hex'),identity.admission.reviewedInputSha256);});
 
@@ -122,4 +122,13 @@ test('shared discovery never merges names/classes or counts rows and issuer role
  const result=sharedInstrumentsPage(fixture);assert.equal(result.total,2);assert.deepEqual(result.rows.map(row=>row.node.id),['a','b']);assert.ok(result.rows.every(row=>row.filerIds.length===2));
  assert.equal(sharedInstrumentsPage(fixture,{query:'alias from filing'}).total,2);
  assert.equal(sharedInstrumentsPage(fixture,{query:'cl b'}).rows[0].node.id,'b');
+});
+
+test('every admitted PIF instrument connects to other filers without ownership aggregation',()=>{
+ const edges=model.edges.filter(e=>e.source==='pif-2026-06-30');assert.equal(edges.length,5);
+ for(const edge of edges){
+  assert.ok(model.edges.some(other=>other.target===edge.target&&other.source!==edge.source));
+  assert.equal(edge.portfolioPositions.length,1);
+  assert.match(networkDetails(model,edge.target),/not legal ownership or control/);
+ }
 });

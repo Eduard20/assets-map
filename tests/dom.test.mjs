@@ -35,8 +35,8 @@ await waitFor(() => window.__assetsMap && window.__assetsMap.getState()?.view ==
 
 assert.equal(window.__assetsMap.getModel().meta.mode,'portfolios');
 assert.ok(window.__assetsMap.getModel().portfolio.reconciliation.shareRowCount>40000);
-assert.equal(window.__assetsMap.getGraph().nodes.length,99);
-assert.equal(window.__assetsMap.getGraph().edges.length,331);
+assert.equal(window.__assetsMap.getGraph().nodes.length,105);
+assert.equal(window.__assetsMap.getGraph().edges.length,364);
 assert.ok(document.querySelectorAll('.connection-card').length<=24);
 $('#holdings-search').value='apple';$('#holdings-search').dispatchEvent(new dom.window.Event('input'));
 assert.ok(document.querySelectorAll('.holding-row').length>0&&document.querySelectorAll('.holding-row').length<=50);
