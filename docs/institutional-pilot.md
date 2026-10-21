@@ -1,6 +1,6 @@
 # Institutional relationships pilot
 
-This optional, closed-by-default view displays four roster listings, not ownership edges. It never enters graph-model, portfolio totals, security equivalence or issuer identity resolution. The launcher opens a separate modal; closing restores the unchanged portfolio state.
+This optional, closed-by-default view displays four roster listings, not ownership edges. It never enters graph-model, portfolio totals, security equivalence or issuer identity resolution. On phones the launcher lives in Filters to preserve graph height. The launcher opens a separate modal; closing restores the unchanged portfolio state.
 
 ## Verified evidence
 
@@ -15,4 +15,4 @@ Source-as-of and retrieval dates are separate. Retrieval is not tenure or proof 
 
 src/institutional-data.js holds isolated organization-label identities, official evidence references, and a strict field allowlist. Additional people, financial fields, joins, unknown source references, duplicate relationships and invented tenure are rejected. Extending this scope requires a deliberate schema/evidence review; the pilot is not an ingestion pipeline.
 
-The view presents labeled directional relationship cards, an entity filter, and expandable evidence. The explicit category and relationship type remain visible. A native modal supplies focus containment, Escape dismissal and background inertness. Close restores focus; each open starts with all four listings. Responsive acceptance covers 320px, 390px and 1280px widths, no horizontal overflow, source expansion and unchanged holdings state/totals. No new third-party dependencies or requests on initial load are introduced.
+The view presents labeled directional relationship cards, an entity filter, and expandable evidence. The explicit category and relationship type remain visible. A native modal supplies focus containment, Escape dismissal and background inertness. Close restores focus to the launcher on desktop and Filters on phones; each open starts with all four listings. Responsive acceptance covers 320px, 390px and 1280px widths, no horizontal overflow, source expansion and unchanged holdings state/totals. No new third-party dependencies or requests on initial load are introduced.

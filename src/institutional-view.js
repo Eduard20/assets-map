@@ -1,5 +1,5 @@
 import {institutionalPilot,validateInstitutionalPilot} from './institutional-data.js';
-export function mountInstitutionalPilot({document,launcher,beforeOpen=()=>{},data=institutionalPilot}){
+export function mountInstitutionalPilot({document,launcher,beforeOpen=()=>{},returnFocus=()=>launcher,data=institutionalPilot}){
   validateInstitutionalPilot(data);
   const dialog=document.createElement('dialog');dialog.id='institutional-dialog';dialog.setAttribute('aria-labelledby','institutional-title');
   const el=(tag,text,parent=dialog)=>{const node=document.createElement(tag);if(text)node.textContent=text;parent.append(node);return node;};
@@ -32,6 +32,6 @@ export function mountInstitutionalPilot({document,launcher,beforeOpen=()=>{},dat
   const reset=el('button','Show all relationships');reset.type='button';reset.addEventListener('click',()=>{filter.value='all';render();filter.focus();});
   document.body.append(dialog);launcher.setAttribute('aria-haspopup','dialog');launcher.setAttribute('aria-controls',dialog.id);
   launcher.addEventListener('click',()=>{beforeOpen();filter.value='all';render();dialog.showModal();close.focus();});
-  close.addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>launcher.focus());
+  close.addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>returnFocus().focus());
   return {dialog};
 }
