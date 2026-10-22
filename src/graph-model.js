@@ -46,6 +46,21 @@ export function buildVisibleGraph(model, state) {
   }
   return { nodes: [...nodeIds].map(id => model.nodeMap.get(id)).filter(Boolean), edges: model.edges.filter(e => edgeIds.has(e.id)) };
 }
+// Search is navigation, not issuer resolution. Keep exact instrument IDs intact
+// while exposing the source-qualified differences that identical labels hide.
+export function searchResultDetails(model,node) {
+  if (!model.network || node.kind !== 'asset') return [KIND_LABELS[node.kind]+(node.ticker?' · '+node.ticker:'')];
+  const holdings=model.edges.filter(edge=>edge.target===node.id && edge.kind==='managed_holding');
+  const filers=[...new Set(holdings.map(edge=>edge.source))];
+  const dates=[...new Set(holdings.map(edge=>edge.asOf).filter(Boolean))].sort();
+  const scope=filers.length===1?(model.nodeMap.get(filers[0])?.label||'1 imported filer'):`${filers.length} imported filers`;
+  return [`Reported class: ${node.sector||'Not provided'}`,scope+' · '+(dates.length?dates.map(dateLabel).join(', '):'Date not provided')];
+}
+export function searchResultsHtml(model,matches) {
+  const sameName=matches.some((node,index)=>matches.slice(0,index).some(other=>other.label.toLocaleLowerCase()===node.label.toLocaleLowerCase()));
+  const note=model.network&&sameName?'<p class="search-context">Same name, separate reported records. Class descriptions may differ; choose a result to inspect its filers and evidence.</p>':'';
+  return note+matches.map(node=>`<button type="button" data-search-node="${escapeHtml(node.id)}"><span><strong>${escapeHtml(node.label)}</strong>${searchResultDetails(model,node).map(line=>`<small>${escapeHtml(line)}</small>`).join('')}</span><span aria-hidden="true">↗</span></button>`).join('');
+}
 export function searchNodes(model, query) { const q = query.trim().toLocaleLowerCase(); if (!q) return []; return model.nodes.filter(n => [n.label,n.ticker,n.country,n.sector,n.kind].some(v => String(v || '').toLocaleLowerCase().includes(q))).sort((a,b) => Number(b.label.toLowerCase().startsWith(q)) - Number(a.label.toLowerCase().startsWith(q)) || a.label.localeCompare(b.label)).slice(0, 12); }
 export function layoutGraph(graph, rootId) {
   const positions = new Map(); positions.set(rootId, {x:0,y:0,z:0});
