@@ -8,6 +8,7 @@ export async function checkSearchContext(browser,origin){
    const search=page.locator('#search');await search.fill('atlassian');
    const rows=page.locator('#search-results button');assert.equal(await rows.count(),3);
    const ids=await rows.evaluateAll(bs=>bs.map(b=>b.dataset.searchNode));
+   const classes=['CL A','CMN','COMMON'];
    for(const cls of ['CL A','CMN','COMMON'])assert.ok((await rows.allTextContents()).some(t=>t.includes('Reported class: '+cls)));
    assert.ok(await page.locator('.search-context').isVisible());
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
@@ -18,6 +19,15 @@ export async function checkSearchContext(browser,origin){
     await search.fill('atlassian');await page.locator(`[data-search-node="${id}"]`).click();
     assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),id);
     assert.equal(await page.locator('#search-results').isVisible(),false);
+    assert.equal(await page.evaluate(()=>window.__assetsMap.getState().selectedId),id);
+    const cls=classes[ids.indexOf(id)];
+    assert.equal(await page.locator('#detail-panel .entity-summary').textContent(),cls+' · Exact reported instrument');
+    const cards=page.locator('#detail-panel .investor-card');assert.equal(await cards.count(),cls==='CL A'?6:1);
+    if(cls!=='CL A')assert.match(await cards.textContent(),cls==='CMN'?/Goldman Sachs/i:/JPMorgan/i);
+    if(width===390)await page.locator('#mobile-details').click();
+    await page.locator('#detail-panel .investor-evidence').first().click();
+    assert.match(await page.locator('#detail-panel').textContent(),/underlying row|Source and lineage/);
+    if(width===390)await page.locator('#close-mobile-details').click();
    }
    await search.fill('atlassian');await search.press('ArrowDown');
    assert.equal(await page.evaluate(()=>document.activeElement.dataset.searchNode),ids[0]);
