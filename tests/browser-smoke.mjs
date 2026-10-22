@@ -1,3 +1,4 @@
+import {checkSearchContext} from './browser-search-context.mjs';
 import {checkPortfolioComparison} from './browser-comparison.mjs';
 import {checkInstitutionalPilot} from './browser-institutional.mjs';
 import {check2DFocus} from './browser-2d-focus.mjs';
@@ -504,6 +505,7 @@ try {
   await expectReal3D(racePage,initialNetworkNodes);
   await raceContext.close();
 
+  await checkSearchContext(browser,origin);
   await checkInstitutionalPilot(browser,origin);
   await checkPortfolioComparison(browser,origin);
   assert.deepEqual(errors, [], 'Browser JavaScript errors');
