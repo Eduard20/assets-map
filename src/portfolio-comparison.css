@@ -1,0 +1,9 @@
+#comparison-launcher{min-height:44px;margin:8px 0;padding:10px 16px;border:1px solid #426578;border-radius:12px;background:#102a38;color:#d9f6ff;text-align:left;cursor:pointer}
+#comparison-dialog{box-sizing:border-box;width:min(880px,calc(100vw - 24px));max-width:none;max-height:90dvh;padding:24px;overflow:auto;background:#0b1c27;color:#deecf4;border:1px solid #426578;border-radius:20px;overscroll-behavior:contain}
+#comparison-dialog::backdrop{background:#020b14dc}#comparison-dialog *{box-sizing:border-box;overflow-wrap:anywhere;min-width:0}
+#comparison-dialog p{line-height:1.6;color:#bfd2dd}#comparison-dialog label{display:grid;gap:8px;margin:12px 0}
+#comparison-dialog button,#comparison-dialog select,#comparison-dialog input{min-height:44px;padding:12px;background:#163444;color:#effaff;border:1px solid #537488;border-radius:8px;max-width:100%;font:inherit}
+#comparison-dialog select,#comparison-dialog input{width:100%}#comparison-dialog button{cursor:pointer;margin:4px 4px 4px 0}#comparison-dialog button:disabled{opacity:.5;cursor:default}
+#comparison-dialog :focus-visible,#comparison-launcher:focus-visible{outline:3px solid #8ee6ff;outline-offset:3px}.comparison-controls{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.comparison-results article{padding:16px;margin:14px 0;border:1px solid #385468;border-radius:12px}.comparison-results h3{font-size:18px;line-height:1.5}.comparison-pagination{display:flex;align-items:center;justify-content:space-between;gap:8px}
+@media(max-width:600px){#comparison-dialog{padding:16px;width:calc(100vw - 16px);max-height:94dvh}.comparison-controls{grid-template-columns:1fr;gap:0}.comparison-results button{display:block;width:100%}.comparison-pagination{flex-wrap:wrap}}

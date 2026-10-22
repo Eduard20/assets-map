@@ -27,6 +27,10 @@ The default **Shared portfolio network** connects all ten imported filers throug
 
 The **Historical disclosures (4)** option preserves the separately reviewed Apple disclosure set; **Illustrative sample** preserves the original interface demonstration. No datasets are silently added together.
 
+## Compare two imported filers
+
+Open **Compare two filers** (inside **Filters** on a phone). Choose two admitted filers to see their exact shared instruments, search and paginate the results, explore a match in the map, or open each filer’s evidence. Each value sums only that filer’s reported source rows for that instrument. No cross-filer value total or ownership percentage is calculated; separate classes and unmatched source descriptions remain separate. The comparison preserves its controls while you inspect the network.
+
 ## Try the illustrative sample
 
 - Search for **BlackRock**, **Berkshire**, **Amazon**, **Nestlé** or **SpaceX**.
