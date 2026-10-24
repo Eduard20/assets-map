@@ -45,3 +45,41 @@ test('2D focus restoration handles opaque IDs without constructing a selector fr
  view.update(opaqueGraph,opaqueState,opaqueModel);view.layer.querySelector('[data-node]').focus();view.update(opaqueGraph,opaqueState,opaqueModel);
  assert.equal(document.activeElement.dataset.node,id);dom.window.close();
 });
+test('Expansion keeps its own focus and 44px control through redraw and zoom',()=>{
+ const {dom,model,state,graph,view}=setup();
+ // Keep one relationship outside the visible graph so expansion is available.
+ const smaller={...graph,edges:graph.edges.slice(0,1)};view.update(smaller,state,model);
+ const expand=view.layer.querySelector('[data-expand]');assert.ok(expand);const id=expand.dataset.expand;
+ expand.focus();view.update(smaller,state,model);assert.equal(document.activeElement.dataset.expand,id);
+ const calls=[];view.onExpand=value=>{calls.push(value);view.update(smaller,state,model);};
+ for(const key of ['Enter',' '])document.activeElement.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));
+ assert.deepEqual(calls,[id,id]);assert.equal(document.activeElement.dataset.expand,id);
+ view.setZoom(.6);const control=view.layer.querySelector('[data-expand]');assert.equal(control.querySelector('rect').getAttribute('height'),'44');assert.match(control.getAttribute('transform'),/scale\(1.666/);dom.window.close();
+});
+
+for(const width of [320,390])test(`Hidden card view reveals its new root inside a ${width}px viewport`,()=>{
+ const {dom,model,state,graph,view}=setup();let visible=true;
+ Object.defineProperties(view.container,{clientWidth:{get:()=>visible?width:0},clientHeight:{get:()=>visible?500:0}});
+ view.update(graph,state,model);view.focus(state.rootId);
+ document.querySelector('#outside').focus();visible=false;
+ state.rootId=graph.nodes.find(node=>node.id!==state.rootId).id;state.selectedId=state.rootId;
+ view.update(graph,state,model);
+ assert.equal(view.bounds.width,width,'Hidden render retains the last measured width');
+ visible=true;view.update(graph,state,model);
+ const point=view.positions.get(state.rootId),x=point.x*view.zoom+view.pan.x,y=point.y*view.zoom+view.pan.y;
+ assert.ok(x-112>=0&&x+112<=width,'Revealed selected card fits horizontally');
+ assert.ok(y-38>=40&&y+38<=440,'Revealed selected card clears the controls');
+ assert.equal(document.activeElement.id,'outside','Revealing the graph does not steal external focus');
+ // Keeping a visible root in view must not unnecessarily erase a user's pan.
+ view.pan.x+=8;view.applyTransform();const pan={...view.pan};
+ visible=false;view.update(graph,state,model);visible=true;view.update(graph,state,model);
+ assert.deepEqual(view.pan,pan);dom.window.close();
+});
+test('A desktop-to-phone resize reveals an unfocused card without resetting zoom',()=>{
+ const {dom,model,state,graph,view}=setup();let width=900;
+ Object.defineProperties(view.container,{clientWidth:{get:()=>width},clientHeight:{get:()=>500}});
+ view.update(graph,state,model);view.focus(state.rootId);document.querySelector('#outside').focus();
+ width=320;view.update(graph,state,model);
+ const point=view.positions.get(state.rootId),x=point.x*view.zoom+view.pan.x;
+ assert.ok(x-112>=0&&x+112<=width);assert.equal(view.zoom,1);assert.equal(document.activeElement.id,'outside');dom.window.close();
+});

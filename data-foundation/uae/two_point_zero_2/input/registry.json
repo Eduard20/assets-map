@@ -1,0 +1,920 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "uae_two_point_zero_2_20261023_v1",
+  "entities": [
+    {
+      "entity_id": "ent_2pointzero_pre_merger_platform",
+      "entity_type": "reported_group",
+      "legal_name": "2PointZero (pre-merger platform)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_chimera_investment",
+      "entity_type": "reported_group",
+      "legal_name": "Chimera Investment",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_alpheya",
+      "entity_type": "reported_group",
+      "legal_name": "Alpheya",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_citadel",
+      "entity_type": "reported_group",
+      "legal_name": "Citadel",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_sagasse",
+      "entity_type": "reported_group",
+      "legal_name": "Sagasse",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_international_resources_holding",
+      "entity_type": "reported_group",
+      "legal_name": "International Resources Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_mopani_copper_mines",
+      "entity_type": "reported_group",
+      "legal_name": "Mopani Copper Mines",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_alphamin",
+      "entity_type": "reported_group",
+      "legal_name": "Alphamin",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_ehc_international",
+      "entity_type": "reported_group",
+      "legal_name": "EHC International",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_al_fanar",
+      "entity_type": "reported_group",
+      "legal_name": "Al Fanar",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_fooj",
+      "entity_type": "reported_group",
+      "legal_name": "Fooj",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_multiply_group_pre_merger",
+      "entity_type": "reported_group",
+      "legal_name": "Multiply Group (pre-merger)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_kalyon_enerji",
+      "entity_type": "reported_group",
+      "legal_name": "Kalyon Enerji",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_multiply_media_group",
+      "entity_type": "reported_group",
+      "legal_name": "Multiply Media Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_omorfia_group",
+      "entity_type": "reported_group",
+      "legal_name": "Omorfia Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_backlite_media",
+      "entity_type": "reported_group",
+      "legal_name": "BackLite Media",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_media_247",
+      "entity_type": "reported_group",
+      "legal_name": "Media 247",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_viola_communications",
+      "entity_type": "reported_group",
+      "legal_name": "Viola Communications",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_ghitha_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Ghitha Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_al_ajban_poultry",
+      "entity_type": "reported_group",
+      "legal_name": "Al Ajban Poultry",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_abu_dhabi_vegetable_oil_company_advoc",
+      "entity_type": "reported_group",
+      "legal_name": "Abu Dhabi Vegetable Oil Company (ADVOC)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_al_hashemeya",
+      "entity_type": "reported_group",
+      "legal_name": "Al Hashemeya",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_asmak",
+      "entity_type": "reported_group",
+      "legal_name": "Asmak",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_marmum",
+      "entity_type": "reported_group",
+      "legal_name": "Marmum",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_mirak_group",
+      "entity_type": "reported_group",
+      "legal_name": "Mirak Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_zee_stores",
+      "entity_type": "reported_group",
+      "legal_name": "Zee Stores",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_royal_horizon",
+      "entity_type": "reported_group",
+      "legal_name": "Royal Horizon",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_apex_investments",
+      "entity_type": "reported_group",
+      "legal_name": "APEX Investments",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    }
+  ],
+  "securities": [],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_chimera_investment_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_alpheya_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_citadel_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_sagasse_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_resources_holding_mopani_copper_mines_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_international_resources_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_resources_holding_alphamin_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_international_resources_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ehc_international_al_fanar_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ehc_international",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ehc_international_fooj_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ehc_international",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_multiply_group_pre_merger_kalyon_enerji_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_multiply_group_pre_merger",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_multiply_group_pre_merger_multiply_media_group_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_multiply_group_pre_merger",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_multiply_group_pre_merger_omorfia_group_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_multiply_group_pre_merger",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_multiply_media_group_backlite_media_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_multiply_media_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_multiply_media_group_media_247_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_multiply_media_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_multiply_media_group_viola_communications_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_multiply_media_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_al_ajban_poultry_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_abu_dhabi_vegetable_oil_company_advoc_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_al_hashemeya_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_asmak_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_marmum_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_mirak_group_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_zee_stores_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_royal_horizon_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_apex_investments_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

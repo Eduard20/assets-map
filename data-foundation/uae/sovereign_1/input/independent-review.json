@@ -1,0 +1,284 @@
+{
+  "acceptance_scope": "Exact independently reviewed source-qualified dated disclosure records. Conditional non-monetized research only; not a blanket licence.",
+  "acceptance_sha256": "c537bac8d27ef5bcbb1e12e56c6bb9d0e6783080d793f2456191825f64a736d6",
+  "accepted_staging_sha256": {
+    "batch": "5659fa6102f829410edda004c42cb3fe4d0c9906e7fa547c72c83a70b1df36d6",
+    "registry": "08e8fd4e6386b3987ada13b9b11f88e20e50dba92e8ac25da743dc0353177633",
+    "review": "f53eaf4ea477fd30a84588e29756f87bcf8773d85b6e793d1e0e8d2f94870a8f",
+    "sources": "d078af4a21bbf1b78b14fdbe42bb40daa7b8bae8b144b7b7a201f5a51533a457"
+  },
+  "decisions": [
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_mubadala_capital_ci_financial",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_kelix_bio_diabtec_llc",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_kelix_bio_bioventure",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_kelix_bio_bioventure_healthcare",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_kelix_bio_gulf_inject",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_kelix_bio_wellpharma",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_arcera_birgi_mefar_group",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched source-named parties, parent-to-child reported group interest, disclosure date, and disclosed or explicit-unknown percentage. Four KELIX acquisitions retain both naming and completion evidence."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_mubadala_capital_ci_financial",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_diabtec_llc",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_arcera_birgi_mefar_group",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_support_1",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject_support_1",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    },
+    {
+      "batch_id": "uae_sovereign_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma_support_1",
+      "rationale": "Official public-news document individually inspected; exact dated factual locator accepted as source_snapshot_only/nonexhaustive. No complete correction-chain or current ownership assertion."
+    }
+  ],
+  "publication": {
+    "authorization_url": null,
+    "authorized_by": null,
+    "intended_use": "noncommercial_research",
+    "status": "held"
+  },
+  "registry_version": "uae_sovereign_1_20261023_v1",
+  "review_id": "uae_sovereign19_independent_canonical_20261023",
+  "reviewed_at": "2026-10-23T14:05:00Z",
+  "reviewed_input_sha256": {
+    "batch": "5659fa6102f829410edda004c42cb3fe4d0c9906e7fa547c72c83a70b1df36d6",
+    "registry": "08e8fd4e6386b3987ada13b9b11f88e20e50dba92e8ac25da743dc0353177633",
+    "sources": "d078af4a21bbf1b78b14fdbe42bb40daa7b8bae8b144b7b7a201f5a51533a457"
+  },
+  "reviewer": "independent-sovereign-canonical-review",
+  "reviewer_role": "agent_review",
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_sovereign_1_20261023_v1"
+}

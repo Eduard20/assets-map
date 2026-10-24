@@ -1,0 +1,11 @@
+{
+  "bundle_id": "alpha_dhabi_1",
+  "files": {
+    "batch.json": "93be4c67951c699357e7fa572aaf1bdb199743961ff65b5ad67d0f9dd9411cdf",
+    "independent-review.json": "80b3fc0026cc3474552152b0c3cdac1fae70af594969eb5d55ac61b3aaac782d",
+    "registry.json": "fce125b70674817543620605693a2f73c2969416dd4ec2733c58175a1e06656b",
+    "release-decision.json": "6b941cad8aaad6b8d4b20585272f85fd6fa87a0709e79e2100f12dab11cf8c99",
+    "review.json": "99caa6209746512de40f815ef733dd3e3dae4cc220d3acc2fe1a21f90b3a0c99",
+    "sources.json": "4996828f2cb5cd97a7f629506d9ac12d7c26d06e0774ef069a5638dd33808214"
+  }
+}

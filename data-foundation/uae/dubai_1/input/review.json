@@ -1,0 +1,379 @@
+{
+  "decisions": [
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_jumeirah",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_dubai_holding_real_estate",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_dubai_holding_entertainment",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_dubai_holding_community_management",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_nakheel",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_tecom_group",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_meraas",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_meydan",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_jumeirah_mallorca",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_alec_holdings",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_emirates_power_investment_llc",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_ithra_dubai",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_dubal_holding",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubal_holding_emirates_global_aluminium",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_dham_reit_management_llc",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_dham_investments_llc",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubal_holding_warsan_waste_management",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubal_holding_biod_technology",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubal_holding_enviroserve",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_emirates_group",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_emirates_group_emirates",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_emirates_group_dnata",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dnata_wondermiles",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_emirates_leisure_retail_air_ventures_llc",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_real_estate_nakheel",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_real_estate_meraas",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_holding_real_estate_dubai_properties",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched exact source-named parties, direction, dated snapshot and numeric/explicit-unknown metric. Twenty-three group interests and seven non-equity affiliations; no security identity or complete/current portfolio inferred."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_jumeirah",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_real_estate",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_entertainment",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_community_management",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_nakheel",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_tecom_group",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_meraas",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_meydan",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_jumeirah_mallorca",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_investment_corporation_of_dubai_alec_holdings",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_emirates_power_investment_llc",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_investment_corporation_of_dubai_ithra_dubai",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubal_holding",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubal_holding_emirates_global_aluminium",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_dham_reit_management_llc",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_dham_investments_llc",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubal_holding_warsan_waste_management",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubal_holding_biod_technology",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubal_holding_enviroserve",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_investment_corporation_of_dubai_emirates_group",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_emirates_group_emirates",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_emirates_group_dnata",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dnata_wondermiles",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_emirates_leisure_retail_air_ventures_llc",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_real_estate_nakheel",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_real_estate_meraas",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    },
+    {
+      "batch_id": "uae_dubai_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_holding_real_estate_dubai_properties",
+      "rationale": "Individually inspected official public-news source and exact selected factual locator. Accepted source_snapshot_only with nonexhaustive correction scope, not complete amendment discovery."
+    }
+  ],
+  "publication": {
+    "authorization_url": "https://github.com/Eduard20/assets-map/issues/53",
+    "authorized_by": "coordinating maintainer root",
+    "intended_use": "noncommercial_research",
+    "status": "approved"
+  },
+  "registry_version": "uae_dubai_1_20261023_v1",
+  "review_id": "dubai_1_maintainer_20261023140720",
+  "reviewed_at": "2026-10-23T14:07:20Z",
+  "reviewer": "coordinating maintainer root",
+  "reviewer_role": "maintainer",
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_dubai_1_20261023_v1"
+}

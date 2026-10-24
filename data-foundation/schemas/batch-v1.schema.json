@@ -81,7 +81,10 @@
               "maximum": 30
             },
             "asset_class": {
-              "const": "equity"
+              "enum": [
+                "equity",
+                "equity_and_reported_affiliations"
+              ]
             }
           },
           "required": [
@@ -146,7 +149,10 @@
             "minLength": 1
           },
           "published_at": {
-            "type": "string",
+            "type": [
+              "string",
+              "null"
+            ],
             "format": "date"
           },
           "content_sha256": {
@@ -183,7 +189,23 @@
             "enum": [
               "complete",
               "incomplete",
-              "unknown"
+              "unknown",
+              "source_snapshot_only"
+            ]
+          },
+          "observed_by": {
+            "type": "string",
+            "format": "date"
+          },
+          "publication_date_basis": {
+            "enum": [
+              "known_publication",
+              "unknown_observed_by"
+            ]
+          },
+          "correction_scope": {
+            "enum": [
+              "nonexhaustive"
             ]
           }
         },
@@ -314,7 +336,8 @@
               "eligible_votes",
               "selected_disclosed_value",
               "net_assets",
-              "whole_portfolio_assets"
+              "whole_portfolio_assets",
+              "reported_group_interest"
             ]
           },
           "label": {
@@ -538,7 +561,9 @@
               "voting_authority",
               "custody",
               "control_assertion",
-              "subsidiary_of"
+              "subsidiary_of",
+              "reported_group_interest",
+              "reported_portfolio_affiliation"
             ]
           },
           "object_id": {
@@ -630,7 +655,8 @@
                     "equity_percentage",
                     "beneficial_percentage",
                     "voting_percentage",
-                    "portfolio_weight"
+                    "portfolio_weight",
+                    "group_interest_percentage"
                   ]
                 },
                 "value": {

@@ -1,0 +1,296 @@
+{
+  "acceptance_scope": "Exact independently reviewed source-qualified dated disclosure records. Conditional non-monetized research only; not a blanket licence.",
+  "acceptance_sha256": "6e721487eab765fede312421c3cb8ad20f0d9bbd73d25feeff16a55f48978aa9",
+  "accepted_staging_sha256": {
+    "batch": "caf43952c8262d94ff076a39f5c1c89bc74f0949c2f1bff6443f6f3282dfcd37",
+    "registry": "28584cefee77796badf6ef8595326950b2b0a550f691a5e1126b766207a96e96",
+    "review": "553be1b2b5e66310d306b915408bbbf8d4369300bfb59b48cdd888569e5f3153",
+    "sources": "ba5445778f1d9bbc957f05435b40af746534f9e2b758d3c45ed0d43e6d575a5c"
+  },
+  "decisions": [
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_taqa",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_airways",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_rail",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_silal",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_agthia",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_purehealth",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_emsteel",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_tadweer_group",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_airports",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_pci_pharma_services",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_endeavor_group",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_nord_anglia_education",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_techem",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_loscam",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_mgx",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_mubadala_bio",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_bio_al_ittihad_drug_store",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_bio_global_medical_supply_chain",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_bio_bioventure_healthcare",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_mubadala_investment_company_pjsc_greenlink",
+      "decision": "accepted_for_model",
+      "rationale": "Independently matched subject, source-named object, relationship, report-date basis, locator and source-reported metric to exact selected evidence. No immediate legal holder inferred for group role; historical/disclosure-date scope only."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_l_imad_holding_company_pjsc_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "decision": "accepted_for_model",
+      "rationale": "Exact legal ownership relation and percentage independently verified from selected source. Security now generic equity_interest_unspecified; no common/preferred class, voting rights, share count or identifier inferred."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "candidate_id": "cand_uae_emirates_investment_authority_emirates_telecommunications_group_company_pjsc",
+      "decision": "accepted_for_model",
+      "rationale": "Exact legal ownership relation and percentage independently verified from selected source. Security now generic equity_interest_unspecified; no common/preferred class, voting rights, share count or identifier inferred."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_taqa",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_airways",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_rail",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_silal",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_agthia",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_purehealth",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_emsteel",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_tadweer_group",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_airports",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_pci_pharma_services",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_endeavor_group",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_nord_anglia_education",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_techem",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_loscam",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_mgx",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_mubadala_bio",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_bio_al_ittihad_drug_store",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_bio_global_medical_supply_chain",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_bio_bioventure_healthcare",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mubadala_investment_company_pjsc_greenlink",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_l_imad_holding_company_pjsc_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "rationale": "Prior exact selected WAM factual review retained; independently reviewed migration to public-news source_snapshot_only/nonexhaustive status, without claiming complete corrections or latest ownership."
+    },
+    {
+      "batch_id": "uae_bounded_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_emirates_investment_authority_emirates_telecommunications_group_company_pjsc",
+      "rationale": "Exact public WAM release or SEC selected ownership-chain statement inspected; publication date preserved or explicitly unknown with observation date. Bounded correction discovery complete for this statement, not all holdings or all publisher content. Source-specific selected factual use only; no raw redistribution."
+    }
+  ],
+  "publication": {
+    "authorization_url": null,
+    "authorized_by": null,
+    "intended_use": "noncommercial_research",
+    "status": "held"
+  },
+  "registry_version": "uae_bounded_20261023_v1",
+  "review_id": "uae_first22_news_snapshot_independent_20261023",
+  "reviewed_at": "2026-10-23T14:01:00Z",
+  "reviewed_input_sha256": {
+    "batch": "caf43952c8262d94ff076a39f5c1c89bc74f0949c2f1bff6443f6f3282dfcd37",
+    "registry": "28584cefee77796badf6ef8595326950b2b0a550f691a5e1126b766207a96e96",
+    "sources": "ba5445778f1d9bbc957f05435b40af746534f9e2b758d3c45ed0d43e6d575a5c"
+  },
+  "reviewer": "independent-dubai-canonical-review",
+  "reviewer_role": "agent_review",
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_bounded_20261023_v1"
+}

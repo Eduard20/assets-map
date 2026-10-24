@@ -1,0 +1,235 @@
+{
+  "decisions": [
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_national_corporation_for_tourism_and_hotels_20250129",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_alpha_dhabi_construction_holding_20241001",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_alpha_dhabi_construction_holding_20241001",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_trojan_construction_20241001",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_mawarid_holding_investment_20240718",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_purehealth_20231121",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_international_holding_company_healthcare_holding_llc_purehealth_20231121",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_admo_lifestyle_holding_20231018",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_enersol_20250318",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_aldar_properties_20211231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_nmdc_group_20211231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_response_plus_medical_20211231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_sandstorm_motor_vehicles_manufacturing_20211231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_alpha_dhabi_holding_ta_ziz_20211231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_national_corporation_for_tourism_and_hotels_alpha_dhabi_hospitality_holding_llc_20250129",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_national_corporation_for_tourism_and_hotels_murban_bvi_holding_inc_20250129",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_national_corporation_for_tourism_and_hotels_hill_view_resorts_20250129",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "candidate_id": "cand_uae_admo_lifestyle_holding_nammos_group_20231018",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_national_corporation_for_tourism_and_hotels_20250129",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_alpha_dhabi_construction_holding_20241001",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_abu_dhabi_developmental_holding_company_pjsc_adq_alpha_dhabi_construction_holding_20241001",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_trojan_construction_20241001",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_mawarid_holding_investment_20240718",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_purehealth_20231121",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_international_holding_company_healthcare_holding_llc_purehealth_20231121",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_admo_lifestyle_holding_20231018",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_enersol_20250318",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_aldar_properties_20211231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_nmdc_group_20211231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_response_plus_medical_20211231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_sandstorm_motor_vehicles_manufacturing_20211231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_alpha_dhabi_holding_ta_ziz_20211231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_national_corporation_for_tourism_and_hotels_alpha_dhabi_hospitality_holding_llc_20250129",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_national_corporation_for_tourism_and_hotels_murban_bvi_holding_inc_20250129",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_national_corporation_for_tourism_and_hotels_hill_view_resorts_20250129",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_alpha_dhabi_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_admo_lifestyle_holding_nammos_group_20231018",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    }
+  ],
+  "publication": {
+    "authorization_url": "https://github.com/Eduard20/assets-map/issues/53",
+    "authorized_by": "coordinating maintainer root, exact listed101 renewed decision 2026-10-23",
+    "intended_use": "noncommercial_research",
+    "status": "approved"
+  },
+  "registry_version": "uae_alpha_dhabi_1_20261023_v1",
+  "review_id": "alpha_dhabi_1_maintainer_20261023140350",
+  "reviewed_at": "2026-10-23T14:03:50Z",
+  "reviewer": "coordinating maintainer root, exact listed101 renewed decision 2026-10-23",
+  "reviewer_role": "maintainer",
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_alpha_dhabi_1_20261023_v1"
+}

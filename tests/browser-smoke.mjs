@@ -1,3 +1,5 @@
+import {checkRelationshipCards} from './browser-relationship-cards.mjs';
+import {checkUaeHoldings} from './browser-uae.mjs';
 import {checkSearchContext} from './browser-search-context.mjs';
 import {checkPortfolioComparison} from './browser-comparison.mjs';
 import {checkInstitutionalPilot} from './browser-institutional.mjs';
@@ -37,6 +39,7 @@ async function expectView(page, view) {
 }
 
 async function expectReal3D(page, count = 4) {
+  if(await page.evaluate(()=>window.__assetsMap?.getState()?.view)!=='3d')await page.locator('[data-view="3d"]').click();
   await expectView(page, '3d');
   await page.waitForFunction(expected => document.querySelectorAll('#graph-3d button[data-node-id]').length === expected, count);
   assert.equal(await page.locator('#graph-3d canvas').count(), 1, 'The default view must render real WebGL, not silently pass through 2D fallback');
@@ -83,6 +86,7 @@ try {
   });
   await mkdir('artifacts', {recursive: true});
   await checkLoadingRecovery(browser,origin);
+  await checkRelationshipCards(browser,origin);
   await check2DFocus(browser,origin);
   const context = await browser.newContext({viewport: {width: 1440, height: 1000}});
   const page = await context.newPage();
@@ -121,7 +125,8 @@ try {
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().nodes.filter(node=>node.label==='APPLE INC').length),3,'COM, CMN and COMMON Apple descriptions remain separate identities');
   await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),'blackrock-2026-06-30');
   await page.locator('[data-view="2d"]').click();await expectView(page,'2d');
-  await page.locator(`.graph-node[data-node="${appleId}"] .node-hit`).click();
+  await page.locator(`.graph-node[data-node="${appleId}"]`).focus();
+  await page.locator(`.graph-node[data-node="${appleId}"] .node-card`).click();
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
   assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
   await page.locator('#focus-back').click();await page.locator('[data-view="3d"]').click();
@@ -158,16 +163,16 @@ try {
   // A manager bubble opens more of its own network in both renderers.
   for(const view of ['3d','2d']){
     await page.locator(`[data-view="${view}"]`).click();await expectView(page,view);
-    const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"] .node-hit';
-    if(view==='3d')await page.locator(managerSelector).focus();
+    const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"] .node-card';
+    await page.locator(view==='3d'?managerSelector:'.graph-node[data-node="blackrock-2026-06-30"]').focus();
     await page.locator(managerSelector).click();
     const expanded=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expanded>initialNetworkNodes);
     await page.locator(managerSelector).click();assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),initialNetworkNodes);
     const issuerId=await page.evaluate(()=>window.__assetsMap.getModel().roleEdges.find(e=>e.role.manager==='berkshire-2026-06-30'&&e.role.securityClass==='CL B NEW').source);
-    if(view==='3d')await page.locator(`#graph-3d button[data-node-id="${issuerId}"]`).focus();
-    await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"] .node-hit`).click();
+    await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"]`).focus();
+    await page.locator(view==='3d'?`#graph-3d button[data-node-id="${issuerId}"]`:`.graph-node[data-node="${issuerId}"] .node-card`).click();
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.some(e=>e.kind==='issuer_reporting_entity')));
     assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().edges.filter(e=>e.source==='berkshire-2026-06-30').length)>=20);
     assert.match(await page.locator('#detail-panel').textContent(),/Outgoing investments/);
@@ -421,7 +426,7 @@ try {
   await touchPage.locator('#focus-back').tap();
   assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length),touchCount,'phone Back restores network context');
   await touchPage.locator('[data-view="2d"]').tap();await expectView(touchPage,'2d');
-  const svg=touchPage.locator('#graph-2d svg'),nodeHit=touchPage.locator('.graph-node .node-hit').first();
+  const svg=touchPage.locator('#graph-2d svg'),nodeHit=touchPage.locator('.relationship-card.selected .node-card').first();
   const nodeBox=await nodeHit.boundingBox(),beforePan=await touchPage.locator('.viewport').getAttribute('transform');
   await dragTouch(nodeBox.x+nodeBox.width/2,nodeBox.y+nodeBox.height/2,40,25);
   assert.notEqual(await touchPage.locator('.viewport').getAttribute('transform'),beforePan,'2D can pan starting on a node');
@@ -463,6 +468,8 @@ try {
   watchErrors(fallbackPage);
   await fallbackPage.goto(origin);
   await expectView(fallbackPage, '2d');
+  await fallbackPage.locator('[data-view="3d"]').click();
+  await expectView(fallbackPage, '2d');
   assert.equal(await fallbackPage.locator('#graph-3d canvas').count(), 0);
   assert.match(await fallbackPage.locator('#view-notice').textContent(), /3D.*(?:unavailable|not available|not supported|could not)/i);
   assert.equal(await fallbackPage.locator('#view-notice').isVisible(), true);
@@ -494,7 +501,8 @@ try {
   watchErrors(racePage);
   await racePage.goto(origin, {waitUntil: 'domcontentloaded'});
   await racePage.waitForFunction(() => window.__assetsMap?.getState());
-  await Promise.race([importStarted, new Promise((_, reject) => setTimeout(() => reject(new Error('Default 3D import was never requested')), 10000))]);
+  await racePage.locator('[data-view="3d"]').click();
+  await Promise.race([importStarted, new Promise((_, reject) => setTimeout(() => reject(new Error('Requested 3D import was never started')), 10000))]);
   await racePage.locator('[data-view="list"]').click();
   await expectView(racePage, 'list');
   releaseImport();
@@ -505,11 +513,12 @@ try {
   await expectReal3D(racePage,initialNetworkNodes);
   await raceContext.close();
 
+  await checkUaeHoldings(browser,origin);
   await checkSearchContext(browser,origin);
   await checkInstitutionalPilot(browser,origin);
   await checkPortfolioComparison(browser,origin);
   assert.deepEqual(errors, [], 'Browser JavaScript errors');
-  console.log('Browser smoke passed: real default 3D, keyboard/touch selection, drag suppression, camera controls, responsive layouts, no-WebGL fallback, and async view switching.');
+  console.log('Browser smoke passed: default 2D cards, optional real 3D, keyboard/touch selection, drag suppression, camera controls, responsive layouts, no-WebGL fallback, and async view switching.');
 } catch(error) {
   let index=0;for(const context of browser?.contexts()||[])for(const page of context.pages())await page.screenshot({path:`artifacts/failure-${index++}.png`,fullPage:true}).catch(()=>{});
   throw error;

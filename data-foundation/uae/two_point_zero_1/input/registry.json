@@ -1,0 +1,1133 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "uae_two_point_zero_1_20261023_v1",
+  "entities": [
+    {
+      "entity_id": "ent_2pointzero_group",
+      "entity_type": "reported_group",
+      "legal_name": "2PointZero Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/1726dej-2pointzero-group-reports-aed36-billion-net-profit",
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue",
+        "https://www.wam.ae/en/article/c02rbsn-ihc-sustains-growth-momentum-2026-with-aed314",
+        "https://www.wam.ae/en/article/bzhbpoz-2pointzero-group-invests-whoop-series-financing",
+        "https://www.wam.ae/en/article/c17u8e2-epointzero-completes-acquisition-traverse",
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_tendam",
+      "entity_type": "reported_group",
+      "legal_name": "Tendam",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/1726dej-2pointzero-group-reports-aed36-billion-net-profit"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_international_resources_holding",
+      "entity_type": "reported_group",
+      "legal_name": "International Resources Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/1726dej-2pointzero-group-reports-aed36-billion-net-profit",
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_el_sewedy_electric",
+      "entity_type": "reported_group",
+      "legal_name": "El Sewedy Electric",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/1726dej-2pointzero-group-reports-aed36-billion-net-profit",
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_ghitha_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Ghitha Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_isem_packaging_group",
+      "entity_type": "reported_group",
+      "legal_name": "ISEM Packaging Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c02rbsn-ihc-sustains-growth-momentum-2026-with-aed314"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_whoop_inc",
+      "entity_type": "reported_group",
+      "legal_name": "WHOOP, Inc.",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzhbpoz-2pointzero-group-invests-whoop-series-financing"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_epointzero",
+      "entity_type": "reported_group",
+      "legal_name": "ePointZero",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c17u8e2-epointzero-completes-acquisition-traverse",
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_traverse_midstream_partners_llc",
+      "entity_type": "reported_group",
+      "legal_name": "Traverse Midstream Partners, LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c17u8e2-epointzero-completes-acquisition-traverse"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_driving_company_pjsc_emirates_mobility",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Driving Company PJSC / Emirates Mobility",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_driving_company_pjsc",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Driving Company PJSC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmat8t3-multiply-group%E2%80%99s-emirates-driving-company",
+        "https://www.wam.ae/en/article/byh09vq-emirates-driving-company-reports-total-revenue"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_mwasalat_holdings",
+      "entity_type": "reported_group",
+      "legal_name": "Mwasalat Holdings",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmat8t3-multiply-group%E2%80%99s-emirates-driving-company"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_excellence_premier_investment",
+      "entity_type": "reported_group",
+      "legal_name": "Excellence Premier Investment",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/byh09vq-emirates-driving-company-reports-total-revenue"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_chargepoint_ev_charging_stations_management_and_operation_l_l_c",
+      "entity_type": "reported_group",
+      "legal_name": "Chargepoint EV Charging Stations Management and Operation L.L.C",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/byh09vq-emirates-driving-company-reports-total-revenue"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_excellence_premier_investment_group",
+      "entity_type": "reported_group",
+      "legal_name": "Excellence Premier Investment Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_excellence_driving",
+      "entity_type": "reported_group",
+      "legal_name": "Excellence Driving",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_excellence_limousine",
+      "entity_type": "reported_group",
+      "legal_name": "Excellence Limousine",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_excellence_couriers",
+      "entity_type": "reported_group",
+      "legal_name": "Excellence Couriers",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_excellence_auto_repair",
+      "entity_type": "reported_group",
+      "legal_name": "Excellence Auto Repair",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_mwasalat_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Mwasalat Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_aman_public_transport",
+      "entity_type": "reported_group",
+      "legal_name": "Aman Public Transport",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_aman_taxi",
+      "entity_type": "reported_group",
+      "legal_name": "Aman Taxi",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_autostrad_rent_a_car",
+      "entity_type": "reported_group",
+      "legal_name": "Autostrad rent a car",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_pioneer_car_services",
+      "entity_type": "reported_group",
+      "legal_name": "Pioneer Car Services",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_colemont",
+      "entity_type": "reported_group",
+      "legal_name": "Colemont",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_al_ain_farms",
+      "entity_type": "reported_group",
+      "legal_name": "Al Ain Farms",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_nrtc",
+      "entity_type": "reported_group",
+      "legal_name": "NRTC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_taaza",
+      "entity_type": "reported_group",
+      "legal_name": "Taaza",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_2pointzero_pre_merger_platform",
+      "entity_type": "reported_group",
+      "legal_name": "2PointZero (pre-merger platform)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_ehc_international",
+      "entity_type": "reported_group",
+      "legal_name": "EHC International",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_lunate",
+      "entity_type": "reported_group",
+      "legal_name": "Lunate",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_beltone_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Beltone Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    }
+  ],
+  "securities": [],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_tendam_20251231",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/1726dej-2pointzero-group-reports-aed36-billion-net-profit"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_international_resources_holding_20251231",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/1726dej-2pointzero-group-reports-aed36-billion-net-profit"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_el_sewedy_electric_20251231",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/1726dej-2pointzero-group-reports-aed36-billion-net-profit"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_ghitha_holding_20260729",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_isem_packaging_group_20260331",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c02rbsn-ihc-sustains-growth-momentum-2026-with-aed314"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_whoop_inc_20260331",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzhbpoz-2pointzero-group-invests-whoop-series-financing"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_epointzero_20260714",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c17u8e2-epointzero-completes-acquisition-traverse"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_epointzero_traverse_midstream_partners_llc_20260714",
+      "version": "1",
+      "reporting_entity_id": "ent_epointzero",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c17u8e2-epointzero-completes-acquisition-traverse"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_group_emirates_driving_company_pjsc_emirates_mobility_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_emirates_driving_company_pjsc_mwasalat_holdings_20251020",
+      "version": "1",
+      "reporting_entity_id": "ent_emirates_driving_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmat8t3-multiply-group%E2%80%99s-emirates-driving-company"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_emirates_driving_company_pjsc_excellence_premier_investment_20251231",
+      "version": "1",
+      "reporting_entity_id": "ent_emirates_driving_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/byh09vq-emirates-driving-company-reports-total-revenue"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_emirates_driving_company_pjsc_chargepoint_ev_charging_stations_management_and_operation_l_l_c_20251231",
+      "version": "1",
+      "reporting_entity_id": "ent_emirates_driving_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/byh09vq-emirates-driving-company-reports-total-revenue"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_excellence_premier_investment_group_excellence_driving_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_excellence_premier_investment_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_excellence_premier_investment_group_excellence_limousine_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_excellence_premier_investment_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_excellence_premier_investment_group_excellence_couriers_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_excellence_premier_investment_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_excellence_premier_investment_group_excellence_auto_repair_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_excellence_premier_investment_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mwasalat_holding_aman_public_transport_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_mwasalat_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mwasalat_holding_aman_taxi_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_mwasalat_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mwasalat_holding_autostrad_rent_a_car_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_mwasalat_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mwasalat_holding_pioneer_car_services_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_mwasalat_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mwasalat_holding_colemont_20260512",
+      "version": "1",
+      "reporting_entity_id": "ent_mwasalat_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c06bx0z-emirates-mobility-rings-adx-bell-unveils-new"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_al_ain_farms_20260729",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_ghitha_holding_nrtc_20260729",
+      "version": "1",
+      "reporting_entity_id": "ent_ghitha_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_nrtc_taaza_20260729",
+      "version": "1",
+      "reporting_entity_id": "ent_nrtc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsy-ghitha-holding-reports-aed34-billion-revenue"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_epointzero_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_international_resources_holding_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_el_sewedy_electric_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_ehc_international_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_lunate_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_2pointzero_pre_merger_platform_beltone_holding_20251015",
+      "version": "1",
+      "reporting_entity_id": "ent_2pointzero_pre_merger_platform",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2y5-ihc-plans-strategic-aed-120-merger-2pointzero"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

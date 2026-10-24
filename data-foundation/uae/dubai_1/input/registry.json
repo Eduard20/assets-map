@@ -1,0 +1,1153 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "uae_dubai_1_20261023_v1",
+  "entities": [
+    {
+      "entity_id": "ent_dubai_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Dubai Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+        "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its",
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality",
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000",
+        "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_jumeirah",
+      "entity_type": "reported_group",
+      "legal_name": "Jumeirah",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_dubai_holding_real_estate",
+      "entity_type": "reported_group",
+      "legal_name": "Dubai Holding Real Estate",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_dubai_holding_entertainment",
+      "entity_type": "reported_group",
+      "legal_name": "Dubai Holding Entertainment",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_dubai_holding_community_management",
+      "entity_type": "reported_group",
+      "legal_name": "Dubai Holding Community Management",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_nakheel",
+      "entity_type": "brand",
+      "legal_name": "Nakheel",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Brand or asset only, not an equity issuer."
+      }
+    },
+    {
+      "entity_id": "ent_tecom_group",
+      "entity_type": "reported_group",
+      "legal_name": "TECOM Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_meraas",
+      "entity_type": "brand",
+      "legal_name": "Meraas",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its",
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Brand or asset only, not an equity issuer."
+      }
+    },
+    {
+      "entity_id": "ent_meydan",
+      "entity_type": "reported_group",
+      "legal_name": "Meydan",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_jumeirah_mallorca",
+      "entity_type": "real_asset",
+      "legal_name": "Jumeirah Mallorca",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Brand or asset only, not an equity issuer."
+      }
+    },
+    {
+      "entity_id": "ent_dubai_holding_hospitality",
+      "entity_type": "reported_group",
+      "legal_name": "Dubai Holding Hospitality",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_bvlgari_hotel_dubai",
+      "entity_type": "real_asset",
+      "legal_name": "Bvlgari Hotel Dubai",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Brand or asset only, not an equity issuer."
+      }
+    },
+    {
+      "entity_id": "ent_investment_corporation_of_dubai",
+      "entity_type": "reported_group",
+      "legal_name": "Investment Corporation of Dubai",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2d9-alec-holdings-debuts-dfm-uae%E2%80%99s-largest-ever",
+        "https://www.wam.ae/en/article/hszr8s5p-dae-repurchases-shares-held-emaar-properties",
+        "https://www.wam.ae/en/article/hszrcuzj-ithra-dubai-launches-one-deira-deira-enrichment",
+        "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries",
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_alec_holdings",
+      "entity_type": "reported_group",
+      "legal_name": "ALEC Holdings",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2d9-alec-holdings-debuts-dfm-uae%E2%80%99s-largest-ever"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_dubai_electricity_and_water_authority_pjsc",
+      "entity_type": "reported_group",
+      "legal_name": "Dubai Electricity and Water Authority PJSC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "entity_type": "legal_entity",
+      "legal_name": "Emirates Central Cooling Systems Corporation PJSC (Empower)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Exact corporate-style name explicitly present in selected official report; no registry identifier, security class or immediate title inferred."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_power_investment_llc",
+      "entity_type": "legal_entity",
+      "legal_name": "Emirates Power Investment LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Exact corporate-style name explicitly present in selected official report; no registry identifier, security class or immediate title inferred."
+      }
+    },
+    {
+      "entity_id": "ent_dubai_aerospace_enterprise",
+      "entity_type": "reported_group",
+      "legal_name": "Dubai Aerospace Enterprise",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszr8s5p-dae-repurchases-shares-held-emaar-properties"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_ithra_dubai",
+      "entity_type": "reported_group",
+      "legal_name": "Ithra Dubai",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrcuzj-ithra-dubai-launches-one-deira-deira-enrichment"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_dubal_holding",
+      "entity_type": "reported_group",
+      "legal_name": "DUBAL Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries",
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_global_aluminium",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Global Aluminium",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_dham_reit_management_llc",
+      "entity_type": "legal_entity",
+      "legal_name": "DHAM REIT Management LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Exact corporate-style name explicitly present in selected official report; no registry identifier, security class or immediate title inferred."
+      }
+    },
+    {
+      "entity_id": "ent_dham_investments_llc",
+      "entity_type": "legal_entity",
+      "legal_name": "DHAM Investments LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Exact corporate-style name explicitly present in selected official report; no registry identifier, security class or immediate title inferred."
+      }
+    },
+    {
+      "entity_id": "ent_warsan_waste_management",
+      "entity_type": "reported_group",
+      "legal_name": "Warsan Waste Management",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_biod_technology",
+      "entity_type": "reported_group",
+      "legal_name": "BioD Technology",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_enviroserve",
+      "entity_type": "reported_group",
+      "legal_name": "Enviroserve",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_group",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_emirates",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_dnata",
+      "entity_type": "reported_group",
+      "legal_name": "dnata",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244",
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_wondermiles",
+      "entity_type": "reported_group",
+      "legal_name": "WonderMiles",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_leisure_retail",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Leisure Retail",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Reported business/group, not independently registered corporate identity."
+      }
+    },
+    {
+      "entity_id": "ent_air_ventures_llc",
+      "entity_type": "legal_entity",
+      "legal_name": "Air Ventures LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Exact corporate-style name explicitly present in selected official report; no registry identifier, security class or immediate title inferred."
+      }
+    },
+    {
+      "entity_id": "ent_dubai_properties",
+      "entity_type": "brand",
+      "legal_name": "Dubai Properties",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Source-named identity only. Brand or asset only, not an equity issuer."
+      }
+    }
+  ],
+  "securities": [],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_jumeirah",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_real_estate",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_entertainment",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_community_management",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_nakheel",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Dated source-named portfolio affiliation; legal ownership and management distinctions are retained in source qualifiers.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_tecom_group",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_meraas",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Dated source-named portfolio affiliation; legal ownership and management distinctions are retained in source qualifiers.",
+      "source_urls": [
+        "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_meydan",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_jumeirah_mallorca",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Dated source-named portfolio affiliation; legal ownership and management distinctions are retained in source qualifiers.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding_hospitality",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Dated source-named portfolio affiliation; legal ownership and management distinctions are retained in source qualifiers.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_alec_holdings",
+      "version": "1",
+      "reporting_entity_id": "ent_investment_corporation_of_dubai",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bm7u2d9-alec-holdings-debuts-dfm-uae%E2%80%99s-largest-ever"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_electricity_and_water_authority_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_emirates_power_investment_llc",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "version": "1",
+      "reporting_entity_id": "ent_investment_corporation_of_dubai",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszr8s5p-dae-repurchases-shares-held-emaar-properties"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_ithra_dubai",
+      "version": "1",
+      "reporting_entity_id": "ent_investment_corporation_of_dubai",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrcuzj-ithra-dubai-launches-one-deira-deira-enrichment"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubal_holding",
+      "version": "1",
+      "reporting_entity_id": "ent_investment_corporation_of_dubai",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubal_holding_emirates_global_aluminium",
+      "version": "1",
+      "reporting_entity_id": "ent_dubal_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_reit_management_llc",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_investments_llc",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubal_holding_warsan_waste_management",
+      "version": "1",
+      "reporting_entity_id": "ent_dubal_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubal_holding_biod_technology",
+      "version": "1",
+      "reporting_entity_id": "ent_dubal_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubal_holding_enviroserve",
+      "version": "1",
+      "reporting_entity_id": "ent_dubal_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_emirates_group",
+      "version": "1",
+      "reporting_entity_id": "ent_investment_corporation_of_dubai",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_emirates_group_emirates",
+      "version": "1",
+      "reporting_entity_id": "ent_emirates_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_emirates_group_dnata",
+      "version": "1",
+      "reporting_entity_id": "ent_emirates_group",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dnata_wondermiles",
+      "version": "1",
+      "reporting_entity_id": "ent_dnata",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_emirates_leisure_retail_air_ventures_llc",
+      "version": "1",
+      "reporting_entity_id": "ent_emirates_leisure_retail",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named reporting group interest; immediate registered legal holder not independently established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_nakheel",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding_real_estate",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Dated source-named portfolio affiliation; legal ownership and management distinctions are retained in source qualifiers.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_meraas",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding_real_estate",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Dated source-named portfolio affiliation; legal ownership and management distinctions are retained in source qualifiers.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_dubai_properties",
+      "version": "1",
+      "reporting_entity_id": "ent_dubai_holding_real_estate",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Dated source-named portfolio affiliation; legal ownership and management distinctions are retained in source qualifiers.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-dubai-canonical-review",
+        "reviewed_at": "2026-10-23T14:01:00Z",
+        "rationale": "Exact dated source-reporting perimeter only; parent-to-child group interests and non-equity affiliations remain distinct; no additive or complete/current portfolio inference."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

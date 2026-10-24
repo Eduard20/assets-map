@@ -1,0 +1,163 @@
+{
+  "decisions": [
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_investments_glass_llc_20191027",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_glass_llc_emirates_glass_20191027",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_glass_llc_lumi_glass_20191027",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_glass_llc_saudi_american_glass_20191027",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_glass_llc_emirates_insolaire_20191027",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_glass_llc_emirates_float_glass_20191027",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_investments_masharie_llc_20180318",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_investments_dubai_investments_real_estate_company_20170909",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_investments_dubai_investments_park_20170909",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_investments_properties_investment_20170909",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_investments_al_mal_capital_psc_20250624",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "candidate_id": "cand_uae_dubai_investments_king_s_college_hospital_london_dubai_20190325",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_investments_glass_llc_20191027",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_glass_llc_emirates_glass_20191027",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_glass_llc_lumi_glass_20191027",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_glass_llc_saudi_american_glass_20191027",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_glass_llc_emirates_insolaire_20191027",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_glass_llc_emirates_float_glass_20191027",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_investments_masharie_llc_20180318",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_investments_dubai_investments_real_estate_company_20170909",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_investments_dubai_investments_park_20170909",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_investments_properties_investment_20170909",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_investments_al_mal_capital_psc_20250624",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_dubai_investments_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_dubai_investments_king_s_college_hospital_london_dubai_20190325",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    }
+  ],
+  "publication": {
+    "authorization_url": "https://github.com/Eduard20/assets-map/issues/53",
+    "authorized_by": "coordinating maintainer root, exact listed101 renewed decision 2026-10-23",
+    "intended_use": "noncommercial_research",
+    "status": "approved"
+  },
+  "registry_version": "uae_dubai_investments_1_20261023_v1",
+  "review_id": "dubai_investments_1_maintainer_20261023140350",
+  "reviewed_at": "2026-10-23T14:03:50Z",
+  "reviewer": "coordinating maintainer root, exact listed101 renewed decision 2026-10-23",
+  "reviewer_role": "maintainer",
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_dubai_investments_1_20261023_v1"
+}
