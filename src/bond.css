@@ -1,0 +1,17 @@
+#bond-launcher{min-height:44px;margin:8px 0;padding:10px 16px;border:1px solid #6b5f3f;border-radius:12px;background:#2a2412;color:#fff3d6;text-align:left;cursor:pointer}
+#bond-dialog{box-sizing:border-box;width:min(960px,calc(100vw - 24px));max-width:none;max-height:90dvh;padding:24px;overflow:auto;background:#0b1c27;color:#deecf4;border:1px solid #6b5f3f;border-radius:20px;overscroll-behavior:contain}
+#bond-dialog::backdrop{background:#020b14dc}
+#bond-dialog *{box-sizing:border-box;overflow-wrap:anywhere}
+#bond-dialog h2{font-size:26px;margin:20px 0 12px}#bond-dialog h3{font-size:18px;line-height:1.5;margin:0}#bond-dialog h4{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:#f0d79a;margin:18px 0 6px}
+#bond-dialog p,#bond-dialog li,#bond-dialog dd{line-height:1.6;color:#bfd2dd}#bond-dialog label{display:grid;gap:8px}
+#bond-dialog dl{display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr);gap:4px 12px;margin:0}#bond-dialog dt{color:#93a9b6}#bond-dialog dd{margin:0}
+#bond-dialog button,#bond-dialog select,#bond-dialog summary{min-height:44px;padding:12px;cursor:pointer}
+#bond-dialog button,#bond-dialog select{background:#163444;color:#effaff;border:1px solid #537488;border-radius:8px;max-width:100%}
+#bond-dialog a{color:#8ee6ff;display:inline-block;padding:12px 0;min-height:44px}
+#bond-dialog :focus-visible,#bond-launcher:focus-visible{outline:3px solid #f0d79a;outline-offset:3px}
+.bond-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.bond-top span{font-size:11px;letter-spacing:1px}
+.bond-notice{padding:16px;border-left:3px solid #f0d79a;background:#2a2412}.bond-muted{font-size:13px;color:#93a9b6!important}
+.bond-lines{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}.bond-line{min-width:0;padding:18px;border:1px solid #4d4a3a;border-radius:14px;background:#102532}.bond-kind{color:#f0d79a!important}
+.bond-holding{padding:8px 12px;border-left:3px solid #8ee6ff;background:#0d2230}.bond-metric{color:#d9f6ff!important}
+.bond-coverage{padding:10px 12px;border:1px dashed #93a9b6;border-radius:8px}
+@media(max-width:600px){#bond-dialog{padding:16px;width:calc(100vw - 16px);max-height:94dvh}.bond-lines{grid-template-columns:1fr}.bond-top{align-items:flex-start}.bond-top button{flex-shrink:0}#bond-dialog dl{grid-template-columns:1fr}}
