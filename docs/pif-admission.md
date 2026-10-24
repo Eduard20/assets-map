@@ -15,7 +15,7 @@ The five source labels are CLARITEV CORPORATION, ELECTRONIC ARTS INC, LUCID GROU
 
 ## Network contribution
 
-All five source-scoped instruments have strict same-date, exact-class and exact-identifier matches to existing admitted filers. They therefore add five filer-to-instrument edges and no new shared-instrument group: **5,657 groups** remain. There are now **158,150 eligible source rows** from **10 filers** and **162,087 total source rows**, with **3,937 exclusions** unchanged. The counts are not globally unique companies. Values across filers are never summed into economic ownership.
+All five source-scoped instruments have strict same-date, exact-class and exact-identifier matches to existing admitted filers. They therefore add five filer-to-instrument edges and no new shared-instrument group: **5,657 groups** remain. At the original PIF release there were **158,150 eligible source rows** from **10 filers** and **162,087 total source rows**, with **3,937 exclusions** unchanged. The counts are not globally unique companies. Values across filers are never summed into economic ownership.
 
 The other nine admitted inputs and their review files remain byte-for-byte unchanged, with their original 18 October correction-check dates; the new PIF check date must not refresh those sources implicitly. FMR remains withheld for its existing exact-total discrepancy.
 

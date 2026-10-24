@@ -1,0 +1,52 @@
+{
+  "decision": "approved",
+  "inputSha256": "44108b92aca75b121f5d788a1bd869ac09a68b73755500121c56107b7ca84bb8",
+  "reviewer": "expand-verified-data-independent-source-audit",
+  "reviewedAt": "2026-10-24",
+  "checks": {
+    "sourceIdentity": true,
+    "amendmentDiscovery": true,
+    "rowCount": true,
+    "valueTotal": true,
+    "sharePartition": true,
+    "spotChecks": true,
+    "publicRights": true
+  },
+  "reviewScope": "Independent fresh SEC submissions, cover, information table and directory downloads were hash-compared to producer evidence. Every retained field of all 2301 rows, exact source identity, scope, absence of other managers, explicit false confidentiality flag, exact integer-dollar totals and partition independently compared with XML using a separate implementation. Full recent submissions history reaches 2013-08-09, has no historical shards and contains one requested-period original with no amendments. This is dataset admission, not integration, publication, browser QA, merge or deployment approval.",
+  "constraints": [
+    "Swiss National Bank, CIK 1582202 only; historical reported Section 13(f) investment discretion at June 30, 2026, not legal or beneficial ownership/control. Not all central-bank reserves, gold holdings, Swiss government ownership or current holdings.",
+    "The source is a 13F HOLDINGS REPORT with zero other included managers and no separate-reporting manager list. The explicit isConfidentialOmitted false flag is preserved as reported, not treated as proof of complete portfolio coverage.",
+    "All 2301 source rows qualify for this share view. The dated filer share-view denominator is 191389544938 USD, not total AUM or an ownership-percentage denominator.",
+    "Non-13F assets, permitted omissions, confidential positions if any, private investments, shorts and unknown stakes remain gaps. Absence is not proof of sale or no holding.",
+    "Preserve original rows, reporting-manager references and source classes; no name-based issuer consolidation, ownership totals, cross-filer economic aggregation or inferred government link.",
+    "Publish minimal normalized factual fields and official links only for the existing non-monetized research/navigation use. No raw reports, XML, proprietary identifiers or identifier-derived hashes, security-master lookup, addresses, signatures, personal contact details, logos or copied narrative.",
+    "SEC Webmaster FAQ and EDGAR access guidance were independently inspected on October 24, 2026. Their access/reuse guidance supports this bounded factual use; the separate proprietary 13(f) list limitation is preserved by withholding identifiers. No blanket commercial or future-use licensing clearance is claimed.",
+    "New equivalence memberships require separately independently reviewed, byte-bound proposal; this review does not authorize publishing or bypass any outstanding confirmation."
+  ],
+  "counts": {
+    "reportedRowCount": 2301,
+    "recomputedValueTotalUsd": "191389544938",
+    "shareRowCount": 2301,
+    "shareValueUsd": "191389544938",
+    "excludedRowCount": 0,
+    "shareReportedSecurityCount": 2301
+  },
+  "sourceUrls": [
+    "https://data.sec.gov/submissions/CIK0001582202.json",
+    "https://www.sec.gov/Archives/edgar/data/1582202/000158220226000007/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/1582202/000158220226000007/InfoTable_Q22026.xml"
+  ],
+  "sourceHashEvidence": {
+    "coverSha256": "e6b570b1ba5c924f2921298b0e10f92df94e1afab70dbd2b8c49197072f23255",
+    "informationTableSha256": "88beb429dec442cf9d397bda60b642360874ee16ec8fc2968559f24db6bf9216",
+    "submissionsSha256": "41280339aaf9ce0383cfdbf071fd31a944ee5b3537b2c29c332df0d3adf321e4",
+    "directorySha256": "384a378b867b943fdef651dd94c3c516420da1996be0cb8288e659b1d6002e5a",
+    "freshDownloadsMatch": true
+  },
+  "publicRightsScope": "Bounded minimal factual research/navigation fields plus official links, under current project scope; not raw documents, identifiers or blanket commercial licensing.",
+  "rightsSources": [
+    "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+    "https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data",
+    "https://www.sec.gov/files/form13f.pdf"
+  ]
+}
