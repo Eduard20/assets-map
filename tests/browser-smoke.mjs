@@ -4,6 +4,7 @@ import {checkSearchContext} from './browser-search-context.mjs';
 import {checkPortfolioComparison} from './browser-comparison.mjs';
 import {checkInstitutionalPilot} from './browser-institutional.mjs';
 import {checkBondPilot} from './browser-bond.mjs';
+import {checkGoldPilot} from './browser-gold.mjs';
 import {checkPropertyPilot} from './browser-property.mjs';
 import {check2DFocus} from './browser-2d-focus.mjs';
 import {checkLoadingRecovery} from './browser-loading-recovery.mjs';
@@ -519,6 +520,7 @@ try {
   await checkSearchContext(browser,origin);
   await checkInstitutionalPilot(browser,origin);
   await checkBondPilot(browser,origin);
+  await checkGoldPilot(browser,origin);
   await checkPropertyPilot(browser,origin);
   await checkPortfolioComparison(browser,origin);
   assert.deepEqual(errors, [], 'Browser JavaScript errors');

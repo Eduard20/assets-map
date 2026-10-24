@@ -1,0 +1,16 @@
+#gold-launcher{min-height:44px;margin:8px 0;padding:10px 16px;border:1px solid #6d6440;border-radius:12px;background:#2a2510;color:#fff3cf;text-align:left;cursor:pointer}
+#gold-dialog{box-sizing:border-box;width:min(960px,calc(100vw - 24px));max-width:none;max-height:90dvh;padding:24px;overflow:auto;background:#0b1c27;color:#deecf4;border:1px solid #6d6440;border-radius:20px;overscroll-behavior:contain}
+#gold-dialog::backdrop{background:#020b14dc}
+#gold-dialog *{box-sizing:border-box;overflow-wrap:anywhere}
+#gold-dialog h2{font-size:26px;margin:20px 0 12px}#gold-dialog h3{font-size:20px;margin:24px 0 8px}#gold-dialog h4{font-size:17px;line-height:1.5;margin:0}
+#gold-dialog p{line-height:1.6;color:#bfd2dd}#gold-dialog label{display:grid;gap:8px}
+#gold-dialog button,#gold-dialog select,#gold-dialog summary{min-height:44px;padding:12px;cursor:pointer}
+#gold-dialog button,#gold-dialog select{background:#163444;color:#effaff;border:1px solid #537488;border-radius:8px;max-width:100%}
+#gold-dialog a{color:#8ee6ff;display:inline-block;padding:12px 0;min-height:44px}
+#gold-dialog :focus-visible,#gold-launcher:focus-visible{outline:3px solid #ffd76a;outline-offset:3px}
+.gold-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.gold-top span{font-size:11px;letter-spacing:1px}
+.gold-notice{padding:16px;border-left:3px solid #ffd76a;background:#2a2510}.gold-rule{font-size:14px}
+.gold-compare,.gold-claims{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:18px}
+.gold-authority,.gold-claim{min-width:0;padding:18px;border:1px solid #385468;border-radius:14px;background:#102532}.gold-authority{border-color:#6d6440}
+.gold-kind{color:#ffe7a3!important}.gold-figure{font-weight:600;color:#effaff!important}.gold-conflict{padding:10px;border-left:3px solid #ff9f80;background:#2c1a17}
+@media(max-width:600px){#gold-dialog{padding:16px;width:calc(100vw - 16px);max-height:94dvh}.gold-compare,.gold-claims{grid-template-columns:1fr}.gold-top{align-items:flex-start}.gold-top button{flex-shrink:0}}
