@@ -4,6 +4,7 @@ import {mountBondPilot} from './bond-view.js';
 import {mountGoldPilot} from './gold-view.js';
 import {mountIssuerPilot} from './issuer-view.js';
 import {mountCountryPilot} from './country-view.js';
+import {mountHoldersPilot} from './holders-view.js';
 import {mountPropertyPilot} from './property-view.js';
 import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,searchResultsHtml,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261023-uae1';
 import {researchDetails,researchRowsPage,researchInventoryHtml} from './research-view.js?v=20261023-uae1';
@@ -268,6 +269,7 @@ export async function start(){
   mountGoldPilot({document,launcher:$('#gold-launcher'),beforeOpen:closeMobilePanel,returnFocus:()=>phoneQuery()?$('#mobile-options'):$('#gold-launcher')});
   mountIssuerPilot({document,launcher:$('#issuer-launcher'),beforeOpen:closeMobilePanel,returnFocus:()=>phoneQuery()?$('#mobile-options'):$('#issuer-launcher')});
   mountCountryPilot({document,launcher:$('#country-launcher'),beforeOpen:closeMobilePanel,returnFocus:()=>phoneQuery()?$('#mobile-options'):$('#country-launcher')});
+  mountHoldersPilot({document,launcher:$('#holders-launcher'),beforeOpen:closeMobilePanel,returnFocus:()=>phoneQuery()?$('#mobile-options'):$('#holders-launcher')});
   mountPropertyPilot({document,launcher:$('#property-launcher'),beforeOpen:closeMobilePanel,returnFocus:()=>phoneQuery()?$('#mobile-options'):$('#property-launcher')});
   document.querySelectorAll('button,input,select').forEach(el=>el.disabled=!['dataset','mobile-options','close-mobile-controls','mobile-apply-controls','mobile-scrim','mobile-details','close-mobile-details'].includes(el.id));
   bind();window.__assetsMap={getState:()=>state,getModel:()=>model,getGraph:()=>graph,selectNode,selectEdge,exploreRoot,goBack,setView,setDataset,getCameraState:()=>renderer3D?{position:renderer3D.camera.position.toArray(),target:renderer3D.controls.target.toArray()}:null};
