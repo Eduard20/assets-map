@@ -1,4 +1,3 @@
-#property-launcher{min-height:44px;margin:8px 0;padding:10px 16px;border:1px solid #426578;border-radius:12px;background:#102a38;color:#d9f6ff;text-align:left;cursor:pointer}
 #property-dialog{box-sizing:border-box;width:min(900px,calc(100vw - 24px));max-width:none;max-height:90dvh;padding:24px;overflow:auto;background:#0b1c27;color:#deecf4;border:1px solid #426578;border-radius:20px;overscroll-behavior:contain}
 #property-dialog::backdrop{background:#020b14dc}
 #property-dialog *{box-sizing:border-box;overflow-wrap:anywhere}
