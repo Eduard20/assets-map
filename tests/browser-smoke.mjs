@@ -5,6 +5,7 @@ import {checkSearchContext} from './browser-search-context.mjs';
 import {checkPortfolioComparison} from './browser-comparison.mjs';
 import {checkInstitutionalPilot} from './browser-institutional.mjs';
 import {checkBondPilot} from './browser-bond.mjs';
+import {checkPilotLayersSection} from './browser-pilot-layers.mjs';
 import {checkGoldPilot} from './browser-gold.mjs';
 import {checkIssuerPilot} from './browser-issuer.mjs';
 import {checkPropertyPilot} from './browser-property.mjs';
@@ -525,6 +526,7 @@ try {
   await checkUaeHoldings(browser,origin);
   await checkSearchContext(browser,origin);
   await checkInstitutionalPilot(browser,origin);
+  await checkPilotLayersSection(browser,origin);
   await checkBondPilot(browser,origin);
   await checkGoldPilot(browser,origin);
   await checkIssuerPilot(browser,origin);
