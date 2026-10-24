@@ -6,6 +6,7 @@ import {checkInstitutionalPilot} from './browser-institutional.mjs';
 import {checkBondPilot} from './browser-bond.mjs';
 import {checkGoldPilot} from './browser-gold.mjs';
 import {checkPropertyPilot} from './browser-property.mjs';
+import {checkCountryPilot} from './browser-country.mjs';
 import {check2DFocus} from './browser-2d-focus.mjs';
 import {checkLoadingRecovery} from './browser-loading-recovery.mjs';
 import {chromium} from 'playwright';
@@ -522,6 +523,7 @@ try {
   await checkBondPilot(browser,origin);
   await checkGoldPilot(browser,origin);
   await checkPropertyPilot(browser,origin);
+  await checkCountryPilot(browser,origin);
   await checkPortfolioComparison(browser,origin);
   assert.deepEqual(errors, [], 'Browser JavaScript errors');
   console.log('Browser smoke passed: default 2D cards, optional real 3D, keyboard/touch selection, drag suppression, camera controls, responsive layouts, no-WebGL fallback, and async view switching.');
