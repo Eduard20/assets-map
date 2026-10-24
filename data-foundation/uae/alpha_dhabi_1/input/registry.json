@@ -1,0 +1,682 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "uae_alpha_dhabi_1_20261023_v1",
+  "entities": [
+    {
+      "entity_id": "ent_alpha_dhabi_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Alpha Dhabi Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national",
+        "https://www.wam.ae/en/article/b5gpy61-alpha-dhabi-holding-announces-completion-49",
+        "https://www.wam.ae/en/article/b482g3y-plenty-mawarid-launch-regional-partnership-grow",
+        "https://www.wam.ae/en/article/apr44o1-purehealth-announces-intention-list-adx",
+        "https://www.wam.ae/en/article/3uo2o7-admo-lifestyle-holding-signs-definitive-agreement",
+        "https://www.wam.ae/en/article/15h0rbt-adnoc-drilling-approves-788-million-2024-dividend",
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_national_corporation_for_tourism_and_hotels",
+      "entity_type": "reported_group",
+      "legal_name": "National Corporation for Tourism and Hotels",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_alpha_dhabi_construction_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Alpha Dhabi Construction Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5gpy61-alpha-dhabi-holding-announces-completion-49"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "entity_type": "legal_entity",
+      "legal_name": "Abu Dhabi Developmental Holding Company PJSC (ADQ)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5gpy61-alpha-dhabi-holding-announces-completion-49"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference. Cross-release identity reaffirmed against initial registry: exact same ADQ legal reporter or PureHealth reported group; no broader affiliate merger."
+      }
+    },
+    {
+      "entity_id": "ent_trojan_construction",
+      "entity_type": "reported_group",
+      "legal_name": "Trojan Construction",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5gpy61-alpha-dhabi-holding-announces-completion-49"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_mawarid_holding_investment",
+      "entity_type": "reported_group",
+      "legal_name": "Mawarid Holding Investment",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b482g3y-plenty-mawarid-launch-regional-partnership-grow"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_purehealth",
+      "entity_type": "reported_group",
+      "legal_name": "PureHealth",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/apr44o1-purehealth-announces-intention-list-adx"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference. Cross-release identity reaffirmed against initial registry: exact same ADQ legal reporter or PureHealth reported group; no broader affiliate merger."
+      }
+    },
+    {
+      "entity_id": "ent_international_holding_company_healthcare_holding_llc",
+      "entity_type": "reported_group",
+      "legal_name": "International Holding Company Healthcare Holding LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/apr44o1-purehealth-announces-intention-list-adx"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_admo_lifestyle_holding",
+      "entity_type": "reported_group",
+      "legal_name": "ADMO Lifestyle Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/3uo2o7-admo-lifestyle-holding-signs-definitive-agreement"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_enersol",
+      "entity_type": "reported_group",
+      "legal_name": "Enersol",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/15h0rbt-adnoc-drilling-approves-788-million-2024-dividend"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_aldar_properties",
+      "entity_type": "reported_group",
+      "legal_name": "Aldar Properties",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_nmdc_group",
+      "entity_type": "reported_group",
+      "legal_name": "NMDC Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_response_plus_medical",
+      "entity_type": "reported_group",
+      "legal_name": "Response Plus Medical",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_sandstorm_motor_vehicles_manufacturing",
+      "entity_type": "reported_group",
+      "legal_name": "Sandstorm Motor Vehicles Manufacturing",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_ta_ziz",
+      "entity_type": "reported_group",
+      "legal_name": "TA’ZIZ",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_alpha_dhabi_hospitality_holding_llc",
+      "entity_type": "reported_group",
+      "legal_name": "Alpha Dhabi Hospitality Holding LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_murban_bvi_holding_inc",
+      "entity_type": "reported_group",
+      "legal_name": "Murban (BVI) Holding Inc.",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_hill_view_resorts",
+      "entity_type": "reported_group",
+      "legal_name": "Hill View Resorts",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_nammos_group",
+      "entity_type": "reported_group",
+      "legal_name": "Nammos Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/3uo2o7-admo-lifestyle-holding-signs-definitive-agreement"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    }
+  ],
+  "securities": [],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_national_corporation_for_tourism_and_hotels_20250129",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_alpha_dhabi_construction_holding_20241001",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5gpy61-alpha-dhabi-holding-announces-completion-49"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_alpha_dhabi_construction_holding_20241001",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5gpy61-alpha-dhabi-holding-announces-completion-49"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_trojan_construction_20241001",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5gpy61-alpha-dhabi-holding-announces-completion-49"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_mawarid_holding_investment_20240718",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b482g3y-plenty-mawarid-launch-regional-partnership-grow"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_purehealth_20231121",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/apr44o1-purehealth-announces-intention-list-adx"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_healthcare_holding_llc_purehealth_20231121",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company_healthcare_holding_llc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/apr44o1-purehealth-announces-intention-list-adx"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_admo_lifestyle_holding_20231018",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/3uo2o7-admo-lifestyle-holding-signs-definitive-agreement"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_enersol_20250318",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/15h0rbt-adnoc-drilling-approves-788-million-2024-dividend"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_aldar_properties_20211231",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_nmdc_group_20211231",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_response_plus_medical_20211231",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_sandstorm_motor_vehicles_manufacturing_20211231",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_alpha_dhabi_holding_ta_ziz_20211231",
+      "version": "1",
+      "reporting_entity_id": "ent_alpha_dhabi_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszre4h4-alpha-dhabi-holding-set-new-profit-records-2021"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_national_corporation_for_tourism_and_hotels_alpha_dhabi_hospitality_holding_llc_20250129",
+      "version": "1",
+      "reporting_entity_id": "ent_national_corporation_for_tourism_and_hotels",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_national_corporation_for_tourism_and_hotels_murban_bvi_holding_inc_20250129",
+      "version": "1",
+      "reporting_entity_id": "ent_national_corporation_for_tourism_and_hotels",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_national_corporation_for_tourism_and_hotels_hill_view_resorts_20250129",
+      "version": "1",
+      "reporting_entity_id": "ent_national_corporation_for_tourism_and_hotels",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhxmsg1-alpha-dhabi-acquires-7373-interest-national"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_admo_lifestyle_holding_nammos_group_20231018",
+      "version": "1",
+      "reporting_entity_id": "ent_admo_lifestyle_holding",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/3uo2o7-admo-lifestyle-holding-signs-definitive-agreement"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

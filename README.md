@@ -36,7 +36,7 @@ Open **Compare two filers** (inside **Filters** on a phone). Choose two admitted
 - Search for **BlackRock**, **Berkshire**, **Amazon**, **Nestlé** or **SpaceX**.
 - Select an entity or connection to inspect its source and date.
 - Make any entity the focus, then explore its owners or investments.
-- Start with **3D bubbles**: drag to orbit, pinch/scroll to zoom, and tap a bubble or its name to explore. A **2D map** and accessible **List** view are also available.
+- Start with **2D relationship cards**: swipe/drag to pan, pinch/scroll to zoom, and select a card to explore. Semantic columns describe entity roles, not ownership depth or control; curved cross-links preserve cycles. Selected neighbours stay bright and unrelated cards dim. Optional **3D** and accessible **List** views remain available. UAE opens its complete admitted-row inventory in List, with the focused card map one tap away.
 - The larger bubble is the current focus. Bubble sizes and spatial distances do not represent asset values, valuations or ownership percentages.
 - Devices without WebGL 2 automatically show the 2D map with a clear explanation.
 - The initial map expands only one neighborhood at a time. Data and rendering are separate.
@@ -84,7 +84,7 @@ Use **GitHub Actions** as the Pages source, not a branch-based Jekyll build. `_c
 - `data/graph.json`: sources, entities and relationship claims
 - `src/graph-model.js`: validation, filtering, neighborhood expansion and layout
 - `src/graph-2d.js`: accessible SVG renderer
-- `src/graph-3d.js`: default, lazily loaded Three.js bubble renderer
+- `src/graph-3d.js`: optional, lazily loaded Three.js renderer
 - `src/bubble-layout.js`: presentation-only spatial layout and focus sizing
 - `src/app.js`: application state, search and detail UI
 - `tests`: model, DOM and browser smoke tests
@@ -131,7 +131,7 @@ The public projection uses a small index, compact per-filer group/row arrays and
 
 On phones the network fills the main screen. Filters and selected-entity details open in dismissible, keyboard-accessible sheets rather than pushing the graph down the page. The persistent selected-entity bar opens evidence and outgoing/incoming connections. Controls have 44-pixel touch targets, safe-area padding and 16-pixel search/select inputs.
 
-Both renderers use small luminous points, fine connections and selective labels on a dark canvas. Visible point size is not asset value; invisible touch targets remain larger. In 2D, drag anywhere to pan and pinch to zoom. In 3D, drag to rotate and use two fingers to zoom/pan, including gestures that start on labels. Dragging does not select a node. Fit, Back and Reset remain available. Browser chrome height changes do not reset the 3D camera. Reduced-motion preferences disable optional transitions.
+The primary 2D renderer uses compact role-grouped rectangular cards and curved blue links on a navy canvas, with sourced entity types rather than invented market metrics. Card size is not asset value. The optional 3D renderer retains luminous points and selective labels. In 2D, drag anywhere to pan and pinch to zoom. In 3D, drag to rotate and use two fingers to zoom/pan, including gestures that start on labels. Dragging does not select a node. Fit, Back and Reset remain available. Browser chrome height changes do not reset the 3D camera. Reduced-motion preferences disable optional transitions.
 
 CI tests touch-emulated Chromium in 320px/390px portrait and 844px landscape, sheet controls, touch dragging over labels and nodes, pinch zoom, real WebGL and the 2D fallback. This is not certification on a physical iPhone/Safari.
 

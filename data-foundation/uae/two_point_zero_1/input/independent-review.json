@@ -1,0 +1,392 @@
+{
+  "acceptance_scope": "Exact independently reviewed source-qualified dated disclosure records. Conditional non-monetized research only; not a blanket licence.",
+  "acceptance_sha256": "399e0df3b895f0a6815c05c1b227d8fbf82024901ba8d709cf9fac4a1490606d",
+  "accepted_staging_sha256": {
+    "batch": "d4a80cb686950294a3f73a6f5d779195b2e17002bc817e8a09423b9ad553ce18",
+    "registry": "1a5b74111a1ab37678107ca4de95eb2ed16d68a218b123314b17a908dc75b104",
+    "review": "a06248cb964802e918aa34456872e06717fb383aad977ae2123a7d92e48ec089",
+    "sources": "1aa2f61e720aeb108530ebada617fd977e79c21a364bff9980152d209b63558c"
+  },
+  "decisions": [
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_tendam_20251231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_international_resources_holding_20251231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_el_sewedy_electric_20251231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_ghitha_holding_20260729",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_isem_packaging_group_20260331",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_whoop_inc_20260331",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_epointzero_20260714",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_epointzero_traverse_midstream_partners_llc_20260714",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_group_emirates_driving_company_pjsc_emirates_mobility_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_emirates_driving_company_pjsc_mwasalat_holdings_20251020",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_emirates_driving_company_pjsc_excellence_premier_investment_20251231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Historical dated observation ONLY; not verified current stake. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_emirates_driving_company_pjsc_chargepoint_ev_charging_stations_management_and_operation_l_l_c_20251231",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_excellence_premier_investment_group_excellence_driving_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_excellence_premier_investment_group_excellence_limousine_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_excellence_premier_investment_group_excellence_couriers_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_excellence_premier_investment_group_excellence_auto_repair_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_mwasalat_holding_aman_public_transport_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_mwasalat_holding_aman_taxi_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_mwasalat_holding_autostrad_rent_a_car_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_mwasalat_holding_pioneer_car_services_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_mwasalat_holding_colemont_20260512",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Source-named operating businesses may not equal separately incorporated legal entities; use report_group target and do not infer listed ChargePoint identity. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_al_ain_farms_20260729",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_nrtc_20260729",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_nrtc_taaza_20260729",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_epointzero_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_international_resources_holding_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_el_sewedy_electric_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_ehc_international_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_lunate_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_beltone_holding_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_tendam_20251231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_international_resources_holding_20251231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_el_sewedy_electric_20251231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_ghitha_holding_20260729",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_isem_packaging_group_20260331",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_whoop_inc_20260331",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_epointzero_20260714",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_epointzero_traverse_midstream_partners_llc_20260714",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_group_emirates_driving_company_pjsc_emirates_mobility_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_emirates_driving_company_pjsc_mwasalat_holdings_20251020",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_emirates_driving_company_pjsc_excellence_premier_investment_20251231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_emirates_driving_company_pjsc_chargepoint_ev_charging_stations_management_and_operation_l_l_c_20251231",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_excellence_premier_investment_group_excellence_driving_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_excellence_premier_investment_group_excellence_limousine_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_excellence_premier_investment_group_excellence_couriers_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_excellence_premier_investment_group_excellence_auto_repair_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mwasalat_holding_aman_public_transport_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mwasalat_holding_aman_taxi_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mwasalat_holding_autostrad_rent_a_car_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mwasalat_holding_pioneer_car_services_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_mwasalat_holding_colemont_20260512",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_al_ain_farms_20260729",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_nrtc_20260729",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_nrtc_taaza_20260729",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_epointzero_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_international_resources_holding_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_el_sewedy_electric_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_ehc_international_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_lunate_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_1_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_beltone_holding_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    }
+  ],
+  "publication": {
+    "authorization_url": null,
+    "authorized_by": null,
+    "intended_use": "noncommercial_research",
+    "status": "held"
+  },
+  "registry_version": "uae_two_point_zero_1_20261023_v1",
+  "review_id": "uae_two_point_zero_1_20261023_v1_independent_accepted",
+  "reviewed_at": "2026-10-23T13:58:30Z",
+  "reviewed_input_sha256": {
+    "batch": "d4a80cb686950294a3f73a6f5d779195b2e17002bc817e8a09423b9ad553ce18",
+    "registry": "1a5b74111a1ab37678107ca4de95eb2ed16d68a218b123314b17a908dc75b104",
+    "sources": "1aa2f61e720aeb108530ebada617fd977e79c21a364bff9980152d209b63558c"
+  },
+  "reviewer": "complete_uae_coverage_inventory_independent",
+  "reviewer_role": "agent_review",
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_two_point_zero_1_20261023_v1"
+}

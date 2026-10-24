@@ -1,4 +1,7 @@
 export const RELATIONSHIPS = {
+  reported_portfolio_affiliation: {label: 'Reported asset / brand affiliation', color: '#ab8356', explanation: 'A source-named property, asset or brand affiliation. This is not a company equity interest; ownership, operation and management must be read from the cited qualifier, not inferred from this link.'},
+  reported_group_interest: {label: 'Reported group interest', color: '#879c6d', dash: '7 3', explanation: 'An interest reported for a consolidated group. It may be held through subsidiaries and does not identify an immediate legal shareholder or establish direct parent ownership, voting rights or control.'},
+  direct_equity_ownership: {label: 'Direct equity ownership', color: '#4b8c6c', explanation: 'A named direct shareholder in the cited issuer disclosure. Capital ownership does not by itself establish voting authority or control.'},
   issuer_reporting_entity: {label: 'Issuer / reporting-manager role', color:'#ab8a59', explanation:'Navigation between an issued share class and the same company as a reporting manager. Not a holding, ownership percentage, or merger of share classes.'},
   beneficial_ownership: { label: 'Beneficial attribution', color: '#9b82b6', explanation: 'A source-defined beneficial ownership disclosure, which can include trusts and exercisable rights. It does not establish direct legal title or control.' },
   voting_authority: { label: 'Voting authority', color: '#b18a61', dash: '2 4', explanation: 'Form-defined voting authority over reported shares. This is a separate role on a position, not an additional holding or proof of corporate control.' },
@@ -7,7 +10,7 @@ export const RELATIONSHIPS = {
   investment: { label: 'Investment', color: '#aa885b', explanation: 'A reported investment. Its current size, structure or ownership percentage may be undisclosed.' },
   subsidiary: { label: 'Subsidiary', color: '#4b8c6c', explanation: 'A reported corporate subsidiary. Check the source for the ownership structure and effective date.' }
 };
-export const KIND_LABELS = { manager: 'Asset manager', company: 'Company', fund: 'Fund', asset: 'Asset', sovereign: 'Sovereign fund', person: 'Disclosed individual', reported_group: 'Disclosed group' };
+export const KIND_LABELS = { manager: 'Asset manager', company: 'Company', fund: 'Fund', asset: 'Asset', brand: 'Brand', sovereign: 'Sovereign fund', person: 'Disclosed individual', reported_group: 'Disclosed group' };
 export const DEFAULT_PAGE_SIZE = 8;
 export const MAX_VISIBLE_NODES = 45;
 export function escapeHtml(value) { return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
@@ -29,10 +32,10 @@ export function createModel(data) {
   const sources = new Map(data.sources.map(s => [s.id, s]));
   return { ...data, nodeMap:nodes, sourceMap:sources, outgoingIds:new Set(data.edges.map(e=>e.source)), rootId:data.meta?.defaultRoot || data.nodes[0]?.id };
 }
-export function relatedEdges(model, id, { filter = 'all', direction = 'both' } = {}) {
+export function relatedEdges(model, id, { filter = 'all', direction = 'both', snapshotDate = null } = {}) {
   return model.edges.filter(edge => {
-    const relation = filter === 'all' || (filter === 'ownership' ? ['corporate_ownership','investment','subsidiary','beneficial_ownership'].includes(edge.kind) : edge.kind === filter);
-    return relation && (direction === 'outgoing' ? edge.source === id : direction === 'incoming' ? edge.target === id : edge.source === id || edge.target === id);
+    const relation = filter === 'all' || (filter === 'ownership' ? ['corporate_ownership','direct_equity_ownership','reported_group_interest','investment','subsidiary','beneficial_ownership'].includes(edge.kind) : edge.kind === filter);
+    return relation && (!snapshotDate || edge.asOf === snapshotDate) && (direction === 'outgoing' ? edge.source === id : direction === 'incoming' ? edge.target === id : edge.source === id || edge.target === id);
   });
 }
 export function buildVisibleGraph(model, state) {
@@ -70,4 +73,4 @@ export function layoutGraph(graph, rootId) {
   }
   return positions;
 }
-export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set(model.portfolioRoots||[model.rootId]),limits:new Map(model.network?model.portfolioRoots.map(id=>[id,20]):[]),pinnedNodes:new Set(),portfolioFilter:null,view:'3d'}; }
+export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set(model.portfolioRoots||[model.rootId]),limits:new Map(model.network?model.portfolioRoots.map(id=>[id,20]):[]),pinnedNodes:new Set(),portfolioFilter:null,view:'2d'}; }

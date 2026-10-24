@@ -1,0 +1,48 @@
+{
+  "acceptance_sha256": "6e721487eab765fede312421c3cb8ad20f0d9bbd73d25feeff16a55f48978aa9",
+  "authorization_basis": "Exact remaining first22 migration, Dubai30 and sovereign19 approval by coordinating maintainer after inspecting acceptance hashes at2026-10-23T14:07:06Z; final independent code and hostedCI checks required before merge.",
+  "authorization_readback_verified": true,
+  "authorization_url": "https://github.com/Eduard20/assets-map/issues/53",
+  "authorized_by": "coordinating maintainer root",
+  "authorized_candidate_ids": [
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_airports",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_agthia",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_emsteel",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_airways",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_rail",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_purehealth",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_silal",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_tadweer_group",
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_taqa",
+    "cand_uae_emirates_investment_authority_emirates_telecommunications_group_company_pjsc",
+    "cand_uae_l_imad_holding_company_pjsc_abu_dhabi_developmental_holding_company_pjsc_adq",
+    "cand_uae_mubadala_bio_al_ittihad_drug_store",
+    "cand_uae_mubadala_bio_bioventure_healthcare",
+    "cand_uae_mubadala_bio_global_medical_supply_chain",
+    "cand_uae_mubadala_investment_company_pjsc_endeavor_group",
+    "cand_uae_mubadala_investment_company_pjsc_greenlink",
+    "cand_uae_mubadala_investment_company_pjsc_loscam",
+    "cand_uae_mubadala_investment_company_pjsc_mgx",
+    "cand_uae_mubadala_investment_company_pjsc_mubadala_bio",
+    "cand_uae_mubadala_investment_company_pjsc_nord_anglia_education",
+    "cand_uae_mubadala_investment_company_pjsc_pci_pharma_services",
+    "cand_uae_mubadala_investment_company_pjsc_techem"
+  ],
+  "conditions": [
+    "Exact independently accepted candidate IDs only.",
+    "Dated source observations are not verified current holdings; correction coverage remains nonexhaustive where explicitly labeled.",
+    "Preserve source-qualified identity, role, date, percentage uncertainty, perimeter and nonadditive lineage.",
+    "No raw source redistribution, open licence claim or commercial reuse.",
+    "Changed factual input requires renewed exact independent review.",
+    "Independent code review and exact-SHA CI/browser checks remain required before publication."
+  ],
+  "decision_id": "first22_maintainer_20261023140720",
+  "recorded_at": "2026-10-23T14:07:20Z",
+  "reviewed_input_sha256": {
+    "batch.json": "caf43952c8262d94ff076a39f5c1c89bc74f0949c2f1bff6443f6f3282dfcd37",
+    "independent-review.json": "3fdedac458a12d8576c9adf51bc3ba7f72dc0d227bbbed170297022607e5360f",
+    "registry.json": "28584cefee77796badf6ef8595326950b2b0a550f691a5e1126b766207a96e96",
+    "review.json": "2a8e48819d005f013dad5cccc0ad4ff14403231751488574b1e957d768349220",
+    "sources.json": "ba5445778f1d9bbc957f05435b40af746534f9e2b758d3c45ed0d43e6d575a5c"
+  }
+}

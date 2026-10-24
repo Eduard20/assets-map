@@ -1,0 +1,44 @@
+{
+  "acceptance_sha256": "399e0df3b895f0a6815c05c1b227d8fbf82024901ba8d709cf9fac4a1490606d",
+  "authorization_basis": "Renewed exact101 authorization bound to independent acceptance SHA 399e0df3b895f0a6815c05c1b227d8fbf82024901ba8d709cf9fac4a1490606d and source_snapshot_only public-news correction contract; final independent code and exact-SHA CI review required.",
+  "authorization_readback_verified": true,
+  "authorization_url": "https://github.com/Eduard20/assets-map/issues/53",
+  "authorized_by": "coordinating maintainer root, exact listed101 renewed decision 2026-10-23",
+  "authorized_candidate_ids": [
+    "cand_uae_abu_dhabi_developmental_holding_company_pjsc_adq_alpha_dhabi_construction_holding_20241001",
+    "cand_uae_admo_lifestyle_holding_nammos_group_20231018",
+    "cand_uae_alpha_dhabi_holding_admo_lifestyle_holding_20231018",
+    "cand_uae_alpha_dhabi_holding_aldar_properties_20211231",
+    "cand_uae_alpha_dhabi_holding_alpha_dhabi_construction_holding_20241001",
+    "cand_uae_alpha_dhabi_holding_enersol_20250318",
+    "cand_uae_alpha_dhabi_holding_mawarid_holding_investment_20240718",
+    "cand_uae_alpha_dhabi_holding_national_corporation_for_tourism_and_hotels_20250129",
+    "cand_uae_alpha_dhabi_holding_nmdc_group_20211231",
+    "cand_uae_alpha_dhabi_holding_purehealth_20231121",
+    "cand_uae_alpha_dhabi_holding_response_plus_medical_20211231",
+    "cand_uae_alpha_dhabi_holding_sandstorm_motor_vehicles_manufacturing_20211231",
+    "cand_uae_alpha_dhabi_holding_ta_ziz_20211231",
+    "cand_uae_alpha_dhabi_holding_trojan_construction_20241001",
+    "cand_uae_international_holding_company_healthcare_holding_llc_purehealth_20231121",
+    "cand_uae_national_corporation_for_tourism_and_hotels_alpha_dhabi_hospitality_holding_llc_20250129",
+    "cand_uae_national_corporation_for_tourism_and_hotels_hill_view_resorts_20250129",
+    "cand_uae_national_corporation_for_tourism_and_hotels_murban_bvi_holding_inc_20250129"
+  ],
+  "conditions": [
+    "Exact independently accepted candidate IDs only.",
+    "Dated source observations are not verified current holdings; correction coverage remains nonexhaustive where explicitly labeled.",
+    "Preserve source-qualified identity, role, date, percentage uncertainty, perimeter and nonadditive lineage.",
+    "No raw source redistribution, open licence claim or commercial reuse.",
+    "Changed factual input requires renewed exact independent review.",
+    "Independent code review and exact-SHA CI/browser checks remain required before publication."
+  ],
+  "decision_id": "alpha_dhabi_1_maintainer_20261023140350",
+  "recorded_at": "2026-10-23T14:03:50Z",
+  "reviewed_input_sha256": {
+    "batch.json": "93be4c67951c699357e7fa572aaf1bdb199743961ff65b5ad67d0f9dd9411cdf",
+    "independent-review.json": "80b3fc0026cc3474552152b0c3cdac1fae70af594969eb5d55ac61b3aaac782d",
+    "registry.json": "fce125b70674817543620605693a2f73c2969416dd4ec2733c58175a1e06656b",
+    "review.json": "99caa6209746512de40f815ef733dd3e3dae4cc220d3acc2fe1a21f90b3a0c99",
+    "sources.json": "4996828f2cb5cd97a7f629506d9ac12d7c26d06e0774ef069a5638dd33808214"
+  }
+}

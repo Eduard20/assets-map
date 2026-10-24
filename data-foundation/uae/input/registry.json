@@ -1,0 +1,892 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "uae_bounded_20261023_v1",
+  "entities": [
+    {
+      "entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "entity_type": "legal_entity",
+      "legal_name": "Abu Dhabi Developmental Holding Company PJSC (ADQ)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum",
+        "https://www.wam.ae/en/article/c1s2y56-ports-group-receives-notification-voluntary"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Named legal reporter/issuer corroborated by selected WAM or SEC ownership-chain disclosure. Exact-name use only; no new corporate identifier asserted."
+      }
+    },
+    {
+      "entity_id": "ent_taqa",
+      "entity_type": "reported_group",
+      "legal_name": "TAQA",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_etihad_airways",
+      "entity_type": "reported_group",
+      "legal_name": "Etihad Airways",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_etihad_rail",
+      "entity_type": "reported_group",
+      "legal_name": "Etihad Rail",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_silal",
+      "entity_type": "reported_group",
+      "legal_name": "Silal",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_agthia",
+      "entity_type": "reported_group",
+      "legal_name": "Agthia",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_purehealth",
+      "entity_type": "reported_group",
+      "legal_name": "PureHealth",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_emsteel",
+      "entity_type": "reported_group",
+      "legal_name": "Emsteel",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_tadweer_group",
+      "entity_type": "reported_group",
+      "legal_name": "Tadweer Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_abu_dhabi_airports",
+      "entity_type": "reported_group",
+      "legal_name": "Abu Dhabi Airports",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_mubadala_investment_company_pjsc",
+      "entity_type": "legal_entity",
+      "legal_name": "Mubadala Investment Company PJSC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic",
+        "https://www.wam.ae/en/article/15kpnac-mubadala-bio-launched-transform-life-sciences-uae",
+        "https://www.wam.ae/en/article/c0r62pw-mubadala-partners-with-equitix-invest-greenlink"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Named legal reporter/issuer corroborated by selected WAM or SEC ownership-chain disclosure. Exact-name use only; no new corporate identifier asserted. Legal suffix corroborated by SEC reporting-person header: https://www.sec.gov/Archives/edgar/data/1709048/000114036126032099/xslSCHEDULE_13G_X02/primary_doc.xml ."
+      }
+    },
+    {
+      "entity_id": "ent_pci_pharma_services",
+      "entity_type": "reported_group",
+      "legal_name": "PCI Pharma Services",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_endeavor_group",
+      "entity_type": "reported_group",
+      "legal_name": "Endeavor Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_nord_anglia_education",
+      "entity_type": "reported_group",
+      "legal_name": "Nord Anglia Education",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_techem",
+      "entity_type": "reported_group",
+      "legal_name": "Techem",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_loscam",
+      "entity_type": "reported_group",
+      "legal_name": "Loscam",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_mgx",
+      "entity_type": "reported_group",
+      "legal_name": "MGX",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_mubadala_bio",
+      "entity_type": "reported_group",
+      "legal_name": "Mubadala Bio",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/15kpnac-mubadala-bio-launched-transform-life-sciences-uae",
+        "https://www.wam.ae/en/article/bysbhvt-mubadala-bio-acquires-full-ownership-ittihad-drug",
+        "https://www.wam.ae/en/article/c2lumvl-mubadala-bio-launches-two-immunology-therapies"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_al_ittihad_drug_store",
+      "entity_type": "reported_group",
+      "legal_name": "Al Ittihad Drug Store",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bysbhvt-mubadala-bio-acquires-full-ownership-ittihad-drug"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_global_medical_supply_chain",
+      "entity_type": "reported_group",
+      "legal_name": "Global Medical Supply Chain",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bysbhvt-mubadala-bio-acquires-full-ownership-ittihad-drug"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_bioventure_healthcare",
+      "entity_type": "reported_group",
+      "legal_name": "Bioventure Healthcare",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c2lumvl-mubadala-bio-launches-two-immunology-therapies"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_greenlink",
+      "entity_type": "reported_group",
+      "legal_name": "Greenlink",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c0r62pw-mubadala-partners-with-equitix-invest-greenlink"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted solely as source-named reported business/group; no legal-entity, share-class or brand equivalence inferred."
+      }
+    },
+    {
+      "entity_id": "ent_l_imad_holding_company_pjsc",
+      "entity_type": "legal_entity",
+      "legal_name": "L’IMAD Holding Company PJSC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y56-ports-group-receives-notification-voluntary"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Named legal reporter/issuer corroborated by selected WAM or SEC ownership-chain disclosure. Exact-name use only; no new corporate identifier asserted."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_investment_authority",
+      "entity_type": "legal_entity",
+      "legal_name": "Emirates Investment Authority",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/839923/000120864625000066/xslSCHEDULE_13D_X01/primary_doc.xml"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Named legal reporter/issuer corroborated by selected WAM or SEC ownership-chain disclosure. Exact-name use only; no new corporate identifier asserted."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_telecommunications_group_company_pjsc",
+      "entity_type": "legal_entity",
+      "legal_name": "Emirates Telecommunications Group Company PJSC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/839923/000120864625000066/xslSCHEDULE_13D_X01/primary_doc.xml"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Named legal reporter/issuer corroborated by selected WAM or SEC ownership-chain disclosure. Exact-name use only; no new corporate identifier asserted."
+      }
+    }
+  ],
+  "securities": [
+    {
+      "security_id": "sec_uae_l_imad_holding_company_pjsc_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "issuer_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "instrument_kind": "equity_interest_unspecified",
+      "share_class": "not established",
+      "label": "Abu Dhabi Developmental Holding Company PJSC (ADQ) equity interest",
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y56-ports-group-receives-notification-voluntary"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:10:35Z",
+        "rationale": "Accepted only as generic ownership interest in named company. Source establishes100 percent whole ownership of ADQ or60 percent of e&, but no common/preferred class, share count, voting rights or security identifier. Vodafone ordinary-share class is not e& class."
+      }
+    },
+    {
+      "security_id": "sec_uae_emirates_investment_authority_emirates_telecommunications_group_company_pjsc",
+      "issuer_id": "ent_emirates_telecommunications_group_company_pjsc",
+      "instrument_kind": "equity_interest_unspecified",
+      "share_class": "not established",
+      "label": "Emirates Telecommunications Group Company PJSC equity interest",
+      "identifiers": [],
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/839923/000120864625000066/xslSCHEDULE_13D_X01/primary_doc.xml"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:10:35Z",
+        "rationale": "Accepted only as generic ownership interest in named company. Source establishes100 percent whole ownership of ADQ or60 percent of e&, but no common/preferred class, share count, voting rights or security identifier. Vodafone ordinary-share class is not e& class."
+      }
+    }
+  ],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_taqa",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_airways",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_etihad_rail",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_silal",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_agthia",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_purehealth",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_emsteel",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_tadweer_group",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_airports",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bmhd04u-mohesr-adq-host-innovation-bridge-2025-forum"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_pci_pharma_services",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_endeavor_group",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_nord_anglia_education",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_techem",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_loscam",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_mgx",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_mubadala_bio",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/15kpnac-mubadala-bio-launched-transform-life-sciences-uae"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_bio_al_ittihad_drug_store",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bysbhvt-mubadala-bio-acquires-full-ownership-ittihad-drug"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_bio_global_medical_supply_chain",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bysbhvt-mubadala-bio-acquires-full-ownership-ittihad-drug"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_bio_bioventure_healthcare",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c2lumvl-mubadala-bio-launches-two-immunology-therapies"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_mubadala_investment_company_pjsc_greenlink",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named group portfolio interest; immediate legal shareholder is not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c0r62pw-mubadala-partners-with-equitix-invest-greenlink"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_l_imad_holding_company_pjsc_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "version": "1",
+      "reporting_entity_id": "ent_l_imad_holding_company_pjsc",
+      "basis": "own_account",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Named direct holder in the cited official disclosure; no whole-portfolio assertion.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1s2y56-ports-group-receives-notification-voluntary"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_emirates_investment_authority_emirates_telecommunications_group_company_pjsc",
+      "version": "1",
+      "reporting_entity_id": "ent_emirates_investment_authority",
+      "basis": "own_account",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Named direct holder in the cited official disclosure; no whole-portfolio assertion.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/839923/000120864625000066/xslSCHEDULE_13D_X01/primary_doc.xml"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-uae-factual-subset",
+        "reviewed_at": "2026-10-23T13:09:00Z",
+        "rationale": "Accepted exact source/report-date scope only. Group interests may pass through unspecified holding vehicles; direct-own-account scope only where the source explicitly names the owner. No additive or exhaustive portfolio inference."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

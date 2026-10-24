@@ -1,0 +1,2697 @@
+{
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_sovereign_1_20261023_v1",
+  "sources": [
+    {
+      "source_id": "src_uae_exp_mubadala_capital_ci_financial",
+      "source_family": "Mubadala strengthens global presence via strategic investments, international partnerships",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_mubadala_capital_ci_financial"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "source_family": "Mubadala strengthens global presence via strategic investments, international partnerships",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "source_family": "Mubadala’s KELIX bio acquires DiabTec",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_mubadala_investment_company_pjsc_kelix_bio"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_diabtec_llc",
+      "source_family": "Mubadala’s KELIX bio acquires DiabTec",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_diabtec_llc"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_bioventure",
+      "source_family": "Mubadala acquires majority stakes in Global Medical Supply Chain, Al Ittihad Drug",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_bioventure"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_bioventure_healthcare",
+      "source_family": "Mubadala acquires majority stakes in Global Medical Supply Chain, Al Ittihad Drug",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_bioventure_healthcare"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_gulf_inject",
+      "source_family": "Mubadala acquires majority stakes in Global Medical Supply Chain, Al Ittihad Drug",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_gulf_inject"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_wellpharma",
+      "source_family": "Mubadala acquires majority stakes in Global Medical Supply Chain, Al Ittihad Drug",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_wellpharma"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "source_family": "Sharjah Taxi carries 9.31 million passengers in 2025",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bycu8e7-sharjah-taxi-carries-931-million-passengers-2025"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_sharjah_asset_management_sharjah_taxi"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "source_family": "Rafid launches two new branches in Hamriyah Free Zone",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b1k7nvo-rafid-launches-two-new-branches-hamriyah-free"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_sharjah_asset_management_rafid_automative_solutions"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "source_family": "ADQ appoints Modon Holding as master developer for Ras El Hekma megaproject in Egypt",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b5ii9jg-adq-appoints-modon-holding-master-developer-for"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "source_family": "Wio Bank reports revenue of AED1.24 billion in FY2025",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bz8znay-wio-bank-reports-revenue-aed124-billion-fy2025"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "source_family": "Karachi Gateway, Louis Dreyfus Company sign agreement to develop clean bulk handling, storage facility",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/15wmbdj-karachi-gateway-louis-dreyfus-company-sign"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "source_family": "ADQ, Bank Audi sign definitive agreement to acquire96% of Odea Bank",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_arcera_birgi_mefar_group",
+      "source_family": "ADQ, Bank Audi sign definitive agreement to acquire96% of Odea Bank",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_arcera_birgi_mefar_group"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "source_family": "ADQ, Bank Audi sign definitive agreement to acquire96% of Odea Bank",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "source_family": "Tadweer transferred to ADQ portfolio",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "source_family": "Tadweer transferred to ADQ portfolio",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "source_family": "Tadweer transferred to ADQ portfolio",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_bioventure_support_1",
+      "source_family": "Supporting named-asset transaction",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_bioventure_support_1"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "source_family": "Supporting named-asset transaction",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_bioventure_healthcare_support_1"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_gulf_inject_support_1",
+      "source_family": "Supporting named-asset transaction",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_gulf_inject_support_1"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_exp_kelix_bio_wellpharma_support_1",
+      "source_family": "Supporting named-asset transaction",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_exp_kelix_bio_wellpharma_support_1"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional minimal facts for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Bounded individual source reads and selected names, dated relations and disclosed percentages for noncommercial research/education only, with exact citations; no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-sovereign-canonical-review",
+          "rationale": "Not admitted or required: no raw source archive, expression redistribution or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated public-news snapshot; no completeness/latest claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    }
+  ]
+}

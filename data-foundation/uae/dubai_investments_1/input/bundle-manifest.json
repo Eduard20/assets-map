@@ -1,0 +1,11 @@
+{
+  "bundle_id": "dubai_investments_1",
+  "files": {
+    "batch.json": "10a61fdaff19db17524c1cb3a8a7ea7e924416b4da9ec9d38c7acc9809bce9ee",
+    "independent-review.json": "a0bedd801ea6b1c57b2e8fa22b96643ef971705ee2a643ed7c35aec5aff62d14",
+    "registry.json": "ad3ffc897ce73e08fd6b960bd97846782bf98b5c944313eeedb531b388ea7988",
+    "release-decision.json": "c87779f7693f88d5fe4e046ca355f04dc3aa1e36ccc627aeb8937120722358e5",
+    "review.json": "04cb3b7281b45325b3da1b9668ea017133181a4a49e0f64b218cc0c629eaee3e",
+    "sources.json": "a4c8897c749e6524b1cf53cee14647f1d8755b26751ec21ddccb5f58f98aaf64"
+  }
+}

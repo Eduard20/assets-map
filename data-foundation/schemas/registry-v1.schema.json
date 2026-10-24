@@ -26,7 +26,8 @@
               "person",
               "government",
               "brand",
-              "reported_group"
+              "reported_group",
+              "real_asset"
             ]
           },
           "legal_name": {
@@ -183,7 +184,8 @@
             "enum": [
               "common_equity",
               "preferred_equity",
-              "fund_unit"
+              "fund_unit",
+              "equity_interest_unspecified"
             ]
           },
           "share_class": {
@@ -377,7 +379,8 @@
               "fund",
               "beneficial_attribution",
               "unknown",
-              "reported_discretion"
+              "reported_discretion",
+              "consolidated_group"
             ]
           },
           "included_entity_ids": {

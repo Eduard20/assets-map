@@ -132,3 +132,57 @@
 .search-results button>span:first-child{min-width:0;overflow-wrap:anywhere}
 .search-results small{display:block;white-space:normal;line-height:1.45}
 .search-context{margin:0;padding:12px 16px;font-size:12px;line-height:1.45;color:var(--muted);border-bottom:1px solid var(--line)}
+
+/* UAE inventory stays independent of the small, focused graph. */
+.uae-controls .portfolio-selectors{align-items:end}
+.uae-controls .portfolio-selectors label:first-child{flex-basis:240px}
+.uae-summary{font-size:12px;line-height:1.6;color:#526c60;margin:12px 0 8px}
+.uae-coverage{font-size:12px;line-height:1.65;color:#526c60}
+.uae-coverage summary{cursor:pointer;color:#305740;padding:6px 0}
+.uae-coverage ul{padding-left:20px}.uae-coverage li{margin-bottom:7px}
+.research-inventory-row{margin-bottom:12px;border:1px solid #36515e;border-radius:10px;overflow:hidden;background:#102938}
+.graph-list .research-row{margin:0;border:0;border-radius:0;align-items:flex-start;gap:18px}
+.research-row>span:first-child{min-width:0;color:#e0edf3}
+.research-row .holding-value{max-width:155px;color:#d2e9dc}
+.research-row small{line-height:1.6;overflow-wrap:anywhere}
+.research-explore{display:block;background:#173747;border-top:1px solid #36515e;text-align:left;color:#c0e8d8;font-size:12px;width:100%;padding:10px 16px;min-height:40px}
+.research-explore:hover{background:#24495a}
+.disclosure-status{display:inline-block;margin:6px 0;font-size:12px;color:#695426}
+@media(max-width:800px), (max-width:1000px) and (max-height:500px){
+  .uae-controls .portfolio-selectors label{flex:1 1 100%}
+  .uae-controls .portfolio-selectors label:first-child{flex-basis:100%}
+  .uae-controls #uae-browse{width:100%}
+  .uae-summary,.uae-coverage{font-size:13px}
+  .research-row .holding-value{max-width:105px}
+  .research-row .holding-value small{font-size:11px}
+  .research-explore{min-height:44px;font-size:13px}
+}
+
+/* Relationship cards: role columns do not imply an ownership hierarchy. */
+#graph-2d{background:#111c28}
+#graph-2d svg{width:100%;height:100%;cursor:grab}
+#graph-2d svg:active{cursor:grabbing}
+.relationship-column .column-title{fill:#e3eaf4;font-size:15px;font-weight:650}
+.relationship-column .column-description{fill:#93a4b8;font-size:10px}
+.relationship-column line{stroke:#2a394a}
+.relationship-column .column-group{fill:#9daec2;font-size:9px;letter-spacing:1.3px}
+.graph-stage .relationship-card .node-card{fill:#1c2b3c;stroke:#405269;stroke-width:1;filter:none}
+.graph-stage .relationship-card.selected .node-card,.graph-stage .relationship-card:focus-visible .node-card{fill:#213549;stroke:#ccd9ff;stroke-width:2}
+.graph-stage .relationship-card:hover .node-card{stroke:#96b4fa}
+.graph-stage .relationship-card .node-name{fill:#edf3fd;font-size:12px;font-weight:600}
+.graph-stage .relationship-card .node-kind{fill:#a7b8ce;font-size:10px}
+.relationship-card .card-meta{fill:#8fa4bf;font-size:10px}
+.relationship-card .card-indicator{fill:#7eabff}
+.relationship-card.unrelated{opacity:.32}
+.relationship-card:focus-visible,.relationship-card:hover{opacity:1;outline:none}
+.graph-stage .edge-visible{fill:none;stroke:#759af1;stroke-width:1.2;opacity:.18;vector-effect:non-scaling-stroke}
+.graph-stage .edge.related .edge-visible{opacity:.8}
+.graph-stage .edge.selected .edge-visible,.graph-stage .edge:focus-visible .edge-visible{stroke:#d1dfff;stroke-width:2;opacity:1}
+.graph-stage .edge-hit{fill:none;stroke:transparent;stroke-width:18;pointer-events:stroke}
+.relationship-card .expand-node rect{fill:#1c2b3c;stroke:none}.relationship-card .expand-node text{fill:#b6cfff;font-size:20px}
+.relationship-card .expand-node:focus-visible rect{stroke:#d1dfff;stroke-width:2}
+.graph-stage .stage-label{color:#a9bad0}.graph-stage .map-key{display:none}
+.graph-stage .zoom-tools button{min-width:44px;min-height:44px}
+@media(max-width:800px){.detail-sheet{max-height:65dvh}.graph-stage .stage-label{font-size:10px}}
+.relationship-card .node-name,.relationship-card .node-kind{stroke:none;paint-order:normal}
+.relationship-card .node-card{cursor:pointer}

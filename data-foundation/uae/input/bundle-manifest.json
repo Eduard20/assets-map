@@ -1,0 +1,11 @@
+{
+  "bundle_id": "first22",
+  "files": {
+    "batch.json": "caf43952c8262d94ff076a39f5c1c89bc74f0949c2f1bff6443f6f3282dfcd37",
+    "independent-review.json": "3fdedac458a12d8576c9adf51bc3ba7f72dc0d227bbbed170297022607e5360f",
+    "registry.json": "28584cefee77796badf6ef8595326950b2b0a550f691a5e1126b766207a96e96",
+    "release-decision.json": "eddffa287781b133d266cf23584c3687ba9d33d3eedd4e4dc0cddc9614cda883",
+    "review.json": "2a8e48819d005f013dad5cccc0ad4ff14403231751488574b1e957d768349220",
+    "sources.json": "ba5445778f1d9bbc957f05435b40af746534f9e2b758d3c45ed0d43e6d575a5c"
+  }
+}

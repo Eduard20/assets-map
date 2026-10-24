@@ -87,14 +87,11 @@ function assertActiveView(view) {
   }
 }
 
-test('3D is the requested default, with an honest no-WebGL 2D fallback', () => {
-  assert.equal(initialState(createModel(data)).view, '3d');
+test('Relationship cards are the default without requiring WebGL', () => {
+  assert.equal(initialState(createModel(data)).view, '2d');
   assertActiveView('2d');
   assert.equal($('#graph-3d canvas'), null);
-  assert.equal($('#view-notice').hidden, false);
-  assert.match($('#view-notice').textContent, /Showing the 2D map/i);
-  assert.equal($('#status').hidden, false);
-  assert.match($('#status').textContent, /3D.*(?:unavailable|not available|not supported|could not)/i);
+  assert.equal(document.querySelectorAll('.relationship-card').length,4);
 });
 
 test('app initializes known nodes and distinguishes AUM from ownership', () => {

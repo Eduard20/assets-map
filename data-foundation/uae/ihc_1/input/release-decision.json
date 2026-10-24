@@ -1,0 +1,44 @@
+{
+  "acceptance_sha256": "399e0df3b895f0a6815c05c1b227d8fbf82024901ba8d709cf9fac4a1490606d",
+  "authorization_basis": "Renewed exact101 authorization bound to independent acceptance SHA 399e0df3b895f0a6815c05c1b227d8fbf82024901ba8d709cf9fac4a1490606d and source_snapshot_only public-news correction contract; final independent code and exact-SHA CI review required.",
+  "authorization_readback_verified": true,
+  "authorization_url": "https://github.com/Eduard20/assets-map/issues/53",
+  "authorized_by": "coordinating maintainer root, exact listed101 renewed decision 2026-10-23",
+  "authorized_candidate_ids": [
+    "cand_uae_easylease_gallega_group_holding_20260430",
+    "cand_uae_easylease_the_captains_holding_20260508",
+    "cand_uae_international_holding_company_2pointzero_group_20260701",
+    "cand_uae_international_holding_company_al_seer_marine_20260508",
+    "cand_uae_international_holding_company_aldar_properties_20260701",
+    "cand_uae_international_holding_company_alpha_dhabi_holding_20260701",
+    "cand_uae_international_holding_company_alpha_wave_global_20260701",
+    "cand_uae_international_holding_company_easylease_20260430",
+    "cand_uae_international_holding_company_emirates_stallions_group_20260729",
+    "cand_uae_international_holding_company_first_women_bank_limited_20260701",
+    "cand_uae_international_holding_company_invictus_investment_20251223",
+    "cand_uae_international_holding_company_judan_financial_20260309",
+    "cand_uae_international_holding_company_nmdc_group_20260701",
+    "cand_uae_international_holding_company_palms_sports_20260916",
+    "cand_uae_international_holding_company_peko_holdings_limited_20251223",
+    "cand_uae_international_holding_company_purehealth_20260701",
+    "cand_uae_international_holding_company_sammaan_capital_20260331",
+    "cand_uae_international_holding_company_zelo_20251223"
+  ],
+  "conditions": [
+    "Exact independently accepted candidate IDs only.",
+    "Dated source observations are not verified current holdings; correction coverage remains nonexhaustive where explicitly labeled.",
+    "Preserve source-qualified identity, role, date, percentage uncertainty, perimeter and nonadditive lineage.",
+    "No raw source redistribution, open licence claim or commercial reuse.",
+    "Changed factual input requires renewed exact independent review.",
+    "Independent code review and exact-SHA CI/browser checks remain required before publication."
+  ],
+  "decision_id": "ihc_1_maintainer_20261023140350",
+  "recorded_at": "2026-10-23T14:03:50Z",
+  "reviewed_input_sha256": {
+    "batch.json": "525def576c7e8c5f43a916504134e122bc437b4b8d3e95ecc45b175f555adedd",
+    "independent-review.json": "acea6c0b9b5b3f47692651f7fb95d7eb6164ac9cf5efb5340f68ed13cad07ecf",
+    "registry.json": "0670ad7095cfba71365ed7a6a120e3aae3145846f4bba4fe9fd4563cd3ee3711",
+    "review.json": "c1a3ce21c32dc03e34edddce2b4634bb57aa7bcbe6509bc3853da845e6e01ce6",
+    "sources.json": "11abe1e523a6ea34bca18a90aa06274f21f4b2e89ed5fd4c58ff13c31c87876f"
+  }
+}

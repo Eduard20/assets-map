@@ -5,7 +5,7 @@ import {createModel, initialState, buildVisibleGraph} from '../src/graph-model.j
 import {layoutBubbles, bubbleRadius} from '../src/bubble-layout.js';
 const data = JSON.parse(await readFile(new URL('../data/graph.json', import.meta.url), 'utf8'));
 const model = createModel(data);
-test('3D bubbles are the default presentation', () => assert.equal(initialState(model).view, '3d'));
+test('Relationship cards are the default presentation', () => assert.equal(initialState(model).view, '2d'));
 test('bubble size only distinguishes the focus, not assets or company values', () => {
   for (const node of model.nodes) assert.equal(bubbleRadius(node.id, 'blackrock'), node.id==='blackrock'?29:21);
 });

@@ -1,0 +1,11 @@
+{
+  "bundle_id": "two_point_zero_2",
+  "files": {
+    "batch.json": "a13563d60eaa1405db1ff66f29f227e19195978013fee2f2e03b1bf8703725b4",
+    "independent-review.json": "d9438787f36f88f4589acea4efea8e9cedb566f8d7547bc9d9d2743853902767",
+    "registry.json": "2973e54f7e414c39c9b44686f78cb98380fb8ebac16f383a7319892187e8c51b",
+    "release-decision.json": "860e8090adc84a3b9ecbb196ec65497bcc8cddb1995d59b37fb5138737915163",
+    "review.json": "01343f43237d1a09540933e703758be459c2067a39fc7dd4e5eec3336c66c404",
+    "sources.json": "9a6b45c9855b52865dde3400e0dda6d493baadc0930b91a145043cba4e5d5b39"
+  }
+}

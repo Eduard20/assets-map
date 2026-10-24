@@ -1,0 +1,3811 @@
+{
+  "documents": [
+    {
+      "document_id": "doc_uae_dubai_holding_jumeirah",
+      "source_id": "src_uae_dubai_holding_jumeirah",
+      "document_family_id": "family_uae_dubai_holding_jumeirah",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-08-17",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_dubai_holding_real_estate",
+      "source_id": "src_uae_dubai_holding_dubai_holding_real_estate",
+      "document_family_id": "family_uae_dubai_holding_dubai_holding_real_estate",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-08-17",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_dubai_holding_entertainment",
+      "source_id": "src_uae_dubai_holding_dubai_holding_entertainment",
+      "document_family_id": "family_uae_dubai_holding_dubai_holding_entertainment",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-08-17",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_dubai_holding_community_management",
+      "source_id": "src_uae_dubai_holding_dubai_holding_community_management",
+      "document_family_id": "family_uae_dubai_holding_dubai_holding_community_management",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-08-17",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_nakheel",
+      "source_id": "src_uae_dubai_holding_nakheel",
+      "document_family_id": "family_uae_dubai_holding_nakheel",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-08-17",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_tecom_group",
+      "source_id": "src_uae_dubai_holding_tecom_group",
+      "document_family_id": "family_uae_dubai_holding_tecom_group",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-08-17",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_meraas",
+      "source_id": "src_uae_dubai_holding_meraas",
+      "document_family_id": "family_uae_dubai_holding_meraas",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-21",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_meydan",
+      "source_id": "src_uae_dubai_holding_meydan",
+      "document_family_id": "family_uae_dubai_holding_meydan",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-21",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_jumeirah_mallorca",
+      "source_id": "src_uae_dubai_holding_jumeirah_mallorca",
+      "document_family_id": "family_uae_dubai_holding_jumeirah_mallorca",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-01-20",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "source_id": "src_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "document_family_id": "family_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-01-20",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_investment_corporation_of_dubai_alec_holdings",
+      "source_id": "src_uae_investment_corporation_of_dubai_alec_holdings",
+      "document_family_id": "family_uae_investment_corporation_of_dubai_alec_holdings",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bm7u2d9-alec-holdings-debuts-dfm-uae%E2%80%99s-largest-ever",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-10-15",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "source_id": "src_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "document_family_id": "family_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-02-10",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_emirates_power_investment_llc",
+      "source_id": "src_uae_dubai_holding_emirates_power_investment_llc",
+      "document_family_id": "family_uae_dubai_holding_emirates_power_investment_llc",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-02-10",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "source_id": "src_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "document_family_id": "family_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/hszr8s5p-dae-repurchases-shares-held-emaar-properties",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2019-06-27",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_investment_corporation_of_dubai_ithra_dubai",
+      "source_id": "src_uae_investment_corporation_of_dubai_ithra_dubai",
+      "document_family_id": "family_uae_investment_corporation_of_dubai_ithra_dubai",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/hszrcuzj-ithra-dubai-launches-one-deira-deira-enrichment",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2021-08-16",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubal_holding",
+      "source_id": "src_uae_investment_corporation_of_dubai_dubal_holding",
+      "document_family_id": "family_uae_investment_corporation_of_dubai_dubal_holding",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2020-12-08",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubal_holding_emirates_global_aluminium",
+      "source_id": "src_uae_dubal_holding_emirates_global_aluminium",
+      "document_family_id": "family_uae_dubal_holding_emirates_global_aluminium",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2020-12-08",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_dham_reit_management_llc",
+      "source_id": "src_uae_dubai_holding_dham_reit_management_llc",
+      "document_family_id": "family_uae_dubai_holding_dham_reit_management_llc",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-05-05",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_dham_investments_llc",
+      "source_id": "src_uae_dubai_holding_dham_investments_llc",
+      "document_family_id": "family_uae_dubai_holding_dham_investments_llc",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-05-05",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubal_holding_warsan_waste_management",
+      "source_id": "src_uae_dubal_holding_warsan_waste_management",
+      "document_family_id": "family_uae_dubal_holding_warsan_waste_management",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-09-08",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubal_holding_biod_technology",
+      "source_id": "src_uae_dubal_holding_biod_technology",
+      "document_family_id": "family_uae_dubal_holding_biod_technology",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-09-08",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubal_holding_enviroserve",
+      "source_id": "src_uae_dubal_holding_enviroserve",
+      "document_family_id": "family_uae_dubal_holding_enviroserve",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-09-08",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_investment_corporation_of_dubai_emirates_group",
+      "source_id": "src_uae_investment_corporation_of_dubai_emirates_group",
+      "document_family_id": "family_uae_investment_corporation_of_dubai_emirates_group",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-05-07",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_emirates_group_emirates",
+      "source_id": "src_uae_emirates_group_emirates",
+      "document_family_id": "family_uae_emirates_group_emirates",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-05-07",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_emirates_group_dnata",
+      "source_id": "src_uae_emirates_group_dnata",
+      "document_family_id": "family_uae_emirates_group_dnata",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-05-07",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dnata_wondermiles",
+      "source_id": "src_uae_dnata_wondermiles",
+      "document_family_id": "family_uae_dnata_wondermiles",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-11-06",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_emirates_leisure_retail_air_ventures_llc",
+      "source_id": "src_uae_emirates_leisure_retail_air_ventures_llc",
+      "document_family_id": "family_uae_emirates_leisure_retail_air_ventures_llc",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-11-06",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_real_estate_nakheel",
+      "source_id": "src_uae_dubai_holding_real_estate_nakheel",
+      "document_family_id": "family_uae_dubai_holding_real_estate_nakheel",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-05-14",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_real_estate_meraas",
+      "source_id": "src_uae_dubai_holding_real_estate_meraas",
+      "document_family_id": "family_uae_dubai_holding_real_estate_meraas",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-05-14",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_dubai_holding_real_estate_dubai_properties",
+      "source_id": "src_uae_dubai_holding_real_estate_dubai_properties",
+      "document_family_id": "family_uae_dubai_holding_real_estate_dubai_properties",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-05-14",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individual public-news snapshot inspected. No exhaustive correction or amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_uae_dubai_holding_jumeirah",
+      "document_id": "doc_uae_dubai_holding_jumeirah",
+      "locator": "lines 13-14: named group companies and portfolio",
+      "source_record_key": "uae_dubai_holding_jumeirah",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Jumeirah at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_dubai_holding_real_estate",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_real_estate",
+      "locator": "lines 13-14: named group companies and portfolio",
+      "source_record_key": "uae_dubai_holding_dubai_holding_real_estate",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Dubai Holding Real Estate at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_dubai_holding_entertainment",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_entertainment",
+      "locator": "lines 13-14: named group companies and portfolio",
+      "source_record_key": "uae_dubai_holding_dubai_holding_entertainment",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Dubai Holding Entertainment at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_dubai_holding_community_management",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_community_management",
+      "locator": "lines 13-14: named group companies and portfolio",
+      "source_record_key": "uae_dubai_holding_dubai_holding_community_management",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Dubai Holding Community Management at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_nakheel",
+      "document_id": "doc_uae_dubai_holding_nakheel",
+      "locator": "lines 13-14: named group companies and portfolio",
+      "source_record_key": "uae_dubai_holding_nakheel",
+      "supported_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Nakheel at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_tecom_group",
+      "document_id": "doc_uae_dubai_holding_tecom_group",
+      "locator": "lines 13-14: named group companies and portfolio",
+      "source_record_key": "uae_dubai_holding_tecom_group",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in TECOM Group at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_meraas",
+      "document_id": "doc_uae_dubai_holding_meraas",
+      "locator": "lines 6,12-14: completed integrations and residential portfolio",
+      "source_record_key": "uae_dubai_holding_meraas",
+      "supported_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Meraas at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_meydan",
+      "document_id": "doc_uae_dubai_holding_meydan",
+      "locator": "lines 6,12-14: completed integrations and residential portfolio",
+      "source_record_key": "uae_dubai_holding_meydan",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Meydan at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_jumeirah_mallorca",
+      "document_id": "doc_uae_dubai_holding_jumeirah_mallorca",
+      "locator": "lines 7-8,15: acquired property and hospitality group",
+      "source_record_key": "uae_dubai_holding_jumeirah_mallorca",
+      "supported_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Jumeirah Mallorca at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "document_id": "doc_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "locator": "lines 7-8,15: acquired property and hospitality group",
+      "source_record_key": "uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "supported_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "fact_summary": "Dubai Holding Hospitality reports an interest in Bvlgari Hotel Dubai at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_investment_corporation_of_dubai_alec_holdings",
+      "document_id": "doc_uae_investment_corporation_of_dubai_alec_holdings",
+      "locator": "lines 9-10: completed listing and retained stake",
+      "source_record_key": "uae_investment_corporation_of_dubai_alec_holdings",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Investment Corporation of Dubai reports an interest in ALEC Holdings at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "document_id": "doc_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "locator": "lines 6-8: completed transfer of EPI entire holding; resulting stake",
+      "source_record_key": "uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Electricity and Water Authority PJSC reports an interest in Emirates Central Cooling Systems Corporation PJSC (Empower) at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_emirates_power_investment_llc",
+      "document_id": "doc_uae_dubai_holding_emirates_power_investment_llc",
+      "locator": "lines 6-8: completed transfer of EPI entire holding; resulting stake",
+      "source_record_key": "uae_dubai_holding_emirates_power_investment_llc",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in Emirates Power Investment LLC at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "locator": "line 8:100% owned directly and indirectly",
+      "source_record_key": "uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Investment Corporation of Dubai reports an interest in Dubai Aerospace Enterprise at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_investment_corporation_of_dubai_ithra_dubai",
+      "document_id": "doc_uae_investment_corporation_of_dubai_ithra_dubai",
+      "locator": "line 7:wholly owned",
+      "source_record_key": "uae_investment_corporation_of_dubai_ithra_dubai",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Investment Corporation of Dubai reports an interest in Ithra Dubai at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_investment_corporation_of_dubai_dubal_holding",
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubal_holding",
+      "locator": "lines 7,14:ICD wholly-owned subsidiary and EGA interest",
+      "source_record_key": "uae_investment_corporation_of_dubai_dubal_holding",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Investment Corporation of Dubai reports an interest in DUBAL Holding at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubal_holding_emirates_global_aluminium",
+      "document_id": "doc_uae_dubal_holding_emirates_global_aluminium",
+      "locator": "lines 7,14:ICD wholly-owned subsidiary and EGA interest",
+      "source_record_key": "uae_dubal_holding_emirates_global_aluminium",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "DUBAL Holding reports an interest in Emirates Global Aluminium at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_dham_reit_management_llc",
+      "document_id": "doc_uae_dubai_holding_dham_reit_management_llc",
+      "locator": "Opening paragraph for DHAM REIT Management LLC; third paragraph for DHAM Investments LLC (web lines 6 and 8).",
+      "source_record_key": "uae_dubai_holding_dham_reit_management_llc",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in DHAM REIT Management LLC at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_dham_investments_llc",
+      "document_id": "doc_uae_dubai_holding_dham_investments_llc",
+      "locator": "Opening paragraph for DHAM REIT Management LLC; third paragraph for DHAM Investments LLC (web lines 6 and 8).",
+      "source_record_key": "uae_dubai_holding_dham_investments_llc",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Dubai Holding reports an interest in DHAM Investments LLC at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubal_holding_warsan_waste_management",
+      "document_id": "doc_uae_dubal_holding_warsan_waste_management",
+      "locator": "lines 7-8:Warsan 20%, BioD investment, Enviroserve partnership",
+      "source_record_key": "uae_dubal_holding_warsan_waste_management",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "DUBAL Holding reports an interest in Warsan Waste Management at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubal_holding_biod_technology",
+      "document_id": "doc_uae_dubal_holding_biod_technology",
+      "locator": "lines 7-8:Warsan 20%, BioD investment, Enviroserve partnership",
+      "source_record_key": "uae_dubal_holding_biod_technology",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "DUBAL Holding reports an interest in BioD Technology at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubal_holding_enviroserve",
+      "document_id": "doc_uae_dubal_holding_enviroserve",
+      "locator": "lines 7-8:Warsan 20%, BioD investment, Enviroserve partnership",
+      "source_record_key": "uae_dubal_holding_enviroserve",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "DUBAL Holding reports an interest in Enviroserve at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_investment_corporation_of_dubai_emirates_group",
+      "document_id": "doc_uae_investment_corporation_of_dubai_emirates_group",
+      "locator": "line 12: owner of group",
+      "source_record_key": "uae_investment_corporation_of_dubai_emirates_group",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Investment Corporation of Dubai reports an interest in Emirates Group at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_emirates_group_emirates",
+      "document_id": "doc_uae_emirates_group_emirates",
+      "locator": "lines 9-12: constituent businesses in group results",
+      "source_record_key": "uae_emirates_group_emirates",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Emirates Group reports an interest in Emirates at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_emirates_group_dnata",
+      "document_id": "doc_uae_emirates_group_dnata",
+      "locator": "lines 9-12: constituent businesses in group results",
+      "source_record_key": "uae_emirates_group_dnata",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Emirates Group reports an interest in dnata at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dnata_wondermiles",
+      "document_id": "doc_uae_dnata_wondermiles",
+      "locator": "line 39: minority equity investment",
+      "source_record_key": "uae_dnata_wondermiles",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "dnata reports an interest in WonderMiles at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_emirates_leisure_retail_air_ventures_llc",
+      "document_id": "doc_uae_emirates_leisure_retail_air_ventures_llc",
+      "locator": "line 56: remaining 25% acquired; full ownership",
+      "source_record_key": "uae_emirates_leisure_retail_air_ventures_llc",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Emirates Leisure Retail reports an interest in Air Ventures LLC at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_real_estate_nakheel",
+      "document_id": "doc_uae_dubai_holding_real_estate_nakheel",
+      "locator": "Opening paragraph:its brands Nakheel, Meraas and Dubai Properties",
+      "source_record_key": "uae_dubai_holding_real_estate_nakheel",
+      "supported_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "fact_summary": "Dubai Holding Real Estate reports an interest in Nakheel at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_real_estate_meraas",
+      "document_id": "doc_uae_dubai_holding_real_estate_meraas",
+      "locator": "Opening paragraph:its brands Nakheel, Meraas and Dubai Properties",
+      "source_record_key": "uae_dubai_holding_real_estate_meraas",
+      "supported_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "fact_summary": "Dubai Holding Real Estate reports an interest in Meraas at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_dubai_holding_real_estate_dubai_properties",
+      "document_id": "doc_uae_dubai_holding_real_estate_dubai_properties",
+      "locator": "Opening paragraph:its brands Nakheel, Meraas and Dubai Properties",
+      "source_record_key": "uae_dubai_holding_real_estate_dubai_properties",
+      "supported_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "fact_summary": "Dubai Holding Real Estate reports an interest in Dubai Properties at the cited evidence date; scope is partial."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "obs_uae_dubai_holding_jumeirah",
+      "document_id": "doc_uae_dubai_holding_jumeirah",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_jumeirah"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_dubai_holding_real_estate",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_real_estate",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_real_estate"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_dubai_holding_entertainment",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_entertainment",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_entertainment"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_dubai_holding_community_management",
+      "document_id": "doc_uae_dubai_holding_dubai_holding_community_management",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_community_management"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_nakheel",
+      "document_id": "doc_uae_dubai_holding_nakheel",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_nakheel"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_tecom_group",
+      "document_id": "doc_uae_dubai_holding_tecom_group",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_tecom_group"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_meraas",
+      "document_id": "doc_uae_dubai_holding_meraas",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_meraas"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_meydan",
+      "document_id": "doc_uae_dubai_holding_meydan",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_meydan"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_jumeirah_mallorca",
+      "document_id": "doc_uae_dubai_holding_jumeirah_mallorca",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_jumeirah_mallorca"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "document_id": "doc_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_hospitality_bvlgari_hotel_dubai"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_investment_corporation_of_dubai_alec_holdings",
+      "document_id": "doc_uae_investment_corporation_of_dubai_alec_holdings",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_alec_holdings"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "document_id": "doc_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "evidence_ids": [
+        "ev_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_emirates_power_investment_llc",
+      "document_id": "doc_uae_dubai_holding_emirates_power_investment_llc",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_emirates_power_investment_llc"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_investment_corporation_of_dubai_ithra_dubai",
+      "document_id": "doc_uae_investment_corporation_of_dubai_ithra_dubai",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_ithra_dubai"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_investment_corporation_of_dubai_dubal_holding",
+      "document_id": "doc_uae_investment_corporation_of_dubai_dubal_holding",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubal_holding"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubal_holding_emirates_global_aluminium",
+      "document_id": "doc_uae_dubal_holding_emirates_global_aluminium",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_emirates_global_aluminium"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_dham_reit_management_llc",
+      "document_id": "doc_uae_dubai_holding_dham_reit_management_llc",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dham_reit_management_llc"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_dham_investments_llc",
+      "document_id": "doc_uae_dubai_holding_dham_investments_llc",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dham_investments_llc"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubal_holding_warsan_waste_management",
+      "document_id": "doc_uae_dubal_holding_warsan_waste_management",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_warsan_waste_management"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubal_holding_biod_technology",
+      "document_id": "doc_uae_dubal_holding_biod_technology",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_biod_technology"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubal_holding_enviroserve",
+      "document_id": "doc_uae_dubal_holding_enviroserve",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_enviroserve"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_investment_corporation_of_dubai_emirates_group",
+      "document_id": "doc_uae_investment_corporation_of_dubai_emirates_group",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_emirates_group"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_emirates_group_emirates",
+      "document_id": "doc_uae_emirates_group_emirates",
+      "evidence_ids": [
+        "ev_uae_emirates_group_emirates"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_emirates_group_dnata",
+      "document_id": "doc_uae_emirates_group_dnata",
+      "evidence_ids": [
+        "ev_uae_emirates_group_dnata"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dnata_wondermiles",
+      "document_id": "doc_uae_dnata_wondermiles",
+      "evidence_ids": [
+        "ev_uae_dnata_wondermiles"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_emirates_leisure_retail_air_ventures_llc",
+      "document_id": "doc_uae_emirates_leisure_retail_air_ventures_llc",
+      "evidence_ids": [
+        "ev_uae_emirates_leisure_retail_air_ventures_llc"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_real_estate_nakheel",
+      "document_id": "doc_uae_dubai_holding_real_estate_nakheel",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_nakheel"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_real_estate_meraas",
+      "document_id": "doc_uae_dubai_holding_real_estate_meraas",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_meraas"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_dubai_holding_real_estate_dubai_properties",
+      "document_id": "doc_uae_dubai_holding_real_estate_dubai_properties",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_dubai_properties"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_dubai_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    }
+  ],
+  "denominators": [
+    {
+      "denominator_id": "den_uae_dubai_holding_jumeirah",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-08-17",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_jumeirah",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_jumeirah"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_dubai_holding_real_estate",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-08-17",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_real_estate",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_real_estate"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_dubai_holding_entertainment",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-08-17",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_entertainment",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_entertainment"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_dubai_holding_community_management",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-08-17",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_community_management",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_community_management"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_tecom_group",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-08-17",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_tecom_group",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_tecom_group"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_meydan",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-10-21",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_meydan",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_meydan"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_investment_corporation_of_dubai_alec_holdings",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-10-15",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_alec_holdings",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_alec_holdings"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-02-10",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_emirates_power_investment_llc",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-02-10",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_emirates_power_investment_llc",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_emirates_power_investment_llc"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2019-06-27",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_investment_corporation_of_dubai_ithra_dubai",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2021-08-16",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_ithra_dubai",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_ithra_dubai"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_investment_corporation_of_dubai_dubal_holding",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2020-12-08",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubal_holding",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubal_holding"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubal_holding_emirates_global_aluminium",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2020-12-08",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubal_holding_emirates_global_aluminium",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubal_holding_emirates_global_aluminium"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_dham_reit_management_llc",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-05-05",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_reit_management_llc",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dham_reit_management_llc"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubai_holding_dham_investments_llc",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-05-05",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_investments_llc",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dham_investments_llc"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubal_holding_warsan_waste_management",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-09-08",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubal_holding_warsan_waste_management",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubal_holding_warsan_waste_management"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubal_holding_biod_technology",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-09-08",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubal_holding_biod_technology",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubal_holding_biod_technology"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dubal_holding_enviroserve",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-09-08",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dubal_holding_enviroserve",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dubal_holding_enviroserve"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_investment_corporation_of_dubai_emirates_group",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-05-07",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_emirates_group",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_emirates_group"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_emirates_group_emirates",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-05-07",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_emirates_group_emirates",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_emirates_group_emirates"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_emirates_group_dnata",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-05-07",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_emirates_group_dnata",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_emirates_group_dnata"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_dnata_wondermiles",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-11-06",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_dnata_wondermiles",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_dnata_wondermiles"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_emirates_leisure_retail_air_ventures_llc",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-11-06",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_emirates_leisure_retail_air_ventures_llc",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_emirates_leisure_retail_air_ventures_llc"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "coverage_id": "coverage_uae_dubai_holding_jumeirah",
+      "reporting_perimeter_id": "per_uae_dubai_holding_jumeirah",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-08-17",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_dubai_holding_real_estate",
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_real_estate",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-08-17",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_dubai_holding_entertainment",
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_entertainment",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-08-17",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_dubai_holding_community_management",
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_community_management",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-08-17",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_nakheel",
+      "reporting_perimeter_id": "per_uae_dubai_holding_nakheel",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-08-17",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_tecom_group",
+      "reporting_perimeter_id": "per_uae_dubai_holding_tecom_group",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-08-17",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_meraas",
+      "reporting_perimeter_id": "per_uae_dubai_holding_meraas",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-10-21",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_meydan",
+      "reporting_perimeter_id": "per_uae_dubai_holding_meydan",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-10-21",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_jumeirah_mallorca",
+      "reporting_perimeter_id": "per_uae_dubai_holding_jumeirah_mallorca",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-01-20",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "reporting_perimeter_id": "per_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-01-20",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_investment_corporation_of_dubai_alec_holdings",
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_alec_holdings",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-10-15",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "reporting_perimeter_id": "per_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-02-10",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_emirates_power_investment_llc",
+      "reporting_perimeter_id": "per_uae_dubai_holding_emirates_power_investment_llc",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-02-10",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "reporting_perimeter_version": "1",
+      "report_date": "2019-06-27",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_investment_corporation_of_dubai_ithra_dubai",
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_ithra_dubai",
+      "reporting_perimeter_version": "1",
+      "report_date": "2021-08-16",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_investment_corporation_of_dubai_dubal_holding",
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubal_holding",
+      "reporting_perimeter_version": "1",
+      "report_date": "2020-12-08",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubal_holding_emirates_global_aluminium",
+      "reporting_perimeter_id": "per_uae_dubal_holding_emirates_global_aluminium",
+      "reporting_perimeter_version": "1",
+      "report_date": "2020-12-08",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_dham_reit_management_llc",
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_reit_management_llc",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-05-05",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_dham_investments_llc",
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_investments_llc",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-05-05",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubal_holding_warsan_waste_management",
+      "reporting_perimeter_id": "per_uae_dubal_holding_warsan_waste_management",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-09-08",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubal_holding_biod_technology",
+      "reporting_perimeter_id": "per_uae_dubal_holding_biod_technology",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-09-08",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubal_holding_enviroserve",
+      "reporting_perimeter_id": "per_uae_dubal_holding_enviroserve",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-09-08",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_investment_corporation_of_dubai_emirates_group",
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_emirates_group",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-05-07",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_emirates_group_emirates",
+      "reporting_perimeter_id": "per_uae_emirates_group_emirates",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-05-07",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_emirates_group_dnata",
+      "reporting_perimeter_id": "per_uae_emirates_group_dnata",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-05-07",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dnata_wondermiles",
+      "reporting_perimeter_id": "per_uae_dnata_wondermiles",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-11-06",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_emirates_leisure_retail_air_ventures_llc",
+      "reporting_perimeter_id": "per_uae_emirates_leisure_retail_air_ventures_llc",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-11-06",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_real_estate_nakheel",
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_nakheel",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-05-14",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_real_estate_meraas",
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_meraas",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-05-14",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_dubai_holding_real_estate_dubai_properties",
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_dubai_properties",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-05-14",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    }
+  ],
+  "claims": [
+    {
+      "candidate_id": "cand_uae_dubai_holding_jumeirah",
+      "assertion_key": "cand_uae_dubai_holding_jumeirah",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_jumeirah",
+      "report_date": "2026-08-17",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_jumeirah",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_jumeirah_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_jumeirah"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_jumeirah"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported group business/portfolio affiliation; no direct legal holder, exact legal entity or percentage established.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_jumeirah",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_jumeirah",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_jumeirah"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_dubai_holding_real_estate",
+      "assertion_key": "cand_uae_dubai_holding_dubai_holding_real_estate",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dubai_holding_real_estate",
+      "report_date": "2026-08-17",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_real_estate",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_dubai_holding_real_estate_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_real_estate"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_dubai_holding_real_estate"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported group business/portfolio affiliation; no direct legal holder, exact legal entity or percentage established.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_dubai_holding_real_estate",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_dubai_holding_real_estate",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_real_estate"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_dubai_holding_entertainment",
+      "assertion_key": "cand_uae_dubai_holding_dubai_holding_entertainment",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dubai_holding_entertainment",
+      "report_date": "2026-08-17",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_entertainment",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_dubai_holding_entertainment_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_entertainment"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_dubai_holding_entertainment"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported group business/portfolio affiliation; no direct legal holder, exact legal entity or percentage established.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_dubai_holding_entertainment",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_dubai_holding_entertainment",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_entertainment"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_dubai_holding_community_management",
+      "assertion_key": "cand_uae_dubai_holding_dubai_holding_community_management",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dubai_holding_community_management",
+      "report_date": "2026-08-17",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_dubai_holding_community_management",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_dubai_holding_community_management_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_community_management"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_dubai_holding_community_management"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported group business/portfolio affiliation; no direct legal holder, exact legal entity or percentage established.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_dubai_holding_community_management",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_dubai_holding_community_management",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_dubai_holding_community_management"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_nakheel",
+      "assertion_key": "cand_uae_dubai_holding_nakheel",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_portfolio_affiliation",
+      "object_id": "ent_nakheel",
+      "report_date": "2026-08-17",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_nakheel",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_nakheel_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_nakheel"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_nakheel"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported group business/portfolio affiliation; no direct legal holder, exact legal entity or percentage established.",
+        "Evidence status: reported as of disclosure.",
+        "Asset or brand affiliation only; does not establish corporate equity, registered property title, or that management implies ownership.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Identity is the source-named brand/business, not a verified corporate legal entity; parent and divisional affiliations are not additive."
+      ],
+      "metrics": [],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_nakheel"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_tecom_group",
+      "assertion_key": "cand_uae_dubai_holding_tecom_group",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_tecom_group",
+      "report_date": "2026-08-17",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_tecom_group",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_tecom_group_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_tecom_group"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_tecom_group"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported group business/portfolio affiliation; no direct legal holder, exact legal entity or percentage established.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_tecom_group",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_tecom_group",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_tecom_group"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_meraas",
+      "assertion_key": "cand_uae_dubai_holding_meraas",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_portfolio_affiliation",
+      "object_id": "ent_meraas",
+      "report_date": "2024-10-21",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_meraas",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_meraas_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_meraas"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_meraas"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Completed group integration reported retrospectively; percentage and immediate legal holder undisclosed.",
+        "Evidence status: reported as of disclosure.",
+        "Asset or brand affiliation only; does not establish corporate equity, registered property title, or that management implies ownership.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Identity is the source-named brand/business, not a verified corporate legal entity; parent and divisional affiliations are not additive."
+      ],
+      "metrics": [],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_meraas"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_meydan",
+      "assertion_key": "cand_uae_dubai_holding_meydan",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_meydan",
+      "report_date": "2024-10-21",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_meydan",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_meydan_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_meydan"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_meydan"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Completed group integration reported retrospectively; percentage and immediate legal holder undisclosed.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_meydan",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_meydan",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_meydan"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_jumeirah_mallorca",
+      "assertion_key": "cand_uae_dubai_holding_jumeirah_mallorca",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_portfolio_affiliation",
+      "object_id": "ent_jumeirah_mallorca",
+      "report_date": "2026-01-20",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_jumeirah_mallorca",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_jumeirah_mallorca_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_jumeirah_mallorca"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_jumeirah_mallorca"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Spanish hotel property acquisition, not equity in an identified corporate SPV. Prior Jumeirah management alone was not ownership. Percentage undisclosed.",
+        "Evidence status: reported as of disclosure.",
+        "Asset or brand affiliation only; does not establish corporate equity, registered property title, or that management implies ownership.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_jumeirah_mallorca"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "assertion_key": "cand_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "subject_id": "ent_dubai_holding_hospitality",
+      "predicate": "reported_portfolio_affiliation",
+      "object_id": "ent_bvlgari_hotel_dubai",
+      "report_date": "2026-01-20",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_hospitality_bvlgari_hotel_dubai_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_hospitality_bvlgari_hotel_dubai"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_hospitality_bvlgari_hotel_dubai"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported hotel portfolio asset; no direct title or percentage established; not ownership of Bvlgari brand/company.",
+        "Evidence status: reported as of disclosure.",
+        "Asset or brand affiliation only; does not establish corporate equity, registered property title, or that management implies ownership.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_hospitality_bvlgari_hotel_dubai"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_alec_holdings",
+      "assertion_key": "cand_uae_investment_corporation_of_dubai_alec_holdings",
+      "subject_id": "ent_investment_corporation_of_dubai",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_alec_holdings",
+      "report_date": "2025-10-15",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_alec_holdings",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_investment_corporation_of_dubai_alec_holdings_position",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_alec_holdings"
+      ],
+      "observation_ids": [
+        "obs_uae_investment_corporation_of_dubai_alec_holdings"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "ICD named as sole selling shareholder retaining 80% following completed IPO. No current-day assertion.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_investment_corporation_of_dubai_alec_holdings",
+          "metric_type": "group_interest_percentage",
+          "value": "80",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_investment_corporation_of_dubai_alec_holdings",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_alec_holdings"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "assertion_key": "cand_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "subject_id": "ent_dubai_electricity_and_water_authority_pjsc",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "report_date": "2026-02-10",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower_position",
+      "evidence_ids": [
+        "ev_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Completed transfer; DEWA resulting ownership 80%. EPI sold entire holding. No imported security identifier.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+          "metric_type": "group_interest_percentage",
+          "value": "80",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_emirates_power_investment_llc",
+      "assertion_key": "cand_uae_dubai_holding_emirates_power_investment_llc",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_emirates_power_investment_llc",
+      "report_date": "2026-02-10",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_emirates_power_investment_llc",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_emirates_power_investment_llc_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_emirates_power_investment_llc"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_emirates_power_investment_llc"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Ultimately owned and controlled by Dubai Holding LLC; percentage and immediate parent unspecified in this report.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_emirates_power_investment_llc",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_emirates_power_investment_llc",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_emirates_power_investment_llc"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "assertion_key": "cand_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "subject_id": "ent_investment_corporation_of_dubai",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dubai_aerospace_enterprise",
+      "report_date": "2019-06-27",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise_position",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise"
+      ],
+      "observation_ids": [
+        "obs_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Explicit combined direct and indirect ownership; not 100% direct legal equity. Historical 2019 snapshot requiring refresh.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_ithra_dubai",
+      "assertion_key": "cand_uae_investment_corporation_of_dubai_ithra_dubai",
+      "subject_id": "ent_investment_corporation_of_dubai",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_ithra_dubai",
+      "report_date": "2021-08-16",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_ithra_dubai",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_investment_corporation_of_dubai_ithra_dubai_position",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_ithra_dubai"
+      ],
+      "observation_ids": [
+        "obs_uae_investment_corporation_of_dubai_ithra_dubai"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Wholly owned parent relationship; immediate chain not separately established.",
+        "Evidence status: reported as of disclosure.",
+        "Source describes the holding as a subsidiary; this view shows the parent reporting-group interest, not a registered shareholding chain.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Parent-to-child reporting-group interest preserves the disclosed subsidiary relationship without asserting the immediate registered chain."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_investment_corporation_of_dubai_ithra_dubai",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_investment_corporation_of_dubai_ithra_dubai",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_ithra_dubai"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_dubal_holding",
+      "assertion_key": "cand_uae_investment_corporation_of_dubai_dubal_holding",
+      "subject_id": "ent_investment_corporation_of_dubai",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dubal_holding",
+      "report_date": "2020-12-08",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_dubal_holding",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_investment_corporation_of_dubai_dubal_holding_position",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubal_holding"
+      ],
+      "observation_ids": [
+        "obs_uae_investment_corporation_of_dubai_dubal_holding"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Explicit wholly owned subsidiary. DUBAL Holding is distinct from Dubai Holding. Historical snapshot.",
+        "Evidence status: reported as of disclosure.",
+        "Source describes the holding as a subsidiary; this view shows the parent reporting-group interest, not a registered shareholding chain.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Parent-to-child reporting-group interest preserves the disclosed subsidiary relationship without asserting the immediate registered chain."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_investment_corporation_of_dubai_dubal_holding",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_investment_corporation_of_dubai_dubal_holding",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_dubal_holding"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubal_holding_emirates_global_aluminium",
+      "assertion_key": "cand_uae_dubal_holding_emirates_global_aluminium",
+      "subject_id": "ent_dubal_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_emirates_global_aluminium",
+      "report_date": "2020-12-08",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubal_holding_emirates_global_aluminium",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubal_holding_emirates_global_aluminium_position",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_emirates_global_aluminium"
+      ],
+      "observation_ids": [
+        "obs_uae_dubal_holding_emirates_global_aluminium"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported 50% interest; no immediate legal-title inference.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubal_holding_emirates_global_aluminium",
+          "metric_type": "group_interest_percentage",
+          "value": "50",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubal_holding_emirates_global_aluminium",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubal_holding_emirates_global_aluminium"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_dham_reit_management_llc",
+      "assertion_key": "cand_uae_dubai_holding_dham_reit_management_llc",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dham_reit_management_llc",
+      "report_date": "2025-05-05",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_reit_management_llc",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_dham_reit_management_llc_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dham_reit_management_llc"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_dham_reit_management_llc"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Wholly owned subsidiary",
+        "Fund manager and selling unitholder are separate source-named subsidiaries. Ownership percentages refer to these subsidiaries, not REIT units. Directly opened May 5 source replaces May 13 search-only evidence.",
+        "Evidence status: reported as of disclosure.",
+        "Source describes the holding as a subsidiary; this view shows the parent reporting-group interest, not a registered shareholding chain.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Parent-to-child reporting-group interest preserves the disclosed subsidiary relationship without asserting the immediate registered chain."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_dham_reit_management_llc",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_dham_reit_management_llc",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_dham_reit_management_llc"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_dham_investments_llc",
+      "assertion_key": "cand_uae_dubai_holding_dham_investments_llc",
+      "subject_id": "ent_dubai_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dham_investments_llc",
+      "report_date": "2025-05-05",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_dham_investments_llc",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_dham_investments_llc_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_dham_investments_llc"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_dham_investments_llc"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Subsidiary; percentage not disclosed.",
+        "Fund manager and selling unitholder are separate source-named subsidiaries. Ownership percentages refer to these subsidiaries, not REIT units. Directly opened May 5 source replaces May 13 search-only evidence.",
+        "Evidence status: reported as of disclosure.",
+        "Source describes the holding as a subsidiary; this view shows the parent reporting-group interest, not a registered shareholding chain.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Parent-to-child reporting-group interest preserves the disclosed subsidiary relationship without asserting the immediate registered chain."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubai_holding_dham_investments_llc",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubai_holding_dham_investments_llc",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_dham_investments_llc"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubal_holding_warsan_waste_management",
+      "assertion_key": "cand_uae_dubal_holding_warsan_waste_management",
+      "subject_id": "ent_dubal_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_warsan_waste_management",
+      "report_date": "2026-09-08",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubal_holding_warsan_waste_management",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubal_holding_warsan_waste_management_position",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_warsan_waste_management"
+      ],
+      "observation_ids": [
+        "obs_uae_dubal_holding_warsan_waste_management"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Arabic source names ورسان لإدارة النفايات and 20% interest. English legal-name identity requires review.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "English display name translates ورسان لإدارة النفايات; exact registered English legal identity is not established."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubal_holding_warsan_waste_management",
+          "metric_type": "group_interest_percentage",
+          "value": "20",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubal_holding_warsan_waste_management",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubal_holding_warsan_waste_management"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubal_holding_biod_technology",
+      "assertion_key": "cand_uae_dubal_holding_biod_technology",
+      "subject_id": "ent_dubal_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_biod_technology",
+      "report_date": "2026-09-08",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubal_holding_biod_technology",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubal_holding_biod_technology_position",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_biod_technology"
+      ],
+      "observation_ids": [
+        "obs_uae_dubal_holding_biod_technology"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Arabic report explicitly names investment; percentage and direct title undisclosed.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubal_holding_biod_technology",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubal_holding_biod_technology",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubal_holding_biod_technology"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubal_holding_enviroserve",
+      "assertion_key": "cand_uae_dubal_holding_enviroserve",
+      "subject_id": "ent_dubal_holding",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_enviroserve",
+      "report_date": "2026-09-08",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubal_holding_enviroserve",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubal_holding_enviroserve_position",
+      "evidence_ids": [
+        "ev_uae_dubal_holding_enviroserve"
+      ],
+      "observation_ids": [
+        "obs_uae_dubal_holding_enviroserve"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported investment portfolio partnership with Tadweer; no percentage or immediate legal holder in this report.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dubal_holding_enviroserve",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dubal_holding_enviroserve",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dubal_holding_enviroserve"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_investment_corporation_of_dubai_emirates_group",
+      "assertion_key": "cand_uae_investment_corporation_of_dubai_emirates_group",
+      "subject_id": "ent_investment_corporation_of_dubai",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_emirates_group",
+      "report_date": "2026-05-07",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_investment_corporation_of_dubai_emirates_group",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_investment_corporation_of_dubai_emirates_group_position",
+      "evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_emirates_group"
+      ],
+      "observation_ids": [
+        "obs_uae_investment_corporation_of_dubai_emirates_group"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "ICD explicitly named owner, but percentage and direct legal chain unspecified.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_investment_corporation_of_dubai_emirates_group",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_investment_corporation_of_dubai_emirates_group",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_investment_corporation_of_dubai_emirates_group"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_emirates_group_emirates",
+      "assertion_key": "cand_uae_emirates_group_emirates",
+      "subject_id": "ent_emirates_group",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_emirates",
+      "report_date": "2026-05-07",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_emirates_group_emirates",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_emirates_group_emirates_position",
+      "evidence_ids": [
+        "ev_uae_emirates_group_emirates"
+      ],
+      "observation_ids": [
+        "obs_uae_emirates_group_emirates"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported component of group results; no claim Emirates Group is a separate corporate legal holding entity.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_emirates_group_emirates",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_emirates_group_emirates",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_emirates_group_emirates"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_emirates_group_dnata",
+      "assertion_key": "cand_uae_emirates_group_dnata",
+      "subject_id": "ent_emirates_group",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_dnata",
+      "report_date": "2026-05-07",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_emirates_group_dnata",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_emirates_group_dnata_position",
+      "evidence_ids": [
+        "ev_uae_emirates_group_dnata"
+      ],
+      "observation_ids": [
+        "obs_uae_emirates_group_dnata"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported component of group results; no claim Emirates Group is a separate corporate legal holding entity.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_emirates_group_dnata",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_emirates_group_dnata",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_emirates_group_dnata"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dnata_wondermiles",
+      "assertion_key": "cand_uae_dnata_wondermiles",
+      "subject_id": "ent_dnata",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_wondermiles",
+      "report_date": "2025-11-06",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dnata_wondermiles",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dnata_wondermiles_position",
+      "evidence_ids": [
+        "ev_uae_dnata_wondermiles"
+      ],
+      "observation_ids": [
+        "obs_uae_dnata_wondermiles"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported minority equity investment; percentage not disclosed in this source.",
+        "Historical minority-investment observation only. No percentage imported from an unreviewed later channel.",
+        "Evidence status: reported as of disclosure.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_dnata_wondermiles",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_dnata_wondermiles",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_dnata_wondermiles"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_emirates_leisure_retail_air_ventures_llc",
+      "assertion_key": "cand_uae_emirates_leisure_retail_air_ventures_llc",
+      "subject_id": "ent_emirates_leisure_retail",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_air_ventures_llc",
+      "report_date": "2025-11-06",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_emirates_leisure_retail_air_ventures_llc",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_emirates_leisure_retail_air_ventures_llc_position",
+      "evidence_ids": [
+        "ev_uae_emirates_leisure_retail_air_ventures_llc"
+      ],
+      "observation_ids": [
+        "obs_uae_emirates_leisure_retail_air_ventures_llc"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Full ownership after purchase of remaining 25%; US airport-retail company, not acquisition of 25% total ownership.",
+        "Evidence status: reported as of disclosure.",
+        "Source describes the holding as a subsidiary; this view shows the parent reporting-group interest, not a registered shareholding chain.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Parent-to-child reporting-group interest preserves the disclosed subsidiary relationship without asserting the immediate registered chain."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_emirates_leisure_retail_air_ventures_llc",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_emirates_leisure_retail_air_ventures_llc",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_emirates_leisure_retail_air_ventures_llc"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_real_estate_nakheel",
+      "assertion_key": "cand_uae_dubai_holding_real_estate_nakheel",
+      "subject_id": "ent_dubai_holding_real_estate",
+      "predicate": "reported_portfolio_affiliation",
+      "object_id": "ent_nakheel",
+      "report_date": "2026-05-14",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_nakheel",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_real_estate_nakheel_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_nakheel"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_real_estate_nakheel"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported consumer-facing brand/business membership, percentage undisclosed.",
+        "Reported consumer-facing brand/business membership, not separately verified corporate equity or direct legal ownership.",
+        "Evidence status: reported as of disclosure.",
+        "Asset or brand affiliation only; does not establish corporate equity, registered property title, or that management implies ownership.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Identity is the source-named brand/business, not a verified corporate legal entity; parent and divisional affiliations are not additive."
+      ],
+      "metrics": [],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_nakheel"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_real_estate_meraas",
+      "assertion_key": "cand_uae_dubai_holding_real_estate_meraas",
+      "subject_id": "ent_dubai_holding_real_estate",
+      "predicate": "reported_portfolio_affiliation",
+      "object_id": "ent_meraas",
+      "report_date": "2026-05-14",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_meraas",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_real_estate_meraas_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_meraas"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_real_estate_meraas"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported consumer-facing brand/business membership, percentage undisclosed.",
+        "Reported consumer-facing brand/business membership, not separately verified corporate equity or direct legal ownership.",
+        "Evidence status: reported as of disclosure.",
+        "Asset or brand affiliation only; does not establish corporate equity, registered property title, or that management implies ownership.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Identity is the source-named brand/business, not a verified corporate legal entity; parent and divisional affiliations are not additive."
+      ],
+      "metrics": [],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_meraas"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_dubai_holding_real_estate_dubai_properties",
+      "assertion_key": "cand_uae_dubai_holding_real_estate_dubai_properties",
+      "subject_id": "ent_dubai_holding_real_estate",
+      "predicate": "reported_portfolio_affiliation",
+      "object_id": "ent_dubai_properties",
+      "report_date": "2026-05-14",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_dubai_holding_real_estate_dubai_properties",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_dubai_holding_real_estate_dubai_properties_position",
+      "evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_dubai_properties"
+      ],
+      "observation_ids": [
+        "obs_uae_dubai_holding_real_estate_dubai_properties"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported consumer-facing brand/business membership, percentage undisclosed.",
+        "Reported consumer-facing brand/business membership, not separately verified corporate equity or direct legal ownership.",
+        "Evidence status: reported as of disclosure.",
+        "Asset or brand affiliation only; does not establish corporate equity, registered property title, or that management implies ownership.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Dated source observation; correction completeness is not established; not verified current or latest."
+      ],
+      "metrics": [],
+      "primary_evidence_ids": [
+        "ev_uae_dubai_holding_real_estate_dubai_properties"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "gap_id": "gap_uae_incomplete",
+      "category": "coverage",
+      "description": "Partial UAE coverage; missing holdings remain unknown, not zero.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    }
+  ],
+  "manifest": {
+    "schema_version": "1.0.0",
+    "batch_id": "uae_dubai_1_20261023_v1",
+    "task_id": "assets-map-issue-53",
+    "agent_id": "uae_portal_integrator",
+    "registry_version": "uae_dubai_1_20261023_v1",
+    "source_registry_version": "uae_dubai_1_20261023_v1",
+    "base_release_id": null,
+    "created_at": "2026-10-23T13:35:00Z",
+    "knowledge_cutoff": "2026-10-23",
+    "scope": {
+      "entity_ids": [
+        "ent_dubai_holding",
+        "ent_jumeirah",
+        "ent_dubai_holding_real_estate",
+        "ent_dubai_holding_entertainment",
+        "ent_dubai_holding_community_management",
+        "ent_nakheel",
+        "ent_tecom_group",
+        "ent_meraas",
+        "ent_meydan",
+        "ent_jumeirah_mallorca",
+        "ent_dubai_holding_hospitality",
+        "ent_bvlgari_hotel_dubai",
+        "ent_investment_corporation_of_dubai",
+        "ent_alec_holdings",
+        "ent_dubai_electricity_and_water_authority_pjsc",
+        "ent_emirates_central_cooling_systems_corporation_pjsc_empower",
+        "ent_emirates_power_investment_llc",
+        "ent_dubai_aerospace_enterprise",
+        "ent_ithra_dubai",
+        "ent_dubal_holding",
+        "ent_emirates_global_aluminium",
+        "ent_dham_reit_management_llc",
+        "ent_dham_investments_llc",
+        "ent_warsan_waste_management",
+        "ent_biod_technology",
+        "ent_enviroserve",
+        "ent_emirates_group",
+        "ent_emirates",
+        "ent_dnata",
+        "ent_wondermiles",
+        "ent_emirates_leisure_retail",
+        "ent_air_ventures_llc",
+        "ent_dubai_properties"
+      ],
+      "security_ids": [],
+      "source_ids": [
+        "src_uae_dubai_holding_jumeirah",
+        "src_uae_dubai_holding_dubai_holding_real_estate",
+        "src_uae_dubai_holding_dubai_holding_entertainment",
+        "src_uae_dubai_holding_dubai_holding_community_management",
+        "src_uae_dubai_holding_nakheel",
+        "src_uae_dubai_holding_tecom_group",
+        "src_uae_dubai_holding_meraas",
+        "src_uae_dubai_holding_meydan",
+        "src_uae_dubai_holding_jumeirah_mallorca",
+        "src_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+        "src_uae_investment_corporation_of_dubai_alec_holdings",
+        "src_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+        "src_uae_dubai_holding_emirates_power_investment_llc",
+        "src_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+        "src_uae_investment_corporation_of_dubai_ithra_dubai",
+        "src_uae_investment_corporation_of_dubai_dubal_holding",
+        "src_uae_dubal_holding_emirates_global_aluminium",
+        "src_uae_dubai_holding_dham_reit_management_llc",
+        "src_uae_dubai_holding_dham_investments_llc",
+        "src_uae_dubal_holding_warsan_waste_management",
+        "src_uae_dubal_holding_biod_technology",
+        "src_uae_dubal_holding_enviroserve",
+        "src_uae_investment_corporation_of_dubai_emirates_group",
+        "src_uae_emirates_group_emirates",
+        "src_uae_emirates_group_dnata",
+        "src_uae_dnata_wondermiles",
+        "src_uae_emirates_leisure_retail_air_ventures_llc",
+        "src_uae_dubai_holding_real_estate_nakheel",
+        "src_uae_dubai_holding_real_estate_meraas",
+        "src_uae_dubai_holding_real_estate_dubai_properties"
+      ],
+      "report_dates": [
+        "2019-06-27",
+        "2020-12-08",
+        "2021-08-16",
+        "2024-10-21",
+        "2025-05-05",
+        "2025-10-15",
+        "2025-11-06",
+        "2026-01-20",
+        "2026-02-10",
+        "2026-05-07",
+        "2026-05-14",
+        "2026-08-17",
+        "2026-09-08"
+      ],
+      "max_claims": 30,
+      "asset_class": "equity_and_reported_affiliations"
+    },
+    "stop_conditions": [
+      "Exact independently reviewed subset only, maximum30claims.",
+      "No source-use, date, identity or role gate bypass.",
+      "No complete UAE portfolio or current ownership assertion."
+    ]
+  }
+}

@@ -1,0 +1,684 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "uae_ihc_1_20261023_v1",
+  "entities": [
+    {
+      "entity_id": "ent_international_holding_company",
+      "entity_type": "reported_group",
+      "legal_name": "International Holding Company",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/17fe6ya-palms-sports-secures-aed6005-million-school",
+        "https://www.wam.ae/en/article/c1grpsv-emirates-stallions-group-delivers-aed76669-million",
+        "https://www.wam.ae/en/article/bzz6p77-easylease-reports-aed207-million-net-profit",
+        "https://www.wam.ae/en/article/c03y648-captains-holding-seer-marine-partner-redefine",
+        "https://www.wam.ae/en/article/bz486p0-ihcs-judan-financial-debuts-with-strategic",
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic",
+        "https://www.wam.ae/en/article/c02rbsn-ihc-sustains-growth-momentum-2026-with-aed314",
+        "https://www.wam.ae/en/article/15xr1cr-ihc-strengthens-digital-services-portfolio-with"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_palms_sports",
+      "entity_type": "reported_group",
+      "legal_name": "Palms Sports",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/17fe6ya-palms-sports-secures-aed6005-million-school"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_stallions_group",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Stallions Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsv-emirates-stallions-group-delivers-aed76669-million"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_easylease",
+      "entity_type": "reported_group",
+      "legal_name": "EasyLease",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzz6p77-easylease-reports-aed207-million-net-profit",
+        "https://www.wam.ae/en/article/c03y648-captains-holding-seer-marine-partner-redefine"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_al_seer_marine",
+      "entity_type": "reported_group",
+      "legal_name": "Al Seer Marine",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03y648-captains-holding-seer-marine-partner-redefine"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_judan_financial",
+      "entity_type": "reported_group",
+      "legal_name": "Judan Financial",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bz486p0-ihcs-judan-financial-debuts-with-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_alpha_dhabi_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Alpha Dhabi Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_aldar_properties",
+      "entity_type": "reported_group",
+      "legal_name": "Aldar Properties",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_2pointzero_group",
+      "entity_type": "reported_group",
+      "legal_name": "2PointZero Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_purehealth",
+      "entity_type": "reported_group",
+      "legal_name": "PureHealth",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference. Cross-release identity reaffirmed against initial registry: exact same ADQ legal reporter or PureHealth reported group; no broader affiliate merger."
+      }
+    },
+    {
+      "entity_id": "ent_nmdc_group",
+      "entity_type": "reported_group",
+      "legal_name": "NMDC Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_first_women_bank_limited",
+      "entity_type": "reported_group",
+      "legal_name": "First Women Bank Limited",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_alpha_wave_global",
+      "entity_type": "reported_group",
+      "legal_name": "Alpha Wave Global",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_sammaan_capital",
+      "entity_type": "reported_group",
+      "legal_name": "Sammaan Capital",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c02rbsn-ihc-sustains-growth-momentum-2026-with-aed314"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_peko_holdings_limited",
+      "entity_type": "reported_group",
+      "legal_name": "Peko Holdings Limited",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/15xr1cr-ihc-strengthens-digital-services-portfolio-with"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_invictus_investment",
+      "entity_type": "reported_group",
+      "legal_name": "Invictus Investment",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/15xr1cr-ihc-strengthens-digital-services-portfolio-with"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_zelo",
+      "entity_type": "reported_group",
+      "legal_name": "Zelo",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/15xr1cr-ihc-strengthens-digital-services-portfolio-with"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_the_captains_holding",
+      "entity_type": "reported_group",
+      "legal_name": "The Captains Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03y648-captains-holding-seer-marine-partner-redefine"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    },
+    {
+      "entity_id": "ent_gallega_group_holding",
+      "entity_type": "reported_group",
+      "legal_name": "Gallega Group Holding",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzz6p77-easylease-reports-aed207-million-net-profit"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact source-named reported business/group only; not a security issuer, legal registration or brand ownership inference."
+      }
+    }
+  ],
+  "securities": [],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_palms_sports_20260916",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/17fe6ya-palms-sports-secures-aed6005-million-school"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_emirates_stallions_group_20260729",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c1grpsv-emirates-stallions-group-delivers-aed76669-million"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_easylease_20260430",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzz6p77-easylease-reports-aed207-million-net-profit"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_al_seer_marine_20260508",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03y648-captains-holding-seer-marine-partner-redefine"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_judan_financial_20260309",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bz486p0-ihcs-judan-financial-debuts-with-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_alpha_dhabi_holding_20260701",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_aldar_properties_20260701",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_2pointzero_group_20260701",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_purehealth_20260701",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_nmdc_group_20260701",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_first_women_bank_limited_20260701",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_alpha_wave_global_20260701",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c103kvb-ihc-reinforces-growth-momentum-through-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_sammaan_capital_20260331",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c02rbsn-ihc-sustains-growth-momentum-2026-with-aed314"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_peko_holdings_limited_20251223",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/15xr1cr-ihc-strengthens-digital-services-portfolio-with"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_invictus_investment_20251223",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/15xr1cr-ihc-strengthens-digital-services-portfolio-with"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_international_holding_company_zelo_20251223",
+      "version": "1",
+      "reporting_entity_id": "ent_international_holding_company",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/15xr1cr-ihc-strengthens-digital-services-portfolio-with"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_easylease_the_captains_holding_20260508",
+      "version": "1",
+      "reporting_entity_id": "ent_easylease",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/c03y648-captains-holding-seer-marine-partner-redefine"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_easylease_gallega_group_holding_20260430",
+      "version": "1",
+      "reporting_entity_id": "ent_easylease",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-named consolidated group interest; immediate registered legal holder not established.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzz6p77-easylease-reports-aed207-million-net-profit"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "complete_uae_coverage_inventory_independent",
+        "reviewed_at": "2026-10-23T13:44:00Z",
+        "rationale": "Exact selected source date and investor-group perimeter checked. No direct holder, complete consolidation census or legal ownership chain inferred."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}
