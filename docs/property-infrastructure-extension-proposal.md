@@ -1,10 +1,10 @@
 # Property and infrastructure ownership extension
 
-Status: **Proposal — not approved.**
+Status: **Proposal accepted 2026-10-24; bounded pilot implemented.** See [section 15](#15-implemented-pilot).
 Prepared: 2026-10-24.
 Ticket: [#15](https://github.com/Eduard20/assets-map/issues/15), phase P4, under [tracker #1](https://github.com/Eduard20/assets-map/issues/1). Depends on [#2](https://github.com/Eduard20/assets-map/issues/2) (architecture), [#4](https://github.com/Eduard20/assets-map/issues/4) (claims, evidence and metrics), [#5](https://github.com/Eduard20/assets-map/issues/5) (identity) and [#12](https://github.com/Eduard20/assets-map/issues/12) (integration and release acceptance).
 
-This is a planning document. It does not change schemas, code, the live dataset or source admissions. It does not collect, ingest or publish any property, title, concession or plant record. The [18 October bounded-execution decision](https://github.com/Eduard20/assets-map/issues/1#issuecomment-6248531585) covers the shares test only. Nothing here extends it to later asset classes.
+This was written as a planning document. The bounded pilot that followed its acceptance is described in section 15; everything outside that section remains planning. It does not change the foundation schemas, the live dataset or source admissions. It does not collect, ingest or publish any property, title, concession or plant record. The [18 October bounded-execution decision](https://github.com/Eduard20/assets-map/issues/1#issuecomment-6248531585) covers the shares test only. Nothing here extends it to later asset classes.
 
 Throughout this document, **Recommended** marks a proposal awaiting maintainer review. **Approved** is used only for decisions already recorded in #1/#2/#4/#5. No decision in this document is approved yet.
 
@@ -302,4 +302,59 @@ Checked boxes mean the proposal addresses the criterion. They do not mean it is 
 7. Choose whether a property/infrastructure pilot is wanted at all, and if so which bounded case comes first and its claim cap.
 8. Assign rights review for the sources marked unknown before any is used.
 
-Completion condition: the maintainer records acceptance or requested revisions. #15 stays open until then. No implementation, collection or publication follows from this document.
+Completion condition: the maintainer records acceptance or requested revisions. Acceptance was recorded 2026-10-24. Implementation, collection and publication are limited to the bounded pilot in section 15.
+
+## 15. Implemented pilot
+
+Implemented 2026-10-24 after acceptance, as an isolated, closed-by-default modal layer, "Property and infrastructure · Pilot". It follows the institutional-relationships pilot pattern. It never enters graph-model, portfolio totals, security equivalence, issuer identity resolution or the `batch-v1` foundation. Nothing here loosens the equity-only schema.
+
+### Files
+
+- `src/property-data.js`: data, strict validator (runs at import), `physicalAssetTotal` (one-lane owned-value aggregate), `assertSingleLane` and `lookThrough`.
+- `src/property-view.js` and `src/property.css`: the native `<dialog>` layer, launcher `#property-launcher`, case filter, cards and `<details>` evidence.
+- `tests/property.test.mjs`: jsdom unit and rejection tests mapped to A01–A09. `tests/browser-property.mjs`: Playwright at 320/390/1280 px, wired from `tests/browser-smoke.mjs`.
+- Minimal integration in `index.html`, `src/app.js` and the `scripts/prepare-site.mjs` allowlist.
+
+### What was collected (18 role claims, 29 value metrics, cap 30 each)
+
+**Property case: Franklin Street Properties Corp. (FSP), Form 10-K for FY2025, Schedule III.** [Filing](https://www.sec.gov/Archives/edgar/data/1031316/000110465926025284/fsp-20251231x10k.htm), accession 0001104659-26-025284. As of 2025-12-31, filed 2026-03-09, retrieved 2026-10-24. Reuse: the [SEC webmaster FAQ](https://www.sec.gov/about/webmaster-frequently-asked-questions) says EDGAR public filing content is free to access and reuse.
+
+- 14 `asset` records (`asset_kind: building`). This is every row in Schedule III, so it is within the 25-property cap. Each has a city/state locality (`location_precision: locality`) taken from the row's own text, year built and year acquired. The source footnote says the acquisition year is the "original date of acquisition by Sponsored Entity".
+- Per asset: `asset_value` = Schedule III "Historical Cost, Total" (`valuation_basis: cost`, `whole_asset`, `gross`, USD, 2025-12-31), and `encumbrance` = 0. The zero comes from note 1, "There are no encumbrances on the above properties", and is stored as a real source zero.
+- 14 `asset_interest` claims from FSP to each building. The percentage stays `unknown` (`percentage_not_stated`). Item 2 only says the properties are "owned, directly or indirectly". The model never sets it to 100%.
+- The 14 cost amounts sum to USD 1,202,183 thousand, which matches the Schedule III "Balance — Real Estate" figure. The tests and the UI check this reconciliation. It is the issuer's cost carrying amount, shown on the issuer's assets only.
+
+**Infrastructure case: HM Treasury/NISTA "Current PFI and PF2 projects as at 31 March 2025", project ID 241, A249 Stockbury to Sheerness.** [ODS](https://assets.publishing.service.gov.uk/media/69c14bc7d588c92c483e4ba3/Current-PFI-PF2-projects-as-at-31-March-2025-OFFICIAL.ods) from the [publication page](https://www.gov.uk/government/publications/pfi-and-pfi2-projects-2025-summary-data) (published 2026-03-26, retrieved 2026-10-24, Open Government Licence v3.0).
+
+- The spreadsheet fields were checked before modelling. They do include `SPV Name`, `SPV Company Number`, `SPV Address` and up to seven `Equity Holder (n)` / `Equity Holding (n)` pairs, so equity holders are modelled.
+- One `project` record: sector, status, the six contract dates, and location at subdivision precision (GB-ENG, source text "ENGLAND South East").
+- Metric: `project_cost` = £73.00m "Capital Value" (`project_total`, `cost_stage: not_stated`). It cannot enter an owned-value aggregate.
+- `procures_project`: National Highways → project. `concession_grant`: National Highways → Sheppey Route (SPV), scoped to the project, with a 2004-02-01 to 2034-05-31 term. Both carry no stake.
+- Two `direct_equity_ownership` claims: 3i Group PLC 50% and HICL Infrastructure Company 50% of the SPV (source fractions 0.5). Holder names are kept exactly as written in the source and are not merged with any other identity.
+
+### Invariants enforced by the validator
+
+- A01: separate `asset` and `project` kinds and the §5 role vocabulary. Endpoint kinds are checked per role. Non-owner roles (`manages_asset`, `operates_asset`, `lease_of`, `concession_grant`, `procures_project`, `lends_to`) must have stake `not_applicable` and cannot carry a percentage. A known stake needs a percentage, denominator and basis. An unknown stake stays null with a reason, never 0.
+- A02: `lookThrough` returns `unknown` (`intermediate_stake_not_disclosed`) whenever a link is undisclosed. No chain multiplication is approved, so even fully known chains are not multiplied.
+- A03/A05: the dataset declares `lane: physical_asset`, and `assertSingleLane` rejects mixed lanes. Value metrics may sit only on asset or project records, never on claims or entities, so a whole-asset value cannot be copied to each investor. Duplicate assets in an aggregate are rejected.
+- A04: `project_cost`, `contract_value` and `investment_commitment` are refused as owned value. Aggregates require one currency, date, basis, scope and share basis.
+- A06/A09: location has its own source text and source. The precision ceiling is `locality`. Street-address, ZIP/postcode, title-number, parcel and coordinate patterns are rejected anywhere in the public data. Entity kinds exclude natural persons. Residential property and housing sectors are rejected.
+- A07: concession and lease claims need a dated term with end semantics.
+- A08: a cost-basis value cannot be labelled market or fair.
+- Sources: host allowlist (`www.sec.gov`, `www.gov.uk`, `assets.publishing.service.gov.uk`), `as_of <= published <= retrieved`, and a mandatory reuse statement. Metric dates must equal the source as-of date. No CUSIP or ISIN fields are allowed.
+
+### Excluded, and why
+
+- Five Schedule III descriptions are street addresses (two in Minneapolis, three in Denver). They are shown as "City, ST commercial property (row n; street-address name withheld)", and their excerpts are redacted, to respect the locality ceiling.
+- Item 2 street addresses, ZIP codes, tenant names, square footage and occupancy were excluded. Tenants can identify parties and are outside this model.
+- The PFI `SPV Address` (address data) and `SPV Company Number` were excluded. The company number is not needed for this bounded case. The annual unitary-charge columns were also excluded: they are payments, not ownership or value.
+- FSP accumulated depreciation, net carrying amount and federal tax basis were excluded. The pilot keeps one value metric per asset. No fair or market value exists in the source (gap recorded as `unavailable`).
+- Security-lane facts were excluded: 13F positions in FSP, 3i or HICL shares. These stay in the existing equity views and are never summed with buildings or projects.
+- Unknown gaps were recorded, not inferred: FSP title-holding subsidiaries, FSP per-property percentage, the A249 road's title holder (so 3i/HICL's share of the physical road is `unknown`), the A249 lenders, and the A249 operator.
+- Candidate REIT rejected: Generation Income Properties' FY2025 10-K/A omits Schedule III ("schedules are not required for smaller reporting companies").
+
+### Remaining limits
+
+- The pilot is explanatory, not comprehensive. One REIT and one PFI project do not describe any market.
+- The PFI data are departmental returns collated by NISTA. HM Treasury does not describe them as audited figures.
+- No asset registry is built or refreshed, and there is no ingestion pipeline. Extending scope needs a new source review and maintainer approval.
