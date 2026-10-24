@@ -1,0 +1,82 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {JSDOM} from 'jsdom';
+import {propertyPilot,validatePropertyPilot,physicalAssetTotal,assertSingleLane,lookThrough} from '../src/property-data.js';
+import {mountPropertyPilot} from '../src/property-view.js';
+const copy=()=>structuredClone(propertyPilot);
+const rejects=(change,pattern)=>{const d=copy();change(d);assert.throws(()=>validatePropertyPilot(d),pattern);};
+const claim=(d,type)=>d.claims.find(c=>c.type===type);
+test('bounded to one Schedule III and one PFI project with separate asset and project kinds',()=>{
+  const d=validatePropertyPilot(copy());assert.equal(d.assets.length,14);assert.equal(d.projects.length,1);assert.equal(d.claims.length,18);assert.ok(d.claims.length<=30);
+  assert.ok(d.assets.every(a=>a.kind==='asset')&&d.projects[0].kind==='project');assert.equal(d.assets.filter(a=>a.nameWithheld).length,5);
+  assert.deepEqual(d.sources.map(s=>s.asOf),['2025-12-31','2025-03-31']);assert.ok(d.sources.every(s=>s.reuse&&s.retrievedAt==='2026-10-24'));
+  assert.deepEqual(d.claims.filter(c=>c.stake.status==='known').map(c=>[c.from,c.stake.percentage]),[['property-entity-3i',50],['property-entity-hicl',50]]);
+  assert.ok(d.claims.filter(c=>c.type==='asset_interest').every(c=>c.stake.status==='unknown'&&c.stake.percentage===null));
+});
+test('A01: non-owner roles cannot carry ownership percentages; owner roles need a basis or a reason',()=>{
+  for(const type of ['procures_project','concession_grant'])rejects(d=>Object.assign(claim(d,type).stake,{status:'known',percentage:100,denominator:'x',basis:'economic'}),/Non-owner role/);
+  rejects(d=>{const c=claim(d,'procures_project');c.type='operates_asset';},/endpoints|Non-owner/);
+  rejects(d=>Object.assign(claim(d,'asset_interest').stake,{status:'unknown',percentage:0}),/Unknown stake/);
+  rejects(d=>Object.assign(claim(d,'direct_equity_ownership').stake,{denominator:null}),/Known stake/);
+  rejects(d=>{claim(d,'asset_interest').stake.status='not_applicable';},/Owner role stake/);
+  rejects(d=>{claim(d,'direct_equity_ownership').to='property-asset-fsp-01';},/endpoints/);
+  rejects(d=>{claim(d,'concession_grant').from='property-entity-3i';},/endpoints/);
+});
+test('A02: an undisclosed chain link keeps the derived share unknown, never 0% or 100%',()=>{
+  const d=copy(),equity=claim(d,'direct_equity_ownership');
+  assert.deepEqual(lookThrough([equity,{stake:{status:'unknown'}}]),{status:'unknown',percentage:null,reason:'intermediate_stake_not_disclosed'});
+  assert.equal(lookThrough([equity,equity]).percentage,null);
+});
+test('A03/A04/A05: lanes never mix and project cost is never owned value',()=>{
+  const d=copy(),ids=d.assets.map(a=>a.id);
+  assert.deepEqual(physicalAssetTotal(d,{metricType:'asset_value',assetIds:ids}),{amount:1202183000,currency:'USD',date:'2025-12-31',basis:'cost',count:14});
+  assert.equal(physicalAssetTotal(d,{metricType:'encumbrance',assetIds:ids}).amount,0);
+  assert.throws(()=>assertSingleLane([{lane:'security'},{lane:'physical_asset'}]),/lanes/);
+  assert.throws(()=>physicalAssetTotal(d,{metricType:'asset_value',assetIds:ids,lane:'security'}),/lanes/);
+  assert.throws(()=>physicalAssetTotal(d,{metricType:'project_cost',assetIds:['property-project-a249']}),/not an owned value/);
+  assert.throws(()=>physicalAssetTotal(d,{metricType:'asset_value',assetIds:[ids[0],ids[0]]}),/Duplicate/);
+  const mixed=copy();mixed.assets[1].metrics[0].currency='GBP';assert.throws(()=>physicalAssetTotal(mixed,{metricType:'asset_value',assetIds:ids.slice(0,2)}),/currency/);
+  rejects(d=>{claim(d,'direct_equity_ownership').value=73000000;},/Unexpected/);
+  rejects(d=>{d.entities[3].metrics=[d.projects[0].metrics[0]];},/Unexpected/);
+  rejects(d=>{d.assets[0].metrics.push({...d.projects[0].metrics[0],id:'property-metric-copy'});},/not allowed|Unexpected/);
+  rejects(d=>{d.lane='security';},/schema/);
+});
+test('A06/A08/A09: locality ceiling, own location evidence, cost basis and privacy limits',()=>{
+  for(const label of ['121 South Eight Street','600 17th Street, Denver','1999 Broadway','Houston, TX 77084','EC4N 6AF','Title number AB12345','29.7604, -95.3698'])rejects(d=>{d.assets[0].label=label;},/ceiling/);
+  rejects(d=>{d.assets[0].location.precision='site_point';},/location/);
+  rejects(d=>{d.assets[0].location.street='x';},/Unexpected/);
+  rejects(d=>{d.assets[0].location.sourceText='Maryland';},/own source text/);
+  rejects(d=>{d.assets[0].location.country='USA';},/location/);
+  rejects(d=>{d.assets[0].metrics[0].reported='$31,239 thousand market value';},/market/);
+  rejects(d=>{d.assets[0].metrics[0].basis='mark_to_model';},/basis/);
+  rejects(d=>{d.entities[0].kind='person';},/entity/);
+  rejects(d=>{d.assets[0].propertyType='residential';},/asset/);
+  rejects(d=>{d.projects[0].sector='Housing (HRA)';},/project/);
+});
+test('A07 and source rules: dated terms, valid dates, allowlisted hosts, caps',()=>{
+  rejects(d=>{Object.assign(claim(d,'concession_grant'),{temporalKind:'snapshot',effectiveFrom:null,effectiveTo:null});},/dated term/);
+  rejects(d=>{claim(d,'concession_grant').effectiveTo='2034-02-30';},/dated term/);
+  rejects(d=>{d.sources[0].url='https://example.com/10k';},/host/);
+  rejects(d=>{d.sources[1].asOf='2026-10-25';},/source/);
+  rejects(d=>{d.sources[0].reuse='';},/source/);
+  rejects(d=>{d.assets[0].metrics[0].date='2024-12-31';},/as-of/);
+  rejects(d=>{d.claims.push({...d.claims[0]});},/Duplicate/);
+  rejects(d=>{for(let i=0;i<13;i++)d.claims.push({...d.claims[0],id:`property-claim-${40+i}`,to:d.assets[i+1].id,scope:'property-asset-fsp-01'});},/cap/);
+  rejects(d=>{d.claims[0].isin='US0000000000';},/Unexpected/);
+});
+test('off by default, case filter, evidence, two-lane notices; close restores focus',()=>{
+  const dom=new JSDOM('<button id="launch">Pilot</button>');const {document}=dom.window;const launcher=document.querySelector('button');let opens=0;
+  const {dialog}=mountPropertyPilot({document,launcher,beforeOpen:()=>opens++});
+  dialog.showModal=()=>dialog.setAttribute('open','');dialog.close=()=>{dialog.removeAttribute('open');dialog.dispatchEvent(new dom.window.Event('close'));};
+  assert.equal(dialog.open,false);assert.equal(dialog.querySelectorAll('article').length,0);
+  launcher.click();assert.equal(opens,1);assert.equal(dialog.open,true);assert.equal(dialog.querySelectorAll('article').length,15);
+  assert.match(dialog.querySelector('h2').textContent,/Property and infrastructure · Pilot/);
+  assert.match(dialog.textContent,/USD 1,202,183,000/);assert.match(dialog.textContent,/not market value/);assert.match(dialog.textContent,/Percentage unknown/);
+  const select=dialog.querySelector('select');select.value='infrastructure';select.dispatchEvent(new dom.window.Event('change'));assert.equal(dialog.querySelectorAll('article').length,1);
+  assert.match(dialog.textContent,/50% of SPV equity is not 50% of the GBP 73,000,000 project cost/);assert.match(dialog.textContent,/share of the physical road: unknown/);
+  assert.match(dialog.textContent,/No stake: this role carries no ownership percentage/);assert.match(dialog.textContent,/2004-02-01 to 2034-05-31/);assert.match(dialog.textContent,/Open Government Licence v3.0/);
+  assert.doesNotMatch(dialog.textContent,/Schedule III check/);
+  select.value='property';select.dispatchEvent(new dom.window.Event('change'));assert.equal(dialog.querySelectorAll('article').length,14);
+  assert.doesNotMatch(dialog.textContent,/South Eight Street|Marquette|1999 Broadway|17th Street|77084|EC4N/);
+  assert.equal(dialog.querySelectorAll('a').length,14);dialog.querySelector('button').click();assert.equal(document.activeElement,launcher);
+});
