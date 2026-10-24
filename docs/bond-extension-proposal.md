@@ -1,10 +1,10 @@
 # Assets map: bond and debt-security extension roadmap
 
-Status: **Proposal — not approved.**
+Status: **Proposal accepted 2026-10-24; bounded pilot implemented.**
 Prepared: 2026-10-24.
 Ticket: [#14](https://github.com/Eduard20/assets-map/issues/14), under [tracker #1](https://github.com/Eduard20/assets-map/issues/1). Depends on #2 (architecture), #4 (claims and metric semantics), #5 (identity) and #12 (integration/acceptance).
 
-This is a planning document. It does not change any schema, validator, dataset, source admission or UI. Nothing here authorizes collection, ingestion, implementation or publication. Every "recommended" item below is a recommendation awaiting the maintainer's decision; the only **approved** decisions referenced are the existing 18 October 2026 bounded-foundation decision and the shares-only scope that follows from it.
+This began as a planning document. On 2026-10-24 the maintainer accepted it and asked for the bounded pilot in §8. That pilot is implemented as an isolated, closed-by-default layer; see [§11](#11-implemented-pilot). It does not change the v1 equity contract, the 13F share view or any existing dataset. Wider collection, ingestion or a v2 contract still need their own approvals. Every "recommended" item below is a recommendation awaiting the maintainer's decision; the only **approved** decisions referenced are the existing 18 October 2026 bounded-foundation decision and the shares-only scope that follows from it.
 
 ## 1. Summary of recommendations
 
@@ -256,7 +256,7 @@ Status key: **V** means verified on 2026-10-24 by fetching the page or by consis
 - Accept: the 2025-06-30 outstanding stays valid for 2025-06-30 holdings. Holdings after 2025-09-01 have share of issue = unknown until a new outstanding observation exists.
 - Reject: computing the post-call outstanding from terms without evidence of the amount actually redeemed.
 
-## 8. Bounded future pilot specification (not approved)
+## 8. Bounded pilot specification (approved 2026-10-24; implemented in §11)
 
 **Objective.** Demonstrate the v2 contract end-to-end on the smallest real slice: terms, outstanding amounts, a few disclosed holdings and coverage gaps, kept fully apart from the equity release.
 
@@ -331,3 +331,51 @@ Status key: **V** means verified on 2026-10-24 by fetching the page or by consis
 - **D10.** Exclude EMMA, TRACE and NAIC from the first slice, pending explicit rights review.
 
 Completion condition: the maintainer records acceptance or requested revisions on #14. The issue stays open until then.
+
+## 11. Implemented pilot
+
+Implemented 2026-10-24 as the separate modal layer **"Bonds and debt securities · Pilot"** (launcher `#bond-launcher`). Files: `src/bond-data.js` (data, validator, compatibility guards), `src/bond-view.js`, `src/bond.css`, `tests/bond.test.mjs`, `tests/browser-bond.mjs`. The layer never enters graph-model, portfolio totals, security equivalence or issuer identity resolution. The equity release is unchanged.
+
+### What was collected
+
+Two issuers, four lines, **17 claims**: 4 `debt_issued_by` relationships, 4 terms records, 4 outstanding observations, 2 holdings and 3 prices. There are also 9 explicit gaps. Every figure was copied from the primary source listed. All sources were retrieved on 2026-10-24.
+
+| Line (project id) | Terms | Outstanding principal | Disclosed holder | Price |
+|---|---|---|---|---|
+| US Treasury 4.250% Note due 2035-08-15 (`bond-ust-note-2035`) | Fiscal Data auctions record for the original 2025-08-15 issue: coupon, dates, semi-annual, not callable, total accepted USD 56,253,817,500 | MSPD Table III, 2026-09-30: USD 134,934.7665 million, security line (original issue plus two reopenings), not indexed | SOMA, 2026-09-30: par USD 14,977,674,200. Share of issue 11.10% (face ÷ face, same line and date). This matches SOMA's own stated `percentOutstanding` 0.1109993709441814 | Auction price 99.95962 per 100 (2025-08-06), convention unknown |
+| US Treasury 1.875% TIPS due 2035-07-15 (`bond-ust-tips-2035`) | Auctions record for the original 2025-07-31 issue, with CPI basis 1982-1984=100 and reference CPI 321.097580 | MSPD, 2026-09-30: USD 63,567.91831011 million, **indexed** (includes the inflation adjustment) | SOMA par USD 2,479,164,800 (unindexed). Inflation compensation of USD 98,993,050.46 is shown separately and never added. Share of issue is **not computed**, because unindexed par does not match indexed outstanding (§5.2 rule 4) | Not admitted (gap) |
+| Oracle 4.450% Notes due 2030-09-26 (`bond-orcl-2030`) | 424(b)(2) prospectus supplement dated 2025-09-24: USD 3,000,000,000, 30/360, senior unsecured, make-whole +15 bps, par call 2030-08-26, New York law, not listed | Form 10-K, 2026-05-31: USD 3,000 million | None admitted (gap) | Offering price 99.938 (clean) |
+| Oracle 5.200% Notes due 2035-09-26 (`bond-orcl-2035`) | Same prospectus: USD 4,000,000,000, make-whole +20 bps, par call 2035-06-26 | Form 10-K, 2026-05-31: USD 4,000 million | None admitted (gap) | Offering price 99.985 (clean) |
+
+Oracle's LEI 1Z4GXXU7ZHVWFCD8TV52 comes from GLEIF (CC0). Oracle common stock already appears in the 13F share view. The debt lane sits beside it and is never added to it (D01).
+
+### Sources and reuse (checked 2026-10-24)
+
+- U.S. Treasury Fiscal Data API: `auctions_query` and `mspd_table_3_market` on `api.fiscaldata.treasury.gov`. The data is "offered free, without restriction".
+- New York Fed SOMA holdings API on `markets.newyorkfed.org`. The Terms of Use (updated 6/9/2023) grant a licence to use, copy and distribute with attribution, and SOMA data is not listed under Use Restrictions. The required notice is displayed. Share-of-issue figures are labelled as this pilot's calculation, not New York Fed content.
+- SEC EDGAR on `www.sec.gov`: the Oracle 424B2 and the 10-K borrowings table (R33). sec.gov states that its information "is considered public information and may be copied or further distributed".
+- GLEIF LEI record on `api.gleif.org`, under CC0.
+
+The validator allowlists only these four hostnames.
+
+### Enforced by the validator and guards
+
+- Exact field allowlists for each family. The record families are separate, and each record has its own source and dates. A source's as-of date must be on or before its retrieval date. An outstanding or holding date must equal its source snapshot date, with one snapshot date per holder source.
+- Equity, beneficial, voting and control predicates are rejected, and so is any equity, voting, beneficial, control or ownership field.
+- CUSIP-shaped values, US/CA ISINs and identifier fields are rejected. Instruments use opaque project ids.
+- Units are explicit: `face_amount`, `currency_value` and `price_per_100_face`. Share of issue is computed only face ÷ face, at the same line, date, currency and indexation basis. Otherwise it is unknown, with a reason.
+- `sumFace` and `sumValues` refuse to add across currency, line, date, indexation basis, valuation basis or price convention, and they refuse unknown conventions. `portfolioWeight` needs a value numerator and a named denominator (`net_assets` or `selected_disclosed_value`) with the same currency and date.
+- Every line must carry a holder-coverage gap. Entities named like "other holders" are rejected. The undisclosed share is shown as a gap, never as a node.
+- Pilot bounds: one sovereign issuer and one corporate issuer, at most two lines each, at most 30 claims. Every line needs terms and an outstanding observation. Disclosed holders may not exceed outstanding.
+
+### Excluded and why
+
+- **CUSIPs** are withheld (§6.1), although the Treasury APIs return them. Citation URLs filter by date and term, not by CUSIP.
+- **Corporate holders (N-PORT):** not admitted. Automated EDGAR access requires a declared contact user agent, which was not configured for this pass. Full N-PORT holdings files could not be read reliably through the fetch tool. Oracle holder coverage is therefore an explicit `source_not_admitted` gap.
+- **TIPS price:** the auction record carries adjusted and unadjusted prices, and its basis needs review.
+- **Unindexed TIPS outstanding:** not stated by MSPD and not derived.
+- **SOMA's TIPS `percentOutstanding` (0.0404186746142682):** its basis is undocumented, so it is not used.
+- **Later outstanding for Oracle:** the 10-K date (2026-05-31) is not carried forward.
+- **Treasury reopening tranches:** these appear only through the MSPD line observation. They are not separate terms records.
+- **Out of scope as in §2:** ratings, TRACE, NAIC, EMMA, FIRDS, issuer-level debt totals, FX transforms and look-through.
+
