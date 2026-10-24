@@ -1,0 +1,16 @@
+#issuer-launcher{min-height:44px;margin:8px 0;padding:10px 16px;border:1px solid #4f5f8a;border-radius:12px;background:#161d36;color:#e3e9ff;text-align:left;cursor:pointer}
+#issuer-dialog{box-sizing:border-box;width:min(960px,calc(100vw - 24px));max-width:none;max-height:90dvh;padding:24px;overflow:auto;background:#0b1c27;color:#deecf4;border:1px solid #4f5f8a;border-radius:20px;overscroll-behavior:contain}
+#issuer-dialog::backdrop{background:#020b14dc}
+#issuer-dialog *{box-sizing:border-box;overflow-wrap:anywhere}
+#issuer-dialog h2{font-size:26px;margin:20px 0 12px}#issuer-dialog h3{font-size:20px;margin:24px 0 8px}#issuer-dialog h4{font-size:17px;line-height:1.5;margin:0}
+#issuer-dialog p{line-height:1.6;color:#bfd2dd}#issuer-dialog label{display:grid;gap:8px}
+#issuer-dialog button,#issuer-dialog select,#issuer-dialog summary{min-height:44px;padding:12px;cursor:pointer}
+#issuer-dialog button,#issuer-dialog select{background:#163444;color:#effaff;border:1px solid #537488;border-radius:8px;max-width:100%}
+#issuer-dialog a{color:#8ee6ff;display:inline-block;padding:12px 0;min-height:44px}
+#issuer-dialog :focus-visible,#issuer-launcher:focus-visible{outline:3px solid #ffd76a;outline-offset:3px}
+.issuer-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.issuer-top span{font-size:11px;letter-spacing:1px}
+.issuer-notice{padding:16px;border-left:3px solid #9fb2ff;background:#161d36}.issuer-rule{font-size:14px}
+.issuer-compare,.issuer-claims{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:18px}
+.issuer-card,.issuer-claim{min-width:0;padding:18px;border:1px solid #385468;border-radius:14px;background:#102532}.issuer-card{border-color:#4f5f8a}
+.issuer-kind{color:#cfd8ff!important}.issuer-figure{font-weight:600;color:#effaff!important}.issuer-gap{padding:10px;border-left:3px solid #9fb2ff;background:#161d36}.issuer-conflict{padding:10px;border-left:3px solid #ff9f80;background:#2c1a17}
+@media(max-width:600px){#issuer-dialog{padding:16px;width:calc(100vw - 16px);max-height:94dvh}.issuer-compare,.issuer-claims{grid-template-columns:1fr}.issuer-top{align-items:flex-start}.issuer-top button{flex-shrink:0}}
