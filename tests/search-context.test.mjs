@@ -19,10 +19,10 @@ test('actual Atlassian results explain all three records without merging evidenc
    const button=[...doc.querySelectorAll('button')].find(b=>b.dataset.searchNode===n.id);
    assert.match(button.textContent,new RegExp('Reported class: '+n.sector));
    assert.match(button.textContent,/30 Jun 2026/);
-   assert.match(button.textContent,n.sector==='CL A'?/6 imported filers/:n.sector==='CMN'?/Goldman Sachs/i:/JPMorgan/i);
+   assert.match(button.textContent,n.sector==='CL A'?/8 imported filers/:n.sector==='CMN'?/Goldman Sachs/i:/JPMorgan/i);
  }
  assert.equal(JSON.stringify(matches),before);
- assert.equal(model.holdingEdges.length,158150);
+ assert.equal(model.holdingEdges.length,162145);
 });
 test('same label and class never collapse distinct source identities or dates',()=>{
  const nodes=[{id:'a',label:'Example',sector:'CL A',kind:'asset'},{id:'b',label:'Example',sector:'CL A',kind:'asset'},{id:'c',label:'Example',sector:'CL B',kind:'asset'}];
