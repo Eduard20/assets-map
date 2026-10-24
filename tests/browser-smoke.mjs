@@ -424,11 +424,12 @@ try {
   assert.ok(distanceAfter<distanceBefore-1,'two fingers zoom the 3D network');
   assert.equal(await selectedId(touchPage),beforeGestureId,'3D pinch is not a selection');
   await touchPage.locator('#fit-map').tap();
-  const touchCount=await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length);
+  const touchBefore=await touchPage.evaluate(()=>({nodes:window.__assetsMap.getGraph().nodes.map(node=>node.id).sort(),edges:window.__assetsMap.getGraph().edges.map(edge=>edge.id).sort(),holdings:window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='blackrock-2026-06-30').map(edge=>edge.id)}));
   await touchPage.locator('#graph-3d button[data-node-id="blackrock-2026-06-30"]').tap();
-  assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>touchCount,'phone tap expands the manager network');
+  assert.ok((await touchPage.evaluate(()=>window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='blackrock-2026-06-30').map(edge=>edge.id))).some(id=>!touchBefore.holdings.includes(id)),'phone tap reveals new manager holdings even at the node ceiling');
+  assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length)<=200,'phone expansion preserves the node ceiling');
   await touchPage.locator('#focus-back').tap();
-  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.length),touchCount,'phone Back restores network context');
+  assert.deepEqual(await touchPage.evaluate(()=>({nodes:window.__assetsMap.getGraph().nodes.map(node=>node.id).sort(),edges:window.__assetsMap.getGraph().edges.map(edge=>edge.id).sort()})),{nodes:touchBefore.nodes,edges:touchBefore.edges},'phone Back restores exact network context');
   await touchPage.locator('[data-view="2d"]').tap();await expectView(touchPage,'2d');
   const svg=touchPage.locator('#graph-2d svg'),nodeHit=touchPage.locator('.relationship-card.selected .node-card').first();
   const nodeBox=await nodeHit.boundingBox(),beforePan=await touchPage.locator('.viewport').getAttribute('transform');

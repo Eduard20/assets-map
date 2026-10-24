@@ -33,6 +33,16 @@ test('public identity map is byte-bound to independently approved exact-match re
 
 test('large navigation history cannot exceed the node ceiling or drop current focus',()=>{const state=initialState(model);const securities=model.nodes.filter(n=>n.kind==='asset');state.pinnedNodes=new Set(securities.slice(0,198).map(n=>n.id));state.rootId=securities[250].id;const graph=buildVisibleGraph(model,state);assert.equal(graph.nodes.length,200);assert.ok(graph.nodes.some(n=>n.id===state.rootId));});
 
+test('manager expansion at top 40 reveals new holdings without exceeding the node ceiling',async()=>{
+  const {expandPortfolioNetwork}=await import('../src/portfolio-network.js');
+  const state=initialState(model);for(const root of model.portfolioRoots)state.limits.set(root,40);
+  const before=buildVisibleGraph(model,state),shown=new Set(before.edges.map(edge=>edge.id));
+  assert.equal(before.nodes.length,200);
+  expandPortfolioNetwork(model,state,state.rootId,before);const after=buildVisibleGraph(model,state);
+  assert.equal(after.nodes.length,200);
+  assert.ok(after.edges.some(edge=>edge.source===state.rootId&&!shown.has(edge.id)));
+});
+
 test('clicking a manager expands its actual holdings beyond overview and repeated clicks progress',async()=>{
   const {expandPortfolioNetwork}=await import('../src/portfolio-network.js');
   const state=initialState(model),initial=buildVisibleGraph(model,state),root=model.portfolioRoots.find(id=>id.startsWith('blackrock'));
