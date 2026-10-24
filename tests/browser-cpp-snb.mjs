@@ -30,7 +30,7 @@ export async function checkCppSnb(browser, origin) {
         if (phone) await page.locator('#mobile-apply-controls').click();
         assert.equal(await page.locator('.holding-row').count(), 1);
         await page.locator('.holding-row').click();
-        if (phone) await page.locator('#mobile-details').click();
+        if (phone) assert.equal(await page.locator('#detail-sheet').isVisible(), true, 'Selecting a holding opens its evidence details');
         const evidence = page.locator('.investor-card').filter({has: page.locator(`[data-select="${id}"]`)}).locator('.investor-evidence');
         await evidence.click();
         assert.match(await page.locator('#detail-panel').textContent(), /Information-table row/);
