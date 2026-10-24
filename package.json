@@ -7,14 +7,15 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "node scripts/validate-data.mjs && node scripts/export-researched.mjs --check && node scripts/export-portfolios.mjs --check",
+    "check": "node scripts/validate-data.mjs && node scripts/export-researched.mjs --check && node scripts/export-portfolios.mjs --check && node scripts/export-uae.mjs --check",
     "test:browser": "node tests/browser-smoke.mjs",
     "check:foundation": "node --test tests/foundation*.test.mjs",
     "build:site": "node scripts/prepare-site.mjs",
     "data:validate": "node scripts/foundation.mjs validate",
     "data:demo": "node scripts/foundation-demo.mjs",
     "data:export-researched": "node scripts/export-researched.mjs",
-    "data:export-portfolios": "node scripts/export-portfolios.mjs"
+    "data:export-portfolios": "node scripts/export-portfolios.mjs",
+    "data:export-uae": "node scripts/export-uae.mjs"
   },
   "devDependencies": {
     "jsdom": "26.1.0",

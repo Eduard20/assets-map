@@ -1,0 +1,11 @@
+{
+  "bundle_id": "sovereign_1",
+  "files": {
+    "batch.json": "5659fa6102f829410edda004c42cb3fe4d0c9906e7fa547c72c83a70b1df36d6",
+    "independent-review.json": "900757b51ec0cb1bfe33e7b75e012116de8928ea82c3a72bb9398d6856f1bdd9",
+    "registry.json": "08e8fd4e6386b3987ada13b9b11f88e20e50dba92e8ac25da743dc0353177633",
+    "release-decision.json": "785e41988a89c5945f1333ad5c070f1ecb586d2f2aedae39e89135cd3c456cf6",
+    "review.json": "c319d7096244364aed14d0cbe5b558627b3e8da75fe423b08abf2b4a74062d62",
+    "sources.json": "d078af4a21bbf1b78b14fdbe42bb40daa7b8bae8b144b7b7a201f5a51533a457"
+  }
+}

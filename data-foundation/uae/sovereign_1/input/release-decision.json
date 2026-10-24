@@ -1,0 +1,45 @@
+{
+  "acceptance_sha256": "c537bac8d27ef5bcbb1e12e56c6bb9d0e6783080d793f2456191825f64a736d6",
+  "authorization_basis": "Exact remaining first22 migration, Dubai30 and sovereign19 approval by coordinating maintainer after inspecting acceptance hashes at2026-10-23T14:07:06Z; final independent code and hostedCI checks required before merge.",
+  "authorization_readback_verified": true,
+  "authorization_url": "https://github.com/Eduard20/assets-map/issues/53",
+  "authorized_by": "coordinating maintainer root",
+  "authorized_candidate_ids": [
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+    "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+    "cand_uae_exp_arcera_birgi_mefar_group",
+    "cand_uae_exp_kelix_bio_bioventure",
+    "cand_uae_exp_kelix_bio_bioventure_healthcare",
+    "cand_uae_exp_kelix_bio_diabtec_llc",
+    "cand_uae_exp_kelix_bio_gulf_inject",
+    "cand_uae_exp_kelix_bio_wellpharma",
+    "cand_uae_exp_mubadala_capital_ci_financial",
+    "cand_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+    "cand_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+    "cand_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+    "cand_uae_exp_sharjah_asset_management_sharjah_taxi"
+  ],
+  "conditions": [
+    "Exact independently accepted candidate IDs only.",
+    "Dated source observations are not verified current holdings; correction coverage remains nonexhaustive where explicitly labeled.",
+    "Preserve source-qualified identity, role, date, percentage uncertainty, perimeter and nonadditive lineage.",
+    "No raw source redistribution, open licence claim or commercial reuse.",
+    "Changed factual input requires renewed exact independent review.",
+    "Independent code review and exact-SHA CI/browser checks remain required before publication."
+  ],
+  "decision_id": "sovereign_1_maintainer_20261023140720",
+  "recorded_at": "2026-10-23T14:07:20Z",
+  "reviewed_input_sha256": {
+    "batch.json": "5659fa6102f829410edda004c42cb3fe4d0c9906e7fa547c72c83a70b1df36d6",
+    "independent-review.json": "900757b51ec0cb1bfe33e7b75e012116de8928ea82c3a72bb9398d6856f1bdd9",
+    "registry.json": "08e8fd4e6386b3987ada13b9b11f88e20e50dba92e8ac25da743dc0353177633",
+    "review.json": "c319d7096244364aed14d0cbe5b558627b3e8da75fe423b08abf2b4a74062d62",
+    "sources.json": "d078af4a21bbf1b78b14fdbe42bb40daa7b8bae8b144b7b7a201f5a51533a457"
+  }
+}

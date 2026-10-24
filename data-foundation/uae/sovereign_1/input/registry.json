@@ -1,0 +1,773 @@
+{
+  "schema_version": "1.0.0",
+  "registry_version": "uae_sovereign_1_20261023_v1",
+  "entities": [
+    {
+      "entity_id": "ent_mubadala_capital",
+      "entity_type": "reported_group",
+      "legal_name": "Mubadala Capital",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic",
+        "https://www.sec.gov/Archives/edgar/data/1899883/000189988326000036/fip-20260630.htm"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_ci_financial",
+      "entity_type": "reported_group",
+      "legal_name": "CI Financial",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_mubadala_investment_company_pjsc",
+      "entity_type": "legal_entity",
+      "legal_name": "Mubadala Investment Company PJSC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic",
+        "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99",
+        "https://www.sec.gov/Archives/edgar/data/1899883/000189988326000036/fip-20260630.htm"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_abu_dhabi_investment_council",
+      "entity_type": "reported_group",
+      "legal_name": "Abu Dhabi Investment Council",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_kelix_bio",
+      "entity_type": "reported_group",
+      "legal_name": "KELIX bio",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99",
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_diabtec_llc",
+      "entity_type": "reported_group",
+      "legal_name": "DiabTec LLC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_bioventure",
+      "entity_type": "reported_group",
+      "legal_name": "Bioventure",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_bioventure_healthcare",
+      "entity_type": "reported_group",
+      "legal_name": "Bioventure Healthcare",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_gulf_inject",
+      "entity_type": "reported_group",
+      "legal_name": "Gulf Inject",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_wellpharma",
+      "entity_type": "reported_group",
+      "legal_name": "Wellpharma",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_sharjah_asset_management",
+      "entity_type": "reported_group",
+      "legal_name": "Sharjah Asset Management",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bycu8e7-sharjah-taxi-carries-931-million-passengers-2025",
+        "https://www.wam.ae/en/article/b1k7nvo-rafid-launches-two-new-branches-hamriyah-free"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_sharjah_taxi",
+      "entity_type": "reported_group",
+      "legal_name": "Sharjah Taxi",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bycu8e7-sharjah-taxi-carries-931-million-passengers-2025"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_rafid_automative_solutions",
+      "entity_type": "reported_group",
+      "legal_name": "Rafid Automative Solutions",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b1k7nvo-rafid-launches-two-new-branches-hamriyah-free"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "entity_type": "legal_entity",
+      "legal_name": "Abu Dhabi Developmental Holding Company PJSC (ADQ)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5ii9jg-adq-appoints-modon-holding-master-developer-for",
+        "https://www.wam.ae/en/article/bz8znay-wio-bank-reports-revenue-aed124-billion-fy2025",
+        "https://www.wam.ae/en/article/15wmbdj-karachi-gateway-louis-dreyfus-company-sign",
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96",
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_ras_el_hekma_urban_development_project_company",
+      "entity_type": "reported_group",
+      "legal_name": "Ras El Hekma Urban Development Project Company",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5ii9jg-adq-appoints-modon-holding-master-developer-for"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_wio_bank_pjsc",
+      "entity_type": "reported_group",
+      "legal_name": "Wio Bank PJSC",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/bz8znay-wio-bank-reports-revenue-aed124-billion-fy2025"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_louis_dreyfus_company",
+      "entity_type": "reported_group",
+      "legal_name": "Louis Dreyfus Company",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/15wmbdj-karachi-gateway-louis-dreyfus-company-sign"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_arcera",
+      "entity_type": "reported_group",
+      "legal_name": "Arcera",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_birgi_mefar_group",
+      "entity_type": "reported_group",
+      "legal_name": "Birgi Mefar Group",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_abu_dhabi_securities_exchange",
+      "entity_type": "reported_group",
+      "legal_name": "Abu Dhabi Securities Exchange",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_nuclear_energy_corporation",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Nuclear Energy Corporation",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_emirates_water_and_electricity_company",
+      "entity_type": "reported_group",
+      "legal_name": "Emirates Water and Electricity Company",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    },
+    {
+      "entity_id": "ent_abu_dhabi_waste_management_pjsc_tadweer",
+      "entity_type": "reported_group",
+      "legal_name": "Abu Dhabi Waste Management PJSC (Tadweer)",
+      "aliases": [],
+      "identifiers": [],
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Source-named identity and reporting scope only; no legal-holder chain, security class or proprietary identifier inferred. Shared exact IDs checked for unchanged names/types against other staged releases."
+      }
+    }
+  ],
+  "securities": [],
+  "listings": [],
+  "perimeters": [
+    {
+      "reporting_perimeter_id": "per_uae_exp_mubadala_capital_ci_financial",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_capital",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "version": "1",
+      "reporting_entity_id": "ent_mubadala_investment_company_pjsc",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_diabtec_llc",
+      "version": "1",
+      "reporting_entity_id": "ent_kelix_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure",
+      "version": "1",
+      "reporting_entity_id": "ent_kelix_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure_healthcare",
+      "version": "1",
+      "reporting_entity_id": "ent_kelix_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_gulf_inject",
+      "version": "1",
+      "reporting_entity_id": "ent_kelix_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_wellpharma",
+      "version": "1",
+      "reporting_entity_id": "ent_kelix_bio",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+        "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "version": "1",
+      "reporting_entity_id": "ent_sharjah_asset_management",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bycu8e7-sharjah-taxi-carries-931-million-passengers-2025"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "version": "1",
+      "reporting_entity_id": "ent_sharjah_asset_management",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b1k7nvo-rafid-launches-two-new-branches-hamriyah-free"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5ii9jg-adq-appoints-modon-holding-master-developer-for"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/bz8znay-wio-bank-reports-revenue-aed124-billion-fy2025"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/15wmbdj-karachi-gateway-louis-dreyfus-company-sign"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_arcera_birgi_mefar_group",
+      "version": "1",
+      "reporting_entity_id": "ent_arcera",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    },
+    {
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "version": "1",
+      "reporting_entity_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "basis": "consolidated_group",
+      "included_entity_ids": [],
+      "excluded_entity_ids": [],
+      "definition": "Source-reported group interest; immediate registered holder and complete accounting consolidation perimeter not inferred.",
+      "source_urls": [
+        "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "review": {
+        "status": "accepted",
+        "reviewer": "independent-sovereign-canonical-review",
+        "reviewed_at": "2026-10-23T14:05:00Z",
+        "rationale": "Exact dated source-reporting group interest; no direct-title or accounting-consolidation inference; no addition across parent/child or date scopes."
+      }
+    }
+  ],
+  "identity_history": [],
+  "scope_transitions": []
+}

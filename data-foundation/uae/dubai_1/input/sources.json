@@ -1,0 +1,3516 @@
+{
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_dubai_1_20261023_v1",
+  "sources": [
+    {
+      "source_id": "src_uae_dubai_holding_jumeirah",
+      "source_family": "Dubai Holding programmes aim to prepare Emirati talent for future economy",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_jumeirah"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_dubai_holding_real_estate",
+      "source_family": "Dubai Holding programmes aim to prepare Emirati talent for future economy",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_dubai_holding_real_estate"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_dubai_holding_entertainment",
+      "source_family": "Dubai Holding programmes aim to prepare Emirati talent for future economy",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_dubai_holding_entertainment"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_dubai_holding_community_management",
+      "source_family": "Dubai Holding programmes aim to prepare Emirati talent for future economy",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_dubai_holding_community_management"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_nakheel",
+      "source_family": "Dubai Holding programmes aim to prepare Emirati talent for future economy",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_nakheel"
+      ],
+      "allowed_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_tecom_group",
+      "source_family": "Dubai Holding programmes aim to prepare Emirati talent for future economy",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c1s2y80-dubai-holding-programmes-aim-prepare-emirati"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_tecom_group"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_meraas",
+      "source_family": "Dubai Holding Asset Management rebrands its residential portfolio as Dubai Residential",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_meraas"
+      ],
+      "allowed_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_meydan",
+      "source_family": "Dubai Holding Asset Management rebrands its residential portfolio as Dubai Residential",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/article/b5smmwv-dubai-holding-asset-management-rebrands-its"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_meydan"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_jumeirah_mallorca",
+      "source_family": "Dubai Holding expands European hospitality portfolio with acquisition in Mallorca",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_jumeirah_mallorca"
+      ],
+      "allowed_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_hospitality_bvlgari_hotel_dubai",
+      "source_family": "Dubai Holding expands European hospitality portfolio with acquisition in Mallorca",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bybnd6v-dubai-holding-expands-european-hospitality"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_hospitality_bvlgari_hotel_dubai"
+      ],
+      "allowed_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_investment_corporation_of_dubai_alec_holdings",
+      "source_family": "ALEC Holdings debuts on DFM in UAE’s largest-ever construction sector IPO",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bm7u2d9-alec-holdings-debuts-dfm-uae%E2%80%99s-largest-ever"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_investment_corporation_of_dubai_alec_holdings"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower",
+      "source_family": "DEWA to increase its ownership in Empower from 56% to 80.00%",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_electricity_and_water_authority_pjsc_emirates_central_cooling_systems_corporation_pjsc_empower"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_emirates_power_investment_llc",
+      "source_family": "DEWA to increase its ownership in Empower from 56% to 80.00%",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/byo5hh5-dewa-increase-its-ownership-empower-from-56-8000"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_emirates_power_investment_llc"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise",
+      "source_family": "DAE repurchases shares held by Emaar Properties",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/hszr8s5p-dae-repurchases-shares-held-emaar-properties"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_investment_corporation_of_dubai_dubai_aerospace_enterprise"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_investment_corporation_of_dubai_ithra_dubai",
+      "source_family": "Ithra Dubai launches One Deira at Deira Enrichment Project",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/hszrcuzj-ithra-dubai-launches-one-deira-deira-enrichment"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_investment_corporation_of_dubai_ithra_dubai"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_investment_corporation_of_dubai_dubal_holding",
+      "source_family": "DUBAL Holding acquires 60% stake in OSE Industries",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_investment_corporation_of_dubai_dubal_holding"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubal_holding_emirates_global_aluminium",
+      "source_family": "DUBAL Holding acquires 60% stake in OSE Industries",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/hszrbes1-dubal-holding-acquires-60-stake-ose-industries"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubal_holding_emirates_global_aluminium"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_dham_reit_management_llc",
+      "source_family": "Dubai Holding announces intention to float Dubai Residential REIT on DFM",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_dham_reit_management_llc"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_dham_investments_llc",
+      "source_family": "Dubai Holding announces intention to float Dubai Residential REIT on DFM",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bjiseis-dubai-holding-announces-intention-float-dubai"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_dham_investments_llc"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubal_holding_warsan_waste_management",
+      "source_family": "DUBAL Holding expands circular-economy investments (Arabic report)",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubal_holding_warsan_waste_management"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubal_holding_biod_technology",
+      "source_family": "DUBAL Holding expands circular-economy investments (Arabic report)",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubal_holding_biod_technology"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubal_holding_enviroserve",
+      "source_family": "DUBAL Holding expands circular-economy investments (Arabic report)",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/ar/article/c256aes-%D8%AF%D9%88%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A7%D8%A8%D8%B6%D8%A9-%D8%AA%D8%B9%D8%B2%D8%B2-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubal_holding_enviroserve"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_investment_corporation_of_dubai_emirates_group",
+      "source_family": "Emirates Group records annual profit of AED24.4 billion",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_investment_corporation_of_dubai_emirates_group"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_emirates_group_emirates",
+      "source_family": "Emirates Group records annual profit of AED24.4 billion",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_emirates_group_emirates"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_emirates_group_dnata",
+      "source_family": "Emirates Group records annual profit of AED24.4 billion",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c03cqrg-emirates-group-records-annual-profit-aed244"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_emirates_group_dnata"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dnata_wondermiles",
+      "source_family": "Emirates Group hits new half-year profit record of AED10.6 billion",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dnata_wondermiles"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_emirates_leisure_retail_air_ventures_llc",
+      "source_family": "Emirates Group hits new half-year profit record of AED10.6 billion",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/bmkxllq-emirates-group-hits-new-half-year-profit-record"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_emirates_leisure_retail_air_ventures_llc"
+      ],
+      "allowed_predicates": [
+        "reported_group_interest"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_real_estate_nakheel",
+      "source_family": "Dubai Holding Real Estate, Huspy partner to enhance home financing journey for customers",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_real_estate_nakheel"
+      ],
+      "allowed_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_real_estate_meraas",
+      "source_family": "Dubai Holding Real Estate, Huspy partner to enhance home financing journey for customers",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_real_estate_meraas"
+      ],
+      "allowed_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    },
+    {
+      "source_id": "src_uae_dubai_holding_real_estate_dubai_properties",
+      "source_family": "Dubai Holding Real Estate, Huspy partner to enhance home financing journey for customers",
+      "publication_host": "www.wam.ae",
+      "allowed_url_prefixes": [
+        "https://www.wam.ae/en/article/c07is5n-dubai-holding-real-estate-huspy-partner-enhance"
+      ],
+      "admitted_document_ids": [
+        "doc_uae_dubai_holding_real_estate_dubai_properties"
+      ],
+      "allowed_predicates": [
+        "reported_portfolio_affiliation"
+      ],
+      "identifier_namespaces": [],
+      "admission": {
+        "status": "scope_admitted",
+        "reviewer": "independent-dubai-canonical-review",
+        "checked_at": "2026-10-23",
+        "rationale": "Conditional exact-source factual use for confirmed noncommercial research/educational portal; assessment wam_public_research_minimal_facts_20261023."
+      },
+      "rights": {
+        "automated_collection": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Bounded individual public-report reads for research; no bulk archive or feed. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_retention": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no article archive. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "internal_extraction": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Selected non-expressive facts in original normalized structure. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "identifier_database_use": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Names and exact citations only, no proprietary identifiers. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "derived_publication": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Only confirmed non-monetized research/educational portal under main-site policy I.2; no source expression or commercial reuse. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "raw_redistribution": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted or required; no raw reports, prose, tables, logos or images. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "attribution": {
+          "status": "conditional",
+          "conditions_satisfied": true,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "WAM and exact source URL retained; no open-licence inference. Assessment wam_public_research_minimal_facts_20261023."
+        },
+        "commercial_use": {
+          "status": "unknown",
+          "conditions_satisfied": false,
+          "terms_urls": [
+            "https://www.wam.ae/en/privacy-policy",
+            "https://www.wam.ae/en/terms-and-conditions"
+          ],
+          "checked_at": "2026-10-23",
+          "reviewer": "independent-dubai-canonical-review",
+          "rationale": "Not admitted under main-site policy I.3. Assessment wam_public_research_minimal_facts_20261023."
+        }
+      },
+      "cadence": "Dated selected public-news observation; no automatic latest-data or complete correction-chain claim.",
+      "limitations": [
+        "Selected factual data only; no copied narrative or report redistribution.",
+        "Dated partial source snapshot, not current or complete portfolio."
+      ],
+      "source_kind": "public_news"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import * as THREE from '../vendor/three.module.min.js';
 import { OrbitControls } from '../vendor/OrbitControls.js';
-import { KIND_LABELS } from './graph-model.js?v=20261018-data2';
+import { KIND_LABELS } from './graph-model.js?v=20261023-uae1';
 import { layoutBubbles, bubbleRadius } from './bubble-layout.js?v=20261018-data2';
 import { networkManagerIds, prioritizeNetworkLabels } from './shared-network-layout.js?v=20261018-data2';
 

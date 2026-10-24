@@ -1,0 +1,2849 @@
+{
+  "documents": [
+    {
+      "document_id": "doc_uae_exp_mubadala_capital_ci_financial",
+      "source_id": "src_uae_exp_mubadala_capital_ci_financial",
+      "document_family_id": "family_uae_exp_mubadala_capital_ci_financial",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-04-09",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "source_id": "src_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "document_family_id": "family_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bzmolnu-mubadala-strengthens-global-presence-via-strategic",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-04-09",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "source_id": "src_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "document_family_id": "family_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-01-16",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_diabtec_llc",
+      "source_id": "src_uae_exp_kelix_bio_diabtec_llc",
+      "document_family_id": "family_uae_exp_kelix_bio_diabtec_llc",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bhpw5kz-mubadala%E2%80%99s-%E2%80%98kelix-bio%E2%80%99-acquires-%E2%80%98diabtec%E2%80%99",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-01-16",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_bioventure",
+      "source_id": "src_uae_exp_kelix_bio_bioventure",
+      "document_family_id": "family_uae_exp_kelix_bio_bioventure",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-12-24",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare",
+      "source_id": "src_uae_exp_kelix_bio_bioventure_healthcare",
+      "document_family_id": "family_uae_exp_kelix_bio_bioventure_healthcare",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-12-24",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject",
+      "source_id": "src_uae_exp_kelix_bio_gulf_inject",
+      "document_family_id": "family_uae_exp_kelix_bio_gulf_inject",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-12-24",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma",
+      "source_id": "src_uae_exp_kelix_bio_wellpharma",
+      "document_family_id": "family_uae_exp_kelix_bio_wellpharma",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b6uqd51-mubadala-acquires-majority-stakes-global-medical",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-12-24",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "source_id": "src_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "document_family_id": "family_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bycu8e7-sharjah-taxi-carries-931-million-passengers-2025",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-01-22",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "source_id": "src_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "document_family_id": "family_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b1k7nvo-rafid-launches-two-new-branches-hamriyah-free",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-02-08",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b5ii9jg-adq-appoints-modon-holding-master-developer-for",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-04",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/bz8znay-wio-bank-reports-revenue-aed124-billion-fy2025",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2026-03-17",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/15wmbdj-karachi-gateway-louis-dreyfus-company-sign",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2025-12-05",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-15",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_arcera_birgi_mefar_group",
+      "source_id": "src_uae_exp_arcera_birgi_mefar_group",
+      "document_family_id": "family_uae_exp_arcera_birgi_mefar_group",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-15",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/b5p214i-adq-bank-audi-sign-definitive-agreement-acquire-96",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-15",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2022-12-16",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2022-12-16",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "source_id": "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "document_family_id": "family_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/hszrg3ob-tadweer-transferred-adqs-portfolio",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2022-12-16",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_support_1",
+      "source_id": "src_uae_exp_kelix_bio_bioventure_support_1",
+      "document_family_id": "family_uae_exp_kelix_bio_bioventure_support_1",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-14",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "source_id": "src_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "document_family_id": "family_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-14",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject_support_1",
+      "source_id": "src_uae_exp_kelix_bio_gulf_inject_support_1",
+      "document_family_id": "family_uae_exp_kelix_bio_gulf_inject_support_1",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-14",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    },
+    {
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma_support_1",
+      "source_id": "src_uae_exp_kelix_bio_wellpharma_support_1",
+      "document_family_id": "family_uae_exp_kelix_bio_wellpharma_support_1",
+      "version": "selected_factual_snapshot",
+      "url": "https://www.wam.ae/en/article/1461npi-mubadala%E2%80%99s-kelix-bio-acquires-four-globalone",
+      "publisher": "Emirates News Agency (WAM)",
+      "published_at": "2024-10-14",
+      "content_sha256": null,
+      "amendment_kind": "original",
+      "supersedes_document_ids": [],
+      "amendment_checked_through": "2026-10-23",
+      "amendment_status": "source_snapshot_only",
+      "amendment_discovery": "Individually inspected public-news report. No exhaustive correction/amendment chain established.",
+      "correction_scope": "nonexhaustive"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_uae_exp_mubadala_capital_ci_financial",
+      "document_id": "doc_uae_exp_mubadala_capital_ci_financial",
+      "locator": "2025 activity review: CI Financial completion paragraph (web line 18).",
+      "source_record_key": "uae_exp_mubadala_capital_ci_financial",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Mubadala Capital reports an interest in CI Financial at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "locator": "ADIC indirect investment arm paragraph (web line 19).",
+      "source_record_key": "uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Mubadala Investment Company PJSC reports an interest in Abu Dhabi Investment Council at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "locator": "Opening paragraph (web line 7).",
+      "source_record_key": "uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Mubadala Investment Company PJSC reports an interest in KELIX bio at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_diabtec_llc",
+      "document_id": "doc_uae_exp_kelix_bio_diabtec_llc",
+      "locator": "Opening paragraph (web line 7).",
+      "source_record_key": "uae_exp_kelix_bio_diabtec_llc",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "KELIX bio reports an interest in DiabTec LLC at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_bioventure",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure",
+      "locator": "December 24 report, 100% four-asset acquisition paragraph (web line 14); October 14 report opening and seller remarks (web lines 6, 16).",
+      "source_record_key": "uae_exp_kelix_bio_bioventure",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "KELIX bio reports an interest in Bioventure at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_bioventure_healthcare",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare",
+      "locator": "December 24 report, 100% four-asset acquisition paragraph (web line 14); October 14 report opening and seller remarks (web lines 6, 16).",
+      "source_record_key": "uae_exp_kelix_bio_bioventure_healthcare",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "KELIX bio reports an interest in Bioventure Healthcare at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_gulf_inject",
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject",
+      "locator": "December 24 report, 100% four-asset acquisition paragraph (web line 14); October 14 report opening and seller remarks (web lines 6, 16).",
+      "source_record_key": "uae_exp_kelix_bio_gulf_inject",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "KELIX bio reports an interest in Gulf Inject at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_wellpharma",
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma",
+      "locator": "December 24 report, 100% four-asset acquisition paragraph (web line 14); October 14 report opening and seller remarks (web lines 6, 16).",
+      "source_record_key": "uae_exp_kelix_bio_wellpharma",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "KELIX bio reports an interest in Wellpharma at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "document_id": "doc_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "locator": "Subsidiary identification paragraph (web line 12).",
+      "source_record_key": "uae_exp_sharjah_asset_management_sharjah_taxi",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Sharjah Asset Management reports an interest in Sharjah Taxi at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "document_id": "doc_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "locator": "SAM companies identification paragraph (web line 13).",
+      "source_record_key": "uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Sharjah Asset Management reports an interest in Rafid Automative Solutions at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "locator": "Third body paragraph (web line 8).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Ras El Hekma Urban Development Project Company at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "locator": "Shareholder identification paragraph (web line 9).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Wio Bank PJSC at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "locator": "Opening hierarchy and ADQ portfolio statement (web lines 6, 9).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Louis Dreyfus Company at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "locator": "Existing Turkish life-sciences investments paragraph (web line 11).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Arcera at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_arcera_birgi_mefar_group",
+      "document_id": "doc_uae_exp_arcera_birgi_mefar_group",
+      "locator": "Existing Turkish life-sciences investments paragraph (web line 11).",
+      "source_record_key": "uae_exp_arcera_birgi_mefar_group",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Arcera reports an interest in Birgi Mefar Group at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "locator": "Financial-services portfolio paragraph (web line 14).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Abu Dhabi Securities Exchange at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "locator": "Final energy/utilities portfolio paragraph (web line 17).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Emirates Nuclear Energy Corporation at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "locator": "Final energy/utilities portfolio paragraph (web line 17).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Emirates Water and Electricity Company at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "locator": "Full share ownership transfer paragraph (web line 7).",
+      "source_record_key": "uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Abu Dhabi Developmental Holding Company PJSC (ADQ) reports an interest in Abu Dhabi Waste Management PJSC (Tadweer) at the cited evidence date; scope is partial."
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_bioventure_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_support_1",
+      "locator": "Opening names/stakes paragraph; seller confirms divestment.",
+      "source_record_key": "uae_exp_kelix_bio_bioventure_support_1",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Supporting identity/transaction or filing-date evidence for uae_exp_kelix_bio_bioventure"
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "locator": "Opening names/stakes paragraph; seller confirms divestment.",
+      "source_record_key": "uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Supporting identity/transaction or filing-date evidence for uae_exp_kelix_bio_bioventure_healthcare"
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_gulf_inject_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject_support_1",
+      "locator": "Opening names/stakes paragraph; seller confirms divestment.",
+      "source_record_key": "uae_exp_kelix_bio_gulf_inject_support_1",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Supporting identity/transaction or filing-date evidence for uae_exp_kelix_bio_gulf_inject"
+    },
+    {
+      "evidence_id": "ev_uae_exp_kelix_bio_wellpharma_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma_support_1",
+      "locator": "Opening names/stakes paragraph; seller confirms divestment.",
+      "source_record_key": "uae_exp_kelix_bio_wellpharma_support_1",
+      "supported_predicates": [
+        "reported_group_interest"
+      ],
+      "fact_summary": "Supporting identity/transaction or filing-date evidence for uae_exp_kelix_bio_wellpharma"
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "obs_uae_exp_mubadala_capital_ci_financial",
+      "document_id": "doc_uae_exp_mubadala_capital_ci_financial",
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_capital_ci_financial"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "document_id": "doc_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_kelix_bio"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_diabtec_llc",
+      "document_id": "doc_uae_exp_kelix_bio_diabtec_llc",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_diabtec_llc"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_bioventure",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_bioventure_healthcare",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure_healthcare"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_gulf_inject",
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_gulf_inject"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_wellpharma",
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_wellpharma"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "document_id": "doc_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_sharjah_taxi"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "document_id": "doc_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_rafid_automative_solutions"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_arcera_birgi_mefar_group",
+      "document_id": "doc_uae_exp_arcera_birgi_mefar_group",
+      "evidence_ids": [
+        "ev_uae_exp_arcera_birgi_mefar_group"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "document_id": "doc_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_bioventure_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_support_1",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure_support_1"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure_healthcare_support_1"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_gulf_inject_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_gulf_inject_support_1",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_gulf_inject_support_1"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    },
+    {
+      "observation_id": "obs_uae_exp_kelix_bio_wellpharma_support_1",
+      "document_id": "doc_uae_exp_kelix_bio_wellpharma_support_1",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_wellpharma_support_1"
+      ],
+      "retrieved_at": "2026-10-23T13:35:00Z",
+      "recorded_at": "2026-10-23T13:35:00Z",
+      "extractor_version": "uae_sovereign_1_20261023_v1",
+      "retrieval_method": "Bounded official-source factual review; no raw report redistribution."
+    }
+  ],
+  "denominators": [
+    {
+      "denominator_id": "den_uae_exp_mubadala_capital_ci_financial",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-04-09",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_mubadala_capital_ci_financial",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_capital_ci_financial"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-04-09",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-01-16",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_kelix_bio"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_kelix_bio_diabtec_llc",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-01-16",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_diabtec_llc",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_diabtec_llc"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_kelix_bio_bioventure",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-12-24",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_kelix_bio_bioventure_healthcare",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-12-24",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure_healthcare",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure_healthcare"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_kelix_bio_gulf_inject",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-12-24",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_gulf_inject",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_gulf_inject"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_kelix_bio_wellpharma",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-12-24",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_wellpharma",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_wellpharma"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-01-22",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_sharjah_taxi"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-02-08",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_rafid_automative_solutions"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-10-04",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2026-03-17",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2025-12-05",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-10-15",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_arcera_birgi_mefar_group",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-10-15",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_arcera_birgi_mefar_group",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_arcera_birgi_mefar_group"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2024-10-15",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2022-12-16",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2022-12-16",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    },
+    {
+      "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "kind": "reported_group_interest",
+      "label": "Source-reported group interest basis; underlying share denominator not established",
+      "value": null,
+      "availability": "unknown",
+      "unit": "percent",
+      "currency": null,
+      "as_of_date": "2022-12-16",
+      "security_ids": [],
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "reporting_perimeter_version": "1",
+      "coverage_status": "complete_for_declared_scope",
+      "selection_policy": "Do not reverse-calculate a denominator or recompute a rounded source percentage.",
+      "exclusions": [
+        "Other dates and security classes"
+      ],
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer"
+      ],
+      "qualifiers": [
+        "Source percentage preserved without computed extra precision."
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "coverage_id": "coverage_uae_exp_mubadala_capital_ci_financial",
+      "reporting_perimeter_id": "per_uae_exp_mubadala_capital_ci_financial",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-04-09",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-04-09",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-01-16",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_kelix_bio_diabtec_llc",
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_diabtec_llc",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-01-16",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_kelix_bio_bioventure",
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-12-24",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_kelix_bio_bioventure_healthcare",
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure_healthcare",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-12-24",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_kelix_bio_gulf_inject",
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_gulf_inject",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-12-24",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_kelix_bio_wellpharma",
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_wellpharma",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-12-24",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-01-22",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-02-08",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-10-04",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "reporting_perimeter_version": "1",
+      "report_date": "2026-03-17",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "reporting_perimeter_version": "1",
+      "report_date": "2025-12-05",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-10-15",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_arcera_birgi_mefar_group",
+      "reporting_perimeter_id": "per_uae_exp_arcera_birgi_mefar_group",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-10-15",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "reporting_perimeter_version": "1",
+      "report_date": "2024-10-15",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "reporting_perimeter_version": "1",
+      "report_date": "2022-12-16",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "reporting_perimeter_version": "1",
+      "report_date": "2022-12-16",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    },
+    {
+      "coverage_id": "coverage_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "reporting_perimeter_version": "1",
+      "report_date": "2022-12-16",
+      "status": "partial",
+      "description": "One selected dated factual relationship; not a complete investor portfolio.",
+      "expected_source_rows": null,
+      "captured_source_rows": 1,
+      "count_evidence_ids": [],
+      "exclusions": [
+        "Other investments, subsidiaries and private holdings",
+        "Subsequent changes not comprehensively covered"
+      ],
+      "whole_portfolio_coverage": null,
+      "freshness_status": "historical_snapshot",
+      "freshness_policy_id": null
+    }
+  ],
+  "claims": [
+    {
+      "candidate_id": "cand_uae_exp_mubadala_capital_ci_financial",
+      "assertion_key": "cand_uae_exp_mubadala_capital_ci_financial",
+      "subject_id": "ent_mubadala_capital",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_ci_financial",
+      "report_date": "2026-04-09",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_mubadala_capital_ci_financial",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_mubadala_capital_ci_financial_position",
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_capital_ci_financial"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_mubadala_capital_ci_financial"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Completion reported during FY2025 review; exact completion day not established by this report. No inference that the manager owns all client assets.",
+        "Reported group interest; immediate legal holder and percentage not disclosed.",
+        "Evidence status: completed reported in review.",
+        "Completion is explicit. Retain unknown ownership percentage and group perimeter; do not treat CI client assets under management as assets owned by Mubadala. April 9 is review-publication date, not a claimed transaction closing date.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_mubadala_capital_ci_financial",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_mubadala_capital_ci_financial",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_mubadala_capital_ci_financial"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "assertion_key": "cand_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "subject_id": "ent_mubadala_investment_company_pjsc",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_abu_dhabi_investment_council",
+      "report_date": "2026-04-09",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council_position",
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported indirect-investment arm; legal shareholding and percentage not supplied.",
+        "Evidence status: reported as of disclosure.",
+        "ADIC is explicitly identified as an investment arm of Mubadala. This supports a group relationship, not a percentage or a particular direct shareholder chain.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "assertion_key": "cand_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "subject_id": "ent_mubadala_investment_company_pjsc",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_kelix_bio",
+      "report_date": "2025-01-16",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_mubadala_investment_company_pjsc_kelix_bio_position",
+      "evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_kelix_bio"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_mubadala_investment_company_pjsc_kelix_bio"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Wholly owned subsidiary as reported.",
+        "Evidence status: reported as of disclosure.",
+        "Wholly owned is explicit. Preserve the January 16, 2025 observation and do not infer an unchanged current legal structure.",
+        "Source describes wholly owned/subsidiary relationship; this record conservatively renders parent-to-child group interest, not a reversed subsidiary_of edge.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_mubadala_investment_company_pjsc_kelix_bio"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_kelix_bio_diabtec_llc",
+      "assertion_key": "cand_uae_exp_kelix_bio_diabtec_llc",
+      "subject_id": "ent_kelix_bio",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_diabtec_llc",
+      "report_date": "2025-01-16",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_diabtec_llc",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_kelix_bio_diabtec_llc_position",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_diabtec_llc"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_kelix_bio_diabtec_llc"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Former Julphar subsidiary; do not also show Julphar as current owner from stale portfolio list.",
+        "Completed acquisition; percentage not explicitly stated.",
+        "Evidence status: completed as of report.",
+        "Completed acquisition is explicit, but no percentage is stated. Julphar is the disposing parent, not a new co-owner.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_kelix_bio_diabtec_llc",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_kelix_bio_diabtec_llc",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_kelix_bio_diabtec_llc"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_kelix_bio_bioventure",
+      "assertion_key": "cand_uae_exp_kelix_bio_bioventure",
+      "subject_id": "ent_kelix_bio",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_bioventure",
+      "report_date": "2024-12-24",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_kelix_bio_bioventure_position",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure",
+        "ev_uae_exp_kelix_bio_bioventure_support_1"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_kelix_bio_bioventure",
+        "obs_uae_exp_kelix_bio_bioventure_support_1"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Historical KELIX group snapshot. Bioventure Healthcare separately reported as Mubadala Bio subsidiary in October 2026; do not infer undocumented immediate chain.",
+        "KELIX bio acquired 100% of four named pharma assets; individual names cross-referenced to October 14 announcement.",
+        "Evidence status: completed by disclosure.",
+        "The October 14 report names this asset in the four-asset 100% transaction, and the December 24 report confirms the four-asset acquisition occurred. Accept as December 24, 2024 group-level ownership, not a fresh current legal-holder assertion. Later Mubadala Bio reporting requires separate dated identity/perimeter reconciliation.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_kelix_bio_bioventure",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_kelix_bio_bioventure",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure",
+        "ev_uae_exp_kelix_bio_bioventure_support_1"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_kelix_bio_bioventure_healthcare",
+      "assertion_key": "cand_uae_exp_kelix_bio_bioventure_healthcare",
+      "subject_id": "ent_kelix_bio",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_bioventure_healthcare",
+      "report_date": "2024-12-24",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_bioventure_healthcare",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_kelix_bio_bioventure_healthcare_position",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure_healthcare",
+        "ev_uae_exp_kelix_bio_bioventure_healthcare_support_1"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_kelix_bio_bioventure_healthcare",
+        "obs_uae_exp_kelix_bio_bioventure_healthcare_support_1"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Historical KELIX group snapshot. Bioventure Healthcare separately reported as Mubadala Bio subsidiary in October 2026; do not infer undocumented immediate chain.",
+        "KELIX bio acquired 100% of four named pharma assets; individual names cross-referenced to October 14 announcement.",
+        "Evidence status: completed by disclosure.",
+        "The October 14 report names this asset in the four-asset 100% transaction, and the December 24 report confirms the four-asset acquisition occurred. Accept as December 24, 2024 group-level ownership, not a fresh current legal-holder assertion. Later Mubadala Bio reporting requires separate dated identity/perimeter reconciliation.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_kelix_bio_bioventure_healthcare",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_kelix_bio_bioventure_healthcare",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_kelix_bio_bioventure_healthcare",
+        "ev_uae_exp_kelix_bio_bioventure_healthcare_support_1"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_kelix_bio_gulf_inject",
+      "assertion_key": "cand_uae_exp_kelix_bio_gulf_inject",
+      "subject_id": "ent_kelix_bio",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_gulf_inject",
+      "report_date": "2024-12-24",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_gulf_inject",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_kelix_bio_gulf_inject_position",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_gulf_inject",
+        "ev_uae_exp_kelix_bio_gulf_inject_support_1"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_kelix_bio_gulf_inject",
+        "obs_uae_exp_kelix_bio_gulf_inject_support_1"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Historical KELIX group snapshot. Bioventure Healthcare separately reported as Mubadala Bio subsidiary in October 2026; do not infer undocumented immediate chain.",
+        "KELIX bio acquired 100% of four named pharma assets; individual names cross-referenced to October 14 announcement.",
+        "Evidence status: completed by disclosure.",
+        "The October 14 report names this asset in the four-asset 100% transaction, and the December 24 report confirms the four-asset acquisition occurred. Accept as December 24, 2024 group-level ownership, not a fresh current legal-holder assertion. Later Mubadala Bio reporting requires separate dated identity/perimeter reconciliation.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_kelix_bio_gulf_inject",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_kelix_bio_gulf_inject",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_kelix_bio_gulf_inject",
+        "ev_uae_exp_kelix_bio_gulf_inject_support_1"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_kelix_bio_wellpharma",
+      "assertion_key": "cand_uae_exp_kelix_bio_wellpharma",
+      "subject_id": "ent_kelix_bio",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_wellpharma",
+      "report_date": "2024-12-24",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_kelix_bio_wellpharma",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_kelix_bio_wellpharma_position",
+      "evidence_ids": [
+        "ev_uae_exp_kelix_bio_wellpharma",
+        "ev_uae_exp_kelix_bio_wellpharma_support_1"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_kelix_bio_wellpharma",
+        "obs_uae_exp_kelix_bio_wellpharma_support_1"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Historical KELIX group snapshot. Bioventure Healthcare separately reported as Mubadala Bio subsidiary in October 2026; do not infer undocumented immediate chain.",
+        "KELIX bio acquired 100% of four named pharma assets; individual names cross-referenced to October 14 announcement.",
+        "Evidence status: completed by disclosure.",
+        "The October 14 report names this asset in the four-asset 100% transaction, and the December 24 report confirms the four-asset acquisition occurred. Accept as December 24, 2024 group-level ownership, not a fresh current legal-holder assertion. Later Mubadala Bio reporting requires separate dated identity/perimeter reconciliation.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_kelix_bio_wellpharma",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_kelix_bio_wellpharma",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_kelix_bio_wellpharma",
+        "ev_uae_exp_kelix_bio_wellpharma_support_1"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "assertion_key": "cand_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "subject_id": "ent_sharjah_asset_management",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_sharjah_taxi",
+      "report_date": "2026-01-22",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_sharjah_taxi",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_sharjah_asset_management_sharjah_taxi_position",
+      "evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_sharjah_taxi"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_sharjah_asset_management_sharjah_taxi"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Explicitly described as a subsidiary; percentage unspecified.",
+        "Evidence status: reported as of disclosure.",
+        "The report explicitly calls Sharjah Taxi a subsidiary of Sharjah Asset Management. No percentage is stated.",
+        "Source describes wholly owned/subsidiary relationship; this record conservatively renders parent-to-child group interest, not a reversed subsidiary_of edge.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_sharjah_asset_management_sharjah_taxi",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_sharjah_asset_management_sharjah_taxi",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_sharjah_taxi"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "assertion_key": "cand_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "subject_id": "ent_sharjah_asset_management",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_rafid_automative_solutions",
+      "report_date": "2024-02-08",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_sharjah_asset_management_rafid_automative_solutions_position",
+      "evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_rafid_automative_solutions"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_sharjah_asset_management_rafid_automative_solutions"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Source spells Automative. Do not turn MotorCheck/AutoXpress service branches into separate legal-company holdings.",
+        "Reported group interest; immediate legal holder and percentage not disclosed.",
+        "Evidence status: reported as of disclosure.",
+        "The report identifies Rafid as one of Sharjah Asset Management companies. Preserve source spelling Automative as a source alias; do not silently equate operating branch names with owned legal entities.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_sharjah_asset_management_rafid_automative_solutions"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_ras_el_hekma_urban_development_project_company",
+      "report_date": "2024-10-04",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Actual company not the project land or contractor Modon; percentage and immediate legal holder not established.",
+        "Explicit subsidiary; percentage unstated.",
+        "Evidence status: reported as of disclosure.",
+        "The company, distinct from the megaproject and appointed developer Modon, is expressly called an ADQ subsidiary. Percentage unstated.",
+        "Source describes wholly owned/subsidiary relationship; this record conservatively renders parent-to-child group interest, not a reversed subsidiary_of edge.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_wio_bank_pjsc",
+      "report_date": "2026-03-17",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Do not attribute combined65% ADQ/AlphaDhabi historical stake to ADQ alone.",
+        "Named strategic shareholder; no separate ADQ percentage reported.",
+        "Evidence status: reported as of disclosure.",
+        "ADQ is expressly listed among Wio shareholders. The report does not allocate an individual stake; do not use the older combined ADQ/Alpha Dhabi percentage.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_louis_dreyfus_company",
+      "report_date": "2025-12-05",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Louis Dreyfus Company group identity, not silently equated with specific International Holding BV share class.",
+        "Portfolio-company membership; exact holding vehicle and percentage unspecified.",
+        "Evidence status: reported as of disclosure.",
+        "The report describes the transaction parties within the ADQ portfolio and identifies the LDC corporate hierarchy. Accept only group-level LDC exposure with unknown percentage, not ADQ direct ownership of the Pakistan operating company.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_arcera",
+      "report_date": "2024-10-15",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Subsidiary edge orientation Arcera to ADQ. Odea transaction remains announced in this source; no completion inferred.",
+        "Wholly owned global life-sciences holding company as explicitly reported.",
+        "Evidence status: reported as of disclosure.",
+        "Arcera is expressly described as ADQ wholly owned. This is an existing relationship separate from the article's still-conditional Odea acquisition.",
+        "Source describes wholly owned/subsidiary relationship; this record conservatively renders parent-to-child group interest, not a reversed subsidiary_of edge.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_arcera_birgi_mefar_group",
+      "assertion_key": "cand_uae_exp_arcera_birgi_mefar_group",
+      "subject_id": "ent_arcera",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_birgi_mefar_group",
+      "report_date": "2024-10-15",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_arcera_birgi_mefar_group",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_arcera_birgi_mefar_group_position",
+      "evidence_ids": [
+        "ev_uae_exp_arcera_birgi_mefar_group"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_arcera_birgi_mefar_group"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported group membership; immediate holder and percentage unstated.",
+        "Evidence status: reported as of disclosure.",
+        "Birgi Mefar is described as already part of Arcera following the 2022 acquisition. Retain unknown percentage and group perimeter.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_arcera_birgi_mefar_group",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_arcera_birgi_mefar_group",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_arcera_birgi_mefar_group"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_abu_dhabi_securities_exchange",
+      "report_date": "2024-10-15",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Reported portfolio membership; percentage unstated.",
+        "Evidence status: reported as of disclosure.",
+        "ADX is expressly included in ADQ financial-services portfolio. The source gives no percentage or immediate legal holder.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_emirates_nuclear_energy_corporation",
+      "report_date": "2022-12-16",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Historical disclosed membership, not assumed unchanged through2026.",
+        "Reported group interest; immediate legal holder and percentage not disclosed.",
+        "Evidence status: reported as of disclosure.",
+        "ENEC is explicitly named in ADQ energy/utilities portfolio as of the 2022 disclosure. No present-day continuity or percentage is inferred.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_emirates_water_and_electricity_company",
+      "report_date": "2022-12-16",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Historical disclosed membership, not assumed unchanged through2026.",
+        "Reported group interest; immediate legal holder and percentage not disclosed.",
+        "Evidence status: reported as of disclosure.",
+        "EWEC is explicitly named in ADQ energy/utilities portfolio as of the 2022 disclosure. No present-day continuity or percentage is inferred.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+          "metric_type": "group_interest_percentage",
+          "value": null,
+          "availability": "unknown",
+          "reason": "Source identifies a portfolio interest but does not disclose a percentage.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company"
+      ]
+    },
+    {
+      "candidate_id": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "assertion_key": "cand_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "subject_id": "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+      "predicate": "reported_group_interest",
+      "object_id": "ent_abu_dhabi_waste_management_pjsc_tadweer",
+      "report_date": "2022-12-16",
+      "temporal_kind": "snapshot",
+      "effective_from": null,
+      "effective_to": null,
+      "reporting_perimeter_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+      "reporting_perimeter_version": "1",
+      "position_scope_id": "per_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer_position",
+      "evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer"
+      ],
+      "observation_ids": [
+        "obs_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer"
+      ],
+      "overlap_group_ids": [],
+      "effective_date_basis": "reporting_snapshot",
+      "end_semantics": "not_applicable",
+      "supersedes_claim_revision_ids": [],
+      "correction_kind": "none",
+      "correction_reason": null,
+      "qualifiers": [
+        "Historical explicit ownership, more precise than first22 later group-only record; preserve both dates, not duplicate economic holdings.",
+        "Full share ownership transferred from Abu Dhabi government to ADQ.",
+        "Evidence status: completed as of report.",
+        "The source explicitly reports transfer of full share ownership to ADQ. This supports 100% source-reported ownership on the disclosure date. Reconcile with any existing Tadweer group-only observation rather than count it twice.",
+        "Potential alias overlap with Tadweer Group2025 disclosure; preserve2022 date and do not sum or silently merge distinct dated records.",
+        "Dated source observation; correction completeness is not established; not verified current or latest.",
+        "Dated source snapshot; continuing ownership is not established.",
+        "Do not add positions across dates or parent/subsidiary reporting perimeters.",
+        "Reporting-group interest does not independently establish accounting consolidation or immediate registered ownership.",
+        "Historical source-named Tadweer identity; do not add this 2022 observation to later Tadweer Group observations as separate economic holdings."
+      ],
+      "metrics": [
+        {
+          "metric_id": "met_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+          "metric_type": "group_interest_percentage",
+          "value": "100",
+          "availability": "known",
+          "reason": "Source percentage; no inferred denominator or extra precision.",
+          "unit": "percent",
+          "currency": null,
+          "valuation_basis": "not_applicable",
+          "valuation_date": null,
+          "denominator_id": "den_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+          "measurement_basis": "observed_position",
+          "source_reported": true
+        }
+      ],
+      "primary_evidence_ids": [
+        "ev_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "gap_id": "gap_uae_incomplete",
+      "category": "coverage",
+      "description": "Partial UAE coverage; missing holdings remain unknown, not zero.",
+      "source_urls": [],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_uae_exp_abu_dhabi_investment_authority_hologic_inc_strict_sec_chain",
+      "category": "coverage",
+      "description": "Abu Dhabi Investment Authority to Hologic Inc.: factual candidate retained outside this release because strict SEC correction/amendment chain was not verified; unknown is not zero.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/859737/000119312526144632/d135035dex991.htm"
+      ],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_uae_exp_abu_dhabi_investment_authority_platinum_falcon_b_2018_rsc_limited_strict_sec_chain",
+      "category": "coverage",
+      "description": "Abu Dhabi Investment Authority to Platinum Falcon B 2018 RSC Limited: factual candidate retained outside this release because strict SEC correction/amendment chain was not verified; unknown is not zero.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2046386/000110465926056629/xslSCHEDULE_13G_X02/primary_doc.xml"
+      ],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_uae_exp_mubadala_capital_fortress_investment_group_llc_strict_sec_chain",
+      "category": "coverage",
+      "description": "Mubadala Capital to Fortress Investment Group LLC: factual candidate retained outside this release because strict SEC correction/amendment chain was not verified; unknown is not zero.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1899883/000189988326000036/fip-20260630.htm"
+      ],
+      "blocks_claim_candidate_ids": []
+    },
+    {
+      "gap_id": "gap_uae_exp_mubadala_investment_company_pjsc_mubadala_capital_strict_sec_chain",
+      "category": "coverage",
+      "description": "Mubadala Investment Company PJSC to Mubadala Capital: factual candidate retained outside this release because strict SEC correction/amendment chain was not verified; unknown is not zero.",
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1899883/000189988326000036/fip-20260630.htm"
+      ],
+      "blocks_claim_candidate_ids": []
+    }
+  ],
+  "manifest": {
+    "schema_version": "1.0.0",
+    "batch_id": "uae_sovereign_1_20261023_v1",
+    "task_id": "assets-map-issue-53",
+    "agent_id": "uae_portal_integrator",
+    "registry_version": "uae_sovereign_1_20261023_v1",
+    "source_registry_version": "uae_sovereign_1_20261023_v1",
+    "base_release_id": null,
+    "created_at": "2026-10-23T13:35:00Z",
+    "knowledge_cutoff": "2026-10-23",
+    "scope": {
+      "entity_ids": [
+        "ent_mubadala_capital",
+        "ent_ci_financial",
+        "ent_mubadala_investment_company_pjsc",
+        "ent_abu_dhabi_investment_council",
+        "ent_kelix_bio",
+        "ent_diabtec_llc",
+        "ent_bioventure",
+        "ent_bioventure_healthcare",
+        "ent_gulf_inject",
+        "ent_wellpharma",
+        "ent_sharjah_asset_management",
+        "ent_sharjah_taxi",
+        "ent_rafid_automative_solutions",
+        "ent_abu_dhabi_developmental_holding_company_pjsc_adq",
+        "ent_ras_el_hekma_urban_development_project_company",
+        "ent_wio_bank_pjsc",
+        "ent_louis_dreyfus_company",
+        "ent_arcera",
+        "ent_birgi_mefar_group",
+        "ent_abu_dhabi_securities_exchange",
+        "ent_emirates_nuclear_energy_corporation",
+        "ent_emirates_water_and_electricity_company",
+        "ent_abu_dhabi_waste_management_pjsc_tadweer"
+      ],
+      "security_ids": [],
+      "source_ids": [
+        "src_uae_exp_mubadala_capital_ci_financial",
+        "src_uae_exp_mubadala_investment_company_pjsc_abu_dhabi_investment_council",
+        "src_uae_exp_mubadala_investment_company_pjsc_kelix_bio",
+        "src_uae_exp_kelix_bio_diabtec_llc",
+        "src_uae_exp_kelix_bio_bioventure",
+        "src_uae_exp_kelix_bio_bioventure_healthcare",
+        "src_uae_exp_kelix_bio_gulf_inject",
+        "src_uae_exp_kelix_bio_wellpharma",
+        "src_uae_exp_sharjah_asset_management_sharjah_taxi",
+        "src_uae_exp_sharjah_asset_management_rafid_automative_solutions",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_ras_el_hekma_urban_development_project_company",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_wio_bank_pjsc",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_louis_dreyfus_company",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_arcera",
+        "src_uae_exp_arcera_birgi_mefar_group",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_securities_exchange",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_nuclear_energy_corporation",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_emirates_water_and_electricity_company",
+        "src_uae_exp_abu_dhabi_developmental_holding_company_pjsc_adq_abu_dhabi_waste_management_pjsc_tadweer",
+        "src_uae_exp_kelix_bio_bioventure_support_1",
+        "src_uae_exp_kelix_bio_bioventure_healthcare_support_1",
+        "src_uae_exp_kelix_bio_gulf_inject_support_1",
+        "src_uae_exp_kelix_bio_wellpharma_support_1"
+      ],
+      "report_dates": [
+        "2022-12-16",
+        "2024-02-08",
+        "2024-10-04",
+        "2024-10-15",
+        "2024-12-24",
+        "2025-01-16",
+        "2025-12-05",
+        "2026-01-22",
+        "2026-03-17",
+        "2026-04-09"
+      ],
+      "max_claims": 19,
+      "asset_class": "equity"
+    },
+    "stop_conditions": [
+      "Exact independently reviewed subset only, maximum30claims.",
+      "No source-use, date, identity or role gate bypass.",
+      "No complete UAE portfolio or current ownership assertion."
+    ]
+  }
+}

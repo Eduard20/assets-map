@@ -1,0 +1,11 @@
+{
+  "bundle_id": "dubai_1",
+  "files": {
+    "batch.json": "718f20f0b48a52d1bd4a6ecb1601df8144b178dc1adc141ef266b17dc7de05cc",
+    "independent-review.json": "d82571f3729158c0db283dc57ec25b2a6293771ca4f537c3871907bb67581fe8",
+    "registry.json": "e7c6bcaada5c3e3180154714e29bd7fddf6776631c11caa866fcc3c4946e5339",
+    "release-decision.json": "94b4925d80ed701c9c11d70b60ee0edfa89677c2c0e8786db6cfd66fe9e4e518",
+    "review.json": "db736e6ac4f035a51c04ec85d5645693acdb6f76254aacfe85c2ac1930126fe0",
+    "sources.json": "1fc8a7bcbda049352e093777a88c68161b5bf08da55643033dddada041df80f0"
+  }
+}
