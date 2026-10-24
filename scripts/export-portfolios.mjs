@@ -79,7 +79,7 @@ export function validateEquivalence(identity,inputs){
 }
 // The Pages allowlist is hand-maintained; a portfolio missing from it 404s in production and the
 // all-or-nothing loader then fails the whole default map. Orphaned row files must not keep shipping.
-const NON_PORTFOLIO_DATA=new Set(['graph.json','researched.json','portfolios.json','instrument-equivalence.json']);
+const NON_PORTFOLIO_DATA=new Set(['graph.json','researched.json','uae.json','portfolios.json','instrument-equivalence.json']);
 export function publicationErrors(dataFiles,{publicFiles=PUBLIC_FILES,presentFiles=[]}={}){
   const errors=[],expected=new Set(dataFiles);
   for(const file of expected)if(!publicFiles.includes('data/'+file))errors.push(`data/${file} is missing from PUBLIC_FILES in scripts/prepare-site.mjs`);

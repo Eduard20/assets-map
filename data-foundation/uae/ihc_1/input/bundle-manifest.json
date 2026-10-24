@@ -1,0 +1,11 @@
+{
+  "bundle_id": "ihc_1",
+  "files": {
+    "batch.json": "525def576c7e8c5f43a916504134e122bc437b4b8d3e95ecc45b175f555adedd",
+    "independent-review.json": "acea6c0b9b5b3f47692651f7fb95d7eb6164ac9cf5efb5340f68ed13cad07ecf",
+    "registry.json": "0670ad7095cfba71365ed7a6a120e3aae3145846f4bba4fe9fd4563cd3ee3711",
+    "release-decision.json": "35c9e44de7928f5d9dba05e284e0c65735741d7dd25e1e6f15a47ff41856eebd",
+    "review.json": "c1a3ce21c32dc03e34edddce2b4634bb57aa7bcbe6509bc3853da845e6e01ce6",
+    "sources.json": "11abe1e523a6ea34bca18a90aa06274f21f4b2e89ed5fd4c58ff13c31c87876f"
+  }
+}

@@ -2,6 +2,7 @@ import {createHash} from 'node:crypto';
 import {assertSchema} from './schema.mjs';
 export const SCHEMA_VERSION = '1.0.0';
 export const GENERATOR_VERSION = 'foundation-1.0.0';
+export const SOURCE_SNAPSHOT_QUALIFIER = 'Dated source observation; correction completeness is not established; not verified current or latest.';
 export const canonicalJSON = value => JSON.stringify(sortKeys(value));
 function sortKeys(v) { return Array.isArray(v) ? v.map(sortKeys) : v && typeof v === 'object' ? Object.fromEntries(Object.keys(v).sort().map(k => [k,sortKeys(v[k])])) : v; }
 export const hash = value => createHash('sha256').update(typeof value === 'string' ? value : canonicalJSON(value)).digest('hex');
@@ -40,6 +41,7 @@ export function validateRegistry(registry,{fixtureMode=false}={}) {
     const id=row.entity_id??row.security_id;
     requireValid(row.source_urls.length>0 && row.source_urls.every(u=>checkUrl(u,fixtureMode)),`Identity ${id} needs official source URLs`);
     if(row.security_id) requireValid(entities.has(row.issuer_id),`Unknown issuer ${row.issuer_id}`);
+    if(row.instrument_kind==='equity_interest_unspecified') requireValid(row.share_class==='not established'&&row.identifiers.length===0,`Unspecified equity interest cannot establish a share class or instrument identifiers: ${id}`);
     for(const alias of row.aliases??[]) requireValid(!alias.valid_from || !alias.valid_to || alias.valid_from<=alias.valid_to,`Invalid alias interval ${id}: ${alias.name}`);
     for(const ident of row.identifiers) {
       requireValid(checkUrl(ident.evidence_url,fixtureMode),`Invalid identity evidence URL ${id}`);
@@ -51,6 +53,7 @@ export function validateRegistry(registry,{fixtureMode=false}={}) {
   }
   for(const listing of registry.listings) {
     requireValid(securities.has(listing.security_id)&&checkUrl(listing.evidence_url,fixtureMode),`Invalid listing ${listing.listing_id}`);
+    requireValid(securities.get(listing.security_id).instrument_kind!=='equity_interest_unspecified',`Unspecified equity interest cannot have a listing: ${listing.listing_id}`);
     requireValid(!listing.valid_from || !listing.valid_to || listing.valid_from<=listing.valid_to,`Invalid listing interval ${listing.listing_id}`);
   }
   for(const p of registry.perimeters) {
@@ -103,6 +106,41 @@ function revisionBody(c,sourceFamilies) {
   return {...body,evidence_ids:unique(body.evidence_ids),overlap_group_ids:unique(body.overlap_group_ids),supersedes_claim_revision_ids:unique(body.supersedes_claim_revision_ids),source_family_ids:sourceFamilies,metrics:sorted(body.metrics,'metric_id')};
 }
 function claimFamily(c,sourceFamilies) { return idFor('clm',[sourceFamilies,c.assertion_key,c.subject_id,c.predicate,c.object_id,c.report_date,c.reporting_perimeter_id,c.reporting_perimeter_version,c.position_scope_id]); }
+// A date by which a document was observed is a knowledge bound, not its publication
+// date. Keep this policy shared by claims and claimless source amendments.
+function documentDateReasons(doc,batch,review,documentDecisions,documentObservations) {
+  const reasons=[], cutoff=batch.manifest.knowledge_cutoff;
+  if(doc.published_at===null) {
+    if(doc.publication_date_basis!=='unknown_observed_by'||!doc.observed_by) reasons.push('unknown_publication_requires_observed_by');
+    if(documentDecisions.get(`${batch.manifest.batch_id}/${doc.document_id}`)?.decision!=='accepted_for_model'||review.reviewer===batch.manifest.agent_id) reasons.push('unknown_publication_document_review_required');
+    if(!documentObservations.length) reasons.push('unknown_publication_observation_required');
+  } else {
+    if(doc.publication_date_basis!==undefined&&doc.publication_date_basis!=='known_publication') reasons.push('publication_date_basis_mismatch');
+    if(doc.published_at>cutoff) reasons.push('document_after_knowledge_cutoff');
+    if(doc.observed_by&&doc.observed_by<doc.published_at) reasons.push('observation_bound_before_publication');
+  }
+  if(doc.observed_by) {
+    if(doc.observed_by>cutoff) reasons.push('document_observed_after_knowledge_cutoff');
+    if(documentObservations.some(o=>doc.observed_by>o.retrieved_at.slice(0,10))) reasons.push('retrieval_before_observed_by');
+  }
+  return reasons;
+}
+// A news observation is not an exhaustively reconciled filing. This explicit,
+// independently reviewed route never changes the strict amendment-chain gate.
+function sourceSnapshotReasons(doc,source,claim,batch,review,documentDecisions,documentObservations) {
+  const reasons=[],fail=(condition,reason)=>{if(!condition)reasons.push(reason);};
+  const regulated=source.source_kind==='regulatory_filing'||source.identifier_namespaces.some(n=>['cik','sec_series'].includes(n))||/(^|[^a-z])(sec|edgar|regulatory|statutory)([^a-z]|$)/i.test(source.source_family)||[doc.url,source.publication_host,...source.allowed_url_prefixes].some(value=>{try{return /(^|\.)sec\.gov$/i.test(new URL(value.includes('://')?value:`https://${value}`).hostname);}catch{return false;}});
+  fail(source.source_kind==='public_news'&&!regulated,'source_snapshot_public_news_only');
+  fail(doc.correction_scope==='nonexhaustive','source_snapshot_nonexhaustive_scope_required');
+  fail(doc.amendment_kind==='original'&&doc.supersedes_document_ids.length===0,'source_snapshot_original_document_only');
+  fail(claim.temporal_kind==='snapshot'&&claim.correction_kind==='none'&&claim.supersedes_claim_revision_ids.length===0,'source_snapshot_not_correction_or_continuing_holding');
+  fail(claim.qualifiers.includes(SOURCE_SNAPSHOT_QUALIFIER),'source_snapshot_explicit_qualifier_required');
+  fail(documentDecisions.get(`${batch.manifest.batch_id}/${doc.document_id}`)?.decision==='accepted_for_model'&&review.reviewer!==batch.manifest.agent_id,'source_snapshot_independent_document_review_required');
+  fail(source.admission.reviewer!==batch.manifest.agent_id,'source_snapshot_independent_source_review_required');
+  fail(documentObservations.length>0,'source_snapshot_observation_required');
+  fail(doc.amendment_checked_through<=batch.manifest.knowledge_cutoff,'source_snapshot_check_after_cutoff');
+  return reasons;
+}
 export function buildRelease({batches,registry,sources,review,base=null,fixtureMode=false}) {
   requireValid(!fixtureMode||review.publication.status==='held','Synthetic fixture release must remain held');
   const identity=validateRegistry(registry,{fixtureMode});
@@ -169,13 +207,38 @@ export function buildRelease({batches,registry,sources,review,base=null,fixtureM
     fail(perimeter&&perimeter.reporting_entity_id===claim.subject_id,'reporting_perimeter_mismatch');
     fail(perimeter&&(!perimeter.valid_from||claim.report_date>=perimeter.valid_from)&&(!perimeter.valid_to||claim.report_date<=perimeter.valid_to),'reporting_perimeter_outside_validity');
     fail(identity.entities.get(claim.subject_id)?.entity_type!=='brand','brand_not_legal_reporting_entity');
+    fail(identity.entities.get(claim.subject_id)?.entity_type!=='real_asset','real_asset_not_reporting_entity');
     fail(identity.entities.get(claim.subject_id)?.review.status==='accepted'&&perimeter?.review.status==='accepted','identity_or_perimeter_review_required');
     const sec=identity.securities.get(claim.object_id);
     fail(sec ? sec.review.status==='accepted'&&identity.entities.get(sec.issuer_id)?.review.status==='accepted' : identity.entities.get(claim.object_id)?.review.status==='accepted','object_identity_review_required');
+    if(sec)fail(!['real_asset','brand'].includes(identity.entities.get(sec.issuer_id)?.entity_type),'non_entity_cannot_issue_equity');
+    if(!sec&&['real_asset','brand'].includes(identity.entities.get(claim.object_id)?.entity_type))fail(claim.predicate==='reported_portfolio_affiliation','non_equity_target_requires_affiliation');
+    if(sec?.instrument_kind==='equity_interest_unspecified') {
+      fail(claim.predicate==='direct_equity_ownership','unspecified_equity_requires_direct_role');
+      fail(claim.metrics.length===1&&claim.metrics[0].metric_type==='equity_percentage','unspecified_equity_percentage_only');
+      fail(claim.qualifiers.length>0,'unspecified_equity_qualifier_required');
+    }
     if(['record_ownership','beneficial_ownership','direct_equity_ownership','fund_holding','managed_holding','voting_authority','custody'].includes(claim.predicate)) fail(!!sec,'security_identity_required');
     if(claim.predicate==='managed_holding') fail(['client_aggregate','reported_discretion'].includes(perimeter?.basis),'managed_role_mismatch');
     if(claim.predicate==='fund_holding') fail(perimeter?.basis==='fund'&&identity.entities.get(claim.subject_id)?.entity_type==='fund','fund_role_mismatch');
     if(claim.predicate==='direct_equity_ownership') fail(perimeter?.basis==='own_account','ownership_requires_own_account');
+    if(claim.predicate==='reported_group_interest') {
+      fail(perimeter?.basis==='consolidated_group','group_interest_requires_consolidated_group');
+      fail(['legal_entity','government','reported_group'].includes(identity.entities.get(claim.subject_id)?.entity_type),'group_interest_reporter_required');
+      fail(!sec&&['legal_entity','reported_group'].includes(identity.entities.get(claim.object_id)?.entity_type),'group_interest_entity_target_required');
+      fail(claim.temporal_kind==='snapshot','group_interest_requires_snapshot');
+      fail(claim.qualifiers.length>0,'group_interest_basis_qualifier_required');
+      fail(claim.metrics.length===1&&claim.metrics[0].metric_type==='group_interest_percentage','group_interest_metric_required');
+    }
+    if(claim.predicate==='reported_portfolio_affiliation') {
+      fail(m.scope.asset_class==='equity_and_reported_affiliations','portfolio_affiliation_requires_mixed_scope');
+      fail(perimeter?.basis==='consolidated_group','portfolio_affiliation_requires_consolidated_group');
+      fail(['legal_entity','government','reported_group'].includes(identity.entities.get(claim.subject_id)?.entity_type),'portfolio_affiliation_reporter_required');
+      fail(!sec&&['real_asset','brand'].includes(identity.entities.get(claim.object_id)?.entity_type),'portfolio_affiliation_asset_or_brand_required');
+      fail(claim.metrics.length===0,'portfolio_affiliation_must_not_have_metrics');
+      fail(claim.temporal_kind==='snapshot','portfolio_affiliation_requires_snapshot');
+      fail(claim.qualifiers.length>0,'portfolio_affiliation_source_qualifier_required');
+    }
     if(claim.predicate==='beneficial_ownership') fail(claim.qualifiers.length>0,'beneficial_framework_required');
     if(claim.predicate==='control_assertion') fail(claim.qualifiers.length>0,'control_mechanism_required');
     fail(claim.evidence_ids.length>0&&claim.evidence_ids.every(x=>evidence.has(x)),'evidence_missing');
@@ -185,7 +248,19 @@ export function buildRelease({batches,registry,sources,review,base=null,fixtureM
     const claimEvidence=supportingIds.map(x=>evidence.get(x)).filter(Boolean), claimDocs=claimEvidence.map(x=>documents.get(x.document_id)).filter(Boolean), claimSources=claimDocs.map(d=>sourceIndex.get(d.source_id));
     fail(claim.primary_evidence_ids.length>0&&claim.primary_evidence_ids.every(id=>claim.evidence_ids.includes(id)),'primary_evidence_required');
     for(const e of claimEvidence.filter(e=>claim.primary_evidence_ids.includes(e.evidence_id)))fail(e.supported_predicates.includes(claim.predicate),'evidence_predicate_mismatch');
-    for(const doc of claimDocs) {fail(doc.published_at<=m.knowledge_cutoff,'document_after_knowledge_cutoff'); fail(doc.amendment_status==='complete'&&doc.amendment_checked_through>=m.knowledge_cutoff,'amendment_chain_incomplete_as_of_cutoff');fail(sourceIndex.get(doc.source_id).admitted_document_ids.includes(doc.document_id),'document_not_admitted');}
+    for(const doc of claimDocs) {
+      const docObservations=claim.observation_ids.map(id=>observations.get(id)).filter(o=>o?.document_id===doc.document_id);
+      reasons.push(...documentDateReasons(doc,batch,review,documentDecisions,docObservations));
+      if(doc.published_at===null) warnings.push(`unknown_publication_date:${doc.document_id}`);
+      if(doc.amendment_status==='source_snapshot_only') {
+        reasons.push(...sourceSnapshotReasons(doc,sourceIndex.get(doc.source_id),claim,batch,review,documentDecisions,docObservations));
+        warnings.push(`correction_completeness_not_established:${doc.document_id}`);
+      } else {
+        fail(doc.amendment_status==='complete'&&doc.amendment_checked_through>=m.knowledge_cutoff,'amendment_chain_incomplete_as_of_cutoff');
+        fail(doc.correction_scope===undefined,'correction_scope_status_mismatch');
+      }
+      fail(sourceIndex.get(doc.source_id).admitted_document_ids.includes(doc.document_id),'document_not_admitted');
+    }
     for(const source of claimSources) {
       fail(m.scope.source_ids.includes(source.source_id)&&source.admission.status==='scope_admitted','source_not_admitted');
       fail(source.allowed_predicates.includes(claim.predicate),'source_predicate_mismatch');
@@ -196,7 +271,8 @@ export function buildRelease({batches,registry,sources,review,base=null,fixtureM
       const o=observations.get(oid); if(!o)continue;
       fail(o.evidence_ids.some(x=>supportingIds.includes(x)),'observation_evidence_mismatch');
       fail(o.retrieved_at.slice(0,10)<=m.knowledge_cutoff&&o.recorded_at.slice(0,10)<=m.knowledge_cutoff,'observation_after_knowledge_cutoff');
-      fail(documents.get(o.document_id)?.published_at<=o.retrieved_at.slice(0,10),'retrieval_before_publication');
+      const publication=documents.get(o.document_id)?.published_at;
+      if(publication!==null) fail(publication<=o.retrieved_at.slice(0,10),'retrieval_before_publication');
     }
     fail(supportingIds.every(eid=>claim.observation_ids.some(oid=>observations.get(oid)?.evidence_ids.includes(eid))),'supporting_evidence_observation_missing');
     fail(!claim.effective_from||!claim.effective_to||claim.effective_from<=claim.effective_to,'invalid_effective_interval');
@@ -218,12 +294,20 @@ export function buildRelease({batches,registry,sources,review,base=null,fixtureM
         const d=denominators.get(metric.denominator_id);
         fail(!!d,'percentage_denominator_required');
         if(d) {
-          const kinds={equity_percentage:['outstanding_equity'],beneficial_percentage:['beneficial_adjusted','outstanding_equity'],voting_percentage:['eligible_votes'],portfolio_weight:['selected_disclosed_value','net_assets','whole_portfolio_assets']};
+          const kinds={equity_percentage:['outstanding_equity'],beneficial_percentage:['beneficial_adjusted','outstanding_equity'],voting_percentage:['eligible_votes'],portfolio_weight:['selected_disclosed_value','net_assets','whole_portfolio_assets'],group_interest_percentage:['reported_group_interest']};
           fail(kinds[metric.metric_type].includes(d.kind),'denominator_meaning_mismatch');
           if(['outstanding_equity','beneficial_adjusted'].includes(d.kind))fail(d.unit==='shares'&&d.currency===null,'denominator_unit_mismatch');
+          if(sec?.instrument_kind==='equity_interest_unspecified')fail(d.value===null&&['unknown','unavailable'].includes(d.availability),'unspecified_equity_denominator_must_remain_unresolved');
           if(d.kind==='eligible_votes')fail(['votes','voting_units'].includes(d.unit)&&d.currency===null,'denominator_unit_mismatch');
           if(['selected_disclosed_value','net_assets','whole_portfolio_assets'].includes(d.kind))fail(d.currency!==null&&d.unit===d.currency,'denominator_unit_mismatch');
           if(metric.metric_type==='portfolio_weight')fail(d.reporting_perimeter_id===claim.reporting_perimeter_id&&d.reporting_perimeter_version===claim.reporting_perimeter_version,'denominator_perimeter_mismatch');
+          if(metric.metric_type==='group_interest_percentage') {
+            fail(d.reporting_perimeter_id===claim.reporting_perimeter_id&&d.reporting_perimeter_version===claim.reporting_perimeter_version,'denominator_perimeter_mismatch');
+            fail(d.unit==='percent'&&d.currency===null,'denominator_unit_mismatch');
+            fail(d.security_ids.length===0,'group_interest_denominator_has_security');
+            fail(d.value===null&&['unknown','unavailable'].includes(d.availability),'group_interest_denominator_must_remain_unresolved');
+            fail(metric.currency===null&&metric.valuation_basis==='not_applicable'&&metric.valuation_date===null,'group_interest_not_valuation');
+          }
           fail(!sec||d.security_ids.includes(sec.security_id)||metric.metric_type==='portfolio_weight','denominator_security_mismatch');
           if(d.value===null||d.as_of_date!==claim.report_date) warnings.push(`non_comparable_percentage:${metric.metric_id}`);
           else fail(rational(d.value)[0]>0n,'non_positive_denominator');
@@ -234,6 +318,7 @@ export function buildRelease({batches,registry,sources,review,base=null,fixtureM
       if(metric.metric_type==='beneficial_percentage')fail(claim.predicate==='beneficial_ownership','beneficial_metric_requires_beneficial_claim');
       if(metric.metric_type==='equity_percentage')fail(['direct_equity_ownership','record_ownership','fund_holding'].includes(claim.predicate),'equity_metric_requires_equity_role');
       if(metric.metric_type==='voting_percentage') fail(claim.predicate==='voting_authority','voting_metric_requires_voting_claim');
+      if(metric.metric_type==='group_interest_percentage') fail(claim.predicate==='reported_group_interest','group_interest_metric_requires_group_role');
     }
     fail(claim.correction_kind!=='none'||claim.supersedes_claim_revision_ids.length===0,'unexplained_supersession');
     if(claim.supersedes_claim_revision_ids.length) fail(claim.correction_reason!==null,'correction_reason_required');
@@ -273,10 +358,15 @@ export function buildRelease({batches,registry,sources,review,base=null,fixtureM
   // Apply only to explicitly linked prior documents, never an entire portfolio by date.
   for(const batch of incoming)for(const doc of batch.documents.filter(d=>['restatement','withdrawal'].includes(d.amendment_kind))) {
     const source=sourceIndex.get(doc.source_id);
-    const admitted=documentDecisions.get(`${batch.manifest.batch_id}/${doc.document_id}`)?.decision==='accepted_for_model'&&batch.manifest.scope.source_ids.includes(doc.source_id)&&doc.published_at<=batch.manifest.knowledge_cutoff&&source.admission.status==='scope_admitted'&&source.admitted_document_ids.includes(doc.document_id)&&doc.amendment_status==='complete'&&doc.amendment_checked_through>=batch.manifest.knowledge_cutoff&&['automated_collection','internal_extraction','identifier_database_use','derived_publication','attribution'].every(axis=>allowed(source.rights[axis]));
+    const docObservations=batch.observations.filter(o=>o.document_id===doc.document_id);
+    const dateAdmitted=documentDateReasons(doc,batch,review,documentDecisions,docObservations).length===0&&(doc.published_at!==null||docObservations.every(o=>o.retrieved_at.slice(0,10)<=batch.manifest.knowledge_cutoff&&o.recorded_at.slice(0,10)<=batch.manifest.knowledge_cutoff));
+    const admitted=documentDecisions.get(`${batch.manifest.batch_id}/${doc.document_id}`)?.decision==='accepted_for_model'&&batch.manifest.scope.source_ids.includes(doc.source_id)&&dateAdmitted&&source.admission.status==='scope_admitted'&&source.admitted_document_ids.includes(doc.document_id)&&doc.amendment_status==='complete'&&doc.correction_scope===undefined&&doc.amendment_checked_through>=batch.manifest.knowledge_cutoff&&['automated_collection','internal_extraction','identifier_database_use','derived_publication','attribution'].every(axis=>allowed(source.rights[axis]));
     requireValid(doc.supersedes_document_ids.length>0,'Restatement/withdrawal needs explicit prior document scope');
     if(!admitted||(review.publication.intended_use==='commercial'&&!allowed(source.rights.commercial_use)))continue;
     appliedAmendments.add(doc.document_id);
+    // Unknown-publication amendments need their observed-by evidence retained even
+    // when the replacement document contains no admitted position rows.
+    if(doc.published_at===null) docObservations.forEach(o=>admittedObservations.add(o.observation_id));
     for(const id of [...active]) {
       const old=revisions.get(id);
       if(!old.evidence_ids.some(eid=>doc.supersedes_document_ids.includes(evidence.get(eid).document_id)))continue;
@@ -305,8 +395,10 @@ export function buildRelease({batches,registry,sources,review,base=null,fixtureM
   // Quarantined candidate evidence remains in isolated staging, never canonical output.
   const retained=[...revisions.values()],usedDenominators=new Set(retained.flatMap(c=>c.metrics.map(m=>m.denominator_id).filter(Boolean)));
   const usedEvidence=new Set([...retained.flatMap(c=>c.evidence_ids),...merged.denominators.filter(d=>usedDenominators.has(d.denominator_id)).flatMap(d=>d.evidence_ids),...merged.coverage.filter(c=>admittedCoverage.has(c.coverage_id)&&retained.some(r=>r.reporting_perimeter_id===c.reporting_perimeter_id&&r.reporting_perimeter_version===c.reporting_perimeter_version&&r.report_date===c.report_date)).flatMap(c=>c.count_evidence_ids)]);
+  const observedAmendments=new Set([...appliedAmendments,...prior.documents.filter(d=>d.published_at===null&&['restatement','withdrawal'].includes(d.amendment_kind)).map(d=>d.document_id)]);
+  for(const observation of merged.observations)if(observedAmendments.has(observation.document_id)&&admittedObservations.has(observation.observation_id))observation.evidence_ids.forEach(id=>usedEvidence.add(id));
   const usedDocuments=new Set([...usedEvidence].map(id=>evidence.get(id).document_id));
-  for(const id of appliedAmendments)usedDocuments.add(id);
+  for(const id of observedAmendments)usedDocuments.add(id);
   const visitDocument=id=>{for(const parent of documents.get(id)?.supersedes_document_ids??[])if(!usedDocuments.has(parent)){usedDocuments.add(parent);visitDocument(parent);}};
   [...usedDocuments].forEach(visitDocument);
   const canonical={...merged,documents:merged.documents.filter(d=>usedDocuments.has(d.document_id)),evidence:merged.evidence.filter(e=>usedEvidence.has(e.evidence_id)),observations:merged.observations.filter(o=>admittedObservations.has(o.observation_id)&&o.evidence_ids.some(id=>usedEvidence.has(id))),denominators:merged.denominators.filter(d=>usedDenominators.has(d.denominator_id)),coverage:merged.coverage.filter(c=>admittedCoverage.has(c.coverage_id)&&retained.some(r=>r.reporting_perimeter_id===c.reporting_perimeter_id&&r.reporting_perimeter_version===c.reporting_perimeter_version&&r.report_date===c.report_date)),claim_families:sorted([...families.values()],'claim_id'),claim_revisions:sorted(retained,'claim_revision_id'),active_claim_revision_ids:[...active].sort(),batch_receipts:sorted([...seenBatches.values()],'batch_id')};
@@ -322,9 +414,12 @@ export function projectShadow({canonical,registry,sources,validation,manifest}) 
   const docs=new Map(canonical.documents.map(d=>[d.document_id,d])), ev=new Map(canonical.evidence.map(e=>[e.evidence_id,e])), securities=new Map(registry.securities.map(s=>[s.security_id,s])), denominators=new Map(canonical.denominators.map(d=>[d.denominator_id,d]));
   const edges=canonical.claim_revisions.filter(c=>active.has(c.claim_revision_id)).map(c=>{
     used.add(c.subject_id);const security=securities.get(c.object_id);used.add(security?.issuer_id??c.object_id);
-    const evidence=c.evidence_ids.map(id=>{const item=ev.get(id),doc=docs.get(item.document_id);sourceIds.add(doc.source_id);return {evidence_id:id,document_id:doc.document_id,url:doc.url,locator:item.locator,publisher:doc.publisher,published_at:doc.published_at,amendment_checked_through:doc.amendment_checked_through};});
+    const evidence=c.evidence_ids.map(id=>{const item=ev.get(id),doc=docs.get(item.document_id);sourceIds.add(doc.source_id);return {evidence_id:id,document_id:doc.document_id,url:doc.url,locator:item.locator,publisher:doc.publisher,published_at:doc.published_at,...(doc.observed_by?{observed_by:doc.observed_by}:{}),...(doc.publication_date_basis?{publication_date_basis:doc.publication_date_basis}:{}),...(doc.amendment_status==='source_snapshot_only'?{amendment_status:doc.amendment_status,correction_scope:doc.correction_scope}:{}),amendment_checked_through:doc.amendment_checked_through};});
     const metricWarnings=c.metrics.filter(m=>m.metric_type.endsWith('_percentage')||m.metric_type==='portfolio_weight').filter(m=>{const d=denominators.get(m.denominator_id);return !d||d.value===null||d.as_of_date!==c.report_date;}).map(m=>`non_comparable_percentage:${m.metric_id}`);
-    const warnings=unique([...validation.results.filter(r=>r.claim_revision_id===c.claim_revision_id).flatMap(r=>r.warnings),...metricWarnings]);
+    const supportIds=unique([...c.evidence_ids,...c.metrics.flatMap(m=>denominators.get(m.denominator_id)?.evidence_ids??[]),...canonical.coverage.filter(x=>x.reporting_perimeter_id===c.reporting_perimeter_id&&x.reporting_perimeter_version===c.reporting_perimeter_version&&x.report_date===c.report_date).flatMap(x=>x.count_evidence_ids)]);
+    const dateWarnings=supportIds.map(id=>docs.get(ev.get(id)?.document_id)).filter(d=>d?.published_at===null).map(d=>`unknown_publication_date:${d.document_id}`);
+    const correctionWarnings=supportIds.map(id=>docs.get(ev.get(id)?.document_id)).filter(d=>d?.amendment_status==='source_snapshot_only').map(d=>`correction_completeness_not_established:${d.document_id}`);
+    const warnings=unique([...validation.results.filter(r=>r.claim_revision_id===c.claim_revision_id).flatMap(r=>r.warnings),...metricWarnings,...dateWarnings,...correctionWarnings]);
     const stake=c.predicate==='direct_equity_ownership'&&c.metrics.find(m=>m.metric_type==='equity_percentage'&&m.availability==='known'&&denominators.get(m.denominator_id)?.as_of_date===c.report_date&&denominators.get(m.denominator_id)?.value!==null);
     return {id:c.claim_revision_id,claim_revision_ids:[c.claim_revision_id],claim_ids:[c.claim_id],source:c.subject_id,target:security?.issuer_id??c.object_id,security_id:security?.security_id??null,relationship:c.predicate,as_of:c.report_date,temporal_kind:c.temporal_kind,effective_from:c.effective_from,effective_to:c.effective_to,reporting_perimeter_id:c.reporting_perimeter_id,reporting_perimeter_version:c.reporting_perimeter_version,position_scope_id:c.position_scope_id,metrics:c.metrics.map(m=>({...m,denominator:m.denominator_id?denominators.get(m.denominator_id):null})),stakePercent:stake?stake.value:null,qualifiers:c.qualifiers,overlap_group_ids:c.overlap_group_ids,evidence,warnings,coverage:canonical.coverage.filter(x=>x.reporting_perimeter_id===c.reporting_perimeter_id&&x.reporting_perimeter_version===c.reporting_perimeter_version&&x.report_date===c.report_date)};
   });

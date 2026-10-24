@@ -468,6 +468,14 @@
               "type": "string",
               "minLength": 1
             }
+          },
+          "source_kind": {
+            "enum": [
+              "public_news",
+              "regulatory_filing",
+              "portfolio_page",
+              "annual_report"
+            ]
           }
         },
         "required": [

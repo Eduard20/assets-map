@@ -1,0 +1,308 @@
+{
+  "acceptance_scope": "Exact independently reviewed source-qualified dated disclosure records. Conditional non-monetized research only; not a blanket licence.",
+  "acceptance_sha256": "399e0df3b895f0a6815c05c1b227d8fbf82024901ba8d709cf9fac4a1490606d",
+  "accepted_staging_sha256": {
+    "batch": "a13563d60eaa1405db1ff66f29f227e19195978013fee2f2e03b1bf8703725b4",
+    "registry": "2973e54f7e414c39c9b44686f78cb98380fb8ebac16f383a7319892187e8c51b",
+    "review": "ad96c7c342dda638ae06ac0d044b61f07f99359dcce5f9ff030d1f959f067068",
+    "sources": "9a6b45c9855b52865dde3400e0dda6d493baadc0930b91a145043cba4e5d5b39"
+  },
+  "decisions": [
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_chimera_investment_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_alpheya_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_citadel_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_2pointzero_pre_merger_platform_sagasse_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_international_resources_holding_mopani_copper_mines_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_international_resources_holding_alphamin_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ehc_international_al_fanar_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ehc_international_fooj_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_multiply_group_pre_merger_kalyon_enerji_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_multiply_group_pre_merger_multiply_media_group_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_multiply_group_pre_merger_omorfia_group_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_multiply_media_group_backlite_media_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_multiply_media_group_media_247_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_multiply_media_group_viola_communications_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_al_ajban_poultry_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_abu_dhabi_vegetable_oil_company_advoc_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_al_hashemeya_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_asmak_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_marmum_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_mirak_group_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_zee_stores_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_royal_horizon_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "candidate_id": "cand_uae_ghitha_holding_apex_investments_20251015",
+      "decision": "accepted_for_model",
+      "rationale": "Independent official article open confirms named investor/holding, dated event or report and stated percentage. Immediate registered holder is not established: group scope only. These are existing portfolio descriptions in an announcement, NOT completion of proposed merger. Preserve pre-merger entity and historical date. Canonical subject/object/date/metric/denominator/source/perimeter individually matched."
+    }
+  ],
+  "document_decisions": [
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_chimera_investment_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_alpheya_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_citadel_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_2pointzero_pre_merger_platform_sagasse_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_international_resources_holding_mopani_copper_mines_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_international_resources_holding_alphamin_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ehc_international_al_fanar_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ehc_international_fooj_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_multiply_group_pre_merger_kalyon_enerji_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_multiply_group_pre_merger_multiply_media_group_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_multiply_group_pre_merger_omorfia_group_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_multiply_media_group_backlite_media_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_multiply_media_group_media_247_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_multiply_media_group_viola_communications_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_al_ajban_poultry_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_abu_dhabi_vegetable_oil_company_advoc_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_al_hashemeya_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_asmak_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_marmum_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_mirak_group_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_zee_stores_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_royal_horizon_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    },
+    {
+      "batch_id": "uae_two_point_zero_2_20261023_v1",
+      "decision": "accepted_for_model",
+      "document_id": "doc_uae_ghitha_holding_apex_investments_20251015",
+      "rationale": "Exact individually opened WAM public-news article, date and locator verified. Accept only source_snapshot_only with nonexhaustive correction scope; no assertion of complete correction chain or current/latest ownership. Exact disclaimer present on every snapshot claim."
+    }
+  ],
+  "publication": {
+    "authorization_url": null,
+    "authorized_by": null,
+    "intended_use": "noncommercial_research",
+    "status": "held"
+  },
+  "registry_version": "uae_two_point_zero_2_20261023_v1",
+  "review_id": "uae_two_point_zero_2_20261023_v1_independent_accepted",
+  "reviewed_at": "2026-10-23T13:58:30Z",
+  "reviewed_input_sha256": {
+    "batch": "a13563d60eaa1405db1ff66f29f227e19195978013fee2f2e03b1bf8703725b4",
+    "registry": "2973e54f7e414c39c9b44686f78cb98380fb8ebac16f383a7319892187e8c51b",
+    "sources": "9a6b45c9855b52865dde3400e0dda6d493baadc0930b91a145043cba4e5d5b39"
+  },
+  "reviewer": "complete_uae_coverage_inventory_independent",
+  "reviewer_role": "agent_review",
+  "schema_version": "1.0.0",
+  "source_registry_version": "uae_two_point_zero_2_20261023_v1"
+}
