@@ -1,8 +1,8 @@
 # Central-bank gold reserves: model, evidence coverage and future pilot
 
-Status: **Proposal — not approved**
+Status: **Proposal accepted 2026-10-24; bounded pilot implemented**
 Prepared: 2026-10-24. Ticket: [#16](https://github.com/Eduard20/assets-map/issues/16), under [tracker #1](https://github.com/Eduard20/assets-map/issues/1) (P4; depends on #2, #3, #4, #12).
-Scope: planning only. This document changes no repository file, schema, dataset, validator or UI. It collects no gold records, and every number in sections 6 and 8 is synthetic. Sources were read on 2026-10-24 only to check what they define, how often they publish and what reuse terms they state.
+Scope: sections 1–12 are the original planning text; every number in sections 6 and 8 is synthetic. Section 13 records the bounded pilot implemented after acceptance. Sources were read on 2026-10-24 only to check what they define, how often they publish and what reuse terms they state.
 
 Throughout, **Recommendation** means a proposal waiting for the maintainer. **Accepted** refers only to what the [18 October decision](https://github.com/Eduard20/assets-map/issues/1#issuecomment-6248531585) already approved: the files-first, evidence-first and temporal-claim approach for the bounded shares test. Nothing here extends that approval to gold.
 
@@ -314,3 +314,40 @@ Pilot exit tests:
 | D8 | Separate authorisations for implementation, collection and publication | Required; none implied here |
 
 Completion condition: the maintainer records acceptance or requested revisions on #16. This proposal starts no implementation, collection or deployment, and the issue stays open.
+
+## 13. Implemented pilot
+
+Implemented 2026-10-24 as an isolated, closed-by-default modal layer, "Central-bank gold reserves · Pilot" (launcher `#gold-launcher`, dialog `#gold-dialog`). Files: `src/gold-data.js` (records, `GOLD-MASS-v1` decimal-string arithmetic and the validator, which runs at import), `src/gold-view.js`, `src/gold.css`, `tests/gold.test.mjs` and `tests/browser-gold.mjs`. The layer never enters graph-model, portfolio totals, security equivalence or issuer identity resolution.
+
+### What was collected (25 claims, reference date 2025-12-31, retrieved 2026-10-24)
+
+| Authority | Claims | Primary source |
+|---|---|---|
+| U.S. Treasury (Bureau of the Fiscal Service) | 8 `custody_disclosure` lines (fine troy ounces by facility, form and location) and 8 `reserve_valuation` lines (USD book value, `statutory_book`, $42.222/oz as stated on the dataset page) | [Fiscal Data API, record_date 2025-12-31](https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/gold_reserve?filter=record_date:eq:2025-12-31); [dataset page](https://fiscaldata.treasury.gov/datasets/status-report-government-gold-reserve/) |
+| Deutsche Bundesbank | 2 `reserve_quantity` (holdings document: 3,350,286.5312 kg fine, also stated 107,714,173.571 ozf; annual accounts: 3,350,285 kg), 1 `reserve_valuation` (EUR 395,215 million, `market`, €3,669.106/ozf), 3 `custody_disclosure` (Frankfurt, London, New York, fine kg, dated 31 Dec 2025), 1 `reserve_change_event` (−1,260 kg, coin minting) | [Gold holdings as per 31 December 2025](https://www.bundesbank.de/resource/blob/618402/0f75835691887a4bd9247a22aa7d46c3/472B63F073F071307366337C94F8C870/goldbarrenliste-data.pdf); [Annual accounts 2025](https://publikationen.bundesbank.de/content/988046) |
+| Swiss National Bank | 1 `reserve_quantity` (1,040.0 t, bars plus coins, fineness basis not stated), 1 `reserve_valuation` (CHF 115,351.2 million, `market`, CHF 110,918.97/kg) | [Annual Report 2025](https://www.snb.ch/public/asset/en/www-snb-ch/publications/communication/annual-report/annrep_2025_komplett/publications0_en/annrep_2025_komplett.en.pdf), Item 01 and balance sheet |
+
+Reuse terms checked on 2026-10-24 are recorded for each source. Fiscal Data is a U.S. federal government work. The Bundesbank's conditions of use (§ 4.1) allow unaltered reproduction with "Source: Deutsche Bundesbank". The SNB copyright notice allows non-commercial use.
+
+### Model and rules as implemented
+
+- Quantities keep the source unit and decimal string. Conversions use `GOLD-MASS-v1` (1 troy oz = 31.1034768 g; 1 t = 10^6 g) in BigInt decimal arithmetic. Each stated figure also shows its rounding interval, converted at both bounds.
+- The U.S. source publishes no total. The view shows a **calculated** line sum (`GOLD-LINESUM-v1`: lines from the same source, date, unit and valuation basis only), which gives 261,498,926.241 fine troy oz (8,133.526 t). This derivation was added for the pilot. It never sums across authorities.
+- Quantities appear side by side in fine troy ounces and tonnes, each labelled source-stated or converted. There is no world total, and values in USD book, EUR market and CHF market are never added together.
+- Encumbrance and allocation status are `unknown` (`not_covered_by_source`) for all three authorities. The validator rejects `none`, zero and unencumbered values.
+- The Bundesbank holdings document and its annual accounts differ by 1.5312 kg. Both are kept, under a visible `unexplained_difference` reconciliation.
+- Validator acceptance criteria: exact field allowlists per claim type (so equity, ownership, portfolio-weight, issuer, CUSIP and world-total fields are rejected), a host allowlist (Fiscal Data, Bundesbank, SNB only; WGC and `synthetic://` URIs are rejected), valid dates with as-of on or before retrieval, a single reference date, caps of 3 authorities and 30 claims, currency matching for price references, distinct quantity and valuation claims for each authority, and custody claims only with a disclosure date and only for an authority whose custody status is `disclosed`.
+
+### Excluded and why
+
+- **SNB storage shares.** Annual Report 2025 (PDF p. 95) says "approximately 70% is stored in Switzerland, some 20% at the Bank of England, and roughly 10% at the Bank of Canada", but gives no disclosure date. Under the §9 stop condition (undated custody, no reviewer decision), SNB custody stays `unknown` and the reason is shown in the view.
+- **Per-location € values and tonnes in the Bundesbank annual accounts (Table 1).** These duplicate the dated per-custodian fine weights; omitted to stay within the claim cap.
+- **IRFCL cross-checks, DNB and Banque de France alternates.** Not needed, because all three primary authorities had a verifiable 2025-12-31 source. IRFCL capture is deferred.
+- **Secondary sources** (World Gold Council, press coverage, aggregators). Used at most for discovery and never as evidence.
+- **`GOLD-VALSPLIT-v1`, `gold_share_of_reserves`, FX translation.** Deferred as §9 specifies.
+
+### Unverified points
+
+- The Fiscal Data dictionary describes `record_date` as "The date that data was published." The pilot treats the 2025-12-31 record as the month-end reference, as the dataset's monthly series implies.
+- The Fiscal Data page states $42.222 per ounce. Line values divided by quantities give about 42.2222 (the statutory $42 2/9). Only the stated figure is stored.
+- Converting the Bundesbank kilogram total gives 107,714,213.197 ozf, against the 107,714,173.571 ozf the source states. The source says different methods and rounding rules are used. Both figures are displayed.
