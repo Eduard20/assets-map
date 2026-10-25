@@ -1,0 +1,17 @@
+#nbim-dialog{box-sizing:border-box;width:min(960px,calc(100vw - 24px));max-width:none;max-height:90dvh;padding:24px;overflow:auto;background:#0b1c27;color:#deecf4;border:1px solid #4f7f6a;border-radius:20px;overscroll-behavior:contain}
+#nbim-dialog::backdrop{background:#020b14dc}
+#nbim-dialog *{box-sizing:border-box;overflow-wrap:anywhere}
+#nbim-dialog h2{font-size:26px;margin:20px 0 12px}#nbim-dialog h3{font-size:20px;margin:24px 0 8px}#nbim-dialog h4{font-size:17px;line-height:1.5;margin:0}
+#nbim-dialog p,#nbim-dialog li{line-height:1.6;color:#bfd2dd}#nbim-dialog label{display:grid;gap:8px}
+#nbim-dialog button,#nbim-dialog select,#nbim-dialog summary{min-height:44px;padding:12px;cursor:pointer}
+#nbim-dialog button,#nbim-dialog select{background:#163444;color:#effaff;border:1px solid #537488;border-radius:8px;max-width:100%}
+#nbim-dialog a{color:#8ee6ff;display:inline-block;padding:12px 0;min-height:44px}
+#nbim-dialog :focus-visible,#nbim-launcher:focus-visible{outline:3px solid #ffd76a;outline-offset:3px}
+.nbim-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.nbim-top span{font-size:11px;letter-spacing:1px}
+.nbim-notice{padding:16px;border-left:3px solid #7fd1a8;background:#13302a}.nbim-rule{font-size:14px}
+@media(max-width:600px){#nbim-dialog{padding:16px;width:calc(100vw - 16px);max-height:94dvh}.nbim-top{align-items:flex-start}.nbim-top button{flex-shrink:0}}
+.nbim-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0}
+#nbim-dialog input{min-height:44px;padding:12px;background:#163444;color:#effaff;border:1px solid #537488;border-radius:8px;max-width:100%;width:100%}
+.nbim-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:12px 0}
+.nbim-holding{min-width:0;padding:14px;border:1px solid #385468;border-radius:12px;background:#0d2230}.nbim-holding h3{font-size:17px!important;margin:0 0 6px!important}.nbim-holding p{margin:4px 0;font-size:14px}
+@media(max-width:600px){.nbim-list,.nbim-controls{grid-template-columns:1fr}}

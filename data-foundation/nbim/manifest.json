@@ -1,0 +1,17 @@
+{
+  "datasetId": "nbim-gpfg-equities-2026-06-30",
+  "asOf": "2026-06-30",
+  "retrievedAt": "2026-10-25",
+  "source": {
+    "publisher": "Norges Bank Investment Management",
+    "title": "Government Pension Fund Global: all investments, H1 2026 (30 June 2026)",
+    "pageUrl": "https://www.nbim.no/en/investments/all-investments/",
+    "dataUrl": "https://www.nbim.no/api/investments/v2/2026-06-30.json",
+    "rawSha256": "2faa6aaefdebfe46abe1cf72a4152ced830ab9112872570b5a328b6f356f7c76",
+    "rawBytes": 1586126,
+    "reuse": "Published free of charge by NBIM. Its holdings-data terms (https://www.nbim.no/en/terms-of-use-holdings-data-in-snowflake-marketplace/) allow non-chargeable redistribution with NBIM identified as the source, and forbid implying investment advice or building financial products. Those terms formally attach to the Snowflake copy of the same data; the website file states no separate licence. Used here non-commercially, with attribution, as factual navigation only."
+  },
+  "rawCounts": {"byAssetClassCode": {"0": 7077, "1": 1664, "2": 47, "3": 9}},
+  "output": "data/nbim-equities-2026-06-30.json",
+  "outputSha256": "0f161cfc00689d02a131db96d30f3615b79ae00f593a9cecec26dfbb65645e8f"
+}
