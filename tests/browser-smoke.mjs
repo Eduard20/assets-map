@@ -123,7 +123,9 @@ try {
   await page.keyboard.press('Enter');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
   await page.setViewportSize({width:1440,height:1000});
-  assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),10,'focused Apple shows only itself and its nine reported investors');
+  assert.ok(await page.evaluate(id=>{const isolatedTo=id=>{const g=window.__assetsMap.getGraph(),scope=new Set(g.focusScope);return g.focused===true&&scope.has(id)&&g.edges.every(e=>scope.has(e.source)||scope.has(e.target))&&g.nodes.every(n=>scope.has(n.id)||g.edges.some(e=>e.source===n.id||e.target===n.id));};return isolatedTo(id);},appleId),'every visible link touches the focused security');
+  assert.equal(await page.locator('#show-whole-network').isVisible(),true);
   assert.match(await page.locator('#detail-panel').textContent(),/9 REPORTED INVESTORS/);
   assert.equal(await page.locator('.investor-card').count(),9);
   assert.deepEqual(await page.evaluate(id=>{
@@ -136,7 +138,11 @@ try {
   await page.locator(`.graph-node[data-node="${appleId}"]`).focus();
   await page.locator(`.graph-node[data-node="${appleId}"] .node-card`).click();
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
-  assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds);
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),10,'2D focus also isolates Apple');
+  await page.locator('#show-whole-network').click();
+  assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds,'Show whole network restores the overview');
+  assert.equal(await page.locator('#show-whole-network').isVisible(),false);
+  await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),10,'Back returns to the isolated focus');
   await page.locator('#focus-back').click();await page.locator('[data-view="3d"]').click();
   await page.locator('#top-n').selectOption('40');
   const expandedCount=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expandedCount>initialNetworkNodes);await expectReal3D(page,expandedCount);
@@ -174,7 +180,8 @@ try {
     const managerSelector=view==='3d'?'#graph-3d button[data-node-id="blackrock-2026-06-30"]':'.graph-node[data-node="blackrock-2026-06-30"] .node-card';
     await page.locator(view==='3d'?managerSelector:'.graph-node[data-node="blackrock-2026-06-30"]').focus();
     await page.locator(managerSelector).click();
-    const expanded=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expanded>initialNetworkNodes);
+    assert.ok(await page.evaluate(()=>{const isolatedTo=id=>{const g=window.__assetsMap.getGraph(),scope=new Set(g.focusScope);return g.focused===true&&scope.has(id)&&g.edges.every(e=>scope.has(e.source)||scope.has(e.target))&&g.nodes.every(n=>scope.has(n.id)||g.edges.some(e=>e.source===n.id||e.target===n.id));};return isolatedTo('blackrock-2026-06-30');}),'BlackRock focus hides unrelated filers and securities');
+    const expanded=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);
     await page.locator(managerSelector).click();assert.ok(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length)>expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),expanded);
     await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),initialNetworkNodes);
@@ -379,7 +386,7 @@ try {
   await expectReal3D(touchPage,geodeBefore.ids.length);
   await touchPage.locator('#graph-3d button[data-node-id="vanguardglobaladvisers-2026-06-30"]').tap();
   assert.ok(await touchPage.evaluate(()=>window.__assetsMap.getGraph().edges.filter(edge=>edge.source==='vanguardglobaladvisers-2026-06-30').length)>geodeBefore.holdings,'phone tap opens more of the new manager’s actual holdings');
-  assert.equal(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(node=>node.kind==='manager').length),12,'new manager exploration retains all twelve managers');
+  assert.deepEqual(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.filter(node=>node.kind==='manager').map(node=>node.id)),['vanguardglobaladvisers-2026-06-30'],'phone focus isolates the new manager from other filers');
   await touchPage.screenshot({path:'artifacts/network-phone-vga.png',fullPage:true});
   await touchPage.locator('#focus-back').tap();
   assert.deepEqual(await touchPage.evaluate(()=>window.__assetsMap.getGraph().nodes.map(node=>node.id).sort()),geodeBefore.ids,'phone Back restores the new manager’s surrounding context');

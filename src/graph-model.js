@@ -73,4 +73,4 @@ export function layoutGraph(graph, rootId) {
   }
   return positions;
 }
-export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set(model.portfolioRoots||[model.rootId]),limits:new Map(model.network?model.portfolioRoots.map(id=>[id,20]):[]),pinnedNodes:new Set(),portfolioFilter:null,view:'2d'}; }
+export function initialState(model) { return {rootId:model.rootId, selectedId:model.rootId, selectedEdgeId:null, filter:'all',direction:'both',expanded:new Set(model.portfolioRoots||[model.rootId]),limits:new Map(model.network?model.portfolioRoots.map(id=>[id,20]):[]),pinnedNodes:new Set(),portfolioFilter:null,isolated:false,view:'2d'}; }
