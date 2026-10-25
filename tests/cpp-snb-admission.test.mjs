@@ -35,7 +35,7 @@ test('CPP/SNB expansion leaves the original ten normalized inputs and reviews by
   const b=await readFile(new URL('../'+file,import.meta.url));
   assert.equal(createHash('sha1').update(Buffer.from(`blob ${b.length}\0`)).update(b).digest('hex'),sha,file);
  }
- assert.equal(manifest.portfolios.length,12);
+ assert.equal(manifest.portfolios.length,13);
  assert.ok(!manifest.portfolios.some(p=>/^(calpers|temasek)-/.test(p.portfolioId)),'unpublished parallel candidates must not leak into this integration');
 });
 for(const [slug,want] of Object.entries(expected))test(`${slug} retains exact source scope, reported confidentiality and every connection`,async()=>{
