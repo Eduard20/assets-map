@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-const LAUNCHERS=['institutional','bond','gold','issuer','property','country','holders'].map(id=>`${id}-launcher`);
+const LAUNCHERS=['institutional','bond','gold','issuer','property','country','holders','nbim'].map(id=>`${id}-launcher`);
 export async function checkPilotLayersSection(browser,origin){
   for(const width of [320,390,1280]){
     const context=await browser.newContext({viewport:{width,height:844},isMobile:width<600,hasTouch:width<600});const page=await context.newPage();

@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "node scripts/validate-data.mjs && node scripts/export-researched.mjs --check && node scripts/export-portfolios.mjs --check && node scripts/export-uae.mjs --check",
+    "check": "node scripts/validate-data.mjs && node scripts/export-researched.mjs --check && node scripts/export-portfolios.mjs --check && node scripts/export-uae.mjs --check && node scripts/import-nbim.mjs --check",
     "test:browser": "node tests/browser-smoke.mjs",
     "check:foundation": "node --test tests/foundation*.test.mjs",
     "build:site": "node scripts/prepare-site.mjs",
