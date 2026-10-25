@@ -1,0 +1,50 @@
+{
+  "decision": "approved",
+  "inputSha256": "98b32c025f97751eed134514bf240a299abd16e0a24a514abc544c550c816edd",
+  "reviewer": "independent-source-audit",
+  "reviewerAgent": "review_nps_source",
+  "reviewedAt": "2026-10-24",
+  "checks": {
+    "sourceIdentity": true,
+    "amendmentDiscovery": true,
+    "rowCount": true,
+    "valueTotal": true,
+    "sharePartition": true,
+    "spotChecks": true,
+    "publicRights": true
+  },
+  "reviewScope": "Fresh independent post-recovery SEC downloads and a separate full-row reconstruction, not historical attestations: all 552 normalized position objects, opaque grouping, source hashes, manager scope, amendment inventory, exact whole-dollar totals, share partition, and mode-0600 private identity segregation checked anew. A fresh-source repeat import reproduces the original normalized bytes exactly. Dataset admission only; not equivalence, integration, publication, browser, merge or deployment approval. Mechanical full-row comparison is not per-row human review.",
+  "constraints": [
+    "National Pension Service CIK 1608046 only; reported Section 13(f) investment discretion at 2026-06-30, not current holdings, whole pension-fund assets, AUM, Korean government ownership or legal/beneficial ownership.",
+    "Retain all 552 source rows. Exclude only row 552, OCCIDENTAL PETE CORP class W EXP 08/03/202, USD3998734, from the share projection; preserve the truncated class without inventing an expiry date.",
+    "The eligible-share denominator is USD155075664624 across 551 source-scoped instruments, not total AUM or an ownership percentage.",
+    "The cover has zero included or separate reporting managers and explicit false confidentiality-omitted flag; preserve as reported, not proof that all economic assets are public.",
+    "No cross-filer economic aggregation, ownership inference, name-based issuer consolidation or deletion of source rows. Instrument equivalence requires its own independent review.",
+    "Only minimized factual research/navigation fields and official links. Keep raw XML, acquisition manifests, identifiers, identifier-derived hashes, reusable security-master lookups, addresses, signatures, contacts, logos and copied narrative outside the public repository/site.",
+    "Current SEC reuse/access guidance was rechecked for this bounded factual use. No blanket commercial or future-use licensing clearance is claimed.",
+    "The original normalized check timestamp is retained only because fresh source and normalized bytes exactly reproduce the earlier recorded hashes. A new independent observation is recorded separately; no earlier test result is treated as a current pass."
+  ],
+  "counts": {
+    "reportedRowCount": 552,
+    "recomputedValueTotalUsd": "155079663358",
+    "shareRowCount": 551,
+    "shareValueUsd": "155075664624",
+    "excludedRowCount": 1,
+    "shareReportedSecurityCount": 551
+  },
+  "sourceUrls": [
+    "https://data.sec.gov/submissions/CIK0001608046.json",
+    "https://www.sec.gov/Archives/edgar/data/1608046/000119312526347818/index.json",
+    "https://www.sec.gov/Archives/edgar/data/1608046/000119312526347818/primary_doc.xml",
+    "https://www.sec.gov/Archives/edgar/data/1608046/000119312526347818/56942.xml"
+  ],
+  "sourceHashEvidence": {
+    "coverSha256": "74a2224b550b754afc3f89b691fc7745920742abffa805a6db46ede0c8737b15",
+    "informationTableSha256": "97088b0178d40790650bbd658bcf6571ece925cd08b27bd7ebb143f9e3a0e52a",
+    "submissionsSha256": "f78a6d90ba9639a18f2ebe7233c7036b4c5cd217d6fb2e4f4de1c21ca389be3c",
+    "directorySha256": "82100e5ce6ceb238a4d641726614a8b478ed63aee327b903ebe4ac1a4979b2d9",
+    "freshDownloadsMatch": true
+  },
+  "sourceReverifiedAt": "2026-10-24T13:14:21.958008+00:00",
+  "publicRightsScope": "Minimal factual research/navigation under existing project scope. SEC reuse FAQ, fair access and Form13F scope checked; no raw proprietary identifier or document republication and no blanket commercial clearance."
+}

@@ -22,7 +22,7 @@ export async function checkSearchContext(browser,origin){
     assert.equal(await page.evaluate(()=>window.__assetsMap.getState().selectedId),id);
     const cls=classes[ids.indexOf(id)];
     assert.equal(await page.locator('#detail-panel .entity-summary').textContent(),cls+' · Exact reported instrument');
-    const cards=page.locator('#detail-panel .investor-card');assert.equal(await cards.count(),cls==='CL A'?8:1);
+    const cards=page.locator('#detail-panel .investor-card');assert.equal(await cards.count(),cls==='CL A'?9:1);
     if(cls!=='CL A')assert.match(await cards.textContent(),cls==='CMN'?/Goldman Sachs/i:/JPMorgan/i);
     if(width===390)await page.locator('#mobile-details').click();
     await page.locator('#detail-panel .investor-evidence').first().click();

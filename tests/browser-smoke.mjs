@@ -1,3 +1,4 @@
+import {checkNps} from './browser-nps.mjs';
 import {checkCppSnb} from './browser-cpp-snb.mjs';
 import {checkRelationshipCards} from './browser-relationship-cards.mjs';
 import {checkUaeHoldings} from './browser-uae.mjs';
@@ -20,10 +21,10 @@ import assert from 'node:assert/strict';
 
 const portfolioIds = [
   'berkshire-2026-06-30','blackrock-2026-06-30','cpp-2026-06-30','geode-2026-06-30','goldmansachs-2026-06-30',
-  'jpmorgan-2026-06-30','morganstanley-2026-06-30','norgesbank-2026-06-30','pif-2026-06-30','snb-2026-06-30','statestreet-2026-06-30','vanguardglobaladvisers-2026-06-30'
+  'jpmorgan-2026-06-30','morganstanley-2026-06-30','norgesbank-2026-06-30','nps-2026-06-30','pif-2026-06-30','snb-2026-06-30','statestreet-2026-06-30','vanguardglobaladvisers-2026-06-30'
 ];
-const initialNetworkNodes = 108;
-const eligibleHoldingRows = 162145;
+const initialNetworkNodes = 110;
+const eligibleHoldingRows = 162696;
 const origin = 'http://127.0.0.1:8088';
 const server = spawn(process.execPath, ['scripts/serve.mjs'], {
   env: {...process.env, PORT: '8088'}, stdio: 'pipe'
@@ -110,9 +111,9 @@ try {
   await page.setViewportSize({width:1440,height:1000});
   assert.equal(await page.locator('#dataset').inputValue(),'portfolios');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().holdingEdges.length),eligibleHoldingRows);
-  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),454);
-  assert.deepEqual(await page.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds,'all twelve admitted managers are selectable');
-  assert.equal(await page.locator('#portfolio option').count(),13,'twelve managers plus the shared-network option');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().edges.length),495);
+  assert.deepEqual(await page.locator('#portfolio option').evaluateAll(options=>options.map(option=>option.value).filter(value=>value!=='all').sort()),portfolioIds,'all thirteen admitted managers are selectable');
+  assert.equal(await page.locator('#portfolio option').count(),14,'thirteen managers plus the shared-network option');
   const startingIds=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort());
   const appleId=await page.evaluate(()=>window.__assetsMap.getModel().nodes.find(n=>n.label==='APPLE INC'&&n.sector==='COM').id);
   // Keyboard can reach all network securities even when dense labels are decluttered.
@@ -123,32 +124,32 @@ try {
   await page.keyboard.press('Enter');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
   await page.setViewportSize({width:1440,height:1000});
-  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),10,'focused Apple shows only itself and its nine reported investors');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),11,'focused Apple shows only itself and its ten reported investors');
   assert.ok(await page.evaluate(id=>{const isolatedTo=id=>{const g=window.__assetsMap.getGraph(),scope=new Set(g.focusScope);return g.focused===true&&scope.has(id)&&g.edges.every(e=>scope.has(e.source)||scope.has(e.target))&&g.nodes.every(n=>scope.has(n.id)||g.edges.some(e=>e.source===n.id||e.target===n.id));};return isolatedTo(id);},appleId),'every visible link touches the focused security');
   assert.equal(await page.locator('#show-whole-network').isVisible(),true);
-  assert.match(await page.locator('#detail-panel').textContent(),/9 REPORTED INVESTORS/);
-  assert.equal(await page.locator('.investor-card').count(),9);
+  assert.match(await page.locator('#detail-panel').textContent(),/10 REPORTED INVESTORS/);
+  assert.equal(await page.locator('.investor-card').count(),10);
   assert.deepEqual(await page.evaluate(id=>{
     const edges=window.__assetsMap.getModel().edges.filter(edge=>edge.target===id);
     return {investors:edges.length,sourceRows:edges.reduce((sum,edge)=>sum+edge.portfolioPositions.length,0),classes:[...new Set(edges.map(edge=>edge.portfolioPosition.securityClass))]};
-  },appleId),{investors:9,sourceRows:67,classes:['COM']},'exact Apple COM grouping preserves all 67 source rows without merging differently reported classes');
+  },appleId),{investors:10,sourceRows:68,classes:['COM']},'exact Apple COM grouping preserves all 68 source rows without merging differently reported classes');
   assert.equal(await page.evaluate(()=>window.__assetsMap.getModel().nodes.filter(node=>node.label==='APPLE INC').length),3,'COM, CMN and COMMON Apple descriptions remain separate identities');
   await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),'blackrock-2026-06-30');
   await page.locator('[data-view="2d"]').click();await expectView(page,'2d');
   await page.locator(`.graph-node[data-node="${appleId}"]`).focus();
   await page.locator(`.graph-node[data-node="${appleId}"] .node-card`).click();
   assert.equal(await page.evaluate(()=>window.__assetsMap.getState().rootId),appleId);
-  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),10,'2D focus also isolates Apple');
+  assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),11,'2D focus also isolates Apple');
   await page.locator('#show-whole-network').click();
   assert.deepEqual(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.map(n=>n.id).sort()),startingIds,'Show whole network restores the overview');
   assert.equal(await page.locator('#show-whole-network').isVisible(),false);
-  await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),10,'Back returns to the isolated focus');
+  await page.locator('#focus-back').click();assert.equal(await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length),11,'Back returns to the isolated focus');
   await page.locator('#focus-back').click();await page.locator('[data-view="3d"]').click();
   await page.locator('#top-n').selectOption('40');
   const expandedCount=await page.evaluate(()=>window.__assetsMap.getGraph().nodes.length);assert.ok(expandedCount>initialNetworkNodes);await expectReal3D(page,expandedCount);
   await page.locator('#holdings-search').fill('APPLE');await expectView(page,'list');
   assert.ok(await page.locator('.holding-row').count()>0);assert.ok(await page.locator('.holding-row').count()<=50);
-  await page.locator(`.holding-row[data-select="${appleId}"]`).first().click();assert.match(await page.locator('#detail-panel').textContent(),/9 REPORTED INVESTORS/);
+  await page.locator(`.holding-row[data-select="${appleId}"]`).first().click();assert.match(await page.locator('#detail-panel').textContent(),/10 REPORTED INVESTORS/);
   await page.locator('#detail-panel [data-edge]').first().click();await page.locator('#detail-panel [data-edge]').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
   await page.locator('#focus-back').click();assert.equal(await page.locator('#holdings-search').inputValue(),'APPLE');
   await page.locator('#holdings-search').fill('');
@@ -165,7 +166,7 @@ try {
   await page.locator('[data-holdings-page="1"]').click();assert.match(await page.locator('.holdings-pagination').textContent(),/Page 2/);
   await page.locator('#holdings-search').fill('APPLE');
   await page.locator(`.shared-instrument-row[data-select="${appleId}"]`).click();
-  assert.match(await page.locator('#detail-panel').textContent(),/9 REPORTED INVESTORS/);
+  assert.match(await page.locator('#detail-panel').textContent(),/10 REPORTED INVESTORS/);
   await page.locator('#detail-panel [data-edge]').first().click();
   await page.locator('#detail-panel [data-edge]').first().click();assert.match(await page.locator('#detail-panel').textContent(),/Information-table row/);
   await page.locator('#focus-back').click();assert.equal(await page.locator('#holdings-mode').inputValue(),'shared');
@@ -359,7 +360,7 @@ try {
     assert.ok(await touchPage.locator('.shared-instrument-row').count()>0);
     await touchPage.locator(`.shared-instrument-row[data-select="${appleId}"]`).tap();
     assert.equal(await touchPage.locator('#detail-sheet').getAttribute('aria-modal'),'true');
-    assert.match(await touchPage.locator('#detail-panel').textContent(),/9 REPORTED INVESTORS/);
+    assert.match(await touchPage.locator('#detail-panel').textContent(),/10 REPORTED INVESTORS/);
     await touchPage.locator('#detail-panel [data-edge]').first().tap();
     await touchPage.locator('#detail-panel [data-edge]').first().tap();
     assert.match(await touchPage.locator('#detail-panel').textContent(),/Information-table row/);
@@ -530,6 +531,7 @@ try {
   await raceContext.close();
 
   await checkCppSnb(browser,origin);
+  await checkNps(browser,origin);
   await checkUaeHoldings(browser,origin);
   await checkSearchContext(browser,origin);
   await checkInstitutionalPilot(browser,origin);

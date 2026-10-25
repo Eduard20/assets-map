@@ -10,7 +10,7 @@ export async function checkCppSnb(browser, origin) {
       for (const [slug, rows, exactValue, cik, accession, table] of [['cpp', 1694, '180,776,675,190', '1283718', '000110465926097308', 'infoTable.xml'], ['snb', 2301, '191,389,544,938', '1582202', '000158220226000007', 'InfoTable_Q22026.xml']]) {
         const id = `${slug}-2026-06-30`;
         await page.goto(origin);
-        await page.waitForFunction(() => window.__assetsMap?.getModel()?.portfolioMap?.size === 12);
+        await page.waitForFunction(() => window.__assetsMap?.getModel()?.portfolioMap?.size === 13);
         if (phone) await page.locator('#mobile-options').click();
         await page.locator('#portfolio').selectOption(id);
         if (phone) await page.locator('#mobile-apply-controls').click();
