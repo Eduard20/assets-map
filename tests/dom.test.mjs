@@ -43,7 +43,11 @@ assert.ok(document.querySelectorAll('.holding-row').length>0&&document.querySele
 const beforeFocus=window.__assetsMap.getGraph().nodes.map(n=>n.id);
 click('.holding-row');assert.match($('#detail-panel').textContent,/9 REPORTED INVESTORS/);
 assert.equal(window.__assetsMap.getState().rootId,window.__assetsMap.getModel().nodes.find(n=>n.label==='APPLE INC'&&n.sector==='COM').id);
-assert.deepEqual(window.__assetsMap.getGraph().nodes.map(n=>n.id).sort(),beforeFocus.sort());
+{const g=window.__assetsMap.getGraph(),root=window.__assetsMap.getState().rootId;
+assert.equal(g.focused,true,'focusing a security isolates it');
+assert.equal(g.nodes.length,10,'only Apple and its nine reported investors remain');
+assert.ok(g.edges.every(e=>e.source===root||e.target===root),'every visible link touches the focus');
+assert.ok(beforeFocus.length>g.nodes.length);assert.equal($('#show-whole-network').hidden,false);}
 assert.equal($('#focus-back').hidden,false);
 const focusedViewBox=$('#graph-2d svg').getAttribute('viewBox');
 click('[data-view="2d"]');assert.equal($('#graph-2d svg').getAttribute('viewBox'),focusedViewBox);
@@ -53,10 +57,12 @@ click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/
 click('#detail-panel [data-edge]');assert.match($('#detail-panel').textContent,/Information-table row/);
 click('#focus-back');assert.equal(window.__assetsMap.getState().rootId,window.__assetsMap.getModel().rootId);
 assert.equal($('#holdings-search').value,'apple');
-// Every manager click expands its own outgoing neighborhood; Back restores it.
+// A manager click isolates its own neighborhood, repeat clicks page further; Back restores.
 const baseline=window.__assetsMap.getGraph().nodes.map(n=>n.id).sort();
 window.__assetsMap.selectNode('blackrock-2026-06-30');
-assert.ok(window.__assetsMap.getGraph().nodes.length>baseline.length);
+{const g=window.__assetsMap.getGraph(),scope=new Set(g.focusScope);
+assert.equal(g.focused,true);assert.ok(g.nodes.every(n=>scope.has(n.id)||g.edges.some(e=>(e.source===n.id||e.target===n.id)&&(scope.has(e.source)||scope.has(e.target)))),'only BlackRock and its direct connections remain');
+assert.ok(g.nodes.filter(n=>n.kind==='manager'&&!scope.has(n.id)).every(n=>g.edges.some(e=>e.source===n.id&&scope.has(e.target))),'other filers appear only as reported holders of BlackRock stock');assert.ok(g.nodes.length<baseline.length+60);}
 const firstExpanded=window.__assetsMap.getGraph().nodes.length;
 window.__assetsMap.selectNode('blackrock-2026-06-30');
 assert.ok(window.__assetsMap.getGraph().nodes.length>firstExpanded);

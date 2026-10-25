@@ -9,8 +9,8 @@ import {mountPropertyPilot} from './property-view.js';
 import {createModel,initialState,buildVisibleGraph,relatedEdges,searchNodes,searchResultsHtml,escapeHtml as E,safeUrl,dateLabel,money,RELATIONSHIPS,KIND_LABELS,DEFAULT_PAGE_SIZE,MAX_VISIBLE_NODES} from './graph-model.js?v=20261023-uae1';
 import {researchDetails,researchRowsPage,researchInventoryHtml} from './research-view.js?v=20261023-uae1';
 import {portfolioModel,decodePortfolio,holdingsPage,portfolioPositionDetails,portfolioInstrumentDetails,portfolioOverview,HOLDINGS_PAGE_SIZE} from './portfolio-view.js?v=20261018-data2';
-import {createPortfolioNetwork,networkDetails,expandPortfolioNetwork,sharedInstrumentsPage,NETWORK_PAGE_SIZE,NETWORK_NODE_LIMIT} from './portfolio-network.js?v=20261018-shared1';
-import {Graph2D} from './graph-2d.js?v=20261023-uae1';
+import {createPortfolioNetwork,networkDetails,expandPortfolioNetwork,networkNeighborhood,sharedInstrumentsPage,NETWORK_PAGE_SIZE,NETWORK_NODE_LIMIT} from './portfolio-network.js?v=20261025-focus';
+import {Graph2D} from './graph-2d.js?v=20261025-focus';
 const $=selector=>document.querySelector(selector);
 let model,state,graph,renderer3D,renderer3DPromise,toastTimer,viewRequest=0,datasetRequest=0;
 const datasets=new Map();
@@ -54,12 +54,13 @@ function exploreRoot(id){
   if(!model.nodeMap.has(id))return;
   if(id!==state.rootId||model.network)rememberFocus();
   state.rootId=id;state.selectedId=id;state.selectedEdgeId=null;
-  if(model.network){expandPortfolioNetwork(model,state,id,graph);}else{state.expanded=new Set([id]);state.limits=new Map();renderer2D.fit();}
+  if(model.network){expandPortfolioNetwork(model,state,id,graph);state.isolated=true;}else{state.expanded=new Set([id]);state.limits=new Map();renderer2D.fit();}
   render();if(model.network){renderer2D.focus?.(id);renderer3D?.focus?.(id);}else renderer3D?.fit();closeSearch();closeMobilePanel();
 }
 function goBack(){const previous=focusHistory.pop();if(!previous)return;const view=isUae()?previous.state.view:state.view;({model,state,holdingsQuery,holdingsPageIndex}=previous);state.view=view;$('#holdings-search').value=holdingsQuery;$('#uae-search').value=holdingsQuery;$('#direction').value=state.direction;$('#portfolio').value=state.portfolioFilter||'all';render();renderer2D.focus?.(state.rootId);renderer3D?.focus?.(state.rootId);applyView(view);}
-function changePortfolio(id){rememberFocus();state.portfolioFilter=id==='all'?null:id;holdingsPageIndex=0;if(state.portfolioFilter){state.rootId=id;state.selectedId=id;state.selectedEdgeId=null;}render();renderer2D.fit();renderer3D?.fit();}
-function showMoreNetwork(){for(const id of state.portfolioFilter?[state.portfolioFilter]:model.portfolioRoots)state.limits.set(id,Math.min(60,(state.limits.get(id)||NETWORK_PAGE_SIZE)+NETWORK_PAGE_SIZE));render();renderer2D.fit();renderer3D?.fit();}
+function changePortfolio(id){rememberFocus();state.isolated=false;state.portfolioFilter=id==='all'?null:id;holdingsPageIndex=0;if(state.portfolioFilter){state.rootId=id;state.selectedId=id;state.selectedEdgeId=null;}render();renderer2D.fit();renderer3D?.fit();}
+function showWholeNetwork(){if(!model.network||!state.isolated)return;rememberFocus();state.isolated=false;render();renderer2D.fit();renderer3D?.fit();}
+function showMoreNetwork(){if(state.isolated){exploreRoot(state.rootId);return;}for(const id of state.portfolioFilter?[state.portfolioFilter]:model.portfolioRoots)state.limits.set(id,Math.min(60,(state.limits.get(id)||NETWORK_PAGE_SIZE)+NETWORK_PAGE_SIZE));render();renderer2D.fit();renderer3D?.fit();}
 function changeUaeGroup(id){
   if(!isUae()||(id!=='all'&&!model.meta.investorIds.includes(id)))return;
   if((state.uaeGroupFilter||'all')===id)return;
@@ -75,12 +76,12 @@ function renderUaeControls(){
   $('#uae-summary').textContent=`${result.total.toLocaleString()} matching disclosures of ${model.edges.length.toLocaleString()} admitted rows · ${model.meta.investorIds.length} reporting groups. Historical and partial, not a current or complete portfolio. The map shows the focused neighborhood; List searches all matching rows.`;
 }
 function renderNetworkControls(){
-  $('#comparison-launcher').hidden=!model.network;$('#focus-back').hidden=!focusHistory.length;$('#network-summary').hidden=!model.network;
+  $('#comparison-launcher').hidden=!model.network;$('#focus-back').hidden=!focusHistory.length;$('#show-whole-network').hidden=!(model.network&&state.isolated);$('#network-summary').hidden=!model.network;
   if(!model.network)return;
   const securities=graph.nodes.filter(n=>n.kind==='asset').length,roots=state.portfolioFilter?[state.portfolioFilter]:model.portfolioRoots,limit=Math.max(...roots.map(id=>state.limits.get(id)||NETWORK_PAGE_SIZE));
   $('#holdings-mode').value=state.listMode||'rows';$('#top-n').value=String(Math.min(60,limit));$('#portfolio').value=state.portfolioFilter||'all';
   $('#network-count').textContent=`Showing ${securities.toLocaleString()} of ${model.instrumentCount.toLocaleString()} securities · ${model.portfolios.length} imported filers · ${graph.holdingLinkCount??graph.edges.length} reported holdings`;
-  $('#network-more').disabled=limit>=60||graph.nodes.length>=NETWORK_NODE_LIMIT;$('#network-more').textContent=limit>=60?'Map limit reached · search all below':'Show more securities +';
+  if(state.isolated){const {incoming,outgoing}=networkNeighborhood(model,state.rootId),page=state.exploration?.get(state.rootId)||{incoming:0,outgoing:0},more=page.incoming<incoming.length||page.outgoing<outgoing.length;$('#network-count').textContent=`Focused on ${model.nodeMap.get(state.rootId).label} · ${graph.nodes.length-1} directly connected · ${graph.holdingLinkCount??graph.edges.length} reported holdings`;$('#network-more').disabled=!more||graph.nodes.length>=NETWORK_NODE_LIMIT;$('#network-more').textContent=more?'Show more connections +':'All connections shown';}else{$('#network-more').disabled=limit>=60||graph.nodes.length>=NETWORK_NODE_LIMIT;$('#network-more').textContent=limit>=60?'Map limit reached · search all below':'Show more securities +';}
   const totalRows=model.holdingEdges.length;
   $('#portfolio-summary').innerHTML=`<strong>One shared network · ${model.portfolios.length} imported filers</strong><span>${totalRows.toLocaleString()} searchable share rows</span><span>As of ${E(dateLabel(model.portfolios[0].reportingDate))}</span><span>Exact instrument matches only · Investor coverage is incomplete</span>`;
 }
@@ -179,7 +180,7 @@ function bind(){
   document.addEventListener('click',e=>{const target=e.target.closest('[data-research-explore]');if(!target||!isUae())return;exploreRoot(target.dataset.researchExplore);setView('2d');});
   $('#portfolio').addEventListener('change',e=>changePortfolio(e.target.value));
   $('#holdings-mode').addEventListener('change',e=>{rememberFocus();state.listMode=e.target.value;holdingsPageIndex=0;render();setView('list');});
-  $('#focus-back').addEventListener('click',goBack);$('#network-more').addEventListener('click',showMoreNetwork);
+  $('#focus-back').addEventListener('click',goBack);$('#show-whole-network').addEventListener('click',showWholeNetwork);$('#network-more').addEventListener('click',showMoreNetwork);
   $('#top-n').addEventListener('change',e=>{if(!isPortfolio())return;for(const id of state.portfolioFilter?[state.portfolioFilter]:model.portfolioRoots)state.limits.set(id,Number(e.target.value));render();renderer2D.fit();renderer3D?.fit();});
   $('#holdings-search').addEventListener('input',e=>{holdingsQuery=e.target.value;holdingsPageIndex=0;renderList();setView('list');});
   document.addEventListener('click',e=>{const openHoldings=e.target.closest('[data-open-holdings]');if(openHoldings){if(openHoldings.dataset.openHoldings)changePortfolio(openHoldings.dataset.openHoldings);else rememberFocus();state.listMode='rows';holdingsPageIndex=0;render();setView('list');if(phoneQuery())openMobilePanel('controls');$('#holdings-search').focus();}const page=e.target.closest('[data-holdings-page]');if(page&&!page.disabled){holdingsPageIndex=Number(page.dataset.holdingsPage);renderList();$('#graph-list').scrollTop=0;}});

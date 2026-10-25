@@ -177,8 +177,9 @@ export class Graph2D {
       node.classList.toggle('unrelated',!neighbours.has(node.dataset.node));node.dataset.labelVisible='true';node.querySelector('[data-expand]')?.setAttribute('transform',`translate(112,38) scale(${1/this.zoom})`);
     }
     for(const element of this.layer.querySelectorAll('[data-edge]')){
+      // A redraw can move focus before stale edge elements are replaced.
       const edge=this.graph.edges.find(e=>e.id===element.dataset.edge);
-      element.classList.toggle('related',edge.source===focus||edge.target===focus);
+      element.classList.toggle('related',Boolean(edge)&&(edge.source===focus||edge.target===focus));
     }
   }
 

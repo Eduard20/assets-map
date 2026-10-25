@@ -93,7 +93,19 @@ export function createPortfolioNetwork(portfolios,identity){
   const network={...model,network:true,portfolioRoots,portfolios,portfolioMap,rolePeers,roleEdges,portfolio:portfolioMap.get(model.rootId),holdingEdges,rowEdgeMap:new Map(holdingEdges.map(e=>[e.id,e])),instrumentCount:[...nodes.values()].filter(n=>n.kind==='asset').length};
   network.buildVisibleGraph=state=>buildPortfolioNetwork(network,state);return network;
 }
+// A focused entity is shown alone with its direct, verified connections. The
+// whole-network overview returns only when the focus is explicitly cleared.
+function buildFocusedNetwork(model,state){
+  const {scope,incoming,outgoing}=networkNeighborhood(model,state.rootId),page=state.exploration?.get(state.rootId)||{incoming:NETWORK_PAGE_SIZE,outgoing:NETWORK_PAGE_SIZE};
+  const ids=new Set(scope),add=id=>{if(model.nodeMap.has(id)&&ids.size<NETWORK_NODE_LIMIT)ids.add(id);};
+  const ins=incoming.slice(0,page.incoming),outs=outgoing.slice(0,page.outgoing);
+  for(let i=0;i<Math.max(ins.length,outs.length);i++){if(ins[i])add(ins[i].source);if(outs[i])add(outs[i].target);}
+  const touches=e=>ids.has(e.source)&&ids.has(e.target)&&(scope.has(e.source)||scope.has(e.target));
+  const holdingLinks=model.edges.filter(touches),roleLinks=(model.roleEdges||[]).filter(touches);
+  return {network:true,focused:true,portfolioRoots:model.portfolioRoots.filter(id=>ids.has(id)),focusScope:[...scope],nodes:[...ids].map(id=>model.nodeMap.get(id)),edges:[...holdingLinks,...roleLinks],holdingLinkCount:holdingLinks.length,totalInstruments:model.instrumentCount};
+}
 export function buildPortfolioNetwork(model,state){
+  if(state.isolated&&model.nodeMap.has(state.rootId))return buildFocusedNetwork(model,state);
   const ids=new Set([...model.portfolioRoots,state.rootId]),eligible=state.portfolioFilter?model.portfolioRoots.filter(id=>id===state.portfolioFilter):model.portfolioRoots;
   const add=id=>{if(model.nodeMap.has(id)&&ids.size<NETWORK_NODE_LIMIT)ids.add(id);};
   // The current neighborhood takes priority at the ceiling; earlier explored
@@ -129,5 +141,5 @@ export function networkDetails(model,id,state,graph){
   const portfolio=model.portfolioMap.get(id);
   if(portfolio)return explorationDetails(model,id,state,graph)+portfolioOverview({...model,portfolio,edges:model.edges.filter(e=>e.source===id)});
   const node=model.nodeMap.get(id),investors=model.edges.filter(e=>e.target===id);
-  return `<div class="panel-kicker"><span>COMPANY / SECURITY FOCUS</span><span class="sample-pill">${investors.length} REPORTED INVESTORS</span></div><h2>${E(node.label)}</h2><p class="entity-summary">${E(node.sector||node.position?.securityClass||'Reported security')} · Exact reported instrument</p><p class="historical-note"><strong>Historical snapshot · ${E(dateLabel(model.portfolios[0].reportingDate))}</strong><br>This does not establish a current position.</p>${explorationDetails(model,id,state,graph)}<h3>Reported investors <span>${investors.length}</span></h3><p class="context-note">${model.portfolios.length} imported filers checked: ${E(model.portfolios.map(p=>p.filer.name).join(', '))}. This is not a complete list of investors. Separate classes and unmatched source descriptions remain separate.</p><div class="connection-list">${networkInvestorCards(model,id)}</div><p class="context-note">These links show reported investment discretion, not legal ownership or control. Values are shown separately for each filer and must not be added as a company ownership total.</p><p class="context-note">The surrounding shared network stays visible. Select an investor to explore its holdings, or use Back to return to your previous focus.</p>`;
+  return `<div class="panel-kicker"><span>COMPANY / SECURITY FOCUS</span><span class="sample-pill">${investors.length} REPORTED INVESTORS</span></div><h2>${E(node.label)}</h2><p class="entity-summary">${E(node.sector||node.position?.securityClass||'Reported security')} · Exact reported instrument</p><p class="historical-note"><strong>Historical snapshot · ${E(dateLabel(model.portfolios[0].reportingDate))}</strong><br>This does not establish a current position.</p>${explorationDetails(model,id,state,graph)}<h3>Reported investors <span>${investors.length}</span></h3><p class="context-note">${model.portfolios.length} imported filers checked: ${E(model.portfolios.map(p=>p.filer.name).join(', '))}. This is not a complete list of investors. Separate classes and unmatched source descriptions remain separate.</p><div class="connection-list">${networkInvestorCards(model,id)}</div><p class="context-note">These links show reported investment discretion, not legal ownership or control. Values are shown separately for each filer and must not be added as a company ownership total.</p><p class="context-note">Only this security and its reported investors are shown on the map. Select an investor to explore its holdings, use Back to return to your previous focus, or Show whole network for the overview.</p>`;
 }

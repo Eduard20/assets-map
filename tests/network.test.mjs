@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {decodePortfolio} from '../src/portfolio-view.js';
-import {createPortfolioNetwork,networkDetails} from '../src/portfolio-network.js';
+import {createPortfolioNetwork,networkDetails,expandPortfolioNetwork} from '../src/portfolio-network.js';
 import {buildVisibleGraph,initialState} from '../src/graph-model.js';
 const manifest=JSON.parse(await readFile(new URL('../data/portfolios.json',import.meta.url)));
 const portfolios=await Promise.all(manifest.portfolios.map(async p=>decodePortfolio(p,JSON.parse(await readFile(new URL('../data/'+p.dataFile,import.meta.url))))));
@@ -141,4 +141,19 @@ test('every admitted PIF instrument connects to other filers without ownership a
   assert.equal(edge.portfolioPositions.length,1);
   assert.match(networkDetails(model,edge.target),/not legal ownership or control/);
  }
+});
+test('focusing an entity isolates it with only its direct connections',()=>{
+  const state=initialState(model),overview=buildVisibleGraph(model,state);
+  const alphabet=model.nodes.find(n=>n.label==='ALPHABET INC'&&n.sector==='CAP STK CL A');
+  state.rootId=alphabet.id;expandPortfolioNetwork(model,state,alphabet.id,overview);state.isolated=true;
+  const focused=buildVisibleGraph(model,state),holders=new Set(model.edges.filter(e=>e.target===alphabet.id).map(e=>e.source));
+  assert.equal(focused.focused,true);
+  assert.deepEqual(new Set(focused.nodes.map(n=>n.id)),new Set([alphabet.id,...holders]),'only Alphabet class A and its reported holders');
+  assert.ok(focused.edges.every(e=>e.target===alphabet.id),'no unrelated holdings between the holders are drawn');
+  const blackrock=model.portfolioRoots.find(id=>id.startsWith('blackrock'));
+  state.rootId=blackrock;expandPortfolioNetwork(model,state,blackrock,focused);
+  const managed=buildVisibleGraph(model,state),scope=new Set(managed.focusScope);
+  assert.ok(managed.edges.every(e=>scope.has(e.source)||scope.has(e.target)),'every link touches BlackRock or its own share class');
+  assert.ok(managed.nodes.length<=200);
+  state.isolated=false;assert.equal(buildVisibleGraph(model,state).focused,undefined,'clearing the focus restores the overview');
 });
